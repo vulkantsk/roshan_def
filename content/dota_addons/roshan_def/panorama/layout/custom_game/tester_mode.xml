@@ -1,0 +1,80 @@
+<root>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/testers.js" />
+	</scripts>
+
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/testers.css" />
+	</styles>
+	<Panel class="Hud" hittest="false"> 
+		<Panel id="MainPanel" class="Settings_Container"> 
+			<Button id="QuitButton" onactivate="$('#MainPanel').ToggleClass('Visible')" />
+			<Panel class="column container_settings" >
+				<Panel class="Buttons_Settings row"> 
+					<RadioButton selected="true" onactivate="SelectSettings('general_container')"> 
+						<Label text="#General" />
+					</RadioButton>
+					<RadioButton onactivate="SelectSettings('creep_container')"> 
+						<Label text="#Creeps" />
+					</RadioButton >
+					<RadioButton onactivate="SelectSettings('item_container')"> 
+						<Label text="#Items" />
+					</RadioButton>
+				</Panel>
+				<Panel id="ContentContainer"> 
+					<Panel id="general_container" class="column Visible" >
+						<ToggleButton onactivate="GeneralClickToggle(2)"> 
+							<Label text="Открыть карту" />
+						</ToggleButton>
+						<ToggleButton onactivate="GeneralClickToggle(3)" > 
+							<Label text="Неуязвимость" />
+						</ToggleButton>
+						<ToggleButton onactivate="GeneralClickToggle(4)" > 
+							<Label text="Макс. Скорость" />
+						</ToggleButton>
+						<Button onactivate="GeneralClickToggle(5)" > 
+							<Label text="Выдать 10000 золота" />
+						</Button>
+						<Button onactivate="GeneralClickToggle(6)"> 
+							<Label text="+1 уровень" />
+						</Button>
+						<Button onactivate="GeneralClickToggle(7)"> 
+							<Label text="Макс. Уровень" />
+						</Button>
+						<Button onactivate="GeneralClickToggle(8)"> 
+							<Label text="+10 ко всем атрибутам" />
+						</Button>
+						<Button onactivate="GeneralClickToggle(9)"> 
+							<Label text="+10 к силе" />
+						</Button>
+						<Button onactivate="GeneralClickToggle(10)"> 
+							<Label text="+10 к ловкости" />
+						</Button>
+						<Button onactivate="GeneralClickToggle(11)"> 
+							<Label text="+10 к интеллекту" />
+						</Button>
+					</Panel>
+					<Panel id="creep_container" class="column" >
+						<Panel style="width:100%;" class="row" >
+							<ToggleButton style="vertical-align:center;" class="colum column_nav" id="FriendlySpawn"> 
+								<Label text="Дружественный" />
+							</ToggleButton>
+							<TextEntry id="creep_search" placeholder="#Dota_search" ontextentrychange="__OnCreepSearch()" />
+						</Panel>
+						<Panel class="row content_creeps" style="width:100%;">
+							<Panel id="forest_container_btn" class="column biomes"/>
+							<Panel id="creeps_select" >
+								<Panel id="creeps_select_bosses" class="row-wrap" />
+							</Panel>
+						</Panel>
+					</Panel>
+					<Panel id="item_container" class="column" >
+						<TextEntry id="item_search" placeholder="#Dota_search" ontextentrychange="__OnItemSearch()" />
+						<Panel id="items_select" /> 
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

@@ -1,0 +1,51 @@
+//
+// <key>	<value>
+// Hero		currently on/off, will be # of instances (-1 = infinite)
+//
+
+"CustomHeroList"
+{
+	"npc_dota_hero_lycan"			"1"
+	"npc_dota_hero_centaur"			"1"
+	"npc_dota_hero_meepo"			"1"
+	"npc_dota_hero_lone_druid"		"1"
+	"npc_dota_hero_ursa"			"1"
+	"npc_dota_hero_troll_warlord"		"1"
+	"npc_dota_hero_tiny"			"1"
+	"npc_dota_hero_riki"			"1"
+	"npc_dota_hero_winter_wyvern"		"1"
+	"npc_dota_hero_jakiro"			"1"
+	"npc_dota_hero_pangolier"		"1"
+	"npc_dota_hero_huskar"			"1"
+	"npc_dota_hero_ogre_magi"		"1"
+	"npc_dota_hero_beastmaster"		"1"
+	"npc_dota_hero_chen"			"1"
+	"npc_dota_hero_leshrac"			"1"
+	"npc_dota_hero_target_dummy"		"0"
+	"npc_dota_hero_omniknight"		"1"			//Spartacus
+	"npc_dota_hero_life_stealer"		"1"			//Renegade
+	"npc_dota_hero_phoenix"			"1"	
+	"npc_dota_hero_mars"			"1"	
+	"npc_dota_hero_wisp"			"1"
+	"npc_dota_hero_puck"			"1"
+	"npc_dota_hero_monkey_king"		"1"
+	"npc_dota_hero_bristleback"		"1"
+	"npc_dota_hero_disruptor"		"1"
+	"npc_dota_hero_abyssal_underlord"		"1"
+	"npc_dota_hero_crystal_maiden"		"1"
+	"npc_dota_hero_keeper_of_the_light"		"1"
+	"npc_dota_hero_shadow_shaman"		"1"
+	"npc_dota_hero_tidehunter"		"0"	//test
+	"npc_dota_hero_obsidian_destroyer"	"0"	//test
+	"npc_dota_hero_void_spirit"		"0"	//test
+	"npc_dota_hero_drow_ranger"		"0"	//special hero			
+	"npc_dota_hero_phantom_assassin""0"	//special hero			
+	"npc_dota_hero_alchemist"		"0"	//special hero			
+	"npc_dota_hero_sniper"			"0"	//special hero
+	"npc_dota_hero_pudge"			"0"	//special hero			
+	"npc_dota_hero_treant"			"0"			//Roshan Son
+
+//	"npc_dota_hero_viper"			"1"			//Roshan Son
+//	"npc_dota_hero_naga_siren"			"1"			//Roshan Son
+
+}

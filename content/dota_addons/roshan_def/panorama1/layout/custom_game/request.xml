@@ -1,0 +1,183 @@
+<root>
+	<scripts>
+		<!-- <include src="file://{resources}/scripts/custom_game/lodash.min.js" /> -->
+		<include src="file://{resources}/scripts/custom_game/request.js" />
+	</scripts>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/request.css" />
+	</styles>
+	<snippets>
+		<snippet name="player_row_leaderboards" >
+			<Panel class="Player_row_ranking" >
+				<Panel id="LeaderRankContainer" class="leader_rank" >
+					<!-- <Label text="1" /> -->
+					<!-- <Panel id="LeaderIcon" class="leader_1" /> -->
+				</Panel>
+				<Panel class="leader_player" id="PlayerLeader" >
+					<DOTAAvatarImage id="PlayerImageLeader" steamid="local" />
+					<!-- <DOTAUserName steamid="local" id="PlayerNameLabel" /> -->
+				</Panel>
+				<Panel class="leader_score" id="PlayerLeaderScore" >
+					<Label text="{s:leader_score}" />
+				</Panel>
+				<Panel class="leader_wins" id="PlayerLeaderWins" >
+					<Label text="{s:leader_wins}" />
+				</Panel>
+				<Panel class="leader_loses" id="PlayerLeaderLose" >
+					<Label text="{s:leader_loses}" />
+				</Panel>
+			</Panel>
+   		</snippet> 
+		<snippet name="player_row_speenRun" >
+			<Panel class="Player_row_ranking" >
+				<Panel id="LeaderRankContainer" class="leader_rank" >
+					<!-- <Label text="1" /> -->
+					<!-- <Panel id="LeaderIcon" class="leader_1" /> -->
+				</Panel>
+				<Panel class="leader_player" id="PlayerLeader" >
+					<DOTAAvatarImage id="PlayerImageLeader" steamid="local" />
+					<!-- <DOTAUserName steamid="local" id="PlayerNameLabel" /> -->
+				</Panel>
+				<Panel class="game_time" id="GameTime" >
+					<Label html="true" id="GameTime_label" text="{s:time}" />
+				</Panel>
+			</Panel>
+   		</snippet>
+	</snippets>
+	<!-- 
+		
+		Open Source War Of Kings by Author HappyFeedFriends
+		Redesigner by HappyFeedFriends
+
+	 -->
+
+	<Panel class="Hud" hittest="false"> 
+		<Panel id="leaderboardsContainer" hittest="false"> 
+			<Button id="QuitButton"  onactivate="$('#leaderboardsContainer').RemoveClass('Visible')"/> 
+			<Panel id="GlobalLeader" class="Visible">
+				<Label class="leader_header" text="GLOBAL_RANKING" />
+				<Panel id="ButtonTypeLeaders" >
+					<RadioButton id="rbtn_current" selected="true" onactivate="OnClickedRBox()" group="global_leader" >
+						<Label text="#current_season" />
+					</RadioButton>
+					<RadioButton id="rbtn_global" group="global_leader" onactivate="OnClickedRBox()" >
+						<Label text="#all_time" />
+					</RadioButton>
+				</Panel>
+				<Panel id="HeaderLeaderBoard" >
+					<Panel class="leader_rank">
+						<Label text="RANK" />
+					</Panel>
+					<Panel class="leader_player">
+						<Label text="PLAYER" />
+					</Panel>
+					<Panel class="leader_score">
+						<Label text="SCORES" />
+					</Panel>
+					<Panel class="leader_wins">
+						<Label text="WINS" />
+					</Panel>
+					<Panel class="leader_loses">
+						<Label text="LOSES" />
+					</Panel>
+				</Panel>
+				<Panel id="RankingPlayerContent" >
+					<!-- TOP -->
+					<Panel id="Ranking_top_10_global" class="Visible" >
+						<!-- Dynamic load -->
+					</Panel>
+					<Panel id="Ranking_top_10_season" >
+						<!-- Dynamic load -->
+					</Panel>
+
+					<!-- TOP NEARBY PLAYER -->
+					<Panel id="Ranking_nearby_global" >
+						<!-- Dynamic load -->
+					</Panel>
+					<Panel id="Ranking_nearby_season" >
+						<!-- Dynamic load -->
+					</Panel>
+				</Panel>
+				<Panel id="ButtonTypeMyAndTop" >
+					<RadioButton id="top_10" selected="true" group="my_and_top" onactivate="OnClickedRBox()" >
+						<Label text="#top_10" />
+					</RadioButton>
+					<RadioButton id="my_position" group="my_and_top" onactivate="OnClickedRBox()" >
+						<Label text="#my_position" />
+					</RadioButton>
+				</Panel>
+			</Panel>
+		</Panel>
+
+		<Panel id="leaderboardsContainer_speedrun" hittest="false"> 
+			<Button id="QuitButton"  onactivate="$('#leaderboardsContainer_speedrun').RemoveClass('Visible')"/> 
+			<Panel id="GlobalLeader" class="Visible">
+				<Label class="leader_header" text="GLOBAL_RANKING_SPEEDRUN" />
+				<Panel id="ButtonTypeLeaders" >
+					<RadioButton id="rbtn_standart_map" selected="true" onactivate="OnClickedRBoxSpeedRun()" group="global_leader_speedrun" >
+						<Label text="#standart_map" />
+					</RadioButton>
+					<RadioButton id="rbtn_turbo_map" group="global_leader_speedrun" onactivate="OnClickedRBoxSpeedRun()" >
+						<Label text="#turbo_map" />
+					</RadioButton>
+				</Panel>
+				<Panel id="DifficuiltButtons" >
+					<RadioButton selected="true" onmouseover="UIShowTextTooltipStyled( #imba_gamemode_settings_lock_options, ShortTextTooltip )" onmouseout="UIHideTextTooltip()" id="rbtn_difficuilt_0"  group="DifficuiltButtons" onactivate="OnClickedRBoxSpeedRun()" />
+					<RadioButton onmouseover="UIShowTextTooltipStyled( #imba_gamemode_settings_lock_options1, ShortTextTooltip )" onmouseout="UIHideTextTooltip()" id="rbtn_difficuilt_1" group="DifficuiltButtons" onactivate="OnClickedRBoxSpeedRun()" />
+					<RadioButton onmouseover="UIShowTextTooltipStyled( #imba_gamemode_settings_lock_options2, ShortTextTooltip )" onmouseout="UIHideTextTooltip()" id="rbtn_difficuilt_2" group="DifficuiltButtons" onactivate="OnClickedRBoxSpeedRun()" />
+					<RadioButton onmouseover="UIShowTextTooltipStyled( #imba_gamemode_settings_lock_options3, ShortTextTooltip )" onmouseout="UIHideTextTooltip()" id="rbtn_difficuilt_3" group="DifficuiltButtons" onactivate="OnClickedRBoxSpeedRun()" />
+				</Panel>
+				<Panel id="HeaderLeaderBoard" >
+					<Panel class="leader_rank">
+						<Label text="RANK" />
+					</Panel>
+					<Panel class="leader_player">
+						<Label text="PLAYER" />
+					</Panel>
+					<Panel class="game_time">
+						<Label text="GAME_TIME" />
+					</Panel>
+				</Panel>
+				<Panel id="RankingPlayerContent" >
+					
+					<!-- STANDART -->
+					<Panel id="standart_0" class="Visible" >
+						<!-- Dynamic load -->
+					</Panel>
+					<Panel id="standart_1" >
+						<!-- Dynamic load -->
+					</Panel>
+					<Panel id="standart_2" >
+						<!-- Dynamic load -->
+					</Panel>
+					<Panel id="standart_3" >
+						<!-- Dynamic load -->
+					</Panel>
+
+					<!-- TURBO -->
+					<Panel id="turbo_0" >
+						<!-- Dynamic load -->
+					</Panel>
+					<Panel id="turbo_1" >
+						<!-- Dynamic load -->
+					</Panel>
+					<Panel id="turbo_2" >
+						<!-- Dynamic load -->
+					</Panel>
+					<Panel id="turbo_3" >
+						<!-- Dynamic load -->
+					</Panel>
+				</Panel>
+				<Panel id="ButtonTypeMyAndTop" >
+					<RadioButton id="top_10" selected="true" group="my_and_top_speedrun" onactivate="OnClickedRBox()" >
+						<Label text="#top_10" />
+					</RadioButton>
+					<RadioButton id="my_position" group="my_and_top_speedrun" onactivate="OnClickedRBox()" >
+						<Label text="#my_position" />
+					</RadioButton>
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

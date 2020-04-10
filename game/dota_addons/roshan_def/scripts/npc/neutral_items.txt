@@ -1,0 +1,108 @@
+"neutral_items"
+{
+	"1"
+	{
+		"drop_rates"
+		{
+			"7:00"
+			{
+				"0" "10"
+				"1" "10"
+				"2" "10"
+				"3" "10"
+			}
+		}
+		
+		"items"
+		{
+			"item_bonus_strength1"		"1"
+			"item_bonus_strength5"		"1"
+			"item_bonus_strength10"		"1"
+			"item_bonus_strength50"		"1"
+		}
+	}
+	"2"
+	{
+		"drop_rates"
+		{
+			"15:00"
+			{
+				"0" "10"
+				"1" "10"
+				"2" "10"
+				"3" "10"
+			}
+		}
+
+		"items"
+		{
+			"item_bonus_agility1"		"1"
+			"item_bonus_agility5"		"1"
+			"item_bonus_agility10"		"1"
+			"item_bonus_agility50"		"1"
+		}
+	}
+	"3"
+	{
+		"drop_rates"
+		{
+			"25:00"
+			{
+				"0" "10"
+				"1" "10"
+				"2" "10"
+				"3" "10"
+			}
+		}
+
+		"items"
+		{
+			"item_bonus_intelligence1"		"1"
+			"item_bonus_intelligence5"		"1"
+			"item_bonus_intelligence10"		"1"
+			"item_bonus_intelligence50"		"1"
+		}
+	}
+	"4"
+	{	
+		"drop_rates"
+		{
+			"40:00"
+			{
+				"0" "10"
+				"1" "10"
+				"2" "10"
+				"3" "10"
+			}
+		}
+
+		"items"
+		{
+			"item_bonus_stats1"		"1"
+			"item_bonus_stats5"		"1"
+			"item_bonus_stats10"		"1"
+			"item_bonus_stats50"		"1"
+		}
+	}
+	"5"
+	{
+		"drop_rates"
+		{
+			"60:00"
+			{
+				"0" "10"
+				"1" "10"
+				"2" "10"
+				"3" "10"
+			}
+		}
+
+		"items"
+		{
+			"item_roshan_chest"				  "1"
+			"item_roshan_legs"				  "1"
+			"item_roshan_had"				  "1"
+			"item_roshan_hands"			  	  "1"
+		}
+	}
+}

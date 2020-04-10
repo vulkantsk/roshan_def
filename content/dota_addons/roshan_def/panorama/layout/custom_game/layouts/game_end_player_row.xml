@@ -1,0 +1,35 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/game_end_dota/dashboard_page_shared.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/game_end_dota/dashboard_page_post_game.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/game_end.css" />
+	</styles>
+
+	<Panel class="PlayerName StatRowHeight PinnedPlayerRow">
+		<Panel id="PlayerRowClickTarget">			
+			<Panel class="SlidingName LeftRightFlow">
+				<Panel class="HeroIcon">
+					<Image id="HeroImage" />
+					<DOTAHeroBadge id="HeroBadge" />
+				</Panel>
+				<Panel class="NameAndHero TopBottomFlow">
+					<DOTAUserName id="PlayerNameScoreboard"/>
+<!-- 					<Label id="BotPlayerNameScoreboard" text="{s:bot_player_name}" /> -->
+					<Panel class="LeftRightFlow">
+						<Label id="heroLevel" class="HeroLevelLabel MonoNumbersFont" text="{d:hero_level}"/>
+						<Label class="LevelAndHero" text="{s:hero_name}"/>
+					</Panel>
+				</Panel>
+			</Panel>
+<!-- 			<Panel id="RankTierContainer" class="RankTierContainer">
+				<DOTAScenePanel id="BackgroundFX" map="scenes/rank_tier_ambient" renderdeferred="false" rendershadows="false" camera="camera_1" hittest="false" particleonly="true" />
+				<Panel id="RankTier" class="RankTierImage" />
+				<Panel id="RankPips" class="RankPipImage" />
+				<Label id="RankLeaderboard" class="RankLeaderboardLabel" text="{d:leaderboard_rank}" />
+				<DOTAScenePanel id="EliteFX" map="scenes/rank_divine_ambient" renderdeferred="false" rendershadows="false" camera="camera_1" hittest="false" particleonly="true" />
+				<DOTAScenePanel id="LevelUpFX" map="scenes/rank_tier_levelup" renderdeferred="false" rendershadows="false" camera="camera_1" hittest="false" particleonly="true" />
+			</Panel> -->
+		</Panel>
+	</Panel>
+</root>

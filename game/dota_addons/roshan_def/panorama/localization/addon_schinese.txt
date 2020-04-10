@@ -1,0 +1,41 @@
+﻿"addon"
+{
+		"addon_game_name"							"肉山保卫战"
+		"DOTA_GameMode_15"	                        "肉山保卫战"
+		"game_mode_15"				                "肉山保卫战"
+		"DOTA_GoodGuys"                             "肉山守护着"
+
+		"imba_gamemode_name_all_pick"                                                       "选择难度"
+
+		"imba_gamemode_settings_lock_options"                                               "炮灰"
+		"imba_gamemode_settings_lock_options1"                                               "菜鸟"
+		"imba_gamemode_settings_lock_options2"                                               "老兵"
+		"imba_gamemode_settings_lock_options3"                                               "炼狱"
+
+		"imba_gamemode_settings_lock_options_tooltip"                                       "敌方单位无加成，前哨不出兵. ."
+		"imba_gamemode_settings_lock_options_tooltip1"                                       "敌方单位 (生命, 攻击力, 护甲) +50%. 前哨出兵 ."
+		"imba_gamemode_settings_lock_options_tooltip2"                                       "敌方单位 (生命, 攻击力, 护甲) +100%. 前哨出兵 ."
+		"imba_gamemode_settings_lock_options_tooltip3"                                       "敌方单位 (生命, 攻击力, 护甲) +200%. 前哨出兵 ."
+
+		"GLOBAL_RANKING"                                               	"玩家排名"
+		"current_season"                                               	"当前赛季"
+		"all_time"                                               	"无尽赛季"
+		"top_10"                                               		"TOP 10"
+		"my_position"                                               	"我的位置"
+		"leaderboards_speedrun"                                         "竞速排名"
+		"only_solo_mode"                                               	"仅限单人"
+		"standart_map"                                               	"标准"
+		"turbo_map"                                               	"快速"
+		"game_time"                                               	"时间"
+		"rank"                                               		"排名"
+		"player"                                               		"玩家"
+		"GLOBAL_RANKING_SPEEDRUN"                                   "单人竞速排名"
+		
+		"roshdef_game_info_text1"					"<span class='gold'>保卫肉山!</span>"
+		"roshdef_game_info_text2"					"<span class='gold'>伐木累！</span><br>中立生物 60(30)秒复活.<br>中立 bosses  300(150) 复活."
+		"roshdef_game_info_text3"					"击杀中立boss 可以释放  <br><span class='gold'>少量单位</span>, 他会去兵线帮忙!"
+		"roshdef_game_info_text4"					"每 10 <span class='gold'>*</span> 分钟, 兵线会出现 boss!<br><span class='gold'>* 快速模式为5分钟</span>"
+		"roshdef_game_info_text5"					"在中立boss那里, 会刷新更强大的boss.<br>三级 boss 掉落 <span class='gold'>唯一特殊物品</span> !"
+		"roshdef_game_info_text6"					"摧毁黑暗基地后, 最终  <br><span class='gold'>有特殊技能</span> 的boss会出现!"
+
+}
