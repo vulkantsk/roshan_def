@@ -24,11 +24,12 @@ function ArraySound( sound ) {
 }
 
 function ToggleSound() {
-	soundState = !soundState
-
-	$( "#SoundState" ).text = soundState ? "On" : "Off"
-
-	GameEvents.SendCustomGameEventToServer( "set_sound_state", { state: soundState } )
+//	$.Msg( "111" )
+	let music_btn = $('#MusicToggleContainer')
+	music_btn.ToggleClass('off')
+	GameEvents.SendCustomGameEventToServer( "set_sound_state", {  
+		state:  !music_btn.BHasClass('off'),
+	});
 }
 
 GameEvents.Subscribe( "emit_sound", EmitSound )

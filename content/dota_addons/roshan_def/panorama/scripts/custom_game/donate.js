@@ -121,7 +121,15 @@ function UploadDonatePanel(){
 		})
 	})
 }  
-     
+
+function MusicToggle(){
+	let music_btn = $('#MusicToggleContainer')
+	music_btn.ToggleClass('off')
+	GameEvents.SendCustomGameEventToServer( "set_sound_state", {  
+		state:  !music_btn.BHasClass('off'),
+	});
+}
+
 ( function () {
 	// GameEvents.SendCustomGameEventToServer( "donate_player_create", { id: Players.GetLocalPlayer() } );
 	// CustomNetTables.SubscribeNetTableListener( "donate", DonatePanelUpdate )

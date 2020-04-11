@@ -1,11 +1,8 @@
 function PlaySound( keys )
 	local sound = keys.sound
-	EmitGlobalSound(sound)
+	Sounds:CreateGlobalSound( sound )
 end
 
-function SoundStop( keys )
-	SendToConsole("stopsound")
-end
 
 
 

@@ -2,21 +2,13 @@
 	<scripts>
 		<include src="file://{resources}/scripts/custom_game/topbar.js" />
 		<include src="file://{resources}/scripts/custom_game/donate.js" />
+		<include src="file://{resources}/scripts/custom_game/sounds.js" />
 	</scripts>
 
 	<styles>
 		<include src="file://{resources}/styles/custom_game/donate.css" />
 	</styles>
 	<Panel class="Hud" hittest="false"> 
-<!-- 		<Panel id="BossTimerContainer" >
-			<Panel class="TeamBackground">
-					<Panel class="TopBarBackground"/>
-			</Panel>
-			<Panel id="ContentBossTimer" >
-				<Label id="TimerLabel" text="00:00" />
-				<Panel id="ImgRoshan" />
-			</Panel>
-		</Panel> -->
 		<Panel id="DonateContainer" hittest="false" >
 			<Panel id="DonatePanel">
 				<Panel class="DonateInfoPanel">
@@ -38,5 +30,8 @@
 			<Panel id="Arrow" />
 <!--			<Label id="DonateToggleButtonText" text="#donate_button_text" /> -->
 		</Button>
+		<Panel id="MusicToggleContainer" onactivate="ToggleSound()" onmouseover="UIShowTextTooltipStyled( music_toggle, ShortTextTooltip )" onmouseout="UIHideTextTooltip()" >
+			<Button id="BtnMusicToggle" />
+		</Panel>
 	</Panel>
 </root>

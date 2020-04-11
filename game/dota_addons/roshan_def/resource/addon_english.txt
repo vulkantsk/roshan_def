@@ -193,7 +193,7 @@
 				"npc_ogre_support"	"Ogre Spellcaster"
 
 //Troll_Warlorld
-		"npc_dota_hero_troll_warlord"	"Troll Warlord"
+		"npc_dota_hero_troll_warlord"	"Troll Warlord(IMBA)"
 
 		"DOTA_Tooltip_ability_inherit_troll_buff"									"Warlord buff"
 		"DOTA_Tooltip_ability_inherit_troll_buff_Description"						"The greatest commander of the Troll army. He is able to instill fear in opponents and inspire soldiers to fight to their last breath!"
@@ -312,7 +312,7 @@
 		"DOTA_Tooltip_ability_tiny_rage_duration"							"DURATION: "
 
 //Jakiro
-		"npc_dota_hero_jakiro"	"Jakiro(IMBA)"
+		"npc_dota_hero_jakiro"	"Jakiro"
 
 		"DOTA_Tooltip_ability_inherit_jakiro_buff"									"Jakiro buff"
 		"DOTA_Tooltip_ability_inherit_jakiro_buff_Description"						"The younger brother of the Supreme Dragon. Jakiro inspires all dragons with his royal blood!"

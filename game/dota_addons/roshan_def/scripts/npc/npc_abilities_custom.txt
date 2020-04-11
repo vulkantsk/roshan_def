@@ -4441,8 +4441,8 @@
 		"01"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"bonus_damage"			"10 20 30 40 55 70 85"
-//			"bonus_damage"			"30 60 90 120 165 210 255"
+//			"bonus_damage"			"10 20 30 40 55 70 85"
+			"bonus_damage"			"30 60 90 120 165 210 255"
 		}
 		"02"
 		{
@@ -4556,13 +4556,14 @@
 
 	// Time		
 	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCooldown"				"3.0"
-//	"AbilityCooldown"				"0.0"
+//	"AbilityCooldown"				"3.0"
+	"AbilityCooldown"				"0.0"
 
 	// Cost
 	//-------------------------------------------------------------------------------------------------------------
 	"AbilityManaCost"				"25 30 35 40 50 60 70"
  	"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
+	"AbilityCastGestureSlot"		"DEFAULT"
 
 
 	// Special
@@ -4572,7 +4573,8 @@
 		"01"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"damage"					"50 75 100 125 175 225 275"
+//			"damage"					"50 75 100 125 175 225 275"
+			"damage"					"150 225 300 375 525 675 825"
 		}
 		"02"
 		{
@@ -4734,8 +4736,8 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"max_stacks"			"8"
-//				"max_stacks"			"50"
+//				"max_stacks"			"10"
+				"max_stacks"			"50"
 				"LinkedSpecialBonus"		"special_bonus_unique_troll_warlord_2"
 			}
 		}
@@ -4767,8 +4769,8 @@
 
 	// Time		
 	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCooldown"				"45"
-//	"AbilityCooldown"				"20"
+//	"AbilityCooldown"				"45"
+	"AbilityCooldown"				"20"
 
 	// Cost
 	//-------------------------------------------------------------------------------------------------------------
@@ -4787,7 +4789,7 @@
 		"02"
 		{
 			"var_type"			"FIELD_FLOAT"
-			"attack_const"		"1.0 0.9 0.8 0.7 0.6"
+			"attack_const"		"0.9 0.8 0.7 0.6 0.5"
 		}
 		"03"
 		{
@@ -7227,8 +7229,8 @@
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-//				"burn_damage"			"100 200 300 200 275 350 300 "
-				"burn_damage"			"300 600 900 600 825 1050 900 "
+				"burn_damage"			"100 200 300 200 275 350 300 "
+//				"burn_damage"			"300 600 900 600 825 1050 900 "
 				"LinkedSpecialBonus"	"special_bonus_unique_jakiro_2"
 			}
 			"07"
@@ -7338,8 +7340,8 @@
 
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
-//		"AbilityCooldown"				"12 10 8 6 4 2 1"
-		"AbilityCooldown"				"6 5 4 3 2 1 0"
+		"AbilityCooldown"				"12 10 8 6 4 2 1"
+//		"AbilityCooldown"				"6 5 4 3 2 1 0"
 		"AbilityDuration"				"4"
 		"AbilityCastRange"				"600"
 		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
@@ -7366,8 +7368,8 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-//				"damage"				"15 25 35 45 65 85 110"
-				"damage"				"40 80 120 160 180 200 220"
+				"damage"				"15 25 35 45 65 85 110"
+//				"damage"				"40 80 120 160 180 200 220"
 			}
 		}		
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
@@ -7403,8 +7405,8 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-//		"AbilityCooldown"				"80"
-		"AbilityCooldown"				"60 55 40 35 30"
+		"AbilityCooldown"				"80"
+//		"AbilityCooldown"				"60 55 40 35 30"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -7442,8 +7444,8 @@
 			"06"
 			{
 				"var_type"					"FIELD_INTEGER"
-//				"damage_scepter"			"300 450 600 900 1200"
-				"damage_scepter"			"700 1100 1500 2200 2900"
+				"damage_scepter"			"300 450 600 900 1200"
+//				"damage_scepter"			"700 1100 1500 2200 2900"
 				"RequiresScepter"		"1"
 			}
 			"07"

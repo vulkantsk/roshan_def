@@ -198,7 +198,7 @@
 	width: 280px;
 	height: 60px;
 }
-
+#MusicToggleContainer,
 #DonateToggleButton {
 	width: 60px;
 	height: 60px;
@@ -220,6 +220,11 @@
 	margin-bottom: 5px;
 }
 
+#MusicToggleContainer{
+	margin-top: 200px;
+}
+
+#BtnMusicToggle,
 #Arrow{
 	width: 100%;
 	height: 100%;
@@ -234,6 +239,16 @@
 	vertical-align: center;
 }
 
+#MusicToggleContainer.off #BtnMusicToggle{
+	background-image: url('file://{resources}/images/custom_game/music_off.png');
+}
+
+#BtnMusicToggle{
+	background-image: url('file://{resources}/images/custom_game/music_on.png');
+	transition-duration: .3s;
+	transition-property: background-image;
+}
+#MusicToggleContainer:Hover,
 #DonateToggleButton:Hover {
 	brightness:1.6;
 	transform: none;
@@ -271,4 +286,5 @@
 	margin-left: 20px;
 	align:center center;
 }
+
 

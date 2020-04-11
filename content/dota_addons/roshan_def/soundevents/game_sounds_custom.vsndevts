@@ -2882,3 +2882,108 @@
 		}
 	}
 }
+
+"den_pobedi" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"			{		"value"		"sounds/boss_theme/den_pobedi.vsnd"}
+					"volume"                {   	"value"     "1"}
+					"pitch"                 {       "value"     "1"}
+				}
+			}
+		}
+	}
+}
+
+"krutoe_pike" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"			{		"value"		"sounds/boss_theme/krutoe_pike.vsnd"}
+					"volume"                {   	"value"     "1"}
+					"pitch"                 {       "value"     "1"}
+				}
+			}
+		}
+	}
+}
+
+"zoldik" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"			{		"value"		"sounds/boss_theme/zoldik.vsnd"}
+					"volume"                {   	"value"     "1"}
+					"pitch"                 {       "value"     "1"}
+				}
+			}
+		}
+	}
+}
+
+"oingo_boingo_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"			{		"value"		"sounds/boss_theme/oingo_boingo_1.vsnd"}
+					"volume"                {   	"value"     "1"}
+					"pitch"                 {       "value"     "1"}
+				}
+			}
+		}
+	}
+}
+
+"oingo_boingo_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"			{		"value"		"sounds/boss_theme/oingo_boingo_2.vsnd"}
+					"volume"                {   	"value"     "1"}
+					"pitch"                 {       "value"     "1"}
+				}
+			}
+		}
+	}
+}

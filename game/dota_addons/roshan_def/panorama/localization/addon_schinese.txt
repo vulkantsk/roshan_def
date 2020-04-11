@@ -16,6 +16,7 @@
 		"imba_gamemode_settings_lock_options_tooltip1"                                       "敌方单位 (生命, 攻击力, 护甲) +50%. 前哨出兵 ."
 		"imba_gamemode_settings_lock_options_tooltip2"                                       "敌方单位 (生命, 攻击力, 护甲) +100%. 前哨出兵 ."
 		"imba_gamemode_settings_lock_options_tooltip3"                                       "敌方单位 (生命, 攻击力, 护甲) +200%. 前哨出兵 ."
+		"imba_gamemode_settings_speedrun"                                      				"激活此设置后，游戏结束时您将被包括在速度等级中!"
 
 		"GLOBAL_RANKING"                                               	"玩家排名"
 		"current_season"                                               	"当前赛季"
@@ -30,6 +31,7 @@
 		"rank"                                               		"排名"
 		"player"                                               		"玩家"
 		"GLOBAL_RANKING_SPEEDRUN"                                   "单人竞速排名"
+		"music_toggle"                                              "打开/关闭游戏中的音乐"
 		
 		"roshdef_game_info_text1"					"<span class='gold'>保卫肉山!</span>"
 		"roshdef_game_info_text2"					"<span class='gold'>伐木累！</span><br>中立生物 60(30)秒复活.<br>中立 bosses  300(150) 复活."

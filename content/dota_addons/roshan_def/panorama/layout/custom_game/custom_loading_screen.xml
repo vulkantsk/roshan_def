@@ -33,7 +33,7 @@
 					</Button>
 					 
 				</Panel>
-				<Panel id="ToggleButtonContainer" onmouseover="UIShowTextTooltipStyled( 'При активации данной настройки, по окончанию игры вы попадёте в рейтинг спидранеров', ShortTextTooltip )" onmouseout="UIHideTextTooltip()" onactivate="OnPickingDonate()" >
+				<Panel id="ToggleButtonContainer" onmouseover="UIShowTextTooltipStyled( imba_gamemode_settings_speedrun, ShortTextTooltip )" onmouseout="UIHideTextTooltip()" onactivate="OnPickingDonate()" >
 					<Label id="ToggleInfo" text="Speedrun"/>
 					<Panel id="ToggleButton" >
 						<Button id="ToggleButtonBox" />

@@ -9,20 +9,20 @@ boss_music = {
 boss_list = {
 --	[0]= {{boss_name="boss1", units={"npc_dota_boss"}, reward={100}, music=nil, marathon=false},
 --{boss_name="boss2", units={"npc_dota_boss2","npc_dota_boss02","npc_dota_boss02"}, reward={100,50,50}, music="boss_theme2", marathon=true, marathon_mult=100}},
-[1]= {{boss_name="abomination", units={"npc_dota_abomination_boss"}, reward={500}, music=nil, marathon=true, marathon_mult=400},
+[1]= {{boss_name="abomination", units={"npc_dota_abomination_boss"}, reward={500}, music="akvalazi", marathon=true, marathon_mult=400},
 {boss_name="evil_treant", units={"npc_dota_evil_treant"}, reward={500}, music=nil, marathon=true, marathon_mult=400}},
 [2]= {{boss_name="fire_golem", units={"npc_dota_golem_boss"}, reward={1000}, music=nil, marathon=true, marathon_mult=300},
 {boss_name="venom_dragon", units={"npc_dota_venom_dragon"}, reward={1000}, music=nil, marathon=true, marathon_mult=300}},
 [3]= {{boss_name="witch", units={"npc_dota_dead_witch","forest_dota_dead_ghost","forest_dota_dead_ghost"}, reward={1500}, music=nil, marathon=true, marathon_mult=200},
 {boss_name="elite_squad", units={"npc_dota_dire_commander","npc_dota_dire_siege","npc_dota_dire_soldier","npc_dota_dire_soldier","npc_dota_dire_mage","npc_dota_dire_mage"}, reward={750,750}, music=nil, marathon=true, marathon_mult=200}},
-[4]= {{boss_name="necronomicon", units={"npc_dota_necronomicon_warrior_boss","npc_dota_necronomicon_archer_boss"}, reward={1000,1000}, music=nil, marathon=true, marathon_mult=150}},
+[4]= {{boss_name="necronomicon", units={"npc_dota_necronomicon_warrior_boss","npc_dota_necronomicon_archer_boss"}, reward={1000,1000}, music="oingo_boingo_1", marathon=true, marathon_mult=150}},
 [5]= {{boss_name="nyx", units={"npc_dota_nyx_boss"}, reward={3000}, music=nil, marathon=true, marathon_mult=100}},
 [6]= {{boss_name="doom", units={"npc_dota_doom_boss","npc_dota_doom_minion","npc_dota_doom_minion","npc_dota_doom_minion"}, reward={4000}, music=nil, marathon=true, marathon_mult=75}},
 [7]= {{boss_name="seeker", units={"npc_dota_bloodseeker_boss"}, reward={5000}, music=nil, marathon=true, marathon_mult=50}},
 [8]= {{boss_name="sans", units={"npc_dota_sans"}, reward={7500}, music="sans_theme", marathon=nil, marathon_mult=200}},
 [9]= {{boss_name="spectre", units={"npc_phantasm_1"}, reward={10000}, music=nil, marathon=nil, marathon_mult=200}},
 [10]= {{boss_name="cursed_warriors", units={"npc_cursed_warrior","npc_cursed_warrior","npc_cursed_warrior","npc_cursed_warrior","npc_cursed_warrior","npc_cursed_warrior","npc_cursed_warrior","npc_cursed_warrior","npc_cursed_warrior","npc_cursed_warrior","npc_cursed_warrior","npc_cursed_warrior"}, reward={10000}, music="Sandopolis", marathon=true, marathon_mult=200}},
-[11]= {{boss_name="plague_wagon", units={"npc_dota_plague_wagon"}, reward={10000}, music=nil, marathon=nil, marathon_mult=200}},
+[11]= {{boss_name="plague_wagon", units={"npc_dota_plague_wagon"}, reward={10000}, music="krutoe_pike", marathon=nil, marathon_mult=200}},
 }
 
 function BossSpawner:InitGameMode()
@@ -79,32 +79,44 @@ function BossSpawner:LineBossSpawner()
 
 			if music then
 				if boss_music.current_music then
---					Sound:RemoveGlobalSound(boss_music.current_music)
-					print("current_music = "..boss_music.current_music)
+					Sound:RemoveGlobalLoopingSound(boss_music.current_music)
+--					print("current_music = "..boss_music.current_music)
 				end
 				print("current_music = "..music)
 				boss_music.current_music = music
 				boss_music[music] = 0
-				Sounds:CreateGlobalSound(music)
+				Sounds:CreateGlobalLoopingSound(music)
 			else
 				EmitGlobalSound("roshan_def.boss")
 			end
 
 			GameRules:SendCustomMessage("#Game_notification_boss_spawn_"..boss_name,0,0)
 
-			for index, unit_name in pairs (units) do		 
-				local unit = CreateUnitByName( unit_name , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
-				unit:SetInitialGoalEntity( waypoint )
-
-				local unit_reward = reward[index]
-				if unit_reward then
-					unit.reward = unit_reward
+			for key, value in pairs (units) do
+				if type(key) == "string" then
+					unit_count = value
+					unit_name = key
+					unit_reward = reward[key]
+				else
+					unit_count =1
+					unit_name = value
+					unit_reward = reward[key]
 				end
 
-				if music then
-					boss_music[music] = boss_music[music] + 1
-					unit.music = music
-				end 
+				for i=1, unit_count do
+					local unit = CreateUnitByName( unit_name , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
+					unit:SetInitialGoalEntity( waypoint )
+
+					local unit_reward = reward[index]
+					if unit_reward then
+						unit.reward = unit_reward
+					end
+
+					if music then
+						boss_music[music] = boss_music[music] + 1
+						unit.music = music
+					end 
+				end
 			end 
 	     	UpdateNettables()
 	     	wave_number = wave_number + 1
@@ -165,12 +177,13 @@ function BossSpawner:InitBossMarathon()
 	end
 
 	if boss_music.current_music then
---					Soundы:Stop(boss_music.current_music)
-		print("current_music = "..boss_music.current_music)
+		Sounds:RemoveGlobalLoopingSound(boss_music.current_music)
+--		print("current_music = "..boss_music.current_music)
 	end
-	boss_music.current_music = "SatanBal"
+	boss_music.current_music = "satan_bal"
 	GameRules:SendCustomMessage("#Game_notification_infinite_maraphon",0,0)
---				Sounds:CreateGlobalSound(boss_music.current_music)
+	Sounds:CreateGlobalLoopingSound(boss_music.current_music)
+
 	local point = Entities:FindByName( nil, "dmpoint2"):GetAbsOrigin() 
 	local waypoint = Entities:FindByName( nil, "d_waypoint1") 
 	local spawn_interval = 60
@@ -217,7 +230,7 @@ function BossSpawner:OnEntityKilled(keys)
 		local music = unit.music
 		boss_music[music] = boss_music[music] - 1
 		if boss_music[music] == 0 and boss_music.current_music == music then
-			Sounds:RemoveGlobalSound(music)
+			Sounds:RemoveGlobalLoopingSound(music)
 		end
 	end
 end

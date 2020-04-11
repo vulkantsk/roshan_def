@@ -16,6 +16,7 @@
 		"imba_gamemode_settings_lock_options_tooltip1"                                       "Enemies have bonus (health, attack, armor) +50%. Alliance forpost attacks ."
 		"imba_gamemode_settings_lock_options_tooltip2"                                       "Enemies have bonus (health, attack, armor) +100%. Alliance forpost attacks ."
 		"imba_gamemode_settings_lock_options_tooltip3"                                       "Enemies have bonus (health, attack, armor) +200%. Alliance forpost attacks ."
+		"imba_gamemode_settings_speedrun"                                      				"When this setting is activated, at the end of the game you will be included in the speedrun rating!"
 
 		"GLOBAL_RANKING"                                               	"Player ranking"
 		"current_season"                                               	"Current season"
@@ -30,6 +31,7 @@
 		"rank"                                               		"Rank"
 		"player"                                               		"Player"
 		"GLOBAL_RANKING_SPEEDRUN"                                   "Solo speedrun ranking"
+		"music_toggle"                                              "Turns on / off music in the game"
 		
 		"roshdef_game_info_text1"					"<span class='gold'>Protect Roshan!</span>"
 		"roshdef_game_info_text2"					"<span class='gold'>Farm and became more powerful!</span><br>Neutral units respawn 60(30) seconds.<br>Neutral bosses respawn 300(150) seconds."
