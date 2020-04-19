@@ -29,6 +29,7 @@ modifier_antares_dragon_form = class({
     DeclareFunctions        = function(self) return 
         {           
             MODIFIER_EVENT_ON_ATTACK_LANDED,
+            MODIFIER_PROPERTY_TRANSLATE_ATTACK_SOUND,
             MODIFIER_PROPERTY_MODEL_SCALE,
             MODIFIER_PROPERTY_ATTACK_RANGE_BONUS,
             MODIFIER_PROPERTY_TOTALDAMAGEOUTGOING_PERCENTAGE,
@@ -106,6 +107,10 @@ function modifier_antares_dragon_form:OnIntervalThink()
 		
 		AddFOWViewer(team, point, 1300, 0.11, false)
 	end
+end
+
+function modifier_antares_dragon_form:GetAttackSound()
+	return "Hero_DragonKnight.ElderDragonShoot1.Attack"
 end
 
 function modifier_antares_dragon_form:GetModifierAttackRangeBonus()

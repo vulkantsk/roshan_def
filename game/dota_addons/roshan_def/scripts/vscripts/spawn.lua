@@ -240,7 +240,7 @@ end
 
 function Spawn:On_Difficult_Chosen( event )
     local difficulty = event.difficulty
-    if GameRules.GameRules.DIFFICULTY == 0 then
+    if GameRules.DIFFICULTY == 0 then
 	    GameRules.DIFFICULTY = difficulty
 
 		CustomNetTables:SetTableValue('top_bar', 'Difficuilt', {
@@ -336,7 +336,7 @@ function Spawn:OnGameRulesStateChange()
 		    end			
 			Spawn:SetWDToHost()			
 		elseif newState == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
-			EmitGlobalSound("narod_pognali")
+			Sounds:CreateGlobalSound("narod_pognali")
 			if GetMapName()=="roshdef_adventure" then
 --				Spawn:NeutralSpawnerEvent()
 			else
@@ -446,7 +446,7 @@ function Spawn:OnEntityKilled( keys )
 		self.DireSpawner= 1
  		chooseMode = true
 		Spawn:PrintChoseModeMessage()
-		EmitGlobalSound("wk_reincarnate")--global sound wk spawn
+		Sounds:CreateGlobalSound("wk_reincarnate")--global sound wk spawn
 		if GetMapName() ~= "roshdef_adventure" then
 			Spawn:DireSpawner2()		
 		end
@@ -463,7 +463,7 @@ function Spawn:OnEntityKilled( keys )
 		SendToConsole("stopsound")	
 		local point1 = killedUnit:GetAbsOrigin() 
 		local waypoint = Entities:FindByName( nil, "d_waypoint1") 
-		Timers:CreateTimer(1, function() EmitGlobalSound("roshan_def.jojo") end)		
+		Timers:CreateTimer(1, function() Sounds:CreateGlobalSound("roshan_def.jojo") end)		
 		
 		Spawn:PrintFalseEndgameMessage()
 		Timers:CreateTimer(45, function()  
@@ -472,7 +472,7 @@ function Spawn:OnEntityKilled( keys )
 			if GameRules.ZombieMode == 1 then name = "npc_dota_zombie_lord"
 			elseif GameRules.ChaosMode == 1 then name = "npc_dota_chaos_lord"
 			elseif GameRules.DemonMode == 1 then name = "npc_dota_demon_lord"
-			EmitGlobalSound("terrorblade_spawn")
+			Sounds:CreateGlobalSound("terrorblade_spawn")
 			elseif GameRules.LichMode == 1 then name = "npc_dota_lich_lord"
 			elseif GameRules.NecroMode == 1 then name = "npc_dota_necro_lord"
 			elseif GameRules.NecroMode == 0 then name = "npc_dota_necro_lord"
@@ -487,22 +487,22 @@ function Spawn:OnEntityKilled( keys )
 	end
 
 	if name == "npc_dota_papich" then
-		EmitGlobalSound("Music_Frostivus.WK_killed")
+		Sounds:CreateGlobalSound("Music_Frostivus.WK_killed")
 	elseif name=="npc_dota_terrboss" or name=="npc_dota_zombie_lord" or name=="npc_dota_chaos_lord" or name=="npc_dota_demon_lord" or name=="npc_dota_lich_lord" or name=="npc_dota_necro_lord" then 
 		SendToConsole("stopsound")	
-		local sounds = {"portal2","money","lamentoso","stand_proud","sugar_song","funtik_dobrota"}
-		Timers:CreateTimer(1, function() EmitGlobalSound(sounds[RandomInt(1, #sounds)]) end)
+		local sounds = {"portal2","money","lamentoso","stand_proud","sugar_song","funtik_dobrota","den_pobedi"}
+		Timers:CreateTimer(1, function() Sounds:CreateGlobalSound(sounds[RandomInt(1, #sounds)]) end)
 		GameRules.EndGame = 1
 		Spawn:PrintEndgameMessage1()
 	elseif name=="npc_dota_roshan1" then
 		if GameRules.MegaMode == 1 then
 			local sounds = {"padal_sneg"}
-			Timers:CreateTimer(1, function() EmitGlobalSound(sounds[RandomInt(1, #sounds)]) end)
+			Timers:CreateTimer(1, function() Sounds:CreateGlobalSound(sounds[RandomInt(1, #sounds)]) end)
 			Spawn:PrintEndgameMessage3()
 		else
 			SendToConsole("stopsound")	
 			local sounds = {"lose_music_1","lose_music_2","lose_music_3"}
-			Timers:CreateTimer(1, function() EmitGlobalSound(sounds[RandomInt(1, #sounds)]) end)
+			Timers:CreateTimer(1, function() Sounds:CreateGlobalSound(sounds[RandomInt(1, #sounds)]) end)
 			Spawn:PrintEndgameMessage2()	
 		end
 		
@@ -670,7 +670,7 @@ function KillLoot( item, drop )
 	ParticleManager:SetParticleControl( nFXIndex, 0, drop:GetOrigin() )
 	ParticleManager:SetParticleControl( nFXIndex, 1, Vector( 35, 35, 25 ) )
 	ParticleManager:ReleaseParticleIndex( nFXIndex )
---	EmitGlobalSound("Item.PickUpWorld")
+--	Sounds:CreateGlobalSound("Item.PickUpWorld")
 
 	UTIL_Remove( item )
 	UTIL_Remove( drop )
@@ -733,7 +733,7 @@ function Spawn:ZombieTrigger(killedUnit)
 	end
 end
 function Spawn:PrintEndgameMessage1()
-	EmitGlobalSound("announcer_dlc_glados_ann_glados_gamemode_17")
+	Sounds:CreateGlobalSound("announcer_dlc_glados_ann_glados_gamemode_17")
 	
 	Timers:CreateTimer(5, function() GameRules:SendCustomMessage("<font color='#DBA901'><br>Game will end in 85 seconds</font>",0,0) end)
 	Timers:CreateTimer(10, function() GameRules:SendCustomMessage("#Game_notification_end_game_message",0,0) end)
@@ -826,7 +826,7 @@ function Spawn:ZombieMode()
 
 	GameRules:SendCustomMessage("#Game_notification_zombie_mode_message1",0,0)
 	GameRules:SendCustomMessage("#Game_notification_zombie_mode_message2",0,0)
-	EmitGlobalSound("undying_undying_big_attack_10")
+	Sounds:CreateGlobalSound("undying_undying_big_attack_10")
 	GameRules.ZombieMode = 1
 	
 end
@@ -835,7 +835,7 @@ function Spawn:ChaosMode()
 
 	GameRules:SendCustomMessage("#Game_notification_chaos_mode_message1",0,0)
 	GameRules:SendCustomMessage("#Game_notification_chaos_mode_message2",0,0)
-	EmitGlobalSound("nevermore_nev_arc_level_07")
+	Sounds:CreateGlobalSound("nevermore_nev_arc_level_07")
 	GameRules.ChaosMode = 1
 	
 end
@@ -844,7 +844,7 @@ function Spawn:DemonMode()
 
 	GameRules:SendCustomMessage("#Game_notification_demon_mode_message1",0,0)
 	GameRules:SendCustomMessage("#Game_notification_demon_mode_message2",0,0)
-	EmitGlobalSound("terrorblade_terr_levelup_06")	
+	Sounds:CreateGlobalSound("terrorblade_terr_levelup_06")	
 	GameRules.DemonMode = 1
 	
 end
@@ -853,7 +853,7 @@ function Spawn:LichMode()
 
 	GameRules:SendCustomMessage("#Game_notification_lich_mode_message1",0,0)
 	GameRules:SendCustomMessage("#Game_notification_lich_mode_message2",0,0)
-	EmitGlobalSound("lich_lich_ability_chain_06")
+	Sounds:CreateGlobalSound("lich_lich_ability_chain_06")
 	GameRules.LichMode = 1
 	
 end
@@ -862,7 +862,7 @@ function Spawn:NecroMode()
 
 	GameRules:SendCustomMessage("#Game_notification_necro_mode_message1",0,0)
 	GameRules:SendCustomMessage("#Game_notification_necro_mode_message2",0,0)
-	EmitGlobalSound("necrolyte_necr_spawn_03")
+	Sounds:CreateGlobalSound("necrolyte_necr_spawn_03")
 	GameRules.NecroMode = 1
 	
 end
@@ -1695,21 +1695,21 @@ function Spawn:DireBossSpawner() -- Функция начнет выполнят
 	  UpdateNettables(10)
       Timers:CreateTimer(10, function()  
          Timers:CreateTimer(spawn_interval, function()
-			EmitGlobalSound("roshan_def.boss")
+			Sounds:CreateGlobalSound("roshan_def.boss")
 			GameRules:SendCustomMessage("#Game_notification_boss_spawn_abomination",0,0)		 
 			local unit = CreateUnitByName( "npc_dota_abomination_boss" , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
 			unit:SetInitialGoalEntity( waypoint ) -- Посылаем мобов на наш way1, координаты которого мы записали в переменную 'waypoint'
          	UpdateNettables()
          end)
          Timers:CreateTimer(spawn_interval*2, function()
-			EmitGlobalSound("roshan_def.boss")
+			Sounds:CreateGlobalSound("roshan_def.boss")
 			GameRules:SendCustomMessage("#Game_notification_boss_spawn_fire_golem",0,0)		 
 			local unit = CreateUnitByName( "npc_dota_golem_boss" , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
 			unit:SetInitialGoalEntity( waypoint ) -- Посылаем мобов на наш way1, координаты которого мы записали в переменную 'waypoint'
          	UpdateNettables()
          end)
          Timers:CreateTimer(spawn_interval*3, function()
-			EmitGlobalSound("roshan_def.boss")
+			Sounds:CreateGlobalSound("roshan_def.boss")
 			GameRules:SendCustomMessage("#Game_notification_boss_spawn_witch",0,0)		 
 			local unit = CreateUnitByName( "npc_dota_dead_witch" , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
 			unit:SetInitialGoalEntity( waypoint ) -- Посылаем мобов на наш way1, координаты которого мы записали в переменную 'waypoint'
@@ -1722,7 +1722,7 @@ function Spawn:DireBossSpawner() -- Функция начнет выполнят
 			UpdateNettables()
 		end)
          Timers:CreateTimer(spawn_interval*4, function()
-			EmitGlobalSound("roshan_def.boss")
+			Sounds:CreateGlobalSound("roshan_def.boss")
 			GameRules:SendCustomMessage("#Game_notification_boss_spawn_necronomicon",0,0)		 
 			local unit = CreateUnitByName( "npc_dota_necronomicon_warrior_boss" , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
 			unit:SetInitialGoalEntity( waypoint ) -- Посылаем мобов на наш way1, координаты которого мы записали в переменную 'waypoint'
@@ -1732,14 +1732,14 @@ function Spawn:DireBossSpawner() -- Функция начнет выполнят
 			UpdateNettables()
         end)
          Timers:CreateTimer(spawn_interval*5, function()
-			EmitGlobalSound("roshan_def.boss")
+			Sounds:CreateGlobalSound("roshan_def.boss")
 			GameRules:SendCustomMessage("#Game_notification_boss_spawn_nyx",0,0)		 
 			local unit = CreateUnitByName( "npc_dota_nyx_boss" , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
 			unit:SetInitialGoalEntity( waypoint ) -- Посылаем мобов на наш way1, координаты которого мы записали в переменную 'waypoint'
         	UpdateNettables()
          end)
          Timers:CreateTimer(spawn_interval*6, function()
-			EmitGlobalSound("roshan_def.boss")
+			Sounds:CreateGlobalSound("roshan_def.boss")
 			GameRules:SendCustomMessage("#Game_notification_boss_spawn_doom",0,0)
 		 
 			local unit = CreateUnitByName( "npc_dota_doom_boss" , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
@@ -1756,7 +1756,7 @@ function Spawn:DireBossSpawner() -- Функция начнет выполнят
  			UpdateNettables()
         end)
          Timers:CreateTimer(spawn_interval*7, function()
-			EmitGlobalSound("roshan_def.boss")
+			Sounds:CreateGlobalSound("roshan_def.boss")
 			GameRules:SendCustomMessage("#Game_notification_boss_spawn_seeker",0,0)		 
 			local unit = CreateUnitByName( "npc_dota_bloodseeker_boss" , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
 			unit:SetInitialGoalEntity( waypoint ) -- Посылаем мобов на наш way1, координаты которого мы записали в переменную 'waypoint'
@@ -1764,26 +1764,26 @@ function Spawn:DireBossSpawner() -- Функция начнет выполнят
          end)
          Timers:CreateTimer(spawn_interval*8, function()
          	UpdateNettables()
-		--	EmitGlobalSound("roshan_def.boss")
+		--	Sounds:CreateGlobalSound("roshan_def.boss")
 		--	GameRules:SendCustomMessage("#Game_notification_boss_spawn_never",0,0)		 
 			local unit = CreateUnitByName( "npc_dota_sans" , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
 			unit:SetInitialGoalEntity( waypoint ) -- Посылаем мобов на наш way1, координаты которого мы записали в переменную 'waypoint'
          end)
          Timers:CreateTimer(spawn_interval*9, function()
          	UpdateNettables()
-			EmitGlobalSound("roshan_def.boss")
+			Sounds:CreateGlobalSound("roshan_def.boss")
 			GameRules:SendCustomMessage("#Game_notification_boss_spawn_spectre",0,0)		 
 			local unit = CreateUnitByName( "npc_phantasm_1" , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
 			unit:SetInitialGoalEntity( waypoint ) -- Посылаем мобов на наш way1, координаты которого мы записали в переменную 'waypoint'
          end)
          Timers:CreateTimer(spawn_interval*10, function()
          	UpdateNettables()
-			EmitGlobalSound("roshan_def.boss")
+			Sounds:CreateGlobalSound("roshan_def.boss")
 			GameRules:SendCustomMessage("#Game_notification_boss_spawn_cursed_warriors",0,0)		 
 			GameRules.Number_of_cursed = 12
 			Timers:CreateTimer(1, function()
 				if GameRules.Number_of_cursed ~= 0 then 
-					EmitGlobalSound("Sandopolis")
+					Sounds:CreateGlobalSound("Sandopolis")
 					return 145 -- repeat time
 				end
 			end
@@ -1795,7 +1795,7 @@ function Spawn:DireBossSpawner() -- Функция начнет выполнят
 		 end)
          Timers:CreateTimer(spawn_interval*11, function()
          	UpdateNettables()
-			EmitGlobalSound("roshan_def.boss")
+			Sounds:CreateGlobalSound("roshan_def.boss")
 			GameRules:SendCustomMessage("#Game_notification_boss_spawn_plague_wagon",0,0)		 
 
 			local unit = CreateUnitByName( "npc_dota_plague_wagon" , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
@@ -1810,7 +1810,7 @@ function Spawn:DireBossSpawner() -- Функция начнет выполнят
   
  			Timers:CreateTimer(spawn_interval*12, function()
  			UpdateNettables()
-			EmitGlobalSound("roshan_def.boss")
+			Sounds:CreateGlobalSound("roshan_def.boss")
 			GameRules:SendCustomMessage("#Game_notification_boss_maraphon",0,0)		 
 
 			 Timers:CreateTimer(10, function()
@@ -1902,7 +1902,7 @@ function Spawn:InfiniteMaraphon()
     local waypoint = Entities:FindByName( nil, "d_waypoint1") 
 
 	Timers:CreateTimer(1, function()
-		EmitGlobalSound("SatanBal")
+		Sounds:CreateGlobalSound("SatanBal")
 		return 213 -- repeat time
 	
 	end)
@@ -1910,7 +1910,7 @@ function Spawn:InfiniteMaraphon()
 	Timers:CreateTimer(1, function()GameRules:SendCustomMessage("#Game_notification_infinite_maraphon",0,0)	end)
 
 	Timers:CreateTimer(1, function()
-		EmitGlobalSound("roshan_def.boss")
+		Sounds:CreateGlobalSound("roshan_def.boss")
 		local int = math.random(1,7)
 		UpdateNettables(60 - GameRules.line_boss_interval)
 		

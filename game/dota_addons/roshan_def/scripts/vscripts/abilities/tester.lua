@@ -1,7 +1,7 @@
 ability_test_1 = class({})
 
 function ability_test_1:OnSpellStart()
-	Sounds:CreateGlobalLoopingSound( "satan_bal")
+	BossSpawner:SpawnBoss(6)
 end
 
 ability_test_2 = class({})

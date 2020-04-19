@@ -224,7 +224,7 @@
 		"npc_ogre_support"	"Огр маг"
 
 //Troll_Warlorld
-		"npc_dota_hero_troll_warlord"	"Troll Warlord(IMBA)"
+		"npc_dota_hero_troll_warlord"	"Troll Warlord"
 		"DOTA_Tooltip_ability_inherit_troll_buff"									"Warlord buff"
 		"DOTA_Tooltip_ability_inherit_troll_buff_Description"						"Один из величайших командиров армии троллей, которой способен вселить страх в любого своего противника и воодушевить солдат биться до последней капли крови во что бы то ни стало! "
 		"DOTA_Tooltip_ability_inherit_troll_buff_evasion_bonus"						"Дополнительное уклонение :"
@@ -886,7 +886,7 @@
 
 //Chen
 
-		"npc_dota_hero_chen"			"Айболит"
+		"npc_dota_hero_chen"			"Айболит(IMBA)"
 		
 		"DOTA_Tooltip_ability_inherit_chen_buff"									"Aibolit buff"
 		"DOTA_Tooltip_ability_inherit_chen_buff_Description"						"Загадочный герой, рождённый лишь для помощи своим верным союзникам, ради победы над самым грозным врагом! "
@@ -1164,9 +1164,9 @@
 
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom"	"Unstable Concoction"
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Description"	"Герой начинает встряхивать колбу с гремучей смесью, которую можно бросить во вражеского героя. При попадании колба взорвётся, оглушив всех противников в радиусе взрыва и нанеся им урон. Чем дольше смесь встряхивалась, тем больше урона она нанесёт и тем дольше будет оглушение. Смесь достигает максимального эффекта после 5 секунд, однако если не выбросить её через 5,5 секунды, она взорвётся в руках героя, подействовав и на него самого."
-		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_max_stun"	"МАКС. ОГЛУШЕНИЕ:"
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_stun"	"МАКС. ОГЛУШЕНИЕ:"
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_radius"	"РАДИУС ВЗРЫВА:"
-		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_max_damage"	"МАКС. УРОН:"
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_damage"	"МАКС. УРОН:"
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Lore"	"Хоть превращение горы в золото и потерпело провал, благодаря ему была получена летучая микстура с разрушительным потенциалом."
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note0"	"Встряхивая смесь, герой может передвигаться и действовать как обычно."
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note1"	"Таймер над головой героя показывает время, оставшееся до взрыва. Противники видят этот таймер."
@@ -2794,6 +2794,51 @@
 		"npc_dota_rasta_nether_ward"		"Nether ward"
 		"npc_dota_rasta_death_ward"			"Death ward"
 
+//Axe
+		"npc_dota_hero_axe"		"Warrior"
+
+		"DOTA_Tooltip_ability_axe_hot_blood"							"Hot blood"
+		"DOTA_Tooltip_ability_axe_hot_blood_Description"				"Если здоровье героя становится критическим, то увеличивается регенерация !"
+		"DOTA_Tooltip_ability_axe_hot_blood_required_hp"				"%ПОРОГ ЗДОРОВЬЯ:"
+		"DOTA_Tooltip_ability_axe_hot_blood_bonus_regen"				"РЕГЕНЕРАЦИЯ:"
+		"DOTA_Tooltip_ability_axe_hot_blood_bonus_regen_pct"			"%РЕГЕНЕРАЦИЯ:"
+
+		"DOTA_Tooltip_ability_axe_culling_blade_custom"							"Culling blade"
+		"DOTA_Tooltip_ability_axe_culling_blade_custom_Description"				"Сокрушающий удар, способный мгновенно убить слабых врагов. \n<font color='#ff9966'><em> Если добить данной способностью босса, то герой получает дополнительный урон навсегда ! </em> </font>"
+		"DOTA_Tooltip_ability_axe_culling_blade_custom_radius"				"РАДИУС:"
+		"DOTA_Tooltip_ability_axe_culling_blade_custom_damage"				"УРОН:"
+		"DOTA_Tooltip_ability_axe_culling_blade_custom_bonus_damage"		"БОНУС УРОНА:"
+		"DOTA_Tooltip_modifier_axe_culling_blade_custom"							"Bonus damage"
+		"DOTA_Tooltip_modifier_axe_culling_blade_custom_Description"				"Бонус урона за убийство боссов!"
+
+		"DOTA_Tooltip_ability_axe_anger_roar"						"Anger roar"
+		"DOTA_Tooltip_ability_axe_anger_roar_Description"			"Увеличивает свою броню и выживаемость, чтобы выдержать суровые удары."
+		"DOTA_Tooltip_ability_axe_anger_roar_duration"				"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_axe_anger_roar_bonus_armor"			"БОНУС БРОНИ:"
+		"DOTA_Tooltip_ability_axe_anger_roar_bonus_health_pct"		"%БОНУС ЗДОРОВЬЯ:"
+		"DOTA_Tooltip_modifier_axe_anger_roar"							"Anger roar"
+		"DOTA_Tooltip_modifier_axe_anger_roar_Description"				"Броня и здоровье увеличены !"
+
+		"DOTA_Tooltip_ability_axe_counter_helix_custom"							"Counter helix"
+		"DOTA_Tooltip_ability_axe_counter_helix_custom_Description"				"Контратаки способные уничтожить множество врагов !"
+		"DOTA_Tooltip_ability_axe_counter_helix_custom_radius"				"РАДИУС:"
+		"DOTA_Tooltip_ability_axe_counter_helix_custom_trigger_chance"		"%ШАНС СРАБАТЫВАНИЯ:"
+		"DOTA_Tooltip_ability_axe_counter_helix_custom_base_damage"			"БАЗОВЫЙ УРОН:"
+		"DOTA_Tooltip_ability_axe_counter_helix_custom_attack_damage"			"%УРОН ОТ АТАКИ:"
+
+		"DOTA_Tooltip_ability_axe_berserk_form"							"Berserk form"
+		"DOTA_Tooltip_ability_axe_berserk_form_Description"				"Переходит в истинную боевую форму, жертвуя собственной защитой."
+		"DOTA_Tooltip_ability_axe_berserk_form_duration"				"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_axe_berserk_form_decrease_armor"			"СНИЖЕНИЕ БРОНИ:"
+		"DOTA_Tooltip_ability_axe_berserk_form_bonus_dmg"				"БОНУС УРОНА:"
+		"DOTA_Tooltip_ability_axe_berserk_form_bonus_ms"				"БОНУС СКОРОСТИ БЕГА:"
+		"DOTA_Tooltip_ability_axe_berserk_form_bonus_bat"				"ЗАДЕРЖКА АТАКИ:"
+		"DOTA_Tooltip_ability_axe_berserk_form_cleave_damage_pct"		"СПЛЕШЬ:"
+		"DOTA_Tooltip_ability_axe_berserk_form_aghanim_description"					"Форма становится постоянной."
+
+		"DOTA_Tooltip_ability_axe_true_strength"					"True strength"
+		"DOTA_Tooltip_ability_axe_true_strength_Description"		"Истинная сила не знает предела..."
+		"DOTA_Tooltip_ability_axe_true_strength_bonus_str_pct"			"%БОНУС СИЛЫ:"
 //Hero
 		"npc_dota_hero_"		"hero"
 
@@ -4781,6 +4826,9 @@
 
 		"DOTA_Tooltip_Ability_item_antars_essence"				"<font color=\"#FF4500\"> Кристалл души (Antares)</font>"	
 		"DOTA_Tooltip_ability_item_antars_essence_Description"	"Этот кристалл содержит в себе силу легендарного героя !<br><br><font color='#FFD700'>КОМПЛЕКТ ПОЛУБОГА</font></h1>"
+
+		"DOTA_Tooltip_Ability_item_axe_essence"				"<font color=\"#FF4500\"> Кристалл души (Warrior)</font>"	
+		"DOTA_Tooltip_ability_item_axe_essence_Description"	"Этот кристалл содержит в себе силу легендарного героя !<br><br><font color='#FFD700'>КОМПЛЕКТ ПОЛУБОГА</font></h1>"
 
 		"DOTA_Tooltip_Ability_item_strm_essence"				"<font color=\"#66CDAA\"> Кристалл души (Storm)</font>"	
 		"DOTA_Tooltip_ability_item_strm_essence_Description"	"Этот кристалл содержит в себе силу легендарного героя !<br><br><font color='#FFD700'>КОМПЛЕКТ ПОЛУБОГА</font></h1>"

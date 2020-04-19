@@ -3,7 +3,7 @@ if BossSpawner == nil then
 end
 
 boss_music = {
-	current_music = "",
+	current_music = nil,
 }
 
 boss_list = {
@@ -17,7 +17,7 @@ boss_list = {
 {boss_name="elite_squad", units={"npc_dota_dire_commander","npc_dota_dire_siege","npc_dota_dire_soldier","npc_dota_dire_soldier","npc_dota_dire_mage","npc_dota_dire_mage"}, reward={750,750}, music=nil, marathon=true, marathon_mult=200}},
 [4]= {{boss_name="necronomicon", units={"npc_dota_necronomicon_warrior_boss","npc_dota_necronomicon_archer_boss"}, reward={1000,1000}, music="oingo_boingo_1", marathon=true, marathon_mult=150}},
 [5]= {{boss_name="nyx", units={"npc_dota_nyx_boss"}, reward={3000}, music=nil, marathon=true, marathon_mult=100}},
-[6]= {{boss_name="doom", units={"npc_dota_doom_boss","npc_dota_doom_minion","npc_dota_doom_minion","npc_dota_doom_minion"}, reward={4000}, music=nil, marathon=true, marathon_mult=75}},
+[6]= {{boss_name="doom", units={"npc_dota_doom_boss","npc_dota_doom_minion","npc_dota_doom_minion","npc_dota_doom_minion"}, reward={4000}, music="zoldik", marathon=true, marathon_mult=75}},
 [7]= {{boss_name="seeker", units={"npc_dota_bloodseeker_boss"}, reward={5000}, music=nil, marathon=true, marathon_mult=50}},
 [8]= {{boss_name="sans", units={"npc_dota_sans"}, reward={7500}, music="sans_theme", marathon=nil, marathon_mult=200}},
 [9]= {{boss_name="spectre", units={"npc_phantasm_1"}, reward={10000}, music=nil, marathon=nil, marathon_mult=200}},
@@ -46,7 +46,6 @@ end
 function BossSpawner:LineBossSpawner()
 
 	  local spawn_interval = GameRules.line_boss_interval
---	  UpdateNettables(10)
 	  local wave_number = 1
 
 	  UpdateNettables()
@@ -58,72 +57,81 @@ function BossSpawner:LineBossSpawner()
  		    	UpdateNettables()
 				return
 			end
-			local point = Entities:FindByName( nil, "dmpoint2"):GetAbsOrigin() 
-			local waypoint = Entities:FindByName( nil, "d_waypoint1") 
-			--      local point1 = Entities:FindByName( nil, "drpoint2"):GetAbsOrigin() 
-			if Spawn.DireSpawner == 0 then 
-					point = Entities:FindByName( nil, "dmpoint1"):GetAbsOrigin()
-			--      		point1 = Entities:FindByName( nil, "drpoint1"):GetAbsOrigin()
-					waypoint = Entities:FindByName( nil, "d_waypoint11") 
-			end
- 
- 			local boss = current_boss[RandomInt(1, #current_boss)]
-			local boss_name = boss.boss_name
-			local units = boss.units
-			local reward = boss.reward
-			local music = boss.music
-			print(boss_name)
-			print(units[1])
-			print(reward[1])
-			print(music)
-
-			if music then
-				if boss_music.current_music then
-					Sound:RemoveGlobalLoopingSound(boss_music.current_music)
---					print("current_music = "..boss_music.current_music)
-				end
-				print("current_music = "..music)
-				boss_music.current_music = music
-				boss_music[music] = 0
-				Sounds:CreateGlobalLoopingSound(music)
-			else
-				EmitGlobalSound("roshan_def.boss")
-			end
-
-			GameRules:SendCustomMessage("#Game_notification_boss_spawn_"..boss_name,0,0)
-
-			for key, value in pairs (units) do
-				if type(key) == "string" then
-					unit_count = value
-					unit_name = key
-					unit_reward = reward[key]
-				else
-					unit_count =1
-					unit_name = value
-					unit_reward = reward[key]
-				end
-
-				for i=1, unit_count do
-					local unit = CreateUnitByName( unit_name , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
-					unit:SetInitialGoalEntity( waypoint )
-
-					local unit_reward = reward[index]
-					if unit_reward then
-						unit.reward = unit_reward
-					end
-
-					if music then
-						boss_music[music] = boss_music[music] + 1
-						unit.music = music
-					end 
-				end
-			end 
+			BossSpawner:SpawnBoss(wave_number) 
 	     	UpdateNettables()
 	     	wave_number = wave_number + 1
 			return spawn_interval
 	     end)
 	
 end
+
+function BossSpawner:SpawnBoss(index)
+	local current_boss = boss_list[index]
+	if current_boss == nil then
+		return
+	end
+	local point = Entities:FindByName( nil, "dmpoint2"):GetAbsOrigin() 
+	local waypoint = Entities:FindByName( nil, "d_waypoint1") 
+	--      local point1 = Entities:FindByName( nil, "drpoint2"):GetAbsOrigin() 
+	if Spawn.DireSpawner == 0 then 
+			point = Entities:FindByName( nil, "dmpoint1"):GetAbsOrigin()
+	--      		point1 = Entities:FindByName( nil, "drpoint1"):GetAbsOrigin()
+			waypoint = Entities:FindByName( nil, "d_waypoint11") 
+	end
+
+	local boss = current_boss[RandomInt(1, #current_boss)]
+	local boss_name = boss.boss_name
+	local units = boss.units
+	local reward = boss.reward
+	local music = boss.music
+	print(boss_name)
+	print(units[1])
+	print(reward[1])
+	print(music)
+
+	if music then
+		if boss_music.current_music then
+			Sounds:RemoveGlobalLoopingSound(boss_music.current_music)
+--					print("current_music = "..boss_music.current_music)
+		end
+		print("current_music = "..music)
+		boss_music.current_music = music
+		boss_music[music] = 0
+		Sounds:CreateGlobalLoopingSound(music)
+	else
+		Sounds:CreateGlobalSound("roshan_def.boss")
+	end
+
+	GameRules:SendCustomMessage("#Game_notification_boss_spawn_"..boss_name,0,0)
+
+	for key, value in pairs (units) do
+		if type(key) == "string" then
+			unit_count = value
+			unit_name = key
+			unit_reward = reward[key]
+		else
+			unit_count =1
+			unit_name = value
+			unit_reward = reward[key]
+		end
+
+		for i=1, unit_count do
+			local unit = CreateUnitByName( unit_name , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
+			unit:SetInitialGoalEntity( waypoint )
+
+			local unit_reward = reward[index]
+			if unit_reward then
+				unit.reward = unit_reward
+			end
+
+			if music then
+				boss_music[music] = boss_music[music] + 1
+				unit.music = music
+			end 
+		end
+	end 
+end
+
 function BossSpawner:FinalBossSpawner()
 
 		local spawn_interval = 10
@@ -192,7 +200,7 @@ function BossSpawner:InitBossMarathon()
 
 	Timers:CreateTimer(GameRules.line_boss_interval,function()
 		local boss =marathon_list[RandomInt(1, #marathon_list)]
-		EmitGlobalSound("roshan_def.boss")
+		Sounds:CreateGlobalSound("roshan_def.boss")
 		local boss_name = boss.boss_name
 		local units = boss.units
 		local reward = boss.reward

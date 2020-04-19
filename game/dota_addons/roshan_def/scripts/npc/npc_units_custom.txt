@@ -4152,12 +4152,55 @@
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	}								  
 
+"npc_dota_test_axe"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/items/axe/ti9_jungle_axe/axe_bare.vmdl"
+		"ModelScale"				"1.55"								// old 1.0
+		"Level"						"5"
+		"MinimapIcon"					"minimap_nian"
+		"MinimapIconSize"				"1950"
+		
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"		"axe_berserkers_call"
+		"Ability2"		"axe_battle_hunger"
+		"Ability3"		"axe_counter_helix"
+		"Ability4"		"generic_hidden"
+		"Ability5"		"generic_hidden"
+		"Ability6"		"axe_culling_blade"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		"StatusMana"				"10000"		// Base mana.
+		"StatusManaRegen"			"10"			// Mana regeneration rate.		 
+		
+		//Inventory
+		"Creature"
+		{
+
+			"AttachWearables"//Axe Unleashed
+			{
+			"Wearable1" {"ItemDef" "12968"}//head("Hair of Axe Unleashed")
+			"Wearable2" {"ItemDef" "12966"}//belt("Belt of Axe Unleashed")
+			"Wearable3" {"ItemDef" "12965"}//armor("Torso of Axe Unleashed")
+			"Wearable4" {"ItemDef" "12964"}//("Fists of Axe Unleashed")
+			}		
+		}
+}
+
 "npc_dota_test_1"
 {
 		// General
 		//
 		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/techies/techies_cart.vmdl"
+		"Model"						"models/items/undying/flesh_golem/deathmatch_dominator_golem/deathmatch_dominator_golem.vmdl"
 		"ModelScale"				"0.75"								// old 1.0
 		"Level"						"5"
 		"MinimapIcon"					"minimap_nian"
@@ -4166,7 +4209,7 @@
 	// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"quest_test1"
+		"Ability1"					"gold_effect1"
 
 		// Movement
 		//----------------------------------------------------------------
@@ -4177,25 +4220,7 @@
 		//Inventory
 		"Creature"
 		{
-			"ItemDrops"
-            {              
-                "StatTomes"
-                {
-                    "Item"
-                    {
-                        "1"             "item_chicken_coin"						
-                    }
-                    "Chance"            "100"
-                }
-			}
-			"AttachWearables"			
-			{
-				"Wearable1"		{	"ItemDef"		"181"			} //Horse
-				"Wearable2"		{	"ItemDef"		"183"			} //Shoulders
-				"Wearable3" 	{	"ItemDef"		"184"		} //Helmet
-				"Wearable4"		{	"ItemDef"		"185"		} //Weapon
-				"Wearable5"		{	"ItemDef"		"186"		} //Shield	
-			}			
+			
 		}
 }
 "npc_dota_test_2"
@@ -4203,16 +4228,16 @@
 		// General
 		//
 		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/items/courier/carty/carty.vmdl"
+		"Model"						"models/items/undying/flesh_golem/deathmatch_dominator_golem/deathmatch_dominator_golem.vmdl"
 		"ModelScale"				"0.75"								// old 1.0
 		"Level"						"5"
-		"MinimapIcon"					"minimap_miniboss"
+		"MinimapIcon"					"minimap_nian"
 		"MinimapIconSize"				"1950"
-			
+		
 	// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"quest_test01"
+		"Ability1"					"gold_effect2"
 
 		// Movement
 		//----------------------------------------------------------------
@@ -4223,33 +4248,24 @@
 		//Inventory
 		"Creature"
 		{
-
-			"AttachWearables"			
-			{
-				"Wearable1"		{	"ItemDef"		"181"			} //Horse
-				"Wearable2"		{	"ItemDef"		"183"			} //Shoulders
-				"Wearable3" 	{	"ItemDef"		"184"		} //Helmet
-				"Wearable4"		{	"ItemDef"		"185"		} //Weapon
-				"Wearable5"		{	"ItemDef"		"186"		} //Shield	
-			}			
+			
 		}
 }
-
 "npc_dota_test_3"
 {
 		// General
 		//
 		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/items/courier/carty_dire/carty_dire.vmdl"
+		"Model"						"models/items/undying/flesh_golem/deathmatch_dominator_golem/deathmatch_dominator_golem.vmdl"
 		"ModelScale"				"0.75"								// old 1.0
 		"Level"						"5"
-		"MinimapIcon"					"minimap_candybucket"
+		"MinimapIcon"					"minimap_nian"
 		"MinimapIconSize"				"1950"
-			
+		
 	// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"test1_3"
+		"Ability1"					"gold_effect3"
 
 		// Movement
 		//----------------------------------------------------------------
@@ -4260,15 +4276,7 @@
 		//Inventory
 		"Creature"
 		{
-
-			"AttachWearables"			
-			{
-				"Wearable1"		{	"ItemDef"		"181"			} //Horse
-				"Wearable2"		{	"ItemDef"		"183"			} //Shoulders
-				"Wearable3" 	{	"ItemDef"		"184"		} //Helmet
-				"Wearable4"		{	"ItemDef"		"185"		} //Weapon
-				"Wearable5"		{	"ItemDef"		"186"		} //Shield	
-			}			
+			
 		}
 }
 
@@ -25599,7 +25607,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"darksoul_desolate"			// Ability 1.
-		"Ability2"					""			// Ability 2.
+		"Ability2"					"true_strike_datadriven"			// Ability 2.
 		"Ability3"					"phantasm_split_1"			// Ability 3.
 		//"Ability4"					"templar_assassin_refraction"			// Ability 4.
 		//"Ability5"					"nyx_assassin_spiked_carapace"
@@ -25711,7 +25719,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"darksoul_desolate"			// Ability 1.
-		"Ability2"					""			// Ability 2.
+		"Ability2"					"true_strike_datadriven"			// Ability 2.
 		"Ability3"					"phantasm_split_2"			// Ability 3.
 		//"Ability4"					"templar_assassin_refraction"			// Ability 4.
 		//"Ability5"					"nyx_assassin_spiked_carapace"
@@ -25823,7 +25831,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"darksoul_desolate"			// Ability 1.
-		"Ability2"					""			// Ability 2.
+		"Ability2"					"true_strike_datadriven"			// Ability 2.
 		"Ability3"					"phantasm_split_3"			// Ability 3.
 		//"Ability4"					"templar_assassin_refraction"			// Ability 4.
 		//"Ability5"					"nyx_assassin_spiked_carapace"
@@ -25935,7 +25943,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"darksoul_desolate"			// Ability 1.
-		"Ability2"					""			// Ability 2.
+		"Ability2"					"true_strike_datadriven"			// Ability 2.
 		"Ability3"					"phantasm_split_4"			// Ability 3.
 		//"Ability4"					"templar_assassin_refraction"			// Ability 4.
 		//"Ability5"					"nyx_assassin_spiked_carapace"
@@ -26049,7 +26057,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"darksoul_desolate"			// Ability 1.
-		"Ability2"					""			// Ability 2.
+		"Ability2"					"true_strike_datadriven"			// Ability 2.
 		"Ability3"					"split_custom_1"			// Ability 3.
 		"Ability4"					"true_strike_datadriven"			// Ability 4.
 		//"Ability5"					"nyx_assassin_spiked_carapace"
@@ -29799,8 +29807,8 @@
 	// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"creature_fire_of_the_soul"			// Ability 1.
-		"Ability2"					"chain_light_passive"			// Ability 2.
+//		"Ability1"					"creature_fire_of_the_soul"			// Ability 1.
+//		"Ability2"					"chain_light_passive"			// Ability 2.
 		"Ability3"					"spectre_dispersion"			// Ability 3.
 		"Ability4"					"creature_split_shot"			// Ability 4.
 		"Ability5"					"true_strike_datadriven"			// Ability 5.

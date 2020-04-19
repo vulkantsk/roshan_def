@@ -4441,8 +4441,8 @@
 		"01"
 		{
 			"var_type"				"FIELD_INTEGER"
-//			"bonus_damage"			"10 20 30 40 55 70 85"
-			"bonus_damage"			"30 60 90 120 165 210 255"
+			"bonus_damage"			"10 20 30 40 55 70 85"
+//			"bonus_damage"			"30 60 90 120 165 210 255"
 		}
 		"02"
 		{
@@ -4556,8 +4556,8 @@
 
 	// Time		
 	//-------------------------------------------------------------------------------------------------------------
-//	"AbilityCooldown"				"3.0"
-	"AbilityCooldown"				"0.0"
+	"AbilityCooldown"				"3.0"
+//	"AbilityCooldown"				"0.0"
 
 	// Cost
 	//-------------------------------------------------------------------------------------------------------------
@@ -4573,8 +4573,8 @@
 		"01"
 		{
 			"var_type"					"FIELD_INTEGER"
-//			"damage"					"50 75 100 125 175 225 275"
-			"damage"					"150 225 300 375 525 675 825"
+			"damage"					"50 75 100 125 175 225 275"
+//			"damage"					"150 225 300 375 525 675 825"
 		}
 		"02"
 		{
@@ -4736,8 +4736,8 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-//				"max_stacks"			"10"
-				"max_stacks"			"50"
+				"max_stacks"			"10"
+//				"max_stacks"			"50"
 				"LinkedSpecialBonus"		"special_bonus_unique_troll_warlord_2"
 			}
 		}
@@ -4769,8 +4769,8 @@
 
 	// Time		
 	//-------------------------------------------------------------------------------------------------------------
-//	"AbilityCooldown"				"45"
-	"AbilityCooldown"				"20"
+	"AbilityCooldown"				"45"
+//	"AbilityCooldown"				"20"
 
 	// Cost
 	//-------------------------------------------------------------------------------------------------------------
@@ -22680,8 +22680,8 @@
 		"03"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"bonus_movement_speed"	"10 15 20 25 30 35 40"
-//			"bonus_movement_speed"	"40 50 60 70 80 90 100"
+//			"bonus_movement_speed"	"10 15 20 25 30 35 40"
+			"bonus_movement_speed"	"40 50 60 70 80 90 100"
 		}
 		"04"
 		{
@@ -22845,14 +22845,14 @@
 		"02"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"as_bonus"				"15 20 25 30 40 50 60"
-//			"as_bonus"				"40 50 60 70 95 120 150"
+//			"as_bonus"				"15 20 25 30 40 50 60"
+			"as_bonus"				"40 50 60 70 95 120 150"
 		}
 		"03"
 		{
 			"var_type"				"FIELD_INTEGER"
-//			"armor_bonus"			"6 8 10 12 16 20 24"
-			"armor_bonus"			"10 15 20 25 32 40 50"
+			"armor_bonus"			"6 8 10 12 16 20 24"
+//			"armor_bonus"			"10 15 20 25 32 40 50"
 		}	
 	}
 
@@ -22957,13 +22957,13 @@
 	
 	// Time		
 	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCooldown"				"15.0"
-//	"AbilityCooldown"				"5.0"
+//	"AbilityCooldown"				"15.0"
+	"AbilityCooldown"				"5.0"
 	
 	// Cost
 	//-------------------------------------------------------------------------------------------------------------
-	"AbilityManaCost"				"75 100 125 150 200 250 300"
-//	"AbilityManaCost"				"75"
+//	"AbilityManaCost"				"75 100 125 150 200 250 300"
+	"AbilityManaCost"				"75"
 	
 	// Special
 	//-------------------------------------------------------------------------------------------------------------
@@ -22988,13 +22988,11 @@
 		{
 			"var_type"				"FIELD_INTEGER"
 			"bonus_dmg"				"20"
-//			"bonus_dmg"				"30"
 		}
 		"05"
 		{
 			"var_type"				"FIELD_INTEGER"
 			"bonus_hp"				"10"
-//			"bonus_hp"				"15"
 		}
 	}
 
@@ -23085,8 +23083,8 @@
 
 	// Time		
 	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCooldown"				"180.0"
-//	"AbilityCooldown"				"60.0"
+//	"AbilityCooldown"				"180.0"
+	"AbilityCooldown"				"60.0"
 	"AbilityCastPoint"				"0.7"
 	
 	// Cost
@@ -28151,489 +28149,92 @@
         }
         "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_1"
     }
-"alchemist_unstable_concoction_custom"
-{
-	// General
-	//-------------------------------------------------------------------------------------------------------------
-	"BaseClass"				"ability_datadriven"
-	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-	"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
-	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-	"FightRecapLevel"				"1"
-	"AbilityTextureName"			"alchemist_unstable_concoction"
-	"RequiredLevel"                 "1"
-	"LevelsBetweenUpgrades"         "3"
-	"MaxLevel"                      "7"
- 	
-	// Casting
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCastPoint"				"0.0"
-
-	// Time		
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCooldown"				"12.0 12.0 12.0 12.0 11.0 10.0 9.0 "
-	
-	// Cost
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityManaCost"				"120"
-
-	// Special
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilitySpecial"
+	"alchemist_unstable_concoction_custom"
 	{
-		"01"
-		{
-			"var_type"					"FIELD_FLOAT"
-			"brew_time"					"5.0"
-		}
-		"02"
-		{
-			"var_type"					"FIELD_FLOAT"
-			"brew_explosion"			"5.5"
-		}
-		"03"
-		{
-			"var_type"					"FIELD_FLOAT"
-			"min_stun"					"0.25"
-		}
-		"04"
-		{
-			"var_type"					"FIELD_FLOAT"
-			"max_stun"					"2.5"
-		}
-		"05"
-		{
-			"var_type"					"FIELD_INTEGER"
-			"min_damage"				"0"
-		}
-		"06"
-		{
-			"var_type"					"FIELD_INTEGER"
-			"max_damage"				"250 450 650 850 1050 1250 1450"
-		}
-		"07"
-		{
-			"var_type"					"FIELD_INTEGER"
-			"radius"					"350"
-		}
-	}
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/hero_alchemist/unstable_concoction"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BUILDING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityTextureName"			"alchemist_unstable_concoction"
 
-	"precache"
-	{
-		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_alchemist.vsndevts"
-		"particle"	"particles/units/heroes/hero_alchemist/alchemist_unstable_concoction_timer.vpcf"
+		"RequiredLevel"                 "1"
+		"LevelsBetweenUpgrades"         "3"
+		"MaxLevel"                      "7"
+	 	
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.0"
+		"AbilityCastRange"				"775"
 
-		// This particle isn't used because it would need a separate rule to attach to the hands or weapons for each hero
-		// CP1 and CP2 are left and right hands respectively
-		"particle"  "particles/units/heroes/hero_alchemist/alchemist_unstableconc_bottles.vpcf" 
-	}
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12.0 12.0 12.0 12.0 11.0 10.0 9.0 "
+		
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"120"
 
-	"OnSpellStart"
-	{
-		"RunScript"
+		"precache"
 		{
-			"ScriptFile"			"heroes/hero_alchemist/unstable_concoction.lua"
-			"Function"				"StartBrewing"
-			"sub_ability_name"		"alchemist_unstable_concoction_throw_custom"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_alchemist.vsndevts"
+			"soundfile" "soundevents/voscripts/game_sounds_vo_alchemist.vsndevts"
+			"particle"	"particles/units/heroes/hero_alchemist/alchemist_unstable_concoction_timer.vpcf"
+			"particle"	"particles/units/heroes/hero_alchemist/alchemist_unstable_concoction_projectile.vpcf"
+			"particle"	"particles/units/heroes/hero_alchemist/alchemist_unstable_concoction_explosion.vpcf"
+			"particle"	"particles/generic_gameplay/generic_stunned.vpcf"
+
+			// This particle isn't used because it would need a separate rule to attach to the hands or weapons for each hero
+			// CP1 and CP2 are left and right hands respectively
+			"particle"  "particles/units/heroes/hero_alchemist/alchemist_unstableconc_bottles.vpcf"
 		}
 
-		"ApplyModifier"
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
 		{
-			"ModifierName"	"modifier_unstable_concoction_brewing"
-			"Target"		"CASTER"
-		}
-	}
-
-	"OnUpgrade"
-	{
-		"RunScript"
-		{
-			"ScriptFile"	"heroes/hero_alchemist/unstable_concoction.lua"
-			"Function"		"LevelUpAbility"
-			"ability_name"	"alchemist_unstable_concoction_throw_custom"
-		}
-	}
-
-	"Modifiers"
-	{
-		"modifier_unstable_concoction_brewing"
-		{
-			"IsHidden"			"1"
-			"Duration"			"%brew_explosion"
-			"ThinkInterval"		"0.5"
-			"OnIntervalThink"
+			"01"
 			{
-				"RunScript"
-				{
-					"ScriptFile"	"heroes/hero_alchemist/unstable_concoction.lua"
-					"Function"		"UpdateTimerParticle"
-				}
+				"var_type"					"FIELD_FLOAT"
+				"brew_time"					"5"				
 			}
-
-			"OnDestroy"
+			"02"
 			{
-				"RunScript"
-				{
-					"ScriptFile"			"heroes/hero_alchemist/unstable_concoction.lua"
-					"Function"				"CheckSelfStun"
-					"sub_ability_name"		"alchemist_unstable_concoction_throw_custom"
-					"Target"
-			        {
-			        	"Center"  		"CASTER"
-			        	"Radius" 		"%radius"
-			        	"Teams" 		"DOTA_UNIT_TARGET_TEAM_ENEMY"
-			        	"Types" 		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-			        }
-				}
+				"var_type"					"FIELD_FLOAT"
+				"extra_brew_time"			"0.5"
 			}
-		}
-
-		"modifier_unstable_concoction_stun"
-		{
-			"IsDebuff"	"1"
-
-			"States"
+			"03"
 			{
-				"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
+				"var_type"					"FIELD_FLOAT"
+				"stun"						"3.0"
 			}
-			"OverrideAnimation"	"ACT_DOTA_DISABLED"
-			"EffectName"		"particles/generic_gameplay/generic_stunned.vpcf"
-			"EffectAttachType"	"follow_overhead"
-		}
-	}
-}	
-"alchemist_unstable_concoction_throw_custom"
-{
-	// General
-	//-------------------------------------------------------------------------------------------------------------
-	"BaseClass"				"ability_datadriven"
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
-	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-	"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
-	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-	"AbilityTextureName"			"alchemist_unstable_concoction_throw"
-	"RequiredLevel"                 "1"
-	"LevelsBetweenUpgrades"         "3"
-	"MaxLevel"                      "7"
-
-	// Casting
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCastRange"				"775"
-	"AbilityCastPoint"				"0.2"
-	"AoERadius"                 	"%midair_explosion_radius"
-
-	// Stats
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityModifierSupportBonus"	"120"
-
-	// Special
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilitySpecial"
-	{
-		"01"
-		{
-			"var_type"					"FIELD_FLOAT"
-			"brew_time"					"5.0"
-		}
-		"02"
-		{
-			"var_type"					"FIELD_FLOAT"
-			"min_stun"					"0.25"
-		}
-		"03"
-		{
-			"var_type"					"FIELD_FLOAT"
-			"max_stun"					"2.5"
-		}
-		"04"
-		{
-			"var_type"					"FIELD_INTEGER"
-			"min_damage"				"0"
-		}
-		"05"
-		{
-			"var_type"					"FIELD_INTEGER"
-			"max_damage"				"250 450 650 850 1050 1250 1450"
-		}
-		"06"
-		{
-			"var_type"					"FIELD_INTEGER"
-			"movement_speed"			"900"
-		}
-		"07"
-		{
-			"var_type"					"FIELD_INTEGER"
-			"vision_range"				"400"
-		}
-		"08"
-		{
-			"var_type"					"FIELD_INTEGER"
-			"midair_explosion_radius"	"350"
-		}
-		"09"
-		{
-			"var_type"					"FIELD_FLOAT"
-			"brew_explosion"			"7.0"
-		}
-	}
-
-	"precache"
-	{
-		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_alchemist.vsndevts"
-		"particle"	"particles/units/heroes/hero_alchemist/alchemist_unstable_concoction_projectile.vpcf"
-		"particle"	"particles/units/heroes/hero_alchemist/alchemist_unstable_concoction_explosion.vpcf"
-		"particle"	"particles/generic_gameplay/generic_stunned.vpcf"
-	}
-
-	"OnSpellStart"
-	{
-		"TrackingProjectile"
-        {
-            "Target"			"TARGET"
-            "EffectName"        "particles/units/heroes/hero_alchemist/alchemist_unstable_concoction_projectile.vpcf"
-            "Dodgeable"         "0"
-            "ProvidesVision"    "1"
-            "VisionRadius"      "%vision_range"
-            "MoveSpeed"         "%movement_speed"
-            "SourceAttachment"  "DOTA_PROJECTILE_ATTACHMENT_ATTACK_1"
-        }
-
-        "FireSound"
-        {
-        	"EffectName"		"Hero_Alchemist.UnstableConcoction.Throw"
-        	"Target"			"CASTER"
-        }
-
-        "RunScript"
-		{
-			"ScriptFile"			"heroes/hero_alchemist/unstable_concoction.lua"
-			"Function"				"EndBrewing"
-			"main_ability_name"		"alchemist_unstable_concoction_custom"
-		}
-	}
-
-	"OnProjectileHitUnit"
-	{
-		"DeleteOnHit"	"1"
-
-		"FireSound"
-		{
-			"EffectName"	"Hero_Alchemist.UnstableConcoction.Stun"
-			"Target" 		"TARGET"
-		}
-
-		"FireEffect"
-		{
-			"EffectName"		"particles/units/heroes/hero_alchemist/alchemist_unstable_concoction_explosion.vpcf"
-			"EffectAttachType" 	"attach_hitloc"
-			"Target" 			"TARGET"
-
-			//This is required for the explosion to actually attach on the projectile hit location
-			"ControlPointEntities"
+			"04"
 			{
-				"TARGET"	"attach_hitloc"	
-				"TARGET"	"attach_hitloc"
-				"TARGET"	"attach_hitloc"
-				"TARGET"	"attach_hitloc"
-			}			
-		}
-
-		"RunScript"
-		{
-			"ScriptFile"	"heroes/hero_alchemist/unstable_concoction.lua"
-			"Function"		"ConcoctionHit"
-			"Target"
-	        {
-	        	"Center"  		"TARGET"
-	        	"Radius" 		"%midair_explosion_radius"
-	        	"Teams" 		"DOTA_UNIT_TARGET_TEAM_ENEMY"
-	        	"Types" 		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
-	        }
-		}
-	}
-
-	"OnUpgrade"
-	{
-		"RunScript"
-		{
-			"ScriptFile"	"heroes/hero_alchemist/unstable_concoction.lua"
-			"Function"		"LevelUpAbility"
-			"ability_name"	"alchemist_unstable_concoction_custom"
-		}
-	}
-
-	"Modifiers"
-	{
-		"modifier_unstable_concoction_stun"
-		{
-			"IsDebuff"	"1"
-
-			"States"
-			{
-				"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
+				"var_type"					"FIELD_INTEGER"
+				"damage"					"250 450 650 850 1050 1250 1450"
 			}
-			"OverrideAnimation"	"ACT_DOTA_DISABLED"
-			"EffectName"		"particles/generic_gameplay/generic_stunned.vpcf"
-			"EffectAttachType"	"follow_overhead"
-		}
-	}
-}
-    //=================================================================================================================
-    // Alchemist: Unstable Concoction
-    //=================================================================================================================
-    "alchemist_unstable_concoction"
-    {
-        // General
-        //-------------------------------------------------------------------------------------------------------------
-        "ID"                            "5366"                                                      
-        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-        "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
-        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
-        "SpellDispellableType"          "SPELL_DISPELLABLE_YES_STRONG"
-        "FightRecapLevel"               "1"
-        "AbilitySound"                  "Hero_Alchemist.UnstableConcoction.Fuse"
-        "RequiredLevel"                 "1"
-        "LevelsBetweenUpgrades"         "3"
-        "MaxLevel"                      "7"
- 
-        // Casting
-        //-------------------------------------------------------------------------------------------------------------
-        "AbilityCastRange"              "600" // for visualization on hover
-        "AbilityCastPoint"              "0.0"
- 
-        // Time    
-        //-------------------------------------------------------------------------------------------------------------
-        "AbilityCooldown"               "19 18 17 16 14 12 10"
-       
-        // Cost
-        //-------------------------------------------------------------------------------------------------------------
-        "AbilityManaCost"               "75 100 125 150 200 250 300"
- 
-        // Special
-        //-------------------------------------------------------------------------------------------------------------
-        "AbilitySpecial"
-        {
-            "01"
-            {
-                "var_type"                  "FIELD_FLOAT"
-                "brew_time"                 "5.0"
-            }
-            "02"
-            {
-                "var_type"                  "FIELD_FLOAT"
-                "brew_explosion"            "5.5"
-            }
-            "03"
-            {
-                "var_type"                  "FIELD_FLOAT"
-                "min_stun"                  "0.25"
-            }
-            "04"
-            {
-                "var_type"                  "FIELD_FLOAT"
-                "max_stun"                  "2.5"
-            }
-            "05"
-            {
-                "var_type"                  "FIELD_INTEGER"
-                "min_damage"                "0"
-            }
-            "06"
-            {
-                "var_type"                  "FIELD_INTEGER"
-                "max_damage"                "125 250 375 500 700 900 1100"
-                "LinkedSpecialBonus"        "special_bonus_unique_alchemist_2"
-            }
-            "07"
-            {
-                "var_type"                  "FIELD_INTEGER"
-                "radius"                    "225 250 275 300 350 400 450"
-            }
-        }
-        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
-    }
- 
-    //=================================================================================================================
-    // Alchemist: Unstable Concoction Throw
-    //=================================================================================================================
-    "alchemist_unstable_concoction_throw"
-    {
-        // General
-        //-------------------------------------------------------------------------------------------------------------
-        "ID"                            "5367"                                                      
-        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
-        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-        "AbilityUnitTargetFlags"        ""
-        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
-        "RequiredLevel"                 "1"
-        "LevelsBetweenUpgrades"         "3"
-        "MaxLevel"                      "7"
-   
-        // Casting
-        //-------------------------------------------------------------------------------------------------------------
-        "AbilityCastRange"              "600"
-        "AbilityCastPoint"              "0.2"
-        "AbilityCastAnimation"          "ACT_INVALID"
- 
-        // Stats
-        //-------------------------------------------------------------------------------------------------------------
-        "AbilityModifierSupportBonus"   "120"
- 
-        // Special
-        //-------------------------------------------------------------------------------------------------------------
-        "AbilitySpecial"
-        {
-            "01"
-            {
-                "var_type"                  "FIELD_FLOAT"
-                "brew_time"                 "5.0"
-            }
-            "02"
-            {
-                "var_type"                  "FIELD_FLOAT"
-                "min_stun"                  "0.25"
-            }
-            "03"
-            {
-                "var_type"                  "FIELD_FLOAT"
-                "max_stun"                  "2.5"
-            }
-            "04"
-            {
-                "var_type"                  "FIELD_INTEGER"
-                "min_damage"                "0"
-            }
-            "05"
-            {
-                "var_type"                  "FIELD_INTEGER"
-                "max_damage"                "125 250 375 500 700 900 1100"
-            }
-            "06"
-            {
-                "var_type"                  "FIELD_INTEGER"
-                "movement_speed"            "900"
-            }
-            "07"
-            {
-                "var_type"                  "FIELD_INTEGER"
-                "vision_range"              "300"
-            }
-            "08"
-            {
-                "var_type"                  "FIELD_INTEGER"
-                "midair_explosion_radius"   "225 250 275 300 350 400 450"
-            }
-            "09"
-            {
-                "var_type"                  "FIELD_FLOAT"
-                "brew_explosion"            "7.0"
-            }
-        }
-    }
- 
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"350"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"time_per_stack"			"0.02"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"movement_speed"			"900"
+			}
+		}		
+	}    
+
     //=================================================================================================================
     // Alchemist: Goblin's Greed
     //=================================================================================================================
@@ -28750,6 +28351,7 @@
             {
                 "var_type"              "FIELD_INTEGER"
                 "bonus_movespeed"       "50 75 100 125 150"
+				"LinkedSpecialBonus"		"special_bonus_unique_alchemist_6"
             }
         }
     }
@@ -39334,6 +38936,267 @@
 			}
 		}
 	}
+	"axe_hot_blood"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_axe/hot_blood"
+		"AbilityTextureName"			"axe/hot_blood"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"						"1"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"required_hp"		"35"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_regen"		"10"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_regen_pct"	"1"
+			}
+
+		}
+	}
+	"axe_culling_blade_custom"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_axe/culling_blade_custom"
+		"AbilityTextureName"			"axe/culling_blade"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"7"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.2"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityCastRange"				"400"
+
+
+		"AbilityCooldown"				"10"
+		"AbilityManaCost"				"125 150 175 200 250 300 350"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"300"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage"			"150 200 250 300 400 500 600"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_damage"		"10 20 30 40 60 80 100"
+			}
+
+		}
+	}
+	"axe_anger_roar"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_axe/anger_roar"
+		"AbilityTextureName"			"axe/anger_roar"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"7"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.35"
+		"AbilityCastAnimation"			"ACT_DOTA_OVERRIDE_ABILITY_1"		
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"30"
+		"AbilityManaCost"				"100"
+
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"10"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"			"10 15 20 25 35 45 55"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health_pct"		"10 15 20 25 35 45 55"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_scale"		"30"
+			}
+
+		}
+	}
+	"axe_counter_helix_custom"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_axe/counter_helix_custom"
+		"AbilityTextureName"			"axe/counter_helix"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"MaxLevel"						"7"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"3"
+
+		"AbilityCooldown"				"0.1"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"250"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"trigger_chance"		"25"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"base_damage"			"35 70 105 140 180 220 260"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"attack_damage"			"50"
+			}
+		}
+	}
+	"axe_berserk_form"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_axe/berserk_form"
+		"AbilityTextureName"			"axe/berserk_form"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"5"
+		"RequiredLevel"					"10"
+		"LevelsBetweenUpgrades"			"10"
+		"HasScepterUpgrade"				"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.35"
+		"AbilityCastAnimation"			"ACT_DOTA_OVERRIDE_ABILITY_1"
+
+		"AbilityCooldown"				"60"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"200 300 400 600 800"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"duration"			"15"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"decrease_armor"		"5 10 15 20 25"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_dmg"				"100 150 200 300 400"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_ms"				"50 75 100 150 200"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bonus_bat"				"1.5 1.3 1.1 1 0.9"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cleave_damage_pct"		"50"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cleave_radius"			"350"
+			}
+
+		}
+	}
+	"axe_true_strength"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_axe/true_strength"
+		"AbilityTextureName"			"axe/true_strength"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"FightRecapLevel"				"1"
+		"MaxLevel"						"1"
+		"RequiredLevel"					"75"
+	
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_str_pct"			"75"
+			}
+		}
+	}	
 "zombie_king_zombie_spawn"
 {
 	// General
@@ -48723,7 +48586,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_dmg"				"25 35 45 55 70 85 100"
+				"bonus_as"				"25 35 45 55 70 85 100"
 //				"bonus_as"				"50 70 90 110 140 170 200"
 			}
 			"04"
@@ -49089,5 +48952,62 @@
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
-	}	
+	}
+	"gold_effect1"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"ability_name"
+		"MaxLevel" 						"7"	
+
+		"Modifiers"
+		{
+			"modifier_name"
+			{
+				"Passive"			"1"
+				"IsHidden"			"0"
+				"IsDebuff"			"0"
+		
+				"StatusEffectName"		"particles/econ/items/effigies/status_fx_effigies/status_effect_effigy_gold_lvl2.vpcf"
+				"StatusEffectPriority"	"100"
+			}
+		}
+	}
+	"gold_effect2"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"ability_name"
+		"MaxLevel" 						"7"	
+
+		"Modifiers"
+		{
+			"modifier_name"
+			{
+				"Passive"			"1"
+				"IsHidden"			"0"
+				"IsDebuff"			"0"
+		
+				"StatusEffectName"		"particles/econ/items/effigies/status_fx_effigies/status_effect_effigy_gold_lvl2_dire.vpcf"
+				"StatusEffectPriority"	"100"
+			}
+		}
+	}
+	"gold_effect3"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"ability_name"
+		"MaxLevel" 						"7"	
+
+		"Modifiers"
+		{
+			"modifier_name"
+			{
+				"Passive"			"1"
+				"IsHidden"			"0"
+				"IsDebuff"			"0"
+		
+				"StatusEffectName"		"particles/econ/items/lifestealer/lifestealer_immortal_backbone_gold/status_effect_life_stealer_immortal_rage_gold.vpcf"
+				"StatusEffectPriority"	"100"
+			}
+		}
+	}
 }

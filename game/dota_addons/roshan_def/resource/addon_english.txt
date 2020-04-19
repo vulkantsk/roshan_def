@@ -193,7 +193,7 @@
 				"npc_ogre_support"	"Ogre Spellcaster"
 
 //Troll_Warlorld
-		"npc_dota_hero_troll_warlord"	"Troll Warlord(IMBA)"
+		"npc_dota_hero_troll_warlord"	"Troll Warlord"
 
 		"DOTA_Tooltip_ability_inherit_troll_buff"									"Warlord buff"
 		"DOTA_Tooltip_ability_inherit_troll_buff_Description"						"The greatest commander of the Troll army. He is able to instill fear in opponents and inspire soldiers to fight to their last breath!"
@@ -809,7 +809,7 @@
 
 //Chen
 
-		"npc_dota_hero_chen"			"Aibolit"
+		"npc_dota_hero_chen"			"Aibolit(IMBA)"
 		
 		"DOTA_Tooltip_ability_inherit_chen_buff"									"Aibolit buff"
 		"DOTA_Tooltip_ability_inherit_chen_buff_Description"						"Mysterious hero, Aibolit was born only to help his faithful allies to win even the most powerful enemy!"
@@ -1093,8 +1093,8 @@
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note2"					"You can deny yourself with this skill."
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note3"					"Unstable Concoction cannot be disjointed."
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note4"					"Once thrown, Unstable Concoction stops brewing."
-		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_max_stun"				"MAX STUN:"
-		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_max_damage"				"MAX DAMAGE:"
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_stun"				"MAX STUN:"
+		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_damage"				"MAX DAMAGE:"
 		"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_radius"					"EXPLOSION RADIUS:"
 
         "DOTA_Tooltip_ability_alchemist_power_of_gold"                        "Power of gold"
@@ -2775,6 +2775,51 @@
 		"npc_dota_rasta_healing_ward"		"Healling ward"
 		"npc_dota_rasta_nether_ward"		"Nether ward"
 		"npc_dota_rasta_death_ward"			"Death ward"
+//Axe
+		"npc_dota_hero_axe"		"Warrior"
+
+		"DOTA_Tooltip_ability_axe_hot_blood"							"Hot blood"
+		"DOTA_Tooltip_ability_axe_hot_blood_Description"				"If the hero’s health is in danger - regeneration increases!"
+		"DOTA_Tooltip_ability_axe_hot_blood_required_hp"				"%HEALTH THRESHOLD:"
+		"DOTA_Tooltip_ability_axe_hot_blood_bonus_regen"				"REGENERATION:"
+		"DOTA_Tooltip_ability_axe_hot_blood_bonus_regen_pct"			"%REGENERATION:"
+
+		"DOTA_Tooltip_ability_axe_culling_blade_custom"							"Culling blade"
+		"DOTA_Tooltip_ability_axe_culling_blade_custom_Description"				"A crushing blow that can instantly kill weak enemies.\n<font color='#ff9966'><em> If the boss died from this skill - the hero will take damage forever! </em> </font>"
+		"DOTA_Tooltip_ability_axe_culling_blade_custom_radius"				"RADIUS:"
+		"DOTA_Tooltip_ability_axe_culling_blade_custom_damage"				"DAMAGE:"
+		"DOTA_Tooltip_ability_axe_culling_blade_custom_bonus_damage"		"DAMAGE BONUS:"
+		"DOTA_Tooltip_modifier_axe_culling_blade_custom"							"Bonus damage"
+		"DOTA_Tooltip_modifier_axe_culling_blade_custom_Description"				"Bonus damage from killing bosses!"
+
+		"DOTA_Tooltip_ability_axe_anger_roar"						"Anger roar"
+		"DOTA_Tooltip_ability_axe_anger_roar_Description"			"Increases its armor and survival to withstand severe blows."
+		"DOTA_Tooltip_ability_axe_anger_roar_duration"				"DURATION:"
+		"DOTA_Tooltip_ability_axe_anger_roar_bonus_armor"			"BONUS ARMOR:"
+		"DOTA_Tooltip_ability_axe_anger_roar_bonus_health_pct"		"%HEALTH BONUS:"
+		"DOTA_Tooltip_modifier_axe_anger_roar"							"Anger roar"
+		"DOTA_Tooltip_modifier_axe_anger_roar_Description"				"Armor and health increased !"
+
+		"DOTA_Tooltip_ability_axe_counter_helix_custom"							"Counter helix"
+		"DOTA_Tooltip_ability_axe_counter_helix_custom_Description"				"Counterattacks capable for destroying many enemies!"
+		"DOTA_Tooltip_ability_axe_counter_helix_custom_radius"				"RADIUS:"
+		"DOTA_Tooltip_ability_axe_counter_helix_custom_trigger_chance"		"%TRIGGER CHANCE:"
+		"DOTA_Tooltip_ability_axe_counter_helix_custom_base_damage"			"BASE DAMAGE:"
+		"DOTA_Tooltip_ability_axe_counter_helix_custom_attack_damage"			"%ATTACK DAMAGE:"
+
+		"DOTA_Tooltip_ability_axe_berserk_form"							"Berserk form"
+		"DOTA_Tooltip_ability_axe_berserk_form_Description"				"It goes into true combat form, sacrificing its own defense."
+		"DOTA_Tooltip_ability_axe_berserk_form_duration"				"DURATION:"
+		"DOTA_Tooltip_ability_axe_berserk_form_decrease_armor"			"ARMOR REDUCTION:"
+		"DOTA_Tooltip_ability_axe_berserk_form_bonus_dmg"				"DAMAGE BONUS:"
+		"DOTA_Tooltip_ability_axe_berserk_form_bonus_ms"				"MOVEMENT SPEED BONUS:"
+		"DOTA_Tooltip_ability_axe_berserk_form_bonus_bat"				"BAT:"
+		"DOTA_Tooltip_ability_axe_berserk_form_cleave_damage_pct"		"CLEAVE:"
+		"DOTA_Tooltip_ability_axe_berserk_form_aghanim_description"					"The form becomes constant."
+
+		"DOTA_Tooltip_ability_axe_true_strength"					"True strength"
+		"DOTA_Tooltip_ability_axe_true_strength_Description"		"Real power knows no limit ..."
+		"DOTA_Tooltip_ability_axe_true_strength_bonus_str_pct"			"%BONUS STRENGTH:"
 
 //hero
 		"npc_dota_hero_"		""
@@ -4866,6 +4911,9 @@
 
 		"DOTA_Tooltip_Ability_item_antars_essence"				"<font color=\"#FF4500\"> Hero essence (Antares)</font>"	
 		"DOTA_Tooltip_ability_item_antars_essence_Description"	"This mythical stone keeps the power of the legendary hero!<br><br><font color='#FFD700'>PATREON 'DEMIGOD'</font></h1>"
+
+		"DOTA_Tooltip_Ability_item_axe_essence"				"<font color=\"#FF4500\"> Hero essence (Warrior)</font>"	
+		"DOTA_Tooltip_ability_item_axe_essence_Description"	"This mythical stone keeps the power of the legendary hero!<br><br><font color='#FFD700'>PATREON 'DEMIGOD'</font></h1>"
 
 		"DOTA_Tooltip_Ability_item_strm_essence"				"<font color=\"#66CDAA\"> Hero essence (Storm)</font>"	
 		"DOTA_Tooltip_ability_item_strm_essence_Description"	"This mythical stone keeps the power of the legendary hero!<br><br><font color='#FFD700'>PATREON 'DEMIGOD'</font></h1>"

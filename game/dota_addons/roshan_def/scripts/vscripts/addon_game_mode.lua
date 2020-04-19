@@ -67,11 +67,13 @@ function Precache( context )
 	PrecacheResource("particle_folder", "particles/units/heroes/hero_alchemist", context)
 	PrecacheResource("particle_folder", "particles/units/heroes/hero_gyrocopter", context)
 	PrecacheResource("particle_folder", "particles/units/heroes/hero_zuus", context)
+	PrecacheResource("particle_folder", "particles/econ/items/axe/ti9_jungle_axe/", context)
 
 	PrecacheUnitByNameSync("npc_dota_dire1", context)
 	-- Models can also be precached by folder or individually
 	-- PrecacheModel should generally used over PrecacheResource for individual models
 	PrecacheResource("model_folder", "particles/heroes/antimage", context)
+	PrecacheResource("model_folder", "models/items/axe/ti9_jungle_axe/", context)
 	PrecacheUnitByNameSync("example_unit_1", context)
 
 	-- Sounds can precached here like anything else
@@ -207,6 +209,8 @@ function Precache( context )
 	PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_chaos_knight.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_juggernaut.vsndevts", context )
+	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_axe.vsndevts", context )
+	PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_axe.vsndevts", context )
 
 end
 -- Create the game mode when we activate

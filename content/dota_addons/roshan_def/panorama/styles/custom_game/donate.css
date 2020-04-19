@@ -169,7 +169,7 @@
 #DonateContainer{
 	align:center center;
 	width: 940px;
-	height: 600px;
+	height: 660px;
 	transition-property: pre-transform-scale2d,transform,opacity;
 	transition-duration: .25s;
 	pre-transform-scale2d:0.4;

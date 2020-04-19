@@ -1151,8 +1151,8 @@
                 "DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note2"                                       "你可以用这种技巧自杀."
                 "DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note3"                                       "不稳定化合物不能被解除."
                 "DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note4"                                       "一旦抛出，不稳定化合物停止酝酿."
-                "DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_max_stun"                            "最大晕眩:"
-                "DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_max_damage"                          "最大伤害:"
+                "DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_stun"                            "最大晕眩:"
+                "DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_damage"                          "最大伤害:"
                 "DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_radius"                                      "爆炸范围:"
 
         "DOTA_Tooltip_ability_alchemist_power_of_gold"                        "金钱的力量"
@@ -2780,6 +2780,51 @@
                 "npc_dota_rasta_healing_ward"           "治疗守卫"
                 "npc_dota_rasta_nether_ward"            "幽冥守卫"
                 "npc_dota_rasta_death_ward"                     "死亡守卫"
+//Axe
+                "npc_dota_hero_axe"             "勇士"
+
+                "DOTA_Tooltip_ability_axe_hot_blood"                                                    "满腔热血"
+                "DOTA_Tooltip_ability_axe_hot_blood_Description"                                "如果英雄的生命受到威胁 - 生命回复就会增加!"
+                "DOTA_Tooltip_ability_axe_hot_blood_required_hp"                                "%生命阈值:"
+                "DOTA_Tooltip_ability_axe_hot_blood_bonus_regen"                                "回复:"
+                "DOTA_Tooltip_ability_axe_hot_blood_bonus_regen_pct"                    "%回复:"
+
+                "DOTA_Tooltip_ability_axe_culling_blade_custom"                                                 "淘汰之刃"
+                "DOTA_Tooltip_ability_axe_culling_blade_custom_Description"                             "斧王寻找弱点攻击，直接秒杀低血量的敌方单位.\n<font color='#ff9966'><em> 如果BOSS死于该技能，那么英雄会永久获得伤害加成! </em> </font>"
+                "DOTA_Tooltip_ability_axe_culling_blade_custom_radius"                          "范围:"
+                "DOTA_Tooltip_ability_axe_culling_blade_custom_damage"                          "伤害:"
+                "DOTA_Tooltip_ability_axe_culling_blade_custom_bonus_damage"            "伤害加成:"
+                "DOTA_Tooltip_modifier_axe_culling_blade_custom"                                                        "伤害加成"
+                "DOTA_Tooltip_modifier_axe_culling_blade_custom_Description"                            "通过击杀BOSS获得伤害加成!"
+
+                "DOTA_Tooltip_ability_axe_anger_roar"                                           "怒吼"
+                "DOTA_Tooltip_ability_axe_anger_roar_Description"                       "增加护甲，提高抵抗打击的生存能力."
+                "DOTA_Tooltip_ability_axe_anger_roar_duration"                          "持续时间:"
+                "DOTA_Tooltip_ability_axe_anger_roar_bonus_armor"                       "额外护甲:"
+                "DOTA_Tooltip_ability_axe_anger_roar_bonus_health_pct"          "%额外生命:"
+                "DOTA_Tooltip_modifier_axe_anger_roar"                                                  "怒吼"
+                "DOTA_Tooltip_modifier_axe_anger_roar_Description"                              "增加了护甲和生命 !"
+
+                "DOTA_Tooltip_ability_axe_counter_helix_custom"                                                 "反击螺旋"
+                "DOTA_Tooltip_ability_axe_counter_helix_custom_Description"                             "螺旋反击足以摧毁一切!"
+                "DOTA_Tooltip_ability_axe_counter_helix_custom_radius"                          "范围:"
+                "DOTA_Tooltip_ability_axe_counter_helix_custom_trigger_chance"          "%触发几率:"
+                "DOTA_Tooltip_ability_axe_counter_helix_custom_base_damage"                     "基础伤害:"
+                "DOTA_Tooltip_ability_axe_counter_helix_custom_attack_damage"                     "%攻击伤害:"
+
+                "DOTA_Tooltip_ability_axe_berserk_form"                                                 "狂暴形态"
+                "DOTA_Tooltip_ability_axe_berserk_form_Description"                             "变为真实狂暴形态, 牺牲自己的防御."
+                "DOTA_Tooltip_ability_axe_berserk_form_duration"                                "持续时间:"
+                "DOTA_Tooltip_ability_axe_berserk_form_decrease_armor"                  "护甲减少:"
+                "DOTA_Tooltip_ability_axe_berserk_form_bonus_dmg"                               "额外攻击力:"
+                "DOTA_Tooltip_ability_axe_berserk_form_bonus_ms"                                "额外移动速度:"
+                "DOTA_Tooltip_ability_axe_berserk_form_bonus_bat"                               "攻击间隔:"
+                "DOTA_Tooltip_ability_axe_berserk_form_cleave_damage_pct"               "溅射:"
+                "DOTA_Tooltip_ability_axe_berserk_form_aghanim_description"                                     "形态始终存在."
+
+                "DOTA_Tooltip_ability_axe_true_strength"                                        "真正的力量"
+                "DOTA_Tooltip_ability_axe_true_strength_Description"            "真正的力量知道那里没有尽头 ..."
+                "DOTA_Tooltip_ability_axe_true_strength_bonus_str_pct"                  "%力量加成:"
 
 //Hero
                 "npc_dota_hero_"                ""
@@ -4754,6 +4799,9 @@
 
                 "DOTA_Tooltip_Ability_item_antars_essence"                              "<font color=\"#FF4500\"> 英雄奥秘 (安塔瑞斯)</font>"        
                 "DOTA_Tooltip_ability_item_antars_essence_Description"  "这块神秘的石头保留了传奇英雄的力量!<br><br><font color='#FFD700'>赞助‘DEMIGOD'</font></h1>"
+
+                "DOTA_Tooltip_Ability_item_axe_essence"                              "<font color=\"#FF4500\"> 英雄奥秘 (战士)</font>"        
+                "DOTA_Tooltip_ability_item_axe_essence_Description"  "这块神秘的石头保留了传奇英雄的力量!<br><br><font color='#FFD700'>赞助‘DEMIGOD'</font></h1>"
 
                 "DOTA_Tooltip_Ability_item_strm_essence"                                "<font color=\"#66CDAA\"> 英雄奥秘 (风暴)</font>"  
                 "DOTA_Tooltip_ability_item_strm_essence_Description"    "这块神秘的石头保留了传奇英雄的力量!<br><br><font color='#FFD700'>赞助‘DEMIGOD'</font></h1>"
