@@ -1,7 +1,0 @@
-<root>
-    <scripts>
-        <include src="file://panorama/scripts/barebones/selection.js" />
-        <include src="file://panorama/scripts/barebones/selection_filter.js" />
-    </scripts>
-    <Panel></Panel>
-</root>

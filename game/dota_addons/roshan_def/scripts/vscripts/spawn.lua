@@ -963,7 +963,9 @@ function Spawn:OnNPCSpawned(keys)
 			end			
 				
 			local ability = npc:GetAbilityByIndex(3)
-			ability:SetLevel(1)
+			if ability then 
+				ability:SetLevel(1)
+			end
 
 			if name=="npc_dota_hero_centaur" 
 				then local ability = npc:FindAbilityByName("inherit_centaur_buff") 

@@ -18,6 +18,7 @@ modifier_wraith_king_frozen_throne = class({
 		{   MODIFIER_EVENT_ON_DEATH} end,
 })
 function modifier_wraith_king_frozen_throne:OnCreated(data)
+	if IsClient() then return end
 	Timers:CreateTimer(0.1, function()
 		local ability = self:GetAbility()
 		local caster = ability:GetCaster()

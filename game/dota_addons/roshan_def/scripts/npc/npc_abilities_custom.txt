@@ -49010,4 +49010,125 @@
 			}
 		}
 	}
+
+	"ability_midas_acolyte_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/midas_acolyte/ability_midas_acolyte_1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"	
+		"AbilityTextureName"			"ability_midas_acolyte_1"
+		"MaxLevel"						"1"
+		
+		"AbilityManaCost"				"0"
+		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"0"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_health"					"100"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"bonus_dmg"					"10"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"10"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"800"
+			}
+	
+		}
+	}	
+
+	"ability_midas_acolyte_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/midas_acolyte/ability_midas_acolyte_2"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"ability_midas_acolyte_2"
+		"MaxLevel"						"1"
+		
+		"AbilityManaCost"				"0"
+		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"0"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"aura_radius"					"600"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"interval_tick"					"1"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"damage"					"10"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"gold_lose"					"10"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"heal"					"10"
+			}
+	
+		}
+	}
+
+	"ability_midas_acolyte_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/midas_acolyte/ability_midas_acolyte_3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"	
+		"AbilityTextureName"			"ability_midas_acolyte_3"
+		"MaxLevel"						"1"
+		
+		"AbilityManaCost"				"0"
+		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"0"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"700"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"1"
+			}
+	
+		}
+	}
 }
