@@ -43,7 +43,7 @@ modifier_ability_midas_acolyte_2_debuff = class({
 		local ability = self:GetAbility()
 		self.ability = ability
 		self.caster = self:GetCaster()
-		local interval = 1
+		local interval = ability:GetLevelSpecialValueFor('interval_tick',1)
 		self:StartIntervalThink(interval)
 	end,
 
@@ -53,7 +53,7 @@ modifier_ability_midas_acolyte_2_debuff = class({
 		local gold = parent:GetGold()
 		local caster = self.caster
 		if parent == caster then return end
-		if caster.gold > gold then return end
+		if caster.gold >= gold then return end
 
 		ApplyDamage({
   			victim = parent,
@@ -65,8 +65,9 @@ modifier_ability_midas_acolyte_2_debuff = class({
 
 		local midas_particle = ParticleManager:CreateParticle("particles/items2_fx/hand_of_midas.vpcf", PATTACH_ABSORIGIN_FOLLOW, parent)	
 		ParticleManager:SetParticleControlEnt(midas_particle, 1, caster, PATTACH_POINT_FOLLOW, "attach_hitloc", caster:GetAbsOrigin(), false)
-
-		caster.goldBonus = (caster.goldBonus or 0) + gold 
+		local goldBounty = caster:GetGoldBounty()
+		caster:SetMaximumGoldBounty(goldBounty + caster.gold)
+		caster:SetMinimumGoldBounty(goldBounty + caster.gold)
 
 		parent:ModifyGold(-caster.gold, false, 0)
 

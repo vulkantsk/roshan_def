@@ -903,7 +903,7 @@ function Spawn:OnNPCSpawned(keys)
 		return
 	end
 
-	if npc:IsCreature() then
+	if npc:IsCreature() and GameRules.UnitsFile[name] then
 		npc.boss = GameRules.UnitsFile[name]["IsBossMonster"] or nil
 	else
 		npc.boss = nil

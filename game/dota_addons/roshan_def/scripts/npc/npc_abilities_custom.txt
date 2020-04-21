@@ -49131,4 +49131,94 @@
 	
 		}
 	}
+
+	"ability_killer_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/killer/ability_killer_1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"	
+		"AbilityTextureName"			"ability_killer_1"
+		"MaxLevel"						"1"
+		
+		"AbilityManaCost"				"0"
+		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"0"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"800"
+			}
+	
+		}
+	}
+
+	"ability_killer_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/killer/ability_killer_2"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"	
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags" 		"DOTA_UNIT_TARGET_FLAG_NONE"
+		"AbilityTextureName"			"ability_killer_1"
+		"MaxLevel"						"1"
+		
+		"AbilityManaCost"				"0"
+		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"0"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"250 350 450 550"
+			}
+			
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_hero_damage"			"20 40 60 80"
+			}
+						
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"attack_interval"			"0.2"
+			}
+
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"creep_damage_penalty"			"50"
+			}
+
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"reduction_movespeed"			"50"
+			}
+
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"reduction_atkspeed"			"50"
+			}	
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"reduction_duration"			"2"
+			}
+		}
+	}
 }

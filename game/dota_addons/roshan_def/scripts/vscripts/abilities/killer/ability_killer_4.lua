@@ -1,0 +1,1 @@
+ability_killer_4 = class({})
