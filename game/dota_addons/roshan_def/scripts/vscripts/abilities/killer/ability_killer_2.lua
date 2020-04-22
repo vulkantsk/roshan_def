@@ -3,7 +3,7 @@ LinkLuaModifier("modifier_sleight_of_fist_target_hero_datadriven", 'abilities/ki
 LinkLuaModifier("modifier_sleight_if_fist_target_creep_datadriven", 'abilities/killer/ability_killer_2.lua', LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_sleight_of_fist_caster_datadriven", 'abilities/killer/ability_killer_2.lua', LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_sleight_of_fist_dummy_datadriven", 'abilities/killer/ability_killer_2.lua', LUA_MODIFIER_MOTION_NONE)
-
+-- test
 LinkLuaModifier("modifier_sleight_of_fist_debuff_attackspeed", 'abilities/killer/ability_killer_2.lua', LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_sleight_of_fist_debuff_movespeed", 'abilities/killer/ability_killer_2.lua', LUA_MODIFIER_MOTION_NONE)
 
