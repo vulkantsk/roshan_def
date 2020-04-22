@@ -51,7 +51,6 @@ modifier_ability_midas_acolyte_1_passive = class({
 				table.remove(units,k)
 			end
 		end
-		PrintTable(units)
 		if #units < 1 then return end
 		caster:EmitSound("DOTA_Item.Hand_Of_Midas")
 		for k,v in pairs(units) do
