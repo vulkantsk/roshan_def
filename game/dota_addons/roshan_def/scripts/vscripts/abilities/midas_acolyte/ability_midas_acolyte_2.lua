@@ -1,75 +1,56 @@
-ability_midas_acolyte_2 = class({
-	GetIntrinsicModifierName = function(self) return 'modifier_ability_midas_acolyte_2_aura' end,
-})
 LinkLuaModifier("modifier_ability_midas_acolyte_2_aura", 'abilities/midas_acolyte/ability_midas_acolyte_2.lua', LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_ability_midas_acolyte_2_debuff", 'abilities/midas_acolyte/ability_midas_acolyte_2.lua', LUA_MODIFIER_MOTION_NONE)
+
+ability_midas_acolyte_2 = class({})
+
+function ability_midas_acolyte_2:GetIntrinsicModifierName()
+	return 'modifier_ability_midas_acolyte_2_aura'
+end
+
 modifier_ability_midas_acolyte_2_aura = class({
 	IsHidden 				= function(self) return true end,
 	IsPurgable 				= function(self) return false end,
 	IsDebuff 				= function(self) return true end,
 	IsBuff                  = function(self) return false end,
 	RemoveOnDeath 			= function(self) return false end,
-	AllowIllusionDuplicate	= function(self) return true end,
-	IsPermanent             = function(self) return true end,
-	IsAura 					= function(self) return true end,
-	GetAuraRadius 			= function(self) return self.radius end,
-	GetAuraSearchTeam 		= function(self) return DOTA_UNIT_TARGET_TEAM_ENEMY end,
-	GetAuraSearchFlags      = function(self) return DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES end,
-	GetAuraSearchType		= function(self) return DOTA_UNIT_TARGET_HERO end,
-	GetModifierAura 		= function(self) return 'modifier_ability_midas_acolyte_2_debuff' end,
-	OnCreated 				= function(self)
-		local ability = self:GetAbility()
-		self.parent = self:GetParent()
-		self.radius = ability:GetLevelSpecialValueFor('aura_radius',1)
-		self.parent.heal = ability:GetLevelSpecialValueFor('heal',1)
-		self.parent.damage = ability:GetLevelSpecialValueFor('damage',1)
-		self.parent.gold = ability:GetLevelSpecialValueFor('gold_lose',1)
-	end,
-	GetAuraEntityReject 	= function(self,hEntity)
-		return hEntity == self.parent
-	end,
 })
 
-modifier_ability_midas_acolyte_2_debuff = class({
-	IsHidden 				= function(self) return false end,
-	IsPurgable 				= function(self) return false end,
-	IsDebuff 				= function(self) return true end,
-	IsBuff                  = function(self) return false end,
-	RemoveOnDeath 			= function(self) return true end,
-	AllowIllusionDuplicate	= function(self) return false end,
-	IsPermanent             = function(self) return false end,
+function modifier_ability_midas_acolyte_2_aura:OnCreated()
+	local ability = self:GetAbility()
+	self.caster = self:GetCaster()
+	self.radius = ability:GetSpecialValueFor('aura_radius')
+	self.heal = ability:GetSpecialValueFor('heal')
+	self.damage = ability:GetSpecialValueFor('damage')
+	self.gold_steal = ability:GetSpecialValueFor('gold_steal')
 
-	OnCreated 				= function(self)
-		local ability = self:GetAbility()
-		self.ability = ability
-		self.caster = self:GetCaster()
-		local interval = ability:GetLevelSpecialValueFor('interval_tick',1)
-		self:StartIntervalThink(interval)
-	end,
+	self:StartIntervalThink(1)
+end
 
-	OnIntervalThink 		= function(self)
-		if IsClient() or self.ability:GetLevel() < 1 then return end
-		local parent = self:GetParent()
-		local gold = parent:GetGold()
-		local caster = self.caster
-		if parent == caster then return end
-		if caster.gold >= gold then return end
+function modifier_ability_midas_acolyte_2_aura:OnIntervalThink()
+	local ability = self:GetAbility()
+	local caster = self.caster
+	local point = caster:GetAbsOrigin()
+	local enemies = caster:FindEnemyUnitsInRadius(point, self.radius, nil)
+	for _,enemy in pairs(enemies) do
+		if enemy:IsRealHero() then
+			local hero_gold = enemy:GetGold()
+			if self.gold_steal > hero_gold then return end
+			print(hero_gold)
+			print(self.gold_steal)
 
-		ApplyDamage({
-  			victim = parent,
-  			attacker = caster,
-  			damage = caster.damage,
-  			damage_type = DAMAGE_TYPE_MAGICAL,
-  			ability = self.ability,
-		})
+			DealDamage(caster, enemy, self.damage, DAMAGE_TYPE_PURE, nil, ability)
+			caster:Heal(self.heal, ability)
 
-		local midas_particle = ParticleManager:CreateParticle("particles/items2_fx/hand_of_midas.vpcf", PATTACH_ABSORIGIN_FOLLOW, parent)	
-		ParticleManager:SetParticleControlEnt(midas_particle, 1, caster, PATTACH_POINT_FOLLOW, "attach_hitloc", caster:GetAbsOrigin(), false)
-		local goldBounty = caster:GetGoldBounty()
-		caster:SetMaximumGoldBounty(goldBounty + caster.gold)
-		caster:SetMinimumGoldBounty(goldBounty + caster.gold)
+			local midas_particle = ParticleManager:CreateParticle("particles/items2_fx/hand_of_midas.vpcf", PATTACH_ABSORIGIN_FOLLOW, enemy)	
+			ParticleManager:SetParticleControlEnt(midas_particle, 1, caster, PATTACH_POINT_FOLLOW, "attach_hitloc", caster:GetAbsOrigin(), false)
+			ParticleManager:ReleaseParticleIndex(midas_particle)
 
-		parent:ModifyGold(-caster.gold, false, 0)
+			local gold = caster:GetGoldBounty() + self.gold_steal
+			caster:SetMaximumGoldBounty(gold)
+			caster:SetMinimumGoldBounty(gold)
 
-	end,
-})
+			enemy:ModifyGold(-self.gold_steal, false, 0)
+
+		end
+	end
+end
