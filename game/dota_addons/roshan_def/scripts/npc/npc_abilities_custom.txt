@@ -49089,7 +49089,7 @@
 			"04"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"gold_steal"					"10"
+				"gold_lose"					"10"
 			}
 			"05"
 			{
