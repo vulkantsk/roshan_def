@@ -9,7 +9,19 @@ function lycan_spirit_wolf_custom:OnSpellStart()
 	local level = ability:GetLevel()
 	local origin = caster:GetAbsOrigin() + RandomVector(100)
 
-	-- Set the unit name, concatenated with the level number
+	local strenght = caster:GetStrength()
+	local agility = caster:GetAgility()
+	local intellegence = caster:GetIntellect()
+
+	local base_hp = ability:GetSpecialValueFor("summon_hp")
+	local base_hpreg = ability:GetSpecialValueFor("summon_hpreg")
+	local base_dmg = ability:GetSpecialValueFor("summon_dmg")
+	local base_armor = ability:GetSpecialValueFor("summon_armor")
+	local dmg_per_strenght = ability:GetSpecialValueFor("dmg_per_str")
+	local hp_per_strenght = ability:GetSpecialValueFor("hp_per_str")
+	local model_scale = ability:GetSpecialValueFor("summon_scale")
+	local fv = caster:GetForwardVector()
+		-- Set the unit name, concatenated with the level number
 	local unit_name = "npc_dota_spirit_wolf1"
 
 
@@ -18,7 +30,15 @@ function lycan_spirit_wolf_custom:OnSpellStart()
 		FindClearSpaceForUnit(caster.wolf, origin, true)
 		local fv = caster:GetForwardVector()
 		caster.wolf:SetForwardVector(fv)
-		caster.wolf:SetHealth(caster.wolf:GetMaxHealth())	
+
+		caster.wolf:SetBaseMaxHealth(base_hp + strenght*hp_per_strenght )
+		caster.wolf:SetMaxHealth(base_hp + strenght*hp_per_strenght )
+		caster.wolf:SetHealth(base_hp + strenght*hp_per_strenght )
+		caster.wolf:SetBaseHealthRegen(base_hpreg)
+		caster.wolf:SetBaseDamageMin(base_dmg + strenght*dmg_per_strenght )
+		caster.wolf:SetBaseDamageMax(base_dmg + strenght*dmg_per_strenght )				
+		caster.wolf:SetPhysicalArmorBaseValue(base_armor)
+		caster.wolf:SetModelScale(model_scale)
 		-- Spawn particle
 		local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_lone_druid/lone_druid_bear_spawn.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster.wolf)	
 	elseif caster.wolf and IsValidEntity(caster.wolf) and not caster.wolf:IsAlive() then
@@ -46,22 +66,8 @@ function lycan_spirit_wolf_custom:OnSpellStart()
 		caster.wolf = CreateUnitByName(unit_name, origin, true, caster, caster, caster:GetTeamNumber())
 		caster.wolf:SetControllableByPlayer(player, true)
 		caster.wolf:SetUnitCanRespawn(true)
-		local ability_level = ability:GetLevel()
-
-		local strenght = caster:GetStrength()
-		local agility = caster:GetAgility()
-		local intellegence = caster:GetIntellect()
-
-		local base_hp = ability:GetSpecialValueFor("summon_hp")
-		local base_hpreg = ability:GetSpecialValueFor("summon_hpreg")
-		local base_dmg = ability:GetSpecialValueFor("summon_dmg")
-		local base_armor = ability:GetSpecialValueFor("summon_armor")
-		local dmg_per_strenght = ability:GetSpecialValueFor("dmg_per_str")
-		local hp_per_strenght = ability:GetSpecialValueFor("hp_per_str")
-		local model_scale = ability:GetSpecialValueFor("summon_scale")
-		local fv = caster:GetForwardVector()
 		caster.wolf:SetForwardVector(fv)
-		
+	
 		caster.wolf:SetBaseMaxHealth(base_hp + strenght*hp_per_strenght )
 		caster.wolf:SetMaxHealth(base_hp + strenght*hp_per_strenght )
 		caster.wolf:SetHealth(base_hp + strenght*hp_per_strenght )
@@ -101,7 +107,6 @@ function lycan_spirit_wolf_custom:OnUpgrade()
 		local origin = caster.wolf:GetAbsOrigin()
 		local health_pct = caster.wolf:GetHealthPercent()
 		
-		local ability_level = ability:GetLevel()
 
 		local strenght = caster:GetStrength()
 		local agility = caster:GetAgility()

@@ -169,12 +169,12 @@
 		// Attributes
 		//-------------------------------------------------------------------------------------------------------------
 		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
-		"AttributeBaseStrength"		"30"										// Base strength
-		"AttributeStrengthGain"		"6"										// Strength bonus per level.
-		"AttributeBaseIntelligence"	"10"										// Base intelligence
-		"AttributeIntelligenceGain"	"1"										// Intelligence bonus per level.
-		"AttributeBaseAgility"		"10"										// Base agility
-		"AttributeAgilityGain"		"1.0"										// Agility bonus per level.
+		"AttributeBaseStrength"		"25"										// Base strength
+		"AttributeStrengthGain"		"5"										// Strength bonus per level.
+		"AttributeBaseIntelligence"	"15"										// Base intelligence
+		"AttributeIntelligenceGain"	"3"										// Intelligence bonus per level.
+		"AttributeBaseAgility"		"20"										// Base agility
+		"AttributeAgilityGain"		"2"										// Agility bonus per level.
 	
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------

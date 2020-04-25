@@ -398,7 +398,7 @@
 		"DOTA_Tooltip_ability_holdout_storm_bolt_Description"						"Sven unleashes his magical gauntlet that deals damage and stuns enemy units."
 
 //Wyvern
-		"npc_dota_hero_winter_wyvern"	"Mystic dragon"
+		"npc_dota_hero_winter_wyvern"	"Mystic dragon(IMBA)"
 		"DOTA_Tooltip_ability_inherit_wyvern_buff"									"Mystic dragon buff"
 		"DOTA_Tooltip_ability_inherit_wyvern_buff_Description"						"Мудрейшее существо этого мира, способное на всё и привлекающее на свою службу всё больше драконов, давая им абсолютные знания вселенной для победы над любым врагом! "
 		"DOTA_Tooltip_ability_inherit_wyvern_buff_evasion_bonus"					"Дополнительное уклонение :"
@@ -886,7 +886,7 @@
 
 //Chen
 
-		"npc_dota_hero_chen"			"Айболит(IMBA)"
+		"npc_dota_hero_chen"			"Айболит"
 		
 		"DOTA_Tooltip_ability_inherit_chen_buff"									"Aibolit buff"
 		"DOTA_Tooltip_ability_inherit_chen_buff_Description"						"Загадочный герой, рождённый лишь для помощи своим верным союзникам, ради победы над самым грозным врагом! "

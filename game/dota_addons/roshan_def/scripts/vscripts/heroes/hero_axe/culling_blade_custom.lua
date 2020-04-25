@@ -29,7 +29,7 @@ function axe_culling_blade_custom:OnSpellStart()
 	local enemies = caster:FindEnemyUnitsInRadius(point, radius, nil)
 
 	for _,enemy in pairs(enemies) do
-		if enemy:GetHealth() <= damage then
+		if enemy:GetHealth() > damage and enemy:GetMaxHealth() <= damage then
 			enemy:Kill(self, caster)
 			local target_location = enemy:GetAbsOrigin()
 			sound = "Hero_Axe.Culling_Blade_Success"

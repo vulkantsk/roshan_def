@@ -13,7 +13,7 @@ boss_list = {
 {boss_name="evil_treant", units={"npc_dota_evil_treant"}, reward={500}, music=nil, marathon=true, marathon_mult=400}},
 [2]= {{boss_name="fire_golem", units={"npc_dota_golem_boss"}, reward={1000}, music=nil, marathon=true, marathon_mult=300},
 {boss_name="venom_dragon", units={"npc_dota_venom_dragon"}, reward={1000}, music=nil, marathon=true, marathon_mult=300}},
-[3]= {{boss_name="witch", units={"npc_dota_dead_witch","forest_dota_dead_ghost","forest_dota_dead_ghost"}, reward={1500}, music=nil, marathon=true, marathon_mult=200},
+[3]= {{boss_name="witch", units={"npc_dota_dead_witch","forest_dota_dead_ghost","forest_dota_dead_ghost","forest_dota_dead_ghost"}, reward={1500}, music=nil, marathon=true, marathon_mult=200},
 {boss_name="elite_squad", units={"npc_dota_dire_commander","npc_dota_dire_siege","npc_dota_dire_soldier","npc_dota_dire_soldier","npc_dota_dire_mage","npc_dota_dire_mage"}, reward={750,750}, music=nil, marathon=true, marathon_mult=200}},
 [4]= {{boss_name="necronomicon", units={"npc_dota_necronomicon_warrior_boss","npc_dota_necronomicon_archer_boss"}, reward={1000,1000}, music="oingo_boingo_1", marathon=true, marathon_mult=150}},
 [5]= {{boss_name="nyx", units={"npc_dota_nyx_boss"}, reward={3000}, music=nil, marathon=true, marathon_mult=100}},

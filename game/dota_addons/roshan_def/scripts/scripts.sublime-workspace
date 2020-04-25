@@ -4,6 +4,86 @@
 		"selected_items":
 		[
 			[
+				"gate",
+				"gateName"
+			],
+			[
+				"glod_ef",
+				"gold_effect2"
+			],
+			[
+				"damage_pure",
+				"DAMAGE_TYPE_PURE"
+			],
+			[
+				"modifier_ab",
+				"modifier_ability_midas_acolyte_2_aura"
+			],
+			[
+				"Statusef",
+				"StatusEffectPriority"
+			],
+			[
+				"Model",
+				"ModelScale"
+			],
+			[
+				"ACT_DOTA_O",
+				"ACT_DOTA_OVERRIDE_ABILITY_1"
+			],
+			[
+				"AddEf",
+				"AddEffects"
+			],
+			[
+				"MODIFIER_PROPERTY_health_pr",
+				"MODIFIER_PROPERTY_EXTRA_HEALTH_PERCENTAGE"
+			],
+			[
+				"ACT_DOTA_CAST_AB",
+				"ACT_DOTA_CAST_ABILITY_3"
+			],
+			[
+				"req",
+				"required_hp"
+			],
+			[
+				"trued",
+				"GetAverageTrueAttackDamage"
+			],
+			[
+				"axe_ber",
+				"axe_berserk_form"
+			],
+			[
+				"Has",
+				"HasScepter"
+			],
+			[
+				"GetModifiermove",
+				"GetModifierMoveSpeedBonus_Constant_ModiiferLua"
+			],
+			[
+				"GetModifierpre",
+				"GetModifierPreAttack_BonusDamage_ModiiferLua"
+			],
+			[
+				"modifier_preatta",
+				"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"
+			],
+			[
+				"GetModifierHealthp",
+				"GetModifierExtraHealthPercentage_ModiiferLua"
+			],
+			[
+				"GetModifiermodel",
+				"GetModifierModelScale_ModiiferLua"
+			],
+			[
+				"axe_c",
+				"axe_culling_blade_custom"
+			],
+			[
 				"Длит",
 				"ДЛИТЕЛЬНОСТЬ"
 			],
@@ -206,10 +286,6 @@
 			[
 				"event_on",
 				"MODIFIER_EVENT_ON_ATTACK"
-			],
-			[
-				"GetModifiermove",
-				"GetModifierMoveSpeedBonus_Percentage_ModiiferLua"
 			],
 			[
 				"MODIFIER_PROPERTY_MOVESPEED_bon",
@@ -438,110 +514,87 @@
 			[
 				"even",
 				"event_avatar"
-			],
-			[
-				"DOTA_UNIT_TARGET_FLAG_no_s",
-				"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
-			],
-			[
-				"pub",
-				"pubg_sinka"
-			],
-			[
-				"dota_unit_ba",
-				"DOTA_UNIT_TARGET_BASIC"
-			],
-			[
-				"MODIFIER_PROPERTY_he",
-				"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"
-			],
-			[
-				"modifier_prop",
-				"MODIFIER_PROPERTY_TOOLTIP"
-			],
-			[
-				"modifier_pi",
-				"modifier_pubg_sinka_aura"
-			],
-			[
-				"Getmodifierregen",
-				"GetModifierConstantHealthRegen_ModiiferLua"
-			],
-			[
-				"modifier_pubg",
-				"modifier_pubg_sinka_aura"
-			],
-			[
-				"sink",
-				"sinka_pfx"
-			],
-			[
-				"Des",
-				"DestroyParticle"
-			],
-			[
-				"part",
-				"ParticleManager"
-			],
-			[
-				"radius",
-				"radius_per_tick"
-			],
-			[
-				"pattach_a",
-				"PATTACH_ABSORIGIN_FOLLOW"
-			],
-			[
-				"Getmodi",
-				"GetModifierAura"
-			],
-			[
-				"paren",
-				"parent_maxhealth"
-			],
-			[
-				"pare",
-				"parent_maxhealth"
-			],
-			[
-				"modifier_state",
-				"MODIFIER_STATE_DISARMED"
-			],
-			[
-				"upg",
-				"upgrade"
-			],
-			[
-				"getsta",
-				"GetStackCount"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/gold_td/scripts/npc/npc_items_custom.txt",
-			"settings":
-			{
-				"buffer_size": 9005,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "npc/npc_heroes_custom.txt",
 			"settings":
 			{
-				"buffer_size": 148112,
+				"buffer_size": 150795,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "vscripts/boss_spawner.lua",
+			"file": "npc/npc_units_custom.txt",
 			"settings":
 			{
-				"buffer_size": 8727,
+				"buffer_size": 1467963,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "npc/npc_abilities_custom.txt",
+			"settings":
+			{
+				"buffer_size": 1359886,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "npc/npc_items_custom.txt",
+			"settings":
+			{
+				"buffer_size": 909793,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "vscripts/spawn.lua",
+			"settings":
+			{
+				"buffer_size": 98806,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "vscripts/addon_game_mode.lua",
+			"settings":
+			{
+				"buffer_size": 18770,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_heroes.txt",
+			"settings":
+			{
+				"buffer_size": 611999,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_abilities.txt",
+			"settings":
+			{
+				"buffer_size": 2374381,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_units.txt",
+			"settings":
+			{
+				"buffer_size": 834542,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -549,14 +602,6 @@
 			"settings":
 			{
 				"buffer_size": 9167,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/gold_td/scripts/vscripts/modifiers/mod_tracker.lua",
-			"settings":
-			{
-				"buffer_size": 4465,
 				"line_ending": "Windows"
 			}
 		},
@@ -570,10 +615,102 @@
 			}
 		},
 		{
-			"file": "vscripts/heroes/hero_monkey_king/immortal_secret.lua",
+			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/resource/addon_russian.txt",
 			"settings":
 			{
-				"buffer_size": 6830,
+				"buffer_size": 641806,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "vscripts/abilities/midas_acolyte/ability_midas_acolyte_1.lua",
+			"settings":
+			{
+				"buffer_size": 3404,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "vscripts/winter_event/fire_trap_trigger.lua",
+			"settings":
+			{
+				"buffer_size": 1636,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/solo_warrior/scripts/vscripts/location_gate.lua",
+			"settings":
+			{
+				"buffer_size": 1314,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/cavern/scripts/npc/npc_units_custom.txt",
+			"settings":
+			{
+				"buffer_size": 179652,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/cavern/scripts/vscripts/addon_game_mode.lua",
+			"settings":
+			{
+				"buffer_size": 57904,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/cavern/scripts/vscripts/modifiers/modifier_destructible_gate.lua",
+			"settings":
+			{
+				"buffer_size": 5428,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/cavern/scripts/vscripts/modifiers/modifier_destructible_gate_anim.lua",
+			"settings":
+			{
+				"buffer_size": 2129,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/cavern/scripts/vscripts/modifiers/modifier_blocked_gate.lua",
+			"settings":
+			{
+				"buffer_size": 3056,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "vscripts/abilities/midas_acolyte/ability_midas_acolyte_3.lua",
+			"settings":
+			{
+				"buffer_size": 890,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/resource/addon_english.txt",
+			"settings":
+			{
+				"buffer_size": 604480,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/resource/addon_schinese.txt",
+			"settings":
+			{
+				"buffer_size": 669685,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -651,6 +788,30 @@
 	],
 	"file_history":
 	[
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/cavern/scripts/vscripts/events.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/abilities/midas_acolyte/ability_midas_acolyte_2.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/items/custom/midas_armlet.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_axe/counter_helix_custom.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_alchemist/unstable_concoction.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_antares/dragon_form.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_alchemist/unstable_concoction — копия.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/internal/util.lua",
+		"/C/Users/Виталий/Desktop/npc/abilities_english.txt",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_axe/culling_blade_custom.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/items/custom/item_barbarian_shield.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_axe/anger_roar.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/boss_spawner.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_axe/berserk_form.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/libraries/utility.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_axe/hot_blood.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/libraries/sounds.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_axe/true_strength.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_sven/shockwave.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_meepo/master_shovel.lua",
+		"/C/Users/Виталий/Documents/roshdef/ability_template.lua.txt",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_monkey_king/immortal_secret.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/gold_td/scripts/npc/npc_items_custom.txt",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/gold_td/scripts/vscripts/modifiers/mod_tracker.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/gold_td/scripts/vscripts/spawner.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/npc/npc_items_custom.txt",
 		"/C/Users/Виталий/Desktop/npc/items_game.txt",
@@ -660,7 +821,6 @@
 		"/C/Users/Виталий/Desktop/npc/items.txt",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/abilities/tester.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/trigger/temple_portal.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/libraries/sounds.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/shops/roshdef_turbo_shops.txt",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/resource/addon_russian.txt",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/resource/addon_english.txt",
@@ -669,14 +829,12 @@
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/npc/npc_units_custom.txt",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/npc/npc_abilities_custom.txt",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/gold_td/scripts/npc/npc_units_custom.txt",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/gold_td/scripts/npc/npc_items_custom.txt",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/spawn.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/addon_game_mode.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/barebones.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/donate.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/winter_event/frost_event.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/abilities/wd_music.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_sven/shockwave.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_sven/thirsty_blade.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/items/ft/item_phoenix_gloves.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/items/custom/playglobalsound.lua",
@@ -688,7 +846,6 @@
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/ai/ai_seeker.lua",
 		"/C/Users/Виталий/Desktop/npc/abilities_schinese.txt",
 		"/C/Users/Виталий/Desktop/npc/abilities_russian.txt",
-		"/C/Users/Виталий/Desktop/npc/abilities_english.txt",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/ai/ai_evil_treant.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/ai/ai_venom_dragon.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/ai/ai_default.lua",
@@ -730,17 +887,14 @@
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/ai/ai_plague_wagon.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/abilities/plague_wagon_speed.lua",
 		"/C/Users/Виталий/Documents/roshdef/mark.txt",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_meepo/master_shovel.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_meepo/dig_deeper.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_greevil_lord/upgrade_tower.lua",
-		"/C/Users/Виталий/Documents/roshdef/ability_template.lua.txt",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_beastmaster/battle_roar.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_beastmaster/summon_dinosaur.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_riki/summon_shadow.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_beastmaster/inner_beast_custom.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_beastmaster/summon_hawk.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_beastmaster/summon_boar.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/libraries/utility.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_skeleton_king/vampiric_aura.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_beastmaster/summon_boar_custom.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/beastmaster/summon_boar.lua",
@@ -761,28 +915,11 @@
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/modifiers/modifier_lycan_boss_shapeshift.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_lycan/feral_impulse_custom.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_lycan/open_wounds.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_lycan/modifiers/modifier_shapeshift_bonus.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/npc/portraits.txt",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_epic_tower/construct.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_epic_tower/upgrade_epic.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_ricko/mount.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/abilities/zombie_lord/zombie_aura.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/abilities/warrior_curse.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/modules/request/request.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/test/scripts/npc/tier3/craft_2.txt",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/test/scripts/npc/tier3/baseitem.txt",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/test/scripts/npc/tier2/craft_1.txt",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/test/scripts/npc/tier2/craft_2.txt",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/test/scripts/npc/tier2/baseitem.txt",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/test/scripts/npc/tier3/craft_1.txt",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/test/scripts/vscripts/items/tier2/craft_1/item_int_stat_2.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/test/scripts/vscripts/items/tier2/baseitem/item_agi_2.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/test/scripts/vscripts/items/tier2/baseitem/item_stat_2.lua",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/test/scripts/vscripts/items/tier2/baseitem/item_str_2.lua"
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_lycan/modifiers/modifier_shapeshift_bonus.lua"
 	],
 	"find":
 	{
-		"height": 22.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -796,6 +933,84 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"gate",
+			"npc_dota_cavern_gate_open",
+			"gate",
+			"wall",
+			"entry",
+			"obstructions",
+			"GetSpecialValueFor",
+			",1",
+			"GetLevelSpecialValueFor",
+			"unit",
+			"ability",
+			"parent",
+			",1",
+			"GetLevelSpecialValueFor",
+			".parent",
+			"special_bonus_gold_income_180",
+			"special_bonus_gold_income_270",
+			"special_bonus_gold_income_360",
+			"AbilityDamage",
+			"axe_counter_helix_custom",
+			"self_damage",
+			"(IMBA)",
+			"aibo",
+			"troll_war",
+			"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_Note4",
+			"DOTA_Tooltip_ability_alchemist_unstable_concoction_custom_damage",
+			"radius_increase",
+			"acid_spray_damage",
+			"movement_speed",
+			"vision_range",
+			"alchemist_unstable_concoction_custom",
+			"brew_start",
+			"stunn",
+			"modifier_imba_unstable_concoction_handler",
+			"imba_alchemist_unstable_concoction",
+			"\t\t\"Ability1\"\t\t\t\t\t\"darksoul_desolate\"\t\t\t// Ability 1.\n\t\t\"Ability2\"\t\t\t\t\t\"\"\t\t\t// Ability 2.\n",
+			"phantasm",
+			"gold",
+			"alchemist_chemical_rage",
+			"alchemist_acid_spray",
+			"alchemist",
+			"antars",
+			"DOTA_Tooltip_Ability_item_antars_essence",
+			"antars",
+			"essence",
+			"ability_",
+			"_",
+			"ability",
+			"filler",
+			"EmitGlobalSound",
+			"ACT_DOTA_OVERRIDE_ABILITY_1",
+			"caster:GetAbsOrigin()",
+			"self",
+			"trigger_chance",
+			"particles/econ/items/axe/ti9_jungle_axe/ti9_jungle_axe_misc_ambient_warp.vpcf",
+			"_roa",
+			"true_st",
+			"self.parent",
+			"particle_cast",
+			"culling_kill_particle",
+			"juggernaut",
+			"counter_helix_c",
+			"particle_folder",
+			"form_",
+			"bonus_health",
+			"centaur",
+			"meepo",
+			"earth_power",
+			"heroo",
+			"berserk_form",
+			"parent",
+			"antares",
+			"dragon_form",
+			"self:GetStackCount()*",
+			"regen_pct",
+			"hot_blood",
+			"axe_culling_blade_custom",
+			"mark_strength",
 			"modifier_monkey_king_immortal_secret_cooldown",
 			"vaal",
 			"AddAttackLandedTracker",
@@ -845,85 +1060,7 @@
 			"SoundDuration",
 			"CreateLoopingSoundOnClient",
 			"CreateGlobalLoopingSound",
-			"RemoveGlobalLoopingSound",
-			"boss_spawn",
-			"CreateSoundOnClient",
-			"CreateLoopingSoundOnClient",
-			"playerSounds",
-			"RemoveClientSounds",
-			"SoundStop",
-			"Activate",
-			"}\n",
-			"ComebackClientSounds",
-			"RemoveClientSounds",
-			"music_enum",
-			"skywrath_mage_mystic_flare",
-			"Game_notification_infinite_maraphon",
-			"boss_in",
-			"item_roshan_chest",
-			"roshan_le",
-			"agility",
-			"agilit",
-			"\"item\"\t\t",
-			"tome_",
-			"cooldown",
-			"UpdateNettables",
-			"line_boss_interval",
-			"damage_cap_amount",
-			"movement_damage_pct",
-			"rupture_custom",
-			"DOTA_GAMERULES_STATE_GAME_IN_PROGRESS",
-			"spawn_interval",
-			"line_boss_interval",
-			"InitBossMarathon",
-			"FinalBossSpawner",
-			"DireBossSpawner",
-			"line_boss_interval",
-			"meepo_earth_power",
-			"is approaching you！",
-			"is approaching you!",
-			"is approaching you！",
-			"viper",
-			"Abilities",
-			"DOTA_Tooltip_ability_viper_poison_attack",
-			"viper",
-			"Abilities",
-			"DOTA_Tooltip_ability_viper_poison_attack",
-			"viper",
-			"Viper",
-			"viper",
-			"Viper",
-			"viper",
-			"abomin",
-			"}\n",
-			"vscripts",
-			"venom_dragon_poison_attack",
-			"NecroLordThink",
-			"NoTargetAbility1",
-			"treant_overgrowth",
-			"forest_3",
-			"radiant_f",
-			"dire_f",
-			"forest_b",
-			"treant",
-			"diretide",
-			"treant",
-			"golem_b",
-			"viper_poison_attack",
-			"viper",
-			"death",
-			"spartacus_elite_squad",
-			"commander_aura",
-			"npc_dota_creep",
-			"_witch",
-			"creep_bad_r",
-			"creep_bad_me",
-			"creep_radiant_melee",
-			"dark_willow_bedlam",
-			"jakiro",
-			"npc_dota_hero_jakiro",
-			"(imba)",
-			"point"
+			"RemoveGlobalLoopingSound"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -941,24 +1078,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/gold_td/scripts/npc/npc_items_custom.txt",
+					"file": "npc/npc_heroes_custom.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9005,
+						"buffer_size": 150795,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3634,
-								3634
+								109190,
+								109190
 							]
 						],
 						"settings":
@@ -967,19 +1104,105 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2407.2,
+						"translation.y": 40756.8,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "npc/npc_heroes_custom.txt",
+					"file": "npc/npc_units_custom.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 148112,
+						"buffer_size": 1467963,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1462451,
+								1462451
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 538890.4,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "npc/npc_abilities_custom.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1359886,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1355440,
+								1355440
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 687024.8,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "npc/npc_items_custom.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 909793,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								546440,
+								546456
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 274432.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "vscripts/spawn.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 98806,
 						"regions":
 						{
 						},
@@ -992,37 +1215,31 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 12365.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 19,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 4,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 2,
-					"file": "vscripts/boss_spawner.lua",
+					"buffer": 5,
+					"file": "vscripts/addon_game_mode.lua",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8727,
+						"buffer_size": 18770,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								98,
-								98
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1031,14 +1248,107 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 40.0,
+						"translation.y": 502.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 15,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 12,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_heroes.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 611999,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								150577,
+								150604
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 70722.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 7,
+					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_abilities.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2374381,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1765402,
+								1765431
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 778156.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota/scripts/npc/npc_units.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 834542,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								138019,
+								138025
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 48765.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
 					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/gold_td/scripts/vscripts/items.lua",
 					"semi_transient": false,
 					"settings":
@@ -1060,43 +1370,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2784.0,
+						"translation.y": 314.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/gold_td/scripts/vscripts/modifiers/mod_tracker.lua",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4465,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4125,
-								4125
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Lua/Lua.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 202.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
+					"buffer": 10,
 					"file": "/C/Users/Виталий/Desktop/npc/items_game.txt",
 					"semi_transient": false,
 					"settings":
@@ -1108,8 +1389,8 @@
 						"selection":
 						[
 							[
-								15360263,
-								15359957
+								793052,
+								793052
 							]
 						],
 						"settings":
@@ -1118,40 +1399,359 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 246757.0,
+						"translation.y": 331266.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "vscripts/heroes/hero_monkey_king/immortal_secret.lua",
+					"buffer": 11,
+					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/resource/addon_russian.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6830,
+						"buffer_size": 641806,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6458,
-								6503
+								226827,
+								226827
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 57136.8,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "vscripts/abilities/midas_acolyte/ability_midas_acolyte_1.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3404,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1935,
+								1935
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Lua/Lua.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1900.0,
+						"translation.y": 272.8,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "vscripts/winter_event/fire_trap_trigger.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1636,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								228,
+								228
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/solo_warrior/scripts/vscripts/location_gate.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1044,
+								1044
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/cavern/scripts/npc/npc_units_custom.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 179652,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25994,
+								26019
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 10558.4,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/cavern/scripts/vscripts/addon_game_mode.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 57904,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2247,
+								2251
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/cavern/scripts/vscripts/modifiers/modifier_destructible_gate.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5428,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3028,
+								3028
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 784.8,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/cavern/scripts/vscripts/modifiers/modifier_destructible_gate_anim.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								321,
+								344
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/cavern/scripts/vscripts/modifiers/modifier_blocked_gate.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3056,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "vscripts/abilities/midas_acolyte/ability_midas_acolyte_3.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 890,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								230,
+								230
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/resource/addon_english.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 604480,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								604480,
+								604480
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 146146.4,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/resource/addon_schinese.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 669685,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								257841,
+								257841
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Dota Reborn Package/dota-kv/dotaKV.tmLanguage",
+							"tab_size": 8,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 63819.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
 					"type": "text"
 				}
 			]
@@ -1185,7 +1785,7 @@
 		"cols":
 		[
 			0.0,
-			0.518229166667,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -1217,6 +1817,114 @@
 		"selected_items":
 		[
 			[
+				"WINTER_EVENT",
+				"vscripts\\winter_event\\trigger_block_path.lua"
+			],
+			[
+				"trigger",
+				"vscripts\\winter_event\\fire_trap_trigger.lua"
+			],
+			[
+				"mid",
+				"vscripts\\items\\custom\\midas_armlet.lua"
+			],
+			[
+				"aco",
+				"vscripts\\abilities\\midas_acolyte\\ability_midas_acolyte_3.lua"
+			],
+			[
+				"acoly",
+				"vscripts\\abilities\\midas_acolyte\\ability_midas_acolyte_2.lua"
+			],
+			[
+				"midas_a",
+				"vscripts\\abilities\\midas_acolyte\\ability_midas_acolyte_1.lua"
+			],
+			[
+				"counte",
+				"vscripts\\heroes\\hero_axe\\counter_helix_custom.lua"
+			],
+			[
+				"uns",
+				"vscripts\\heroes\\hero_alchemist\\unstable_concoction.lua"
+			],
+			[
+				"form",
+				"vscripts\\heroes\\hero_antares\\dragon_form.lua"
+			],
+			[
+				"conc",
+				"vscripts\\heroes\\hero_alchemist\\unstable_concoction — копия.lua"
+			],
+			[
+				"cul",
+				"vscripts\\heroes\\hero_axe\\culling_blade_custom.lua"
+			],
+			[
+				"shield",
+				"vscripts\\items\\custom\\item_barbarian_shield.lua"
+			],
+			[
+				"bo",
+				"vscripts\\boss_spawner.lua"
+			],
+			[
+				"spawn",
+				"vscripts\\spawn.lua"
+			],
+			[
+				"soun",
+				"vscripts\\libraries\\sounds.lua"
+			],
+			[
+				"units",
+				"npc\\npc_units_custom.txt"
+			],
+			[
+				"addon",
+				"vscripts\\addon_game_mode.lua"
+			],
+			[
+				"bers",
+				"vscripts\\heroes\\hero_axe\\berserk_form.lua"
+			],
+			[
+				"hot",
+				"vscripts\\heroes\\hero_axe\\hot_blood.lua"
+			],
+			[
+				"items_c",
+				"npc\\npc_items_custom.txt"
+			],
+			[
+				"cull",
+				"vscripts\\heroes\\hero_axe\\culling_axe_custom.lua"
+			],
+			[
+				"earth_",
+				"vscripts\\heroes\\hero_meepo\\earth_power.lua"
+			],
+			[
+				"abilities",
+				"npc\\npc_abilities_custom.txt"
+			],
+			[
+				"shovel",
+				"vscripts\\heroes\\hero_meepo\\master_shovel.lua"
+			],
+			[
+				"drago",
+				"vscripts\\heroes\\hero_antares\\dragon_form.lua"
+			],
+			[
+				"sven/",
+				"vscripts\\heroes\\hero_sven\\shockwave.lua"
+			],
+			[
+				"mark/",
+				"vscripts\\heroes\\hero_mark\\strength.lua"
+			],
+			[
 				"hero",
 				"npc\\npc_heroes_custom.txt"
 			],
@@ -1233,16 +1941,8 @@
 				"scripts\\vscripts\\barebones.lua"
 			],
 			[
-				"trigger",
-				"scripts\\vscripts\\trigger\\temple_portal.lua"
-			],
-			[
 				"fro",
 				"scripts\\vscripts\\winter_event\\frost_event.lua"
-			],
-			[
-				"sven/",
-				"scripts\\vscripts\\heroes\\hero_sven\\shockwave.lua"
 			],
 			[
 				"blade",
@@ -1255,10 +1955,6 @@
 			[
 				"playg",
 				"scripts\\vscripts\\items\\custom\\playglobalsound.lua"
-			],
-			[
-				"soun",
-				"scripts\\vscripts\\libraries\\sounds.lua"
 			],
 			[
 				"sou",
@@ -1631,102 +2327,6 @@
 			[
 				"multiteam",
 				"vscripts\\core\\multiteam.lua"
-			],
-			[
-				"modifystats",
-				"vscripts\\core\\modifystats.lua"
-			],
-			[
-				"pop",
-				"vscripts\\core\\popup.lua"
-			],
-			[
-				"core/",
-				"vscripts\\core\\core.lua"
-			],
-			[
-				"core eve",
-				"vscripts\\core\\event.lua"
-			],
-			[
-				"lib",
-				"vscripts\\libraries.lua"
-			],
-			[
-				"riki/",
-				"vscripts\\heroes\\hero_riki\\cloak_and_dagger.lua"
-			],
-			[
-				"clone",
-				"vscripts\\abilities\\demon_lord\\demon_clone.lua"
-			],
-			[
-				"_bank",
-				"vscripts\\heroes\\hero_greevil_lord\\bank.lua"
-			],
-			[
-				"lord/",
-				"npc\\greevil_lord\\greevil_abilities.txt"
-			],
-			[
-				"greevil_lord/",
-				"vscripts\\heroes\\hero_greevil_lord\\old\\tower_gold.lua"
-			],
-			[
-				"gold_m",
-				"vscripts\\heroes\\hero_greevil_lord\\old\\golden_mine.lua"
-			],
-			[
-				"jotaro/",
-				"vscripts\\heroes\\hero_jotaro\\ora_ora_rush.lua"
-			],
-			[
-				"star",
-				"vscripts\\heroes\\hero_jotaro\\star_finger.lua"
-			],
-			[
-				"meepo",
-				"vscripts\\heroes\\hero_meatboy\\meat_power.lua"
-			],
-			[
-				"demon",
-				"vscripts\\abilities\\demon_lord\\demon_clone.lua"
-			],
-			[
-				"serp",
-				"vscripts\\heroes\\hero_rasta\\serpent_ward.lua"
-			],
-			[
-				"greev",
-				"npc\\greevil_lord\\greevil_abilities.txt"
-			],
-			[
-				"modifier_bloo",
-				"vscripts\\modifiers\\modifier_ogre_magi_channelled_bloodlust.lua"
-			],
-			[
-				"chanel",
-				"vscripts\\abilities\\ogre_magi_channelled_bloodlust.lua"
-			],
-			[
-				"healing",
-				"vscripts\\heroes\\hero_rasta\\healing_ward.lua"
-			],
-			[
-				"dea",
-				"vscripts\\heroes\\hero_rasta\\death_ward.lua"
-			],
-			[
-				"serpe",
-				"vscripts\\heroes\\hero_rasta\\serpent_ward.lua"
-			],
-			[
-				"_ward",
-				"vscripts\\heroes\\hero_rasta\\poison_ward.lua"
-			],
-			[
-				"dragon_f",
-				"vscripts\\heroes\\hero_antares\\dragon_form.lua"
 			]
 		],
 		"width": 0.0
@@ -1749,7 +2349,7 @@
 		],
 		"width": 587.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

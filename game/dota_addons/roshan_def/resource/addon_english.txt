@@ -322,7 +322,7 @@
 		"DOTA_Tooltip_modifier_inherit_jakiro_buff_Description"					"Is a leader of the dragons" 
 
 //Wyvern
-		"npc_dota_hero_winter_wyvern"	"Mystic dragon"
+		"npc_dota_hero_winter_wyvern"	"Mystic dragon(IMBA)"
 
 		"DOTA_Tooltip_ability_inherit_wyvern_buff"									"Mystic dragon buff"
 		"DOTA_Tooltip_ability_inherit_wyvern_buff_Description"						"The eldest wurm joins the Roshan war. Auroth enlightens allied dragons with knowledge on the battlefield!"
@@ -809,7 +809,7 @@
 
 //Chen
 
-		"npc_dota_hero_chen"			"Aibolit(IMBA)"
+		"npc_dota_hero_chen"			"Aibolit"
 		
 		"DOTA_Tooltip_ability_inherit_chen_buff"									"Aibolit buff"
 		"DOTA_Tooltip_ability_inherit_chen_buff_Description"						"Mysterious hero, Aibolit was born only to help his faithful allies to win even the most powerful enemy!"
@@ -2233,7 +2233,7 @@
 		"DOTA_Tooltip_ability_templar_assassin_meld_custom_armor_decrease"                        	"ARMOR DECREASE:"
 		"DOTA_Tooltip_ability_templar_assassin_meld_custom_base_dmg"                        	"BONUS DMG:"
 		"DOTA_Tooltip_ability_templar_assassin_meld_custom_agility_dmg"                        	"BONUS DMG PER AGILITY:"
-		"DOTA_Tooltip_modifier_templar_assassin_meld_custom_debuff"                            	"Anime bullshit"
+		"DOTA_Tooltip_modifier_templar_assassin_meld_custom_debuff"                            	"Anime, hello!"
 		"DOTA_Tooltip_modifier_templar_assassin_meld_custom_debuff_Description"                	"Armor decrease"
 
 		"DOTA_Tooltip_Ability_templar_assassin_psi_blades_custom"                         			"Psi blades"
