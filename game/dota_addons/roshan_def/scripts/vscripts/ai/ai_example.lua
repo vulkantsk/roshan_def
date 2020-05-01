@@ -11,14 +11,14 @@ function Spawn( entityKeyValues )
 
 --	thisEntity:AddNewModifier( thisEntity, nil, "modifier_fow_vision", nil )
 
-	SmashAbility = thisEntity:FindAbilityByName( "ogre_tank_boss_melee_smash" )
-	JumpAbility = thisEntity:FindAbilityByName( "ogre_tank_boss_jump_smash" )
-	VoidAbility = thisEntity:FindAbilityByName( "minimage_mana_void" )
+	PointAbility = thisEntity:FindAbilityByName( "satyr_hellcaller_shockwave" )
+	NoTargetAbility = thisEntity:FindAbilityByName( "spawnlord_master_stomp" )
+	TargetAbility = thisEntity:FindAbilityByName( "satyr_soulstealer_mana_burn" )
 
-	thisEntity:SetContextThink( "OgreTankThink", OgreTankThink, 1 )
+	thisEntity:SetContextThink( "ThisEntityThink", ThisEntityThink, 1 )
 end
 
-function OgreTankThink()
+function ThisEntityThink()
 	if ( not thisEntity:IsAlive() ) then
 		return -1
 	end
@@ -33,30 +33,26 @@ function OgreTankThink()
 									thisEntity:GetTeamNumber(),	--команда юнита
 									thisEntity:GetOrigin(),		--местоположение юнита
 									nil,	--айди юнита (необязательно)
-									5000,	--радиус поиска
+									600,	--радиус поиска
 									DOTA_UNIT_TARGET_TEAM_ENEMY,	-- юнитов чьей команды ищем вражеской/дружественной
-									DOTA_UNIT_TARGET_HERO,	--юнитов какого типа ищем 
-									DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_NO_INVIS,	--поиск по флагам
+									DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,	--юнитов какого типа ищем 
+									DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE,	--поиск по флагам
 									FIND_CLOSEST,	--сортировка от ближнего к дальнему или от дальнего к ближнему
 									false )
 
 	if #enemies > 0 	then
-		if JumpAbility ~= nil and JumpAbility:IsFullyCastable()  then
-			return Jump()
+		local health_pct = thisEntity:GetHealthPercent()
+
+		if NoTargetAbility ~= nil and NoTargetAbility:IsFullyCastable()  then
+			return CastNoTargetAbility()
 		end
 
-
-
-		if SmashAbility ~= nil and SmashAbility:IsFullyCastable() then
-			return Smash( enemies[ 1 ] )
+		if PointAbility ~= nil and PointAbility:IsFullyCastable() then
+			return CastPointAbility( enemies[ 1 ] )
 		end
 
-		if VoidAbility ~= nil and VoidAbility:IsFullyCastable() then
-			return Void( enemies[ 1 ] )
-		end
-
-		if thisEntity:GetHealth() < ( thisEntity:GetMaxHealth() * 0.3 ) then 
-			UseMaskOfMadness()
+		if TargetAbility ~= nil and TargetAbility:IsFullyCastable() then
+			return CastTargetAbility( enemies[ 1 ] )
 		end
 
 	end
@@ -65,11 +61,11 @@ function OgreTankThink()
 end
 
 
-function Jump()
+function CastNoTargetAbility()
 	ExecuteOrderFromTable({
 		UnitIndex = thisEntity:entindex(),
 		OrderType = DOTA_UNIT_ORDER_CAST_NO_TARGET,
-		AbilityIndex = JumpAbility:entindex(),
+		AbilityIndex = NoTargetAbility:entindex(),
 		Queue = false,
 	})
 	
@@ -77,20 +73,15 @@ function Jump()
 end
 
 
-function Smash( enemy )
+function CastPointAbility( enemy )
 	if enemy == nil then
 		return
-	end
-
-	if ( not thisEntity:HasModifier( "modifier_provide_vision" ) ) then
-		--print( "If player can't see me, provide brief vision to his team as I start my Smash" )
-		thisEntity:AddNewModifier( thisEntity, nil, "modifier_provide_vision", { duration = 1.5 } )
 	end
 
 	ExecuteOrderFromTable({
 		UnitIndex = thisEntity:entindex(),
 		OrderType = DOTA_UNIT_ORDER_CAST_POSITION,
-		AbilityIndex = SmashAbility:entindex(),
+		AbilityIndex = PointAbility:entindex(),
 		Position = enemy:GetOrigin(),
 		Queue = false,
 	})
@@ -98,12 +89,12 @@ function Smash( enemy )
 	return 3 
 end
 
-function Void( enemy )
+function CastTargetAbility( enemy )
 
 	ExecuteOrderFromTable({
 		UnitIndex = thisEntity:entindex(),
 		OrderType = DOTA_UNIT_ORDER_CAST_TARGET,
-		AbilityIndex = VoidAbility:entindex(),
+		AbilityIndex = TargetAbility:entindex(),
 		TargetIndex = enemy:entindex(),
 		Queue = false,
 	})
@@ -111,14 +102,4 @@ function Void( enemy )
 	return 0.5
 end
 
-function UseMaskOfMadness()
-	if thisEntity.hMaskOfMadnessAbility ~= nil and thisEntity.hMaskOfMadnessAbility:IsFullyCastable() then
-		ExecuteOrderFromTable({
-			UnitIndex = thisEntity:entindex(),
-			OrderType = DOTA_UNIT_ORDER_CAST_NO_TARGET,
-			AbilityIndex = thisEntity.hMaskOfMadnessAbility:entindex(),
-			Queue = false,
-		})
-	end
-end
 

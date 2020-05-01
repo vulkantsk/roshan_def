@@ -181,11 +181,11 @@ end
 function modifier_jacob_infest_passive:OnIntervalThink()
 	local caster = self:GetCaster()
 	local player = caster:GetPlayerID()
-	local gold = PlayerResource:GetGold(player)
+--	local gold = PlayerResource:GetGold(player)
 	if IsValidEntity(caster.host) and caster.host:IsAlive() then
 		caster:SetAbsOrigin(caster.host:GetAbsOrigin())
 	end
-	caster:SetMana(gold)
+--	caster:SetMana(gold)
 end
 
 modifier_jacob_infest_hidden = class({
