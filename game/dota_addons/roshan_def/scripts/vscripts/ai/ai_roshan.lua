@@ -32,7 +32,7 @@ function DiretideRoshanThink()
 	if dire_point then
 		dire_point = dire_point:GetAbsOrigin()
 	else
-		print("dire_point dont exist !!!")
+--		print("dire_point dont exist !!!")
 	end
 	local game_time = GameRules:GetGameTime()
 

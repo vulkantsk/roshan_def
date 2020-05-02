@@ -11,6 +11,9 @@
 
 	"Game_notification_forpost_spawn"				"<font color='#DBA901'>Лагерь альянса сформировал отряд , который направляется с востока ! </font>"
 
+	"Game_notification_boss_spawn_explosive_squad"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>ВЗРЫВНОЙ ОТРЯД </font> приближается к вам!"
+	"Game_notification_boss_spawn_midas_acolyte"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>ПОСЛУШНИК МИДАСА </font> приближается к вам!"
+	"Game_notification_boss_spawn_thief"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>ВОРИШКА </font> приближается к вам!"
 	"Game_notification_boss_spawn_evil_treant"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>ЗЛОБНЫЙ ДРЕВЕНЬ </font> приближается к вам!"
 	"Game_notification_boss_spawn_venom_dragon"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>ЯДОВИТЫЙ ДРАКОН </font> приближается к вам!"
 	"Game_notification_boss_spawn_elite_squad"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>ЭЛИТНЫЙ ОТРЯД </font> приближается к вам!"
@@ -398,7 +401,7 @@
 		"DOTA_Tooltip_ability_holdout_storm_bolt_Description"						"Sven unleashes his magical gauntlet that deals damage and stuns enemy units."
 
 //Wyvern
-		"npc_dota_hero_winter_wyvern"	"Mystic dragon(IMBA)"
+		"npc_dota_hero_winter_wyvern"	"Mystic dragon"
 		"DOTA_Tooltip_ability_inherit_wyvern_buff"									"Mystic dragon buff"
 		"DOTA_Tooltip_ability_inherit_wyvern_buff_Description"						"Мудрейшее существо этого мира, способное на всё и привлекающее на свою службу всё больше драконов, давая им абсолютные знания вселенной для победы над любым врагом! "
 		"DOTA_Tooltip_ability_inherit_wyvern_buff_evasion_bonus"					"Дополнительное уклонение :"
@@ -1241,7 +1244,7 @@
         "npc_dota_techies_land_mine"    "Минка"	
 //Phoenix(Special hero)
  
-        "npc_dota_hero_phoenix"          "Жар-птица"
+        "npc_dota_hero_phoenix"          "Жар-птица(IMBA)"
  
         "DOTA_Tooltip_ability_phoenix_fire_soul"                        "Fire soul"
         "DOTA_Tooltip_ability_phoenix_fire_soul_Description"            "Чувствуя недостаток жизненной силы душевный огонь разжигается сильнее, увеличивая силу магии !"
@@ -2847,6 +2850,57 @@
 		"DOTA_Tooltip_ability__Description"				"description"
 		"DOTA_Tooltip_ability__"				""
 
+		"DOTA_Tooltip_ability_explosive_squad_boom"							"BOOM"
+		"DOTA_Tooltip_ability_explosive_squad_boom_Description"				"Взрывается, нанося огромный урон в радиусе !"
+		"DOTA_Tooltip_ability_explosive_squad_boom_radius"				"РАДИУС:"
+		"DOTA_Tooltip_ability_explosive_squad_boom_damage"				"УРОН:"
+
+		"DOTA_Tooltip_ability_ability_midas_acolyte_1"							"Midas touch"
+		"DOTA_Tooltip_ability_ability_midas_acolyte_1_Description"				"Любая атака глупых существ моментально превратит их в золото, усиляя приспешника!"
+		"DOTA_Tooltip_ability_ability_midas_acolyte_1_bonus_health"				"БОНУС ЗДОРОВЬЯ:"
+		"DOTA_Tooltip_ability_ability_midas_acolyte_1_bonus_dmg"				"БОНУС УРОНА:"
+
+		"DOTA_Tooltip_ability_ability_midas_acolyte_2"							"Aura of greed"
+		"DOTA_Tooltip_ability_ability_midas_acolyte_2_Description"				"Жадность приспешника настолько велика, что он ворует золото у своих врагов восстанавливая собственную жизнь.\n <font color='#ff9966'><em> Накопленное золото прибавляется к награде существа. </em> </font> "
+		"DOTA_Tooltip_ability_ability_midas_acolyte_2_aura_radius"			"РАДИУС:"
+		"DOTA_Tooltip_ability_ability_midas_acolyte_2_damage"				"КРАЖА ЗДОРОВЬЯ:"
+		"DOTA_Tooltip_ability_ability_midas_acolyte_2_gold_steal"			"КРАЖА ЗОЛОТА:"
+
+		"DOTA_Tooltip_ability_ability_midas_acolyte_3"							"Gold stomp"
+		"DOTA_Tooltip_ability_ability_midas_acolyte_3_Description"				"Сотрясает землю и наносит урон, зависящий от накопленного золота !"
+		"DOTA_Tooltip_ability_ability_midas_acolyte_3_radius"				"РАДИУС:"
+		"DOTA_Tooltip_ability_ability_midas_acolyte_3_duration"				"ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:"
+		"DOTA_Tooltip_ability_ability_midas_acolyte_3_gold_dmg"				"%УРОН ОТ НАКОПЛЕННОГО ЗОЛОТА:"
+
+		"DOTA_Tooltip_ability_ability_thief_1"							"Item steal"
+		"DOTA_Tooltip_ability_ability_thief_1_Description"				"Ворует случайный предмет у своих врагов, будьте осторожны ! \n <font color='#ff9966'><em> После смерти все предметы будут возвращены владельцам! </em> </font> "
+		"DOTA_Tooltip_ability_ability_thief_1_radius"					"РАДИУС:"
+
+		"DOTA_Tooltip_ability_ability_thief_2"							"Thief tricks"
+		"DOTA_Tooltip_ability_ability_thief_2_Description"				"Совершает серию ударов по всем врагам в радиусе !"
+		"DOTA_Tooltip_ability_ability_thief_2_radius"					"РАДИУС:"
+		"DOTA_Tooltip_ability_ability_thief_2_reduction_movespeed"				"%СНИЖЕНИЕ ПЕРЕДВИЖЕНИЯ:"
+		"DOTA_Tooltip_ability_ability_thief_2_reduction_atkspeed"				"СНИЖЕНИЕ СКОРОСТИ АТАКИ:"
+		"DOTA_Tooltip_ability_ability_thief_2_reduction_duration"				"ДЛИТЕЛЬНОСТЬ ДЕБАФА:"
+
+		"DOTA_Tooltip_ability_ability_thief_3"							"Sneaky punch"
+		"DOTA_Tooltip_ability_ability_thief_3_Description"				"Совершает подлую атаку, эффект которой сработает через время !"
+		"DOTA_Tooltip_ability_ability_thief_3_delay"				"ЗАДЕРЖКА:"
+		"DOTA_Tooltip_ability_ability_thief_3_duration"				"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_ability_thief_3_remove_armor"				"СНИЖЕНИЕ БРОНИ:"
+		"DOTA_Tooltip_modifier_ability_thief_3_delay_Description"		"Sneaky punch"
+		"DOTA_Tooltip_modifier_ability_thief_3_delay"					"Сейчас будет больно !"
+
+		"DOTA_Tooltip_ability_ability_thief_4"							"Concentrate"
+		"DOTA_Tooltip_ability_ability_thief_4_Description"				"Накапливает энергию, чтобы совершить серию быстрых ударов ! "
+		"DOTA_Tooltip_ability_ability_thief_4_amount_attack"			"КОЛИЧЕСТВО АТАК:"
+		"DOTA_Tooltip_ability_ability_thief_4_duration"					"ДЛИТЕЛЬНОСТЬ БАФА:"
+		"DOTA_Tooltip_ability_ability_thief_4_bonus_attack_speed"		"БОНУС СКОРОСТИ АТАКИ:"
+		"DOTA_Tooltip_modifier_ability_thief_4_stacks"		"Concentrate"
+		"DOTA_Tooltip_modifier_ability_thief_4_stacks_Description"					"Готовится к повышенной концентрации !"
+		"DOTA_Tooltip_modifier_ability_thief_4_buff"		"Concentrate buff"
+		"DOTA_Tooltip_modifier_ability_thief_4_buff_Description"					"Получает дополнительную скорость атаки !"
+
  		"DOTA_Tooltip_ability_darksoul_desolate"							"Desolate"
 		"DOTA_Tooltip_ability_darksoul_desolate_Description"				"Каждая атака тёмной души наносит больший урон!"
 		"DOTA_Tooltip_ability_darksoul_desolate_stack_duration"				"ДЛИТЕЛЬНОСТЬ:"
@@ -3731,6 +3785,10 @@
 
 		
 //Units
+		"npc_explosive_squad_1"											"Взрывной конь"
+		"npc_explosive_squad_2"											"Взрывной жучара"
+		"npc_dota_midas_acolyte"											"Последователь мидаса"
+		"npc_dota_thief"													"Воришка"
 		"npc_dota_pudge_fatboy"														"Толстяк"
 		"npc_dota_friendly_ogre_cook"												"Огр повар"
 		"npc_dota_plague_wagon"														"Чумная повозка"

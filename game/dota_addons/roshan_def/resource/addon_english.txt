@@ -11,6 +11,10 @@
 	"Game_notification_chose_boss_mode_message"				"<font color='#DBA901'> The final boss will be selected randomly in 60 seconds!</font>  "
 	"Game_notification_forpost_spawn"				"<font color='#DBA901'>The alliance camp has formed a squad that is heading from the west! </font>"
 
+
+	"Game_notification_boss_spawn_explosive_squad"				"<font color='#DBA901'><br>GET READY FOR DEFENSE ! </font>  <font color='#FF0000'><br>EXPLOSIVE SQUAD </font>is approaching you!"
+	"Game_notification_boss_spawn_midas_acolyte"				"<font color='#DBA901'><br>GET READY FOR DEFENSE ! </font>  <font color='#FF0000'><br>MIDAS ACOLYTE </font>is approaching you!"
+	"Game_notification_boss_spawn_thief"				"<font color='#DBA901'><br>GET READY FOR DEFENSE ! </font>  <font color='#FF0000'><br>THIEF </font>is approaching you!"
 	"Game_notification_boss_spawn_evil_treant"				"<font color='#DBA901'><br>GET READY FOR DEFENSE ! </font>  <font color='#FF0000'><br>EVIL TREANT </font>is approaching you!"
 	"Game_notification_boss_spawn_venom_dragon"				"<font color='#DBA901'><br>GET READY FOR DEFENSE ! </font>  <font color='#FF0000'><br>VENOMOUS DRAGON </font>is approaching you!"
 	"Game_notification_boss_spawn_elite_squad"				"<font color='#DBA901'><br>GET READY FOR DEFENSE ! </font>  <font color='#FF0000'><br>ELITE SQUAD </font>is approaching you!"
@@ -322,7 +326,7 @@
 		"DOTA_Tooltip_modifier_inherit_jakiro_buff_Description"					"Is a leader of the dragons" 
 
 //Wyvern
-		"npc_dota_hero_winter_wyvern"	"Mystic dragon(IMBA)"
+		"npc_dota_hero_winter_wyvern"	"Mystic dragon"
 
 		"DOTA_Tooltip_ability_inherit_wyvern_buff"									"Mystic dragon buff"
 		"DOTA_Tooltip_ability_inherit_wyvern_buff_Description"						"The eldest wurm joins the Roshan war. Auroth enlightens allied dragons with knowledge on the battlefield!"
@@ -1155,7 +1159,7 @@
 		
 //Phoenix
  
-        "npc_dota_hero_phoenix"          "Phoenix"
+        "npc_dota_hero_phoenix"          "Phoenix(IMBA)"
  
         "DOTA_Tooltip_ability_phoenix_fire_soul"                        "Fiery soul"
         "DOTA_Tooltip_ability_phoenix_fire_soul_Description"            "Feeling the lack of vitality, its soul burns more brightly, increasing the spell damage!"
@@ -2832,6 +2836,57 @@
 		"DOTA_Tooltip_ability__Description"				"description"
 		"DOTA_Tooltip_ability__"				""
 
+		"DOTA_Tooltip_ability_explosive_squad_boom"							"BOOM"
+		"DOTA_Tooltip_ability_explosive_squad_boom_Description"				"Explodes, inflicting huge damage in a radius!"
+		"DOTA_Tooltip_ability_explosive_squad_boom_radius"				"RADIUS:"
+		"DOTA_Tooltip_ability_explosive_squad_boom_damage"				"DAMAGE:"
+
+		"DOTA_Tooltip_ability_ability_midas_acolyte_1"							"Midas touch"
+		"DOTA_Tooltip_ability_ability_midas_acolyte_1_Description"				"Any attack by stupid creatures instantly turns them into gold, strengthening the boss!"
+		"DOTA_Tooltip_ability_ability_midas_acolyte_1_bonus_health"				"HEALTH BONUS:"
+		"DOTA_Tooltip_ability_ability_midas_acolyte_1_bonus_dmg"				"DAMAGE BONUS:"
+
+		"DOTA_Tooltip_ability_ability_midas_acolyte_2"							"Aura of greed"
+		"DOTA_Tooltip_ability_ability_midas_acolyte_2_Description"				"The boss's greed is so great that he steals gold from his enemies restoring his own life.\n <font color='#ff9966'><em> Accumulated gold adds to boss kill reward! </em> </font> "
+		"DOTA_Tooltip_ability_ability_midas_acolyte_2_aura_radius"			"RADIUS:"
+		"DOTA_Tooltip_ability_ability_midas_acolyte_2_damage"				"HEALTH THEFT:"
+		"DOTA_Tooltip_ability_ability_midas_acolyte_2_gold_steal"			"GOLD THEFT:"
+
+		"DOTA_Tooltip_ability_ability_midas_acolyte_3"							"Gold stomp"
+		"DOTA_Tooltip_ability_ability_midas_acolyte_3_Description"				"Shakes the earth and deals damage, depending on the accumulated gold!"
+		"DOTA_Tooltip_ability_ability_midas_acolyte_3_radius"				"RADIUS:"
+		"DOTA_Tooltip_ability_ability_midas_acolyte_3_duration"				"STUN DURATION:"
+		"DOTA_Tooltip_ability_ability_midas_acolyte_3_gold_dmg"				"%GOLD TO DAMAGE:"
+
+		"DOTA_Tooltip_ability_ability_thief_1"							"Item steal"
+		"DOTA_Tooltip_ability_ability_thief_1_Description"				"Steals a random item from his enemies, be careful! \n <font color='#ff9966'><em> After death, all items will be returned to the owners! </em> </font> "
+		"DOTA_Tooltip_ability_ability_thief_1_radius"					"RADIUS:"
+
+		"DOTA_Tooltip_ability_ability_thief_2"							"Thief tricks"
+		"DOTA_Tooltip_ability_ability_thief_2_Description"				"Makes a series of attacks on all enemies in a radius!"
+		"DOTA_Tooltip_ability_ability_thief_2_radius"					"RADIUS:"
+		"DOTA_Tooltip_ability_ability_thief_2_reduction_movespeed"				"%MOVEMENT REDUCTION:"
+		"DOTA_Tooltip_ability_ability_thief_2_reduction_atkspeed"				"ATTACK SPEED REDUCTION:"
+		"DOTA_Tooltip_ability_ability_thief_2_reduction_duration"				"DEBUFF DURATION:"
+
+		"DOTA_Tooltip_ability_ability_thief_3"							"Sneaky punch"
+		"DOTA_Tooltip_ability_ability_thief_3_Description"				"Makes a vile attack, the effect of which works after a while!"
+		"DOTA_Tooltip_ability_ability_thief_3_delay"				"DELAY:"
+		"DOTA_Tooltip_ability_ability_thief_3_duration"				"DURATION:"
+		"DOTA_Tooltip_ability_ability_thief_3_remove_armor"				"ARMOR REDUCTION:"
+		"DOTA_Tooltip_modifier_ability_thief_3_delay_Description"		"Sneaky punch"
+		"DOTA_Tooltip_modifier_ability_thief_3_delay"					"It will hurt now!"
+
+		"DOTA_Tooltip_ability_ability_thief_4"							"Concentrate"
+		"DOTA_Tooltip_ability_ability_thief_4_Description"				"Accumulates energy to make a series of quick strokes!"
+		"DOTA_Tooltip_ability_ability_thief_4_amount_attack"			"NUMBER OF ATTACKS:"
+		"DOTA_Tooltip_ability_ability_thief_4_duration"					"BUFF DURATION:"
+		"DOTA_Tooltip_ability_ability_thief_4_bonus_attack_speed"		"ATTACK SPEED BONUS:"
+		"DOTA_Tooltip_modifier_ability_thief_4_stacks"		"Concentrate"
+		"DOTA_Tooltip_modifier_ability_thief_4_stacks_Description"					"Getting ready for increased concentration!"
+		"DOTA_Tooltip_modifier_ability_thief_4_buff"		"Concentrate buff"
+		"DOTA_Tooltip_modifier_ability_thief_4_buff_Description"					"Gets extra attack speed!"
+
  		"DOTA_Tooltip_ability_rupture_custom"							"Rupture"
 		"DOTA_Tooltip_ability_rupture_custom_Description"				"description"
 		"DOTA_Tooltip_ability_rupture_custom_duration"							"DURATION:"
@@ -3754,6 +3809,10 @@
 		"DOTA_Tooltip_ability_halloween_pumkin_passive_Description"							"Hit the pumpkin faster, here are a bunch of candy!"
 	
 		//Units
+		"npc_explosive_squad_1"			"Explosive horse"
+		"npc_explosive_squad_2"			"Explosive beetle"
+		"npc_dota_midas_acolyte"		"Midas acolyte"
+		"npc_dota_thief"				"Thief"
 		"npc_dota_evil_treant"		"Evil treant"
 		"npc_dota_venom_dragon"		"Venomous dragon"
 		"npc_dota_dire_soldier"		"Dire soldier"

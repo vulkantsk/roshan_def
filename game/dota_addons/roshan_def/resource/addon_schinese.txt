@@ -11,7 +11,11 @@
         "Game_notification_forpost_spawn"                                "<font color='#DBA901'>黑暗军团已经组成一支从西部出发的小队！ </font>"
 
 
-        "Game_notification_boss_spawn_evil_treant"                                "<font color='#DBA901'><br> 准备防御！ </font>  <font color='#FF0000'><br>邪恶的树精 </font>正在接近你！"
+ 
+        "Game_notification_boss_spawn_explosive_squad"                          "<font color='#DBA901'><br> 准备防御！ </font>  <font color='#FF0000'><br>爆炸小队 </font>正在接近你！"
+        "Game_notification_boss_spawn_midas_acolyte"                            "<font color='#DBA901'><br> 准备防御！ </font>  <font color='#FF0000'><br>麦达斯助剂 </font>正在接近你！"
+        "Game_notification_boss_spawn_thief"                            "<font color='#DBA901'><br> 准备防御！ </font>  <font color='#FF0000'><br>贼 </font>正在接近你！"
+       "Game_notification_boss_spawn_evil_treant"                                "<font color='#DBA901'><br> 准备防御！ </font>  <font color='#FF0000'><br>邪恶的树精 </font>正在接近你！"
         "Game_notification_boss_spawn_venom_dragon"                                "<font color='#DBA901'><br> 准备防御！ </font>  <font color='#FF0000'><br>毒龙</font>正在接近你！"
         "Game_notification_boss_spawn_elite_squad"                                "<font color='#DBA901'><br> 准备防御！ </font>  <font color='#FF0000'><br>精英队 </font>正在接近你！"
         "Game_notification_boss_spawn_abomination"                                "<font color='#DBA901'><br> 准备防御！ </font>  <font color='#FF0000'><br>地狱屠夫 </font>正在接近你！"
@@ -2834,6 +2838,56 @@
                 "DOTA_Tooltip_ability__Description"                             "描述"
                 "DOTA_Tooltip_ability__"                                ""
 
+                "DOTA_Tooltip_ability_explosive_squad_boom"                                                     "繁荣"
+                "DOTA_Tooltip_ability_explosive_squad_boom_Description"                         "爆炸，对范围造成巨大伤害！"
+                "DOTA_Tooltip_ability_explosive_squad_boom_radius"                              "半径:"
+                "DOTA_Tooltip_ability_explosive_squad_boom_damage"                              "损伤:"
+
+                "DOTA_Tooltip_ability_ability_midas_acolyte_1"                                                  "迈达斯之触"
+                "DOTA_Tooltip_ability_ability_midas_acolyte_1_Description"                              "基于对金钱的渴望，加强了生命跟伤害!"
+                "DOTA_Tooltip_ability_ability_midas_acolyte_1_bonus_health"                             "额外生命:"
+                "DOTA_Tooltip_ability_ability_midas_acolyte_1_bonus_dmg"                                "额外伤害:"
+
+                "DOTA_Tooltip_ability_ability_midas_acolyte_2"                                                  "贪婪光环"
+                "DOTA_Tooltip_ability_ability_midas_acolyte_2_Description"                              "迈达斯对金钱是如此的渴望,只要从敌人那里获取金币他的生命就会获得回复.\n <font color='#ff9966'><em> 根据获得的金钱增加生命值</em> </font> "
+                "DOTA_Tooltip_ability_ability_midas_acolyte_2_aura_radius"                      "作用半径:"
+                "DOTA_Tooltip_ability_ability_midas_acolyte_2_damage"                           "生命上限:"
+                "DOTA_Tooltip_ability_ability_midas_acolyte_2_gold_steal"                       "触发金钱:"
+
+                "DOTA_Tooltip_ability_ability_midas_acolyte_3"                                                  "乾坤一掷"
+                "DOTA_Tooltip_ability_ability_midas_acolyte_3_Description"                              "用金钱狠狠的羞辱敌人，根据金钱数量造成伤害并眩晕 !"
+                "DOTA_Tooltip_ability_ability_midas_acolyte_3_radius"                           "作用半径:"
+                "DOTA_Tooltip_ability_ability_midas_acolyte_3_duration"                         "眩晕时间:"
+                "DOTA_Tooltip_ability_ability_midas_acolyte_3_gold_dmg"                         "%金钱消耗:"
+
+                "DOTA_Tooltip_ability_ability_thief_1"                                                  "有借有还"
+                "DOTA_Tooltip_ability_ability_thief_1_Description"                              "偷东西的时候一定要小心, 不是吗 ! \n <font color='#ff9966'><em>出来混迟早要还! </em> </font> "
+                "DOTA_Tooltip_ability_ability_thief_1_radius"                                   "作用半径:"
+
+                "DOTA_Tooltip_ability_ability_thief_2"                                                  "鹰眼"
+                "DOTA_Tooltip_ability_ability_thief_2_Description"                              "攻击范围内敌人时降低他们的速度!"
+                "DOTA_Tooltip_ability_ability_thief_2_radius"                                   "作用半径:"
+                "DOTA_Tooltip_ability_ability_thief_2_reduction_movespeed"                              "%移速降低:"
+                "DOTA_Tooltip_ability_ability_thief_2_reduction_atkspeed"                               "攻击速度降低:"
+                "DOTA_Tooltip_ability_ability_thief_2_reduction_duration"                               "持续时间:"
+
+                "DOTA_Tooltip_ability_ability_thief_3"                                                  "暗袭"
+                "DOTA_Tooltip_ability_ability_thief_3_Description"                              "从阴影处偷袭敌人,并在之后的一段时间内降低敌人的护甲 !"
+                "DOTA_Tooltip_ability_ability_thief_3_delay"                            "生效延迟:"
+                "DOTA_Tooltip_ability_ability_thief_3_duration"                         "持续时间:"
+                "DOTA_Tooltip_ability_ability_thief_3_remove_armor"                             "降低护甲:"
+                "DOTA_Tooltip_modifier_ability_thief_3_delay"               "潜伏"
+                "DOTA_Tooltip_modifier_ability_thief_3_delay_Description"                                   "好疼 !"
+
+                "DOTA_Tooltip_ability_ability_thief_4"                                                  "刺客信条"
+                "DOTA_Tooltip_ability_ability_thief_4_Description"                              "一击不中远遁千里,短时间内增加出手速度  ! "
+                "DOTA_Tooltip_ability_ability_thief_4_amount_attack"                    "持续次数:"
+                "DOTA_Tooltip_ability_ability_thief_4_duration"                                 "持续时间:"
+                "DOTA_Tooltip_ability_ability_thief_4_bonus_attack_speed"               "额外攻速:"
+                "DOTA_Tooltip_modifier_ability_thief_4_stacks"             "爆发"
+                "DOTA_Tooltip_modifier_ability_thief_4_stacks_Description"                                  "聚精会神 !"
+                "DOTA_Tooltip_modifier_ability_thief_4_buff"               "聚精会神"
+                "DOTA_Tooltip_modifier_ability_thief_4_buff_Description"                                    "快更快非常快 !"
  
                 "DOTA_Tooltip_ability_darksoul_desolate"                                                        "荒凉"
                 "DOTA_Tooltip_ability_darksoul_desolate_Description"                            "每次黑暗之魂攻击都会造成更多伤害!"
@@ -3703,6 +3757,10 @@
                 "DOTA_Tooltip_ability_halloween_pumkin_passive_Description"                                                     "快打南瓜，有很多糖果!"
         
                 //Units
+                "npc_explosive_squad_1"                 "爆炸马"
+                "npc_explosive_squad_2"                 "炸甲虫"
+                "npc_dota_midas_acolyte"                "麦达斯助剂"
+                "npc_dota_thief"                                "贼"
 
                 "npc_dota_pudge_fatboy"                                                                                                         "小胖男孩"
                 "npc_dota_friendly_ogre_cook"                                                                                           "食人魔煮"

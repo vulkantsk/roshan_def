@@ -12986,7 +12986,7 @@
 		"05"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"movement_damage_hp_pct"		"3"
+			"movement_damage_hp_pct"		"2"
 		}
 		"06"
 		{
@@ -14915,8 +14915,8 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-//				"jumps"					"5 5 5 5 6 7 8"
-				"jumps"					"10 10 10 10 15 20 25"
+				"jumps"					"5 5 5 5 6 7 8"
+//				"jumps"					"15 20 25 30 40 50 60"
 			}
 			"02"
 			{
@@ -15095,8 +15095,8 @@
 		"06"
 		{
 			"var_type"			"FIELD_INTEGER"
-//			"int_mult"			"100"
-			"int_mult"			"100 115 130 150 175 200 225"
+			"int_mult"			"100"
+//			"int_mult"			"100 115 130 150 175 200 225"
 		}
 
 	}
@@ -15231,14 +15231,14 @@
 		"02"
 		{
 			"var_type"				"FIELD_FLOAT"
-//			"damage_absorb"			"250 400 550 700 1000 1300 1600"
-			"damage_absorb"			"500 800 1100 1400 2000 2600 3200"
+			"damage_absorb"			"250 400 550 700 1000 1300 1600"
+//			"damage_absorb"			"500 800 1100 1400 2000 2600 3200"
 		}
 		"03"
 		{
 			"var_type"				"FIELD_INTEGER"
-//			"damage_per_int"		"2"
-			"damage_per_int"		"5"
+			"damage_per_int"		"2"
+//			"damage_per_int"		"6"
 		}
 		"04"
 		{
@@ -15346,8 +15346,8 @@
 		"01"
 		{
 			"var_type"							"FIELD_FLOAT"
-//			"grow_int"							"0.5 1.0 1.5 2.0 2.5"
-			"grow_int"							"1 2 3 4 5"
+			"grow_int"							"0.5 1.0 1.5 2.0 2.5"
+//			"grow_int"							"1.5 3.0 4.5 6.0 7.5"
 		}
 
 		"02"
@@ -21389,7 +21389,7 @@
 		"01"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"max_layers"		"10"
+			"max_layers"		"20"
 		}
 		"02"
 		{
@@ -22680,8 +22680,8 @@
 		"03"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"bonus_movement_speed"	"10 15 20 25 30 35 40"
-//			"bonus_movement_speed"	"40 50 60 70 80 90 100"
+//			"bonus_movement_speed"	"10 15 20 25 30 35 40"
+			"bonus_movement_speed"	"40 50 60 70 80 90 100"
 		}
 		"04"
 		{
@@ -22845,8 +22845,8 @@
 		"02"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"as_bonus"				"25 35 45 55 70 85 100"
-//			"as_bonus"				"40 50 60 70 95 120 150"
+//			"as_bonus"				"15 20 25 30 40 50 60"
+			"as_bonus"				"40 50 60 70 95 120 150"
 		}
 		"03"
 		{
@@ -22957,13 +22957,13 @@
 	
 	// Time		
 	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCooldown"				"15.0"
-//	"AbilityCooldown"				"5.0"
+//	"AbilityCooldown"				"15.0"
+	"AbilityCooldown"				"5.0"
 	
 	// Cost
 	//-------------------------------------------------------------------------------------------------------------
-	"AbilityManaCost"				"75 100 125 150 200 250 300"
-//	"AbilityManaCost"				"75"
+//	"AbilityManaCost"				"75 100 125 150 200 250 300"
+	"AbilityManaCost"				"75"
 	
 	// Special
 	//-------------------------------------------------------------------------------------------------------------
@@ -23083,8 +23083,8 @@
 
 	// Time		
 	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCooldown"				"150.0"
-//	"AbilityCooldown"				"60.0"
+//	"AbilityCooldown"				"180.0"
+	"AbilityCooldown"				"60.0"
 	"AbilityCastPoint"				"0.7"
 	
 	// Cost
@@ -29457,8 +29457,8 @@
         "05"
         {
             "var_type"                  "FIELD_INTEGER"
-            "base_dmg"          "100 200 300 400 600 800 1000"
-//            "base_dmg"          "300 600 900 1200 1800 2400 3000"
+//            "base_dmg"          "100 200 300 400 600 800 1000"
+            "base_dmg"          "300 600 900 1200 1800 2400 3000"
         }
         "06"
         {
@@ -29604,8 +29604,8 @@
         "03"
         {
             "var_type"                      "FIELD_INTEGER"
-            "damage_absorb"                 "350 500 650 800 1200 1600 2000"
-//            "damage_absorb"                 "700 1000 1300 1600 2400 3200 4000"
+//            "damage_absorb"                 "350 500 650 800 1200 1600 2000"
+            "damage_absorb"                 "700 1000 1300 1600 2400 3200 4000"
         }              
         "04"
         {
@@ -29615,8 +29615,8 @@
         "05"
         {
             "var_type"                      "FIELD_INTEGER"
-            "damage_per_second"             "25 40 55 70 100 130 160"
-//            "damage_per_second"             "100 150 200 250 400 550 750"
+//            "damage_per_second"             "25 40 55 70 100 130 160"
+            "damage_per_second"             "75 120 150 210 300 400 500"
         }
         "06"
         {
@@ -29631,8 +29631,8 @@
         "08"
         {
             "var_type"                      "FIELD_INTEGER"
-            "damage_per_tick"               "5 8 11 14 20 26 32"
- //           "damage_per_tick"               "20 30 40 50 80 110 140"
+  //          "damage_per_tick"               "5 8 11 14 20 26 32"
+           "damage_per_tick"               "15 24 33 42 60 78 96"
         }
        
     }
@@ -29865,8 +29865,8 @@
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"attackspeed_slow"				"25 40 55 70 90 110 130"
-//				"attackspeed_slow"				"50 80 110 140 180 220 260"
+//				"attackspeed_slow"				"25 40 55 70 90 110 130"
+				"attackspeed_slow"				"50 80 110 140 180 220 260"
 			}
 			"05"
 			{
@@ -29918,8 +29918,8 @@
 		
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"120 110 100 85 70"
-//		"AbilityCooldown"				"80 70 60 50 40"
+//		"AbilityCooldown"				"120 110 100 85 70"
+		"AbilityCooldown"				"80 70 60 50 40"
 
 
 		// Precache
@@ -48956,6 +48956,7 @@
 	"gold_effect1"
 	{
 		"BaseClass"             		"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityTextureName"			"ability_name"
 		"MaxLevel" 						"7"	
 
@@ -48964,7 +48965,7 @@
 			"modifier_name"
 			{
 				"Passive"			"1"
-				"IsHidden"			"0"
+				"IsHidden"			"1"
 				"IsDebuff"			"0"
 		
 				"StatusEffectName"		"particles/econ/items/effigies/status_fx_effigies/status_effect_effigy_gold_lvl2.vpcf"
@@ -48975,6 +48976,7 @@
 	"gold_effect2"
 	{
 		"BaseClass"             		"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityTextureName"			"ability_name"
 		"MaxLevel" 						"7"	
 
@@ -48994,6 +48996,7 @@
 	"gold_effect3"
 	{
 		"BaseClass"             		"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityTextureName"			"ability_name"
 		"MaxLevel" 						"7"	
 
@@ -49007,6 +49010,296 @@
 		
 				"StatusEffectName"		"particles/econ/items/lifestealer/lifestealer_immortal_backbone_gold/status_effect_life_stealer_immortal_rage_gold.vpcf"
 				"StatusEffectPriority"	"100"
+			}
+		}
+	}
+
+	"explosive_squad_boom"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/explosive_squad/boom"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityTextureName"			"explosive_squad"
+		"MaxLevel"						"1"
+		
+		"AbilityCastRange"				"175"
+		"AbilityCastPoint"				"0.1"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"350"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"damage"					"4500"
+			}
+		}
+	}	
+
+	"ability_midas_acolyte_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/midas_acolyte/ability_midas_acolyte_1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"alchemist_goblins_greed"
+		"MaxLevel"						"1"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_health"				"250"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"bonus_dmg"					"50"
+			}
+		}
+	}	
+
+	"ability_midas_acolyte_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/midas_acolyte/ability_midas_acolyte_2"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityTextureName"			"alchemist_goblins_greed"
+		"MaxLevel"						"1"
+		
+		"AbilityManaCost"				"0"
+		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"0"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"aura_radius"				"600"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"interval_tick"				"1"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"damage"					"100"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"gold_steal"				"10"
+			}
+	
+		}
+	}
+
+	"ability_midas_acolyte_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/midas_acolyte/ability_midas_acolyte_3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"	
+		"AbilityTextureName"			"alchemist_goblins_greed"
+		"MaxLevel"						"1"
+		
+		"AbilityManaCost"				"0"
+		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"15"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"700"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"2"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"gold_dmg"					"50"
+			}
+	
+		}
+	}
+
+	"ability_thief_1"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/thief/ability_thief_1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"	
+		"AbilityTextureName"			"bounty_hunter_track"
+		"MaxLevel"						"1"
+		
+		"AbilityManaCost"				"0"
+		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"40"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"800"
+			}
+	
+		}
+	}
+
+	"ability_thief_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/thief/ability_thief_2"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"	
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags" 		"DOTA_UNIT_TARGET_FLAG_NONE"
+		"AbilityTextureName"			"bounty_hunter_jinada"
+		"MaxLevel"						"1"
+		
+		"AbilityManaCost"				"50"
+		"AbilityCooldown"				"8"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"550"
+			}
+
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"reduction_movespeed"			"50"
+			}
+
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"reduction_atkspeed"			"50"
+			}	
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"reduction_duration"			"2"
+			}
+		}
+	}
+
+	"ability_thief_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/thief/ability_thief_3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"	
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags" 		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"AbilityTextureName"			"slardar_amplify_damage"
+		"MaxLevel"						"1"
+		
+		"AbilityCastRange"				"200"
+		"AbilityManaCost"				"100"
+		"AbilityCooldown"				"15"
+			
+		"AbilityCastAnimation"			"0.2"
+		"AbilityCastAnimation"		"ACT_DOTA_ATTACK_EVENT"
+	
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"delay"					"3"
+			}
+			
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"5"
+			}
+						
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"remove_armor"			"50"
+			}
+		}
+	}
+
+	"ability_thief_4"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/thief/ability_thief_4"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags" 		"DOTA_UNIT_TARGET_FLAG_NONE"
+		"AbilityTextureName"			"bounty_hunter_wind_walk"
+		"MaxLevel"						"1"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"amount_attack"					"30"
+			}
+			
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"duration"						"3"
+			}
+						
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"bonus_attack_speed"			"400"
 			}
 		}
 	}

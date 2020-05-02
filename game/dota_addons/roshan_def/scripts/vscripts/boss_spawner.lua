@@ -15,13 +15,16 @@ boss_list = {
 {boss_name="venom_dragon", units={"npc_dota_venom_dragon"}, reward={1000}, music=nil, marathon=true, marathon_mult=300}},
 [3]= {{boss_name="witch", units={"npc_dota_dead_witch","forest_dota_dead_ghost","forest_dota_dead_ghost","forest_dota_dead_ghost"}, reward={1500}, music=nil, marathon=true, marathon_mult=200},
 {boss_name="elite_squad", units={"npc_dota_dire_commander","npc_dota_dire_siege","npc_dota_dire_soldier","npc_dota_dire_soldier","npc_dota_dire_mage","npc_dota_dire_mage"}, reward={750,750}, music=nil, marathon=true, marathon_mult=200}},
-[4]= {{boss_name="necronomicon", units={"npc_dota_necronomicon_warrior_boss","npc_dota_necronomicon_archer_boss"}, reward={1000,1000}, music="oingo_boingo_1", marathon=true, marathon_mult=150}},
-[5]= {{boss_name="nyx", units={"npc_dota_nyx_boss"}, reward={3000}, music=nil, marathon=true, marathon_mult=100}},
-[6]= {{boss_name="doom", units={"npc_dota_doom_boss","npc_dota_doom_minion","npc_dota_doom_minion","npc_dota_doom_minion"}, reward={4000}, music="zoldik", marathon=true, marathon_mult=75}},
+[4]= {{boss_name="necronomicon", units={"npc_dota_necronomicon_warrior_boss","npc_dota_necronomicon_archer_boss"}, reward={1000,1000}, music="oingo_boingo_1", marathon=true, marathon_mult=150},
+{boss_name="explosive_squad", units={["npc_explosive_squad_1"]= 6,["npc_explosive_squad_2"]= 6}, reward={200}, music=nil, marathon=nil, marathon_mult=150}},
+[5]= {{boss_name="nyx", units={"npc_dota_nyx_boss"}, reward={3000}, music=nil, marathon=true, marathon_mult=100},
+{boss_name="midas_acolyte", units={"npc_dota_midas_acolyte"}, reward={3000}, music=nil, marathon=true, marathon_mult=100}},
+[6]= {{boss_name="doom", units={"npc_dota_doom_boss","npc_dota_doom_minion","npc_dota_doom_minion","npc_dota_doom_minion"}, reward={4000}, music="zoldik", marathon=true, marathon_mult=75},
+{boss_name="thief", units={"npc_dota_thief"}, reward={4000}, music=nil, marathon=nil, marathon_mult=100}},
 [7]= {{boss_name="seeker", units={"npc_dota_bloodseeker_boss"}, reward={5000}, music=nil, marathon=true, marathon_mult=50}},
 [8]= {{boss_name="sans", units={"npc_dota_sans"}, reward={7500}, music="sans_theme", marathon=nil, marathon_mult=200}},
 [9]= {{boss_name="spectre", units={"npc_phantasm_1"}, reward={10000}, music=nil, marathon=nil, marathon_mult=200}},
-[10]= {{boss_name="cursed_warriors", units={"npc_cursed_warrior","npc_cursed_warrior","npc_cursed_warrior","npc_cursed_warrior","npc_cursed_warrior","npc_cursed_warrior","npc_cursed_warrior","npc_cursed_warrior","npc_cursed_warrior","npc_cursed_warrior","npc_cursed_warrior","npc_cursed_warrior"}, reward={10000}, music="Sandopolis", marathon=true, marathon_mult=200}},
+[10]= {{boss_name="cursed_warriors", units={["npc_cursed_warrior"]=12}, reward={1000}, music="Sandopolis", marathon=true, marathon_mult=200}},
 [11]= {{boss_name="plague_wagon", units={"npc_dota_plague_wagon"}, reward={10000}, music="krutoe_pike", marathon=nil, marathon_mult=200}},
 }
 
@@ -103,8 +106,10 @@ function BossSpawner:SpawnBoss(index)
 	end
 
 	GameRules:SendCustomMessage("#Game_notification_boss_spawn_"..boss_name,0,0)
+	local unit_total = 0
 
 	for key, value in pairs (units) do
+		local unit_name
 		if type(key) == "string" then
 			unit_count = value
 			unit_name = key
@@ -116,18 +121,21 @@ function BossSpawner:SpawnBoss(index)
 		end
 
 		for i=1, unit_count do
-			local unit = CreateUnitByName( unit_name , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
-			unit:SetInitialGoalEntity( waypoint )
+			unit_total = unit_total + 1
+			Timers:CreateTimer(unit_total*1,function()
+				local unit = CreateUnitByName( unit_name , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
+				unit:SetInitialGoalEntity( waypoint )
 
-			local unit_reward = reward[index]
-			if unit_reward then
-				unit.reward = unit_reward
-			end
+				local unit_reward = reward[index]
+				if unit_reward then
+					unit.reward = unit_reward
+				end
 
-			if music then
-				boss_music[music] = boss_music[music] + 1
-				unit.music = music
-			end 
+				if music then
+					boss_music[music] = boss_music[music] + 1
+					unit.music = music
+				end 
+			end)
 		end
 	end 
 end

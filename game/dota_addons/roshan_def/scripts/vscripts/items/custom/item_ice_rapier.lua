@@ -135,6 +135,7 @@ end
 function modifier_item_imba_skadi:OnIntervalThink()	
 	local item = self:GetAbility()
 	local caster = self:GetCaster()
+	local vLocation = caster:GetAbsOrigin()
 	local stats_required = item:GetSpecialValueFor( "stats_required" )
 --		GameRules:SendCustomMessage("stats_required:"..stats_required,0,0)
 	local item_stats_sum = item:GetSpecialValueFor( "rapier_str" ) + item:GetSpecialValueFor( "rapier_agi" ) + item:GetSpecialValueFor( "rapier_int" )

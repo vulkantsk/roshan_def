@@ -1,25 +1,25 @@
 ability_test_1 = class({})
 
 function ability_test_1:OnSpellStart()
-	BossSpawner:SpawnBoss(6)
+	BossSpawner:SpawnBoss(4)
 end
 
 ability_test_2 = class({})
 
 function ability_test_2:OnSpellStart()
-	Sounds:RemoveGlobalLoopingSound( "satan_bal")
+	BossSpawner:SpawnBoss(10)
 end
 
 ability_test_3 = class({})
 
 function ability_test_3:OnSpellStart()
-	Sounds:CreateGlobalLoopingSound( "zoldik")
+	BossSpawner:SpawnBoss(6)
 end
 
 ability_test_4 = class({})
 
 function ability_test_4:OnSpellStart()
-	Sounds:RemoveGlobalLoopingSound( "zoldik")
+	BossSpawner:SpawnBoss(index)
 end
 
 ability_test_5 = class({})
