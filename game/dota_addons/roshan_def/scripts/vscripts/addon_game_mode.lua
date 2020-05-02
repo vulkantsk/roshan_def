@@ -7,7 +7,7 @@ require('barebones')
 require('abilities/basic')
 require('modules/index')
 
-
+require('modifiers/modifier_test_bonus_attributes')
 function Precache( context )
 	-- NOTE: IT IS RECOMMENDED TO USE A MINIMAL AMOUNT OF LUA PRECACHING, AND A MAXIMAL AMOUNT OF DATADRIVEN PRECACHING.
 	-- Precaching guide: https://moddota.com/forums/discussion/119/precache-fixing-and-avoiding-issues

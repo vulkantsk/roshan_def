@@ -15,7 +15,7 @@ if not request then
 end
 
 __request_util__.ModuleRequire(...,'util')
-request.__exports = __request_util__
+
 local _util_ = request.__exports
 function request:Init()
     ListenToGameEvent('npc_spawned', Dynamic_Wrap(request, 'OnNPCSpawned'), self)
@@ -66,7 +66,7 @@ end
 
 function request:GameEnd(winTeam)
     winTeam = winTeam or DOTA_TEAM_GOODGUYS
-    GameRules:SetGameWinner(winTeam)
+    -- GameRules:SetGameWinner(winTeam)
 	local IsSpeedRun = CustomNetTables:GetTableValue( "donate", 'GLOBAL')
     IsSpeedRun = IsSpeedRun and IsSpeedRun.use_donate ~= 0
     local _data = {
@@ -98,9 +98,7 @@ function request:GameEnd(winTeam)
         end
     end)
     CustomNetTables:SetTableValue('request', 'GameEnd',__data)
-    if not GameRules:IsCheatMode() and not IsInToolsMode() then 
-        _util_.RequestData('game_end',_data)     
-    end
+    _util_.RequestData('game_end',_data) 
     CustomGameEventManager:Send_ServerToAllClients('OnGameEnd', {
     	GameData = __data,
     })

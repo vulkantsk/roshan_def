@@ -17,6 +17,10 @@ local __request_util = class({
 			data = data,
 			__authKey = request.__authKey,
 		})
+		print(url)
+		if url == 'game_end' then 
+			print(data)
+		end
 	    local req = CreateHTTPRequestScriptVM('POST', request.__http .. url .. '.php')
 		req:SetHTTPRequestGetOrPostParameter("Data", data )
 		req:Send(function(response)
@@ -24,6 +28,7 @@ local __request_util = class({
 	        	print("Error, Status code = ",response.StatusCode) 
 	        	return 
 	        end
+	        print('test')
 	        print('request response')
 			local obj, pos, err = json.decode(response.Body)
 			if not obj or type(obj) ~= "table" or obj == '' then 

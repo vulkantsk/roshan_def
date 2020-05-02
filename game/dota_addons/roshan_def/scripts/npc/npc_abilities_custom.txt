@@ -49017,7 +49017,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/midas_acolyte/ability_midas_acolyte_1"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
 		"AbilityTextureName"			"ability_midas_acolyte_1"
 		"MaxLevel"						"1"
 		
@@ -49089,7 +49089,7 @@
 			"04"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"gold_steal"					"10"
+				"gold_lose"					"10"
 			}
 			"05"
 			{
@@ -49168,7 +49168,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"	
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetFlags" 		"DOTA_UNIT_TARGET_FLAG_NONE"
-		"AbilityTextureName"			"ability_killer_1"
+		"AbilityTextureName"			"ability_killer_2"
 		"MaxLevel"						"1"
 		
 		"AbilityManaCost"				"0"
@@ -49218,6 +49218,87 @@
 			{
 				"var_type"					"FIELD_INTEGER"
 				"reduction_duration"			"2"
+			}
+		}
+	}
+
+	"ability_killer_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/killer/ability_killer_3"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"	
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags" 		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"AbilityTextureName"			"ability_killer_3"
+		"MaxLevel"						"1"
+		
+		"AbilityManaCost"				"0"
+		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"0"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"delay"					"2"
+			}
+			
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"duration"			"5"
+			}
+						
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"remove_armor"			"10"
+			}
+		}
+	}
+
+	"ability_killer_4"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/killer/ability_killer_4"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"	
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags" 		"DOTA_UNIT_TARGET_FLAG_NONE"
+		"AbilityTextureName"			"ability_killer_4"
+		"MaxLevel"						"1"
+		
+		"AbilityManaCost"				"0"
+		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"0"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"amount_attack"					"3"
+			}
+			
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"duration"						"5"
+			}
+						
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"bonus_attack_speed"			"200"
 			}
 		}
 	}
