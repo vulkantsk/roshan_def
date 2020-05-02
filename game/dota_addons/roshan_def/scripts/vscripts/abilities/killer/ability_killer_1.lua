@@ -3,7 +3,7 @@ function ability_killer_1:GetIntrinsicModifierName() return 'modifier_ability_ki
 function ability_killer_1:OnSpellStart()
 	local caster = self:GetCaster()
 	local radius = self:GetSpecialValueFor('radius')
-	local unit = FindUnitsInRadius(
+	local units = FindUnitsInRadius(
 		caster:GetTeamNumber(), 
 		caster:GetOrigin(), 
 		caster, 
@@ -12,7 +12,8 @@ function ability_killer_1:OnSpellStart()
 		DOTA_UNIT_TARGET_HERO, 
 		DOTA_UNIT_TARGET_FLAG_NONE, 
 		FIND_ANY_ORDER, 
-		false)[1]
+		false)
+	local unit = units[1]
 	if unit then 
 		self.targetUnit = unit
 		ProjectileManager:CreateTrackingProjectile( {
@@ -42,7 +43,10 @@ function ability_killer_1:OnProjectileHit(hTarget,vLocation)
 		local item = self.targetUnit:GetItemInSlot(itemSlot)
 		local entIndex = self.targetUnit:GetEntityIndex()
 		self.items[entIndex] = self.items[entIndex] or {}
-		table.insert(self.items[entIndex],item:GetAbilityName())
+		table.insert(self.items[entIndex],{
+			itemName = item:GetAbilityName(),
+			itemCharges = item:GetCurrentCharges(),
+		})
 		item:RemoveSelf()
 	end
 end
@@ -72,8 +76,9 @@ function modifier_ability_killer_1_passive:OnDestroy()
 					iMoveSpeed = 1100,
 					iSourceAttachment = DOTA_PROJECTILE_ATTACHMENT_HITLOCATION,
 				})
-				for __,itemName in pairs(data) do
-					hero:AddItemByName(itemName)
+				for __,itemData in pairs(data) do
+					local item = hero:AddItemByName(itemData.itemName)
+					item:SetCurrentCharges(itemData.itemCharges)
 				end
 			end
 		end
