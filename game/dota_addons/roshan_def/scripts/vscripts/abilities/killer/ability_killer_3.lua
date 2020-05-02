@@ -1,3 +1,4 @@
+
 ability_killer_3 = class({})
 function ability_killer_3:OnSpellStart()
 	self:GetCursorTarget():AddNewModifier(self:GetCaster(), self, 'modifier_ability_killer_3_delay', {

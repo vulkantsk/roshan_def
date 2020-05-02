@@ -5,6 +5,7 @@ LinkLuaModifier("modifier_ability_killer_4_passive", 'abilities/killer/ability_k
 LinkLuaModifier("modifier_ability_killer_4_stacks", 'abilities/killer/ability_killer_4.lua', LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_ability_killer_4_buff", 'abilities/killer/ability_killer_4.lua', LUA_MODIFIER_MOTION_NONE)
 
+
 modifier_ability_killer_4_stacks = class({})
 function modifier_ability_killer_4_stacks:IsHidden() return false end
 function modifier_ability_killer_4_stacks:IsPurgable() return true end

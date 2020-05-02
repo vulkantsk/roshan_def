@@ -3,6 +3,7 @@ ability_midas_acolyte_2 = class({
 })
 LinkLuaModifier("modifier_ability_midas_acolyte_2_aura", 'abilities/midas_acolyte/ability_midas_acolyte_2.lua', LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_ability_midas_acolyte_2_debuff", 'abilities/midas_acolyte/ability_midas_acolyte_2.lua', LUA_MODIFIER_MOTION_NONE)
+
 modifier_ability_midas_acolyte_2_aura = class({})
 
 function modifier_ability_midas_acolyte_2_aura:IsHidden() return true end

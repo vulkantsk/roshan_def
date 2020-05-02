@@ -1,3 +1,4 @@
+
 ability_midas_acolyte_3 = class({})
 function ability_midas_acolyte_3:OnSpellStart()
 	local caster = self:GetCaster()
@@ -15,8 +16,4 @@ function ability_midas_acolyte_3:OnSpellStart()
 	for k,v in pairs(units) do
 		v:AddNewModifier(caster, self, 'modifier_stunned', {duration = dur})
 	end
-
-	local nfx = ParticleManager:CreateParticle('particles/econ/items/earthshaker/earthshaker_arcana/earthshaker_arcana_aftershock.vpcf', PATTACH_POINT_FOLLOW, caster)
-	ParticleManager:SetParticleControl(nfx, 0, caster:GetAbsOrigin())
-	ParticleManager:SetParticleControl(nfx, 1, Vector(radius,radius,radius))
 end

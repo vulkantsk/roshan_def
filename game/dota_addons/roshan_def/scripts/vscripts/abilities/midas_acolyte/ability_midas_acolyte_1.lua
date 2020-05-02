@@ -4,6 +4,7 @@ ability_midas_acolyte_1 = class({
 
 LinkLuaModifier("modifier_ability_midas_acolyte_1_bonus_dmg", 'abilities/midas_acolyte/ability_midas_acolyte_1.lua', LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_ability_midas_acolyte_1_passive", 'abilities/midas_acolyte/ability_midas_acolyte_1.lua', LUA_MODIFIER_MOTION_NONE)
+
 modifier_ability_midas_acolyte_1_bonus_dmg = class({})
 function modifier_ability_midas_acolyte_1_bonus_dmg:IsHidden() return true end
 function modifier_ability_midas_acolyte_1_bonus_dmg:IsPurgable() return false end

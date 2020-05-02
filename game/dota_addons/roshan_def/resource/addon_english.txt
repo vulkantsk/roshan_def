@@ -7112,6 +7112,6 @@
 
 		"imba credited"			"\n<font color='#FFD700'> Item created by Dota IMBA dev team  </font>"
 
-		"npc_dota_midas_acolyte"	"midas"
+	
 		}
 }
