@@ -66,7 +66,7 @@ end
 
 function request:GameEnd(winTeam)
     winTeam = winTeam or DOTA_TEAM_GOODGUYS
-    -- GameRules:SetGameWinner(winTeam)
+    GameRules:SetGameWinner(winTeam)
 	local IsSpeedRun = CustomNetTables:GetTableValue( "donate", 'GLOBAL')
     IsSpeedRun = IsSpeedRun and IsSpeedRun.use_donate ~= 0
     local _data = {
@@ -98,7 +98,9 @@ function request:GameEnd(winTeam)
         end
     end)
     CustomNetTables:SetTableValue('request', 'GameEnd',__data)
-    _util_.RequestData('game_end',_data) 
+    if not GameRules:IsCheatMode() and not IsInToolsMode() then 
+        _util_.RequestData('game_end',_data)     
+    end
     CustomGameEventManager:Send_ServerToAllClients('OnGameEnd', {
     	GameData = __data,
     })
