@@ -220,6 +220,7 @@ function Activate()
 	GameRules.GameMode:AnitGameMode()
 	Spawn:InitGameMode()
 	request:Init()
+	GameRules:GetGameModeEntity():SetDamageFilter( Dynamic_Wrap( GameMode, "DamageFilter" ), GameMode)
 
 	Convars:SetBool("sv_cheats", true)
 end

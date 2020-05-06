@@ -19863,7 +19863,8 @@
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"ability_datadriven"
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sans/sans_earth_crack_passive"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
@@ -19921,157 +19922,6 @@
 				"aoe_radius"			"800"
 			}		
 		}
-		
-
-		
-		// Modifiers
-		//-------------------------------------------------------------------------------------------------------------	
-		"Modifiers"
-		{
-			"modifier_genocide_passive"
-			{	
-				"Passive"		"1"
-
-					"ThinkInterval"				"%think_interval"
-					"OnIntervalThink"
-					{
-						"ActOnTargets"
-						{
-							"Target"
-							{
-								"Center"		"CASTER"
-								"Radius"		"%aoe_radius"
-								"Teams"			"DOTA_UNIT_TARGET_TEAM_ENEMY" 
-//								"Type"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO "
-								"Type"			"DOTA_UNIT_TARGET_HERO "
-							}
-						
-							"Action"
-							{
-								"CreateThinker"
-								{
-									"ModifierName"	"target_telegraph_fx"
-									"Target"		"TARGET"
-								}
-								
-								"CreateThinker"
-								{
-									"ModifierName"	"aoe_spike_thinker"
-									"Target"		"TARGET"
-								}
-								
-
-							}
-						}
-					}
-				
-			}
-			"target_telegraph_fx"
-			{
-				"Duration"				"%think_time"
-
-				"OnCreated"
-				{
-					"AttachEffect"
-					{
-						"EffectName"		"particles/econ/generic/generic_aoe_shockwave_1/generic_aoe_shockwave_1.vpcf"
-						"EffectAttachType"	"follow_origin"
-						"Target"			"TARGET"
-						"ControlPoints"
-						{
-							"00" "0 0 0"
-							"01" "%effect_radius 0 0"
-							"02" "6 0 1" // telegraph
-							"03" "0 0 200"
-							"04" "0 0 0"
-						}
-					}
-				}
-			}
-			
-			"aoe_spike_thinker"
-			{
-				"Duration"					"3"
-				"ThinkInterval"				"%think_time"
-				
-				"OnIntervalThink"
-				{
-					"Damage"
-					{
-						"Type"			"DAMAGE_TYPE_PURE"
-						"Damage"		"%damage"
-						"Target"
-						{
-							"Center"	"TARGET"
-							"Radius"	"%impact_radius"
-							"Teams"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
-							"Types"		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_OTHER"
-						}
-					}
-					
-					"Stun"
-					{
-						"Duration"		"%duration_stun"
-						"Target"
-						{
-							"Center"	"TARGET"
-							"Radius"	"%impact_radius"
-							"Teams"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
-							"Types"		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-						}
-					}
-					
-
-					
-										
-					"FireEffect"
-					{
-						"EffectName"        "particles/alcore_my_own_hell.vpcf"
-						"EffectAttachType"  "follow_customorigin"
-						"Target"            "TARGET"
-						"ControlPoints"
-						{
-							"01"	"%effect_radius %effect_radius %effect_radius"
-						}
-					}
-
-					"DestroyTrees"
-					{
-						"Target"			"TARGET"
-						"Radius"			"%impact_radius"
-					}
-					
-					"FireSound"
-					{
-						"EffectName"		"Hero_Leshrac.Split_Earth"
-						"Target"			"TARGET"
-					}
-					"DelayedAction"
-					{
-						"Delay"     "3"
-						"Action"    
-						{
-							"FireEffect"
-							{
-								"EffectName"        "particles/alcore_my_own_hell.vpcf"
-								"EffectAttachType"  "follow_customorigin"
-								"Target"            "TARGET"
-								"ControlPoints"
-								{
-									"01"	"%impact_radius %impact_radius %impact_radius"
-								}
-							}
-						}
-						"FireSound"
-						{
-							"EffectName"	"Hero_Leshrac.Split_Earth.Tormented"
-							"Target" 		"TARGET"
-						}
-					}
-				}
-			}
-		}
-
 	}
 
 	"gaster_blaster_attack"
@@ -20187,10 +20037,11 @@
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"ability_datadriven"
+		"BaseClass"						"ability_lua"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityTextureName" 			"sans/gaster_blaster"
 		"AbilityCastAnimation"			"ACT_DOTA_VICTORY"
+		"ScriptFile"					"abilities/sans/gaster_blaster_summon"
 		"Precache"
 		{
 			"soundfile"					"soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts"
@@ -20240,207 +20091,10 @@
 				"var_type"				"FIELD_INTEGER"
 				"trigger_chance"		"5"
 			}
-		}
-		"OnSpellStart"
-		{
-
-			"DelayedAction"
+			"06"
 			{
-				"Delay"						"1.5"
-				"Action"
-				{
-					"SpawnUnit"
-					{
-						"UnitName"			"npc_dota_gaster_blaster"
-						"Duration"			"%duration"
-						"UnitCount"			"%number_of_units"
-						"UnitLimit"			"%unit_limit"
-						"SpawnRadius"		"%radius"
-						"GrantsGold"		"1"
-						"GrantsXP"			"1"
-						"Target"			"CASTER"
-						"OnSpawn"
-						{
-							"AttachEffect"
-							{
-								"EffectName"		"particles/econ/items/shadow_fiend/sf_fire_arcana/sf_fire_arcana_shadowraze.vpcf"
-								"EffectAttachType"	"follow_origin"
-								"Target"			"TARGET"
-								"ControlPoints"
-								{
-									"00"		"0 0 0"
-								}
-							}
-							
-							"FireSound"
-							{
-								"EffectName"		"Hero_Nevermore.Raze_Flames"
-								"Target"			"CASTER"
-							}
-						}
-					}
-				}
-			}
-			"DelayedAction"
-			{
-				"Delay"						"3"
-				"Action"
-				{
-					"SpawnUnit"
-					{
-						"UnitName"			"npc_dota_gaster_blaster"
-						"Duration"			"%duration"
-						"UnitCount"			"%number_of_units"
-						"UnitLimit"			"%unit_limit"
-						"SpawnRadius"		"%radius"
-						"GrantsGold"		"1"
-						"GrantsXP"			"1"
-						"Target"			"CASTER"
-						"OnSpawn"
-						{
-							"AttachEffect"
-							{
-								"EffectName"		"particles/econ/items/shadow_fiend/sf_fire_arcana/sf_fire_arcana_shadowraze.vpcf"
-								"EffectAttachType"	"follow_origin"
-								"Target"			"TARGET"
-								"ControlPoints"
-								{
-									"00"		"0 0 0"
-								}
-							}
-							
-							"FireSound"
-							{
-								"EffectName"		"Hero_Nevermore.Raze_Flames"
-								"Target"			"CASTER"
-							}
-						}
-					}
-				}
-			}
-			"DelayedAction"
-			{
-				"Delay"						"4.5"
-				"Action"
-				{
-					"SpawnUnit"
-					{
-						"UnitName"			"npc_dota_gaster_blaster"
-						"Duration"			"%duration"
-						"UnitCount"			"%number_of_units"
-						"UnitLimit"			"%unit_limit"
-						"SpawnRadius"		"%radius"
-						"GrantsGold"		"1"
-						"GrantsXP"			"1"
-						"Target"			"CASTER"
-						"OnSpawn"
-						{
-							"AttachEffect"
-							{
-								"EffectName"		"particles/econ/items/shadow_fiend/sf_fire_arcana/sf_fire_arcana_shadowraze.vpcf"
-								"EffectAttachType"	"follow_origin"
-								"Target"			"TARGET"
-								"ControlPoints"
-								{
-									"00"		"0 0 0"
-								}
-							}
-							
-							"FireSound"
-							{
-								"EffectName"		"Hero_Nevermore.Raze_Flames"
-								"Target"			"CASTER"
-							}
-						}
-					}
-				}
-			}
-			"DelayedAction"
-			{
-				"Delay"						"6"
-				"Action"
-				{
-					"SpawnUnit"
-					{
-						"UnitName"			"npc_dota_gaster_blaster"
-						"Duration"			"%duration"
-						"UnitCount"			"%number_of_units"
-						"UnitLimit"			"%unit_limit"
-						"SpawnRadius"		"%radius"
-						"GrantsGold"		"1"
-						"GrantsXP"			"1"
-						"Target"			"CASTER"
-						"OnSpawn"
-						{
-							"AttachEffect"
-							{
-								"EffectName"		"particles/econ/items/shadow_fiend/sf_fire_arcana/sf_fire_arcana_shadowraze.vpcf"
-								"EffectAttachType"	"follow_origin"
-								"Target"			"TARGET"
-								"ControlPoints"
-								{
-									"00"		"0 0 0"
-								}
-							}
-							
-							"FireSound"
-							{
-								"EffectName"		"Hero_Nevermore.Raze_Flames"
-								"Target"			"CASTER"
-							}
-						}
-					}
-				}
-			}
-		}
-		"Modifiers"
-		{
-			"modifier_sans_gaster_blaster_passive"
-			{
-				"Passive"		"1"
-				"IsBuff"		"1"
-				"IsHidden"		"1"
-				"OnAttacked"
-				{
-					"Random"
-					{
-						"Chance"			"%trigger_chance"
-						"PseudoRandom" 		"DOTA_PSEUDO_RANDOM_JUGG_CRIT"
-						"OnSuccess"
-						{
-							"SpawnUnit"
-							{
-								"UnitName"			"npc_dota_gaster_blaster"
-								"Duration"			"%duration"
-								"UnitCount"			"1"
-								"UnitLimit"			"%unit_limit"
-								"SpawnRadius"		"%radius"
-								"GrantsGold"		"1"
-								"GrantsXP"			"1"
-								"Target"			"CASTER"
-								"OnSpawn"
-								{
-									"AttachEffect"
-									{
-										"EffectName"		"particles/econ/items/shadow_fiend/sf_fire_arcana/sf_fire_arcana_shadowraze.vpcf"
-										"EffectAttachType"	"follow_origin"
-										"Target"			"TARGET"
-										"ControlPoints"
-										{
-											"00"		"0 0 0"
-										}
-									}
-									
-									"FireSound"
-									{
-										"EffectName"		"Hero_Nevermore.Raze_Flames"
-										"Target"			"CASTER"
-									}
-								}
-							}
-						}
-					}
-				}
+				"var_type"				"FIELD_INTEGER"
+				"amount_creeps"		"4"
 			}
 		}
 	}
@@ -20448,7 +20102,8 @@
 	{
 	// General
 		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"				"ability_datadriven"
+		"BaseClass"				"ability_lua"
+		"ScriptFile"			"abilities/sans/sans_mass_telekinesis"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
@@ -20549,268 +20204,6 @@
 				"effect_radius"			"550"
 			}		
 		}
-		"OnSpellStart"
-		{
-			"CreateThinker"
-			{
-				"ModifierName"	"target_telegraph_fx"
-				"Target"		"POINT"
-			}
-			
-			"CreateThinker"
-			{
-				"ModifierName"	"aoe_spike_thinker"
-				"Target"		"POINT"
-			}
-			
-			"ActOnTargets"
-			{
-				"Target"
-				{
-					"Center"  	"CASTER"
-					"Radius" 	"%radius"
-					"Teams" 	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-					"Types" 	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-				}
-				"Action"    
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"heroes/hero_dev/mass_telekinesis.lua"
-						"Function"		"Lift"
-						"particle"		"particles/econ/items/rubick/rubick_force_ambient/rubick_telekinesis_force.vpcf"
-					}
-					"FireSound"
-					{
-						"EffectName"	"Hero_Rubick.Telekinesis.Target"
-						"Target"		"TARGET"
-					}
-				}
-			}
-			
-			"FireSound"
-			{
-				"EffectName"	"Hero_Rubick.Telekinesis.Cast"
-				"Target"		"CASTER"
-			}
-			
-			"RunScript"
-			{
-				"ScriptFile"	"heroes/hero_dev/mass_telekinesis.lua"
-				"Function"		"Drop"
-				"particle"		"particles/econ/items/rubick/rubick_force_ambient/rubick_telekinesis_marker_force.vpcf"
-			}
-		}
-		"Modifiers"
-		{
-			"modifier_telekinesis_datadriven"
-			{
-				"IsPurgable"		"0"
-				"IsBuff"			"0"
-				"IsDebuff"			"1"
-				"IsStunDebuff"		"1"
-				//Purge(bool RemovePositiveBuffs, bool RemoveDebuffs, bool BuffsCreatedThisFrameOnly, bool RemoveStuns, bool RemoveExceptions)
-				"Duration"			"%lift_duration"
-				"OverrideAnimation"	"ACT_DOTA_FLAIL"
-				"EffectName"		"particles/econ/items/rubick/rubick_force_ambient/rubick_telekinesis_force_debuff.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"OnCreated"
-				{
-					"AttachEffect"
-					{
-						"EffectName"        "particles/econ/items/rubick/rubick_force_ambient/rubick_telekinesis_force.vpcf"
-						"EffectAttachType"  "follow_origin"
-						"Target"            "TARGET"
-					}
-				}
-				"OnDestroy"
-				{
-					"ApplyModifier"
-					{
-						"ModifierName"	"modifier_telekinesis_fall"
-						"Target"		"TARGET"
-					}
-				}
-				"States"
-				{
-					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
-					"MODIFIER_STATE_FLYING"		"MODIFIER_STATE_VALUE_ENABLED"
-				}
-				"RunScript"
-				{
-					"ScriptFile"	"heroes/hero_dev/mass_telekinesis.lua"
-					"Function"		"Drop"
-					"particle"		"particles/econ/items/rubick/rubick_force_ambient/rubick_telekinesis_marker_force.vpcf"
-				}
-			}
-			"modifier_telekinesis_fall"
-			{
-				"Duration" "%fall_duration"
-				"IsHidden"			"1"
-				"ThinkInterval"		"0.01"
-				"OnIntervalThink"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"heroes/hero_dev/mass_telekinesis.lua"
-						"Function"		"Fall"
-					}
-				}
-				"OnDestroy"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"heroes/hero_dev/mass_telekinesis.lua"
-						"Function"		"Impact"
-						"particle"		"particles/econ/items/rubick/rubick_force_ambient/rubick_telekinesis_land_force.vpcf"
-						"sound"			"Hero_Rubick.Telekinesis.Stun"
-					}
-				}
-				"States"
-				{
-					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
-				}
-			}
-			"target_telegraph_fx"
-			{
-				"Duration"				"%think_time"
-
-				"OnCreated"
-				{
-					"AttachEffect"
-					{
-						"EffectName"		"particles/econ/generic/generic_aoe_shockwave_1/generic_aoe_shockwave_1.vpcf"
-						"EffectAttachType"	"follow_origin"
-						"Target"			"TARGET"
-						"ControlPoints"
-						{
-							"00" "0 0 0"
-							"01" "%effect_radius 0 0"
-							"02" "6 0 1" // telegraph
-							"03" "0 0 200"
-							"04" "0 0 0"
-						}
-					}
-				}
-			}
-			"modifier_up_and_down_stunner"
-			{
-				"Passive"			"0"
-				"IsHidden"			"1"
-				"IsPurgable"		"0"
-				"IsBuff"			"1"
-				"IsDebuff"			"0"
-				"IsStunDebuff"		"0"
-				"Duration"			"5.0"
-				"OnCreated"
-				{
-					"DelayedAction"
-					{
-						"Delay"     "%think_time"
-						"Action"    
-						{
-							"FireEffect"
-							{
-								"EffectName"        "particles/alcore_my_own_hell.vpcf"
-								"EffectAttachType"  "follow_customorigin"
-								"Target"            "TARGET"
-								"ControlPoints"
-								{
-									"01"	"%effect_radius %effect_radius %effect_radius"
-								}
-							}
-						}
-						"FireSound"
-						{
-							"EffectName"	"Hero_Leshrac.Split_Earth.Tormented"
-							"Target" 		"TARGET"
-						}
-					}
-				}	
-			}			
-			"aoe_spike_thinker"
-			{
-				"Duration"					"3"
-				"ThinkInterval"				"%think_time"
-				
-				"OnIntervalThink"
-				{
-					"Damage"
-					{
-						"Type"			"DAMAGE_TYPE_MAGICAL"
-						"Damage"		"%damage"
-						"Target"
-						{
-							"Center"	"TARGET"
-							"Radius"	"%impact_radius"
-							"Teams"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
-							"Types"		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_OTHER"
-						}
-					}
-					
-					"Stun"
-					{
-						"Duration"		"%duration_stun"
-						"Target"
-						{
-							"Center"	"TARGET"
-							"Radius"	"%impact_radius"
-							"Teams"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
-							"Types"		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-						}
-					}
-					
-
-					
-										
-					"FireEffect"
-					{
-						"EffectName"        "particles/alcore_my_own_hell.vpcf"
-						"EffectAttachType"  "follow_customorigin"
-						"Target"            "TARGET"
-						"ControlPoints"
-						{
-							"01"	"%effect_radius %effect_radius %effect_radius"
-						}
-					}
-
-					"DestroyTrees"
-					{
-						"Target"			"TARGET"
-						"Radius"			"%impact_radius"
-					}
-					
-					"FireSound"
-					{
-						"EffectName"		"Hero_Leshrac.Split_Earth"
-						"Target"			"TARGET"
-					}
-					"DelayedAction"
-					{
-						"Delay"     "3"
-						"Action"    
-						{
-							"FireEffect"
-							{
-								"EffectName"        "particles/alcore_my_own_hell.vpcf"
-								"EffectAttachType"  "follow_customorigin"
-								"Target"            "TARGET"
-								"ControlPoints"
-								{
-									"01"	"%impact_radius %impact_radius %impact_radius"
-								}
-							}
-						}
-						"FireSound"
-						{
-							"EffectName"	"Hero_Leshrac.Split_Earth.Tormented"
-							"Target" 		"TARGET"
-						}
-					}
-				}
-			}
-		
-		}
 	}
 	
 	// Author: YOLOSPAGHETTI
@@ -20821,7 +20214,8 @@
 	{
 	// General
 		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"				"ability_datadriven"
+		"BaseClass"				"ability_lua"
+		"ScriptFile"			"abilities/sans/aghs_greater_telekinesis"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT "
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
@@ -20890,117 +20284,6 @@
 			{
 				"var_type"					"FIELD_INTEGER"
 				"cast_range_tooltip"		"625"
-			}
-		}
-		"OnSpellStart"
-		{
-			"ActOnTargets"
-			{
-				"Target"
-				{
-					"Center"  	"CASTER"
-					"Radius" 	"%radius"
-					"Teams" 	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-					"Types" 	"DOTA_UNIT_TARGET_HERO"
-				}
-				"Action"    
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"heroes/hero_dev/greater_telekinesis.lua"
-						"Function"		"Lift"
-						"particle"		"particles/econ/items/rubick/rubick_force_ambient/rubick_telekinesis_force.vpcf"
-					}
-					"FireSound"
-					{
-						"EffectName"	"Hero_Rubick.Telekinesis.Target"
-						"Target"		"TARGET"
-					}
-				}
-			}
-			
-			"FireSound"
-			{
-				"EffectName"	"Hero_Rubick.Telekinesis.Cast"
-				"Target"		"CASTER"
-			}
-			
-			"RunScript"
-			{
-				"ScriptFile"	"heroes/hero_dev/greater_telekinesis.lua"
-				"Function"		"Drop"
-				"particle"		"particles/econ/items/rubick/rubick_force_ambient/rubick_telekinesis_marker_force.vpcf"
-			}
-		}
-		"Modifiers"
-		{
-			"modifier_telekinesis_datadriven"
-			{
-				"IsPurgable"		"0"
-				"IsBuff"			"0"
-				"IsDebuff"			"1"
-				"IsStunDebuff"		"1"
-				//Purge(bool RemovePositiveBuffs, bool RemoveDebuffs, bool BuffsCreatedThisFrameOnly, bool RemoveStuns, bool RemoveExceptions)
-				"Duration"			"%lift_duration"
-				"OverrideAnimation"	"ACT_DOTA_FLAIL"
-				"EffectName"		"particles/econ/items/rubick/rubick_force_ambient/rubick_telekinesis_force_debuff.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"OnCreated"
-				{
-					"AttachEffect"
-					{
-						"EffectName"        "particles/econ/items/rubick/rubick_force_ambient/rubick_telekinesis_force.vpcf"
-						"EffectAttachType"  "follow_origin"
-						"Target"            "TARGET"
-					}
-				}
-				"OnDestroy"
-				{
-					"ApplyModifier"
-					{
-						"ModifierName"	"modifier_telekinesis_fall"
-						"Target"		"TARGET"
-					}
-				}
-				"States"
-				{
-					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
-					"MODIFIER_STATE_FLYING"		"MODIFIER_STATE_VALUE_ENABLED"
-				}
-				"RunScript"
-				{
-					"ScriptFile"	"heroes/hero_dev/greater_telekinesis.lua"
-					"Function"		"Drop"
-					"particle"		"particles/econ/items/rubick/rubick_force_ambient/rubick_telekinesis_marker_force.vpcf"
-				}
-			}
-			"modifier_telekinesis_fall"
-			{
-				"Duration" "%fall_duration"
-				"IsHidden"			"1"
-				"ThinkInterval"		"0.01"
-				"OnIntervalThink"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"heroes/hero_dev/greater_telekinesis.lua"
-						"Function"		"Fall"
-					}
-				}
-				"OnDestroy"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"heroes/hero_dev/greater_telekinesis.lua"
-						"Function"		"Impact"
-						"particle"		"particles/econ/items/rubick/rubick_force_ambient/rubick_telekinesis_land_force.vpcf"
-						"sound"			"Hero_Rubick.Telekinesis.Stun"
-					}
-				}
-				"States"
-				{
-					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
-				}
 			}
 		}
 	}
@@ -21280,7 +20563,8 @@
 		}
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"ability_datadriven"
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/sans/sans_genocide_passive"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -21298,50 +20582,6 @@
 				"var_type"				"FIELD_FLOAT"
 				"duration"				"100"
 			}
-
-		}
-		
-		"Modifiers"
-		{
-			"modifier_alcore_genocide"
-			{
-				"Passive"			"1"
-				"IsHidden"			"1"
-				"IsPurgable"		"0"
-				"IsBuff"			"1"
-				"IsDebuff"			"0"
-				"IsStunDebuff"		"0"
-
-				"OnCreated"
-				{
-					"DelayedAction"
-					{
-						"Delay"     "0"
-						"Action"    
-						{
-							"RunScript"
-							{
-								"ScriptFile"	"heroes/hero_dev/genocide.lua"
-								"Function"		"Genocide"
-								"particle"		"particles/sans/attach_eyes_c.vpcf"
-							}
-						}
-					}
-
-					
-				}
-				"ThinkInterval"		"%duration"
-				"OnIntervalThink"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"heroes/hero_dev/genocide.lua"
-						"Function"		"GenocideMusic"
-						"sound"			"sans_theme"
-					}
-				}
-
-			}			
 
 		}
 	}
@@ -21370,7 +20610,8 @@
 {
 	// General
 	//-------------------------------------------------------------------------------------------------------------
-	"BaseClass"				"ability_datadriven"
+	"BaseClass"						"ability_lua"
+	"ScriptFile"					"abilities/sans/sans_ultra_evasion"
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 	"AbilityTextureName"			"sans/sans_evade"
 	"MaxLevel"						"1"
@@ -21397,70 +20638,6 @@
 			"proc_chance"		"99"
 		}
 
-	}
-	"OnCreated"
-	{
-		"ApplyModifier"
-		{
-			"Target"			"CASTER"
-			"ModifierName"		"modifier_backtrack_datadriven"
-		}
-
-	}
-	"Modifiers"
-	{
-		"modifier_backtrack_datadriven"
-		{
-			"Passive"	"0"
-			"IsHidden"	"1"
-
-				"OnCreated"
-				{
-					"DelayedAction"
-					{
-						"Delay"     "0.1"
-						"Action"    
-						{
-							"RunScript"
-							{
-								"ScriptFile"	"abilities/backtrack.lua"
-								"Function"		"ShieldCreated"
-							}
-						}
-					}					
-				}
-
-			"OnTakeDamage"
-			{
-				"RunScript"
-				{
-					"ScriptFile"	"abilities/backtrack.lua"
-					"Function"		"BacktrackShiled"
-				}				
-				"RunScript"
-				{
-					"ScriptFile"	"abilities/backtrack.lua"
-					"Function"		"BacktrackShiledLayer"
-				}												
-				"FireEffect"
-				{
-					"EffectName"	"particles/units/heroes/hero_faceless_void/faceless_void_backtrack.vpcf"
-					"EffectAttachType"	"follow_origin"
-					"Target"			"CASTER"
-				}						
-			}
-			"Properties"
-			{
-				"MODIFIER_PROPERTY_MIN_HEALTH"		"1"
-				"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"		"-200"					
-			}			
-		}
-		"modifier_sans_shield_counter"  //A visible counter that will appear in Slark's modifier bar.
-		{
-			"Passive"			"0"
-			"IsHidden"			"0"
-		}
-		
 	}
 }
 

@@ -37,6 +37,7 @@ function modifier_lycan_shapeshift_custom_passive:OnCreated()
 	self:StartIntervalThink(0.1)
 end
 function modifier_lycan_shapeshift_custom_passive:OnIntervalThink()
+	if IsClient() then return end
 	local caster = self:GetCaster()
 	local ability = self:GetAbility()
 	local modifier_shapeshift = "modifier_lycan_shapeshift_custom"

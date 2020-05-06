@@ -24,6 +24,7 @@ function modifier_lycan_feral_impulse_custom_passive:OnCreated()
 end
 
 function modifier_lycan_feral_impulse_custom_passive:OnIntervalThink()
+	if IsClient() then return end 
 	local caster = self:GetCaster()
 	local ability = self:GetAbility()
 	local point = caster:GetAbsOrigin()
