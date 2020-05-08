@@ -28,7 +28,7 @@
 	"Game_notification_boss_spawn_spectre"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>ЗАБЫТЫЕ ДУШИ </font> приближаются к вам!"
 	"Game_notification_boss_spawn_cursed_warriors"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>ОТРЯД ПРОКЛЯТЫХ </font> приближаются к вам!"
 	"Game_notification_boss_spawn_plague_wagon"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>ЧУМНАЯ ПОВОЗКА </font> приближаются к вам!"
-	"Game_notification_boss_maraphon"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К БОСС МАРАФОНУ ! </font>  <font color='#FF0000'><br>КАЖДЫЕ 10 СЕКУНД ПОЯВЛЯЕТСЯ БОСС </font> удачи !"
+	"Game_notification_boss_final"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ФИНАЛЬНОЙ ВОЛНЕ ! </font>  <font color='#FF0000'><br>КАЖДЫЕ 10 СЕКУНД ПОЯВЛЯЕТСЯ БОСС </font> удачи !"
 	"Game_notification_infinite_maraphon"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К БЕСКОНЕЧНОМУ БОСС МАРАФОНУ ! </font>  <font color='#FF0000'><br>КАЖДЫЕ 60 СЕКУНД ПОЯВЛЯЕТСЯ СЛУЧАЙНЫЙ БОСС , КАЖДЫЙ СЛЕДУЮЩИЙ СИЛЬНЕЕ ПРЕДЫДУЩИХ </font> УДАЧИ !"
 
 	"choose_boss_osobenosti"						"Особености"
@@ -749,7 +749,7 @@
 
 //Pangolier
 
-		"npc_dota_hero_pangolier"			"Бармалей"
+		"npc_dota_hero_pangolier"			"Бармалей(IMBA)"
 		
 		"DOTA_Tooltip_ability_pangolier_greed"	"Bandit Greed"
 		"DOTA_Tooltip_ability_pangolier_greed_Description"	"Позволяет получать больше золота из врагов и рун. Дополнительное золото за убийство существ состоит из начального бонуса и нарастающего, который увеличивается с каждым существом, убитым в течение %duration% сек. после предыдущего. Также способность умножает золото от рун богатства."
@@ -1244,7 +1244,7 @@
         "npc_dota_techies_land_mine"    "Минка"	
 //Phoenix(Special hero)
  
-        "npc_dota_hero_phoenix"          "Жар-птица(IMBA)"
+        "npc_dota_hero_phoenix"          "Жар-птица"
  
         "DOTA_Tooltip_ability_phoenix_fire_soul"                        "Fire soul"
         "DOTA_Tooltip_ability_phoenix_fire_soul_Description"            "Чувствуя недостаток жизненной силы душевный огонь разжигается сильнее, увеличивая силу магии !"
@@ -2842,6 +2842,17 @@
 		"DOTA_Tooltip_ability_axe_true_strength"					"True strength"
 		"DOTA_Tooltip_ability_axe_true_strength_Description"		"Истинная сила не знает предела..."
 		"DOTA_Tooltip_ability_axe_true_strength_bonus_str_pct"			"%БОНУС СИЛЫ:"
+//Void
+		"npc_dota_hero_"		""
+ 
+ 		"DOTA_Tooltip_ability_faceless_void_flash_speed"							"Flash speed"
+		"DOTA_Tooltip_ability_faceless_void_flash_speed_Description"				"Уменьшает своё тело, становясь очень быстрым !"
+		"DOTA_Tooltip_ability_faceless_void_flash_speed_duration"				"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_faceless_void_flash_speed_bonus_ms"				"%БОНУС ПЕРЕДВИЖЕНИЯ:"
+		"DOTA_Tooltip_ability_faceless_void_flash_speed_bonus_bat"				"БАЗОВОЕ ВРЕМЯ АТАКИ:"
+		"DOTA_Tooltip_ability_faceless_void_flash_speed_bonus_evasion"				"%БОНУС УКЛОНЕНИЯ:"
+ 		"DOTA_Tooltip_modifier_faceless_void_flash_speed"							"Flash speed"
+		"DOTA_Tooltip_modifier_faceless_void_flash_speed_Description"				"Очень быстр однако !"
 //Hero
 		"npc_dota_hero_"		"hero"
 
@@ -3463,9 +3474,12 @@
 		"DOTA_Tooltip_ability_sans_genocide_passive_Description"	"ЭТО ШТО ГЕНОЦИД ???"
 
 		"DOTA_Tooltip_ability_backtrack_datadriven"	"Ultra evasion"
-		"DOTA_Tooltip_ability_backtrack_datadriven_Description"	"Sans имеет шанс увернуться от любого урона , каждый пропущенный удар уменьшает количество защитных слоев !"
+		"DOTA_Tooltip_ability_backtrack_datadriven_Description"	"Sans имеет шанс увернуться от любого урона , каждый пропущенный удар уменьшает количество защитных слоев !\n<font color='#ff9966'><em> Если вы попали, то Санс создаёт огромный взрыв! </em> </font>"
 		"DOTA_Tooltip_ability_backtrack_datadriven_max_layers"	"КОЛИЧЕСТВО СРАБАТЫВАНИЙ:"
 		"DOTA_Tooltip_ability_backtrack_datadriven_proc_chance"	"ШАНС УВОРОТА:"
+		"DOTA_Tooltip_ability_backtrack_datadriven_shockwave_delay"	"ЗАДРЕЖКА ВЗРЫВА:"
+		"DOTA_Tooltip_ability_backtrack_datadriven_shockwave_radius"	"РАДИУС ВЗРЫВА:"
+		"DOTA_Tooltip_ability_backtrack_datadriven_shockwave_damage"	"УРОН ВЗРЫВА:"
 
 
 		"DOTA_Tooltip_ability_frost_armor_datadriven"	"Frost armor"

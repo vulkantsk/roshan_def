@@ -11490,7 +11490,8 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"20"
+//		"AbilityCooldown"				"20"
+		"AbilityCooldown"				"10"
 		"AbilityDuration"				"10.0"
 
 		// Cost
@@ -11524,7 +11525,8 @@
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"forward_move_speed"	"1000 1100 1200 1300 1500 1700 1900 "
+//				"forward_move_speed"	"1000 1100 1200 1300 1500 1700 1900 "
+				"forward_move_speed"	"1000 1300 1600 1900 2300 2600 3000 "
 			}
 			"04"
 			{
@@ -11608,8 +11610,8 @@
 
 		// Damage.
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"150 200 250 325 400 475"
-//		"AbilityDamage"					"450 600 750 975 1200 1425"
+//		"AbilityDamage"					"150 200 250 325 400 475"
+		"AbilityDamage"					"450 600 750 975 1200 1425"
 
         "precache"
 		{
@@ -11744,8 +11746,8 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"crit_multiplier"			"140 150 160 170 190 210 230"
-//				"crit_multiplier"			"160 190 220 250 300 350 400"
+//				"crit_multiplier"			"140 150 160 170 190 210 230"
+				"crit_multiplier"			"160 190 220 250 300 350 400"
 				"LinkedSpecialBonus"		"special_bonus_unique_brewmaster_4"
 			}
 			"04"
@@ -11761,8 +11763,8 @@
 			"06"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"			"3"
-//				"duration"			"4.5"
+//				"duration"			"3"
+				"duration"			"4.5"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
@@ -11790,8 +11792,8 @@
 		
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"30 28 26 23 20"
-//		"AbilityCooldown"				"20"
+//		"AbilityCooldown"				"30 28 26 23 20"
+		"AbilityCooldown"				"15"
 		
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -11815,8 +11817,8 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"250 375 500 750 1000"
-//				"damage"				"500 750 1500 2000 2500"
+//				"damage"				"250 375 500 750 1000"
+				"damage"				"500 750 1500 2000 2500"
 				"LinkedSpecialBonus"	"special_bonus_unique_pangolier_3"
 				"CalculateSpellDamageTooltip"	"0"
 			}
@@ -12391,7 +12393,9 @@
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0"
-		
+		"AbilityCharges"				"1"
+		"AbilityChargeRestoreTime"		"20"
+			
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"				"50"
@@ -12419,22 +12423,12 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"movement_slow"					"20"
+				"movement_steal"			"20 "
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"siphon_buffer"			"250"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"max_charges"			"1"
-			}
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"charge_restore_time"	"10"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
@@ -19871,9 +19865,7 @@
 		"AbilityTextureName" 			"sans/up_and_down"
 		"Precache"
 		{
-			"particle"			"particles/units/heroes/hero_leshrac/leshrac_split_earth.vpcf"
-			"particle"			"particles/generic_gameplay/generic_stunned.vpcf"
-			"particle"			"particles/econ/generic/generic_aoe_shockwave_1/generic_aoe_shockwave_1.vpcf"				
+				"particle"			"particles/econ/generic/generic_aoe_shockwave_1/generic_aoe_shockwave_1.vpcf"				
 			"particle"  		"particles/sans/attach_eyes_c.vpcf"
 			"particle"  		"particles/alcore_my_own_hell.vpcf"
 
@@ -20010,22 +20002,6 @@
 						"Damage"			"%AbilityDamage"
 						"Type"				"DAMAGE_TYPE_PURE"
 					}
-					"Knockback"
-					{
-						"Target"
-						{
-							"Center"		"TARGET"
-							"Types"			"DOTA_UNIT_TARGET_ALL"
-						}						
-						"Center" 	        "CASTER"
-						"Distance"	        "%knockback_dist"
-						"Duration"	        "%knockback_duration"
-						"Height"	        "0"
-						"IsFixedDistance"	"0"
-						"ShouldStun"        "0"	
-					}
-				
-					
 				}
 			}
 		}
@@ -20089,7 +20065,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"trigger_chance"		"5"
+				"trigger_chance"		"15"
 			}
 			"06"
 			{
@@ -20134,7 +20110,7 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"20"
+		"AbilityCooldown"				"21"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -20630,12 +20606,32 @@
 		"01"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"max_layers"		"20"
+			"max_layers"		"5"
 		}
 		"02"
 		{
 			"var_type"				"FIELD_INTEGER"
 			"proc_chance"		"99"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"damage_need"			"100"
+		}
+		"04"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"shockwave_delay"		"4"
+		}
+		"05"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"shockwave_radius"		"1200"
+		}
+		"06"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"shockwave_damage"		"99999"
 		}
 
 	}
@@ -24518,7 +24514,8 @@
 			{
 				"var_type"							"FIELD_FLOAT"
 				"illusion_duration"					"45.0"
-			}
+				"LinkedSpecialBonus"	"special_bonus_unique_terrorblade_5"
+				}
 			"02"
 			{
 				"var_type"							"FIELD_FLOAT"
@@ -28634,8 +28631,8 @@
         "05"
         {
             "var_type"                  "FIELD_INTEGER"
-//            "base_dmg"          "100 200 300 400 600 800 1000"
-            "base_dmg"          "300 600 900 1200 1800 2400 3000"
+            "base_dmg"          "100 200 300 400 600 800 1000"
+//            "base_dmg"          "300 600 900 1200 1800 2400 3000"
         }
         "06"
         {
@@ -28781,8 +28778,8 @@
         "03"
         {
             "var_type"                      "FIELD_INTEGER"
-//            "damage_absorb"                 "350 500 650 800 1200 1600 2000"
-            "damage_absorb"                 "700 1000 1300 1600 2400 3200 4000"
+            "damage_absorb"                 "350 500 650 800 1200 1600 2000"
+//            "damage_absorb"                 "700 1000 1300 1600 2400 3200 4000"
         }              
         "04"
         {
@@ -28792,8 +28789,8 @@
         "05"
         {
             "var_type"                      "FIELD_INTEGER"
-//            "damage_per_second"             "25 40 55 70 100 130 160"
-            "damage_per_second"             "75 120 150 210 300 400 500"
+            "damage_per_second"             "25 40 55 70 100 130 160"
+//            "damage_per_second"             "75 120 150 210 300 400 500"
         }
         "06"
         {
@@ -28808,8 +28805,8 @@
         "08"
         {
             "var_type"                      "FIELD_INTEGER"
-  //          "damage_per_tick"               "5 8 11 14 20 26 32"
-           "damage_per_tick"               "15 24 33 42 60 78 96"
+            "damage_per_tick"               "5 8 11 14 20 26 32"
+//           "damage_per_tick"               "15 24 33 42 60 78 96"
         }
        
     }
@@ -29042,8 +29039,8 @@
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-//				"attackspeed_slow"				"25 40 55 70 90 110 130"
-				"attackspeed_slow"				"50 80 110 140 180 220 260"
+				"attackspeed_slow"				"25 40 55 70 90 110 130"
+//				"attackspeed_slow"				"50 80 110 140 180 220 260"
 			}
 			"05"
 			{
@@ -29095,8 +29092,8 @@
 		
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-//		"AbilityCooldown"				"120 110 100 85 70"
-		"AbilityCooldown"				"80 70 60 50 40"
+		"AbilityCooldown"				"120 110 100 85 70"
+//		"AbilityCooldown"				"80 70 60 50 40"
 
 
 		// Precache
@@ -30391,11 +30388,69 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"				"300"
+				"radius_scepter"		"500"
+				"RequiresScepter"		"1"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
 	}
+	"faceless_void_flash_speed"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_faceless_void/flash_speed"
+		"AbilityTextureName"			"faceless_void_backtrack"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"7"
+		"LevelsBetweenUpgrades"			"3"
+		"RequiredLevel"					"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
+		"AbilityCastPoint"				"0.2"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"38 36 34 32 28 24 20"
+		"AbilityManaCost"				"100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"00"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"10"
+			}
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"model_scale"			"50"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_ms"				"100"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bonus_bat"			"0.75"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_evasion"			"90"
+			}
+		}
+	}	
 	//=================================================================================================================
 	// Ability: Pudge Meat Hook
 	//=================================================================================================================
@@ -48369,7 +48424,7 @@
 		"AbilityTextureName"			"bounty_hunter_jinada"
 		"MaxLevel"						"1"
 		
-		"AbilityManaCost"				"50"
+		"AbilityManaCost"				"0"
 		"AbilityCooldown"				"8"
 		
 		// Special
@@ -48415,7 +48470,7 @@
 		"MaxLevel"						"1"
 		
 		"AbilityCastRange"				"200"
-		"AbilityManaCost"				"100"
+		"AbilityManaCost"				"0"
 		"AbilityCooldown"				"15"
 			
 		"AbilityCastAnimation"			"0.2"

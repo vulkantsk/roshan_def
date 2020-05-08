@@ -61,7 +61,7 @@ function sans_aoe_spike_thinker:OnCreated(data)
 	self.damage = data.damage
 	self.durStun = data.duration_stun
 
-	local nfx = ParticleManager:CreateParticle('particles/econ/generic/generic_aoe_shockwave_1/generic_aoe_shockwave_1.vpcf', PATTACH_ABSORIGIN_FOLLOW, self:GetParent())
+	local nfx = ParticleManager:CreateParticle('particles/econ/generic/generic_aoe_shockwave_1/generic_aoe_shockwave_1.vpcf', PATTACH_WORLDORIGIN, self:GetParent())
 	ParticleManager:SetParticleControl(nfx, 0, self.origin)
 	ParticleManager:SetParticleControl(nfx, 1, Vector(data.effect_radius,0,0))
 	ParticleManager:SetParticleControl(nfx, 2, Vector(data.interval,0,1))
@@ -74,6 +74,7 @@ end
 
 function sans_aoe_spike_thinker:OnDestroy() 
 	if IsClient() then return end
+	local parent = self:GetParent()
 	local caster = self:GetCaster()
 	local ability = self:GetAbility()
 	local units = FindUnitsInRadius(caster:GetTeamNumber(),
@@ -99,6 +100,12 @@ function sans_aoe_spike_thinker:OnDestroy()
  			ability = ability,
 		})
 	end
+
+	parent:EmitSound("Hero_Leshrac.Split_Earth.Tormented")
+	local nfx = ParticleManager:CreateParticle('particles/alcore_my_own_hell.vpcf', PATTACH_WORLDORIGIN, parent)
+	ParticleManager:SetParticleControl(nfx, 0, self.origin)
+	ParticleManager:SetParticleControl(nfx, 1, Vector(self.impact_radius,self.impact_radius,self.impact_radius))
+	ParticleManager:ReleaseParticleIndex(nfx)
 
 	GridNav:DestroyTreesAroundPoint(self.origin,self.impact_radius,true)
 

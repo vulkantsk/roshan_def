@@ -17,7 +17,7 @@ modifier_item_barbarian_armor = class({
 			MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE,
 			MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
 			MODIFIER_PROPERTY_EXTRA_HEALTH_PERCENTAGE,
-		} end,
+		} end, 
 })
 
 function modifier_item_barbarian_armor:GetModifierHealthBonus()

@@ -27,9 +27,9 @@
         "Game_notification_boss_spawn_seeker"                                "<font color='#DBA901'><br>准备防御！ </font>  <font color='#FF0000'><br>鲜血之王 </font>正在接近你！"
         "Game_notification_boss_spawn_never"                                "<font color='#DBA901'><br>准备防御！ </font>  <font color='#FF0000'><br>虚无 </font>正在接近你！"
         "Game_notification_boss_spawn_spectre"                                "<font color='#DBA901'><br>准备防御！ </font>  <font color='#FF0000'><br>黑暗之魂 </font>正在接近你！"
-        "Game_notification_boss_maraphon"                                "<font color='#DBA901'><br>黑暗军团将领倾巢出动，快保护好你的脑子！ </font>  <font color='#FF0000'><br>EVERY 10 sek spawn BOSS </font>have fun!"
         "Game_notification_boss_spawn_cursed_warriors"                                "<font color='#DBA901'><br>准备防御！ </font>  <font color='#FF0000'><br>被诅咒的小队</font>正在接近你！"
         "Game_notification_boss_spawn_plague_wagon"                                "<font color='#DBA901'><br>准备防御！ </font>  <font color='#FF0000'><br>瘟疫战车</font>正在接近你！"
+        "Game_notification_boss_final"                          "<font color='#DBA901'><br>准备最后的波浪！</font>  <font color='#FF0000'><br>每十秒钟出现一次老板 </font> 祝好运！"
         "Game_notification_infinite_maraphon"                                "<font color='#DBA901'><br>迎接黑暗军团无尽的怒火吧，无尽模式来临！ </font>  <font color='#FF0000'><br>每60秒，一个随机将领会到来，一浪更比一浪强！</font> 祝你好运！"
 
 
@@ -2829,7 +2829,17 @@
                 "DOTA_Tooltip_ability_axe_true_strength"                                        "真正的力量"
                 "DOTA_Tooltip_ability_axe_true_strength_Description"            "真正的力量知道那里没有尽头 ..."
                 "DOTA_Tooltip_ability_axe_true_strength_bonus_str_pct"                  "%力量加成:"
-
+//Void
+        "npc_dota_hero_"        ""
+ 
+        "DOTA_Tooltip_ability_faceless_void_flash_speed"                            "闪光速度"
+        "DOTA_Tooltip_ability_faceless_void_flash_speed_Description"                "减轻他的身体，变得非常快！"
+        "DOTA_Tooltip_ability_faceless_void_flash_speed_duration"               "持续时间:"
+        "DOTA_Tooltip_ability_faceless_void_flash_speed_bonus_ms"               "%奖金移动速度:"
+        "DOTA_Tooltip_ability_faceless_void_flash_speed_bonus_bat"              "基础攻击时间:"
+        "DOTA_Tooltip_ability_faceless_void_flash_speed_bonus_evasion"              "%奖金回避:"
+        "DOTA_Tooltip_modifier_faceless_void_flash_speed"                           "闪光速度"
+        "DOTA_Tooltip_modifier_faceless_void_flash_speed_Description"               "太快了，太热了！"
 //Hero
                 "npc_dota_hero_"                ""
 
@@ -3432,7 +3442,7 @@
 
 
                 "DOTA_Tooltip_ability_backtrack_datadriven"     "超级闪避"
-                "DOTA_Tooltip_ability_backtrack_datadriven_Description" "只要有足够的力量,SANS有几率躲避任何伤害 !"
+                "DOTA_Tooltip_ability_backtrack_datadriven_Description" "只要有足够的力量,SANS有几率躲避任何伤害 !\n<font color='#ff9966'><em> 如果您击中，那么Sans会产生巨大的爆炸！ </em> </font>"
                 "DOTA_Tooltip_ability_backtrack_datadriven_max_layers"  "触发数量:"
                 "DOTA_Tooltip_ability_backtrack_datadriven_proc_chance" "闪避几率:"
 

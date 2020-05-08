@@ -2372,9 +2372,9 @@
 	"npc_dota_hero_faceless_void"
 	{
 		"override_hero"				"npc_dota_hero_faceless_void"
-		"ModelScale"				"0.5"
+		"ModelScale"				"0.6"
 	
-		"Ability1"		"pudge_meat_hook"
+		"Ability1"		"faceless_void_flash_speed"
 		"Ability2"		"juggernaut_omni_slash"
 		"Ability3"		"faceless_void_time_lock"
 		"Ability4"		"faceless_void_time_walk"		

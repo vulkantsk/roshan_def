@@ -32,7 +32,7 @@
 		"rank"                                               		"Ранк"
 		"player"                                               		"Игрок"
 		"GLOBAL_RANKING_SPEEDRUN"                                   "Рейтинг соло спидранеров"
-		"music_toggle"                                              "Включает/отключает музыку в игре"
+		"music_toggle"                                              "Включить/отключить музыку в игре"
 		"sss"                                               	""
 
 		"roshdef_game_info_text1"					"<span class='gold'>Защищайте Рошана !</span>"

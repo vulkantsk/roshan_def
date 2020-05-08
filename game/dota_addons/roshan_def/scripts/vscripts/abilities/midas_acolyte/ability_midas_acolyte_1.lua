@@ -37,7 +37,7 @@ end
 function modifier_ability_midas_acolyte_1_passive:OnAttackLanded(data)
 	local target = data.target
 	local attacker = data.attacker
-	if target == self.parent and not attacker:IsBuilding() and not attacker:IsControllableByAnyPlayer()  then 
+	if target == self.parent and not attacker:IsBuilding() and not attacker:IsControllableByAnyPlayer() or target:GetTeam() ~= attacker:GetTeam()  then 
 		self:MidasActivate(attacker)
 --    		self.ability:StartCooldown(self.ability:GetCooldown(self.ability:GetLevel()))
 	end

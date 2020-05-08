@@ -27,9 +27,9 @@
 	"Game_notification_boss_spawn_seeker"				"<font color='#DBA901'><br>GET READY FOR DEFENSE ! </font>  <font color='#FF0000'><br>BLOODY KING </font>is approaching you!"
 	"Game_notification_boss_spawn_never"				"<font color='#DBA901'><br>GET READY FOR DEFENSE ! </font>  <font color='#FF0000'><br>NEVER </font>is approaching you!"
 	"Game_notification_boss_spawn_spectre"				"<font color='#DBA901'><br>GET READY FOR DEFENSE ! </font>  <font color='#FF0000'><br>DARK SOULS </font>is approaching you!"
-	"Game_notification_boss_maraphon"				"<font color='#DBA901'><br>GET READY FOR BOSS MARAPHON ! </font>  <font color='#FF0000'><br>EVERY 10 sek spawn BOSS </font>have fun!"
 	"Game_notification_boss_spawn_cursed_warriors"				"<font color='#DBA901'><br>GET READY FOR DEFENSE ! </font>  <font color='#FF0000'><br>CURSED SQUAD </font>is approaching you!"
 	"Game_notification_boss_spawn_plague_wagon"				"<font color='#DBA901'><br>GET READY FOR DEFENSE ! </font>  <font color='#FF0000'><br>PLAGUE WAGON </font>is approaching you!"
+	"Game_notification_boss_final"				"<font color='#DBA901'><br>PREPARE FOR THE FINAL WAVE! </font>  <font color='#FF0000'><br>EVERY 10 SECONDS BOSS APPEARS </font> good luck!"
 	"Game_notification_infinite_maraphon"				"<font color='#DBA901'><br>GET READY FOR INFINITE BOSS MARAPHON ! </font>  <font color='#FF0000'><br>EACH MINUTE SPAWNS A RANDOM BOSS, STRONGER THAN THE PREVIOUS </font> GOOD LUCK!"
 
 
@@ -672,7 +672,7 @@
 
 //Pangolier
 
-		"npc_dota_hero_pangolier"			"PangoLier"
+		"npc_dota_hero_pangolier"			"PangoLier(IMBA)"
 
 		"DOTA_Tooltip_ability_pangolier_greed"								"Bandit Greed"
 		"DOTA_Tooltip_ability_pangolier_greed_Description"					"With each kill, Pangolier earns base bonus gold and extra bonus gold. If Pangolier kills another unit which yields gold within the next %duration% seconds, an additional instance of Extra Bonus Gold is added to the total. Additionally, causes bounty runes to yield more gold."
@@ -1159,7 +1159,7 @@
 		
 //Phoenix
  
-        "npc_dota_hero_phoenix"          "Phoenix(IMBA)"
+        "npc_dota_hero_phoenix"          "Phoenix"
  
         "DOTA_Tooltip_ability_phoenix_fire_soul"                        "Fiery soul"
         "DOTA_Tooltip_ability_phoenix_fire_soul_Description"            "Feeling the lack of vitality, its soul burns more brightly, increasing the spell damage!"
@@ -2825,6 +2825,18 @@
 		"DOTA_Tooltip_ability_axe_true_strength_Description"		"Real power knows no limit ..."
 		"DOTA_Tooltip_ability_axe_true_strength_bonus_str_pct"			"%BONUS STRENGTH:"
 
+//Void
+		"npc_dota_hero_"		""
+ 
+ 		"DOTA_Tooltip_ability_faceless_void_flash_speed"							"Flash speed"
+		"DOTA_Tooltip_ability_faceless_void_flash_speed_Description"				"Reduces his body, becoming very fast!"
+		"DOTA_Tooltip_ability_faceless_void_flash_speed_duration"				"DURATION:"
+		"DOTA_Tooltip_ability_faceless_void_flash_speed_bonus_ms"				"%BONUS MS:"
+		"DOTA_Tooltip_ability_faceless_void_flash_speed_bonus_bat"				"BAT:"
+		"DOTA_Tooltip_ability_faceless_void_flash_speed_bonus_evasion"				"%BONUS EVASION:"
+ 		"DOTA_Tooltip_modifier_faceless_void_flash_speed"							"Flash speed"
+		"DOTA_Tooltip_modifier_faceless_void_flash_speed_Description"				"So fast, so hot !"
+
 //hero
 		"npc_dota_hero_"		""
  
@@ -3484,9 +3496,14 @@
 
 
 		"DOTA_Tooltip_ability_backtrack_datadriven"	"Ultra evasion"
-		"DOTA_Tooltip_ability_backtrack_datadriven_Description"	"Sans has a chance to dodge any damage, just as much as he has enough strength!"
+		"DOTA_Tooltip_ability_backtrack_datadriven_Description"	"Sans has a chance to dodge any damage, just as much as he has enough strength!\n<font color='#ff9966'><em> If you hit, then Sans creates countershock! </em> </font> "
 		"DOTA_Tooltip_ability_backtrack_datadriven_max_layers"	"TRIGGER COUNT:"
 		"DOTA_Tooltip_ability_backtrack_datadriven_proc_chance"	"EVADE CHANCE:"
+		"DOTA_Tooltip_ability_backtrack_datadriven_shockwave_delay"	"COUNTERSHOK DELAY:"
+		"DOTA_Tooltip_ability_backtrack_datadriven_shockwave_radius"	"COUNTERSHOCK RADIUS:"
+		"DOTA_Tooltip_ability_backtrack_datadriven_shockwave_damage"	"COUNTER SHOCK DAMAGE:"
+		"DOTA_Tooltip_modifier_sans_shield_counter"	"Ultra evasion"
+		"DOTA_Tooltip_modifier_sans_shield_counter_Description"	"Just try hit me !"
 
 
 		"DOTA_Tooltip_ability_frost_armor_datadriven"	"Frost armor aura"

@@ -97,41 +97,6 @@ if GameMode == nil then
 end
 
 
-function GameMode:DamageFilter(filterDamage)
-    local attacker = filterDamage.entindex_attacker_const and EntIndexToHScript(filterDamage.entindex_attacker_const) 
-    if not attacker then
-        print('[DamageFilter] Unit damage not attacker!',EntIndexToHScript(filterDamage.entindex_victim_const):GetUnitName()) 
-        return true 
-    end 
-    local ability,abilityName
-    local victim = EntIndexToHScript(filterDamage.entindex_victim_const)
-    local typeDamage = filterDamage.damagetype_const
-    if filterDamage.entindex_inflictor_const then
-        ability = EntIndexToHScript(filterDamage.entindex_inflictor_const )
-        if ability and ability.GetAbilityName and ability:GetAbilityName() then
-            abilityName = ability:GetAbilityName()
-        end
-    end
-
-    local backtrackSans = victim:FindModifierByName('modifier_sans_shield_counter')
-    if backtrackSans and backtrackSans:GetStackCount() > 0 then 
-		if backtrackSans.attackCount < 100 and RollPercentage(backtrackSans.proc_chance) then 
-			local nfx = ParticleManager:CreateParticle('particles/units/heroes/hero_faceless_void/faceless_void_backtrack.vpcf', PATTACH_ABSORIGIN_FOLLOW, victim)
-			ParticleManager:ReleaseParticleIndex(nfx)
-			backtrackSans.attackCount = backtrackSans.attackCount + 1
-			return false
-		end
-		backtrackSans:SetStackCount(math.max(backtrackSans:GetStackCount() - 1,0))
-		if backtrackSans:GetStackCount() == 0 then 
-			backtrackSans:Destroy()
-		end
-		backtrackSans.attackCount = 0
-		return false
-    end
-
-    return true
-end
-
 
 -- This function initializes the game mode and is called before anyone loads into the game
 -- It can be used to pre-initialize any values/tables that will be needed later

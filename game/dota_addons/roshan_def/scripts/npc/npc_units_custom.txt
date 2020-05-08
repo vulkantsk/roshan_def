@@ -25249,7 +25249,7 @@
 		//----------------------------------------------------------------
 		"Creature"
 		{
-			"DisableResistance"				"50"
+			"DisableResistance"				"60"
 			"States"
 			{
 					"Invade"
@@ -31758,14 +31758,11 @@
 		
 		"Ability1"					"sans_earth_crack_passive"			// Ability 1.
 		"Ability2"					"sans_mass_telekinesis"			// Ability 2.
-		"Ability3"					"gaster_blaster_summon"			// Ability 3.
-//		"Ability4"					"earth_crack_2"			// Ability 4.
-		"Ability5"					"aghs_greater_telekinesis"			// Ability 4.
-//		"Ability6"					"aghs_greater_telekinesis_land"			// Ability 4.
-//		"Ability7"					"alcore_up_and_down"			// Ability 4.
-		"Ability8"					"sans_genocide_passive"			// Ability 4.
-//		"Ability9"					"faceless_void_backtrack"			// Ability 4.
-		"Ability10"					"backtrack_datadriven"			// Ability 4.
+		"Ability4"					"backtrack_datadriven"			// Ability 4.
+		"Ability3"					"aghs_greater_telekinesis"			// Ability 4.
+		"Ability5"					"gaster_blaster_summon"			// Ability 3.
+//		"Ability8"					"sans_genocide_passive"			// Ability 4.
+
 
 
 		// Armor
@@ -40434,6 +40431,10 @@
 		//----------------------------------------------------------------
 		"VisionDaytimeRange"		"1400"		// Range of vision during day light.
 		"VisionNighttimeRange"		"1400"		// Range of vision at night time.
+		"Creature"
+		{
+			"DisableResistance"				"50"
+		}
 	}	
 	"npc_explosive_squad_2"
 	{
@@ -40512,6 +40513,10 @@
 		//----------------------------------------------------------------
 		"VisionDaytimeRange"		"1400"		// Range of vision during day light.
 		"VisionNighttimeRange"		"1400"		// Range of vision at night time.
+		"Creature"
+		{
+			"DisableResistance"				"25"
+		}
 	}	
 
 	"npc_dota_midas_acolyte"
@@ -40591,6 +40596,10 @@
 		//----------------------------------------------------------------
 		"VisionDaytimeRange"		"1400"		// Range of vision during day light.
 		"VisionNighttimeRange"		"1400"		// Range of vision at night time.
+		"Creature"
+		{
+			"DisableResistance"				"50"
+		}
 	}	
 
 	"npc_dota_thief"
@@ -40612,14 +40621,14 @@
 		"Ability2"					"ability_thief_2"			// Ability 2.
 		"Ability3"					"ability_thief_3"			// Ability 3.
 		"Ability4"					"ability_thief_4"			// Ability 4.
-		"Ability5"					""			// Ability 5.
+		"Ability5"					"true_strike_datadriven"			// Ability 5.
 		"Ability6"					""			
 		"Ability7"					""			// Ability 7 - Extra.
 		"Ability8"					""			// Ability 8 - Extra.
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"36"			// Physical protection.
+		"ArmorPhysical"				"40"			// Physical protection.
 		"MagicalResistance"			"25"		// Magical protection.
 
 		// Attack
@@ -40656,7 +40665,7 @@
 		//----------------------------------------------------------------
 		"StatusHealth"				"100000"		// Base health.
 		"StatusHealthRegen"			"250"		// Health regeneration rate.
-		"StatusMana"				"5000"			// Base mana.
+		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"50"			// Mana regeneration rate.
 
 		// Team
@@ -40672,6 +40681,7 @@
 		"VisionNighttimeRange"		"1400"		// Range of vision at night time.
 		"Creature"
 		{
+			"DisableResistance"				"50"
 			"AttachWearables"//Twin Blades Assassin
 			{
 			"Wearable1" {"ItemDef" "6525"}//head("Hood of the Twin Blades")

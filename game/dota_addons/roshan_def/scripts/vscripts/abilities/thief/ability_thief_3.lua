@@ -25,6 +25,7 @@ function modifier_ability_thief_3_delay:OnDestroy()
     local nfx = ParticleManager:CreateParticle('particles/units/heroes/hero_shadow_demon/shadow_demon_demonic_purge_finale.vpcf', PATTACH_ABSORIGIN, self:GetParent())
     ParticleManager:SetParticleControl(nfx, 0, self:GetParent():GetAbsOrigin())
     ParticleManager:SetParticleControl(nfx, 3, Vector(2,2,2))
+
 end
 
 modifier_ability_thief_3_debuff = class({
@@ -45,10 +46,10 @@ modifier_ability_thief_3_debuff = class({
     end,
 })
 
-function modifier_ability_thief_3_delay:OnCreated()
+function modifier_ability_thief_3_debuff:OnCreated()
     self.armor = self:GetAbility():GetSpecialValueFor('remove_armor')
 end
 
-function modifier_ability_thief_3_delay:GetModifierPhysicalArmorBonus()
+function modifier_ability_thief_3_debuff:GetModifierPhysicalArmorBonus()
     return -self.armor
 end

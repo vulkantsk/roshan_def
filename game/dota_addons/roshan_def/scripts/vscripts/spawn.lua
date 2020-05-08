@@ -148,65 +148,7 @@ neutral_creeps = {
 	["item_earth_essence"] = {"npc_dota_elemental_4","npc_dota_elemental_4_1"},
 }
 
-	
-GameRules.upgradedata = {
-	["type01"] = {dmg = 2, armor = 0.5 , hp = 40},
-	["type02"] = {dmg = 5, armor = 0.5 , hp = 60},
-	["type03"] = {dmg = 5, armor = 1 , hp = 100},
-}
-
-function Spawn:Upgrade1(unit,inc)
-	if not unit:IsAlive() then
-		return
-	end
-
-	local upgrade_mult=1.25
-	unit:SetBaseDamageMin(unit:GetBaseDamageMin()*upgrade_mult)
-	unit:SetBaseDamageMax(unit:GetBaseDamageMax()*upgrade_mult)				
-	unit:SetPhysicalArmorBaseValue(unit:GetPhysicalArmorBaseValue()*upgrade_mult)
-	unit:SetBaseMaxHealth(unit:GetBaseMaxHealth()*upgrade_mult)
-
-end
-
-function Spawn:Upgrade2(unit, multiplier)	
-	if not unit:IsAlive() then
-		return
-	end
-				
-	local upgrade_mult= multiplier
-	local maxhp = unit:GetMaxHealth()*upgrade_mult
-	if maxhp < 1 then maxhp = 1 end
-	
-	unit:SetBaseDamageMin(unit:GetBaseDamageMin()*upgrade_mult)
-	unit:SetBaseDamageMax(unit:GetBaseDamageMax()*upgrade_mult)				
-	unit:SetPhysicalArmorBaseValue(unit:GetPhysicalArmorBaseValue()*upgrade_mult)
-	unit:SetBaseMaxHealth(maxhp)
-	unit:SetMaxHealth(maxhp)	
-	unit:SetHealth(maxhp)
-	
-end
-
-function Spawn:Upgrade3(unit, multiplier)	
-	if not unit:IsAlive() then
-		return
-	end
-		
-	Timers:CreateTimer(0.03, function()				
-			
-		local upgrade_mult= multiplier
-		local maxhp = unit:GetMaxHealth()*upgrade_mult
-		if maxhp < 1 then maxhp = 1 end
-		
-		unit:SetBaseDamageMin(unit:GetBaseDamageMin()*upgrade_mult)
-		unit:SetBaseDamageMax(unit:GetBaseDamageMax()*upgrade_mult)				
-		unit:SetPhysicalArmorBaseValue(unit:GetPhysicalArmorBaseValue()*upgrade_mult)
-		unit:SetBaseMaxHealth(maxhp)
-		unit:SetMaxHealth(maxhp)	
-		unit:SetHealth(maxhp)
-	end)
-end
-
-function Spawn:Upgrade4(unit, multiplier, armor)	
+function Spawn:UpgradeUnitStats(unit, multiplier, armor)	
 	if not unit:IsAlive() then
 		return
 	end
@@ -214,20 +156,33 @@ function Spawn:Upgrade4(unit, multiplier, armor)
 	Timers:CreateTimer(0.02, function()				
 		local armor = armor or 200	
 		local new_armor = unit:GetPhysicalArmorBaseValue()*multiplier
-		local maxhp = unit:GetMaxHealth()*multiplier
-		if maxhp < 1 then maxhp = 1 end
-		
-		unit:SetBaseDamageMin(unit:GetBaseDamageMin()*multiplier)
-		unit:SetBaseDamageMax(unit:GetBaseDamageMax()*multiplier)				
-		unit:SetBaseMaxHealth(maxhp)
-		unit:SetMaxHealth(maxhp)	
-		unit:SetHealth(maxhp)
+		local max_hp = unit:GetMaxHealth()*multiplier
+		local min_dmg = unit:GetBaseDamageMin()*multiplier
+		local max_dmg = unit:GetBaseDamageMax()*multiplier
+
+		if max_hp <= 1 then 
+			 max_hp = 1
+		elseif max_hp >= 2000000000 then
+			 max_hp = 2000000000
+		end
+		unit:SetBaseMaxHealth(max_hp)
+		unit:SetMaxHealth(max_hp)	
+		unit:SetHealth(max_hp)
 
 		if new_armor > armor then
 			new_armor = armor
 		end
+		unit:SetPhysicalArmorBaseValue(new_armor)		
+		if min_dmg >= 2000000000 then
+			 min_dmg = 2000000000
+		end
+		unit:SetBaseDamageMin(min_dmg)
 
-		unit:SetPhysicalArmorBaseValue(new_armor)
+		if max_dmg >= 2000000000 then
+			 max_dmg = 2000000000
+		end				
+		unit:SetBaseDamageMax(max_dmg)
+
 	end)
 end
 
@@ -257,9 +212,9 @@ function Spawn:On_Difficult_Chosen( event )
 			end		
 
 			if team ~= main_team then
-				if difficulty == 1 then Spawn:Upgrade2(creature, 1.5)
-				elseif  difficulty == 2 then Spawn:Upgrade2(creature, 2)
-				elseif  difficulty == 3 then Spawn:Upgrade2(creature, 3)
+				if difficulty == 1 then Spawn:UpgradeUnitStats(creature, 1.5)
+				elseif  difficulty == 2 then Spawn:UpgradeUnitStats(creature, 2)
+				elseif  difficulty == 3 then Spawn:UpgradeUnitStats(creature, 3)
 				end
 			end
 		end
@@ -287,7 +242,7 @@ function Spawn:InitGameMode()
 		end
 
 		if GetMapName() == "roshdef_event" and building:GetTeam() == DOTA_TEAM_GOODGUYS then
-			Spawn:Upgrade4(building, 10, nil)
+			Spawn:UpgradeUnitStats(building, 10, nil)
 			SetGoldMultiplier(building , 10)
 		end
     end
@@ -305,12 +260,12 @@ function Spawn:InitGameMode()
 
 		if GetMapName() == "roshdef_turbo" and creature:GetTeam() ~= main_team  then
 			SetGoldMultiplier(creature , 2)
-			Spawn:Upgrade3(creature, 0.75)
+			Spawn:UpgradeUnitStats(creature, 0.75)
 		end
 		if name == "npc_dota_roshan1" and GetMapName() == "roshdef_event" then
-			Spawn:Upgrade4(building, 20, 100)
+			Spawn:UpgradeUnitStats(building, 20, 100)
 		elseif name == "npc_dota_roshan2" and GetMapName() == "roshdef_event" then
-			Spawn:Upgrade4(building, 20, 50)
+			Spawn:UpgradeUnitStats(building, 20, 50)
 		end
 
 	end
@@ -873,12 +828,12 @@ function Spawn:MegaMode()
 --		roshan = Entities:FindByModel(roshan,"models/creeps/roshan/roshan.vmdl")
 --	end
 	local unit = Entities:FindByName( nil, "roshan")
-	if unit ~= nil then Spawn:Upgrade4(unit, 100, 200)	 end
+	if unit ~= nil then Spawn:UpgradeUnitStats(unit, 100, 200)	 end
 	
---	Spawn:Upgrade2(unit,400)
+--	Spawn:UpgradeUnitStats(unit,400)
 	for i=1,3 do
 		local unit = Entities:FindByName( nil, "roshan_guard"..i)
-		if unit ~= nil then Spawn:Upgrade4(unit, 100, 100) end
+		if unit ~= nil then Spawn:UpgradeUnitStats(unit, 100, 100) end
 	end
 	Spawn:SetSameTeam()
 	Spawn:MegaNeutralSpawner()
@@ -916,7 +871,7 @@ function Spawn:OnNPCSpawned(keys)
 	if GetMapName() == "roshdef_turbo" then
 		if (team ~= main_team and not npc:IsRealHero() ) then
 			SetGoldMultiplier(npc , 2)
-			Spawn:Upgrade3(npc, 0.75)
+			Spawn:UpgradeUnitStats(npc, 0.75)
 		end
 	end
 	
@@ -933,9 +888,9 @@ function Spawn:OnNPCSpawned(keys)
 --	npc:AddNewModifier(npc, nil, "modifier_special_effect_contest", {})
 --	npc:AddNewModifier(npc, nil, "modifier_special_effect_donator", {})
 
-	if (team ~= main_team and GameRules.DIFFICULTY == 1 and not npc:IsRealHero() ) then 	Spawn:Upgrade2(npc, 1.5)
-		elseif (team ~= main_team and GameRules.DIFFICULTY == 2 and not npc:IsRealHero()) then 	Spawn:Upgrade2(npc, 2)
-		elseif (team ~= main_team and GameRules.DIFFICULTY == 3 and not npc:IsRealHero()) then 	Spawn:Upgrade2(npc, 3)
+	if (team ~= main_team and GameRules.DIFFICULTY == 1 and not npc:IsRealHero() ) then 	Spawn:UpgradeUnitStats(npc, 1.5)
+		elseif (team ~= main_team and GameRules.DIFFICULTY == 2 and not npc:IsRealHero()) then 	Spawn:UpgradeUnitStats(npc, 2)
+		elseif (team ~= main_team and GameRules.DIFFICULTY == 3 and not npc:IsRealHero()) then 	Spawn:UpgradeUnitStats(npc, 3)
 	end
 
 	if (team == DOTA_TEAM_BADGUYS and GameRules.DemonMode == 1) then 	npc:AddNewModifier(npc, nil, "modifier_demon_lord_buff", {})
@@ -1461,60 +1416,60 @@ function Spawn:NeutralSpawnerEvent() -- Функция начнет выполн
 		if GameRules.MegaMode == 0 and GameRules.EndGame == 0 then
 			 for i=1, 3 do -- Произведет нижние действия столько раз, сколько указано в ROUND_UNITS. То есть в нашем случае создаст 2 юнита.
 				local unit = CreateUnitByName( "npc_dota_kobold3", point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_GOODGUYS )
-				Spawn:Upgrade4(unit, 5, 10+wave_number*0.25)
+				Spawn:UpgradeUnitStats(unit, 5, 10+wave_number*0.25)
 				AttackMove( unit, dire_point )
 			 end
 			 
 			local unit = CreateUnitByName( "npc_dota_satyr3", point1 + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_GOODGUYS )
-				Spawn:Upgrade4(unit, 5, 10+wave_number*0.25)
+				Spawn:UpgradeUnitStats(unit, 5, 10+wave_number*0.25)
 			AttackMove( unit, dire_point )
 
        
 			 if GameRules:GetDOTATime(false,false)>300 then
 				local unit = CreateUnitByName( "npc_dota_wolf2", point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_GOODGUYS )
-				Spawn:Upgrade4(unit, 5, 10+wave_number*0.25)
+				Spawn:UpgradeUnitStats(unit, 5, 10+wave_number*0.25)
 				AttackMove( unit, dire_point )
 			 end        
 
 			 if GameRules:GetDOTATime(false,false)>600 then
 				local unit = CreateUnitByName( "npc_dota_ursa2", point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_GOODGUYS )
-				Spawn:Upgrade4(unit, 5, 10+wave_number*0.25)
+				Spawn:UpgradeUnitStats(unit, 5, 10+wave_number*0.25)
 				AttackMove( unit, dire_point )
 			 end        
 
 			 if GameRules:GetDOTATime(false,false)>900 then
 				local unit = CreateUnitByName( "npc_dota_golem4", point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_GOODGUYS )
-				Spawn:Upgrade4(unit, 5, 10+wave_number*0.25)
+				Spawn:UpgradeUnitStats(unit, 5, 10+wave_number*0.25)
 				AttackMove( unit, dire_point )
 			 end 
 			 
 			 if GameRules:GetDOTATime(false,false)>1200 then
 				local unit = CreateUnitByName( "npc_dota_troll4", point1 + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_GOODGUYS )
-				Spawn:Upgrade4(unit, 5, 15+wave_number*0.25)
+				Spawn:UpgradeUnitStats(unit, 5, 15+wave_number*0.25)
 				AttackMove( unit, dire_point )
 			 end        
 
 			 if GameRules:GetDOTATime(false,false)>1500 then
 				local unit = CreateUnitByName( "npc_dota_ogre2", point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_GOODGUYS )
-				Spawn:Upgrade4(unit, 5, 15+wave_number*0.25)
+				Spawn:UpgradeUnitStats(unit, 5, 15+wave_number*0.25)
 				AttackMove( unit, dire_point )
 			 end 
 			 
 			 if GameRules:GetDOTATime(false,false)>1800 then
 				local unit = CreateUnitByName( "npc_dota_centaur2", point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_GOODGUYS )
-				Spawn:Upgrade4(unit, 5, 25+wave_number*0.5)
+				Spawn:UpgradeUnitStats(unit, 5, 25+wave_number*0.5)
 				AttackMove( unit, dire_point )
 			 end        
 
 			 if GameRules:GetDOTATime(false,false)>2100 then
 				local unit = CreateUnitByName( "npc_dota_dragon2", point1 + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_GOODGUYS )
-				Spawn:Upgrade4(unit, 5, 25+wave_number*0.5)
+				Spawn:UpgradeUnitStats(unit, 5, 25+wave_number*0.5)
 				AttackMove( unit, dire_point )
 			 end  
 
 			 if GameRules:GetDOTATime(false,false)>2400 then
 				local unit = CreateUnitByName( "npc_dota_lizard2", point1 + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_GOODGUYS )
-				Spawn:Upgrade4(unit, 5, 25+wave_number*0.5)
+				Spawn:UpgradeUnitStats(unit, 5, 25+wave_number*0.5)
 				AttackMove( unit, dire_point )
 			 end  
 			 
@@ -1540,55 +1495,55 @@ function Spawn:MegaNeutralSpawner() -- Функция начнет выполн�
 			for i=1, 4 do -- Произведет нижние действия столько раз, сколько указано в ROUND_UNITS. То есть в нашем случае создаст 2 юнита.
 				local unit = CreateUnitByName( "npc_dota_kobold3", point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_GOODGUYS )
 				  AttackMove( unit, dire_point )
-				  Spawn:Upgrade2(unit,30)
+				  Spawn:UpgradeUnitStats(unit,30)
 				  unit:SetPhysicalArmorBaseValue(25)
 			end        
         
 		 	local unit = CreateUnitByName( "npc_dota_golem4", point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_GOODGUYS )		
 				  AttackMove( unit, dire_point )
-				  Spawn:Upgrade2(unit,30)
+				  Spawn:UpgradeUnitStats(unit,30)
 				  unit:SetPhysicalArmorBaseValue(75)
 
 		 
 			local unit = CreateUnitByName( "npc_dota_ursa2", point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_GOODGUYS )
 			      AttackMove( unit, dire_point )
-				  Spawn:Upgrade2(unit,30)
+				  Spawn:UpgradeUnitStats(unit,30)
  				  unit:SetPhysicalArmorBaseValue(50)
         
 			local unit = CreateUnitByName( "npc_dota_ogre2", point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_GOODGUYS )
 			      AttackMove( unit, dire_point )
-				  Spawn:Upgrade2(unit,30)
+				  Spawn:UpgradeUnitStats(unit,30)
  				  unit:SetPhysicalArmorBaseValue(75)
         
 			local unit = CreateUnitByName( "npc_dota_troll4", point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_GOODGUYS )			
 				  AttackMove( unit, dire_point )
-				  Spawn:Upgrade2(unit,30)
+				  Spawn:UpgradeUnitStats(unit,30)
 				  unit:SetPhysicalArmorBaseValue(25)
 		  
 		 
 			local unit = CreateUnitByName( "npc_dota_wolf2", point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_GOODGUYS )
 				  AttackMove( unit, dire_point )
- 				  Spawn:Upgrade2(unit,30)
+ 				  Spawn:UpgradeUnitStats(unit,30)
 				  unit:SetPhysicalArmorBaseValue(50)
 
 			local unit = CreateUnitByName( "npc_dota_satyr3", point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_GOODGUYS )
 			      AttackMove( unit, dire_point )
-				  Spawn:Upgrade2(unit,30)
+				  Spawn:UpgradeUnitStats(unit,30)
 				  unit:SetPhysicalArmorBaseValue(50)
 
 			local unit = CreateUnitByName( "npc_dota_dragon2", point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_GOODGUYS )
 				  AttackMove( unit, dire_point )
-				  Spawn:Upgrade2(unit,30)
+				  Spawn:UpgradeUnitStats(unit,30)
 				  unit:SetPhysicalArmorBaseValue(100)
 
 			local unit = CreateUnitByName( "npc_dota_lizard2", point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_GOODGUYS )
 				  AttackMove( unit, dire_point )
-				  Spawn:Upgrade2(unit,30)
+				  Spawn:UpgradeUnitStats(unit,30)
 				  unit:SetPhysicalArmorBaseValue(100)
 
 			local unit = CreateUnitByName( "npc_dota_centaur2", point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_GOODGUYS )
 				  AttackMove( unit, dire_point )
-				  Spawn:Upgrade2(unit,30)
+				  Spawn:UpgradeUnitStats(unit,30)
 				  unit:SetPhysicalArmorBaseValue(100)
 		end
         
@@ -1918,77 +1873,77 @@ function Spawn:InfiniteMaraphon()
 				GameRules:SendCustomMessage("#Game_notification_boss_spawn_abomination",0,0)		 
 				local unit = CreateUnitByName( "npc_dota_abomination_boss" , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
 				unit:SetInitialGoalEntity( waypoint ) -- Посылаем мобов на наш way1, координаты которого мы записали в переменную 'waypoint'
-				Spawn:Upgrade2(unit,500)
-				Spawn:Upgrade2(unit,GameRules.Maraphon_Round/2.5)
+				Spawn:UpgradeUnitStats(unit,500)
+				Spawn:UpgradeUnitStats(unit,GameRules.Maraphon_Round/2.5)
 				unit:SetPhysicalArmorBaseValue(175)
 			elseif int == 2 then
 				GameRules:SendCustomMessage("#Game_notification_boss_spawn_fire_golem",0,0)		 
 				local unit = CreateUnitByName( "npc_dota_golem_boss" , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
 				unit:SetInitialGoalEntity( waypoint ) -- Посылаем мобов на наш way1, координаты которого мы записали в переменную 'waypoint'
-				Spawn:Upgrade2(unit,400)
-				Spawn:Upgrade2(unit,GameRules.Maraphon_Round/2.5)
+				Spawn:UpgradeUnitStats(unit,400)
+				Spawn:UpgradeUnitStats(unit,GameRules.Maraphon_Round/2.5)
 				unit:SetPhysicalArmorBaseValue(175)
 			elseif int == 3 then
 				GameRules:SendCustomMessage("#Game_notification_boss_spawn_necronomicon",0,0)		 
 				local unit = CreateUnitByName( "npc_dota_necronomicon_warrior_boss" , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
 				unit:SetInitialGoalEntity( waypoint ) -- Посылаем мобов на наш way1, координаты которого мы записали в переменную 'waypoint'
-				Spawn:Upgrade2(unit,200)
-				Spawn:Upgrade2(unit,GameRules.Maraphon_Round/2.5)
+				Spawn:UpgradeUnitStats(unit,200)
+				Spawn:UpgradeUnitStats(unit,GameRules.Maraphon_Round/2.5)
 				unit:SetPhysicalArmorBaseValue(175)
 	 
 				local unit = CreateUnitByName( "npc_dota_necronomicon_archer_boss" , point1 + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
 				unit:SetInitialGoalEntity( waypoint ) -- Посылаем мобов на наш way1, координаты которого мы записали в переменную 'waypoint'
-				Spawn:Upgrade2(unit,200)
-				Spawn:Upgrade2(unit,GameRules.Maraphon_Round/2.5)
+				Spawn:UpgradeUnitStats(unit,200)
+				Spawn:UpgradeUnitStats(unit,GameRules.Maraphon_Round/2.5)
 				unit:SetPhysicalArmorBaseValue(150)
 
 			elseif int == 4 then
 				GameRules:SendCustomMessage("#Game_notification_boss_spawn_nyx",0,0)		 
 				local unit = CreateUnitByName( "npc_dota_nyx_boss" , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
 				unit:SetInitialGoalEntity( waypoint ) -- Посылаем мобов на наш way1, координаты которого мы записали в переменную 'waypoint'
-				Spawn:Upgrade2(unit,60)
-				Spawn:Upgrade2(unit,GameRules.Maraphon_Round/2.5)
+				Spawn:UpgradeUnitStats(unit,60)
+				Spawn:UpgradeUnitStats(unit,GameRules.Maraphon_Round/2.5)
 				unit:SetPhysicalArmorBaseValue(175)
 			elseif int == 5 then
 				GameRules:SendCustomMessage("#Game_notification_boss_spawn_doom",0,0)		 
 			 
 				local unit = CreateUnitByName( "npc_dota_doom_boss" , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
 				unit:SetInitialGoalEntity( waypoint ) -- Посылаем мобов на наш way1, координаты которого мы записали в переменную 'waypoint'
-				Spawn:Upgrade2(unit,40)
-				Spawn:Upgrade2(unit,GameRules.Maraphon_Round/2.5)
+				Spawn:UpgradeUnitStats(unit,40)
+				Spawn:UpgradeUnitStats(unit,GameRules.Maraphon_Round/2.5)
 				unit:SetPhysicalArmorBaseValue(175)
 	 
 				local unit = CreateUnitByName( "npc_dota_doom_minion" , point1 + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
 				unit:SetInitialGoalEntity( waypoint ) -- Посылаем мобов на наш way1, координаты которого мы записали в переменную 'waypoint'
-				Spawn:Upgrade2(unit,40)
-				Spawn:Upgrade2(unit,GameRules.Maraphon_Round/2.5)
+				Spawn:UpgradeUnitStats(unit,40)
+				Spawn:UpgradeUnitStats(unit,GameRules.Maraphon_Round/2.5)
 				unit:SetPhysicalArmorBaseValue(125)
 
 				local unit = CreateUnitByName( "npc_dota_doom_minion" , point1 + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
 				unit:SetInitialGoalEntity( waypoint ) -- Посылаем мобов на наш way1, координаты которого мы записали в переменную 'waypoint'
-				Spawn:Upgrade2(unit,40)
-				Spawn:Upgrade2(unit,GameRules.Maraphon_Round/2.5)
+				Spawn:UpgradeUnitStats(unit,40)
+				Spawn:UpgradeUnitStats(unit,GameRules.Maraphon_Round/2.5)
 				unit:SetPhysicalArmorBaseValue(125)
 
 				local unit = CreateUnitByName( "npc_dota_doom_minion" , point1 + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
 				unit:SetInitialGoalEntity( waypoint ) -- Посылаем мобов на наш way1, координаты которого мы записали в переменную 'waypoint'
-				Spawn:Upgrade2(unit,40)
-				Spawn:Upgrade2(unit,GameRules.Maraphon_Round/2.5)
+				Spawn:UpgradeUnitStats(unit,40)
+				Spawn:UpgradeUnitStats(unit,GameRules.Maraphon_Round/2.5)
 				unit:SetPhysicalArmorBaseValue(125)
 	 
 			elseif int == 6 then
 				GameRules:SendCustomMessage("#Game_notification_boss_spawn_seeker",0,0)		 
 				local unit = CreateUnitByName( "npc_dota_bloodseeker_boss" , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
 				unit:SetInitialGoalEntity( waypoint ) -- Посылаем мобов на наш way1, координаты которого мы записали в переменную 'waypoint'
-				Spawn:Upgrade2(unit,16)
-				Spawn:Upgrade2(unit,GameRules.Maraphon_Round/2.5)
+				Spawn:UpgradeUnitStats(unit,16)
+				Spawn:UpgradeUnitStats(unit,GameRules.Maraphon_Round/2.5)
 				unit:SetPhysicalArmorBaseValue(175)
 			elseif int == 7 then
 				GameRules:SendCustomMessage("#Game_notification_boss_spawn_spectre",0,0)		 
 				local unit = CreateUnitByName( "npc_phantasm_1" , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
 				unit:SetInitialGoalEntity( waypoint ) -- Посылаем мобов на наш way1, координаты которого мы записали в переменную 'waypoint'
-				Spawn:Upgrade2(unit,8)
-				Spawn:Upgrade2(unit,GameRules.Maraphon_Round/2.5)
+				Spawn:UpgradeUnitStats(unit,8)
+				Spawn:UpgradeUnitStats(unit,GameRules.Maraphon_Round/2.5)
 				unit:SetPhysicalArmorBaseValue(175)
 				
 			end

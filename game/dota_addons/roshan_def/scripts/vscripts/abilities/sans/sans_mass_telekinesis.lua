@@ -7,7 +7,7 @@ function sans_mass_telekinesis:OnSpellStart()
 	local effect_radius = self:GetSpecialValueFor('effect_radius')
 	local damage = self:GetSpecialValueFor('damage')
 	local duration_stun = self:GetSpecialValueFor('duration_stun')
-	local impact_radius = self:GetSpecialValueFor('impact_radius')
+	local radius = self:GetSpecialValueFor('radius')
 	local lift_duration = self:GetSpecialValueFor('lift_duration')
 	local vPos = self:GetCursorPosition()
 	local caster = self:GetCaster()
@@ -24,13 +24,28 @@ function sans_mass_telekinesis:OnSpellStart()
 	ParticleManager:SetParticleControl(nfx, 3, Vector(0,0,200))
 	ParticleManager:SetParticleControl(nfx, 4, Vector(0,0,0))
 	ParticleManager:ReleaseParticleIndex(nfx)
+	
+	Timers:CreateTimer(think_time,function()
+		caster:EmitSound("Hero_Leshrac.Split_Earth.Tormented")
+		local nfx = ParticleManager:CreateParticle('particles/alcore_my_own_hell.vpcf', PATTACH_WORLDORIGIN, caster)
+		ParticleManager:SetParticleControl(nfx, 0, vPos)
+		ParticleManager:SetParticleControl(nfx, 1, Vector(effect_radius,effect_radius,effect_radius))
+		ParticleManager:ReleaseParticleIndex(nfx)
+		GridNav:DestroyTreesAroundPoint(vPos,effect_radius,true)
 
+		local enemies = caster:FindEnemyUnitsInRadius(vPos,effect_radius, nil)
+		for _,enemy in pairs(enemies) do
+			enemy:AddNewModifier(caster, self, "modifier_stunned", {duration = duration_stun})
+			DealDamage(caster, enemy, damage, DAMAGE_TYPE_MAGICAL, nil, self)
+
+		end
+	end)
 	dummy:ForceKill(false)
 
 	local units = FindUnitsInRadius(caster:GetTeamNumber(),
-	vPos,
+	caster:GetAbsOrigin(),
 	nil,
-	impact_radius,
+	radius,
 	DOTA_UNIT_TARGET_TEAM_ENEMY,
 	DOTA_UNIT_TARGET_BASIC + DOTA_UNIT_TARGET_HERO,
 	DOTA_UNIT_TARGET_FLAG_NONE,
@@ -42,14 +57,6 @@ function sans_mass_telekinesis:OnSpellStart()
 		v:AddNewModifier(caster, self, 'modifier_sans_telekinesis', {
 			duration = lift_duration,
 		})
-
-		ApplyDamage({
- 			attacker = caster,
- 			damage = damage,
- 			victim = v,
- 			damage_type = DAMAGE_TYPE_MAGICAL,
- 			ability = ability,
-		})
 	end
 	local nfx = self:__Drop()
 
@@ -58,7 +65,6 @@ function sans_mass_telekinesis:OnSpellStart()
 		ParticleManager:ReleaseParticleIndex(nfx)
 	end)
 
-	GridNav:DestroyTreesAroundPoint(vPos,impact_radius,true)
 end
 
 function sans_mass_telekinesis:__Drop()
@@ -120,7 +126,7 @@ function modifier_sans_telekinesis_fall:OnDestroy()
 	local caster = self:GetCaster()
 	local target = self:GetParent()
 	local ability = self:GetAbility()
-	local radius = ability:GetSpecialValueFor("radius")
+	local impact_radius = ability:GetSpecialValueFor("impact_radius")
 	local stun_duration = ability:GetSpecialValueFor("stun_duration")
 
 	if ability.drop_particle ~= nil then
@@ -132,12 +138,13 @@ function modifier_sans_telekinesis_fall:OnDestroy()
 	ParticleManager:SetParticleControl(particle, 1, origin)
 	ParticleManager:SetParticleControl(particle, 2, origin)
 	ParticleManager:ReleaseParticleIndex(particle)
-	local units = FindUnitsInRadius(caster:GetTeamNumber(), ability.pointTeleport, nil, radius, ability:GetAbilityTargetTeam(), ability:GetAbilityTargetType(), 0, 0, false)
+	local units = FindUnitsInRadius(caster:GetTeamNumber(), ability.pointTeleport, nil, impact_radius, ability:GetAbilityTargetTeam(), ability:GetAbilityTargetType(), 0, 0, false)
 	for i,unit in ipairs(units) do
 		unit:AddNewModifier(caster, ability, "modifier_stunned", {Duration = stun_duration})
 	end
-	EmitSoundOn('Hero_Rubick.Telekinesis.Stun', target)
 	
+	EmitSoundOn('Hero_Rubick.Telekinesis.Stun', target)
+
 	FindClearSpaceForUnit(target, ability.pointTeleport, false)
 
 end
