@@ -1,0 +1,242 @@
+""
+{
+	"invoker_invoke_custom"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_invoker/invoke_custom"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"invoker_invoke"
+
+		"MaxLevel"						"1"
+
+		"AbilityCooldown"				"1"
+		"AbilityManaCost"				"0"
+		"AbilityCastAnimation"			"ACT_INVALID"
+	
+	}
+
+	"ability_chaos_meteor_dummy_unit"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_invoker/ability_chaos_meteor_dummy_unit"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"MaxLevel"						"1"
+
+		"AbilityCooldown"				"1"
+		"AbilityManaCost"				"0"
+		"AbilityCastAnimation"			"ACT_INVALID"
+	
+	}
+
+	"invoker_exort_sunstrikes"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_invoker/invoker_exort_sunstrikes"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityTextureName"			"invoker_sun_strike"
+		"AbilityCooldown"				"1"
+		"AbilityManaCost"				"0"
+        "AoERadius"                     "%radius"
+		"AbilityCastAnimation"			"ACT_ABILITY_1"
+	
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"               "600"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage"               "200"
+			}		
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"count"               "12"
+			}	
+            "03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius_sunstrike"               "150"
+			}	
+            "04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"sunstrike_delay"               "1.7"
+			}
+		}
+	}
+
+	"invoker_exort_fire_enchant"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_invoker/invoker_exort_fire_enchant"
+		"AbilityBehavior"				" DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"AbilityTextureName"			"invoker_exort_fire_enchant"
+		"AbilityCooldown"				"1"
+		"AbilityManaCost"				"0"
+		"AbilityCastAnimation"			"ACT_INVALID"
+	
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_magic_damage_pct"               "30"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"base_damage"               "30"
+			}		
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"duration"						"10"
+			}
+		}
+	}
+
+	"invoker_exort_forged_spirit"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_invoker/invoker_exort_forged_spirit"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityTextureName"			"invoker_forge_spirit"
+		"AbilityCooldown"				"1"
+		"AbilityManaCost"				"0"
+		"AbilityCastAnimation"			"ACT_INVALID"
+	
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_magic_damage_pct"               "30"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"base_damage"               "30"
+			}		
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"duration"						"10"
+			}
+		}
+	}
+
+	"invoker_forge_spirit_passive"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_invoker/invoker_forge_spirit_passive"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityTextureName"			"forged_spirit_melting_strike"
+		"AbilityCooldown"				"1"
+		"AbilityManaCost"				"0"
+		"AbilityCastAnimation"			"ACT_INVALID"
+	
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"dmg_per_tick"               "30"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"tick"               "1"
+			}		
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"duration"						"4"
+			}
+		}
+	}
+
+	"invoker_exort_chaos_meteor"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_invoker/invoker_exort_chaos_meteor"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityTextureName"			"invoker_chaos_meteor"
+		"AbilityCooldown"				"1"
+		"AbilityManaCost"				"0"
+		"AbilityCastAnimation"			"ACT_INVALID"
+	
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_magic_damage_pct"               "30"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"base_damage"               "30"
+			}	
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"per_damage"						"20"
+			}	
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"per_damage"						"20"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"fly_speed"						"1200"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"VisionDistance"				"200"
+			}
+			"08"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"travel_distance"				"1200"
+			}
+			"09"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"speed_travel"				"600"
+			}
+			"10"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"duration"						"10"
+			}
+		}
+	}
+}

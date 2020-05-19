@@ -2,7 +2,14 @@
 if not invoker_invoke_custom then
 	invoker_invoke_custom = class({})
 end
-
+local abilitiesInvoker = {
+	[1] = {
+		'invoker_exort_sunstrikes',
+		'invoker_exort_chaos_meteor',
+		'invoker_exort_forged_spirit',
+		'invoker_exort_fire_enchant',
+	},
+}
 --Путь к этому файлу
 function invoker_invoke_custom:OnSpellStart()
 	local caster = self:GetCaster()
@@ -26,6 +33,16 @@ function invoker_invoke_custom:OnSpellStart()
 	elseif self.form == 3 then
 		orb_particle = "particles/units/heroes/hero_invoker/invoker_quas_orb.vpcf"
 	end
+
+	for formID,dataForm in pairs(abilitiesInvoker) do
+		for  _,abilityName in pairs(dataForm) do 
+			local ability = caster:FindAbilityByName(abilityName)
+			if ability then 
+				ability:SetHidden(formID ~= self.form)
+				ability:SetLevel(7)
+			end 
+		end 
+	end 
 
 	for i=1,3 do
 		local pfx = self.orbs[i]
