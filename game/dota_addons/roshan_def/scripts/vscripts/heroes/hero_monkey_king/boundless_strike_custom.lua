@@ -46,7 +46,7 @@ function monkey_king_boundless_strike_custom:OnSpellStart()
     local enemies = caster:FindEnemyUnitsInLine(startPos, endPos, width, {})
     for _,enemy in pairs(enemies) do
 --        self:Stun(enemy, duration, false)
-        caster:PerformAttack(enemy, true, true, true, true, true, false, true)
+        caster:PerformAttack(enemy, false, false, true, true, true, false, true)
 
     end
     caster:RemoveModifierByName("modifier_monkey_king_boundless_strike_custom")

@@ -248,8 +248,8 @@ function BossSpawner:InitBossMarathon()
 				Timers:CreateTimer(unit_total*UNIT_INTERVAL_SPAWN,function()
 					local unit = CreateUnitByName( unit_name , point + RandomVector( RandomFloat( 0, 200 ) ), true, nil, nil, DOTA_TEAM_BADGUYS ) 
 					unit:SetInitialGoalEntity( waypoint )
-					Spawn:Upgrade4(unit, marathon_mult)
-					Spawn:Upgrade4(unit, 1 + marathon_exp*current_wave)
+					Spawn:UpgradeUnitStats(unit, marathon_mult)
+					Spawn:UpgradeUnitStats(unit, 1 + marathon_exp*current_wave)
 
 					if unit_reward then
 						unit.reward = unit_reward

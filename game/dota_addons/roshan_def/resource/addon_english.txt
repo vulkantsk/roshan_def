@@ -672,7 +672,7 @@
 
 //Pangolier
 
-		"npc_dota_hero_pangolier"			"PangoLier(IMBA)"
+		"npc_dota_hero_pangolier"			"PangoLier"
 
 		"DOTA_Tooltip_ability_pangolier_greed"								"Bandit Greed"
 		"DOTA_Tooltip_ability_pangolier_greed_Description"					"With each kill, Pangolier earns base bonus gold and extra bonus gold. If Pangolier kills another unit which yields gold within the next %duration% seconds, an additional instance of Extra Bonus Gold is added to the total. Additionally, causes bounty runes to yield more gold."
@@ -1135,7 +1135,9 @@
         "DOTA_Tooltip_ability_sniper_true_headshot_Description"            "Sniper has a chance, to attack with deadly precision!"
         "DOTA_Tooltip_ability_sniper_true_headshot_proc_chance"            "PROC CHANCE:"
         "DOTA_Tooltip_ability_sniper_true_headshot_knockback_dist"         "KNOCKBACK DISTATION:"
-       
+        "DOTA_Tooltip_ability_sniper_true_headshot_base_dmg"         "DMG:"
+        "DOTA_Tooltip_ability_sniper_true_headshot_agi_dmg"         "%AGI DMG:"
+          
         "DOTA_Tooltip_ability_sniper_summon_robot"                        "Handcraft robot"
         "DOTA_Tooltip_ability_sniper_summon_robot_Description"            "SWAT uses the skills of applied engineering to construct a robot from the things at hand!"      
         "DOTA_Tooltip_ability_sniper_summon_robot_summon_duration"                   "DURATION:"
@@ -2836,6 +2838,17 @@
 		"DOTA_Tooltip_ability_faceless_void_flash_speed_bonus_evasion"				"%BONUS EVASION:"
  		"DOTA_Tooltip_modifier_faceless_void_flash_speed"							"Flash speed"
 		"DOTA_Tooltip_modifier_faceless_void_flash_speed_Description"				"So fast, so hot !"
+//Invoker
+		"npc_dota_hero_invoker"		"Invoker"
+
+		"DOTA_Tooltip_ability_"							"name"
+		"DOTA_Tooltip_ability__Description"				"dest"
+		"DOTA_Tooltip_ability__"				""
+		"DOTA_Tooltip_modifier_"							"name"
+		"DOTA_Tooltip_modifier__Description"				"description"
+
+		"DOTA_Tooltip_ability_invoker_invoke_custom"							"Invoke"
+		"DOTA_Tooltip_ability_invoker_invoke_custom_Description"				"Changes the magic sphere to use the magic of another element!"
 
 //hero
 		"npc_dota_hero_"		""
@@ -4990,6 +5003,9 @@
 
 		"DOTA_Tooltip_Ability_item_axe_essence"				"<font color=\"#FF4500\"> Hero essence (Warrior)</font>"	
 		"DOTA_Tooltip_ability_item_axe_essence_Description"	"This mythical stone keeps the power of the legendary hero!<br><br><font color='#FFD700'>PATREON 'DEMIGOD'</font></h1>"
+
+		"DOTA_Tooltip_Ability_item_invoker_essence"				"<font color=\"#FFFF00\"> Hero essence (Invoker)</font>"	
+		"DOTA_Tooltip_ability_item_invoker_essence_Description"	"This mythical stone keeps the power of the legendary hero!<br><br><font color='#FFD700'>PATREON 'DEMIGOD'</font></h1>"
 
 		"DOTA_Tooltip_Ability_item_strm_essence"				"<font color=\"#66CDAA\"> Hero essence (Storm)</font>"	
 		"DOTA_Tooltip_ability_item_strm_essence_Description"	"This mythical stone keeps the power of the legendary hero!<br><br><font color='#FFD700'>PATREON 'DEMIGOD'</font></h1>"

@@ -1193,7 +1193,9 @@
         "DOTA_Tooltip_ability_sniper_true_headshot_Description"            "反恐精英可以准确的瞄准你的要害! "
         "DOTA_Tooltip_ability_sniper_true_headshot_proc_chance"            "发动几率:"
         "DOTA_Tooltip_ability_sniper_true_headshot_knockback_dist"         "击退距离:"
-       
+        "DOTA_Tooltip_ability_sniper_true_headshot_base_dmg"         "损伤:"
+        "DOTA_Tooltip_ability_sniper_true_headshot_agi_dmg"         "%敏捷性伤害:"
+          
         "DOTA_Tooltip_ability_sniper_summon_robot"                        "反恐机器人"
         "DOTA_Tooltip_ability_sniper_summon_robot_Description"            "反恐精英利用应用工程的技巧，从手边的东西构造一个机器人!"      
         "DOTA_Tooltip_ability_sniper_summon_robot_summon_duration"                   "持续时间:"
@@ -2840,6 +2842,9 @@
         "DOTA_Tooltip_ability_faceless_void_flash_speed_bonus_evasion"              "%奖金回避:"
         "DOTA_Tooltip_modifier_faceless_void_flash_speed"                           "闪光速度"
         "DOTA_Tooltip_modifier_faceless_void_flash_speed_Description"               "太快了，太热了！"
+
+        "DOTA_Tooltip_ability_invoker_invoke_custom"                            "调用"
+        "DOTA_Tooltip_ability_invoker_invoke_custom_Description"                "更改魔术球以使用其他元素的魔术！"
 //Hero
                 "npc_dota_hero_"                ""
 
@@ -4870,6 +4875,9 @@
 
                 "DOTA_Tooltip_Ability_item_axe_essence"                              "<font color=\"#FF4500\"> 英雄奥秘 (战士)</font>"        
                 "DOTA_Tooltip_ability_item_axe_essence_Description"  "这块神秘的石头保留了传奇英雄的力量!<br><br><font color='#FFD700'>赞助‘DEMIGOD'</font></h1>"
+
+                "DOTA_Tooltip_Ability_item_invoker_essence"             "<font color=\"#FFFF00\"> 英雄奥秘 (调用者)</font>"    
+                "DOTA_Tooltip_ability_item_invoker_essence_Description" "这块神秘的石头保留了传奇英雄的力量!<br><br><font color='#FFD700'>赞助‘DEMIGOD'</font></h1>"
 
                 "DOTA_Tooltip_Ability_item_strm_essence"                                "<font color=\"#66CDAA\"> 英雄奥秘 (风暴)</font>"  
                 "DOTA_Tooltip_ability_item_strm_essence_Description"    "这块神秘的石头保留了传奇英雄的力量!<br><br><font color='#FFD700'>赞助‘DEMIGOD'</font></h1>"

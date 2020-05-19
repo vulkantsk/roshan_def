@@ -749,7 +749,7 @@
 
 //Pangolier
 
-		"npc_dota_hero_pangolier"			"Бармалей(IMBA)"
+		"npc_dota_hero_pangolier"			"Бармалей"
 		
 		"DOTA_Tooltip_ability_pangolier_greed"	"Bandit Greed"
 		"DOTA_Tooltip_ability_pangolier_greed_Description"	"Позволяет получать больше золота из врагов и рун. Дополнительное золото за убийство существ состоит из начального бонуса и нарастающего, который увеличивается с каждым существом, убитым в течение %duration% сек. после предыдущего. Также способность умножает золото от рун богатства."
@@ -1219,6 +1219,8 @@
         "DOTA_Tooltip_ability_sniper_true_headshot_Description"            "Навык стрелка позволяет точно попасть в голову!"      
         "DOTA_Tooltip_ability_sniper_true_headshot_proc_chance"            "ШАНС СРАБАТЫВАНИЯ:"
         "DOTA_Tooltip_ability_sniper_true_headshot_knockback_dist"         "ДАЛЬНОСТЬ ОТТАЛКИВАНИЯ:"
+        "DOTA_Tooltip_ability_sniper_true_headshot_base_dmg"         "УРОН:"
+        "DOTA_Tooltip_ability_sniper_true_headshot_agi_dmg"         "%УРОН ЛОВКОСТИ:"
        
         "DOTA_Tooltip_ability_sniper_summon_robot"                        "Handcraft robot"
         "DOTA_Tooltip_ability_sniper_summon_robot_Description"            "Спецназовец используя навыки прикладной инженерии , конструирует робота из говна и палок !"      
@@ -2853,8 +2855,76 @@
 		"DOTA_Tooltip_ability_faceless_void_flash_speed_bonus_evasion"				"%БОНУС УКЛОНЕНИЯ:"
  		"DOTA_Tooltip_modifier_faceless_void_flash_speed"							"Flash speed"
 		"DOTA_Tooltip_modifier_faceless_void_flash_speed_Description"				"Очень быстр однако !"
+//Invoker
+		"npc_dota_hero_invoker"		"Инвокер"
+
+		"DOTA_Tooltip_ability_"							"name"
+		"DOTA_Tooltip_ability__Description"				"dest"
+		"DOTA_Tooltip_ability__"				""
+		"DOTA_Tooltip_modifier_"							"name"
+		"DOTA_Tooltip_modifier__Description"				"description"
+
+		"DOTA_Tooltip_ability_invoker_invoke_custom"							"Invoke"
+		"DOTA_Tooltip_ability_invoker_invoke_custom_Description"				"Меняет магические сферы для использования магии другой стихии !"
+
+		"DOTA_Tooltip_ability_invoker_combo_vombo"							"Tool missing!"
+		"DOTA_Tooltip_ability_invoker_combo_vombo_Description"				"???"
+
+		"DOTA_Tooltip_ability_"							"Suntrikes"
+		"DOTA_Tooltip_ability__Description"				"Обрушивает огрмное количество лучей на область !"
+		"DOTA_Tooltip_ability__"				""
+
+		"DOTA_Tooltip_ability_"							"Fire enchant"
+		"DOTA_Tooltip_ability__Description"				"Зачаровывает союзника, наделяя его атаки огненной магией."
+		"DOTA_Tooltip_ability__"				""
+
+		"DOTA_Tooltip_ability_"							"Forge spirit"
+		"DOTA_Tooltip_ability__Description"				"Создаёт духа лавы, который готов сразиться с врагами Инвокера!"
+		"DOTA_Tooltip_ability__"				""
+
+		"DOTA_Tooltip_ability_"							"Chaos meteor"
+		"DOTA_Tooltip_ability__Description"				"Призывает метеорит, разрушающий врагов на пути и оставляя огненный след."
+		"DOTA_Tooltip_ability__"				""
+
+		"DOTA_Tooltip_ability_"							"Tornado"
+		"DOTA_Tooltip_ability__Description"				"Создаёт торнадо, сокрушающее всё на своём пути!"
+		"DOTA_Tooltip_ability__"				""
+
+		"DOTA_Tooltip_ability_"							"Alacrity"
+		"DOTA_Tooltip_ability__Description"				"Увеличивает скорость атаки своего союзника."
+		"DOTA_Tooltip_ability__"				""
+
+		"DOTA_Tooltip_ability_"							"Tempest spirit"
+		"DOTA_Tooltip_ability__Description"				"Создаёт духа бури, который замедляет врагов и наносит урон в радиусе."
+		"DOTA_Tooltip_ability__"				""
+
+		"DOTA_Tooltip_ability_"							"Ghost form"
+		"DOTA_Tooltip_ability__Description"				"Форма, позволяющая проходить сквозь преграды. Находясь в данной форме, враги не могут вас атаковать."
+		"DOTA_Tooltip_ability__"				""
+
+		"DOTA_Tooltip_ability_"							"Ice circle"
+		"DOTA_Tooltip_ability__Description"				"Ледяной круг, замедляющий всех врагов в радиусе."
+		"DOTA_Tooltip_ability__"				""
+
+		"DOTA_Tooltip_ability_"							"Water shield"
+		"DOTA_Tooltip_ability__Description"				"Водный щит, увеличивающий защиту  союзника."
+		"DOTA_Tooltip_ability__"				""
+
+		"DOTA_Tooltip_ability_"							"Water spirit"
+		"DOTA_Tooltip_ability__Description"				"Создаёт водного духа, который готов выдержать атаки врагов."
+		"DOTA_Tooltip_ability__"				""
+
+		"DOTA_Tooltip_ability_"							"Cold paralize"
+		"DOTA_Tooltip_ability__Description"				"Накладывает на врага паралич. Враг получает урон, зависящий от суммарного полученного урона!"
+		"DOTA_Tooltip_ability__"				""
 //Hero
 		"npc_dota_hero_"		"hero"
+
+		"DOTA_Tooltip_ability_"							"name"
+		"DOTA_Tooltip_ability__Description"				"description"
+		"DOTA_Tooltip_ability__"				""
+		"DOTA_Tooltip_modifier_"							"name"
+		"DOTA_Tooltip_modifier__Description"				"description"
 
  //Abilities
 		"DOTA_Tooltip_ability_"							"name"
@@ -4244,11 +4314,11 @@
 	"DOTA_Tooltip_ability_item_base_ring_1_bonus_value"				"+$hp_regen"
 
 	"DOTA_Tooltip_ability_item_base_ring_2"							"ring"
-	"DOTA_Tooltip_ability_item_base_ring_2_Description"				"Блестящее кольцо. Если его одеть - раны будут заживать быстрее!""
+	"DOTA_Tooltip_ability_item_base_ring_2_Description"				"Блестящее кольцо. Если его одеть - раны будут заживать быстрее!"
 	"DOTA_Tooltip_ability_item_base_ring_2_bonus_value"				"+$hp_regen"
 
 	"DOTA_Tooltip_ability_item_base_ring_3"							"ring"
-	"DOTA_Tooltip_ability_item_base_ring_3_Description"				"Блестящее кольцо. Если его одеть - раны будут заживать быстрее!""
+	"DOTA_Tooltip_ability_item_base_ring_3_Description"				"Блестящее кольцо. Если его одеть - раны будут заживать быстрее!"
 	"DOTA_Tooltip_ability_item_base_ring_3_bonus_value"				"+$hp_regen"
 
 	"DOTA_Tooltip_ability_item_base_mage_ring_1"							"mage_ring"
@@ -4902,6 +4972,9 @@
 		"DOTA_Tooltip_Ability_item_axe_essence"				"<font color=\"#FF4500\"> Кристалл души (Warrior)</font>"	
 		"DOTA_Tooltip_ability_item_axe_essence_Description"	"Этот кристалл содержит в себе силу легендарного героя !<br><br><font color='#FFD700'>КОМПЛЕКТ ПОЛУБОГА</font></h1>"
 
+		"DOTA_Tooltip_Ability_item_invoker_essence"				"<font color=\"#FFFF00\"> Кристалл души (Invoker)</font>"	
+		"DOTA_Tooltip_ability_item_invoker_essence_Description"	"Этот кристалл содержит в себе силу легендарного героя !<br><br><font color='#FFD700'>КОМПЛЕКТ ПОЛУБОГА</font></h1>"
+
 		"DOTA_Tooltip_Ability_item_strm_essence"				"<font color=\"#66CDAA\"> Кристалл души (Storm)</font>"	
 		"DOTA_Tooltip_ability_item_strm_essence_Description"	"Этот кристалл содержит в себе силу легендарного героя !<br><br><font color='#FFD700'>КОМПЛЕКТ ПОЛУБОГА</font></h1>"
 
@@ -5368,8 +5441,7 @@
 		"DOTA_Tooltip_modifier_item_preserved_skull_effect_Description"	"Скорость восстановления маны и перезарядки способностей увеличена."
 		"[english]DOTA_Tooltip_modifier_item_preserved_skull_effect_Description"	"Gaining bonus mana regen and cooldown reduction."
 
-		"DOTA_Tooltip_ability_item_paw_of_lucius"	"<font color=\"#4ae0bf\">Paw of Lucius</font>
-		"
+		"DOTA_Tooltip_ability_item_paw_of_lucius"	"<font color=\"#4ae0bf\">Paw of Lucius</font>"
 		"[english]DOTA_Tooltip_ability_item_paw_of_lucius"	"<font color=\"#4ae0bf\">Paw of Lucius</font>"
 		"DOTA_Tooltip_ability_item_paw_of_lucius_Description"	"Пассивная: Атаки с вероятностью в %rupture_chance%% накладывают эффект способности Rupture.\n"
 		"[english]DOTA_Tooltip_ability_item_paw_of_lucius_Description"	"Required Level: %required_level%\n\nPassive: Attacks have a %rupture_chance%% chance to inflict Rupture.\n"

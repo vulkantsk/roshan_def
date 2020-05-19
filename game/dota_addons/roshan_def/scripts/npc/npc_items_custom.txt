@@ -19332,6 +19332,37 @@
 		}
 	}
 	
+	"item_invoker_essence"
+	{
+		"BaseClass"                     "item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityTextureName"			"special/invoker_essence"
+		"ItemCost"                      "322"  
+		"Model"							"models/props_gameplay/gem01.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+
+		"ItemPurchasable"				"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"                  "1"
+		"ItemSellable"                  "0"
+		"ItemDroppable"                 "1"
+		"ItemInitialCharges"            "1"
+
+		"OnSpellStart"
+		{			
+			"SpendCharge" {}
+			"RunScript"
+			{
+				"ScriptFile"		"abilities/hero_change.lua"
+				"Function"			"GiveNewHero"
+				"hero_name"			"npc_dota_hero_invoker"
+			}
+		}
+	}
+	
 	"item_jacob_essence"
 	{
 		"BaseClass"                     "item_datadriven"

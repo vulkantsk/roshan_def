@@ -4195,21 +4195,643 @@
 		}
 }
 
-"npc_dota_test_1"
+"npc_dota_test_1_1"
 {
 		// General
 		//
 		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/items/undying/flesh_golem/deathmatch_dominator_golem/deathmatch_dominator_golem.vmdl"
-		"ModelScale"				"0.75"								// old 1.0
-		"Level"						"5"
-		"MinimapIcon"					"minimap_nian"
-		"MinimapIconSize"				"1950"
-		
+		"Model"						"models/heroes/zeus/zeus.vmdl"
+		"ModelScale"				"2"								// old 1.0
+		"Level"						"1"
+	
 	// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"gold_effect1"
+		"Ability1"					"test1_1"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_1_2"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/items/axe/ti9_jungle_axe/axe_bare.vmdl"
+		"ModelScale"				"1.6"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test1_1"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_1_3"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/heroes/beastmaster/beastmaster.vmdl"
+		"ModelScale"				"1.3"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test1_1"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_1_4"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/heroes/elder_titan/elder_titan.vmdl"
+		"ModelScale"				"1"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test1_1"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_1_5"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/heroes/mars/mars.vmdl"
+		"ModelScale"				"1.3"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test1_1"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_1_1"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/heroes/zeus/zeus.vmdl"
+		"ModelScale"				"2"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test1_1"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_1_2"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/items/axe/ti9_jungle_axe/axe_bare.vmdl"
+		"ModelScale"				"1.6"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test1_1"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_1_3"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/heroes/beastmaster/beastmaster.vmdl"
+		"ModelScale"				"1.3"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test1_1"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_1_4"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/heroes/elder_titan/elder_titan.vmdl"
+		"ModelScale"				"1"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test1_1"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_1_5"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/heroes/mars/mars.vmdl"
+		"ModelScale"				"1.3"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test1_1"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_2_1"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/heroes/zeus/zeus.vmdl"
+		"ModelScale"				"2"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test1_2"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_2_2"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/items/axe/ti9_jungle_axe/axe_bare.vmdl"
+		"ModelScale"				"1.6"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test1_2"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_2_3"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/heroes/beastmaster/beastmaster.vmdl"
+		"ModelScale"				"1.3"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test1_2"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_2_4"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/heroes/elder_titan/elder_titan.vmdl"
+		"ModelScale"				"1"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test1_2"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_2_5"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/heroes/mars/mars.vmdl"
+		"ModelScale"				"1.3"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test1_2"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_3_1"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/heroes/zeus/zeus.vmdl"
+		"ModelScale"				"2"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test1_3"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_3_2"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/items/axe/ti9_jungle_axe/axe_bare.vmdl"
+		"ModelScale"				"1.6"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test1_3"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_3_3"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/heroes/beastmaster/beastmaster.vmdl"
+		"ModelScale"				"1.3"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test1_3"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_3_4"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/heroes/elder_titan/elder_titan.vmdl"
+		"ModelScale"				"1"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test1_3"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_3_5"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/heroes/mars/mars.vmdl"
+		"ModelScale"				"1.3"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test1_3"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_4_1"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/heroes/zeus/zeus.vmdl"
+		"ModelScale"				"2"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test2_1"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_4_2"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/items/axe/ti9_jungle_axe/axe_bare.vmdl"
+		"ModelScale"				"1.6"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test2_1"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_4_3"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/heroes/beastmaster/beastmaster.vmdl"
+		"ModelScale"				"1.3"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test2_1"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_4_4"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/heroes/elder_titan/elder_titan.vmdl"
+		"ModelScale"				"1"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test2_1"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"325"		// Speed
+		"MovementTurnRate"			"1"		// Turning rate.
+		
+		//Inventory
+		"Creature"
+		{
+			
+		}
+}
+"npc_dota_test_4_5"
+{
+		// General
+		//
+		"BaseClass"				"npc_dota_creature"
+		"Model"						"models/heroes/mars/mars.vmdl"
+		"ModelScale"				"1.3"								// old 1.0
+		"Level"						"1"
+	
+	// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"test2_1"
 
 		// Movement
 		//----------------------------------------------------------------
@@ -9028,7 +9650,7 @@
 		"Ability2"					"killer_nether_blast"			// Ability 2.
 		"Ability3"					"test_entities"			// Ability 3.
 		"Ability4"					"test_modifiers"			// Ability 4.
-		"Ability5"					"test_event"			// Ability 5.
+		"Ability5"					"test_effect"			// Ability 5.
 		"Ability6"					"chain_light_custom"			
 		"Ability7"					""			// Ability 7 - Extra.
 		"Ability8"					""			// Ability 8 - Extra.

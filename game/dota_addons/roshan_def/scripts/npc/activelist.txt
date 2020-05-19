@@ -45,7 +45,8 @@
 	"npc_dota_hero_pudge"			"0"	//special hero			
 	"npc_dota_hero_treant"			"0"			//Roshan Son
 
-//	"npc_dota_hero_viper"			"1"			//Roshan Son
-//	"npc_dota_hero_naga_siren"			"1"			//Roshan Son
+//	"npc_dota_hero_invoker"			"1"			
+//	"npc_dota_hero_viper"			"1"			
+	"npc_dota_hero_naga_siren"			"1"			
 
 }

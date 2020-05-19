@@ -766,6 +766,79 @@
 		"VisionNighttimeRange"		"1000"
 		"VisionDaytimeRange"		"1500"
 	}
+	"npc_dota_hero_invoker"
+	{
+		"override_hero"				"npc_dota_hero_invoker"
+//		"Model"						"models/heroes/invoker_kid/invoker_kid.vmdl"
+		"ModelScale"				"1"
+//		"DisableWearables"			"1"
+
+		"Ability1"		"blink_icewall"
+		"Ability2"		"invoker_sun_strike"
+		"Ability3"		"invoker_chaos_meteor"
+		"Ability4"		"invoker_invoke_custom"		
+		"Ability5"		"rubick_arcane_supremacy"		
+		"Ability6"		"invoker_combo_vombo"
+		"Ability7"		"invoker_cold_snap"
+		"Ability8"		"invoker_ghost_walk"
+		"Ability9"		"invoker_tornado"
+		"Ability10"		"invoker_emp"
+		"Ability11"		"invoker_alacrity"
+		"Ability12"		"generic_hidden"
+		"Ability13"		"generic_hidden"
+		"Ability14"		"invoker_forge_spirit"
+		"Ability15"		"invoker_ice_wall"
+		"Ability16"		"invoker_deafening_blast"	
+		"Ability17"		"special_bonus_exp_boost_30"
+		"Ability18"		"special_bonus_gold_income_240"
+		"Ability19"		"special_bonus_mp_regen_6"
+		"Ability20"		"special_bonus_spell_lifesteal_10"
+		"Ability21"		"special_bonus_all_stats_10"
+		"Ability22"		"special_bonus_intelligence_25"
+		"Ability23"		"special_bonus_spell_amplify_20"
+		"Ability24"		"special_bonus_cooldown_reduction_10"
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackDamageMin"			"40"										// Damage range min.
+		"AttackDamageMax"			"40"										// Damage range max.
+		"AttackRate"				"2"									// Speed of attack.
+		"ProjectileSpeed"			"1550"									// Speed of projectile.
+		"AttackAnimationPoint"		"0.55"
+
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"0"									// Physical protection.
+		"MagicalResistance"			"20"									// Magical protection (percentage).
+
+		
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+
+		"AttributeBaseStrength"		"20"										// Base strength
+		"AttributeStrengthGain"		"3"										// Strength bonus per level.
+		"AttributeBaseIntelligence"	"30"										// Base intelligence
+		"AttributeIntelligenceGain"	"6"										// Intelligence bonus per level.
+		"AttributeBaseAgility"		"10"										// Base agility
+		"AttributeAgilityGain"		"1"										// Agility bonus per level.
+	
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"325"									// Speed.
+		"MovementTurnRate"			"0.5"									// Turning rate.
+	
+		// Status
+		//-------------------------------------------------------------------------------------------------------------
+		"StatusHealth"				"200"									// Base health.
+		"StatusHealthRegen"			"0.5"									// Health regeneration rate.
+		"StatusMana"				"100"											// Base mana.
+		"StatusManaRegen"			"1"									// Mana regeneration rate.
+		
+
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
+	}
 	"npc_dota_hero_leshrac"
 	{
 		"override_hero"				"npc_dota_hero_leshrac"

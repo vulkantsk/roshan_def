@@ -211,6 +211,8 @@ function Precache( context )
 	PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_juggernaut.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_axe.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_axe.vsndevts", context )
+	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_invoker.vsndevts", context )
+	PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_invoker.vsndevts", context )
 
 end
 -- Create the game mode when we activate
@@ -241,7 +243,7 @@ function GameMode:AnitGameMode()
 	PlayerResource:SetCustomBuybackCost(0,1000)
 --[[	
 	local GM = GameRules:GetGameModeEntity()
-	GM:SetCustomGameForceHero("npc_dota_hero_puck")
+	GM:SetCustomGameForceHero("npc_dota_hero_invoker")
 	GameRules:SetHeroSelectionTime(0)
 	GameRules:SetStrategyTime(0)
 	GameRules:SetShowcaseTime(0)
