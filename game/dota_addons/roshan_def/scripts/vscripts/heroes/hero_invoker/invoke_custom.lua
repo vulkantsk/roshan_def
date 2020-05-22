@@ -9,6 +9,18 @@ local abilitiesInvoker = {
 		'invoker_exort_forged_spirit',
 		'invoker_exort_fire_enchant',
 	},
+	[2] = {
+		'invoker_wex_tornado',
+		'invoker_wex_alacrity',
+		'invoker_wex_tempest_spirit',
+		'invoker_wex_wind_walk',
+	},
+	[3] = {
+		'invoker_exort_sunstrikes',
+		'invoker_exort_chaos_meteor',
+		'invoker_exort_forged_spirit',
+		'invoker_exort_fire_enchant',
+	},
 }
 --Путь к этому файлу
 function invoker_invoke_custom:OnSpellStart()

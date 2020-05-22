@@ -15,6 +15,10 @@
 	
 	}
 
+	//=============================================
+	// Exort Orb
+	//=============================================
+
 	"ability_chaos_meteor_dummy_unit"
 	{
 		"BaseClass"						"ability_lua"
@@ -176,7 +180,6 @@
 			}
 		}
 	}
-
 	"invoker_exort_chaos_meteor"
 	{
 		"BaseClass"						"ability_lua"
@@ -237,6 +240,210 @@
 				"var_type"					"FIELD_INTEGER"
 				"duration"						"10"
 			}
+		}
+	}
+
+	//=============================================
+	// Wex Orb
+	//=============================================
+	"invoker_wex_tornado"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_invoker/invoker_wex_tornado"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityTextureName"			"invoker_tornado"
+		"AbilityCooldown"				"1"
+		"AbilityManaCost"				"0"
+		"AbilityCastAnimation"			"ACT_INVALID"
+	
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage"               "250"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"duration_stunned"               "2"
+			}	
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"fly_duration"						"3.5"
+			}	
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"radius"						"80"
+			}	
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"range"						"1900"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"speed"						"1200"
+			}
+		}
+	}
+
+	"invoker_wex_alacrity"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_invoker/invoker_wex_alacrity"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"AbilityTextureName"			"invoker_alacrity"
+		"AbilityCooldown"				"1"
+		"AbilityManaCost"				"0"
+		"AbilityCastAnimation"			"ACT_INVALID"
+	
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_attack_speed_base"               "250"
+			}
+			"02"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"bonus_attack_speed_multiple"               "100"
+			}	
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"						"15"
+			}	
+		}
+	}
+
+	"invoker_tornado_custom_aura"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_invoker/invoker_tornado_custom_aura"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"AbilityTextureName"			"invoker_alacrity"
+		"AbilityCooldown"				"1"
+		"AbilityManaCost"				"0"
+		"AbilityCastAnimation"			"ACT_INVALID"
+	
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_attack_speed_base"               "250"
+			}
+			"02"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"bonus_attack_speed_multiple"               "100"
+			}	
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"						"15"
+			}	
+		}
+	}
+
+	"invoker_wex_tempest_spirit"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_invoker/invoker_wex_tempest_spirit"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityTextureName"			"invoker_wex_tempest_spirit"
+		"AbilityCooldown"				"1"
+		"AbilityManaCost"				"0"
+		"AbilityCastAnimation"			"ACT_INVALID"
+	
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"dmg_per_tick"               "20"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"tick"               		"0.5"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"slow"               		"-25"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"						"25"
+			}	
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"radius"						"300"
+			}
+		}
+	}
+
+	"invoker_wex_wind_walk"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_invoker/invoker_wex_wind_walk"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityTextureName"			"invoker_wex_wind_walk"
+		"AbilityCooldown"				"1"
+		"AbilityManaCost"				"0"
+		"AbilityCastAnimation"			"ACT_INVALID"
+	
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"dmg_per_tick"               "20"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"tick"               		"0.5"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"slow"               		"-25"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"						"25"
+			}	
 		}
 	}
 }
