@@ -18,13 +18,11 @@
 	//=============================================
 	// Exort Orb
 	//=============================================
-
 	"ability_chaos_meteor_dummy_unit"
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_invoker/ability_chaos_meteor_dummy_unit"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-
 		"MaxLevel"						"1"
 
 		"AbilityCooldown"				"1"
@@ -43,6 +41,7 @@
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
         "AoERadius"                     "%radius"
+		"LinkedAbility"					"invoker_wex_tornado"
 		"AbilityCastAnimation"			"ACT_ABILITY_1"
 	
 
@@ -87,10 +86,11 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
 		"AbilityTextureName"			"invoker_exort_fire_enchant"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
-	
+		"LinkedAbility"					"invoker_wex_alacrity"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -118,11 +118,12 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_invoker/invoker_exort_forged_spirit"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityTextureName"			"invoker_forge_spirit"
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
+		"LinkedAbility"					"invoker_wex_tempest_spirit"
 	
 
 		// Special
@@ -186,9 +187,12 @@
 		"ScriptFile"					"heroes/hero_invoker/invoker_exort_chaos_meteor"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityTextureName"			"invoker_chaos_meteor"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
+		"LinkedAbility"					"invoker_wex_wind_walk"
 	
 
 		// Special
@@ -252,9 +256,11 @@
 		"ScriptFile"					"heroes/hero_invoker/invoker_wex_tornado"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityTextureName"			"invoker_tornado"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
+		"LinkedAbility"					"invoker_quas_ice_wall"
 	
 
 		// Special
@@ -306,6 +312,7 @@
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
+		"LinkedAbility"					"invoker_quas_water_shield"
 	
 
 		// Special
@@ -339,6 +346,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
 		"AbilityTextureName"			"invoker_alacrity"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
@@ -372,9 +380,11 @@
 		"ScriptFile"					"heroes/hero_invoker/invoker_wex_tempest_spirit"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityTextureName"			"invoker_wex_tempest_spirit"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
+		"LinkedAbility"					"invoker_quas_water_spirit"
 	
 
 		// Special
@@ -415,6 +425,139 @@
 		"ScriptFile"					"heroes/hero_invoker/invoker_wex_wind_walk"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityTextureName"			"invoker_wex_wind_walk"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityCooldown"				"1"
+		"AbilityManaCost"				"0"
+		"AbilityCastAnimation"			"ACT_INVALID"
+		"LinkedAbility"					"invoker_quas_cold_snap"
+	
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"						"25"
+			}	
+		}
+	}
+
+	//=============================================
+	// Quas Orb
+	//=============================================
+	"invoker_quas_ice_wall"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_invoker/invoker_quas_ice_wall"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityTextureName"			"invoker_ice_wall"
+		"AbilityCooldown"				"1"
+		"AbilityManaCost"				"0"
+		"AbilityCastAnimation"			"ACT_INVALID"
+		"LinkedAbility"					"invoker_exort_sunstrikes"
+	
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"attack_speed"               "-200"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"movespeed"               		"-60"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"               		"25"
+			}
+		}
+	}
+
+	"invoker_quas_water_shield"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_invoker/invoker_quas_water_shield"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"AbilityTextureName"			"invoker_quas_water_shield"
+		"AbilityCooldown"				"1"
+		"AbilityManaCost"				"0"
+		"AbilityCastAnimation"			"ACT_INVALID"
+		"LinkedAbility"					"invoker_exort_fire_enchant"
+	
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"absorb_damage"               "400"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"absorb_damage_mult"               "100"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"               		"25"
+			}
+		}
+	}
+
+	"invoker_quas_water_spirit"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_invoker/invoker_quas_water_spirit"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityTextureName"			"invoker_quas_water_spirit"
+		"AbilityCooldown"				"1"
+		"AbilityManaCost"				"0"
+		"AbilityCastAnimation"			"ACT_INVALID"
+		"LinkedAbility"					"invoker_exort_forged_spirit"
+	
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"health"               "1800"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"health_bonus_mult"               		"100"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"               		"25"
+			}
+		}
+	}
+
+	"invoker_water_spirit_regeneration"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_invoker/invoker_water_spirit_regeneration"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"invoker_water_spirit_regeneration"
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
@@ -427,23 +570,47 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"dmg_per_tick"               "20"
+				"regeneration"               "10"
+			}
+		}
+	}
+
+	"invoker_quas_cold_snap"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_invoker/invoker_quas_cold_snap"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityTextureName"			"invoker_cold_snap"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityCooldown"				"1"
+		"AbilityManaCost"				"0"
+		"AbilityCastAnimation"			"ACT_INVALID"
+		"LinkedAbility"					"invoker_exort_chaos_meteor"
+	
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"interval"               "3"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"tick"               		"0.5"
+				"pct_damage"               		"100"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"slow"               		"-25"
+				"duration"               		"25"
 			}
-			"04"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"duration"						"25"
-			}	
 		}
 	}
 }

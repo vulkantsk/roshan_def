@@ -2,7 +2,7 @@ invoker_exort_fire_enchant = class({})
 LinkLuaModifier('modifier_invoker_exort_fire_enchant_buff', 'heroes/hero_invoker/invoker_exort_fire_enchant', LUA_MODIFIER_MOTION_NONE)
 
 function invoker_exort_fire_enchant:OnSpellStart()
-    self:GetCaster():AddNewModifier(self:GetCaster(), self, 'modifier_invoker_exort_fire_enchant_buff', {
+    self:GetCursorTarget():AddNewModifier(self:GetCaster(), self, 'modifier_invoker_exort_fire_enchant_buff', {
         duration = self:GetSpecialValueFor('duration')
     })
 
@@ -42,8 +42,8 @@ end
 function modifier_invoker_exort_fire_enchant_buff:OnCreated()
     if IsClient() then return end 
     local ability = self:GetAbility()
-    local parent = self:GetParent()
-    local bonus_magic_damage_pct = ability:GetSpecialValueFor('bonus_magic_damage_pct') * parent:GetIntellect() / 100
+    local caster = self:GetCaster()
+    local bonus_magic_damage_pct = ability:GetSpecialValueFor('bonus_magic_damage_pct') * caster:GetIntellect() / 100
     print(bonus_magic_damage_pct)
     local base_damage = ability:GetSpecialValueFor('base_damage')
     self.parent = self:GetParent()

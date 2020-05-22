@@ -4,28 +4,28 @@ if not invoker_invoke_custom then
 end
 local abilitiesInvoker = {
 	[1] = {
-		'invoker_exort_sunstrikes',
-		'invoker_exort_chaos_meteor',
-		'invoker_exort_forged_spirit',
-		'invoker_exort_fire_enchant',
+		[1] = 'invoker_exort_sunstrikes',
+		[2] = 'invoker_exort_fire_enchant',
+		[3] = 'invoker_exort_forged_spirit',
+		[6] = 'invoker_exort_chaos_meteor',
 	},
 	[2] = {
-		'invoker_wex_tornado',
-		'invoker_wex_alacrity',
-		'invoker_wex_tempest_spirit',
-		'invoker_wex_wind_walk',
+		[1] = 'invoker_wex_tornado',
+		[2] = 'invoker_wex_alacrity',
+		[3] = 'invoker_wex_tempest_spirit',
+		[6] = 'invoker_wex_wind_walk',
 	},
 	[3] = {
-		'invoker_exort_sunstrikes',
-		'invoker_exort_chaos_meteor',
-		'invoker_exort_forged_spirit',
-		'invoker_exort_fire_enchant',
+		[1] = 'invoker_quas_ice_wall',
+		[2] = 'invoker_quas_water_shield',
+		[3] = 'invoker_quas_water_spirit',
+		[6] = 'invoker_quas_cold_snap',
 	},
 }
 --Путь к этому файлу
 function invoker_invoke_custom:OnSpellStart()
 	local caster = self:GetCaster()
-
+	local formID = self.form
 	if not self.form then
 		self.form = 1
 		self.orbs={}
@@ -47,13 +47,20 @@ function invoker_invoke_custom:OnSpellStart()
 	end
 
 	for formID,dataForm in pairs(abilitiesInvoker) do
-		for  _,abilityName in pairs(dataForm) do 
+		for  index,abilityName in pairs(dataForm) do 
 			local ability = caster:FindAbilityByName(abilityName)
 			if ability then 
 				ability:SetHidden(formID ~= self.form)
-				ability:SetLevel(7)
 			end 
 		end 
+	end 
+
+
+	for index,abilityName in pairs(abilitiesInvoker[self.form]) do 
+		local abilityByIndex = caster:GetAbilityByIndex(index - 1)
+		if abilityByIndex then 
+			caster:SwapAbilities(abilityByIndex:GetAbilityName(), abilityName, false, true)
+		end
 	end 
 
 	for i=1,3 do
