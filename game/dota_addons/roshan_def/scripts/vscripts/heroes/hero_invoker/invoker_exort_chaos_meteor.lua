@@ -18,7 +18,9 @@ function invoker_exort_chaos_meteor:OnSpellStart()
     local per_damage = self:GetSpecialValueFor('per_damage')
 
 	caster:EmitSound("Hero_Invoker.ChaosMeteor.Cast")
-	caster:EmitSound("Hero_Invoker.ChaosMeteor.Loop")
+    caster:EmitSound("Hero_Invoker.ChaosMeteor.Loop")
+    self:GetCaster():EmitSound("invoker_invo_ability_chaosmeteor_0" .. RandomInt(1,7))
+    caster:StartGesture(ACT_DOTA_CAST_CHAOS_METEOR)
 
 	local meteor_fly_original_point = (target_point - (velocity_per_second * LandTime)) + Vector (0, 0, 1000)  --Start the meteor in the air in a place where it'll be moving the same speed when flying and when rolling.
 	local chaos_meteor_fly_particle_effect = ParticleManager:CreateParticle("particles/units/heroes/hero_invoker/invoker_chaos_meteor_fly.vpcf", PATTACH_ABSORIGIN, caster)

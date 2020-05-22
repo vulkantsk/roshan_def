@@ -8,6 +8,7 @@ function invoker_exort_forged_spirit:OnSpellStart()
     unit:AddNewModifier(unit, nil, 'modifier_kill', {
         duration = self:GetSpecialValueFor('duration')
     })
-
+    self:GetCaster():EmitSound("Hero_Invoker.ForgeSpirit")
+    self:GetCaster():EmitSound("invoker_invo_ability_forgespirit_0" .. RandomInt(1,6))
     self:GetCaster():StartGesture(ACT_DOTA_CAST_FORGE_SPIRIT)
 end 

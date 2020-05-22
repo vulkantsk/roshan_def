@@ -4,6 +4,7 @@ invoker_wex_tornado = class({})
 LinkLuaModifier('modifier_invoker_wex_tornado_debuff', 'heroes/hero_invoker/invoker_wex_tornado', LUA_MODIFIER_MOTION_NONE)
 
 function invoker_wex_tornado:OnAbilityPhaseStart()
+    self:GetCaster():EmitSound("Hero_Invoker.Tornado.Cast")
     self:GetCaster():StartGesture(ACT_DOTA_CAST_TORNADO)
     return true
 end
@@ -17,7 +18,8 @@ function invoker_wex_tornado:OnSpellStart()
     local vDirection = self:GetCursorPosition() - self:GetCaster():GetOrigin()
     vDirection.z = 0.0
     vDirection = vDirection:Normalized()
-
+    self:GetCaster():EmitSound("Hero_Invoker.Tornado")
+    self:GetCaster():EmitSound("invoker_invo_ability_tornado_0" .. RandomInt(1,5))
     ProjectileManager:CreateLinearProjectile({
         EffectName = 'particles/econ/items/invoker/invoker_ti6/invoker_tornado_ti6.vpcf',
 		Ability = self,

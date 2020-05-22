@@ -40,6 +40,7 @@
 		"AbilityTextureName"			"invoker_sun_strike"
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
         "AoERadius"                     "%radius"
 		"LinkedAbility"					"invoker_wex_tornado"
 		"AbilityCastAnimation"			"ACT_ABILITY_1"
@@ -89,6 +90,7 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
+		"AbilityCastRange"				"500"
 		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_wex_alacrity"
 
@@ -193,6 +195,7 @@
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_wex_wind_walk"
+		"AbilityCastRange"				"1400"
 	
 
 		// Special
@@ -261,6 +264,7 @@
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_quas_ice_wall"
+		"AbilityCastRange"				"1900"
 	
 
 		// Special
@@ -313,6 +317,7 @@
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_quas_water_shield"
+		"AbilityCastRange"				"800"
 	
 
 		// Special
@@ -457,6 +462,7 @@
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_exort_sunstrikes"
+		"AbilityCastRange"				"400"
 	
 
 		// Special
@@ -494,6 +500,7 @@
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_exort_fire_enchant"
+		"AbilityCastRange"				"700"
 	
 
 		// Special
@@ -528,6 +535,7 @@
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_exort_forged_spirit"
+		"AbilityCastRange"				"900"
 	
 
 		// Special
@@ -590,6 +598,7 @@
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_exort_chaos_meteor"
+		"AbilityCastRange"				"800"
 	
 
 		// Special

@@ -16,6 +16,7 @@ function invoker_wex_tempest_spirit:OnSpellStart()
     })
 
     self:GetCaster():StartGesture(ACT_DOTA_CAST_ALACRITY)
+    self:GetCaster():EmitSound("Hero_Invoker.Tornado.Cast")
 
 end
 

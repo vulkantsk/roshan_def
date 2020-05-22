@@ -3,6 +3,8 @@ LinkLuaModifier('modifier_invoker_quas_cold_snap_debuff', 'heroes/hero_invoker/i
 
 function invoker_quas_cold_snap:OnSpellStart()
     self:GetCaster():StartGesture(ACT_DOTA_CAST_COLD_SNAP)
+    self:GetCaster():EmitSound("Hero_Invoker.ColdSnap.Cast")
+    self:GetCaster():EmitSound("invoker_invo_ability_coldsnap_0" .. RandomInt(1,5))
 
     self:GetCursorTarget():AddNewModifier(self:GetCaster(), self, 'modifier_invoker_quas_cold_snap_debuff', {
         duration = self:GetSpecialValueFor('duration')

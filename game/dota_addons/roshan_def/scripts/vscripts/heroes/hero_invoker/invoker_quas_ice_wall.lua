@@ -5,7 +5,7 @@ function invoker_quas_ice_wall:OnSpellStart()
     local caster = self:GetCaster()
     local NumWallElements = 15
     local WallElementSpacing = 80
-    local WallPlaceDistance = 200
+    local WallPlaceDistance = self:GetCastRange(self:GetCursorPosition(),nil)
     local duration = 5
 	local caster_point = caster:GetAbsOrigin()
 	local direction_to_target_point = caster:GetForwardVector()
@@ -42,6 +42,8 @@ function invoker_quas_ice_wall:OnSpellStart()
     end
 
     caster:StartGesture(ACT_DOTA_CAST_ICE_WALL)
+    self:GetCaster():EmitSound("Hero_Invoker.IceWall.Cast")
+    self:GetCaster():EmitSound("invoker_invo_ability_icewall_0" .. RandomInt(1,5))
 
 end
 
@@ -71,6 +73,7 @@ modifier_invoker_quas_ice_wall_aura = class({
 
 function modifier_invoker_quas_ice_wall_aura:OnCreated(data)
     self.radius = data.radius
+    self:GetParent():EmitSound("Hero_Invoker.IceWall.Slow")
 end 
 
 function modifier_invoker_quas_ice_wall_aura:OnRefresh(data)

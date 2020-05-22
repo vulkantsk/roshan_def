@@ -16,7 +16,7 @@ modifier_invoker_quas_water_shield_buff = class({
     IsBuff                  = function(self) return true end,
     RemoveOnDeath           = function(self) return true end,
     GetEffectName           = function(self) return 'particles/econ/events/ti7/mjollnir_shield_ti7.vpcf' end,
-    GetEffectAttachType     = function(self) return PATTACH_CENTER_FOLLOW end,
+    GetEffectAttachType     = function(self) return PATTACH_ABSORIGIN_FOLLOW end,
     DeclareFunctions        = function(self)
         return {
             MODIFIER_EVENT_ON_TAKEDAMAGE,

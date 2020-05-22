@@ -13,7 +13,9 @@ function invoker_exort_sunstrikes:OnSpellStart()
     local count = self:GetSpecialValueFor('count')
     local radius_sunstrike  = self:GetSpecialValueFor('radius_sunstrike')
     local sunstrike_delay = self:GetSpecialValueFor('sunstrike_delay')
-
+    local bMusic = false
+    self:GetCaster():EmitSound("Hero_Invoker.Cataclysm.Charge")
+    self:GetCaster():EmitSound("invoker_invo_ability_sunstrike_0" .. RandomInt(1,5))
     caster:StartGesture(ACT_DOTA_CAST_SUN_STRIKE)
 
     self:CreateVisibilityNode(vPoint, radius, sunstrike_delay + 0.2)
@@ -30,7 +32,10 @@ function invoker_exort_sunstrikes:OnSpellStart()
             ParticleManager:SetParticleControl(nfx, 0, vSunstrikePoint) 
             ParticleManager:SetParticleControl(nfx, 1, Vector(radius_sunstrike,0,0))
             ParticleManager:ReleaseParticleIndex(nfx)
-
+            if not bMusic then 
+                EmitSoundOnLocationForAllies(vSunstrikePoint, "Hero_Invoker.Cataclysm.Ignite", self:GetCaster())
+                bMusic = true
+            end
             local units = FindUnitsInRadius(caster:GetTeamNumber(), 
             vSunstrikePoint, 
             nil, 

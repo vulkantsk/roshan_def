@@ -6,7 +6,8 @@ function invoker_wex_alacrity:OnSpellStart()
         duration = self:GetSpecialValueFor('duration'),
     })
 
-    -- self:GetCaster():EmitSound('')
+    self:GetCaster():EmitSound("Hero_Invoker.Alacrity")
+    self:GetCaster():EmitSound("invoker_invo_ability_alacrity_0" .. RandomInt(1,4))
     self:GetCaster():StartGesture(ACT_DOTA_CAST_ALACRITY)
 end
 
