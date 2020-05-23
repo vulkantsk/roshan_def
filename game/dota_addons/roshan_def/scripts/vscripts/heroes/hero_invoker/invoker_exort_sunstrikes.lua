@@ -11,52 +11,54 @@ function invoker_exort_sunstrikes:OnSpellStart()
     local radius = self:GetAOERadius()
     local damage = self:GetSpecialValueFor('damage')
     local count = self:GetSpecialValueFor('count')
+    local interval = self:GetSpecialValueFor('interval')
     local radius_sunstrike  = self:GetSpecialValueFor('radius_sunstrike')
     local sunstrike_delay = self:GetSpecialValueFor('sunstrike_delay')
-    local bMusic = false
-    self:GetCaster():EmitSound("Hero_Invoker.Cataclysm.Charge")
     self:GetCaster():EmitSound("invoker_invo_ability_sunstrike_0" .. RandomInt(1,5))
     caster:StartGesture(ACT_DOTA_CAST_SUN_STRIKE)
 
-    self:CreateVisibilityNode(vPoint, radius, sunstrike_delay + 0.2)
     for i=1, count do 
-        local vSunstrikePoint = vPoint + RandomVector(RandomFloat(-radius,radius))
-        local nfx = ParticleManager:CreateParticleForTeam('particles/units/heroes/hero_invoker/invoker_sun_strike_team.vpcf', PATTACH_ABSORIGIN, caster, caster:GetTeam())
-        ParticleManager:SetParticleControl(nfx, 0, vSunstrikePoint) 
-        ParticleManager:SetParticleControl(nfx, 1, Vector(radius_sunstrike,0,0))
-        Timers:CreateTimer(sunstrike_delay,function()
-            ParticleManager:DestroyParticle(nfx,true)
-            ParticleManager:ReleaseParticleIndex(nfx)
-
-            local nfx = ParticleManager:CreateParticleForTeam('particles/units/heroes/hero_invoker/invoker_sun_strike.vpcf', PATTACH_ABSORIGIN, caster, caster:GetTeam())
+        Timers:CreateTimer(i*interval, function()
+            local vSunstrikePoint = vPoint + RandomVector(RandomFloat(-radius,radius))
+            self:CreateVisibilityNode(vSunstrikePoint, radius_sunstrike, sunstrike_delay + 0.2)
+            local dummy = CreateUnitByName("dummy_unit_vulnerable", vSunstrikePoint, false, nil, nil, caster:GetTeam())
+            dummy:EmitSound("Hero_Invoker.SunStrike.Charge")
+             local nfx = ParticleManager:CreateParticleForTeam('particles/units/heroes/hero_invoker/invoker_sun_strike_team.vpcf', PATTACH_ABSORIGIN, caster, caster:GetTeam())
             ParticleManager:SetParticleControl(nfx, 0, vSunstrikePoint) 
             ParticleManager:SetParticleControl(nfx, 1, Vector(radius_sunstrike,0,0))
-            ParticleManager:ReleaseParticleIndex(nfx)
-            if not bMusic then 
-                EmitSoundOnLocationForAllies(vSunstrikePoint, "Hero_Invoker.Cataclysm.Ignite", self:GetCaster())
-                bMusic = true
-            end
-            local units = FindUnitsInRadius(caster:GetTeamNumber(), 
-            vSunstrikePoint, 
-            nil, 
-            radius_sunstrike, 
-            DOTA_UNIT_TARGET_TEAM_ENEMY,
-            DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
-            DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES,
-            FIND_CLOSEST, 
-            false)
+            Timers:CreateTimer(sunstrike_delay,function()
+                ParticleManager:DestroyParticle(nfx,true)
+                ParticleManager:ReleaseParticleIndex(nfx)
 
-            for k,v in pairs(units) do 
-                ApplyDamage(({
-                    victim = v,
-                    attacker = caster,
-                    damage = damage,
-                    ability = self,
-                    damage_type = self:GetAbilityDamageType(),
-                }))
-            end 
+                local nfx = ParticleManager:CreateParticleForTeam('particles/units/heroes/hero_invoker/invoker_sun_strike.vpcf', PATTACH_ABSORIGIN, caster, caster:GetTeam())
+                ParticleManager:SetParticleControl(nfx, 0, vSunstrikePoint) 
+                ParticleManager:SetParticleControl(nfx, 1, Vector(radius_sunstrike,0,0))
+                ParticleManager:ReleaseParticleIndex(nfx)
+                dummy:EmitSound("Hero_Invoker.SunStrike.Ignite")
+                dummy:RemoveSelf()
+                
+                local units = FindUnitsInRadius(caster:GetTeamNumber(), 
+                vSunstrikePoint, 
+                nil, 
+                radius_sunstrike, 
+                DOTA_UNIT_TARGET_TEAM_ENEMY,
+                DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
+                DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES,
+                FIND_CLOSEST, 
+                false)
 
-        end )
+                for k,v in pairs(units) do 
+                    ApplyDamage(({
+                        victim = v,
+                        attacker = caster,
+                        damage = damage,
+                        ability = self,
+                        damage_type = self:GetAbilityDamageType(),
+                    }))
+                end 
+
+            end )
+        end)
     end 
 
 

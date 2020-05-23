@@ -1,22 +1,31 @@
-invoker_wex_tempest_spirit = class({})
 LinkLuaModifier("modifier_invoker_wex_tempest_spirit_aura", "heroes/hero_invoker/invoker_wex_tempest_spirit", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_invoker_wex_tempest_spirit_debuff", "heroes/hero_invoker/invoker_wex_tempest_spirit", LUA_MODIFIER_MOTION_NONE)
-function invoker_wex_tempest_spirit:OnSpellStart()
-    local unit = CreateUnitByName('npc_dota_invoker_tornado_custom', self:GetCaster():GetOrigin(), true, self:GetCaster(), self:GetCaster(), self:GetCaster():GetTeam())
-    local duration_life = self:GetSpecialValueFor('duration')
 
-    unit:AddNewModifier(self:GetCaster(), self, 'modifier_kill', {
+invoker_wex_tempest_spirit = class({})
+
+function invoker_wex_tempest_spirit:GetAOERadius()
+    return self:GetSpecialValueFor("radius")
+end
+
+function invoker_wex_tempest_spirit:OnSpellStart()
+    local caster = self:GetCaster()
+    local point = self:GetCursorPosition()
+    local duration_life = self:GetSpecialValueFor('duration')
+   
+    local unit = CreateUnitByName('npc_dota_invoker_tornado_custom', point, true, caster, caster, caster:GetTeam())
+
+    unit:AddNewModifier(caster, self, 'modifier_kill', {
         duration = duration_life,
     })
-    unit:SetControllableByPlayer(self:GetCaster():GetPlayerOwnerID(), false)
+    unit:SetControllableByPlayer(caster:GetPlayerOwnerID(), false)
 
-    unit:AddNewModifier(self:GetCaster(), self, 'modifier_invoker_wex_tempest_spirit_aura', {
+    unit:AddNewModifier(caster, self, 'modifier_invoker_wex_tempest_spirit_aura', {
         radius = self:GetSpecialValueFor('radius'),
         duration = duration_life,
     })
 
-    self:GetCaster():StartGesture(ACT_DOTA_CAST_ALACRITY)
-    self:GetCaster():EmitSound("Hero_Invoker.Tornado.Cast")
+    caster:StartGesture(ACT_DOTA_CAST_ALACRITY)
+    caster:EmitSound("Hero_Invoker.Tornado.Cast")
 
 end
 

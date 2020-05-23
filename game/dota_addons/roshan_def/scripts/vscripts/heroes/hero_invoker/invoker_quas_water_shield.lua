@@ -2,11 +2,16 @@ invoker_quas_water_shield = class({})
 LinkLuaModifier('modifier_invoker_quas_water_shield_buff', 'heroes/hero_invoker/invoker_quas_water_shield', LUA_MODIFIER_MOTION_NONE)
 
 function invoker_quas_water_shield:OnSpellStart()
-    self:GetCursorTarget():AddNewModifier(self:GetCaster(), self, 'modifier_invoker_quas_water_shield_buff', {
-        duration = self:GetSpecialValueFor('duration'),
-    }):SetStackCount(self:GetSpecialValueFor('absorb_damage') + (self:GetCaster():GetStrength() * self:GetSpecialValueFor('absorb_damage_mult'))/100)
+    local caster = self:GetCaster()
+    local target = self:GetCursorTarget()
+    local duration = self:GetSpecialValueFor("duration")
+    local base_block = self:GetSpecialValueFor("base_block")
+    local str_block = self:GetSpecialValueFor("str_block")/100*caster:GetStrength()
 
-    self:GetCaster():StartGesture(ACT_DOTA_CAST_ALACRITY)
+    local modifier = target:AddNewModifier(caster, self, 'modifier_invoker_quas_water_shield_buff', {duration = duration})
+    modifier:SetStackCount(base_block+str_block)
+
+    caster:StartGesture(ACT_DOTA_CAST_ALACRITY)
 end 
 
 modifier_invoker_quas_water_shield_buff = class({
@@ -15,11 +20,12 @@ modifier_invoker_quas_water_shield_buff = class({
     IsDebuff                = function(self) return false end,
     IsBuff                  = function(self) return true end,
     RemoveOnDeath           = function(self) return true end,
-    GetEffectName           = function(self) return 'particles/econ/events/ti7/mjollnir_shield_ti7.vpcf' end,
+    GetEffectName           = function(self) return 'particles/econ/events/ti7/teleport_start_ti7_spin_water.vpcf' end,
     GetEffectAttachType     = function(self) return PATTACH_ABSORIGIN_FOLLOW end,
     DeclareFunctions        = function(self)
         return {
-            MODIFIER_EVENT_ON_TAKEDAMAGE,
+--            MODIFIER_EVENT_ON_TAKEDAMAGE,
+            MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK,
         }
     end,
 })
@@ -28,15 +34,19 @@ function modifier_invoker_quas_water_shield_buff:OnCreated()
     self.ability = self:GetAbility()
     self.parent = self:GetParent()
     if IsClient() then return end
-    EmitSoundOn("DOTA_Item.Mjollnir.Activate", self.parent)
+    EmitSoundOn("invoker_water_shield", self.parent)
 
 end 
 
+function modifier_invoker_quas_water_shield_buff:OnDestroy()
+    if IsClient() then return end
+    StopSoundOn("invoker_water_shield", self.parent)
+end 
 
 function modifier_invoker_quas_water_shield_buff:OnTakeDamage(data)
-	local unit = data.unit
+    local unit = data.unit
     local damage = data.damage
-	if self.parent == unit then
+    if self.parent == unit then
         local newStacks = self:GetStackCount() - data.damage
         local heal = data.damage - (newStacks <  0 and -newStacks or 0)
         self.parent:SetHealth(self.parent:GetHealth() + heal )
@@ -45,5 +55,9 @@ function modifier_invoker_quas_water_shield_buff:OnTakeDamage(data)
             return
         end 
         self:SetStackCount(newStacks)
-	end
+    end
+end
+
+function modifier_invoker_quas_water_shield_buff:GetModifierPhysical_ConstantBlock()
+   return self:GetStackCount()
 end

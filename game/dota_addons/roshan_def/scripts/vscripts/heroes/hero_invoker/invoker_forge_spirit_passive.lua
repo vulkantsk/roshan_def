@@ -27,7 +27,7 @@ function modifier_invoker_forge_spirit_passive_buff:OnCreated()
     self.parent = self:GetParent()
     self.ability = self:GetAbility()
     self.duration = self.ability:GetSpecialValueFor('duration')
-    print('check')
+--    print('check')
 
 end 
 
@@ -35,7 +35,6 @@ function modifier_invoker_forge_spirit_passive_buff:OnRefresh()
     if IsClient() then return end 
 
     self:OnCreated()
-
 end 
 
 
@@ -58,16 +57,20 @@ end
 modifier_invoker_forge_spirit_passive_debuff_stacks = class({
     IsHidden                = function(self) return false end,
     IsPurgable              = function(self) return false end,
-    IsDebuff                = function(self) return false end,
-    IsBuff                  = function(self) return true end,
+    IsDebuff                = function(self) return true end,
+    IsBuff                  = function(self) return false end,
     RemoveOnDeath           = function(self) return true end,
     IsPermanent             = function(self) return true end, 
 })
 
+function modifier_invoker_forge_spirit_passive_debuff_stacks:GetEffectName()
+    return "particles/units/heroes/hero_huskar/huskar_burning_spear_debuff.vpcf"
+end
+
 
 modifier_invoker_forge_spirit_passive_debuff = class({
     IsHidden                = function(self) return true end,
-    IsPurgable              = function(self) return false end,
+    IsPurgable              = function(self) return true end,
     IsDebuff                = function(self) return true end,
     IsBuff                  = function(self) return false end,
     RemoveOnDeath           = function(self) return true end,

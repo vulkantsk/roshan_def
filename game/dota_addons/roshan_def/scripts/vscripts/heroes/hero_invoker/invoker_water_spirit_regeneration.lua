@@ -1,8 +1,11 @@
 invoker_water_spirit_regeneration = class({})
 LinkLuaModifier('modifier_invoker_water_spirit_regeneration_buff', 'heroes/hero_invoker/invoker_water_spirit_regeneration', LUA_MODIFIER_MOTION_NONE)
 
-function invoker_water_spirit_regeneration:GetIntrinsicModifierName()
-    return 'modifier_invoker_water_spirit_regeneration_buff'
+function invoker_water_spirit_regeneration:OnSpellStart()
+   local caster =self:GetCaster()
+   local duration = self:GetSpecialValueFor("duration")
+   
+   caster:AddNewModifier(caster, self, "modifier_invoker_water_spirit_regeneration_buff", {duration = duration})
 end
 
 modifier_invoker_water_spirit_regeneration_buff = class({

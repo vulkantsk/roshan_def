@@ -1,7 +1,10 @@
+LinkLuaModifier('modifier_invoker_wex_tornado_debuff', 'heroes/hero_invoker/invoker_wex_tornado', LUA_MODIFIER_MOTION_NONE)
+
 invoker_wex_tornado = class({})
 
-
-LinkLuaModifier('modifier_invoker_wex_tornado_debuff', 'heroes/hero_invoker/invoker_wex_tornado', LUA_MODIFIER_MOTION_NONE)
+function invoker_wex_tornado:GetCastRange()
+    return self:GetSpecialValueFor("range")
+end
 
 function invoker_wex_tornado:OnAbilityPhaseStart()
     self:GetCaster():EmitSound("Hero_Invoker.Tornado.Cast")
@@ -52,7 +55,7 @@ function invoker_wex_tornado:OnProjectileHit(hTarget, vLocation)
 		duration = self:GetSpecialValueFor('fly_duration'),
 		knockback_duration = self:GetSpecialValueFor('fly_duration'),
 		knockback_distance = 0,
-		knockback_height = 600,
+		knockback_height = 800,
 	})
 end
 
@@ -83,8 +86,8 @@ function modifier_invoker_wex_tornado_debuff:OnCreated()
     self.parent = self:GetParent()
     self.caster = self:GetCaster()
     self.ability = self:GetAbility()
+    self.stun_duration = self.ability:GetSpecialValueFor("stun_duration")
     self.__duration = self:GetDuration()
-
 
     local ideal_degrees_per_second = 666.666
     local ideal_full_spins = (ideal_degrees_per_second / 360) * self.__duration
@@ -110,7 +113,7 @@ function modifier_invoker_wex_tornado_debuff:OnDestroy()
         damage_type = DAMAGE_TYPE_MAGICAL,
         ability = self.ability,  
     })
-
+    self.parent:AddNewModifier(self.caster, self.ability, "modifier_stunned", {duration = self.stun_duration})
 end
 
 function modifier_invoker_wex_tornado_debuff:OnIntervalThink() 

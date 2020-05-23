@@ -2,10 +2,14 @@ invoker_exort_fire_enchant = class({})
 LinkLuaModifier('modifier_invoker_exort_fire_enchant_buff', 'heroes/hero_invoker/invoker_exort_fire_enchant', LUA_MODIFIER_MOTION_NONE)
 
 function invoker_exort_fire_enchant:OnSpellStart()
-    self:GetCursorTarget():AddNewModifier(self:GetCaster(), self, 'modifier_invoker_exort_fire_enchant_buff', {
-        duration = self:GetSpecialValueFor('duration')
-    })
+    local caster = self:GetCaster()
+    local target = self:GetCursorTarget()
+    local duration = self:GetSpecialValueFor("duration")
+    local base_dmg = self:GetSpecialValueFor("base_dmg")
+    local int_dmg = self:GetSpecialValueFor("int_dmg")/100*caster:GetIntellect()
 
+    local modifier = target:AddNewModifier(caster, self, 'modifier_invoker_exort_fire_enchant_buff', {duration = duration})
+    modifier:SetStackCount(base_dmg+int_dmg)
 
     self:GetCaster():StartGesture(ACT_DOTA_CAST_ALACRITY)
 end 
@@ -19,10 +23,13 @@ modifier_invoker_exort_fire_enchant_buff = class({
 
     DeclareFunctions        = function(self)
         return {
-            MODIFIER_EVENT_ON_ATTACK_LANDED,
+            MODIFIER_PROPERTY_PROCATTACK_BONUS_DAMAGE_MAGICAL,
         }
     end,
 })
+function modifier_invoker_exort_fire_enchant_buff:GetModifierProcAttack_BonusDamage_Magical()
+    return self:GetStackCount()
+end
 
 function modifier_invoker_exort_fire_enchant_buff:OnAttackLanded(data)
     if IsClient() then return end 
@@ -38,17 +45,21 @@ function modifier_invoker_exort_fire_enchant_buff:OnAttackLanded(data)
     })
 
 end 
+function modifier_invoker_exort_fire_enchant_buff:GetEffectName()
+    return 0--"particles/units/heroes/hero_warlock/golem_ambient.vpcf"
+end
 
 function modifier_invoker_exort_fire_enchant_buff:OnCreated()
     if IsClient() then return end 
-    local ability = self:GetAbility()
-    local caster = self:GetCaster()
-    local bonus_magic_damage_pct = ability:GetSpecialValueFor('bonus_magic_damage_pct') * caster:GetIntellect() / 100
-    print(bonus_magic_damage_pct)
-    local base_damage = ability:GetSpecialValueFor('base_damage')
-    self.parent = self:GetParent()
-    self.ability = ability
-    self.dmg = bonus_magic_damage_pct + base_damage
+    local parent = self:GetParent()
+
+    local particle = "particles/econ/items/warlock/warlock_golem_dark_curator/golem_ambient_dark_curator.vpcf"
+    local pfx = ParticleManager:CreateParticle(particle, PATTACH_ABSORIGIN, parent)
+    ParticleManager:SetParticleControlEnt(pfx, 0, parent, PATTACH_POINT_FOLLOW, "attach_head", parent:GetAbsOrigin(), true)
+    ParticleManager:SetParticleControlEnt(pfx, 10, parent, PATTACH_POINT_FOLLOW, "attach_attack1", parent:GetAbsOrigin(), true)
+    ParticleManager:SetParticleControlEnt(pfx, 11, parent, PATTACH_POINT_FOLLOW, "attach_attack2", self:GetParent():GetAbsOrigin(), true)
+    self:AddParticle(pfx, true, false, 3, true, false)
+    
 end 
 
 function modifier_invoker_exort_fire_enchant_buff:OnRefresh()

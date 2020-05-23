@@ -35,9 +35,13 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_invoker/invoker_exort_sunstrikes"
-        "AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityTextureName"			"invoker_sun_strike"
+		"MaxLevel"						"7"
+		"LevelsBetweenUpgrades"			"3"
+		"RequiredLevel"					"1"
+
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
@@ -65,12 +69,17 @@
 				"var_type"					"FIELD_INTEGER"
 				"count"               "12"
 			}	
-            "03"
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"interval"               	"0.2"
+			}	
+            "05"
 			{
 				"var_type"					"FIELD_INTEGER"
 				"radius_sunstrike"               "150"
 			}	
-            "04"
+            "06"
 			{
 				"var_type"					"FIELD_FLOAT"
 				"sunstrike_delay"               "1.7"
@@ -86,8 +95,12 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
-		"AbilityTextureName"			"invoker_exort_fire_enchant"
+		"AbilityTextureName"			"invoker_exort"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"MaxLevel"						"7"
+		"LevelsBetweenUpgrades"			"3"
+		"RequiredLevel"					"1"
+
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
 		"AbilityCastRange"				"500"
@@ -98,21 +111,21 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"bonus_magic_damage_pct"               "30"
-			}
-			"02"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"base_damage"               "30"
-			}		
-			"03"
+			"00"
 			{
 				"var_type"					"FIELD_INTEGER"
 				"duration"						"10"
 			}
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"base_dmg"               "25"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"int_dmg"               "100"
+			}		
 		}
 	}
 
@@ -122,6 +135,10 @@
 		"ScriptFile"					"heroes/hero_invoker/invoker_exort_forged_spirit"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityTextureName"			"invoker_forge_spirit"
+		"MaxLevel"						"7"
+		"LevelsBetweenUpgrades"			"3"
+		"RequiredLevel"					"1"
+
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
@@ -135,7 +152,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"bonus_magic_damage_pct"               "30"
+				"duration"						"10"
 			}
 			"02"
 			{
@@ -145,7 +162,7 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"duration"						"10"
+				"bonus_magic_damage_pct"               "30"
 			}
 		}
 	}
@@ -191,6 +208,9 @@
 		"AbilityTextureName"			"invoker_chaos_meteor"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"MaxLevel"						"5"
+		"LevelsBetweenUpgrades"			"10"
+		"RequiredLevel"					"10"
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
@@ -205,23 +225,28 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"bonus_magic_damage_pct"               "30"
-			}
+				"base_damage"               "30"
+			}	
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"base_damage"               "30"
-			}	
+				"int_damage"               "30"
+			}
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"per_damage"						"20"
+				"duration"						"10"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"dps_thinker"				"100"
 			}	
 			"05"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"per_damage"						"20"
-			}
+				"var_type"					"FIELD_FLOAT"
+				"dps_interval"				"0.25"
+			}	
 			"06"
 			{
 				"var_type"					"FIELD_INTEGER"
@@ -242,11 +267,6 @@
 				"var_type"					"FIELD_INTEGER"
 				"speed_travel"				"600"
 			}
-			"10"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"duration"						"10"
-			}
 		}
 	}
 
@@ -260,12 +280,14 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityTextureName"			"invoker_tornado"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"MaxLevel"						"7"
+		"LevelsBetweenUpgrades"			"3"
+		"RequiredLevel"					"1"
+
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_quas_ice_wall"
-		"AbilityCastRange"				"1900"
-	
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -279,22 +301,22 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"duration_stunned"               "2"
+				"stun_duration"               "2"
 			}	
 			"03"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"fly_duration"						"3.5"
+				"fly_duration"						"0.5"
 			}	
 			"04"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"radius"						"80"
+				"radius"					"175"
 			}	
 			"05"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"range"						"1900"
+				"range"						"1000"
 			}
 			"06"
 			{
@@ -313,6 +335,10 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
 		"AbilityTextureName"			"invoker_alacrity"
+		"MaxLevel"						"7"
+		"LevelsBetweenUpgrades"			"3"
+		"RequiredLevel"					"1"
+
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
@@ -324,6 +350,11 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
+			"00"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"						"15"
+			}	
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
@@ -333,48 +364,6 @@
 			{
 				"var_type"							"FIELD_FLOAT"
 				"bonus_attack_speed_multiple"               "100"
-			}	
-			"03"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"duration"						"15"
-			}	
-		}
-	}
-
-	"invoker_tornado_custom_aura"
-	{
-		"BaseClass"						"ability_lua"
-		"ScriptFile"					"heroes/hero_invoker/invoker_tornado_custom_aura"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
-		"AbilityTextureName"			"invoker_alacrity"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-		"AbilityCooldown"				"1"
-		"AbilityManaCost"				"0"
-		"AbilityCastAnimation"			"ACT_INVALID"
-	
-
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"bonus_attack_speed_base"               "250"
-			}
-			"02"
-			{
-				"var_type"							"FIELD_FLOAT"
-				"bonus_attack_speed_multiple"               "100"
-			}	
-			"03"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"duration"						"15"
 			}	
 		}
 	}
@@ -383,9 +372,13 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_invoker/invoker_wex_tempest_spirit"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-		"AbilityTextureName"			"invoker_wex_tempest_spirit"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT |DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityTextureName"			"enraged_wildkin_tornado"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"MaxLevel"						"7"
+		"LevelsBetweenUpgrades"			"3"
+		"RequiredLevel"					"1"
+
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
@@ -396,6 +389,11 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
+			"00"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"						"25"
+			}	
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
@@ -411,15 +409,10 @@
 				"var_type"					"FIELD_FLOAT"
 				"slow"               		"-25"
 			}
-			"04"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"duration"						"25"
-			}	
 			"05"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"radius"						"300"
+				"radius"						"400"
 			}
 		}
 	}
@@ -429,8 +422,12 @@
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_invoker/invoker_wex_wind_walk"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-		"AbilityTextureName"			"invoker_wex_wind_walk"
+		"AbilityTextureName"			"invoker_ghost_walk"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"MaxLevel"						"5"
+		"LevelsBetweenUpgrades"			"10"
+		"RequiredLevel"					"10"
+
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
@@ -444,7 +441,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"						"25"
+				"duration"						"5"
 			}	
 		}
 	}
@@ -456,33 +453,42 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_invoker/invoker_quas_ice_wall"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"AbilityTextureName"			"invoker_ice_wall"
+		"MaxLevel"						"7"
+		"LevelsBetweenUpgrades"			"3"
+		"RequiredLevel"					"1"
+
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_exort_sunstrikes"
-		"AbilityCastRange"				"400"
+		"AbilityCastRange"				"600"
 	
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
-			"01"
+			"00"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"attack_speed"               "-200"
+				"radius"               		"400"
+			}
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"               		"25"
 			}
 			"02"
 			{
-				"var_type"					"FIELD_FLOAT"
-				"movespeed"               		"-60"
+				"var_type"					"FIELD_INTEGER"
+				"attack_speed"               "200"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"               		"25"
+				"movespeed"               		"60"
 			}
 		}
 	}
@@ -495,7 +501,11 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
-		"AbilityTextureName"			"invoker_quas_water_shield"
+		"AbilityTextureName"			"invoker_quas"
+		"MaxLevel"						"7"
+		"LevelsBetweenUpgrades"			"3"
+		"RequiredLevel"					"1"
+
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
@@ -507,20 +517,20 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
+			"00"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"               		"25"
+			}
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"absorb_damage"               "400"
+				"base_block"               "400"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"absorb_damage_mult"               "100"
-			}
-			"03"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"duration"               		"25"
+				"str_block"               "100"
 			}
 		}
 	}
@@ -529,34 +539,51 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_invoker/invoker_quas_water_spirit"
+		"AbilityTextureName"			"invoker/quas_water_spirit"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-		"AbilityTextureName"			"invoker_quas_water_spirit"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"LinkedAbility"					"invoker_exort_forged_spirit"
+		"AbilityCastAnimation"			"ACT_INVALID"
+		"MaxLevel"						"7"
+		"LevelsBetweenUpgrades"			"3"
+		"RequiredLevel"					"1"
+
+
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
-		"AbilityCastAnimation"			"ACT_INVALID"
-		"LinkedAbility"					"invoker_exort_forged_spirit"
-		"AbilityCastRange"				"900"
+		"AbilityCastRange"				"1000"
 	
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
-			"01"
+			"00"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"health"               "1800"
+				"damage"               "320"
 			}
-			"02"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"health_bonus_mult"               		"100"
-			}
-			"03"
+			"01"
 			{
 				"var_type"					"FIELD_FLOAT"
 				"duration"               		"25"
 			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"               "200"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"health"               "1800"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"health_bonus_mult"               		"100"
+			}
+
 		}
 	}
 
@@ -564,9 +591,10 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_invoker/invoker_water_spirit_regeneration"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"			"invoker_water_spirit_regeneration"
-		"AbilityCooldown"				"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityTextureName"			"invoker/quas_water_spirit"
+
+		"AbilityCooldown"				"30"
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
 	
@@ -578,7 +606,12 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"regeneration"               "10"
+				"duration"               "5"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"regeneration"               "5"
 			}
 		}
 	}
@@ -594,6 +627,10 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"MaxLevel"						"5"
+		"LevelsBetweenUpgrades"			"10"
+		"RequiredLevel"					"10"
+
 		"AbilityCooldown"				"1"
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
@@ -605,6 +642,11 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
+			"00"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"               		"25"
+			}
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
@@ -618,8 +660,10 @@
 			"03"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"               		"25"
+				"stun_duration"             "0.5"
 			}
+
 		}
 	}
+
 }

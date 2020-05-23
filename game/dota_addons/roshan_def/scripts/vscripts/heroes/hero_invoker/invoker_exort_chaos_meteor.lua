@@ -14,12 +14,15 @@ function invoker_exort_chaos_meteor:OnSpellStart()
     local LandTime = 1.3
     local travel_distance = self:GetSpecialValueFor('travel_distance')
     local fireDuration = self:GetSpecialValueFor('duration')
-    local meteorDMG = self:GetSpecialValueFor('base_damage') + self:GetSpecialValueFor('bonus_magic_damage_pct') * caster:GetIntellect()/100
-    local per_damage = self:GetSpecialValueFor('per_damage')
+    local base_damage = self:GetSpecialValueFor('base_damage')
+    local int_damage = self:GetSpecialValueFor('int_damage') * caster:GetIntellect()/100
+    local meteorDMG =  base_damage + int_damage
+    local dps_thinker = self:GetSpecialValueFor('dps_thinker')
+    local dps_interval = self:GetSpecialValueFor('dps_interval')
 
 	caster:EmitSound("Hero_Invoker.ChaosMeteor.Cast")
-    caster:EmitSound("Hero_Invoker.ChaosMeteor.Loop")
-    self:GetCaster():EmitSound("invoker_invo_ability_chaosmeteor_0" .. RandomInt(1,7))
+    EmitSoundOn("Hero_Invoker.ChaosMeteor.Loop",caster)
+    caster:EmitSound("invoker_invo_ability_chaosmeteor_0" .. RandomInt(1,7))
     caster:StartGesture(ACT_DOTA_CAST_CHAOS_METEOR)
 
 	local meteor_fly_original_point = (target_point - (velocity_per_second * LandTime)) + Vector (0, 0, 1000)  --Start the meteor in the air in a place where it'll be moving the same speed when flying and when rolling.
@@ -31,9 +34,9 @@ function invoker_exort_chaos_meteor:OnSpellStart()
 
     Timers:CreateTimer(LandTime,function()		
 			local chaos_meteor_dummy_unit = CreateUnitByName("npc_dummy_unit", target_point, false, caster, caster, caster:GetTeam())			
-			caster:StopSound("Hero_Invoker.ChaosMeteor.Loop")
+			StopSoundOn("Hero_Invoker.ChaosMeteor.Loop",caster)
 			chaos_meteor_dummy_unit:EmitSound("Hero_Invoker.ChaosMeteor.Impact")
-            chaos_meteor_dummy_unit:EmitSound("Hero_Invoker.ChaosMeteor.Loop")
+            EmitSoundOn("Hero_Invoker.ChaosMeteor.Loop",chaos_meteor_dummy_unit)
             local abilityDummy = chaos_meteor_dummy_unit:AddAbility('ability_chaos_meteor_dummy_unit')
             abilityDummy:SetLevel(1)
 			
@@ -54,7 +57,8 @@ function invoker_exort_chaos_meteor:OnSpellStart()
             abilityDummy.particleDuration = chaos_meteor_duration + fireDuration
             abilityDummy.radius = 100
             abilityDummy.dmg = meteorDMG
-            abilityDummy.per_damage = per_damage
+            abilityDummy.dps_thinker = dps_thinker
+            abilityDummy.dps_interval = dps_interval
             abilityDummy.ability = self
 			local chaos_meteor_projectile = ProjectileManager:CreateLinearProjectile({
 				EffectName = "particles/units/heroes/hero_invoker/invoker_chaos_meteor.vpcf",
@@ -83,6 +87,7 @@ function invoker_exort_chaos_meteor:OnSpellStart()
                 if abilityDummy.firefly then 
                     ParticleManager:DestroyParticle(abilityDummy.firefly, true)
                     ParticleManager:ReleaseParticleIndex(abilityDummy.firefly)
+                    StopSoundOn("Hero_Invoker.ChaosMeteor.Loop", chaos_meteor_dummy_unit)
                     StopSoundOn("Hero_Batrider.Firefly.loop", chaos_meteor_dummy_unit)
                     chaos_meteor_dummy_unit:ForceKill(false)
 

@@ -523,7 +523,7 @@
 			"file": "npc/npc_heroes_custom.txt",
 			"settings":
 			{
-				"buffer_size": 153794,
+				"buffer_size": 153753,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -532,7 +532,7 @@
 			"file": "npc/npc_units_custom.txt",
 			"settings":
 			{
-				"buffer_size": 1489067,
+				"buffer_size": 1498606,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -541,7 +541,7 @@
 			"file": "npc/npc_abilities_custom.txt",
 			"settings":
 			{
-				"buffer_size": 1348675,
+				"buffer_size": 1348330,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -568,7 +568,7 @@
 			"file": "vscripts/addon_game_mode.lua",
 			"settings":
 			{
-				"buffer_size": 19067,
+				"buffer_size": 19061,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -630,15 +630,6 @@
 			"settings":
 			{
 				"buffer_size": 512908,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "vscripts/heroes/hero_invoker/combo_vombo.lua",
-			"settings":
-			{
-				"buffer_size": 22342,
-				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -767,6 +758,7 @@
 	],
 	"file_history":
 	[
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_invoker/combo_vombo.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_invoker/miracle_combo_vombo.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/npc/activelist.txt",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_monkey_king/boundless_strike_custom.lua",
@@ -893,12 +885,11 @@
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/libraries/pathgraph.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/abilities/dummy_test_damage.lua",
 		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/ai/ai_seeker.lua",
-		"/C/Users/Виталий/Desktop/npc/abilities_schinese.txt",
-		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/ai/ai_evil_treant.lua"
+		"/C/Users/Виталий/Desktop/npc/abilities_schinese.txt"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -1066,15 +1057,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 153794,
+						"buffer_size": 153753,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								32954,
-								32973
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1095,15 +1086,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1489067,
+						"buffer_size": 1498606,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								22779,
-								22765
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1114,7 +1105,7 @@
 						"translation.y": 589.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -1123,15 +1114,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1348675,
+						"buffer_size": 1348330,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								311200,
-								311200
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1169,7 +1160,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 248907.2,
+						"translation.y": 197625.2,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1201,7 +1192,7 @@
 						"translation.y": 14800.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
@@ -1210,15 +1201,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19067,
+						"buffer_size": 19061,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								18699,
-								18699
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1230,7 +1221,7 @@
 						"translation.y": 4973.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -1259,7 +1250,7 @@
 						"translation.y": 2020.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 14,
 					"type": "text"
 				}
 			]
@@ -1294,7 +1285,7 @@
 						"translation.y": 205026.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
@@ -1320,7 +1311,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 58604.0,
+						"translation.y": 44142.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1352,7 +1343,7 @@
 						"translation.y": 294.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -1381,7 +1372,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
@@ -1410,7 +1401,7 @@
 						"translation.y": 9818980.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -1444,34 +1435,6 @@
 				},
 				{
 					"buffer": 13,
-					"file": "vscripts/heroes/hero_invoker/combo_vombo.lua",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 22342,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								569,
-								569
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Lua/Lua.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
 					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/resource/addon_russian.txt",
 					"semi_transient": false,
 					"settings":
@@ -1500,7 +1463,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 14,
 					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/resource/addon_english.txt",
 					"semi_transient": false,
 					"settings":
@@ -1529,7 +1492,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 15,
 					"file": "vscripts/heroes/hero_ursa/enrage_custom.lua",
 					"semi_transient": false,
 					"settings":
@@ -1558,7 +1521,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 16,
 					"file": "/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/resource/addon_schinese.txt",
 					"semi_transient": false,
 					"settings":
