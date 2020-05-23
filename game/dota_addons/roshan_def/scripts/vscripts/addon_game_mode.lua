@@ -241,14 +241,14 @@ function GameMode:AnitGameMode()
 --	GameRules:GetGameModeEntity():SetCustomBuybackCooldownEnabled( true )
 	GameRules:GetGameModeEntity():SetBuybackEnabled( true )
 	PlayerResource:SetCustomBuybackCost(0,1000)
---[[	
+	
 	local GM = GameRules:GetGameModeEntity()
 	GM:SetCustomGameForceHero("npc_dota_hero_invoker")
 	GameRules:SetHeroSelectionTime(0)
 	GameRules:SetStrategyTime(0)
 	GameRules:SetShowcaseTime(0)
 	GameRules:SetCustomGameSetupAutoLaunchDelay(0)
-]]
+
 	for i=0,4 do
 		
 --			PlayerResource:SetCustomBuybackCooldown(i, 60)		
