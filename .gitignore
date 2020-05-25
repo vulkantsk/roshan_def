@@ -1,4 +1,7 @@
 *.*_c
 *.bin
+*.zip
+*.7z
+
 panorama_debugger.cfg
 settings.kv

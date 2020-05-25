@@ -10,7 +10,8 @@ function invoker_quas_water_shield:OnSpellStart()
 
     local modifier = target:AddNewModifier(caster, self, 'modifier_invoker_quas_water_shield_buff', {duration = duration})
     modifier:SetStackCount(base_block+str_block)
-
+    
+    EmitSoundOn("invoker_water_shield_cast", target)
     caster:StartGesture(ACT_DOTA_CAST_ALACRITY)
 end 
 
@@ -34,13 +35,13 @@ function modifier_invoker_quas_water_shield_buff:OnCreated()
     self.ability = self:GetAbility()
     self.parent = self:GetParent()
     if IsClient() then return end
-    EmitSoundOn("invoker_water_shield", self.parent)
+    EmitSoundOn("invoker_water_shield_loop", self.parent)
 
 end 
 
 function modifier_invoker_quas_water_shield_buff:OnDestroy()
     if IsClient() then return end
-    StopSoundOn("invoker_water_shield", self.parent)
+    StopSoundOn("invoker_water_shield_loop", self.parent)
 end 
 
 function modifier_invoker_quas_water_shield_buff:OnTakeDamage(data)

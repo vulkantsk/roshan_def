@@ -23,6 +23,10 @@ modifier_invoker_water_spirit_regeneration_buff = class({
     GetModifierHealthRegenPercentage = function(self) return self.heal end,
 })
 
+function modifier_invoker_water_spirit_regeneration_buff:GetEffectName()
+    return "particles/units/heroes/hero_morphling/morphling_morph_str.vpcf"
+end
+
 function modifier_invoker_water_spirit_regeneration_buff:OnCreated()
     self.heal = self:GetAbility():GetSpecialValueFor('regeneration')
 end

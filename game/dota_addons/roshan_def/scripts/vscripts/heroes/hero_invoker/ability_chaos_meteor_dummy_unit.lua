@@ -44,7 +44,7 @@ modifier_invoker_exort_chaos_meteor_debuff_aura = class({
 modifier_invoker_exort_chaos_meteor_debuff = class({
     OnCreated            = function(self) 
         self.casterAbility = self:GetAbility()
-        self.damage = self.casterAbility.dps_thinker*self.casterAbility.dps_interval
+        self.damage = self.casterAbility.dps_thinker
         self:StartIntervalThink(self.casterAbility.dps_interval)
     end,
     OnIntervalThink         = function(self)

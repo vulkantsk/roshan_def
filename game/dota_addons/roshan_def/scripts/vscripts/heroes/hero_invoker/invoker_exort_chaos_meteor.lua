@@ -16,9 +16,10 @@ function invoker_exort_chaos_meteor:OnSpellStart()
     local fireDuration = self:GetSpecialValueFor('duration')
     local base_damage = self:GetSpecialValueFor('base_damage')
     local int_damage = self:GetSpecialValueFor('int_damage') * caster:GetIntellect()/100
-    local meteorDMG =  base_damage + int_damage
+    local meteorDMG =  base_damage 
     local dps_thinker = self:GetSpecialValueFor('dps_thinker')
     local dps_interval = self:GetSpecialValueFor('dps_interval')
+    local meteorDPS = (dps_thinker + int_damage)*dps_interval
 
 	caster:EmitSound("Hero_Invoker.ChaosMeteor.Cast")
     EmitSoundOn("Hero_Invoker.ChaosMeteor.Loop",caster)
@@ -57,7 +58,7 @@ function invoker_exort_chaos_meteor:OnSpellStart()
             abilityDummy.particleDuration = chaos_meteor_duration + fireDuration
             abilityDummy.radius = 100
             abilityDummy.dmg = meteorDMG
-            abilityDummy.dps_thinker = dps_thinker
+            abilityDummy.dps_thinker = meteorDPS
             abilityDummy.dps_interval = dps_interval
             abilityDummy.ability = self
 			local chaos_meteor_projectile = ProjectileManager:CreateLinearProjectile({

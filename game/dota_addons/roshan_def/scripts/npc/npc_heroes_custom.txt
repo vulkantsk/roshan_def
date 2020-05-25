@@ -775,18 +775,18 @@
 		"Ability2"		"invoker_exort_fire_enchant"
 		"Ability3"		"invoker_exort_forged_spirit"
 		"Ability4"		"invoker_invoke_custom"		
-		"Ability5"		"rubick_arcane_supremacy"		
-		"Ability6"		"invoker_combo_vombo"
-		"Ability7"		"invoker_cold_snap"
-		"Ability8"		"invoker_ghost_walk"
-		"Ability9"		"invoker_tornado"
-		"Ability10"		"invoker_emp"
-		"Ability11"		"invoker_alacrity"
-		"Ability12"		"generic_hidden"
-		"Ability13"		"generic_hidden"
-		"Ability14"		"invoker_forge_spirit"
-		"Ability15"		"invoker_ice_wall"
-		"Ability16"		"invoker_deafening_blast"	
+		"Ability5"		"invoker_combo_vombo"		
+		"Ability6"		"invoker_exort_chaos_meteor"
+		"Ability7"		"invoker_wex_tornado"
+		"Ability8"		"invoker_wex_alacrity"
+		"Ability9"		"invoker_wex_tempest_spirit"
+		"Ability10"		"invoker_wex_wind_walk"
+		"Ability11"		"invoker_quas_ice_wall"
+		"Ability12"		"invoker_quas_water_shield"
+		"Ability13"		"invoker_quas_water_spirit"
+		"Ability14"		"invoker_quas_cold_snap"
+		"Ability15"		"generic_hidden"
+		"Ability16"		"generic_hidden"	
 		"Ability17"		"special_bonus_exp_boost_30"
 		"Ability18"		"special_bonus_gold_income_240"
 		"Ability19"		"special_bonus_mp_regen_6"
@@ -799,9 +799,9 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AttackDamageMin"			"40"										// Damage range min.
 		"AttackDamageMax"			"40"										// Damage range max.
-		"AttackRate"				"2"									// Speed of attack.
+		"AttackRate"				"1.7"									// Speed of attack.
 		"ProjectileSpeed"			"1550"									// Speed of projectile.
-		"AttackAnimationPoint"		"0.55"
+		"AttackAnimationPoint"		"0.35"
 
 
 		// Armor

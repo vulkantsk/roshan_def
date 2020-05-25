@@ -4,10 +4,13 @@ function invoker_wex_wind_walk:OnSpellStart()
     local caster = self:GetCaster()
     local duration = self:GetSpecialValueFor("duration")
     caster:AddNewModifier(caster, self, 'modifier_invoker_wex_wind_walk_buff', {duration = duration})
-
+ 
+    caster:EmitSound("Hero_Invoker.GhostWalk")
     caster:EmitSound("invoker_invo_ability_ghostwalk_0" .. RandomInt(1, 5))
     caster:StartGesture(ACT_DOTA_CAST_GHOST_WALK)
-    ParticleManager:CreateParticle("particles/units/heroes/hero_invoker/invoker_ghost_walk.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster)
+    
+    local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_invoker/invoker_ghost_walk.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster)
+    ParticleManager:ReleaseParticleIndex(pfx)
 end
 
 modifier_invoker_wex_wind_walk_buff = class({

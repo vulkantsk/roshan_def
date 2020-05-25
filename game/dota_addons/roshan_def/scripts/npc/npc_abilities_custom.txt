@@ -22515,7 +22515,8 @@
 
 "golden_mine_passive"
 {
-	"BaseClass"						"ability_datadriven"
+	"BaseClass"						"ability_lua"
+	"ScriptFile"					"abilities/golden_mine"
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 	"AbilityTextureName"			"alchemist_goblins_greed"
 	"AbilitySpecial"
@@ -22535,75 +22536,19 @@
 			"var_type"              "FIELD_FLOAT"
 			"gold"          "6"
         }
+		"04"
+        {
+			"var_type"              "FIELD_FLOAT"
+			"gold_duration"          "2"
+        }
+		"05"
+        {
+			"var_type"              "FIELD_FLOAT"
+			"gold_interval"          "0.5"
+        }
 			
 	}
 
-	"Modifiers"
-	{
-		"modifier_golden_mine_passive"
-		{
-			"Passive"			"1"
-			"IsHidden"			"1"
-			
-			"OnCreated"
-			{
-				"RunScript"
-				{
-					"ScriptFile"    "abilities/golden_mine"
-					"Function"		"OnCreated"
-				}	
-			}
-			"OnAttacked"
-			{
-				"ApplyModifier"
-				{
-					"Target"
-					{
-						"Center"		"ATTACKER"
-						"Types"			"DOTA_UNIT_TARGET_HERO"
-						"Flags"			"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
-
-					}	
-					"ModifierName"		"modifier_golden_mine_buff"
-					"Duration"			"2"
-				}
-				"RunScript"
-				{
-					"ScriptFile"    "abilities/golden_mine"
-					"Function"		"OnAttacked"
-				}				
-			}
-			"Properties"
-			{
-				"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PHYSICAL"	"1"
-				"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_MAGICAL"	"1"
-				"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PURE"		"1"
-			}			
-		}
-		"modifier_golden_mine_buff"
-		{
-			"Passive"			"0"
-			"IsHidden"			"0"
-
-			"ThinkInterval"		"0.5"
-			"OnIntervalThink"
-			{
-				"GrantXPGold"
-				{
-					"Target"
-					{
-						"Center"		"TARGET"
-						"Types"			"DOTA_UNIT_TARGET_HERO"
-						"Flags"			"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
-
-					}	
-					"XPAmount"		"4"
-					"GoldAmount"	"3"
-					"ReliableGold"	"1"
-					"PlayAlert"		"1"
-				}
-			}
-		}	}
 }
 	"veteran_summon_ogre"
 	{
@@ -33119,7 +33064,8 @@
 	}	
 	"damage_test"
 	{
-		"BaseClass"					"ability_datadriven"
+		"BaseClass"					"ability_lua"
+		"ScriptFile"				"abilities/dummy_test_damage"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"		"damage_filter"
 
@@ -33129,60 +33075,6 @@
 			{
 				"var_type"			"FIELD_FLOAT"
 				"duration"			"5"
-			}
-		}
-
-		"Modifiers"
-		{
-			"modifier_damage_test_filter_passive"
-			{
-				"Passive"			"1"
-				"IsHidden"			"1"
-				
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"abilities/dummy_test_damage.lua"
-						"Function"		"ClearDamageFilter"
-					}
-				}
-				
-				"OnTakeDamage"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"abilities/dummy_test_damage.lua"
-						"Function"		"ShowDamageTaken"
-						"DamageTaken"	"%attack_damage"
-					}
-					"ApplyModifier"
-					{
-						"ModifierName"		"modifier_damage_test_filter"
-						"Target"			"CASTER"
-						"Duration"			"%duration"
-					}
-				}
-				
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MIN_HEALTH"		"1"
-				}
-			}
-			"modifier_damage_test_filter"
-			{
-				"Passive"			"0"
-				"IsBuff"			"1"
-				"IsHidden"			"0"
-				
-				"OnDestroy"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"abilities/dummy_test_damage.lua"
-						"Function"		"ClearDamageFilter"
-					}
-				}
 			}
 		}
 	}	
@@ -48550,18 +48442,19 @@
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
 	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-	"MaxLevel"						"5"
-	"LevelsBetweenUpgrades"			"10"
-	"RequiredLevel"					"10"
+	"MaxLevel"						"1"
+	"LevelsBetweenUpgrades"			"1"
+	"RequiredLevel"					"75"
 
     "AbilityUnitTargetTeam"  		"DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"  		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
     "AbilityUnitTargetFlags" 		"DOTA_UNIT_TARGET_FLAG_NONE"
 	"AbilityCastAnimation" 			"ACT_DOTA_CAST_TORNADO"
+	
 	"AbilityCastRange"				"1500"
-	"AbilityCastPoint"				"0"
-	"AbilityCooldown"				"120"
-	"AbilityManaCost"				"250 500 750 1250 1750"
+	"AbilityCastPoint"				"0.2"
+	"AbilityCooldown"				"180"
+	"AbilityManaCost"				"5000"
 
 	"precache"
 	{
@@ -48638,7 +48531,7 @@
 		"12"
 		{
 			"var_type"					"FIELD_FLOAT"
-			"sunstrike_damage"			"500 1000 1500 2500 3500"
+			"sunstrike_damage"			"20000"
 		}
 		"13"
 		{
@@ -48668,7 +48561,7 @@
 		"18"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"meteor_travel_distance"	"1000 1200 1400"
+			"meteor_travel_distance"	"1000"
 		}
 		"19"
 		{
@@ -48693,7 +48586,7 @@
 		"23"
 		{
 			"var_type"					"FIELD_FLOAT"
-			"meteor_main_damage"		"250 375 500 750 1000"
+			"meteor_main_damage"		"10000"
 		}
 		"24"
 		{
@@ -48708,7 +48601,7 @@
 		"26"
 		{
 			"var_type"					"FIELD_FLOAT"
-			"meteor_burn_dps"			"100 150 200 300 400"
+			"meteor_burn_dps"			"2500"
 		}
 		"27"
 		{
@@ -48743,12 +48636,12 @@
 		"33"
 		{
 			"var_type"					"FIELD_FLOAT"
-			"df_damage"					"500"
+			"df_damage"					"10000"
 		}
 		"34"
 		{
 			"var_type"					"FIELD_FLOAT"
-			"df_knockback_duration"		"1.5 2 2.5"
+			"df_knockback_duration"		"1.5"
 		}
 		"35"
 		{

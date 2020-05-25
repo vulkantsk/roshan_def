@@ -90,7 +90,7 @@ function modifier_invoker_wex_tempest_spirit_debuff:OnCreated()
     self.ability = self:GetAbility()
     if not self.ability then return end
     self.damage_per_tick = self.ability:GetSpecialValueFor('dmg_per_tick')
-    self.slow = self.ability:GetSpecialValueFor('slow')
+    self.slow = self.ability:GetSpecialValueFor('slow')*(-1)
     self:StartIntervalThink(self.ability:GetSpecialValueFor('tick'))
 end 
 

@@ -32,7 +32,7 @@ function modifier_item_midas_crown:GetEffectAttachType()
 end
 
 function modifier_item_midas_crown:OnCreated()
-	if IsServer() then
+	if IsServer() and self:GetParent():IsRealHero() then
 		local interval = self:GetAbility():GetSpecialValueFor("interval")
 		self:StartIntervalThink(interval)
 	end

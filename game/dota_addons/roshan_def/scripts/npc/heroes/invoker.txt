@@ -9,7 +9,7 @@
 
 		"MaxLevel"						"1"
 
-		"AbilityCooldown"				"1"
+		"AbilityCooldown"				"5"
 		"AbilityManaCost"				"0"
 		"AbilityCastAnimation"			"ACT_INVALID"
 	
@@ -42,12 +42,12 @@
 		"LevelsBetweenUpgrades"			"3"
 		"RequiredLevel"					"1"
 
-		"AbilityCooldown"				"1"
-		"AbilityManaCost"				"0"
-		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
-        "AoERadius"                     "%radius"
+		"AbilityCooldown"				"25"
+		"AbilityManaCost"				"125 150 175 200 250 300 350"
+		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_wex_tornado"
-		"AbilityCastAnimation"			"ACT_ABILITY_1"
+        "AoERadius"                     "%radius"
+
 	
 
 		// Special
@@ -57,32 +57,32 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"radius"               "600"
+				"radius"               		"450"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"               "200"
+				"damage"               		"150 200 250 300 350 400 450"
 			}		
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"count"               "12"
+				"count"               		"6 8 10 12 14 16 18"
 			}	
 			"04"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"interval"               	"0.2"
+				"interval"               	"0.25"
 			}	
             "05"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"radius_sunstrike"               "150"
+				"radius_sunstrike"          "150"
 			}	
             "06"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"sunstrike_delay"               "1.7"
+				"sunstrike_delay"           "1.7"
 			}
 		}
 	}
@@ -101,9 +101,9 @@
 		"LevelsBetweenUpgrades"			"3"
 		"RequiredLevel"					"1"
 
-		"AbilityCooldown"				"1"
-		"AbilityManaCost"				"0"
-		"AbilityCastRange"				"500"
+		"AbilityCooldown"				"20 19 18 17 16 15 14"
+		"AbilityManaCost"				"50 70 90 110 140 170"
+		"AbilityCastRange"				"800"
 		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_wex_alacrity"
 
@@ -114,17 +114,17 @@
 			"00"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"duration"						"10"
+				"duration"						"8"
 			}
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"base_dmg"               "25"
+				"base_dmg"               "25 50 75 100 135 170 200"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"int_dmg"               "100"
+				"int_dmg"               "50"
 			}		
 		}
 	}
@@ -139,8 +139,8 @@
 		"LevelsBetweenUpgrades"			"3"
 		"RequiredLevel"					"1"
 
-		"AbilityCooldown"				"1"
-		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"35"
+		"AbilityManaCost"				"100 125 150 175 200 225 250"
 		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_wex_tempest_spirit"
 	
@@ -152,17 +152,17 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"duration"						"10"
+				"duration"					"25"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"base_damage"               "30"
+				"base_damage"               "100 150 200 250 350 450 550"
 			}		
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"bonus_magic_damage_pct"               "30"
+				"bonus_magic_damage_pct"               "500"
 			}
 		}
 	}
@@ -211,8 +211,9 @@
 		"MaxLevel"						"5"
 		"LevelsBetweenUpgrades"			"10"
 		"RequiredLevel"					"10"
-		"AbilityCooldown"				"1"
-		"AbilityManaCost"				"0"
+		
+		"AbilityCooldown"				"60"
+		"AbilityManaCost"				"200 250 300 400 500"
 		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_wex_wind_walk"
 		"AbilityCastRange"				"1400"
@@ -225,22 +226,22 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"base_damage"               "30"
+				"base_damage"               "2000 3500 5000 7500 10000"
 			}	
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"int_damage"               "30"
+				"int_damage"               "200"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"duration"						"10"
+				"duration"					"10"
 			}
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"dps_thinker"				"100"
+				"dps_thinker"				"100 200 300 450 600"
 			}	
 			"05"
 			{
@@ -284,8 +285,8 @@
 		"LevelsBetweenUpgrades"			"3"
 		"RequiredLevel"					"1"
 
-		"AbilityCooldown"				"1"
-		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"25"
+		"AbilityManaCost"				"125 150 175 200 250 300 350"
 		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_quas_ice_wall"
 
@@ -296,22 +297,22 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"               "250"
+				"damage"               		"250 500 750 1000 1350 1700 2000"
 			}
 			"02"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"stun_duration"               "2"
+				"var_type"					"FIELD_FLOAT"
+				"stun_duration"             "1.5 2 2.5 3 4 5"
 			}	
 			"03"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"fly_duration"						"0.5"
+				"fly_duration"				"0.5"
 			}	
 			"04"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"radius"					"175"
+				"radius"					"200"
 			}	
 			"05"
 			{
@@ -339,11 +340,11 @@
 		"LevelsBetweenUpgrades"			"3"
 		"RequiredLevel"					"1"
 
-		"AbilityCooldown"				"1"
-		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"20 19 18 17 16 15 14"
+		"AbilityManaCost"				"50 70 90 110 140 170"
+		"AbilityCastRange"				"800"
 		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_quas_water_shield"
-		"AbilityCastRange"				"800"
 	
 
 		// Special
@@ -353,12 +354,12 @@
 			"00"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"						"15"
+				"duration"					"8"
 			}	
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"bonus_attack_speed_base"               "250"
+				"bonus_attack_speed_base"               "25 50 75 100 135 170 200"
 			}
 			"02"
 			{
@@ -379,8 +380,8 @@
 		"LevelsBetweenUpgrades"			"3"
 		"RequiredLevel"					"1"
 
-		"AbilityCooldown"				"1"
-		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"35"
+		"AbilityManaCost"				"100 125 150 175 200 225 250"
 		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_quas_water_spirit"
 	
@@ -392,12 +393,12 @@
 			"00"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"						"25"
+				"duration"					"25"
 			}	
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"dmg_per_tick"               "20"
+				"dmg_per_tick"               "30 45 60 75 100 125 150"
 			}
 			"02"
 			{
@@ -407,12 +408,12 @@
 			"03"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"slow"               		"-25"
+				"slow"               		"10 15 20 25 30 35 40"
 			}
 			"05"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"radius"						"400"
+				"radius"					"400"
 			}
 		}
 	}
@@ -428,8 +429,8 @@
 		"LevelsBetweenUpgrades"			"10"
 		"RequiredLevel"					"10"
 
-		"AbilityCooldown"				"1"
-		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"60"
+		"AbilityManaCost"				"200 250 300 400 500"
 		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_quas_cold_snap"
 	
@@ -441,7 +442,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"						"5"
+				"duration"					"5 6 7 9 11"
 			}	
 		}
 	}
@@ -459,11 +460,11 @@
 		"LevelsBetweenUpgrades"			"3"
 		"RequiredLevel"					"1"
 
-		"AbilityCooldown"				"1"
-		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"25"
+		"AbilityManaCost"				"125 150 175 200 250 300 350"
 		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_exort_sunstrikes"
-		"AbilityCastRange"				"600"
+		"AbilityCastRange"				"750"
 	
 
 		// Special
@@ -473,22 +474,22 @@
 			"00"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"radius"               		"400"
+				"radius"               		"325 350 375 400 450 500 550"
 			}
 			"01"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"               		"25"
+				"duration"               	"4 5 6 7 8 9 10"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"attack_speed"               "200"
+				"attack_speed"              "100"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"movespeed"               		"60"
+				"movespeed"               	"50"
 			}
 		}
 	}
@@ -506,11 +507,11 @@
 		"LevelsBetweenUpgrades"			"3"
 		"RequiredLevel"					"1"
 
-		"AbilityCooldown"				"1"
-		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"20 19 18 17 16 15 14"
+		"AbilityManaCost"				"50 70 90 110 140 170"
+		"AbilityCastRange"				"800"
 		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_exort_fire_enchant"
-		"AbilityCastRange"				"700"
 	
 
 		// Special
@@ -520,17 +521,17 @@
 			"00"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"               		"25"
+				"duration"               	"8"
 			}
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"base_block"               "400"
+				"base_block"               "40 80 120 160 220 280 340"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"str_block"               "100"
+				"str_block"               	"200"
 			}
 		}
 	}
@@ -549,8 +550,8 @@
 		"RequiredLevel"					"1"
 
 
-		"AbilityCooldown"				"1"
-		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"35"
+		"AbilityManaCost"				"100 125 150 175 200 225 250"
 		"AbilityCastRange"				"1000"
 	
 
@@ -561,12 +562,12 @@
 			"00"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"               "320"
+				"damage"               "300 700 900 1100 1400 1700 2000"
 			}
 			"01"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"               		"25"
+				"duration"               	"25"
 			}
 			"02"
 			{
@@ -576,12 +577,12 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"health"               "1800"
+				"health"               		"1000 1750 2500 3250 4000 4750 5500"
 			}
 			"04"
 			{
-				"var_type"					"FIELD_FLOAT"
-				"health_bonus_mult"               		"100"
+				"var_type"					"FIELD_INTEGER"
+				"health_bonus_mult"         "4000"
 			}
 
 		}
@@ -631,8 +632,8 @@
 		"LevelsBetweenUpgrades"			"10"
 		"RequiredLevel"					"10"
 
-		"AbilityCooldown"				"1"
-		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"60"
+		"AbilityManaCost"				"200 250 300 400 500"
 		"AbilityCastAnimation"			"ACT_INVALID"
 		"LinkedAbility"					"invoker_exort_chaos_meteor"
 		"AbilityCastRange"				"800"
@@ -645,17 +646,17 @@
 			"00"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"               		"25"
+				"duration"               	"6 8 10 12 14"
 			}
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"interval"               "3"
+				"interval"               	"2"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"pct_damage"               		"100"
+				"pct_damage"               	"50"
 			}
 			"03"
 			{

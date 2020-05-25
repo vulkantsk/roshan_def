@@ -19730,47 +19730,6 @@
 		}
 	}
 
-	"item_phoenix_essence"
-	{
-		"BaseClass"                     "item_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-		"AbilityTextureName"			"special/phoenix_essence"
-		"ItemCost"                      "322"  
-		"Model"							"models/props_gameplay/gem01.vmdl"
-		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
-		
-
-		"ItemPurchasable"				"0"
-		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
-		"ItemPermanent"					"0"
-		"ItemKillable"                  "1"
-		"ItemSellable"                  "0"
-		"ItemDroppable"                 "1"
-		"ItemInitialCharges"            "1"
-
-		"OnSpellStart"
-		{			
-			"SpendCharge" {}
-			"RunScript"
-			{
-				"ScriptFile"		"abilities/hero_change.lua"
-				"Function"			"GiveNewHero"
-				"hero_name"			"npc_dota_hero_phoenix"
-			}
-		}
-		
-		"Modifiers"
-		{
-			"modifier_test1"
-			{
-				"Passive"	"0"
-				"EffectName"					"particles/econ/events/ti7/ti7_hero_effect.vpcf"
-				"EffectAttachType"				"follow_origin"
-			}
-		}
-	}
 
 	"item_test_essence"
 	{

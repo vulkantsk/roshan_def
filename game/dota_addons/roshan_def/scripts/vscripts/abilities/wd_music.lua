@@ -2,6 +2,18 @@ LinkLuaModifier( "modifier_witch_doctor_music", "abilities/wd_music.lua", LUA_MO
 
 music_list = {
 --	{ name = "wrath_music", duration = 27},
+	{ name = "death_note_op_1", duration = 34},
+	{ name = "death_note_op_2", duration = 51},
+	{ name = "death_note_op_3", duration = 56},
+	{ name = "loli_mou_1", duration = 32},
+	{ name = "loli_mou_2", duration = 32},
+	{ name = "naruto_op_1", duration = 38},
+	{ name = "naruto_op_2", duration = 42},
+	{ name = "niletto_lubimka", duration = 32},
+	{ name = "parasyte_speak_1", duration = 40},
+	{ name = "parasyte_speak_2", duration = 42},
+	{ name = "parasyte_theme_1", duration = 41},
+	{ name = "parasyte_theme_2", duration = 43},
 	{ name = "fly_mach", duration = 41},
 	{ name = "jojo_op_1", duration = 58},
 	{ name = "jojo_op_2", duration = 54},
