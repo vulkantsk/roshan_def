@@ -11,8 +11,8 @@ function ChickenRush( keys )
 	
 	for i=1,chicken_count do
 		Timers:CreateTimer(interval*i, function ()
-			local chicken = CreateUnitByName(unit_name, caster:GetAbsOrigin(), true, caster, caster, caster:GetTeam())
-			chicken:AddNewModifier(caster, ability, "modifier_phased", nil)
+			local chicken = CreateUnitByName(unit_name, caster:GetAbsOrigin() + RandomInt(25, 100), true, caster, caster, caster:GetTeam())
+			chicken:AddNewModifier(caster, ability, "modifier_phased", {duration = chicken_duration})
 			chicken:AddNewModifier(caster, ability, "modifier_kill", {duration = chicken_duration})
 --			chicken:SetControllableByPlayer(caster:GetPlayerID(), true)
 		end)

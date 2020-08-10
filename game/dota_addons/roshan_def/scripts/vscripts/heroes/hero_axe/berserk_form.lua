@@ -1,7 +1,6 @@
 
 LinkLuaModifier( "modifier_axe_berserk_form", "heroes/hero_axe/berserk_form", LUA_MODIFIER_MOTION_NONE ) 
 LinkLuaModifier( "modifier_axe_berserk_form_passive", "heroes/hero_axe/berserk_form", LUA_MODIFIER_MOTION_NONE ) 
-LinkLuaModifier( "modifier_axe_berserkers_call_armor", "heroes/hero_axe/berserk_form", LUA_MODIFIER_MOTION_NONE ) 
 
 axe_berserk_form = class({})
 

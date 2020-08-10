@@ -12,8 +12,8 @@
 		"imba_gamemode_settings_lock_options2"                                              "Ветеран"
 		"imba_gamemode_settings_lock_options3"                                              "Титан"
 
-		"imba_gamemode_settings_lock_options_tooltip"                                       "Враги не имеют бонусов. Альянс не атакует."
-		"imba_gamemode_settings_lock_options_tooltip1"                                      "Все враги получают бонус 50%(здоровье,атака,защита). Альянс атакует."
+		"imba_gamemode_settings_lock_options_tooltip"                                       "Враги не имеют бонусов. Альянс не атакует. Второй шанс для Рошана."
+		"imba_gamemode_settings_lock_options_tooltip1"                                      "Все враги получают бонус 50%(здоровье,атака,защита). Альянс атакует. Второй шанс для Рошана."
 		"imba_gamemode_settings_lock_options_tooltip2"                                      "Все враги получают бонус 100%(здоровье,атака,защита). Альянс атакует."
 		"imba_gamemode_settings_lock_options_tooltip3"                                      "Все враги получают бонус 200%(здоровье,атака,защита). Альянс атакует."
 		"imba_gamemode_settings_speedrun"                                      				"При активации данной настройки, по окончанию игры вы попадёте в рейтинг спидранеров!"

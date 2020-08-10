@@ -144,7 +144,7 @@ function modifier_jotaro_ora_ora_rush:OraOraTarget(target)
 				ParticleManager:ReleaseParticleIndex(nFX)
 		]]		
 --		Timers:CreateTimer(0.2, function()
-			caster:PerformAttack(target, true, true, true, true, false, false, true)
+			caster:PerformAttack(target, false, false, true, true, false, false, true)
 			self:GetAbility():Stun(target, 0.1, false)
 --		end)
 --		local clockstopper = caster:FindModifierByName("modifier_faceless_clock_stopper_buff")

@@ -157,20 +157,15 @@ modifier_wisp_infest_passive = class({
 	IsDebuff 				= function(self) return false end,
 	IsBuff                  = function(self) return true end,
 	RemoveOnDeath 			= function(self) return false end,
-	CheckState		= function(self) return 
-		{
-		[MODIFIER_STATE_DISARMED] = true,
-		[MODIFIER_STATE_INVULNERABLE] = true,
-		[MODIFIER_STATE_MUTED] = true,
-		} end,
 })
 function modifier_wisp_infest_passive:CheckState()
-	local state =
-	{
-		[MODIFIER_STATE_DISARMED] = true,
-		[MODIFIER_STATE_INVULNERABLE] = true,
-		[MODIFIER_STATE_MUTED] = true,
-	}
+	local state = {}
+
+	if self:GetCaster():GetUnitName() == "npc_dota_hero_wisp" then
+		state[MODIFIER_STATE_DISARMED] = true
+		state[MODIFIER_STATE_MUTED] = true
+		state[MODIFIER_STATE_INVULNERABLE] = true
+	end	
 	return state
 end
 function modifier_wisp_infest_passive:OnCreated()
@@ -195,6 +190,7 @@ modifier_wisp_infest_hidden = class({
 	RemoveOnDeath 			= function(self) return false end,
 	CheckState		= function(self) return 
 		{
+		[MODIFIER_STATE_INVULNERABLE] = true,
 		[MODIFIER_STATE_NO_UNIT_COLLISION] = true,
 		[MODIFIER_STATE_ROOTED] = true,
 		[MODIFIER_STATE_NOT_ON_MINIMAP] = true,

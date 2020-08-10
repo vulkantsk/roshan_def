@@ -17,7 +17,7 @@
 		{
 			"item_bonus_strength1"		"1"
 			"item_bonus_strength5"		"1"
-			"item_bonus_strength10"		"1"
+//			"item_bonus_strength10"		"1"
 			"item_bonus_strength50"		"1"
 		}
 	}
@@ -38,7 +38,7 @@
 		{
 			"item_bonus_agility1"		"1"
 			"item_bonus_agility5"		"1"
-			"item_bonus_agility10"		"1"
+//			"item_bonus_agility10"		"1"
 			"item_bonus_agility50"		"1"
 		}
 	}
@@ -59,7 +59,7 @@
 		{
 			"item_bonus_intelligence1"		"1"
 			"item_bonus_intelligence5"		"1"
-			"item_bonus_intelligence10"		"1"
+//			"item_bonus_intelligence10"		"1"
 			"item_bonus_intelligence50"		"1"
 		}
 	}
@@ -80,7 +80,7 @@
 		{
 			"item_bonus_stats1"		"1"
 			"item_bonus_stats5"		"1"
-			"item_bonus_stats10"		"1"
+//			"item_bonus_stats10"		"1"
 			"item_bonus_stats50"		"1"
 		}
 	}

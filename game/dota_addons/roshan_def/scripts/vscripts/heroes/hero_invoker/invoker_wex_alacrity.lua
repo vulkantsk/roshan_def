@@ -2,9 +2,14 @@ invoker_wex_alacrity = class({})
 LinkLuaModifier('modifeir_invoker_wex_alacrity_buff', 'heroes/hero_invoker/invoker_wex_alacrity', LUA_MODIFIER_MOTION_NONE)
 
 function invoker_wex_alacrity:OnSpellStart()
-    self:GetCursorTarget():AddNewModifier(self:GetCaster(), self, 'modifeir_invoker_wex_alacrity_buff', {
-        duration = self:GetSpecialValueFor('duration'),
-    })
+    local caster = self:GetCaster()
+    local target = self:GetCursorTarget()
+    local duration = self:GetSpecialValueFor("duration")
+    local base_as = self:GetSpecialValueFor("base_as")
+    local agi_as = self:GetSpecialValueFor("agi_as")/100*caster:GetAgility()
+
+    local modifier = target:AddNewModifier(caster, self, 'modifeir_invoker_wex_alacrity_buff', {duration = duration})
+    modifier:SetStackCount(base_as+agi_as)
 
     self:GetCaster():EmitSound("Hero_Invoker.Alacrity")
     self:GetCaster():EmitSound("invoker_invo_ability_alacrity_0" .. RandomInt(1,4))
@@ -26,19 +31,12 @@ modifeir_invoker_wex_alacrity_buff = class({
             MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
         }
     end,
-    GetModifierAttackSpeedBonus_Constant = function(self) 
-        if not self.caster then return 0 end
-        return (self.baseBonusAttackSpeed or 0) + (self.caster:GetAgility() * self.multipleAgi)
-    end,
-
 })
 
+function modifeir_invoker_wex_alacrity_buff:GetModifierAttackSpeedBonus_Constant()
+    return self:GetStackCount()
+end 
 function modifeir_invoker_wex_alacrity_buff:OnCreated()
-    local abiltiy = self:GetAbility()
-    self.caster = self:GetCaster()
-    self.baseBonusAttackSpeed = abiltiy:GetSpecialValueFor('bonus_attack_speed_base')
-    self.multipleAgi = abiltiy:GetSpecialValueFor('bonus_attack_speed_multiple')*0.01
-
     local nfx = ParticleManager:CreateParticle('particles/units/heroes/hero_invoker/invoker_alacrity_buff.vpcf', PATTACH_OVERHEAD_FOLLOW, self:GetParent())
     self:AddParticle(nfx, true, false, 4, true, true)
 end 
@@ -46,7 +44,4 @@ end
 function modifeir_invoker_wex_alacrity_buff:OnRefresh()
     local abiltiy = self:GetAbility()
     self.caster = self:GetCaster()
-    self.baseBonusAttackSpeed = abiltiy:GetSpecialValueFor('bonus_attack_speed_base')
-    self.multipleAgi = abiltiy:GetSpecialValueFor('bonus_attack_speed_multiple')*0.01
-
 end 

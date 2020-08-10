@@ -12,8 +12,8 @@
 		"imba_gamemode_settings_lock_options2"                                               "Divine"
 		"imba_gamemode_settings_lock_options3"                                               "Immortal"
 
-		"imba_gamemode_settings_lock_options_tooltip"                                       "Enemies not have bonus. Alliance forpost dont attacks ."
-		"imba_gamemode_settings_lock_options_tooltip1"                                       "Enemies have bonus (health, attack, armor) +50%. Alliance forpost attacks ."
+		"imba_gamemode_settings_lock_options_tooltip"                                       "Enemies not have bonus. Alliance forpost dont attacks. Roshan second chance."
+		"imba_gamemode_settings_lock_options_tooltip1"                                       "Enemies have bonus (health, attack, armor) +50%. Alliance forpost attacks. Roshan second chance."
 		"imba_gamemode_settings_lock_options_tooltip2"                                       "Enemies have bonus (health, attack, armor) +100%. Alliance forpost attacks ."
 		"imba_gamemode_settings_lock_options_tooltip3"                                       "Enemies have bonus (health, attack, armor) +200%. Alliance forpost attacks ."
 		"imba_gamemode_settings_speedrun"                                      				"When this setting is activated, at the end of the game you will be included in the speedrun rating!"

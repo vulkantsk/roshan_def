@@ -27,6 +27,7 @@ function Precache( context )
 	-- Particles can be precached individually or by folder
 	-- It it likely that precaching a single particle system will precache all of its children, but this may not be guaranteed
 	PrecacheResource("soundfile", "soundevents/game_sounds_custom.vsndevts", context )
+	PrecacheResource("soundfile", "soundevents/game_sounds_ambient.vsndevts", context )
 	PrecacheResource("soundfile", "soundevents/imba_item_soundevents.vsndevts", context )
 	PrecacheResource("soundfile", "soundevents/game_sounds_winter_2018.vsndevts", context )
 	PrecacheResource("soundfile", "soundevents/game_sounds_dungeon_enemies.vsndevts", context )
@@ -234,6 +235,7 @@ function GameMode:AnitGameMode()
 		GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 5 )
 	    GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 0 )
 	end
+	SendToServerConsole("dota_max_physical_items_purchase_limit " .. 50)
 
 	GameRules:GetGameModeEntity():SetMaximumAttackSpeed( 2400 ) 
 	GameRules:GetGameModeEntity():SetMinimumAttackSpeed( 50 )
@@ -241,14 +243,14 @@ function GameMode:AnitGameMode()
 --	GameRules:GetGameModeEntity():SetCustomBuybackCooldownEnabled( true )
 	GameRules:GetGameModeEntity():SetBuybackEnabled( true )
 	PlayerResource:SetCustomBuybackCost(0,1000)
---[[	
+----[[	
 	local GM = GameRules:GetGameModeEntity()
-	GM:SetCustomGameForceHero("npc_dota_hero_invoker")
+	GM:SetCustomGameForceHero("npc_dota_hero_tidehunter")
 	GameRules:SetHeroSelectionTime(0)
 	GameRules:SetStrategyTime(0)
 	GameRules:SetShowcaseTime(0)
 	GameRules:SetCustomGameSetupAutoLaunchDelay(0)
-]]
+--]]
 	for i=0,4 do
 		
 --			PlayerResource:SetCustomBuybackCooldown(i, 60)		

@@ -350,9 +350,10 @@
 ///////////////////////////
 // ITEMS - END
 ///////////////////////////
-	//=================================================================================================================
-	// Helm of the Dominator
-	//=================================================================================================================
+	"item_recipe_helm_of_the_dominator"
+	{
+		"ItemCost"						"3000"
+	}
 	"item_helm_of_the_dominator"
 	{
 		// General
@@ -383,25 +384,28 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_stats"			"2"
+				"bonus_stats"			"10"
 			}
-
-			"03"
+			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"attack_speed_aura"		"25"
+				"attack_damage_aura"	"25"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"hp_regen_aura"			"10"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"hp_regen_aura"			"5"
+				"creep_bonus"			"50"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"aura_radius"			"900"
 			}
-
 		}
 	}
 

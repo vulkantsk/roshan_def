@@ -24,6 +24,7 @@ end
 
 modifier_sans_shield_counter = class({
 	IsHidden = function(self) return false end,
+	IsPurgable = function(self) return false end,
 	DeclareFunctions = function(self) return {
 		MODIFIER_EVENT_ON_TAKEDAMAGE,
 		MODIFIER_PROPERTY_MIN_HEALTH,
@@ -77,6 +78,7 @@ end
 
 modifier_sans_shield_trigger = class({
 	IsHidden = function(self) return true end,
+	IsPurgable = function(self) return false end,
 })
 
 function modifier_sans_shield_trigger:OnCreated()

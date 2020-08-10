@@ -40,9 +40,9 @@ function Dagon( keys )
 	end
 
 	-- Parameters
-	local damage_exp = ability:GetSpecialValueFor("damage_exp")
-	local damage = ability:GetSpecialValueFor("damage") + caster:GetIntellect() * damage_exp
-	local bounce_damage = caster:GetIntellect() * damage_exp
+	local damage_int = ability:GetSpecialValueFor("damage_int")/100 * caster:GetIntellect()
+	local damage = ability:GetSpecialValueFor("damage") + damage_int
+	local bounce_damage = damage
 	local bounce_range = ability:GetSpecialValueFor("bounce_range")
 	local targets_hit = {
 		target

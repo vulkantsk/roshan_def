@@ -20,7 +20,7 @@
 	"Game_notification_boss_spawn_abomination"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>ЧУМНОЙ СОБАКЕН </font> приближается к вам!"
 	"Game_notification_boss_spawn_fire_golem"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>ОГНЕННЫЙ ГОЛЕМ </font> приближается к вам!"
 	"Game_notification_boss_spawn_witch"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>ВЕДЬМА </font> приближается к вам!"
-	"Game_notification_boss_spawn_necronomicon"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>НЕКРО-ВОЙНЫ </font> приближаются к вам!"
+	"Game_notification_boss_spawn_necronomicon"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>ПУПА И ЛУПА </font> приближаются к вам!"
 	"Game_notification_boss_spawn_nyx"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>ПОВЕЛИТЕЛЬ МОГИЛ </font> приближается к вам!"
 	"Game_notification_boss_spawn_doom"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>ЛЮЦИФЕР </font> приближается к вам!"
 	"Game_notification_boss_spawn_seeker"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>КРОВАВЫЙ ЛОРД </font> приближается к вам!"
@@ -28,6 +28,9 @@
 	"Game_notification_boss_spawn_spectre"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>ЗАБЫТЫЕ ДУШИ </font> приближаются к вам!"
 	"Game_notification_boss_spawn_cursed_warriors"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>ОТРЯД ПРОКЛЯТЫХ </font> приближаются к вам!"
 	"Game_notification_boss_spawn_plague_wagon"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>ЧУМНАЯ ПОВОЗКА </font> приближаются к вам!"
+	"Game_notification_boss_spawn_twins"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>БЛИЗНЕЦЫ БИБА И БОБА </font> приближаются к вам!"
+	"Game_notification_boss_spawn_brotherhood"			"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ОБОРОНЕ ! </font>  <font color='#FF0000'><br>БРАТСТВО </font> приближаются к вам!"
+
 	"Game_notification_boss_final"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К ФИНАЛЬНОЙ ВОЛНЕ ! </font>  <font color='#FF0000'><br>КАЖДЫЕ 10 СЕКУНД ПОЯВЛЯЕТСЯ БОСС </font> удачи !"
 	"Game_notification_infinite_maraphon"				"<font color='#DBA901'><br>ПРИГОТОВЬТЕСЬ К БЕСКОНЕЧНОМУ БОСС МАРАФОНУ ! </font>  <font color='#FF0000'><br>КАЖДЫЕ 60 СЕКУНД ПОЯВЛЯЕТСЯ СЛУЧАЙНЫЙ БОСС , КАЖДЫЙ СЛЕДУЮЩИЙ СИЛЬНЕЕ ПРЕДЫДУЩИХ </font> УДАЧИ !"
 
@@ -685,7 +688,7 @@
 		"DOTA_Tooltip_ability_ursa_overpower_ultimate_buff_duration"					"ДЛИТЕЛЬНОСТЬ:"
 
 //Druid
-		"npc_dota_hero_lone_druid"	"Lone Druid"
+		"npc_dota_hero_lone_druid"	"Лёня-друид(IMBA)"
 		"DOTA_Tooltip_ability_inherit_druid_buff"									"Druid buff"
 		"DOTA_Tooltip_ability_inherit_druid_buff_Description"						"Полукровка, подкинутый медведям на растерзание был принят как дитя и в качестве выплаты долга помогает своим собратьям там, где они этого не ждут! "
 		"DOTA_Tooltip_ability_inherit_druid_buff_dmg_bonus"						"Бонусный урон :"
@@ -2430,14 +2433,14 @@
 	
 		"DOTA_Tooltip_Ability_item_special_storm"                         			"<font color=\"#7FFFD4\">Storm shoulder</font>"
 		"DOTA_Tooltip_ability_item_special_storm_Description"           			"Мистический наплечник из альтернативной реальности..."
-		"DOTA_Tooltip_ability_item_special_storm_bonus_manareg"                        	"БОНУС МАНАРЕГЕН:"
+		"DOTA_Tooltip_ability_item_special_storm_bonus_manareg"                        	"+$mana"
 		"DOTA_Tooltip_ability_item_special_storm_bonus_str"                        	"БОНУС СИЛЫ:"
 		"DOTA_Tooltip_ability_item_special_storm_bonus_agi"                        	"БОНУС ЛОВКОСТИ:"
 		"DOTA_Tooltip_ability_item_special_storm_bonus_int"                        	"БОНУС ИНТЕЛЛЕКТА:"
 
 		"DOTA_Tooltip_Ability_item_special_storm_upgrade"                         			"<font color=\"#7FFFD4\">Storm shoulder</font>"
 		"DOTA_Tooltip_ability_item_special_storm_upgrade_Description"           			"Мистический наплечник из альтернативной реальности... "
-		"DOTA_Tooltip_ability_item_special_storm_upgrade_bonus_manareg"                        	"БОНУС МАНАРЕГЕН:"
+		"DOTA_Tooltip_ability_item_special_storm_upgrade_bonus_manareg"                        	"+$mana"
 		"DOTA_Tooltip_ability_item_special_storm_upgrade_bonus_str"                        	"БОНУС СИЛЫ:"
 		"DOTA_Tooltip_ability_item_special_storm_upgrade_bonus_agi"                        	"БОНУС ЛОВКОСТИ:"
 		"DOTA_Tooltip_ability_item_special_storm_upgrade_bonus_int"                        	"БОНУС ИНТЕЛЛЕКТА:"
@@ -2911,8 +2914,8 @@
 		"DOTA_Tooltip_ability_invoker_wex_alacrity"							"Alacrity"
 		"DOTA_Tooltip_ability_invoker_wex_alacrity_Description"				"Увеличивает скорость атаки своего союзника."
 		"DOTA_Tooltip_ability_invoker_wex_alacrity_duration"						"ДЛИТЕЛЬНОСТЬ:"
-		"DOTA_Tooltip_ability_invoker_wex_alacrity_bonus_attack_speed_base"			"БОНУС СКОРОСТИ АТАКИ:"
-		"DOTA_Tooltip_ability_invoker_wex_alacrity_bonus_attack_speed_multiple"		"%СКОРОСТИ АТАКИ ОТ ЛОВКОСТИ:"
+		"DOTA_Tooltip_ability_invoker_wex_alacrity_base_as"			"БОНУС СКОРОСТИ АТАКИ:"
+		"DOTA_Tooltip_ability_invoker_wex_alacrity_agi_as"		"%СКОРОСТИ АТАКИ ОТ ЛОВКОСТИ:"
 		"DOTA_Tooltip_modifeir_invoker_wex_alacrity_buff"							"Alacrity"
 		"DOTA_Tooltip_modifeir_invoker_wex_alacrity_buff_Description"				"Скорость атаки увеличена."
 
@@ -2974,7 +2977,147 @@
 		"npc_dota_invoker_forged_spirit_custom"		"Дух лавы"
 		"npc_dota_invoker_tornado_custom"			"Дух грома"
 		"npc_dota_invoker_water_spirit_custom"		"Дух воды"
+	
+		"DOTA_Tooltip_Ability_item_special_invoker"                         			"<font color=\"#7FFFD4\">Invoker's armlets</font>"
+		"DOTA_Tooltip_ability_item_special_invoker_Description"           			"Мистические наручи из альтернативной реальности..."
+		"DOTA_Tooltip_ability_item_special_invoker_bonus_manareg"                        	"+$mana"
+		"DOTA_Tooltip_ability_item_special_invoker_bonus_str"                        	"+$str"
+		"DOTA_Tooltip_ability_item_special_invoker_bonus_agi"                        	"+$agi"
+		"DOTA_Tooltip_ability_item_special_invoker_bonus_int"                        	"+$int"
 
+		"DOTA_Tooltip_Ability_item_special_invoker_upgrade"                         			"<font color=\"#7FFFD4\">Invoker's armlets</font>"
+		"DOTA_Tooltip_ability_item_special_invoker_upgrade_Description"           			"Мистические наручи из альтернативной реальности... "
+		"DOTA_Tooltip_ability_item_special_invoker_upgrade_bonus_manareg"                        	"+$mana_regen"
+		"DOTA_Tooltip_ability_item_special_invoker_upgrade_bonus_str"                        	"+$str"
+		"DOTA_Tooltip_ability_item_special_invoker_upgrade_bonus_agi"                        	"+$agi"
+		"DOTA_Tooltip_ability_item_special_invoker_upgrade_bonus_int"                        	"+$int"
+
+//Morphling
+		"npc_dota_hero_"		"hero"
+
+		"DOTA_Tooltip_ability_morphling_morph_agi_custom"							"Morph(agility)"
+		"DOTA_Tooltip_ability_morphling_morph_agi_custom_Description"				"Перекачивает собственные атрибуты между силой и ловкостью!"
+		"DOTA_Tooltip_ability_morphling_morph_agi_custom_bonus_attributes"				"БОНУС ЛОВКОСТИ:"
+		"DOTA_Tooltip_ability_morphling_morph_agi_custom_morph_rate_tooltip"				"СКОРОСТЬ ПЕРЕКАЧКИ:"
+		"DOTA_Tooltip_modifier_morphling_morph_agi_custom"							"Morph(Agility)"
+		"DOTA_Tooltip_modifier_morphling_morph_agi_custom_Description"				""
+
+		"DOTA_Tooltip_ability_morphling_morph_str_custom"							"Morph(Strength)"
+		"DOTA_Tooltip_ability_morphling_morph_str_custom_Description"				"Перекачивает собственные атрибуты между силой и ловкостью!"
+		"DOTA_Tooltip_ability_morphling_morph_str_custom_bonus_attributes"				"БОНУС СИЛЫ:"
+		"DOTA_Tooltip_ability_morphling_morph_str_custom_morph_rate_tooltip"				"СКОРОСТЬ ПЕРЕКАЧКИ:"
+		"DOTA_Tooltip_modifier_morphling_morph_str_custom"							"Morph(Strength)"
+		"DOTA_Tooltip_modifier_morphling_morph_str_custom_Description"				""
+
+		"DOTA_Tooltip_ability_morphling_waveattack"						"Waveattack"
+		"DOTA_Tooltip_ability_morphling_waveattack_Description"			"Атаки имеют шанс вызвать волну."
+		"DOTA_Tooltip_ability_morphling_waveattack_trigger_chance"		"%ШАНС СРАБАТЫВАНИЯ:"
+		"DOTA_Tooltip_ability_morphling_waveattack_damage"				"УРОН:"
+		"DOTA_Tooltip_ability_morphling_waveattack_radius"				"РАДИУС:"
+		"DOTA_Tooltip_ability_morphling_waveattack_bonus_length"		"БОНУС ДАЛЬНОСТЬ"
+//Snapfire
+		"npc_dota_hero_snapfire"		"Snapfire"
+ 
+ 		"DOTA_Tooltip_ability_snapfire_rocket_flare"							"Rocket flare"
+		"DOTA_Tooltip_ability_snapfire_rocket_flare_Description"				"Запускает осветительную ракету, снижая броню врагов в области."
+		"DOTA_Tooltip_ability_snapfire_rocket_flare_duration"				"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_snapfire_rocket_flare_radius"					"РАДИУС:"
+		"DOTA_Tooltip_ability_snapfire_rocket_flare_armor_decrease"			"СНИЖЕНИЕ БРОНИ:"
+ 		"DOTA_Tooltip_modifier_snapfire_rocket_flare"							"Rocket flare"
+		"DOTA_Tooltip_modifier_snapfire_rocket_flare_Description"				"Броня сниженна."
+ 
+ 		"DOTA_Tooltip_ability_snapfire_gunner_on"							"Gunner on"
+		"DOTA_Tooltip_ability_snapfire_gunner_on_Description"				"<h1> Активная: Gunner on </h1>Переходит в режим пулёмета, нанося серию быстрых ударов ! \n <h1> Пассивная: Lil shredder</h1> Периодически атакует случайную цель в радиусе."
+		"DOTA_Tooltip_ability_snapfire_gunner_on_attack_radius"				"РАДИУС АТАКИ:"
+ 		"DOTA_Tooltip_ability_snapfire_gunner_on_attack_interval"			"ИНТЕРВАЛ АТАКИ:"
+ 		"DOTA_Tooltip_ability_snapfire_gunner_on_buffed_attacks"			"КОЛИЧЕСТВО АТАК:"
+ 		"DOTA_Tooltip_ability_snapfire_gunner_on_buff_duration"				"ДЛИТЕЛЬНОСТЬ:"
+ 		"DOTA_Tooltip_modifier_snapfire_gunner_on"							"Gunner on"
+		"DOTA_Tooltip_modifier_snapfire_gunner_on_Description"				"ПИУ ПИУ ПИУ"
+ 
+ 		"DOTA_Tooltip_ability_snapfire_firesnap_cookies"							"Firesnap cookies"
+		"DOTA_Tooltip_ability_snapfire_firesnap_cookies_Description"				"Кормит союзника, исцеляет его раны и усиливает его!"
+		"DOTA_Tooltip_ability_snapfire_firesnap_cookies_buff_duration"				"ДЛИТЕЛЬНОСТЬ БАФА:"
+		"DOTA_Tooltip_ability_snapfire_firesnap_cookies_range_buffer"				"ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:"
+		"DOTA_Tooltip_ability_snapfire_firesnap_cookies_cookies_count"				"КОЛИЧЕСТВО ПЕЧЕНЕК:"
+		"DOTA_Tooltip_ability_snapfire_firesnap_cookies_base_heal"				"БАЗОВОЕ ЛЕЧЕНИЕ:"
+		"DOTA_Tooltip_ability_snapfire_firesnap_cookies_heal_pct"				"%ЛЕЧЕНИЕ:"
+		"DOTA_Tooltip_ability_snapfire_firesnap_cookies_bonus_dmg"				"%УРОН ЗА СТАК:"
+		"DOTA_Tooltip_ability_snapfire_firesnap_cookies_bonus_ms"				"%ПЕРЕДВИЖЕНИЕ ЗА СТАК:"
+ 		"DOTA_Tooltip_modifier_snapfire_firesnap_cookies"							"Firesnap cookies"
+		"DOTA_Tooltip_modifier_snapfire_firesnap_cookies_Description"				"You are pumped!"
+  
+ 		"DOTA_Tooltip_ability_snapfire_mortimer_kiss"							"Mortimer kiss"
+		"DOTA_Tooltip_ability_snapfire_mortimer_kiss_Description"			"Мортимер всегда может поддержать своим огоньком !"
+		"DOTA_Tooltip_ability_snapfire_mortimer_kiss_trigger_count"			"АТАК ДЛЯ СРАБАТЫВАНИЯ::"
+		"DOTA_Tooltip_ability_snapfire_mortimer_kiss_trigger_radius"			"РАДИУС СРАБАТЫВАНИЯ:"
+		"DOTA_Tooltip_ability_snapfire_mortimer_kiss_impact_radius"				"РАДИУС ПОПАДАНИЯ:"
+		"DOTA_Tooltip_ability_snapfire_mortimer_kiss_damage_per_impact"				"УРОН ОТ ПАПАДАНИЯ:"
+		"DOTA_Tooltip_ability_snapfire_mortimer_kiss_burn_ground_duration"		"ДЛИТЕЛЬНОСТЬ ГОРЕНИЯ:"
+		"DOTA_Tooltip_ability_snapfire_mortimer_kiss_burn_damage"				"УРОН ГОРЕНИЯ:"
+		"DOTA_Tooltip_modifier_snapfire_mortimer_kiss_passive"							"Mortimer kiss"
+		"DOTA_Tooltip_modifier_snapfire_mortimer_kiss_passive_Description"				"Вы горите!"
+  
+ 		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss"							"Mortimer ultra kiss"
+		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_Description"				"Собирает всю свою ману, чтобы сделать один мощный выстрел!"
+		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_mana_convert_damage"			"%МАНЫ В УРОН:"
+		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_impact_radius"				"РАДИУС ПОПАДАНИЯ:"
+		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_damage_per_impact"				"УРОН ОТ ПАПАДАНИЯ:"
+		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_burn_ground_duration"		"ДЛИТЕЛЬНОСТЬ ГОРЕНИЯ:"
+		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_burn_damage"				"УРОН ГОРЕНИЯ:"
+		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_move_slow_pct"			"%ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:"
+		"DOTA_Tooltip_modifier_snapfire_mortimer_ultra_kiss"							"Mortimer ultra kiss"
+		"DOTA_Tooltip_modifier_snapfire_mortimer_ultra_kiss_Description"				"Ultra kiss"
+  
+ 		"DOTA_Tooltip_ability_snapfire_combat_feel"							"Combat feel"
+		"DOTA_Tooltip_ability_snapfire_combat_feel_Description"				"Усиливает своих союзников!"
+		"DOTA_Tooltip_ability_snapfire_combat_feel_aura_radius"				"РАДИУС АУРЫ:"
+		"DOTA_Tooltip_ability_snapfire_combat_feel_bonus_dmg"				"%БОНУС УРОНА:"
+		"DOTA_Tooltip_ability_snapfire_combat_feel_bomus_spell"				"%УСИЛЕНИЕ СПОСОБНОСТЕЙ:"
+ 		"DOTA_Tooltip_modifier_snapfire_combat_feel"							"Combat feel"
+		"DOTA_Tooltip_modifier_snapfire_combat_feel_Description"				"Значительное усиление урона!"
+//Bloodseeker
+		"npc_dota_hero_"		"hero"
+
+		"DOTA_Tooltip_ability_bloodseeker_blood_taker"							"Blood taker"
+		"DOTA_Tooltip_ability_bloodseeker_blood_taker_Description"				"Каждое убийство восстанавливает здоровье героя."
+		"DOTA_Tooltip_ability_bloodseeker_blood_taker_heal_pct"				"%ЛЕЧЕНИЕ ОТ ЗДОРОВЬЯ:"
+
+		"DOTA_Tooltip_ability_bloodseeker_bloodrage_custom"							"Blood rage"
+		"DOTA_Tooltip_ability_bloodseeker_bloodrage_custom_Description"				"Увеличивает исходящий и входящий урон цели."
+		"DOTA_Tooltip_ability_bloodseeker_bloodrage_custom_duration"				"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_bloodseeker_bloodrage_custom_bonus_out_dmg"				"%БОНУС ИСХОДЯЩЕГО УРОНА:"
+		"DOTA_Tooltip_ability_bloodseeker_bloodrage_custom_bonus_self_dmg"				"%БОНУС ВХОДЯЩЕГО УРОНА"
+		"DOTA_Tooltip_modifier_bloodseeker_bloodrage_custom"							"Blood rage"
+		"DOTA_Tooltip_modifier_bloodseeker_bloodrage_custom_Description"				""
+
+		"DOTA_Tooltip_ability_bloodseeker_bloodrite"							"Blood rite"
+		"DOTA_Tooltip_ability_bloodseeker_bloodrite_Description"				"Создаёт ритуальный круг, запрещающий использовать заклинания и снижающий броню."
+		"DOTA_Tooltip_ability_bloodseeker_bloodrite_radius"				"РАДИУС:"
+		"DOTA_Tooltip_ability_bloodseeker_bloodrite_debuff_duration"	"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_bloodseeker_bloodrite_armor_decrease"		"СНИЖЕНИЕ БРОНИ:"
+		"DOTA_Tooltip_modifier_bloodseeker_bloodrite"							"Blood rite"
+		"DOTA_Tooltip_modifier_bloodseeker_bloodrite_Description"				""
+
+		"DOTA_Tooltip_ability_bloodseeker_blood_rapid"							"Blood rapid"
+		"DOTA_Tooltip_ability_bloodseeker_blood_rapid_Description"				"Увеличивается скорость передвижения."
+		"DOTA_Tooltip_ability_bloodseeker_blood_rapid_movespeed_bonus_pct"				"%БОНУС СКОРОСТИ ПЕРЕДВИЖЕНИЯ:"
+
+		"DOTA_Tooltip_ability_bloodseeker_blood_strength"							"Blood strength"
+		"DOTA_Tooltip_ability_bloodseeker_blood_strength_Description"				"<h1>Активная: Blood desiccation </h1>При активации снижает здоровье до 1, но не позволяет умереть.\n<h1>Пассивная: Blood strength </h1>Каждый убитый враг увеличивает ловкость."
+		"DOTA_Tooltip_ability_bloodseeker_blood_strength_duration"				"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_bloodseeker_blood_strength_agi_per_kill"			"ЛОВКОСТЬ ЗА УБИЙСТВО:"
+		"DOTA_Tooltip_modifier_bloodseeker_blood_strength"							"Blood strength(stacks)"
+		"DOTA_Tooltip_modifier_bloodseeker_blood_strength_Description"				""
+		"DOTA_Tooltip_modifier_bloodseeker_blood_strength_buff"							"Blood strength"
+		"DOTA_Tooltip_modifier_bloodseeker_blood_strength_buff_Description"				"Ты не можешь умереть!"
+
+		"DOTA_Tooltip_ability_bloodseeker_bloodthirst"							"Blood thrirst"
+		"DOTA_Tooltip_ability_bloodseeker_bloodthirst_Description"				"Жажда крови заставляет героя двигаться и атаковать намного быстрее!"
+		"DOTA_Tooltip_ability_bloodseeker_bloodthirst_bat_decrease"				"БАЗОВОЕ ВРЕМЯ АТАКИ:"
+		"DOTA_Tooltip_ability_bloodseeker_bloodthirst_movespeed_bonus"			"БОНУС СКОРОСТИ ПЕРЕДВИЖЕНИЯ:"
+		"DOTA_Tooltip_modifier_bloodseeker_bloodthirst"							"Blood thrirst"
+		"DOTA_Tooltip_modifier_bloodseeker_bloodthirst_Description"				"Жажда крови заставляет двигаться!"
 //Hero
 		"npc_dota_hero_"		"hero"
 
@@ -2988,6 +3131,39 @@
 		"DOTA_Tooltip_ability_"							"name"
 		"DOTA_Tooltip_ability__Description"				"description"
 		"DOTA_Tooltip_ability__"				""
+
+		"DOTA_Tooltip_modifier_roshan_second_chance"						"Second chance"
+		"DOTA_Tooltip_modifier_roshan_second_chance_Description"				"При получении критического здоровья, становится неуязвимым и восстанавливает часть здоровья."
+		"DOTA_Tooltip_modifier_roshan_second_chance_effect"					"Second chance effect"
+		"DOTA_Tooltip_modifier_roshan_second_chance_effect_Description"				"Временно неуязвим и регенерерует"
+
+		"DOTA_Tooltip_ability_brotherhood_death_madness"							"Death madness"
+		"DOTA_Tooltip_ability_brotherhood_death_madness_Description"				"При убийстве младшего брата старшие усиливаются многократно !"
+		"DOTA_Tooltip_ability_brotherhood_death_madness_bonus_dmg"				"%БОНУС УРОНА:"
+		"DOTA_Tooltip_ability_brotherhood_death_madness_bonus_as"				"%БОНУС СКОРОСТИ ПЕРЕДВИЖЕНИЯ:"
+		"DOTA_Tooltip_ability_brotherhood_death_madness_bonus_ms"				"БОНУС СКОРОСТИ АТАКИ:"
+		"DOTA_Tooltip_modifier_brotherhood_death_madness_buff"							"Death madness"
+		"DOTA_Tooltip_modifier_brotherhood_death_madness_buff_Description"				""
+
+		"DOTA_Tooltip_ability_twins_reincarnation"							"Twins reincarnation"
+		"DOTA_Tooltip_ability_twins_reincarnation_Description"				"Жизнь близнецов зависит друг от друга, не убив одного второй продолжит возрождаться и усиливаться !"
+		"DOTA_Tooltip_ability_twins_reincarnation_recover_duration"			"ДЛИТЕЛЬНОСТЬ ВОЗРОЖДЕНИЯ:"
+		"DOTA_Tooltip_ability_twins_reincarnation_bonus_dmg"				"%БОНУС УРОНА:"
+		"DOTA_Tooltip_ability_twins_reincarnation_bonus_as"					"БОНУС СКОРОСТИ АТАКИ:"
+		"DOTA_Tooltip_ability_twins_reincarnation_bonus_hp_pct"				"%БОНУС ЗДОРОВЬЯ:"
+		"DOTA_Tooltip_modifier_twins_reincarnation_passive"							"Twins stacks"
+		"DOTA_Tooltip_modifier_twins_reincarnation_passive_Description"				""
+
+		"DOTA_Tooltip_ability_treant_recover"							"Treant recover"
+		"DOTA_Tooltip_ability_treant_recover_Description"				"Получая критический урон стражник превращается в дерево, чтобы восстановить свои силы."
+		"DOTA_Tooltip_ability_treant_recover_recover_duration"			"ДЛИТЕЛЬНОСТЬ ВОССТАНОВЛЕНИЯ:"
+
+		"DOTA_Tooltip_ability_treant_rooting"							"Rooting"
+		"DOTA_Tooltip_ability_treant_rooting_Description"				"Стражник оплетает своих жертв корнями, чем дольше жертва находится под этим эффектом тем больше получает урона."
+		"DOTA_Tooltip_ability_treant_rooting_aura_radius"				"РАДИУС:"
+		"DOTA_Tooltip_ability_treant_rooting_aura_dps"				"УРОН В СЕКУНДУ:"
+		"DOTA_Tooltip_modifier_treant_rooting_aura"							"Rooting"
+		"DOTA_Tooltip_modifier_treant_rooting_aura_Description"				"Попробуй убеги!"
 
 		"DOTA_Tooltip_ability_explosive_squad_boom"							"BOOM"
 		"DOTA_Tooltip_ability_explosive_squad_boom_Description"				"Взрывается, нанося огромный урон в радиусе !"
@@ -3137,12 +3313,12 @@
 		"DOTA_Tooltip_ability_penguin_sledding_ride_Description"				"Может немного покатаемся на пингвинах))?"
 		"DOTA_Tooltip_ability_penguin_sledding_ride_max_sled_speed"				"МАКСИМАЛЬНАЯ СКОРОСТЬ:"
 
-		"DOTA_Tooltip_ability_tidehunter_chaos_strike"				"Chaos Strike"
-		"DOTA_Tooltip_ability_tidehunter_chaos_strike_Description"	"Герой наносит критический удар случайной силы и восстанавливает себе здоровье на %lifesteal%%% от нанесённого урона."
-		"DOTA_Tooltip_ability_tidehunter_chaos_strike_Lore"			"Неудержимая мощь всадника сокрушает даже самые толстые доспехи тех, кто осмелился выступить против него."
-		"DOTA_Tooltip_ability_tidehunter_chaos_strike_crit_chance"	"%ШАНС КРИТИЧЕСКОЙ АТАКИ:"
-		"DOTA_Tooltip_ability_tidehunter_chaos_strike_crit_damage"	"%КРИТИЧЕСКИЙ УРОН:"
-		"DOTA_Tooltip_ability_tidehunter_chaos_strike_lifesteal"	"%CRITICAL LIFESTEAL:"
+		"DOTA_Tooltip_ability_tidehunter_mega_punch"				"Chaos Strike"
+		"DOTA_Tooltip_ability_tidehunter_mega_punch_Description"	"Герой наносит критический удар случайной силы и восстанавливает себе здоровье на %lifesteal%%% от нанесённого урона."
+		"DOTA_Tooltip_ability_tidehunter_mega_punch_Lore"			"Неудержимая мощь всадника сокрушает даже самые толстые доспехи тех, кто осмелился выступить против него."
+		"DOTA_Tooltip_ability_tidehunter_mega_punch_crit_chance"	"%ШАНС КРИТИЧЕСКОЙ АТАКИ:"
+		"DOTA_Tooltip_ability_tidehunter_mega_punch_crit_damage"	"%КРИТИЧЕСКИЙ УРОН:"
+		"DOTA_Tooltip_ability_tidehunter_mega_punch_lifesteal"	"%CRITICAL LIFESTEAL:"
 
 		"DOTA_Tooltip_ability_tidehunter_tidebringer"										"Tidebringer"
 		"DOTA_Tooltip_ability_tidehunter_tidebringer_Description"							"Своим легендарным мечом охотник бьёт врагов в большой площади перед собой, нанося увеличенный урон."
@@ -3908,8 +4084,8 @@
 		"npc_dota_doom_boss"															"ЛЮЦИФЕР"	
 		"npc_dota_doom_minion"															"Прислужник Люцифера"	
 		"npc_dota_nyx_boss"															"ПОВЕЛИТЕЛЬ МОГИЛ"	
-		"npc_dota_necronomicon_warrior_boss"															"НЕКРО-ВОИН"	
-		"npc_dota_necronomicon_archer_boss"															"НЕКРО-ЛУЧНИК"	
+		"npc_dota_necronomicon_warrior_boss"															"ЛУПА"	
+		"npc_dota_necronomicon_archer_boss"															"ПУПА"	
 		"npc_dota_dead_witch"															"ВЕДЬМА"	
 		"forest_dota_dead_ghost"														"Прислужница ведьмы"	
 		"npc_dota_golem_boss"															"ГОЛЕМ ХАОСА"	
@@ -3927,6 +4103,15 @@
 
 		
 //Units
+		"npc_dota_twins_1"			"Биба"
+		"npc_dota_twins_2"			"Боба"
+
+		"npc_dota_brotherhood_1"			"Даныла"
+		"npc_dota_brotherhood_2"			"Жора"
+		"npc_dota_brotherhood_3"			"Пашко"
+		"npc_dota_brotherhood_4"			"Сашко"
+
+		"npc_dota_treant_guardian"										"Древний трент"
 		"npc_explosive_squad_1"											"Взрывной конь"
 		"npc_explosive_squad_2"											"Взрывной жучара"
 		"npc_dota_midas_acolyte"											"Последователь мидаса"
@@ -4140,12 +4325,54 @@
 		"npc_dota_flag2"															"Контрольная точка"
 //=================================================================================================================
 //=================================================================================================================
-// Items
+//Items
 //=================================================================================================================
 //=================================================================================================================
 	"DOTA_Tooltip_ability_"							"name"
 	"DOTA_Tooltip_ability__Description"				"description"
 	"DOTA_Tooltip_ability__"				""
+
+	"DOTA_Tooltip_ability_item_leaf_1"							"Leaf of nature"
+	"DOTA_Tooltip_ability_item_leaf_1_Description"				"Листочек, дающий защиту природы."
+	"DOTA_Tooltip_ability_item_leaf_1_bonus_health"				"+$health"
+	"DOTA_Tooltip_ability_item_leaf_1_bonus_regen"				"+$hp_regen"
+	"DOTA_Tooltip_ability_item_leaf_1_bonus_armor"				"+$armor"
+
+	"DOTA_Tooltip_ability_item_leaf_2"							"Leaf of nature"
+	"DOTA_Tooltip_ability_item_leaf_2_Description"				"Листочек, дающий защиту природы."
+	"DOTA_Tooltip_ability_item_leaf_2_bonus_health"				"+$health"
+	"DOTA_Tooltip_ability_item_leaf_2_bonus_regen"				"+$hp_regen"
+	"DOTA_Tooltip_ability_item_leaf_2_bonus_armor"				"+$armor"
+
+	"DOTA_Tooltip_ability_item_leaf_3"							"Leaf of nature"
+	"DOTA_Tooltip_ability_item_leaf_3_Description"				"Листочек, дающий защиту природы."
+	"DOTA_Tooltip_ability_item_leaf_3_bonus_health"				"+$health"
+	"DOTA_Tooltip_ability_item_leaf_3_bonus_regen"				"+$hp_regen"
+	"DOTA_Tooltip_ability_item_leaf_3_bonus_armor"				"+$armor"
+
+	"DOTA_Tooltip_ability_item_leaf_4"							"Leaf of nature"
+	"DOTA_Tooltip_ability_item_leaf_4_Description"				"Листочек, дающий защиту природы."
+	"DOTA_Tooltip_ability_item_leaf_4_bonus_health"				"+$health"
+	"DOTA_Tooltip_ability_item_leaf_4_bonus_regen"				"+$hp_regen"
+	"DOTA_Tooltip_ability_item_leaf_4_bonus_armor"				"+$armor"
+
+	"DOTA_Tooltip_ability_item_leaf_5"							"Leaf of nature"
+	"DOTA_Tooltip_ability_item_leaf_5_Description"				"Листочек, дающий защиту природы."
+	"DOTA_Tooltip_ability_item_leaf_5_bonus_health"				"+$health"
+	"DOTA_Tooltip_ability_item_leaf_5_bonus_regen"				"+$hp_regen"
+	"DOTA_Tooltip_ability_item_leaf_5_bonus_armor"				"+$armor"
+
+	"DOTA_Tooltip_ability_item_leaf_6"							"Leaf of nature"
+	"DOTA_Tooltip_ability_item_leaf_6_Description"				"Листочек, дающий защиту природы."
+	"DOTA_Tooltip_ability_item_leaf_6_bonus_health"				"+$health"
+	"DOTA_Tooltip_ability_item_leaf_6_bonus_regen"				"+$hp_regen"
+	"DOTA_Tooltip_ability_item_leaf_6_bonus_armor"				"+$armor"
+
+	"DOTA_Tooltip_ability_item_leaf_7"							"Leaf of nature"
+	"DOTA_Tooltip_ability_item_leaf_7_Description"				"Листочек, дающий защиту природы."
+	"DOTA_Tooltip_ability_item_leaf_7_bonus_health"				"+$health"
+	"DOTA_Tooltip_ability_item_leaf_7_bonus_regen"				"+$hp_regen"
+	"DOTA_Tooltip_ability_item_leaf_7_bonus_armor"				"+$armor"
 
 	"DOTA_Tooltip_ability_item_radiance_blade_1"							"radiance_blade"
 	"DOTA_Tooltip_ability_item_radiance_blade_1_Description"				"Сияющий клинок, ослепляет и поджигает своих врагов!"
@@ -4597,7 +4824,7 @@
 	"DOTA_Tooltip_ability_itwm_wisp_Description"				"Отдай мне свою душу!"
 
 	"DOTA_Tooltip_ability_item_living_armor"							"Nature armor"
-	"DOTA_Tooltip_ability_item_living_armor_Description"				"<h1>Активная : Живая броня</h1> Окутывает владельца живой броней, увеличивая регенерацию и блокируя часть физического урона !"
+	"DOTA_Tooltip_ability_item_living_armor_Description"				"<h1>Активная : Живая броня</h1> Окутывает владельца живой броней, увеличивая регенерацию и блокируя часть физического урона !\n <h1> Пассивная: Единение с природой </h1> Позволяет проходить сквозь деревья."
 	"DOTA_Tooltip_ability_item_living_armor_bonus_health"				"+$health"
 	"DOTA_Tooltip_ability_item_living_armor_bonus_regen"				"+$hp_regen"
 	"DOTA_Tooltip_ability_item_living_armor_bonus_armor"				"+$armor"
@@ -4953,13 +5180,15 @@
 		"DOTA_Tooltip_ability_item_kaya1_lore"	"Посох прославленной волшебницы, пропавший много тысячелетий назад."
 		"DOTA_Tooltip_ability_item_kaya1_bonus_intellect"	"+$int"
 		"DOTA_Tooltip_ability_item_kaya1_spell_amp"	"%+к урону от способностей"
-		"DOTA_Tooltip_ability_item_kaya1_manacost_reduction"	"%Уменьшение расхода и потери маны:"
+		"DOTA_Tooltip_ability_item_kaya1_mana_regen_multiplier"			"%+к усилению восстановления маны"
+		"DOTA_Tooltip_ability_item_kaya1_spell_lifesteal_amp"			"%+к усилению вампиризма от заклинаний"
 
 		"DOTA_Tooltip_Ability_item_kaya2"	"Kaya lvl3"
 		"DOTA_Tooltip_ability_item_kaya2_lore"	"Посох прославленной волшебницы, пропавший много тысячелетий назад."
 		"DOTA_Tooltip_ability_item_kaya2_bonus_intellect"	"+$int"
 		"DOTA_Tooltip_ability_item_kaya2_spell_amp"	"%+к урону от способностей"
-		"DOTA_Tooltip_ability_item_kaya2_manacost_reduction"	"%Уменьшение расхода и потери маны:"
+		"DOTA_Tooltip_ability_item_kaya2_mana_regen_multiplier"			"%+к усилению восстановления маны"
+		"DOTA_Tooltip_ability_item_kaya2_spell_lifesteal_amp"			"%+к усилению вампиризма от заклинаний"
 
 		"DOTA_Tooltip_Ability_item_octarine_core1"	"Octarine Core "	
 		"DOTA_Tooltip_Ability_item_octarine_core"	"Octarine Core lvl2"	
@@ -5030,6 +5259,9 @@
 		"DOTA_Tooltip_Ability_item_axe_essence"				"<font color=\"#FF4500\"> Кристалл души (Warrior)</font>"	
 		"DOTA_Tooltip_ability_item_axe_essence_Description"	"Этот кристалл содержит в себе силу легендарного героя !<br><br><font color='#FFD700'>КОМПЛЕКТ ПОЛУБОГА</font></h1>"
 
+		"DOTA_Tooltip_Ability_item_bloodseeker_essence"				"<font color=\"#FF4545\"> Кристалл души (Bloodseeker)</font>"	
+		"DOTA_Tooltip_ability_item_bloodseeker_essence_Description"	"Этот кристалл содержит в себе силу легендарного героя !<br><br><font color='#FFD700'>КОМПЛЕКТ ПОЛУБОГА</font></h1>"
+
 		"DOTA_Tooltip_Ability_item_invoker_essence"				"<font color=\"#FFFF00\"> Кристалл души (Invoker)</font>"	
 		"DOTA_Tooltip_ability_item_invoker_essence_Description"	"Этот кристалл содержит в себе силу легендарного героя !<br><br><font color='#FFD700'>КОМПЛЕКТ ПОЛУБОГА</font></h1>"
 
@@ -5042,6 +5274,9 @@
 		"DOTA_Tooltip_Ability_item_tangin_essence"				"<font color=\"#E0FFFF\"> Кристалл души (Thanh Giong)</font>"	
 		"DOTA_Tooltip_ability_item_tangin_essence_Description"	"Этот кристалл содержит в себе силу легендарного героя !<br><br><font color='#FFD700'>КОМПЛЕКТ ПОЛУБОГА</font></h1>"
 
+		"DOTA_Tooltip_Ability_item_morphling_essence"				"<font color=\"#00FFFF\"> Кристалл души (Morphling)</font>"	
+		"DOTA_Tooltip_ability_item_morphling_essence_Description"	"Этот кристалл содержит в себе силу легендарного героя !<br><br><font color='#FFD700'>КОМПЛЕКТ ПОЛУБОГА</font></h1>"
+
 		"DOTA_Tooltip_Ability_item_tb_essence"				"<font color=\"#000000\"> Кристалл души (Demon knight)</font>"	
 		"DOTA_Tooltip_ability_item_tb_essence_Description"	"Этот кристалл содержит в себе силу легендарного героя !<br><br><font color='#FFD700'>КОМПЛЕКТ ПОЛУБОГА</font></h1>"
 
@@ -5050,7 +5285,7 @@
 
 		"DOTA_Tooltip_Ability_item_ultra_boots"					"<font color=\"#FFA07A\">Ультра ботинки</font>"		
 		"DOTA_Tooltip_ability_item_ultra_boots_Description"		"<h1> Активная: Телепортация</h1> Даёт возможность переместиться в любую точку карты !"
-		"DOTA_Tooltip_ability_item_ultra_boots_bonus_movement_speed"			"БОНУС СКОРОСТИ ПЕРЕДВИЖЕНИЯ :"
+		"DOTA_Tooltip_ability_item_ultra_boots_bonus_movement_speed"           "+$move_speed"
 		"DOTA_Tooltip_ability_item_ultra_boots_bonus_dmg"				"+$damage"
 		"DOTA_Tooltip_ability_item_ultra_boots_bonus_all_stats"			"+$all"
 
@@ -6214,6 +6449,7 @@
 		"DOTA_Tooltip_ability_item_imba_dagon_6_Lore"                               "Волшебная палочка, которая становится тем сильнее, чем дольше она используется. Позволяет магу срывать с кончиков пальцев волшебный заряд."
 		"DOTA_Tooltip_ability_item_imba_dagon_6_damage"                             "УРОН:"
 		"DOTA_Tooltip_ability_item_imba_dagon_6_bounce_damage"                      "УРОН ОТСКОКА:"
+		"DOTA_Tooltip_ability_item_imba_dagon_6_damage_int"                      "%УРОН ОТ ИНТЕЛЛЕКТА:"
 		"DOTA_Tooltip_ability_item_imba_dagon_6_bounce_range"                       "РАДИУС ОТСКОКА:"
 		"DOTA_Tooltip_ability_item_imba_dagon_6_bonus_intellect"                    "+$int"
 		"DOTA_Tooltip_ability_item_imba_dagon_6_bonus_all_stats"                    "+$all"
@@ -6224,6 +6460,7 @@
 		"DOTA_Tooltip_ability_item_imba_dagon_7_Description"                        "<h1>Активная: Wild Burst</h1> Выстреливает лучом магической энергии,<font color='#FF7800'> который отскакивает от основной цели по всем врагам в радиусе %bounce_range%. Наносит %damage% основной цели и %bounce_damage% за отскок.</font> Улучается."
 		"DOTA_Tooltip_ability_item_imba_dagon_7_Lore"                               "Волшебная палочка, которая становится тем сильнее, чем дольше она используется. Позволяет магу срывать с кончиков пальцев волшебный заряд."
 		"DOTA_Tooltip_ability_item_imba_dagon_7_damage"                             "УРОН:"
+		"DOTA_Tooltip_ability_item_imba_dagon_7_damage_int"                      "%УРОН ОТ ИНТЕЛЛЕКТА:"
 		"DOTA_Tooltip_ability_item_imba_dagon_7_bounce_damage"                      "УРОН ОТСКОКА:"
 		"DOTA_Tooltip_ability_item_imba_dagon_7_bounce_range"                       "РАДИУС ОТСКОКА:"
 		"DOTA_Tooltip_ability_item_imba_dagon_7_bonus_intellect"                    "+$int"
@@ -6235,6 +6472,7 @@
 		"DOTA_Tooltip_ability_item_imba_dagon_8_Description"                        "<h1>Активная: Wild Burst</h1> Выстреливает лучом магической энергии,<font color='#FF7800'> который отскакивает от основной цели по всем врагам в радиусе %bounce_range%. Наносит %damage% основной цели и %bounce_damage% за отскок.</font> Улучается."
 		"DOTA_Tooltip_ability_item_imba_dagon_8_Lore"                               "Волшебная палочка, которая становится тем сильнее, чем дольше она используется. Позволяет магу срывать с кончиков пальцев волшебный заряд."
 		"DOTA_Tooltip_ability_item_imba_dagon_8_damage"                             "УРОН:"
+		"DOTA_Tooltip_ability_item_imba_dagon_8_damage_int"                      "%УРОН ОТ ИНТЕЛЛЕКТА:"
 		"DOTA_Tooltip_ability_item_imba_dagon_8_bounce_damage"                      "УРОН ОТСКОКА:"
 		"DOTA_Tooltip_ability_item_imba_dagon_8_bounce_range"                       "РАДИУС ОТСКОКА:"
 		"DOTA_Tooltip_ability_item_imba_dagon_8_bonus_intellect"                    "+$int"
@@ -6246,6 +6484,7 @@
 		"DOTA_Tooltip_ability_item_imba_dagon_9_Description"                        "<h1>Активная: Wild Burst</h1> Выстреливает лучом магической энергии,<font color='#FF7800'> который отскакивает от основной цели по всем врагам в радиусе %bounce_range%. Наносит %damage% основной цели и %bounce_damage% за отскок.</font> Улучается."
 		"DOTA_Tooltip_ability_item_imba_dagon_9_Lore"                               "Волшебная палочка, которая становится тем сильнее, чем дольше она используется. Позволяет магу срывать с кончиков пальцев волшебный заряд."
 		"DOTA_Tooltip_ability_item_imba_dagon_9_damage"                             "УРОН:"
+		"DOTA_Tooltip_ability_item_imba_dagon_9_damage_int"                      "%УРОН ОТ ИНТЕЛЛЕКТА:"
 		"DOTA_Tooltip_ability_item_imba_dagon_9_bounce_damage"                      "УРОН ОТСКОКА:"
 		"DOTA_Tooltip_ability_item_imba_dagon_9_bounce_range"                       "РАДИУС ОТСКОКА:"
 		"DOTA_Tooltip_ability_item_imba_dagon_9_bonus_intellect"                    "+$int"
@@ -6257,6 +6496,7 @@
 		"DOTA_Tooltip_ability_item_imba_dagon_10_Description"                       "<h1>Активная: Wild Burst</h1> Выстреливает лучом магической энергии,<font color='#FF7800'> который отскакивает от основной цели по всем врагам в радиусе %bounce_range%. Наносит %damage% основной цели и %bounce_damage% за отскок.</font> Улучается."
 		"DOTA_Tooltip_ability_item_imba_dagon_10_Lore"                              "Волшебная палочка, которая становится тем сильнее, чем дольше она используется. Позволяет магу срывать с кончиков пальцев волшебный заряд."
 		"DOTA_Tooltip_ability_item_imba_dagon_10_damage"                            "УРОН:"
+		"DOTA_Tooltip_ability_item_imba_dagon_10_damage_int"                      "%УРОН ОТ ИНТЕЛЛЕКТА:"
 		"DOTA_Tooltip_ability_item_imba_dagon_10_bounce_damage"                     "УРОН ОТСКОКА:"
 		"DOTA_Tooltip_ability_item_imba_dagon_10_bounce_range"                      "РАДИУС ОТСКОКА:"
 		"DOTA_Tooltip_ability_item_imba_dagon_10_bonus_intellect"                   "+$int"
@@ -7570,7 +7810,7 @@
 		"DOTA_Tooltip_modifier_item_imba_yasha_stacks_Description"                  "Gaining %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% bonus attack speed."
 		
 		"заголовок"				"<h1> заголовок </h1>"
-		"подсказка"				"<font color='#ff9966'><em> подсказка </em> </font>"
+		"подсказка"				"\n<font color='#ff9966'><em> подсказка </em> </font>"
 		"цветной текст"			"<font color='#FFD700'> текст  </font>"
 
 		"DOTA_Tooltip_Ability_"                         			"name"

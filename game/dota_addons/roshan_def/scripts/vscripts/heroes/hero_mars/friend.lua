@@ -20,6 +20,7 @@ function MarsFriendStart(keys)
 	local point = caster:GetAbsOrigin()
 	
 	caster.friend = CreateUnitByName(unit_name, point + RandomVector(300), true, caster, caster, caster:GetTeamNumber())
+	caster.friend:AddNewModifier(caster, ability, "modifier_phased", nil)
 	EmitSoundOn("hello_there", caster)
 	local effect = "particles/econ/events/ti6/teleport_start_ti6_lvl3_shield.vpcf"
 	local pfx = ParticleManager:CreateParticle(effect, PATTACH_ABSORIGIN_FOLLOW, caster.friend)

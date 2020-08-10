@@ -52,16 +52,17 @@ end
 function modifier_invoker_exort_fire_enchant_buff:OnCreated()
     if IsClient() then return end 
     local parent = self:GetParent()
+    local point = parent:GetAbsOrigin()
 
     local particle = "particles/econ/items/warlock/warlock_golem_dark_curator/golem_ambient_dark_curator.vpcf"
     local pfx = ParticleManager:CreateParticle(particle, PATTACH_ABSORIGIN, parent)
-    ParticleManager:SetParticleControlEnt(pfx, 0, parent, PATTACH_POINT_FOLLOW, "attach_head", parent:GetAbsOrigin(), true)
-    ParticleManager:SetParticleControlEnt(pfx, 10, parent, PATTACH_POINT_FOLLOW, "attach_attack1", parent:GetAbsOrigin(), true)
-    ParticleManager:SetParticleControlEnt(pfx, 11, parent, PATTACH_POINT_FOLLOW, "attach_attack2", self:GetParent():GetAbsOrigin(), true)
+    ParticleManager:SetParticleControlEnt(pfx, 0, parent, PATTACH_POINT_FOLLOW, "attach_head", point, true)
+    ParticleManager:SetParticleControlEnt(pfx, 10, parent, PATTACH_POINT_FOLLOW, "attach_attack1", point, true)
+    ParticleManager:SetParticleControlEnt(pfx, 11, parent, PATTACH_POINT_FOLLOW, "attach_attack2", point, true)
     self:AddParticle(pfx, true, false, 3, true, false)
     
 end 
 
 function modifier_invoker_exort_fire_enchant_buff:OnRefresh()
-    self:OnCreated()
+--    self:OnCreated()
 end 

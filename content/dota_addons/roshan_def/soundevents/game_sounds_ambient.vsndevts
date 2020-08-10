@@ -1,0 +1,1740 @@
+
+"auf_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/auf_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"auf_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/auf_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"durak_molnia_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/durak_molnia_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "2.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"durak_molnia_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/durak_molnia_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "2.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_gagarin_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_gagarin_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_gagarin_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_gagarin_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_idushiy_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_idushiy_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_idushiy_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_idushiy_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_jitie_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_jitie_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_jitie_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_jitie_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_kosmos_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_kosmos_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_kosmos_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_kosmos_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_kosmos_3" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_kosmos_3.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_obrashenie_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_obrashenie_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_obrashenie_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_obrashenie_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_pacan_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_pacan_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_pacan_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_pacan_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_pacan_3" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_pacan_3.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_pisun_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_pisun_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_pisun_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_pisun_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_pureshka_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_pureshka_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_pureshka_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_pureshka_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_russkie_idut_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_russkie_idut_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_russkie_idut_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_russkie_idut_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_russkie_idut_3" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_russkie_idut_3.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_semechki_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_semechki_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_semechki_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_semechki_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_semechki_3" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_semechki_3.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_spas_kota_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_spas_kota_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_spas_kota_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_spas_kota_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_startuem_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_startuem_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "2.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"enjoykin_startuem_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/enjoykin_startuem_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "2.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"kaskaderi_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/kaskaderi_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "2.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"kaskaderi_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/kaskaderi_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "2.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"na_zare_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/na_zare_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "2.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"na_zare_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/na_zare_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "2.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"malikov_mama" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/malikov_mama.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"meladze_sahara_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/meladze_sahara_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"meladze_sahara_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/meladze_sahara_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"najmi_knopku_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/najmi_knopku_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "2.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"najmi_knopku_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/najmi_knopku_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "2.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"pozvoni_mne_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/pozvoni_mne_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"pozvoni_mne_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/pozvoni_mne_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"pozvoni_mne_3" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/pozvoni_mne_3.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"pozvoni_mne_4" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/pozvoni_mne_4.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"qontrast_dim_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/qontrast_dim_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"qontrast_dim_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/qontrast_dim_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"shantel_disco_boy_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/shantel_disco_boy_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"shantel_disco_boy_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/shantel_disco_boy_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"shantel_disco_boy_3" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/shantel_disco_boy_3.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"shantel_disco_boy_4" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/shantel_disco_boy_4.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"splinter_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/splinter_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"splinter_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/splinter_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"splinter_3" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/splinter_3.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"taet_led" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/taet_led.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"town_road_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/town_road_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"town_road_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/town_road_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"trava" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/trava.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "2.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"valim_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/valim_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"valim_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/valim_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "1.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "80.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}

@@ -76,4 +76,36 @@ function invoker_invoke_custom:OnSpellStart()
 			caster:SwapAbilities(abilityByIndex:GetAbilityName(), abilityName, false, true)
 		end
 	end 
+	if caster:HasModifier("modifier_item_special_invoker") then
+		local ability_name = ""
+		if self.buff_modifier then
+			caster:RemoveModifierByName(self.buff_modifier)
+		end
+		if self.form == 1 then
+			ability_name = "invoker_exort_fire_enchant"
+			self.buff_modifier = "modifier_invoker_exort_fire_enchant_buff"
+		elseif self.form == 2 then
+			ability_name = "invoker_wex_alacrity"
+			self.buff_modifier = "modifeir_invoker_wex_alacrity_buff"
+		elseif self.form == 3 then
+			ability_name = "invoker_quas_water_shield"
+			self.buff_modifier = "modifier_invoker_quas_water_shield_buff"
+		end
+		caster:SetCursorCastTarget(caster)
+		local buff_ability = caster:FindAbilityByName(ability_name)
+		buff_ability:OnSpellStart()
+		local modifier = caster:AddNewModifier(caster, buff_ability, self.buff_modifier, {duration = -1})
+	elseif caster:HasModifier("modifier_item_special_invoker_upgrade") then
+		caster:SetCursorCastTarget(caster)
+		local buff_ability = caster:FindAbilityByName("invoker_wex_alacrity")
+		buff_ability:OnSpellStart()
+		local modifier = caster:AddNewModifier(caster, buff_ability, "modifeir_invoker_wex_alacrity_buff", {duration = -1})	
+		local buff_ability = caster:FindAbilityByName("invoker_exort_fire_enchant")
+		buff_ability:OnSpellStart()
+		local modifier = caster:AddNewModifier(caster, buff_ability, "modifier_invoker_exort_fire_enchant_buff", {duration = -1})	
+		local buff_ability = caster:FindAbilityByName("invoker_quas_water_shield")
+		buff_ability:OnSpellStart()
+		local modifier = caster:AddNewModifier(caster, buff_ability, "modifier_invoker_quas_water_shield_buff", {duration = -1})			
+	end
+
 end

@@ -12,8 +12,8 @@
 		"imba_gamemode_settings_lock_options2"                                               "老兵"
 		"imba_gamemode_settings_lock_options3"                                               "炼狱"
 
-		"imba_gamemode_settings_lock_options_tooltip"                                       "敌方单位无加成，前哨不出兵. ."
-		"imba_gamemode_settings_lock_options_tooltip1"                                       "敌方单位 (生命, 攻击力, 护甲) +50%. 前哨出兵 ."
+		"imba_gamemode_settings_lock_options_tooltip"                                       "敌方单位无加成，前哨不出兵. 樂山第二次機會"
+		"imba_gamemode_settings_lock_options_tooltip1"                                       "敌方单位 (生命, 攻击力, 护甲) +50%. 前哨出兵. 樂山第二次機會"
 		"imba_gamemode_settings_lock_options_tooltip2"                                       "敌方单位 (生命, 攻击力, 护甲) +100%. 前哨出兵 ."
 		"imba_gamemode_settings_lock_options_tooltip3"                                       "敌方单位 (生命, 攻击力, 护甲) +200%. 前哨出兵 ."
 		"imba_gamemode_settings_speedrun"                                      				"激活此设置后，游戏结束时您将被包括在速度等级中!"

@@ -2,7 +2,12 @@ GameRules.swamp_active = true
 
 function ComeOut( keys )
 	local target = keys.activator
+	local team = target:GetTeam()
 	local player = target:GetPlayerOwnerID()
+	
+	if team == DOTA_TEAM_NEUTRALS then
+		return
+	end
 	
 	local point_name = "dire_forest_point_"..RandomInt(1, 2)
 --	local modifier = "modifier_item_chicken_game_ticket"

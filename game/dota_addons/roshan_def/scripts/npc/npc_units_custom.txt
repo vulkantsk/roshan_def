@@ -1,4 +1,5 @@
 #base "greevil_lord/greevil_units.txt"
+#base "npc_units_new.txt"
 
 "DOTAUnits"
 {
@@ -4200,14 +4201,14 @@
 		// General
 		//
 		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/zeus/zeus.vmdl"
-		"ModelScale"				"2"								// old 1.0
+		"Model"						"models/heroes/mars/mars.vmdl"
+		"ModelScale"				"1.5"								// old 1.0
 		"Level"						"1"
 	
-	// Abilities
+		// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"test1_1"
+//		"Ability1"					"test1_1"
 
 		// Movement
 		//----------------------------------------------------------------
@@ -4218,7 +4219,13 @@
 		//Inventory
 		"Creature"
 		{
-			
+			"AttachWearables"//Forsworn Legacy
+			{
+			"Wearable1" {"ItemDef" "14881"}//armor("Forsworn Legacy - Armor")
+			"Wearable2" {"ItemDef" "14880"}//("Forsworn Legacy - Spear")
+			"Wearable3" {"ItemDef" "14879"}//offhand_weapon("Forsworn Legacy - Shield")
+			"Wearable4" {"ItemDef" "14878"}//legs("Forsworn Legacy - Legs")
+			}			
 		}
 }
 "npc_dota_test_1_2"
@@ -4325,526 +4332,7 @@
 			
 		}
 }
-"npc_dota_test_1_1"
-{
-		// General
-		//
-		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/zeus/zeus.vmdl"
-		"ModelScale"				"2"								// old 1.0
-		"Level"						"1"
-	
-	// Abilities
-		//----------------------------------------------------------------
-		
-		"Ability1"					"test1_1"
 
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"325"		// Speed
-		"MovementTurnRate"			"1"		// Turning rate.
-		
-		//Inventory
-		"Creature"
-		{
-			
-		}
-}
-"npc_dota_test_1_2"
-{
-		// General
-		//
-		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/items/axe/ti9_jungle_axe/axe_bare.vmdl"
-		"ModelScale"				"1.6"								// old 1.0
-		"Level"						"1"
-	
-	// Abilities
-		//----------------------------------------------------------------
-		
-		"Ability1"					"test1_1"
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"325"		// Speed
-		"MovementTurnRate"			"1"		// Turning rate.
-		
-		//Inventory
-		"Creature"
-		{
-			
-		}
-}
-"npc_dota_test_1_3"
-{
-		// General
-		//
-		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/beastmaster/beastmaster.vmdl"
-		"ModelScale"				"1.3"								// old 1.0
-		"Level"						"1"
-	
-	// Abilities
-		//----------------------------------------------------------------
-		
-		"Ability1"					"test1_1"
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"325"		// Speed
-		"MovementTurnRate"			"1"		// Turning rate.
-		
-		//Inventory
-		"Creature"
-		{
-			
-		}
-}
-"npc_dota_test_1_4"
-{
-		// General
-		//
-		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/elder_titan/elder_titan.vmdl"
-		"ModelScale"				"1"								// old 1.0
-		"Level"						"1"
-	
-	// Abilities
-		//----------------------------------------------------------------
-		
-		"Ability1"					"test1_1"
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"325"		// Speed
-		"MovementTurnRate"			"1"		// Turning rate.
-		
-		//Inventory
-		"Creature"
-		{
-			
-		}
-}
-"npc_dota_test_1_5"
-{
-		// General
-		//
-		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/mars/mars.vmdl"
-		"ModelScale"				"1.3"								// old 1.0
-		"Level"						"1"
-	
-	// Abilities
-		//----------------------------------------------------------------
-		
-		"Ability1"					"test1_1"
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"325"		// Speed
-		"MovementTurnRate"			"1"		// Turning rate.
-		
-		//Inventory
-		"Creature"
-		{
-			
-		}
-}
-"npc_dota_test_2_1"
-{
-		// General
-		//
-		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/zeus/zeus.vmdl"
-		"ModelScale"				"2"								// old 1.0
-		"Level"						"1"
-	
-	// Abilities
-		//----------------------------------------------------------------
-		
-		"Ability1"					"test1_2"
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"325"		// Speed
-		"MovementTurnRate"			"1"		// Turning rate.
-		
-		//Inventory
-		"Creature"
-		{
-			
-		}
-}
-"npc_dota_test_2_2"
-{
-		// General
-		//
-		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/items/axe/ti9_jungle_axe/axe_bare.vmdl"
-		"ModelScale"				"1.6"								// old 1.0
-		"Level"						"1"
-	
-	// Abilities
-		//----------------------------------------------------------------
-		
-		"Ability1"					"test1_2"
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"325"		// Speed
-		"MovementTurnRate"			"1"		// Turning rate.
-		
-		//Inventory
-		"Creature"
-		{
-			
-		}
-}
-"npc_dota_test_2_3"
-{
-		// General
-		//
-		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/beastmaster/beastmaster.vmdl"
-		"ModelScale"				"1.3"								// old 1.0
-		"Level"						"1"
-	
-	// Abilities
-		//----------------------------------------------------------------
-		
-		"Ability1"					"test1_2"
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"325"		// Speed
-		"MovementTurnRate"			"1"		// Turning rate.
-		
-		//Inventory
-		"Creature"
-		{
-			
-		}
-}
-"npc_dota_test_2_4"
-{
-		// General
-		//
-		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/elder_titan/elder_titan.vmdl"
-		"ModelScale"				"1"								// old 1.0
-		"Level"						"1"
-	
-	// Abilities
-		//----------------------------------------------------------------
-		
-		"Ability1"					"test1_2"
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"325"		// Speed
-		"MovementTurnRate"			"1"		// Turning rate.
-		
-		//Inventory
-		"Creature"
-		{
-			
-		}
-}
-"npc_dota_test_2_5"
-{
-		// General
-		//
-		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/mars/mars.vmdl"
-		"ModelScale"				"1.3"								// old 1.0
-		"Level"						"1"
-	
-	// Abilities
-		//----------------------------------------------------------------
-		
-		"Ability1"					"test1_2"
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"325"		// Speed
-		"MovementTurnRate"			"1"		// Turning rate.
-		
-		//Inventory
-		"Creature"
-		{
-			
-		}
-}
-"npc_dota_test_3_1"
-{
-		// General
-		//
-		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/zeus/zeus.vmdl"
-		"ModelScale"				"2"								// old 1.0
-		"Level"						"1"
-	
-	// Abilities
-		//----------------------------------------------------------------
-		
-		"Ability1"					"test1_3"
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"325"		// Speed
-		"MovementTurnRate"			"1"		// Turning rate.
-		
-		//Inventory
-		"Creature"
-		{
-			
-		}
-}
-"npc_dota_test_3_2"
-{
-		// General
-		//
-		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/items/axe/ti9_jungle_axe/axe_bare.vmdl"
-		"ModelScale"				"1.6"								// old 1.0
-		"Level"						"1"
-	
-	// Abilities
-		//----------------------------------------------------------------
-		
-		"Ability1"					"test1_3"
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"325"		// Speed
-		"MovementTurnRate"			"1"		// Turning rate.
-		
-		//Inventory
-		"Creature"
-		{
-			
-		}
-}
-"npc_dota_test_3_3"
-{
-		// General
-		//
-		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/beastmaster/beastmaster.vmdl"
-		"ModelScale"				"1.3"								// old 1.0
-		"Level"						"1"
-	
-	// Abilities
-		//----------------------------------------------------------------
-		
-		"Ability1"					"test1_3"
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"325"		// Speed
-		"MovementTurnRate"			"1"		// Turning rate.
-		
-		//Inventory
-		"Creature"
-		{
-			
-		}
-}
-"npc_dota_test_3_4"
-{
-		// General
-		//
-		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/elder_titan/elder_titan.vmdl"
-		"ModelScale"				"1"								// old 1.0
-		"Level"						"1"
-	
-	// Abilities
-		//----------------------------------------------------------------
-		
-		"Ability1"					"test1_3"
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"325"		// Speed
-		"MovementTurnRate"			"1"		// Turning rate.
-		
-		//Inventory
-		"Creature"
-		{
-			
-		}
-}
-"npc_dota_test_3_5"
-{
-		// General
-		//
-		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/mars/mars.vmdl"
-		"ModelScale"				"1.3"								// old 1.0
-		"Level"						"1"
-	
-	// Abilities
-		//----------------------------------------------------------------
-		
-		"Ability1"					"test1_3"
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"325"		// Speed
-		"MovementTurnRate"			"1"		// Turning rate.
-		
-		//Inventory
-		"Creature"
-		{
-			
-		}
-}
-"npc_dota_test_4_1"
-{
-		// General
-		//
-		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/zeus/zeus.vmdl"
-		"ModelScale"				"2"								// old 1.0
-		"Level"						"1"
-	
-	// Abilities
-		//----------------------------------------------------------------
-		
-		"Ability1"					"test2_1"
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"325"		// Speed
-		"MovementTurnRate"			"1"		// Turning rate.
-		
-		//Inventory
-		"Creature"
-		{
-			
-		}
-}
-"npc_dota_test_4_2"
-{
-		// General
-		//
-		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/items/axe/ti9_jungle_axe/axe_bare.vmdl"
-		"ModelScale"				"1.6"								// old 1.0
-		"Level"						"1"
-	
-	// Abilities
-		//----------------------------------------------------------------
-		
-		"Ability1"					"test2_1"
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"325"		// Speed
-		"MovementTurnRate"			"1"		// Turning rate.
-		
-		//Inventory
-		"Creature"
-		{
-			
-		}
-}
-"npc_dota_test_4_3"
-{
-		// General
-		//
-		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/beastmaster/beastmaster.vmdl"
-		"ModelScale"				"1.3"								// old 1.0
-		"Level"						"1"
-	
-	// Abilities
-		//----------------------------------------------------------------
-		
-		"Ability1"					"test2_1"
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"325"		// Speed
-		"MovementTurnRate"			"1"		// Turning rate.
-		
-		//Inventory
-		"Creature"
-		{
-			
-		}
-}
-"npc_dota_test_4_4"
-{
-		// General
-		//
-		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/elder_titan/elder_titan.vmdl"
-		"ModelScale"				"1"								// old 1.0
-		"Level"						"1"
-	
-	// Abilities
-		//----------------------------------------------------------------
-		
-		"Ability1"					"test2_1"
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"325"		// Speed
-		"MovementTurnRate"			"1"		// Turning rate.
-		
-		//Inventory
-		"Creature"
-		{
-			
-		}
-}
-"npc_dota_test_4_5"
-{
-		// General
-		//
-		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/mars/mars.vmdl"
-		"ModelScale"				"1.3"								// old 1.0
-		"Level"						"1"
-	
-	// Abilities
-		//----------------------------------------------------------------
-		
-		"Ability1"					"test2_1"
-
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"325"		// Speed
-		"MovementTurnRate"			"1"		// Turning rate.
-		
-		//Inventory
-		"Creature"
-		{
-			
-		}
-}
 "npc_dota_test_2"
 {
 		// General
@@ -4907,7 +4395,7 @@
 		// General
 		//
 		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/items/techies/techies_ti9_immortal_cart/techies_ti9_immortal_cart.vmdl"
+		"Model"						"models/heroes/disruptor/disruptor.vmdl"
 		"ModelScale"				"0.75"								// old 1.0
 		"Level"						"5"
 		"MinimapIcon"					"minimap_siege"
@@ -4916,7 +4404,7 @@
 	// Abilities
 		//----------------------------------------------------------------
 		
-		"Ability1"					"test2_1"
+		"Ability1"					"ability_test_4"
 
 		// Movement
 		//----------------------------------------------------------------
@@ -4930,11 +4418,7 @@
 
 			"AttachWearables"			
 			{
-				"Wearable1"		{	"ItemDef"		"181"			} //Horse
-				"Wearable2"		{	"ItemDef"		"183"			} //Shoulders
-				"Wearable3" 	{	"ItemDef"		"184"		} //Helmet
-				"Wearable4"		{	"ItemDef"		"185"		} //Weapon
-				"Wearable5"		{	"ItemDef"		"186"		} //Shield	
+				"Wearable1"		{	"ItemDef"		"8158"			} //Horse
 			}			
 		}
 }
@@ -4944,8 +4428,8 @@
 		// General
 		//
 		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/items/courier/mole_messenger/mole_messenger.vmdl"
-		"ModelScale"				"0.75"								// old 1.0
+		"Model"						"models/heroes/techies/techies_sign.vmdl"
+		"ModelScale"				"1"								// old 1.0
 		"Level"						"5"
 		
 	// Abilities
@@ -9652,7 +9136,7 @@
 		"Ability4"					"test_modifiers"			// Ability 4.
 		"Ability5"					"test_effect"			// Ability 5.
 		"Ability6"					"chain_light_custom"			
-		"Ability7"					""			// Ability 7 - Extra.
+//		"Ability7"					"backdoor_protection_custom"			// Ability 7 - Extra.
 		"Ability8"					""			// Ability 8 - Extra.
 
 		// Armor
@@ -12927,6 +12411,7 @@
 
 "npc_dota_boss_water_1"
 	{
+		"vscripts"					"ai/ai_neutral_autocast"
 		// General
 		//
 		"BaseClass"				"npc_dota_creature" // Class of entity of link to.
@@ -13274,6 +12759,7 @@
 
 "npc_dota_boss_water_3"
 	{
+		"vscripts"					"ai/ai_neutral_autocast"
 		// General
 		//
 		"BaseClass"				"npc_dota_creature" // Class of entity of link to.
@@ -14649,9 +14135,9 @@
 		}
 	}
 
-
 	"npc_dota_boss_forest_1"
 	{
+		"vscripts"					"ai/ai_neutral_autocast"
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"					"npc_dota_creature"
@@ -14733,40 +14219,7 @@
 		//Inventory
 		"Creature"
 		{
-			"CanRespawn"				"0"
-		
-			
-
 			"DisableResistance"			"50.0"
-
-			"DefaultState"			"Invade"
-			"States"	
-			{
-				"Invade"
-				{
-					"Name"				"Invade"
-					"Aggression"		"100.0" //cast offensive spells whenever
-					"Avoidance"			"0.0" //dont flee
-					"Support"			"100.0" //start buffing
-				}
-			}
-			"OffensiveAbilities"
-			{
-				"Ability1"
-				{
-					"Name"				"creature_living_armor"
-					
-					"UseSelfishly"  "1"
-					"Buff"				"1" //if the skill should look for aoe
-				}
-				"Ability2"
-				{
-					"Name"			"treant_overgrowth"
-					"AOE"				"1"
-					"Radius"			"300"
-					"MinimumTargets"	"1"
-				}
-			}
 
 			"ItemDrops"
             {
@@ -14777,40 +14230,24 @@
                         "1"             "item_bonus_strength10"
                         "2"             "item_bonus_agility10"
                         "3"             "item_bonus_intelligence10"
- 						"4"				"item_bonus_stats10"
-                     
-						
+ 						"4"				"item_bonus_stats10"  
                     }
                     "Chance"            "25"
-                }
-				
-
-				
+                }			
 			}
 			"AttachWearables"
 			{
-				"Wearable1"
-				{
-					"ItemDef"			"227"
-				}
-				"Wearable2"
-				{
-					"ItemDef"			"228"
-				}
-				"Wearable3"
-				{
-					"ItemDef"			"229"
-				}
-				"Wearable4"
-				{
-					"ItemDef"			"230"
-				}
+				"Wearable1"	{"ItemDef"		"227"}
+				"Wearable2"	{"ItemDef"		"228"}
+				"Wearable3"	{"ItemDef"		"229"}
+				"Wearable4"	{"ItemDef"		"230"}
 			}
 		}
 	}
 
 	"npc_dota_boss_forest_2"
 	{
+		"vscripts"					"ai/ai_neutral_autocast"
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"						"models/heroes/furion/furion.vmdl"	
@@ -15014,6 +14451,7 @@
 
 	"npc_dota_boss_forest_3"
 	{
+		"vscripts"					"ai/ai_neutral_autocast"
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"						"models/creeps/ice_biome/storegga/storegga.vmdl"	
@@ -15035,7 +14473,7 @@
 		"Ability2"					"cleave"			// Ability 2.
 		"Ability3"					"storegga_golem_spawn"			// Ability 3.
 		"Ability4"					"true_strike_datadriven"			// Ability 4.
-		"Ability5"					""			// Ability 5.
+		"Ability5"					"tiny_toss"			// Ability 5.
 		"Ability6"					""			
 		"Ability7"					""			// Ability 7 - Extra.
 		"Ability8"					""			// Ability 8 - Extra.
@@ -17366,6 +16804,7 @@
 
 "npc_dota_boss_fire_1"
 	{
+		"vscripts"					"ai/ai_neutral_autocast"
 		// General
 		//
 		"BaseClass"				"npc_dota_creature"
@@ -17506,6 +16945,7 @@
 
 "npc_dota_boss_fire_2"
 	{
+		"vscripts"					"ai/ai_neutral_autocast"
 		// General
 		//
 		"BaseClass"				"npc_dota_creature"
@@ -17632,6 +17072,7 @@
 
 "npc_dota_boss_fire_3"
 	{
+		"vscripts"					"ai/ai_neutral_autocast"
 		// General
 		//
 		"BaseClass"				"npc_dota_creature"
@@ -36183,6 +35624,7 @@
 		//----------------------------------------------------------------
 		"RingRadius"				"60"
 		"HealthBarOffset"			"220"
+		"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"			// Hull type used 
 
 		// Bounty
 		//----------------------------------------------------------------
@@ -41002,7 +40444,7 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"10"			// Physical protection.
+		"ArmorPhysical"				"11"			// Physical protection.
 		"MagicalResistance"			"25"		// Magical protection.
 
 		// Attack
@@ -41037,7 +40479,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"5000"		// Base health.
+		"StatusHealth"				"7500"		// Base health.
 		"StatusHealthRegen"			"0"		// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0"			// Mana regeneration rate.
@@ -41084,7 +40526,7 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"7"			// Physical protection.
+		"ArmorPhysical"				"8"			// Physical protection.
 		"MagicalResistance"			"25"		// Magical protection.
 
 		// Attack
@@ -41119,7 +40561,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"3500"		// Base health.
+		"StatusHealth"				"5000"		// Base health.
 		"StatusHealthRegen"			"0"		// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0"			// Mana regeneration rate.
@@ -41543,6 +40985,748 @@
 		//----------------------------------------------------------------
 		"VisionDaytimeRange"		"1200"		// Range of vision during day light.
 		"VisionNighttimeRange"		"800"		// Range of vision at night time.
-	}			
+	}
+	"npc_dota_treant_guardian"
+	{
+		"vscripts"					"ai/ai_neutral_autocast"
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/heroes/treant_protector/treant_protector.vmdl"
+		"SoundSet"				"Hero_treant_protector"
+		"ModelScale" 				"1.15"
+		"Level"						"1"
+		"IsBossMonster"						"1"
+		// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"treant_recover"			// Ability 1.
+		"Ability2"					"treant_rooting"			// Ability 2.
+		"Ability3"					""			// Ability 3.
+		"Ability4"					""			// Ability 4.
+		"Ability5"					""			// Ability 5.
+		"Ability6"					""			
+		"Ability7"					""			// Ability 7 - Extra.
+		"Ability8"					""			// Ability 8 - Extra.
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"16"			// Physical protection.
+		"MagicalResistance"				"25"			// Magical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"900"		// Damage range min.
+		"AttackDamageMax"			"1600"		// Damage range max.
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"				"2.25"			// Speed of attack.
+		"AttackAnimationPoint"		"0.25"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"570"		// Range within a target can be acquired.
+		"AttackRange"				"125"		// Range within a target can be attacked.
+		"ProjectileModel"		""
+		"ProjectileSpeed"		""
+
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"2500"		// Experience earn.
+		"BountyGoldMin"				"375"		// Gold earned min.
+		"BountyGoldMax"				"625"		// Gold earned max.
+
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"RingRadius"				"45"
+		"HealthBarOffset"			"350"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"375"		// Speed
+		"MovementTurnRate"			"0.75"		// Turning rate.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"7500"		// Base health.
+		"StatusHealthRegen"			"100"			// Health regeneration rate.
+		"StatusMana"				"0"		// Base mana.
+		"StatusManaRegen"			"0.75"		// Mana regeneration rate.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"			// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"750"		// Range of vision during day light.
+		"VisionNighttimeRange"		"750"		// Range of vision at night time.
+		
+		//Inventory
+		"Creature"
+		{
+			"DisableResistance"			"50.0"
+
+			"ItemDrops"
+            {
+                "StatTomes"
+                {
+                    "Item"
+                    {
+                        "1"             "item_bonus_strength5"
+                        "2"             "item_bonus_agility5"
+                        "3"             "item_bonus_intelligence5"
+ 						"4"				"item_bonus_stats5"  
+                    }
+                    "Chance"            "100"
+                }			
+			}
+			"AttachWearables"
+			{
+				"Wearable1"	{"ItemDef"	"7059"} //arms
+				"Wearable2"	{"ItemDef"	"7060"}	//head
+				"Wearable3"	{"ItemDef"	"7061"}	//legs
+				"Wearable4"	{"ItemDef"	"7062"}	//shoulder
+			}
+		}
+	}
+	"npc_dota_goodguys_tower1_mid"
+	{
+		// General
+		//
+		"BaseClass"					"npc_dota_tower"	// Class of entity of link to.
+		"Model"						"models/props_structures/tower_good.vmdl"// Model.
+		"SoundSet"					"Tower.Water"					// Name of sound set.
+		"MinimapIcon"				"minimap_tower45"
+		"MinimapIconSize"			"320"
+		"Level"						"1"
+		
+		// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"backdoor_protection_custom"			// Ability 1.
+		"Ability2"					""			// Ability 2.
+		"Ability3"					""			// Ability 3.
+		"Ability4"					""			// Ability 4.
+		"Ability5"					""			// Ability 5.
+		"Ability6"					""			// Ability 6 - Extra.
+		"Ability7"					""			// Ability 7 - Extra.
+		"Ability8"					""			// Ability 8 - Extra.
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"12"		// Physical protection.
+		"MagicalResistance"				"0"			// Magical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"			"100"		// Damage range min.
+		"AttackDamageMax"			"120"		// Damage range max.
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"				"1"			// Speed of attack.
+		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
+		"AttackRange"				"700"		// Range within a target can be attacked.
+		"ProjectileModel"			"particles/base_attacks/ranged_tower_good.vpcf"		// Particle system model for projectile.
+		"ProjectileSpeed"			"750"		// Speed of projectile.
+
+		// Attributes
+		//----------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"0"			// Base strength
+		"AttributeStrengthGain"		"0"			// Strength bonus per level.
+		"AttributeBaseIntelligence"	"0"			// Base intelligence
+		"AttributeIntelligenceGain"	"0"			// Intelligence bonus per level.
+		"AttributeBaseAgility"		"0"			// Base agility
+		"AttributeAgilityGain"		"0"			// Agility bonus per level.
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
+
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"			// Hull type used for navigation/locomotion.
+		"ProjectileCollisionSize"	"50"
+		"RingRadius"				"130"
+		"HealthBarOffset"			"260"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementSpeed"				"0"			// Speed
+		"MovementTurnRate"			"1.0"			// Turning rate.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"1800"		// Base health.
+		"StatusHealthRegen"			"0"			// Health regeneration rate.
+		"StatusMana"				"0"			// Base mana.
+		"StatusManaRegen"			"0"			// Mana regeneration rate.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"			// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"1900"		// Range of vision during day light.
+		"VisionNighttimeRange"		"800"		// Range of vision at night time.
+	}	
+	"npc_dota_twins_1"
+	{
+		// General
+//		"vscripts"					"ai/ai_neutral_autocast"
+		//
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/items/wraith_king/wk_ti8_creep/wk_ti8_creep.vmdl"
+		"SoundSet"					"Creep_Good_Melee"					// Name of sound set.
+		"ModelScale"				"2.4"
+		"Level"						"8"
+		"IsBossMonster"						"1"
+		"MinimapIcon"					"minimap_death"
+		"MinimapIconSize"				"550"
+
+				
+		// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"twins_reincarnation"
+		"Ability2"					"skeleton_king_hellfire_blast"
+		"Ability3"					"skeleton_king_mortal_strike_datadriven"
+		"Ability4"					""
+		"Ability5"					"true_strike_datadriven"			// Ability 4.
+		"Ability6"					""			
+		"Ability7"					""			// Ability 7 - Extra.
+		"Ability8"					""			// Ability 8 - Extra.
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"83"			// Physical protection.
+		"MagicalResistance"			"50"			// Magical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"14000"		// Damage range min.
+		"AttackDamageMax"			"23400"		// Damage range max.
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"				"1"		// Speed of attack.
+		"AttackAnimationPoint"		"0.25"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"600"		// Range within a target can be acquired.
+		"AttackRange"				"115"		// Range within a target can be attacked.
+		"ProjectileModel"			""			// Particle system model for projectile.
+		"ProjectileSpeed"			""			// Speed of projectile.
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"25000"		// Experience earn.
+		"BountyGoldMin"				"4000"			// Gold earned min.
+		"BountyGoldMax"				"4000"		// Gold earned max.
+
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_SMALLEST"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"140"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"425"		// Speed
+		"MovementTurnRate"			"0.75"		// Turning rate.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"250000"		// Base health.
+		"StatusHealthRegen"			"0.0"		// Health regeneration rate.
+		"StatusMana"				"0"			// Base mana.
+		"StatusManaRegen"			"0"			// Mana regeneration rate.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"			// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"800"		// Range of vision during day light.
+		"VisionNighttimeRange"		"600"		// Range of vision at night time.
+	}
+
+	"npc_dota_twins_2"
+	{
+		// General
+		"vscripts"					"ai/ai_default"
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/items/wraith_king/wk_ti8_creep/wk_ti8_creep_crimson.vmdl"
+		"SoundSet"					"Creep_Good_Melee"					// Name of sound set.
+		"ModelScale"				"2.4"
+		"Level"						"8"
+		"IsBossMonster"						"1"
+		"MinimapIcon"					"minimap_death"
+		"MinimapIconSize"				"550"
+
+				
+		// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"skeleton_king_hellfire_blast"
+		"Ability2"					"skeleton_king_hellfire_blast"
+		"Ability3"					"skeleton_king_mortal_strike_datadriven"
+		"Ability4"					""
+		"Ability5"					"true_strike_datadriven"			// Ability 4.
+		"Ability6"					""			
+		"Ability7"					""			// Ability 7 - Extra.
+		"Ability8"					""			// Ability 8 - Extra.
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"83"			// Physical protection.
+		"MagicalResistance"			"50"			// Magical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"14000"		// Damage range min.
+		"AttackDamageMax"			"23400"		// Damage range max.
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"				"1"		// Speed of attack.
+		"AttackAnimationPoint"		"0.25"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"600"		// Range within a target can be acquired.
+		"AttackRange"				"115"		// Range within a target can be attacked.
+		"ProjectileModel"			""			// Particle system model for projectile.
+		"ProjectileSpeed"			""			// Speed of projectile.
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"25000"		// Experience earn.
+		"BountyGoldMin"				"4000"			// Gold earned min.
+		"BountyGoldMax"				"4000"		// Gold earned max.
+
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_SMALLEST"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"140"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"425"		// Speed
+		"MovementTurnRate"			"0.75"		// Turning rate.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"250000"		// Base health.
+		"StatusHealthRegen"			"0.0"		// Health regeneration rate.
+		"StatusMana"				"0"			// Base mana.
+		"StatusManaRegen"			"0"			// Mana regeneration rate.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"			// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"800"		// Range of vision during day light.
+		"VisionNighttimeRange"		"600"		// Range of vision at night time.
+	}	
+	"npc_dota_brotherhood_1"
+	{
+		"vscripts"					"ai/ai_autocast"
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/courier/minipudge/minipudge.vmdl"
+		"SoundSet"					"Hero_pudge"
+		"ModelScale" 				"3"
+		"Level"						"9"
+		"IsBossMonster"						"1"
+		"MinimapIcon"					"minimap_death"
+		"MinimapIconSize"				"550"
+
+		// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"brotherhood_death_madness"			// Ability 1.
+		"Ability2"					""			// Ability 2.
+		"Ability3"					""			// Ability 3.
+		"Ability4"					""			// Ability 4.
+		"Ability5"					""			// Ability 5.
+		"Ability6"					""			
+		"Ability7"					""			// Ability 7 - Extra.
+		"Ability8"					""			// Ability 8 - Extra.
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"50"			// Physical protection.
+		"MagicalResistance"			"25"			// Magical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"7875"		// Damage range min.
+		"AttackDamageMax"			"13125"		// Damage range max.
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"				"1.5"			// Speed of attack.
+		"AttackAnimationPoint"		"0.25"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"570"		// Range within a target can be acquired.
+		"AttackRange"				"125"		// Range within a target can be attacked.
+		"ProjectileModel"		""
+		"ProjectileSpeed"		""
+
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"20000"		// Experience earn.
+		"BountyGoldMin"				"2500"		// Gold earned min.
+		"BountyGoldMax"				"2500"		// Gold earned max.
+
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"RingRadius"				"45"
+		"HealthBarOffset"			"350"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"375"		// Speed
+		"MovementTurnRate"			"0.75"		// Turning rate.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"500000"		// Base health.
+		"StatusHealthRegen"			"0"			// Health regeneration rate.
+		"StatusMana"				"0"		// Base mana.
+		"StatusManaRegen"			"0.75"		// Mana regeneration rate.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"			// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"750"		// Range of vision during day light.
+		"VisionNighttimeRange"		"750"		// Range of vision at night time.
+		
+		//Inventory
+		"Creature"
+		{
+			"DisableResistance"			"50.0"
+		}
+	}				
+	"npc_dota_brotherhood_2"
+	{
+		"vscripts"					"ai/ai_default"
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/heroes/pudge/pudge.vmdl"
+		"SoundSet"				"Hero_pudge"
+		"ModelScale" 				"1.95"
+		"Level"						"9"
+		"IsBossMonster"						"1"
+		"MinimapIcon"					"minimap_death"
+		"MinimapIconSize"				"550"
+
+		// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"cleave"			// Ability 1.
+		"Ability2"					"brotherhood_tank_regen"			// Ability 2.
+		"Ability3"					""			// Ability 3.
+		"Ability4"					""			// Ability 4.
+		"Ability5"					""			// Ability 5.
+		"Ability6"					""			
+		"Ability7"					""			// Ability 7 - Extra.
+		"Ability8"					""			// Ability 8 - Extra.
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"58"			// Physical protection.
+		"MagicalResistance"			"25"			// Magical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"26156"		// Damage range min.
+		"AttackDamageMax"			"43594"		// Damage range max.
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"				"2"			// Speed of attack.
+		"AttackAnimationPoint"		"0.25"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"570"		// Range within a target can be acquired.
+		"AttackRange"				"125"		// Range within a target can be attacked.
+		"ProjectileModel"		""
+		"ProjectileSpeed"		""
+
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"20000"		// Experience earn.
+		"BountyGoldMin"				"2500"		// Gold earned min.
+		"BountyGoldMax"				"2500"		// Gold earned max.
+
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"RingRadius"				"45"
+		"HealthBarOffset"			"350"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"375"		// Speed
+		"MovementTurnRate"			"0.75"		// Turning rate.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"1000000"		// Base health.
+		"StatusHealthRegen"			"0"			// Health regeneration rate.
+		"StatusMana"				"0"		// Base mana.
+		"StatusManaRegen"			"0.75"		// Mana regeneration rate.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"			// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"750"		// Range of vision during day light.
+		"VisionNighttimeRange"		"750"		// Range of vision at night time.
+		
+		//Inventory
+		"Creature"
+		{
+			"DisableResistance"			"85.0"
+
+			"AttachWearables"//Arms of the Bogatyr
+			{
+			"Wearable1" {"ItemDef" "9475"}//arms("Sleeve of the Bogatyr")
+			"Wearable2" {"ItemDef" "9472"}//belt("Barrel of the Bogatyr")
+			"Wearable3" {"ItemDef" "9468"}//shoulder("Planks of the Bogatyr")
+			"Wearable4" {"ItemDef" "9459"}//back("Shield of the Bogatyr")
+			"Wearable5" {"ItemDef" "9458"}//head("Old Helmet of the Bogatyr")
+			"Wearable6" {"ItemDef" "9456"}//offhand_weapon("Cruel Mace of the Bogatyr")
+			"Wearable7" {"ItemDef" "9454"}//("Rustclaw")
+			}
+		}
+	}				
+	"npc_dota_brotherhood_3"
+	{
+		"vscripts"					"ai/ai_default"
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/heroes/pudge/pudge.vmdl"
+		"SoundSet"				"Hero_pudge"
+		"ModelScale" 				"1.45"
+		"Level"						"9"
+		"IsBossMonster"						"1"
+		"MinimapIcon"					"minimap_death"
+		"MinimapIconSize"				"550"
+
+		// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"skeleton_king_mortal_strike_datadriven"			// Ability 1.
+		"Ability2"					"brotherhood_vampirism_aura"			// Ability 2.
+		"Ability3"					"true_strike_datadriven"			// Ability 3.
+		"Ability4"					""			// Ability 4.
+		"Ability5"					""			// Ability 5.
+		"Ability6"					""			
+		"Ability7"					""			// Ability 7 - Extra.
+		"Ability8"					""			// Ability 8 - Extra.
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"60"			// Physical protection.
+		"MagicalResistance"			"25"			// Magical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"15375"		// Damage range min.
+		"AttackDamageMax"			"25625"		// Damage range max.
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"				"0.75"			// Speed of attack.
+		"AttackAnimationPoint"		"0.15"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"570"		// Range within a target can be acquired.
+		"AttackRange"				"125"		// Range within a target can be attacked.
+		"ProjectileModel"		""
+		"ProjectileSpeed"		""
+
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"20000"		// Experience earn.
+		"BountyGoldMin"				"2500"		// Gold earned min.
+		"BountyGoldMax"				"2500"		// Gold earned max.
+
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"RingRadius"				"45"
+		"HealthBarOffset"			"350"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"375"		// Speed
+		"MovementTurnRate"			"0.75"		// Turning rate.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"650000"		// Base health.
+		"StatusHealthRegen"			"0"			// Health regeneration rate.
+		"StatusMana"				"0"		// Base mana.
+		"StatusManaRegen"			"0.75"		// Mana regeneration rate.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"			// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"750"		// Range of vision during day light.
+		"VisionNighttimeRange"		"750"		// Range of vision at night time.
+		
+		//Inventory
+		"Creature"
+		{
+			"DisableResistance"			"75.0"
+
+			"AttachWearables"//Murder of Crows
+			{
+			"Wearable1" {"ItemDef" "6007"}//head("Murder Mask")
+			"Wearable2" {"ItemDef" "6115"}//back("Pauldron Perch")
+			"Wearable3" {"ItemDef" "6116"}//("Talon Edge")
+			"Wearable4" {"ItemDef" "6202"}//arms("Gauntlet of Dark Feathers")
+			"Wearable5" {"ItemDef" "6203"}//shoulder("Armor of the Black Bird")
+			"Wearable6" {"ItemDef" "6204"}//belt("Dendi Doll")
+			"Wearable7" {"ItemDef" "6212"}//offhand_weapon("The Crow Eater")
+			}
+
+		}
+	}				
+	"npc_dota_brotherhood_4"
+	{
+		"vscripts"					"ai/ai_brotherhood_4"
+//		"vscripts"					"ai/ai_autocast"
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/heroes/pudge/pudge.vmdl"
+		"SoundSet"				"Hero_pudge"
+		"ModelScale" 				"1.75"
+		"Level"						"9"
+		"IsBossMonster"						"1"
+		"MinimapIcon"					"minimap_death"
+		"MinimapIconSize"				"550"
+
+		// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"bristleback_viscous_nasal_goo"			// Ability 1.
+		"Ability2"					"brotherhood_acid_spray"			// Ability 2.
+		"Ability3"					""			// Ability 3.
+		"Ability4"					""			// Ability 4.
+		"Ability5"					""			// Ability 5.
+		"Ability6"					""			
+		"Ability7"					""			// Ability 7 - Extra.
+		"Ability8"					""			// Ability 8 - Extra.
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"56"			// Physical protection.
+		"MagicalResistance"			"25"			// Magical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"13125"		// Damage range min.
+		"AttackDamageMax"			"21875"		// Damage range max.
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"				"1.5"			// Speed of attack.
+		"AttackAnimationPoint"		"0.25"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"570"		// Range within a target can be acquired.
+		"AttackRange"				"125"		// Range within a target can be attacked.
+		"ProjectileModel"		""
+		"ProjectileSpeed"		""
+
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"20000"		// Experience earn.
+		"BountyGoldMin"				"2500"		// Gold earned min.
+		"BountyGoldMax"				"2500"		// Gold earned max.
+
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"RingRadius"				"45"
+		"HealthBarOffset"			"350"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"375"		// Speed
+		"MovementTurnRate"			"0.75"		// Turning rate.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"800000"		// Base health.
+		"StatusHealthRegen"			"0"			// Health regeneration rate.
+		"StatusMana"				"10000"		// Base mana.
+		"StatusManaRegen"			"100"		// Mana regeneration rate.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"			// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"750"		// Range of vision during day light.
+		"VisionNighttimeRange"		"750"		// Range of vision at night time.
+		
+		//Inventory
+		"Creature"
+		{
+			"DisableResistance"			"80.0"
+
+			"AttachWearables"//Surgical Precision
+			{
+			"Wearable1" {"ItemDef" "7541"}//shoulder("Surgical Precision Pustules")
+			"Wearable2" {"ItemDef" "7543"}//belt("Surgical Precision Tools")
+			"Wearable3" {"ItemDef" "7546"}//("Surgical Precision Buzzsaw")
+			"Wearable4" {"ItemDef" "7547"}//offhand_weapon("Surgical Precision Bonecracker")
+			"Wearable5" {"ItemDef" "7545"}//head("Surgical Precision Mask")
+			"Wearable6" {"ItemDef" "7544"}//arms("Surgical Precision Painkiller")
+			"Wearable7" {"ItemDef" "7542"}//back("Surgical Precision Apron")
+			}
+		}
+	}				
 }
 

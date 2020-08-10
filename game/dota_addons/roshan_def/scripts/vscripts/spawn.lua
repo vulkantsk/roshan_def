@@ -71,6 +71,7 @@ item_drop = {
 		{items = {"item_water_essence"}, chance = 100, duration = 20,units = {"npc_dota_elemental_2","npc_dota_elemental_2_1"}},
 		{items = {"item_air_essence"}, chance = 100, duration = 20,units = {"npc_dota_elemental_3","npc_dota_elemental_3_1"}},
 		{items = {"item_earth_essence"}, chance = 100, duration = 20, units = {"npc_dota_elemental_4","npc_dota_elemental_4_1"}},
+		{items = {"item_leaf_1"}, chance = 100, units = {"npc_dota_treant_guardian"}},
 		{items = {"item_chicken_game_ticket"}, chance = 0.5, duration = 60,limit = 1},
 }
 
@@ -289,7 +290,11 @@ function Spawn:OnGameRulesStateChange()
 		            hPlayer:MakeRandomHeroSelection()
 		        end
 		    end			
-			Spawn:SetWDToHost()			
+			Spawn:SetWDToHost()
+			if GameRules.DIFFICULTY == 0 or GameRules.DIFFICULTY == 1 then
+				local roshan = Entities:FindByName(nil, "roshan")
+				roshan:AddNewModifier(roshan, nil, "modifier_roshan_second_chance",nil)
+			end
 		elseif newState == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
 			Sounds:CreateGlobalSound("narod_pognali")
 			if GetMapName()=="roshdef_adventure" then
@@ -1060,6 +1065,14 @@ function Spawn:OnNPCSpawned(keys)
 				ability:SetLevel(1)
 				local ability = npc:FindAbilityByName("mark_developer_present") 			
 				ability:SetLevel(1)
+			elseif name=="npc_dota_hero_morphling" then 
+				local ability = npc:FindAbilityByName("morphling_morph_replicate")
+				ability:SetLevel(1)
+				local ability = npc:FindAbilityByName("wisp_infest")
+				ability:SetLevel(1)
+				local ability = npc:FindAbilityByName("jacob_infest")
+				ability:SetLevel(1)
+
 			end
 
 		

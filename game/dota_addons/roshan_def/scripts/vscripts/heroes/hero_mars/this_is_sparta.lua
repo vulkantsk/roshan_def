@@ -44,7 +44,7 @@ function ThisIsSpartaStart( keys )
 --		Timers:CreateTimer(0.25*i, function ()
 			local point = caster:GetAbsOrigin() + RandomVector(ability:GetSpecialValueFor("spawn_radius"))
 			local unit = CreateUnitByName(unit_name, point, true, caster, caster, caster:GetTeamNumber())
-			unit:AddNewModifier(caster,ability,"modifier_phased",{duration = 0.1})
+			unit:AddNewModifier(caster,ability,"modifier_phased",{duration = -1})
 			unit:AddNewModifier(caster,ability,"modifier_kill",{duration = spawn_duration})
 --		end)
 	end

@@ -1,4 +1,5 @@
 #base "greevil_lord/greevil_items.txt"
+#base "npc_items_new.txt"
 
 "DOTAAbilities"
 {
@@ -2057,7 +2058,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_mana"			"400"
+				"bonus_mana"			"300"
 			}
 			"03"
 			{
@@ -2251,7 +2252,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_ms"				"50"
+				"bonus_ms"				"150"
 			}
 			"02"
 			{
@@ -3150,10 +3151,10 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"800"
 		"AbilityCastPoint"				"0.0"
-		"AbilityCooldown"				"15"
+		"AbilityCooldown"				"25"
 		"AbilitySharedCooldown"			"dagon"
-		"MaxUpgradeLevel"				"10"
-		"ItemBaseLevel"					"6"
+		"MaxUpgradeLevel"				"5"
+		"ItemBaseLevel"					"1"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		// Item Info
@@ -3174,23 +3175,23 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect"		"27"
+				"bonus_intellect"		"30 35 40 45 50"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_all_stats"		"3"
+				"bonus_all_stats"		"3 5 7 9 11"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"9"
+				"bonus_damage"			"10 15 20 25 30"
 				"CalculateSpellDamageTooltip"	"0"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"800"
+				"damage"				"800 1000 1200 1400 1600"
 				"CalculateSpellDamageTooltip"	"1"
 			}
 			"05"
@@ -3201,18 +3202,18 @@
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect_real"	"30"
+				"bonus_intellect_real"	"33 40 47 54 61"
 			}
 			"07"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"damage_exp"			"0.2"
+				"damage_int"			"100 150 200 250 300"
 				"CalculateSpellDamageTooltip"	"1"
 			}
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bounce_range"			"600"
+				"bounce_range"			"400 450 500 550 600"
 			}
 		}
 
@@ -3264,10 +3265,10 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"800"
 		"AbilityCastPoint"				"0.0"
-		"AbilityCooldown"				"15"
+		"AbilityCooldown"				"25"
 		"AbilitySharedCooldown"			"dagon"
-		"MaxUpgradeLevel"				"10"
-		"ItemBaseLevel"					"7"
+		"MaxUpgradeLevel"				"5"
+		"ItemBaseLevel"					"2"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		// Item Info
@@ -3288,23 +3289,23 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect"		"29"
+				"bonus_intellect"		"30 35 40 45 50"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_all_stats"		"3"
+				"bonus_all_stats"		"3 5 7 9 11"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"9"
+				"bonus_damage"			"10 15 20 25 30"
 				"CalculateSpellDamageTooltip"	"0"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"800"
+				"damage"				"800 1000 1200 1400 1600"
 				"CalculateSpellDamageTooltip"	"1"
 			}
 			"05"
@@ -3315,18 +3316,18 @@
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect_real"	"32"
+				"bonus_intellect_real"	"33 40 47 54 61"
 			}
 			"07"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"damage_exp"			"0.4"
-				"CalculateSpellDamageTooltip"	"0"
+				"damage_int"			"100 150 200 250 300"
+				"CalculateSpellDamageTooltip"	"1"
 			}
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bounce_range"			"650"
+				"bounce_range"			"400 450 500 550 600"
 			}
 		}
 
@@ -3378,10 +3379,10 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"800"
 		"AbilityCastPoint"				"0.0"
-		"AbilityCooldown"				"15"
+		"AbilityCooldown"				"25"
 		"AbilitySharedCooldown"			"dagon"
-		"MaxUpgradeLevel"				"10"
-		"ItemBaseLevel"					"8"
+		"MaxUpgradeLevel"				"5"
+		"ItemBaseLevel"					"3"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		// Item Info
@@ -3402,23 +3403,23 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect"		"31"
+				"bonus_intellect"		"30 35 40 45 50"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_all_stats"		"3"
+				"bonus_all_stats"		"3 5 7 9 11"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"9"
+				"bonus_damage"			"10 15 20 25 30"
 				"CalculateSpellDamageTooltip"	"0"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"800"
+				"damage"				"800 1000 1200 1400 1600"
 				"CalculateSpellDamageTooltip"	"1"
 			}
 			"05"
@@ -3429,18 +3430,18 @@
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect_real"	"34"
+				"bonus_intellect_real"	"33 40 47 54 61"
 			}
 			"07"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"damage_exp"			"0.6"
-				"CalculateSpellDamageTooltip"	"0"
+				"damage_int"			"100 150 200 250 300"
+				"CalculateSpellDamageTooltip"	"1"
 			}
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bounce_range"			"700"
+				"bounce_range"			"400 450 500 550 600"
 			}
 		}
 
@@ -3492,10 +3493,10 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"800"
 		"AbilityCastPoint"				"0.0"
-		"AbilityCooldown"				"15"
+		"AbilityCooldown"				"25"
 		"AbilitySharedCooldown"			"dagon"
-		"MaxUpgradeLevel"				"10"
-		"ItemBaseLevel"					"9"
+		"MaxUpgradeLevel"				"5"
+		"ItemBaseLevel"					"4"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		// Item Info
@@ -3516,23 +3517,23 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect"		"33"
+				"bonus_intellect"		"30 35 40 45 50"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_all_stats"		"3"
+				"bonus_all_stats"		"3 5 7 9 11"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"9"
-				"CalculateSpellDamageTooltip"	"1"
+				"bonus_damage"			"10 15 20 25 30"
+				"CalculateSpellDamageTooltip"	"0"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"800"
+				"damage"				"800 1000 1200 1400 1600"
 				"CalculateSpellDamageTooltip"	"1"
 			}
 			"05"
@@ -3543,18 +3544,18 @@
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect_real"	"36"
+				"bonus_intellect_real"	"33 40 47 54 61"
 			}
 			"07"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"damage_exp"			"0.8"
-				"CalculateSpellDamageTooltip"	"0"
+				"damage_int"			"100 150 200 250 300"
+				"CalculateSpellDamageTooltip"	"1"
 			}
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bounce_range"			"750"
+				"bounce_range"			"400 450 500 550 600"
 			}
 		}
 
@@ -3606,10 +3607,10 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"800"
 		"AbilityCastPoint"				"0.0"
-		"AbilityCooldown"				"15"
+		"AbilityCooldown"				"25"
 		"AbilitySharedCooldown"			"dagon"
-		"MaxUpgradeLevel"				"10"
-		"ItemBaseLevel"					"10"
+		"MaxUpgradeLevel"				"5"
+		"ItemBaseLevel"					"5"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		// Item Info
@@ -3627,23 +3628,23 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect"		"35"
+				"bonus_intellect"		"30 35 40 45 50"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_all_stats"		"3"
+				"bonus_all_stats"		"3 5 7 9 11"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"9"
+				"bonus_damage"			"10 15 20 25 30"
 				"CalculateSpellDamageTooltip"	"0"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"800"
+				"damage"				"800 1000 1200 1400 1600"
 				"CalculateSpellDamageTooltip"	"1"
 			}
 			"05"
@@ -3654,18 +3655,18 @@
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect_real"	"38"
+				"bonus_intellect_real"	"33 40 47 54 61"
 			}
 			"07"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"damage_exp"			"1.0"
-				"CalculateSpellDamageTooltip"	"0"
+				"damage_int"			"100 150 200 250 300"
+				"CalculateSpellDamageTooltip"	"1"
 			}
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bounce_range"			"800"
+				"bounce_range"			"400 450 500 550 600"
 			}
 		}
 
@@ -4365,7 +4366,7 @@
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"186"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"ID"							"186"// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"Model"							"models/props_gameplay/recipe.vmdl"
 		
 		// Item Info
@@ -6032,7 +6033,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"0"
+		"ItemCost"						"7500"
 		"ItemShopTags"					""
 
 		// Recipe
@@ -6041,7 +6042,7 @@
 		"ItemResult"					"item_imba_monkey_king_bar"
 		"ItemRequirements"
 		{
-			"01"						"item_imba_javelin;item_imba_javelin;item_demon_edge"
+			"01"						"item_imba_javelin;item_demon_edge"
 		}
 	}
 
@@ -6073,23 +6074,23 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"66"
+				"bonus_damage"			"150"
 				"CalculateSpellDamageTooltip"	"0"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_range"			"100"
+				"bonus_range"			"150"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"pulverize_count"		"4"
+				"pulverize_count"		"5"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"pulverize_damage"		"200"
+				"pulverize_damage"		"750"
 				"CalculateSpellDamageTooltip"	"1"
 			}
 			"05"
@@ -7530,11 +7531,6 @@
 				"var_type"				"FIELD_INTEGER"
 				"stack_duration"		"5"
 			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_cdr"				"10"
-			}
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
@@ -7704,11 +7700,6 @@
 				"var_type"				"FIELD_INTEGER"
 				"stack_duration"		"5"
 			}
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_cdr"				"10"
-			}
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
@@ -7798,11 +7789,6 @@
 			{
 				"var_type"				"FIELD_FLOAT"
 				"stack_duration"		"5.0"
-			}
-			"09"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_cdr"				"10"
 			}
 			"07"
 			{
@@ -7903,11 +7889,6 @@
 				"var_type"				"FIELD_INTEGER"
 				"stack_duration"		"5"
 			}
-			"10"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_cdr"				"10"
-			}
 			"11"
 			{
 				"var_type"				"FIELD_INTEGER"
@@ -7991,6 +7972,7 @@
 		"ItemShopTags"					"int;attack_speed;mana_regen;unique"
 		"ItemQuality"					"artifact"
 		"ItemAliases"					"spellfencer;spell fencer;spell;fencer"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 		"ItemPurchasable"				"0"
 		
 		// Special
@@ -8030,7 +8012,7 @@
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_cdr"				"0"
+				"bonus_cdr"				"10"
 			}
 			"08"
 			{
@@ -9889,103 +9871,6 @@
 	//	}
 	//}
 
-	//=================================================================================================================
-	// Recipe: Octarine Core
-	//=================================================================================================================
-	"item_recipe_imba_octarine_core"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"2120"
-		"BaseClass"						"item_datadriven"
-		"AbilityTextureName" 			"custom/imba_recipe"
-		"Model"							"models/props_gameplay/recipe.mdl"
-
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"0"
-		"ItemShopTags"					""
-
-		// Recipe
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemRecipe"					"1"
-		"ItemResult"					"item_imba_octarine_core"
-		"ItemRequirements"
-		{
-			"01"						"item_mystic_staff;item_soul_booster"
-		}
-	}
-
-	//=================================================================================================================
-	// Octarine Core
-	//=================================================================================================================
-	"item_imba_octarine_core"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"2121"
-		"BaseClass"						"item_lua"
-		"AbilityTextureName" 			"custom/imba_octarine_core"
-		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
-		"ScriptFile"                    "items/item_octarine_core.lua"
-
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySharedCooldown"			"octarine"
-
-		"ItemCost"						"5900"
-		"ItemShopTags"					"boost_mana;mana_pool"
-		"ItemQuality"					"rare"
-		"ItemAliases"					"mana;mb;octarine core"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
-		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-
-		// Stats
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"5.0"
-
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_intelligence"	"40"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_health"			"725"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_mana"			"725"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_cooldown"		"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"spell_lifesteal"		"30"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"blast_radius"			"900"
-			}
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"blast_damage"			"40"
-				"CalculateSpellDamageTooltip"	"1"
-			}
-		}
-	}
 
 	//=================================================================================================================
 	// Aegis of the Immortal
@@ -10496,7 +10381,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"bonus_movement_speed"		"30"
+				"bonus_movement_speed"		"125"
 			}
 
 			"02"
@@ -10600,7 +10485,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_movement_speed"	"30"
+				"bonus_movement_speed"	"100"
 			}
 
 			"02"
@@ -10706,7 +10591,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"base_move_speed"		"25"
+				"base_move_speed"		"100"
 			}
 
 			"02"
@@ -15137,68 +15022,13 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_movement"		"25"
+				"bonus_movement"		"75"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_mana"			"250"
+				"bonus_mana"			"400"
 			}		
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_all_stats"		"5"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"5"
-			}	
-			"05"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"aura_health_regen"		"3.5"
-			}			
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"aura_armor"			"2"
-			}
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"aura_health_regen_bonus"		"12"
-			}			
-			"08"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"aura_armor_bonus"			"15"
-			}
-			"09"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"aura_bonus_threshold"	"20"
-			}
-			"10"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"aura_radius"			"900"
-			}	
-			"11"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"replenish_health"		"250"
-			}
-			"12"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"replenish_mana"		"160"
-			}
-			"13"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"replenish_radius"		"900"
-			}
 		}
 	}
 
@@ -17530,7 +17360,7 @@
 		"ItemPermanent"					"0"
 		"AbilityCastRange"              "300"
 		"AbilityCooldown"               "600"
-		"ItemKillable"                  "1"
+		"ItemKillable"                  "0"
 		"ItemSellable"                  "1"
 		"ItemDroppable"                 "1"
 		"ItemInitialCharges"            "1"
@@ -19176,6 +19006,37 @@
 			}
 		}
 	}
+
+	"item_morphling_essence"
+	{
+		"BaseClass"                     "item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityTextureName"			"special/morphling_essence"
+		"ItemCost"                      "322"  
+		"Model"							"models/props_gameplay/gem01.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+
+		"ItemPurchasable"				"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"                  "1"
+		"ItemSellable"                  "0"
+		"ItemDroppable"                 "1"
+		"ItemInitialCharges"            "1"
+
+		"OnSpellStart"
+		{			
+			"SpendCharge" {}
+			"RunScript"
+			{
+				"ScriptFile"		"abilities/hero_change.lua"
+				"Function"			"GiveNewHero"
+				"hero_name"			"npc_dota_hero_morphling"
+			}
+		}
+	}
 	
 	"item_meatboy_essence"
 	{
@@ -19359,6 +19220,37 @@
 				"ScriptFile"		"abilities/hero_change.lua"
 				"Function"			"GiveNewHero"
 				"hero_name"			"npc_dota_hero_invoker"
+			}
+		}
+	}
+	
+	"item_bloodseeker_essence"
+	{
+		"BaseClass"                     "item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityTextureName"			"special/bloodseeker_essence"
+		"ItemCost"                      "322"  
+		"Model"							"models/props_gameplay/gem01.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+
+		"ItemPurchasable"				"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"                  "1"
+		"ItemSellable"                  "0"
+		"ItemDroppable"                 "1"
+		"ItemInitialCharges"            "1"
+
+		"OnSpellStart"
+		{			
+			"SpendCharge" {}
+			"RunScript"
+			{
+				"ScriptFile"		"abilities/hero_change.lua"
+				"Function"			"GiveNewHero"
+				"hero_name"			"npc_dota_hero_bloodseeker"
 			}
 		}
 	}
@@ -20687,7 +20579,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_movement_speed"	"45"
+				"bonus_movement_speed"	"200"
 			}
 			"02"
 			{
@@ -21398,12 +21290,17 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"manacost_reduction"			"10"
-			}			
+				"spell_amp"			"10"
+			}		
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"spell_amp"			"10"
+				"mana_regen_multiplier"		"15"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"spell_lifesteal_amp"			"15"
 			}
 		}
 	}
@@ -21463,12 +21360,17 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"manacost_reduction"			"20"
-			}			
+				"spell_amp"			"15"
+			}		
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"spell_amp"			"15"
+				"mana_regen_multiplier"		"20"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"spell_lifesteal_amp"			"20"
 			}
 		}
 	}
@@ -21529,74 +21431,20 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"manacost_reduction"		"30"
+				"spell_amp"			"25"
+			}		
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"mana_regen_multiplier"		"30"
 			}			
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"spell_amp"				"25"
-			}
-		}
-	}
-	"item_octarine_core"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"235"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"5900"
-		"ItemShopTags"					"move_speed;boost_mana;mana_pool"
-		"ItemQuality"					"rare"
-		"ItemAliases"					"mana;mb;octarine core"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
-		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-		"ShouldBeSuggested"				"1"
-		
-		// Special	
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_intelligence"	"25"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_health"			"425"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_mana"			"425"
-			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_cooldown"		"25"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"hero_lifesteal"		"10"
-			}			
-			"06"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"creep_lifesteal"		"10"
-			}	
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"active_duration"		"7"
+				"spell_lifesteal_amp"			"30"
 			}
 		}
 	}
-	
 	//=================================================================================================================
 	// Recipe: Octarine Core
 	//=================================================================================================================
@@ -21664,19 +21512,24 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_cooldown"		"25"
+				"bonus_magical_armor"	"5"
 			}
 			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_cooldown"		"25"
+			}
+			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"hero_lifesteal"		"0"
 			}			
-			"06"
+			"07"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"creep_lifesteal"		"0"
 			}	
-			"07"
+			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"active_duration"		"7"
@@ -21750,19 +21603,24 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_cooldown"		"35"
+				"bonus_magical_armor"	"10"
 			}
 			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_cooldown"		"35"
+			}
+			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"hero_lifesteal"		"25"
 			}			
-			"06"
+			"07"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"creep_lifesteal"		"25"
 			}	
-			"07"
+			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"active_duration"		"7"
@@ -21773,7 +21631,8 @@
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"                     "item_datadriven"
+		"BaseClass"                     "item_lua"
+		"ScriptFile"                    "items/custom/item_kirk"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"item_kirk"
 	    "ItemCost"						"0"
@@ -21804,42 +21663,6 @@
 				"gold_bonus"          "40" // regular: 1.8
 			}
 				
-		}
-		"Modifiers"
-		{
-			"modifier_item_kirk"
-			{
-				"Passive"			"1"
-				"IsHidden"			"1"
-
-				"OnKill"
-				{
-					"Random"
-					{
-						"Chance"			"%chance"
-						"PseudoRandom" 		"DOTA_PSEUDO_RANDOM_JUGG_CRIT"
-						"OnSuccess"
-						{
-							"GrantXPGold"
-							{
-								"Target"
-								{
-									"Center"		"CASTER"
-									"Types"			"DOTA_UNIT_TARGET_HERO"
-									"Flags"			"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
-
-								}	
-								"XPAmount"		"80"
-								"GoldAmount"	"40"
-								"ReliableGold"	"1"
-								"PlayAlert"		"1"
-							}
-						}
-					}				
-
-				}
-			}
-	
 		}		
 	}
 	"item_recipe_kirk_gold"
@@ -21866,7 +21689,8 @@
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"                     "item_datadriven"
+		"BaseClass"                     "item_lua"
+		"ScriptFile"                    "items/custom/item_kirk"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE |DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
 		"Model"							"models/props_gameplay/neutral_box.vmdl"
 		"AbilityTextureName"			"item_kirk_gold"
@@ -21913,100 +21737,14 @@
 				"extra_gold"          "200" // regular: 1.8
 			}
 				
-		}
-		"OnSpellStart"
-		{
-
-			"Random"
-			{
-				"Chance"			"%chance"
-				"PseudoRandom" 		"DOTA_PSEUDO_RANDOM_JUGG_CRIT"
-				"OnSuccess"
-				{
-					"GrantXPGold"
-					{
-						"Target"
-						{
-							"Center"		"CASTER"
-							"Radius"		"10000"
-							"Types"			"DOTA_UNIT_TARGET_HERO"
-							"Flags"			"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
-
-						}	
-						"XPAmount"		"600"
-						"GoldAmount"	"200"
-						"ReliableGold"	"1"
-						"PlayAlert"		"1"
-					}
-					"RunScript"
-					{
-						"ScriptFile"			"scripts/vscripts/items/custom/playGlobalSound.lua"
-						"Function"				"PlaySound"
-						"sound"					"Hero_OgreMagi.Fireblast.x3"
-					}
-				}
-				"OnFailure"
-				{
-					"GrantXPGold"
-					{
-						"Target"
-						{
-							"Center"		"CASTER"
-							"Radius"		"10000"
-							"Types"			"DOTA_UNIT_TARGET_HERO"
-							"Flags"			"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
-
-						}	
-						"XPAmount"		"150"
-						"GoldAmount"	"60"
-						"ReliableGold"	"1"
-						"PlayAlert"		"1"
-					}
-				}
-			}			
-		}
-		"Modifiers"
-		{
-			"modifier_item_kirk_gold"
-			{
-				"Passive"			"1"
-				"IsHidden"			"1"
-
-				"OnKill"
-				{
-					"Random"
-					{
-						"Chance"			"%chance"
-						"PseudoRandom" 		"DOTA_PSEUDO_RANDOM_JUGG_CRIT"
-						"OnSuccess"
-						{
-							"GrantXPGold"
-							{
-								"Target"
-								{
-									"Center"		"CASTER"
-									"Types"			"DOTA_UNIT_TARGET_HERO"
-									"Flags"			"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
-
-								}	
-								"XPAmount"		"150"
-								"GoldAmount"	"60"
-								"ReliableGold"	"1"
-								"PlayAlert"		"1"
-							}
-						}
-					}				
-
-				}
-			}
-	
-		}		
+		}	
 	}
 	"item_skull_of_midas"  //A dummy item that is used to take up item slots in the SwapToItem() Lua function.
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"                     "item_datadriven"
+		"BaseClass"                     "item_lua"
+		"ScriptFile"                    "items/custom/item_kirk"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE |DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
 		"AbilityTextureName"			"special/skull_of_midas"
 		
@@ -22023,7 +21761,11 @@
 		"AbilityCooldown"				"30"
 		"AbilitySpecial"
 		{
-
+			"01"
+			{
+				"var_type"              "FIELD_INTEGER"
+				"chance"            "100" // regular: 1.8
+			}
 			"02"
 			{
 				"var_type"              "FIELD_FLOAT"
@@ -22033,45 +21775,8 @@
 			{
 				"var_type"              "FIELD_FLOAT"
 				"gold"          "5" // regular: 1.8
-			}
-				
-		}
-		"OnSpellStart"
-		{
-			"RunScript"
-			{
-				"ScriptFile"			"scripts/vscripts/items/custom/playGlobalSound.lua"
-				"Function"				"PlaySound"
-				"sound"					"LakadMatatag"
-			}
-		}
-		"Modifiers"
-		{
-			"modifier_skull_of_midas"
-			{
-				"Passive"			"1"
-				"IsHidden"			"1"
-	
-				"OnKill"
-				{
-					"GrantXPGold"
-					{
-						"Target"
-						{
-							"Center"		"CASTER"
-							"Types"			"DOTA_UNIT_TARGET_HERO"
-							"Flags"			"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
-
-						}	
-						"XPAmount"		"15"
-						"GoldAmount"	"5"
-						"ReliableGold"	"1"
-						"PlayAlert"		"1"
-					}				
-				}
-			}
-	
-		}		
+			}			
+		}	
 	}
 	"item_recipe_imba_necronomicon_auraman"
 	{
@@ -22625,7 +22330,7 @@
             "01"
             {
                 "var_type"              "FIELD_INTEGER"
-                "armor_bonus"           "4 8 16 32"
+                "armor_bonus"           "4 8 16"
             }
         }
        
@@ -22697,7 +22402,7 @@
             "01"
             {
                 "var_type"              "FIELD_INTEGER"
-                "armor_bonus"           "4 8 16 32"
+                "armor_bonus"           "4 8 16"
             }
         }
        
@@ -22769,7 +22474,7 @@
             "01"
             {
                 "var_type"              "FIELD_INTEGER"
-                "armor_bonus"           "4 8 16 32"
+                "armor_bonus"           "4 8 16"
             }
         }
        
@@ -22787,79 +22492,7 @@
                 }
             }
         }
-    }  
-    //=================================================================================================================
-    // Recipe: Mail
-    //=================================================================================================================
-    "item_recipe_mail_3"
-    {
-        // General
-        //-------------------------------------------------------------------------------------------------------------
-        "BaseClass"                     "item_datadriven"
-        "AbilityTextureName"            "custom/imba_recipe"
-        "Model"                         "models/props_gameplay/recipe.mdl"
- 
-        // Item Info
-        //-------------------------------------------------------------------------------------------------------------
-        "ItemCost"                      "2000"
-        "ItemShopTags"                  ""
- 
-        // Recipe
-        //-------------------------------------------------------------------------------------------------------------
-        "ItemRecipe"                    "1"
-        "ItemResult"                    "item_mail_3"
-        "ItemRequirements"
-        {
-            "01"                        "item_mail_2;item_mail_2"
-        }
-    }
- 
-    //=================================================================================================================
-    // Mail
-    //=================================================================================================================
-    "item_mail_3"
-    {
-        // General
-        //-------------------------------------------------------------------------------------------------------------
-        "BaseClass"                     "item_datadriven"
-        "AbilityTextureName"            "my_item/mail3"
-        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
- 
-        // Item Info
-        //-------------------------------------------------------------------------------------------------------------
-        "ItemShopTags"                  "armor"
-        "ItemQuality"                   "artifact"
-  
-		"MaxUpgradeLevel"				"4"
-		"ItemBaseLevel"					"4"
-
-        // Special
-        //-------------------------------------------------------------------------------------------------------------
-        "AbilitySpecial"
-        {
- 
-            "01"
-            {
-                "var_type"              "FIELD_INTEGER"
-                "armor_bonus"           "4 8 16 32"
-            }
-        }
-       
-        "Modifiers"
-        {
-            "modifier_item_mail"
-            {
-                "Passive"           "1"
-                "IsHidden"          "1"
-                "Attributes"            "MODIFIER_ATTRIBUTE_MULTIPLE"
-               
-                "Properties"
-                {
-                    "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"            "%armor_bonus"
-                }
-            }
-        }
-    }  
+    }   
      //=================================================================================================================
     // Recipe: Armor
     //=================================================================================================================
@@ -24327,7 +23960,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_movement_speed"			"50"
+				"bonus_movement_speed"			"100"
 			}
 			"03"
 			{
@@ -27322,6 +26955,108 @@
 			}			
 		}
 	}
+	"item_special_invoker"
+	{
+		"BaseClass"						"item_lua"														
+		"ScriptFile"					"heroes/hero_invoker/item_special_invoker"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"enique_item/invoker"
+
+		"ItemCost"						"0"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"1"
+		"IsTempestDoubleClonable"				"0"		
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_manareg"			"6"
+			}			
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_str"			"10"
+			}			
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_agi"			"10"
+			}			
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_int"			"30"
+			}			
+		}
+	}
+	"item_recipe_special_invoker_upgrade"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName" 			"custom/imba_recipe"
+		"Model"							"models/props_gameplay/recipe.mdl"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"99999"
+		"ItemShopTags"					""
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_special_invoker_upgrade"
+		"ItemRequirements"
+		{
+			"01"						"item_special_invoker"
+		}
+	}	
+	"item_special_invoker_upgrade"
+	{
+		"BaseClass"						"item_lua"														
+		"ScriptFile"					"heroes/hero_invoker/item_special_invoker"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"enique_item/invoker_upgrade"
+
+		"ItemCost"						"0"
+		"ItemPurchasable"				"1"
+		"ItemQuality"					""
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"1"
+		"IsTempestDoubleClonable"				"0"		
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_manareg"			"50"
+			}			
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_str"			"100"
+			}			
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_agi"			"100"
+			}			
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_int"			"300"
+			}			
+		}
+	}
 	"item_special_jotaro"
 	{
 		"BaseClass"						"item_lua"														
@@ -27800,7 +27535,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"2500"
+		"ItemCost"						"0"
 		"ItemShopTags"					""
 
 		// Recipe
@@ -27809,7 +27544,7 @@
 		"ItemResult"					"item_living_armor"
 		"ItemRequirements"
 		{
-			"01"						"item_secret_tree1;item_armor_3;item_imba_mekansm"
+			"01"						"item_leaf_7;item_leaf_1"
 		}
 	}
 	"item_living_armor"
@@ -27951,6 +27686,7 @@
 		"BaseClass"						"item_lua"														
 		"ScriptFile"					"items/custom/item_arrow"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityTextureName"			"quest/arrow_fire"
 
 		"ItemCost"						"0"
@@ -32310,4 +32046,393 @@
 			}
 		}
 	}
+
+	"item_leaf_1"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/custom/item_leaf"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"item_leaf_1"
+		"Model"							"models/props_gameplay/tango.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_tango.vpcf"
+
+		"ItemPurchasable"				"0"
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"1"
+		"ItemBaseLevel"					"1"
+		"MaxUpgradeLevel"				"7"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_health"			"400 800 1200 1600 2000 2400 2800"
+			}						
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_regen"			"10 20 30 40 50 60 70"
+			}						
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_armor"			"4 7 10 13 16 19 22"
+			}
+		}
+	}	
+	"item_recipe_item_leaf_2"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName" 			"custom/imba_recipe"
+		"Model"							"models/props_gameplay/recipe.mdl"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						""
+		"ItemShopTags"					""
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_leaf_2"
+		"ItemRequirements"
+		{
+			"01"						"item_leaf_1;item_leaf_1"
+		}
+	}
+	"item_leaf_2"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/custom/item_leaf"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"item_leaf_2"
+		"Model"							"models/props_gameplay/tango.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_tango.vpcf"
+
+		"ItemPurchasable"				"0"
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"1"
+		"ItemBaseLevel"					"2"
+		"MaxUpgradeLevel"				"7"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_health"			"400 800 1200 1600 2000 2400 2800"
+			}						
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_regen"			"10 20 30 40 50 60 70"
+			}						
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_armor"			"4 7 10 13 16 19 22"
+			}
+		}
+	}	
+	"item_recipe_item_leaf_3"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName" 			"custom/imba_recipe"
+		"Model"							"models/props_gameplay/recipe.mdl"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						""
+		"ItemShopTags"					""
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_leaf_3"
+		"ItemRequirements"
+		{
+			"01"						"item_leaf_2;item_leaf_1"
+		}
+	}
+	"item_leaf_3"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/custom/item_leaf"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"item_leaf_3"
+		"Model"							"models/props_gameplay/tango.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_tango.vpcf"
+
+		"ItemPurchasable"				"0"
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"1"
+		"ItemBaseLevel"					"3"
+		"MaxUpgradeLevel"				"7"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_health"			"400 800 1200 1600 2000 2400 2800"
+			}						
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_regen"			"10 20 30 40 50 60 70"
+			}						
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_armor"			"4 7 10 13 16 19 22"
+			}
+		}
+	}	
+	"item_recipe_item_leaf_4"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName" 			"custom/imba_recipe"
+		"Model"							"models/props_gameplay/recipe.mdl"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						""
+		"ItemShopTags"					""
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_leaf_4"
+		"ItemRequirements"
+		{
+			"01"						"item_leaf_3;item_leaf_1"
+			"02"						"item_leaf_2;item_leaf_2"
+		}
+	}
+	"item_leaf_4"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/custom/item_leaf"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"item_leaf_4"
+		"Model"							"models/props_gameplay/tango.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_tango.vpcf"
+
+		"ItemPurchasable"				"0"
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"1"
+		"ItemBaseLevel"					"4"
+		"MaxUpgradeLevel"				"7"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_health"			"400 800 1200 1600 2000 2400 2800"
+			}						
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_regen"			"10 20 30 40 50 60 70"
+			}						
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_armor"			"4 7 10 13 16 19 22"
+			}
+		}
+	}	
+	"item_recipe_item_leaf_5"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName" 			"custom/imba_recipe"
+		"Model"							"models/props_gameplay/recipe.mdl"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						""
+		"ItemShopTags"					""
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_leaf_5"
+		"ItemRequirements"
+		{
+			"01"						"item_leaf_4;item_leaf_1"
+			"02"						"item_leaf_3;item_leaf_2"
+		}
+	}
+	"item_leaf_5"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/custom/item_leaf"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"item_leaf_5"
+		"Model"							"models/props_gameplay/tango.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_tango.vpcf"
+
+		"ItemPurchasable"				"0"
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"1"
+		"ItemBaseLevel"					"5"
+		"MaxUpgradeLevel"				"7"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_health"			"400 800 1200 1600 2000 2400 2800"
+			}						
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_regen"			"10 20 30 40 50 60 70"
+			}						
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_armor"			"4 7 10 13 16 19 22"
+			}
+		}
+	}	
+	"item_recipe_item_leaf_6"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName" 			"custom/imba_recipe"
+		"Model"							"models/props_gameplay/recipe.mdl"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						""
+		"ItemShopTags"					""
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_leaf_6"
+		"ItemRequirements"
+		{
+			"01"						"item_leaf_5;item_leaf_1"
+			"02"						"item_leaf_4;item_leaf_2"
+		}
+	}
+	"item_leaf_6"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/custom/item_leaf"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"item_leaf_6"
+		"Model"							"models/props_gameplay/tango.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_tango.vpcf"
+
+		"ItemPurchasable"				"0"
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"1"
+		"ItemBaseLevel"					"6"
+		"MaxUpgradeLevel"				"7"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_health"			"400 800 1200 1600 2000 2400 2800"
+			}						
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_regen"			"10 20 30 40 50 60 70"
+			}						
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_armor"			"4 7 10 13 16 19 22"
+			}
+		}
+	}	
+	"item_recipe_item_leaf_7"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_datadriven"
+		"AbilityTextureName" 			"custom/imba_recipe"
+		"Model"							"models/props_gameplay/recipe.mdl"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						""
+		"ItemShopTags"					""
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_leaf_7"
+		"ItemRequirements"
+		{
+			"01"						"item_leaf_6;item_leaf_1"
+			"02"						"item_leaf_5;item_leaf_2"
+		}
+	}
+	"item_leaf_7"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/custom/item_leaf"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"item_leaf_7"
+		"Model"							"models/props_gameplay/tango.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_tango.vpcf"
+
+		"ItemPurchasable"				"0"
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"1"
+		"ItemBaseLevel"					"7"
+		"MaxUpgradeLevel"				"7"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_health"			"400 800 1200 1600 2000 2400 2800"
+			}						
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_regen"			"10 20 30 40 50 60 70"
+			}						
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_armor"			"4 7 10 13 16 19 22"
+			}
+		}
+	}	
 }

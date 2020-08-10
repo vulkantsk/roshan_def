@@ -158,22 +158,18 @@ modifier_jacob_infest_passive = class({
 	IsDebuff 				= function(self) return false end,
 	IsBuff                  = function(self) return true end,
 	RemoveOnDeath 			= function(self) return false end,
-	CheckState		= function(self) return 
-		{
-		[MODIFIER_STATE_DISARMED] = true,
-		[MODIFIER_STATE_INVULNERABLE] = true,
-		[MODIFIER_STATE_MUTED] = true,
-		} end,
 })
+
 function modifier_jacob_infest_passive:CheckState()
-	local state =
-	{
-		[MODIFIER_STATE_DISARMED] = true,
-		[MODIFIER_STATE_INVULNERABLE] = true,
---		[MODIFIER_STATE_MUTED] = true,
-	}
-	return state
+	local state = {}
+
+	if self:GetCaster():GetUnitName() == "npc_dota_hero_antimage" then
+		state[MODIFIER_STATE_DISARMED] = true
+		state[MODIFIER_STATE_INVULNERABLE] = true
+	end	
+	return state	
 end
+
 function modifier_jacob_infest_passive:OnCreated()
 	self:StartIntervalThink(0.03)
 end
@@ -196,6 +192,7 @@ modifier_jacob_infest_hidden = class({
 	RemoveOnDeath 			= function(self) return false end,
 	CheckState		= function(self) return 
 		{
+		[MODIFIER_STATE_INVULNERABLE] = true,
 		[MODIFIER_STATE_NO_UNIT_COLLISION] = true,
 		[MODIFIER_STATE_ROOTED] = true,
 		[MODIFIER_STATE_NOT_ON_MINIMAP] = true,

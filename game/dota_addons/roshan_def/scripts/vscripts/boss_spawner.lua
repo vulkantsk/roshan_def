@@ -26,8 +26,10 @@ boss_list = {
 [6]= {{boss_name="doom", units={"npc_dota_doom_boss","npc_dota_doom_minion","npc_dota_doom_minion","npc_dota_doom_minion"}, reward={4000}, music="zoldik", marathon=true, marathon_mult=75},
 {boss_name="thief", units={"npc_dota_thief"}, reward={4000}, music=nil, marathon=false, marathon_mult=100}},
 [7]= {{boss_name="seeker", units={"npc_dota_bloodseeker_boss"}, reward={5000}, music=nil, marathon=true, marathon_mult=50}},
-[8]= {{boss_name="sans", units={"npc_dota_sans"}, reward={7500}, music="sans_theme", marathon=nil, marathon_mult=200}},
-[9]= {{boss_name="spectre", units={"npc_phantasm_1"}, reward={10000}, music=nil, marathon=nil, marathon_mult=200}},
+[8]= {{boss_name="sans", units={"npc_dota_sans"}, reward={7500}, music="sans_theme", marathon=nil, marathon_mult=200},
+{boss_name="twins", units={"npc_dota_twins_1"}, reward={7500}, music=nil, marathon=nil, marathon_mult=200}},
+[9]= {{boss_name="spectre", units={"npc_phantasm_1"}, reward={10000}, music=nil, marathon=nil, marathon_mult=200},
+{boss_name="brotherhood", units={"npc_dota_brotherhood_1"}, reward={10000}, music="terraformars", marathon=nil, marathon_mult=200}},
 [10]= {{boss_name="cursed_warriors", units={["npc_cursed_warrior"]=12}, reward={["npc_cursed_warrior"]=1000}, music="Sandopolis", marathon=true, marathon_mult=200}},
 [11]= {{boss_name="plague_wagon", units={"npc_dota_plague_wagon"}, reward={10000}, music="krutoe_pike", marathon=false, marathon_mult=200}},
 

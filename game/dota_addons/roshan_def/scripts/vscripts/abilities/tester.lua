@@ -1,25 +1,27 @@
 ability_test_1 = class({})
 
 function ability_test_1:OnSpellStart()
-	BossSpawner:FinalBossSpawner()
+	local caster = self:GetCaster()
+    caster:AddNewModifier(caster, nil, "modifier_roshan_second_chance",nil)
 end
 
 ability_test_2 = class({})
 
 function ability_test_2:OnSpellStart()
-	BossSpawner:InitBossMarathon()
+	EmitGlobalSound("town_road_2")
 end
 
 ability_test_3 = class({})
 
 function ability_test_3:OnSpellStart()
-	BossSpawner:SpawnBoss(3)
+	BossSpawner:SpawnBoss(8)
 end
 
 ability_test_4 = class({})
 
 function ability_test_4:OnSpellStart()
-	BossSpawner:SpawnBoss(4)
+    BossSpawner:SpawnBoss(9)
+
 end
 
 ability_test_5 = class({})

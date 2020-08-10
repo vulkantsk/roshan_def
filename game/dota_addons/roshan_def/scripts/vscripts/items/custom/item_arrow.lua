@@ -1,4 +1,3 @@
-
 LinkLuaModifier( "modifier_item_arrow", "items/custom/item_arrow.lua", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_item_arrow_fire", "items/custom/item_arrow.lua", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_campfire_quest", "items/custom/item_arrow.lua", LUA_MODIFIER_MOTION_NONE )
@@ -26,67 +25,28 @@ end
 
 function item_arrow_fire:OnSpellStart()
 	local point = self:GetCursorPosition()
---[[
-	local dummy = CreateUnitByName("npc_dota_thinker", point, true, nil, nil, DOTA_TEAM_NEUTRALS)
-	dummy:AddNewModifier(self:GetCaster(), self, "modifier_kill", {duration = 3})
-
-	local info = {
-		EffectName = "particles/units/heroes/hero_huskar/huskar_burning_spear.vpcf",
-		Ability = self,
-		iMoveSpeed = 800,
-		Source = self:GetCaster(),
-		Target = dummy,
-		iSourceAttachment = DOTA_PROJECTILE_ATTACHMENT_ATTACK_2
-	}
-
-	ProjectileManager:CreateTrackingProjectile( info )
-]]
 	local caster = self:GetCaster()
 	local radius = self:GetSpecialValueFor("radius")
 	local duration = self:GetSpecialValueFor("duration")
 
 	local enemies = FindUnitsInRadius(caster:GetTeam(), 
 									point, 
-									caster, 
+									nil, 
 									radius, 
 									DOTA_UNIT_TARGET_TEAM_BOTH, 
 									DOTA_UNIT_TARGET_BASIC + DOTA_UNIT_TARGET_HERO, 
 									DOTA_UNIT_TARGET_FLAG_INVULNERABLE + DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES, 
 									FIND_ANY_ORDER, false)
+
 	
-	for i=1,#enemies do
+	for _,enemy in pairs(enemies) do
+		print(enemy:GetUnitName())
 		EmitSoundOn( "Hero_Huskar.Burning_Spear", enemy )
-		local enemy = enemies[i]
-		DealDamage(caster, enemy, damage, DAMAGE_TYPE_MAGICAL, nil, ability)
-		enemy:AddNewModifier(caster, self, "modifier_item_arrow_fire", {duration = duration})
-			
+		local modifier = enemy:AddNewModifier(enemy, self, "modifier_item_arrow_fire", {duration = duration})
+		modifier.caster = caster
 	end
 end
 
-function item_arrow_fire:OnProjectileHit(hTarget, vLocation)
-	if hTarget ~= nil and ( not hTarget:TriggerSpellAbsorb( self ) )  then
-		local caster = self:GetCaster()
-		local radius = self:GetSpecialValueFor("radius")
-		local duration = self:GetSpecialValueFor("duration")
-
-		EmitSoundOn( "Hero_Huskar.Burning_Spear", hTarget )
-		local enemies = FindUnitsInRadius(caster:GetTeam(), 
-										hTarget:GetAbsOrigin(), 
-										nil, 
-										radius, 
-										DOTA_UNIT_TARGET_TEAM_BOTH, 
-										DOTA_UNIT_TARGET_BASIC, 
-										DOTA_UNIT_TARGET_FLAG_INVULNERABLE + DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES, 
-										FIND_ANY_ORDER, false)
-		
-		for i=1,#enemies do
-			local enemy = enemies[i]
-			DealDamage(caster, enemy, damage, DAMAGE_TYPE_MAGICAL, nil, ability)
-			enemy:AddNewModifier(caster, self, "modifier_item_arrow_fire", {duration = duration})
-				
-		end
-	end
- end 
 --------------------------------------------------------------------------------
 
 modifier_item_arrow = class({
@@ -108,16 +68,14 @@ end
 modifier_item_arrow_fire = class({
 	IsHidden 				= function(self) return true end,
 	IsPurgable 				= function(self) return false end,
-	IsDebuff 				= function(self) return false end,
-	IsBuff                  = function(self) return true end,
-	RemoveOnDeath 			= function(self) return true end,
 })
 
-function modifier_item_arrow_fire:OnCreated()
+function modifier_item_arrow_fire:OnCreated(data)
 	if IsServer() then
 		local ability = self:GetAbility()
-		self.value_need = 1/ability:GetSpecialValueFor("str_mult")
-		self.crit_chance = ability:GetSpecialValueFor("crit_chance")
+--		self.h_caster = data.h_caster
+--		print("caster = "..self.h_caster:GetUnitName())
+--		print("gg")
 		self:StartIntervalThink(1)
 	end
 end
@@ -125,6 +83,7 @@ end
 function modifier_item_arrow_fire:OnDestroy()
 	if IsServer() then
 		local parent = self:GetParent()
+		local caster = self.caster
 		if parent:GetUnitName() == "npc_dota_creature_friendly_ogre_tank_webtrapped" then
 			parent:AddNoDraw()
 			parent:ForceKill(false)
@@ -142,12 +101,17 @@ function modifier_item_arrow_fire:OnDestroy()
 					unit:MoveToPositionAggressive(home_point:GetAbsOrigin())
 				end	
 			end)
+		elseif parent:HasModifier("modifier_treant_recover_effect") then
+			parent:RemoveModifierByName("modifier_treant_recover_passive")
+			parent:RemoveModifierByName("modifier_treant_recover_effect")
+			parent:AddNoDraw()
+			parent:Kill(nil, caster)
 		end
 	end
 end
 
 function modifier_item_arrow_fire:OnIntervalThink()
-	local caster = self:GetCaster()
+	local caster = self.caster
 	local parent = self:GetParent()
 	local ability = self:GetAbility()
 	local dps =  ability:GetSpecialValueFor("dps")

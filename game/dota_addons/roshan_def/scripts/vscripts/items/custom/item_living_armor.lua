@@ -24,6 +24,10 @@ modifier_item_living_armor = class({
 	IsDebuff 				= function(self) return false end,
 	IsBuff                  = function(self) return true end,
 	RemoveOnDeath 			= function(self) return false end,
+    CheckState      = function(self) return 
+        {
+            [MODIFIER_STATE_ALLOW_PATHING_TROUGH_TREES] = true,
+        }end,          
 	DeclareFunctions		= function(self) return 
 		{MODIFIER_PROPERTY_HEALTH_BONUS,
 		MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT,

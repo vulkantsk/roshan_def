@@ -484,10 +484,10 @@
                                                         "value0"                "sounds/witch_doctor/feel_it_in_your_bones.vsnd"
                                                 }
                                         }
-										"volume_min" 		{	"value"         "1.2500000" }
-										"volume_max"		{	"value"         "1.2500000" }
+										"volume_min" 		{	"value"         "2.2500000" }
+										"volume_max"		{	"value"         "2.2500000" }
 										"pitch"       		{  	"value"   	"1.000000" }
-										"soundlevel"		{	"value"		"72.000000" }
+										"soundlevel"		{	"value"		"75.000000" }
 										"distance_max"		{	"value"		"600.000000" }
 
 
@@ -1416,6 +1416,64 @@
 	}
 }
 
+"alchemist_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+						"vsnd_files"
+						{
+								"value"
+								{
+									"sound1"         "sounds/wd_music/alchemist_1.vsnd"
+								}
+						}
+						"volume"                {   	"value"     	"5.500000"  }
+						"pitch"                 {       "value"         "1.000000" }
+						"soundlevel"            {       "value"         "72.000000" }
+						"distance_max"          {       "value"         "1500.000000" }
+				}
+			}
+		}
+	}
+}
+
+"alchemist_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+						"vsnd_files"
+						{
+								"value"
+								{
+									"sound1"         "sounds/wd_music/alchemist_2.vsnd"
+								}
+						}
+						"volume"                {   	"value"     	"5.500000"  }
+						"pitch"                 {       "value"         "1.000000" }
+						"soundlevel"            {       "value"         "72.000000" }
+						"distance_max"          {       "value"         "1500.000000" }
+				}
+			}
+		}
+	}
+}
+
 "parasyte_speak_1" 
 {
 	"operator_stacks"
@@ -1610,7 +1668,7 @@
 					{
 						"value"
 						{
-							"value0"		"sounds/music/glad_valakas.vsnd"
+							"value0"		"sounds/wd_music/glad_valakas.vsnd"
 						}
 					}
 					"volume"			{   "value"     "5.500000"  }
@@ -1641,7 +1699,7 @@
 					{
 						"value"
 						{
-							"value0"		"sounds/music/pivko.vsnd"
+							"value0"		"sounds/wd_music/pivko.vsnd"
 						}
 					}
 					"volume"			{   "value"     "5.500000"  }
@@ -1672,7 +1730,7 @@
 					{
 						"value"
 						{
-							"value0"		"sounds/music/totoro_theme.vsnd"
+							"value0"		"sounds/wd_music/totoro_theme.vsnd"
 						}
 					}
 					"volume"			{   "value"     "7.500000"  }
@@ -1687,7 +1745,7 @@
 	}
 }
 
-"undertale" 
+"undertale"  
 {
 	"operator_stacks"
 	{
@@ -1703,7 +1761,7 @@
 					{
 						"value"
 						{
-							"value0"		"sounds/music/undertale.vsnd"
+							"value0"		"sounds/wd_music/undertale.vsnd"
 						}
 					}
 					"volume"			{   "value"     "5.500000"  }
@@ -1765,7 +1823,7 @@
 					{
 						"value"
 						{
-							"value0"		"sounds/music/spulae_mulae.vsnd"
+							"value0"		"sounds/wd_music/spulae_mulae.vsnd"
 						}
 					}
 					"volume"			{   "value"     "4.2500000"  }
@@ -3101,7 +3159,27 @@
 		}
 	}
 }
-  
+   
+"roshan_second_chance" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"			{		"value"		"sounds/items/aegis_expire.vsnd"}
+					"volume"                {   	"value"     "1"}
+					"pitch"                 {       "value"     "1"}
+				}
+			}
+		}
+	}
+}  
 "gate_break" 
 {
 	"operator_stacks"
@@ -3226,7 +3304,28 @@
 				"operator_variables"
 				{
 					"vsnd_files"			{		"value"		"sounds/boss_theme/sandopolis.vsnd"}
-					"volume"                {   	"value"     "1"}
+					"volume"                {   	"value"     "0.75"}
+					"pitch"                 {       "value"     "1"}
+				}
+			}
+		}
+	}
+}
+
+"terraformars" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"			{		"value"		"sounds/boss_theme/terraformars.vsnd"}
+					"volume"                {   	"value"     "0.75"}
 					"pitch"                 {       "value"     "1"}
 				}
 			}
