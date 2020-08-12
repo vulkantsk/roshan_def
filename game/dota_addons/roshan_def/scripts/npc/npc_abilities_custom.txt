@@ -48888,5 +48888,460 @@
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
 	}
+	"leshrac_spirit_and_body"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_leshrac/spirit_and_body"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"MaxLevel"						"1"
 
+		"AbilityCooldown"				"2"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"heal_pct"				"25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"disable_time"			"10"
+			}
+		}
+	}
+	"leshrac_breaking_the_veil_spirit_form"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_leshrac/breaking_the_veil"
+		"AbilityTextureName"			"leshrac/leshrac_breaking_the_veil_spirit_form"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"LevelsBetweenUpgrades"			"3"
+		"MaxLevel"						"7"
+
+		"AbilityManaCost"				"150"
+		"AbilityCastPoint"				"0.1"
+		"AbilityCooldown"				"25"
+
+		"LinkedAbility"					"leshrac_breaking_the_veil_body_form"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"3 4 5 6 7 8 9"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"explosion_count"		"10 20 30 40 50 60 70"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"500"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"explosion_damage"		"45 50 55 60 65 70 75"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"spirit_form_damage_mult_pct" "250"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"body_form_stun_radius"	"200"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"body_form_stun_chance"	"50"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"body_form_stun_duration"	"1.8"
+			}
+		}
+	}
+	"leshrac_breaking_the_veil_body_form"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_leshrac/breaking_the_veil"
+		"AbilityTextureName"			"leshrac/leshrac_breaking_the_veil_body_form"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"LevelsBetweenUpgrades"			"3"
+		"MaxLevel"						"7"
+
+		"AbilityManaCost"				"150"
+		"AbilityCastPoint"				"0.1"
+		"AbilityCooldown"				"25"
+
+		"LinkedAbility"					"leshrac_breaking_the_veil_spirit_form"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"3 4 5 6 7 8 9"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"explosion_count"		"10 20 30 40 50 60 70"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"500"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"explosion_damage"		"45 50 55 60 65 70 75"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"body_form_stun_radius"	"200"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"body_form_stun_chance"	"50"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"body_form_stun_duration"	"1.8"
+			}
+		}
+	}
+	"leshrac_chain_lightning_spirit_form"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_leshrac/chain_lightning"
+		"AbilityTextureName"			"leshrac/leshrac_chain_lightning_spirit_form"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE | DOTA_UNIT_TARGET_FLAG_NO_INVIS"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		"LevelsBetweenUpgrades"			"3"
+		"MaxLevel"						"7"
+
+		"AbilityManaCost"				"150"
+		"AbilityCastPoint"				"0.3"
+		"AbilityCastRange"				"600"
+		"AbilityCooldown"				"10"
+
+		"LinkedAbility"					"leshrac_chain_lightning_body_form"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_increase_pct"	"25"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bounce_range"			"1000"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bounces"				"10"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"spirit_form_mag_res_reduction_pct"	"50"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"body_form_armor_reduction_pct"	"50"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"jump_delay"			"0.25"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"as_slow_pct"			"25"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"ms_slow_pct"			"25"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"slow_duration"			"5"
+			}
+			"11"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"forms_debuff_duration"	"5"
+			}
+		}
+	}
+	"leshrac_chain_lightning_body_form"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_leshrac/chain_lightning"
+		"AbilityTextureName"			"leshrac/leshrac_chain_lightning_body_form"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE | DOTA_UNIT_TARGET_FLAG_NO_INVIS"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+
+		"LevelsBetweenUpgrades"			"3"
+		"MaxLevel"						"7"
+
+		"AbilityManaCost"				"150"
+		"AbilityCastPoint"				"0.3"
+		"AbilityCastRange"				"600"
+		"AbilityCooldown"				"10"
+
+		"LinkedAbility"					"leshrac_chain_lightning_spirit_form"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_increase_pct"	"25"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bounce_range"			"1000"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bounces"				"10"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"spirit_form_mag_res_reduction_pct"	"50"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"body_form_armor_reduction_pct"	"50"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"jump_delay"			"0.25"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"as_slow_pct"			"25"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"ms_slow_pct"			"25"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"slow_duration"		"5"
+			}
+			"11"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"forms_debuff_duration"	"5"
+			}
+		}
+	}
+	"leshrac_ethereal_flame"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_leshrac/ethereal_flame"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_TOGGLE"
+		"AbilityTextureName"			"leshrac/leshrac_ethereal_flame_body_form"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"LevelsBetweenUpgrades"			"3"
+		"MaxLevel"						"7"
+
+		"AbilityCooldown"				"1"
+		"AbilityManaCost"				"150"
+
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"mana_spend_per_sec"	"25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"100"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_to_heal_pct"	"35"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"spirit_form_damage_boost_pct" "50"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"body_form_heal_boost" "25"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_interval"		"1"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"500"
+			}
+		}
+	}
+	"leshrac_anomaly"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_leshrac/anomaly"
+		"AbilityTextureName"			"leshrac/leshrac_anomaly"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE | DOTA_UNIT_TARGET_FLAG_NO_INVIS"
+
+		"MaxLevel"						"5"
+		"LevelsBetweenUpgrades"			"10"
+		"RequiredLevel"					"10"
+
+		"AbilityCooldown"				"40"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"250"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"500"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"spirit_form_damage_boost_pct" "80"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"body_form_stun_duration_boost" "1.0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"1.0"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"stun_radius"			"200"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"spirit_form_physical_damage_reduction_pct" "20"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"body_form_mag_damage_reduction_pct" "20"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"spirit_form_int_to_spell_amp" "5"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"body_form_str_to_spell_amp" "10"
+			}
+			"11"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"15"
+			}
+		}
+	}
+	"leshrac_resonance"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_leshrac/resonance"
+		"AbilityTextureName"			""
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"RequiredLevel"					"75"
+		"MaxLevel"						"1"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"magic_crit_chance"		"35"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"magic_crit_mult_pct"	"250"
+			}
+		}
+	}
 }
