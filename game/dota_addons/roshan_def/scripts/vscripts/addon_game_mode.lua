@@ -16,7 +16,7 @@ function Precache( context )
 
 	--[[
 	This function is used to precache resources/units/items/abilities that will be needed
-	for sure in your game and that cannot or should not be precached asynchronously or 
+	for sure in your game and that cannot or should not be precached asynchronously or
 	after the game loads.
 
 	See GameMode:PostLoadPrecache() in barebones.lua for more information
@@ -39,7 +39,7 @@ function Precache( context )
 	PrecacheResource("particle", "particles/creeps/lane_creeps/creep_radiant_hulk_swipe.vpcf", context)
 	PrecacheResource("particle", "particles/creeps/lane_creeps/creep_radiant_hulk_swipe_glow.vpcf", context)
 	PrecacheResource("particle", "particles/creeps/lane_creeps/creep_radiant_hulk_swipe_left.vpcf", context)
-	PrecacheResource("particle", "particles/creeps/lane_creeps/creep_radiant_hulk_swipe_right.vpcf", context)    
+	PrecacheResource("particle", "particles/creeps/lane_creeps/creep_radiant_hulk_swipe_right.vpcf", context)
 
 	-- Dire Hulk (Behemoth)
 	PrecacheResource("particle", "particles/creeps/lane_creeps/creep_dire_hulk_ambient_core.vpcf", context)
@@ -48,11 +48,11 @@ function Precache( context )
 	PrecacheResource("particle", "particles/creeps/lane_creeps/creep_dire_hulk_swipe.vpcf", context)
 	PrecacheResource("particle", "particles/creeps/lane_creeps/creep_dire_hulk_swipe_glow.vpcf", context)
 	PrecacheResource("particle", "particles/creeps/lane_creeps/creep_dire_hulk_swipe_left.vpcf", context)
-	PrecacheResource("particle", "particles/creeps/lane_creeps/creep_dire_hulk_swipe_right.vpcf", context)    
-	PrecacheResource("particle", "particles/rainbow.vpcf", context)    
-	PrecacheResource("particle", "particles/econ/events/ti7/ti7_hero_effect.vpcf", context)    
-	PrecacheResource("particle", "particles/dire_fx/bad_ancient_ambient.vpcf", context)    
-	PrecacheResource("particle", "particles/econ/courier/courier_trail_winter_2012/courier_trail_winter_2012_snow.vpcf", context)    
+	PrecacheResource("particle", "particles/creeps/lane_creeps/creep_dire_hulk_swipe_right.vpcf", context)
+	PrecacheResource("particle", "particles/rainbow.vpcf", context)
+	PrecacheResource("particle", "particles/econ/events/ti7/ti7_hero_effect.vpcf", context)
+	PrecacheResource("particle", "particles/dire_fx/bad_ancient_ambient.vpcf", context)
+	PrecacheResource("particle", "particles/econ/courier/courier_trail_winter_2012/courier_trail_winter_2012_snow.vpcf", context)
 
 	PrecacheResource("particle_folder", "particles/units/heroes/heroes_underlord/", context)
 	PrecacheResource("particle_folder", "particles/status_fx/", context)
@@ -95,11 +95,11 @@ function Precache( context )
 	PrecacheUnitByNameSync("npc_dota_hero_meepo", context)
 
  --   PrecacheItemByNameSync( "item_tombstone", context )
- 
+
  --   PrecacheResource( "model", "models/gameplay/attrib_tome_int.vmdl", context  )
-	
+
 --    PrecacheResource( "particle", "particles/test_particle/dungeon_generic_blast_ovr_pre.vpcf", context  )
- 
+
 --    PrecacheResource( "particle_folder", "particles/units/heroes/hero_winter_wyvern", context )
 	PrecacheResource( "particle_folder", "particles/units/heroes/hero_pudge", context )
 	PrecacheResource( "particle_folder", "particles/units/heroes/hero_sven", context )
@@ -125,7 +125,7 @@ function Precache( context )
     PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_skeleton_king.vsndevts", context )
     PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_announcer_dlc_glados.vsndevts", context )
     PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_announcer_dlc_gaben_killing_spree.vsndevts", context )
- 
+
  	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_terrorblade.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/voscripts/game_sounds_vo_terrorblade.vsndevts", context )
  	PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_spectre.vsndevts", context )
@@ -237,23 +237,23 @@ function GameMode:AnitGameMode()
 	end
 	SendToServerConsole("dota_max_physical_items_purchase_limit " .. 50)
 
-	GameRules:GetGameModeEntity():SetMaximumAttackSpeed( 2400 ) 
+	GameRules:GetGameModeEntity():SetMaximumAttackSpeed( 2400 )
 	GameRules:GetGameModeEntity():SetMinimumAttackSpeed( 50 )
-	GameRules:GetGameModeEntity():SetCustomBuybackCostEnabled( true ) 
+	GameRules:GetGameModeEntity():SetCustomBuybackCostEnabled( true )
 --	GameRules:GetGameModeEntity():SetCustomBuybackCooldownEnabled( true )
 	GameRules:GetGameModeEntity():SetBuybackEnabled( true )
 	PlayerResource:SetCustomBuybackCost(0,1000)
-----[[	
+--[[
 	local GM = GameRules:GetGameModeEntity()
 	GM:SetCustomGameForceHero("npc_dota_hero_tidehunter")
 	GameRules:SetHeroSelectionTime(0)
 	GameRules:SetStrategyTime(0)
 	GameRules:SetShowcaseTime(0)
 	GameRules:SetCustomGameSetupAutoLaunchDelay(0)
---]]
+]]
 	for i=0,4 do
-		
---			PlayerResource:SetCustomBuybackCooldown(i, 60)		
+
+--			PlayerResource:SetCustomBuybackCooldown(i, 60)
 			PlayerResource:SetCustomBuybackCost(i, 0)
 	end
 end
