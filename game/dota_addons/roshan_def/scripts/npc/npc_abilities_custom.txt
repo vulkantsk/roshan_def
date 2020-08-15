@@ -48907,7 +48907,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"disable_time"			"10"
+				"disable_time"			"30"
 			}
 		}
 	}
@@ -48923,7 +48923,7 @@
 		"LevelsBetweenUpgrades"			"3"
 		"MaxLevel"						"7"
 
-		"AbilityManaCost"				"150"
+		"AbilityManaCost"				"75 90 105 120 135 150 165"
 		"AbilityCastPoint"				"0.1"
 		"AbilityCooldown"				"25"
 
@@ -48934,12 +48934,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"duration"				"3 4 5 6 7 8 9"
+				"duration"				"10"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"explosion_count"		"10 20 30 40 50 60 70"
+				"explosion_count"		"30 34 38 42 48 52 54"
 			}
 			"03"
 			{
@@ -48949,27 +48949,27 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"explosion_damage"		"45 50 55 60 65 70 75"
+				"explosion_damage"		"20 25 30 35 40 45 50"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"spirit_form_damage_mult_pct" "250"
+				"spirit_form_damage_mult_pct" "25"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"body_form_stun_radius"	"200"
+				"body_form_stun_radius"	"150"
 			}
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"body_form_stun_chance"	"50"
+				"body_form_stun_chance"	"10"
 			}
 			"08"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"body_form_stun_duration"	"1.8"
+				"body_form_stun_duration"	"1.0"
 			}
 		}
 	}
@@ -48985,7 +48985,7 @@
 		"LevelsBetweenUpgrades"			"3"
 		"MaxLevel"						"7"
 
-		"AbilityManaCost"				"150"
+		"AbilityManaCost"				"75 90 105 120 135 150 165"
 		"AbilityCastPoint"				"0.1"
 		"AbilityCooldown"				"25"
 
@@ -48996,12 +48996,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"duration"				"3 4 5 6 7 8 9"
+				"duration"				"10"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"explosion_count"		"10 20 30 40 50 60 70"
+				"explosion_count"		"30 34 38 42 48 52 54"
 			}
 			"03"
 			{
@@ -49011,22 +49011,22 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"explosion_damage"		"45 50 55 60 65 70 75"
+				"explosion_damage"		"20 25 30 35 40 45 50"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"body_form_stun_radius"	"200"
+				"body_form_stun_radius"	"150"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"body_form_stun_chance"	"50"
+				"body_form_stun_chance"	"10"
 			}
 			"07"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"body_form_stun_duration"	"1.8"
+				"body_form_stun_duration"	"1.0"
 			}
 		}
 	}
@@ -49044,10 +49044,10 @@
 		"LevelsBetweenUpgrades"			"3"
 		"MaxLevel"						"7"
 
-		"AbilityManaCost"				"150"
+		"AbilityManaCost"				"80 90 100 110 120 130 140"
 		"AbilityCastPoint"				"0.3"
 		"AbilityCastRange"				"600"
-		"AbilityCooldown"				"10"
+		"AbilityCooldown"				"12"
 
 		"LinkedAbility"					"leshrac_chain_lightning_body_form"
 
@@ -49056,32 +49056,32 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"25"
+				"damage"				"80 160 240 320 400 480 560"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"damage_increase_pct"	"25"
+				"damage_increase_pct"	"10"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bounce_range"			"1000"
+				"bounce_range"			"700"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bounces"				"10"
+				"bounces"				"4 5 6 7 8 9 10"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"spirit_form_mag_res_reduction_pct"	"50"
+				"spirit_form_mag_res_reduction_pct"	"5 10 15 20 25 30 35"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"body_form_armor_reduction_pct"	"50"
+				"body_form_armor_reduction_pct"	"10 15 20 25 30 35 40"
 			}
 			"07"
 			{
@@ -49101,12 +49101,12 @@
 			"10"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"slow_duration"			"5"
+				"slow_duration"			"3"
 			}
 			"11"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"forms_debuff_duration"	"5"
+				"forms_debuff_duration"	"10"
 			}
 		}
 	}
@@ -49124,10 +49124,10 @@
 		"LevelsBetweenUpgrades"			"3"
 		"MaxLevel"						"7"
 
-		"AbilityManaCost"				"150"
+		"AbilityManaCost"				"80 90 100 110 120 130 140"
 		"AbilityCastPoint"				"0.3"
 		"AbilityCastRange"				"600"
-		"AbilityCooldown"				"10"
+		"AbilityCooldown"				"12"
 
 		"LinkedAbility"					"leshrac_chain_lightning_spirit_form"
 
@@ -49136,32 +49136,32 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"25"
+				"damage"				"80 160 240 320 400 480 560"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"damage_increase_pct"	"25"
+				"damage_increase_pct"	"10"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bounce_range"			"1000"
+				"bounce_range"			"700"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bounces"				"10"
+				"bounces"				"4 5 6 7 8 9 10"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"spirit_form_mag_res_reduction_pct"	"50"
+				"spirit_form_mag_res_reduction_pct"	"5 10 15 20 25 30 35"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"body_form_armor_reduction_pct"	"50"
+				"body_form_armor_reduction_pct"	"10 15 20 25 30 35 40"
 			}
 			"07"
 			{
@@ -49181,12 +49181,12 @@
 			"10"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"slow_duration"		"5"
+				"slow_duration"		"3"
 			}
 			"11"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"forms_debuff_duration"	"5"
+				"forms_debuff_duration"	"10"
 			}
 		}
 	}
@@ -49201,8 +49201,8 @@
 		"LevelsBetweenUpgrades"			"3"
 		"MaxLevel"						"7"
 
-		"AbilityCooldown"				"1"
-		"AbilityManaCost"				"150"
+		"AbilityCooldown"				"3"
+		"AbilityManaCost"				"70"
 
 
 		"AbilitySpecial"
@@ -49210,27 +49210,27 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"mana_spend_per_sec"	"25"
+				"mana_spend_per_sec"	"10 15 20 30 40 50 60"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"100"
+				"damage"				"50 75 100 125 150 175 200"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_to_heal_pct"	"35"
+				"damage_to_heal_pct"	"15"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"spirit_form_damage_boost_pct" "50"
+				"spirit_form_damage_boost_pct" "5 10 15 20 25 30 35"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"body_form_heal_boost" "25"
+				"body_form_heal_boost" "5 10 15 20 25 30 35"
 			}
 			"06"
 			{
@@ -49240,7 +49240,7 @@
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"				"500"
+				"radius"				"525"
 			}
 		}
 	}
@@ -49259,14 +49259,14 @@
 		"LevelsBetweenUpgrades"			"10"
 		"RequiredLevel"					"10"
 
-		"AbilityCooldown"				"40"
+		"AbilityCooldown"				"90"
 
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"250"
+				"damage"				"250 350 450 550 650"
 			}
 			"02"
 			{
@@ -49276,17 +49276,17 @@
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"spirit_form_damage_boost_pct" "80"
+				"spirit_form_damage_boost_pct" "5 15 25 35 45"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"body_form_stun_duration_boost" "1.0"
+				"body_form_stun_duration_boost" "1.1 1.2 1.3 1.4 1.5"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"stun_duration"			"1.0"
+				"stun_duration"			"0.5"
 			}
 			"06"
 			{
@@ -49296,22 +49296,22 @@
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"spirit_form_physical_damage_reduction_pct" "20"
+				"spirit_form_physical_damage_reduction_pct" "10 15 20 25 30"
 			}
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"body_form_mag_damage_reduction_pct" "20"
+				"body_form_mag_damage_reduction_pct" "20 30 40 50 60"
 			}
 			"09"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"spirit_form_int_to_spell_amp" "5"
+				"spirit_form_int_to_spell_amp" "15"
 			}
 			"10"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"body_form_str_to_spell_amp" "10"
+				"body_form_str_to_spell_amp" "15"
 			}
 			"11"
 			{
