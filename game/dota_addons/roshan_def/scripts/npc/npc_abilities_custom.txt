@@ -49324,7 +49324,7 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_leshrac/resonance"
-		"AbilityTextureName"			""
+		"AbilityTextureName"			"leshrac/leshrac_resonance"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
 		"RequiredLevel"					"75"
