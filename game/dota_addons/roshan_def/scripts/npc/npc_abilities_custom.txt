@@ -49583,6 +49583,11 @@
 				"var_type"				"FIELD_INTEGER"
 				"bonus_cast_range_for_items"	"600"
 			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"ultimate_chance_decrease"	"50"
+			}
 		}
 	}
 
