@@ -1,0 +1,1 @@
+ogre_magi_greed = class({})

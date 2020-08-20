@@ -31,11 +31,11 @@ if IsServer() then
 				victim = enemy,
 				attacker = self:GetCaster(),
 				ability = self:GetAbility(),
-				damage = damage,
+				damage = damage / #enemies,
 				damage_type = self:GetAbility():GetAbilityDamageType()
 			})
 
-			local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_leshrac/leshrac_diabolic_edict.vpcf", PATTACH_WORLDORIGIN, self:GetCaster())
+			local pfx = ParticleManager:CreateParticle("particles/econ/items/leshrac/leshrac_ti9_immortal_head/leshrac_ti9_immortal_edict.vpcf", PATTACH_WORLDORIGIN, self:GetCaster())
 			ParticleManager:SetParticleControl(pfx, 1, enemy:GetAbsOrigin())
 			ParticleManager:ReleaseParticleIndex(pfx)
 
@@ -91,7 +91,7 @@ if IsServer() then
 				victim = enemy,
 				attacker = self:GetCaster(),
 				ability = self:GetAbility(),
-				damage = self:GetAbility():GetSpecialValueFor("explosion_damage"),
+				damage = self:GetAbility():GetSpecialValueFor("explosion_damage") / #enemies,
 				damage_type = self:GetAbility():GetAbilityDamageType()
 			})
 

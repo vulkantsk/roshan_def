@@ -95,7 +95,7 @@ if IsServer() then
 end
 
 function modifier_leshrac_spirit_and_body:GetDisableHealing()
-	return not self:GetAbility():IsActivated() and 1 or 0
+	--return not self:GetAbility():IsActivated() and 1 or 0
 end
 
 modifier_leshrac_spirit_and_body_spirit_form = class({

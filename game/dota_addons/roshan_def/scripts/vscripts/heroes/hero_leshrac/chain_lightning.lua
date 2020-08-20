@@ -1,5 +1,8 @@
 LinkLuaModifier("modifier_leshrac_chain_lightning_slow", "heroes/hero_leshrac/chain_lightning", 0)
-LinkLuaModifier("modifier_leshrac_chain_lightning_forms_debuff", "heroes/hero_leshrac/chain_lightning", 0)
+
+
+LinkLuaModifier("modifier_leshrac_chain_lightning_spirit_form_debuff", "heroes/hero_leshrac/chain_lightning", 0)
+LinkLuaModifier("modifier_leshrac_chain_lightning_body_form_debuff", "heroes/hero_leshrac/chain_lightning", 0)
 
 leshrac_chain_lightning_spirit_form = class({})
 
@@ -59,7 +62,7 @@ function leshrac_chain_lightning_spirit_form:LaunchChainLightningOnTarget(target
 	end
 
 	target:AddNewModifier(caster, self, "modifier_leshrac_chain_lightning_slow", {duration = self:GetSpecialValueFor("slow_duration")})
-	target:AddNewModifier(caster, self, "modifier_leshrac_chain_lightning_forms_debuff", {duration = self:GetSpecialValueFor("forms_debuff_duration")})
+	target:AddNewModifier(caster, self, "modifier_leshrac_chain_lightning_spirit_form_debuff", {duration = self:GetSpecialValueFor("forms_debuff_duration")})
 
 	ApplyDamage({
 		victim = target,
@@ -129,7 +132,7 @@ function leshrac_chain_lightning_body_form:LaunchChainLightningOnTarget(target, 
 	end
 
 	target:AddNewModifier(caster, self, "modifier_leshrac_chain_lightning_slow", {duration = self:GetSpecialValueFor("slow_duration")})
-	target:AddNewModifier(caster, self, "modifier_leshrac_chain_lightning_forms_debuff", {duration = self:GetSpecialValueFor("forms_debuff_duration")})
+	target:AddNewModifier(caster, self, "modifier_leshrac_chain_lightning_body_form_debuff", {duration = self:GetSpecialValueFor("forms_debuff_duration")})
 
 	ApplyDamage({
 		victim = target,
@@ -165,48 +168,42 @@ end
 
 
 
-modifier_leshrac_chain_lightning_forms_debuff = class({
+modifier_leshrac_chain_lightning_spirit_form_debuff = class({
 	IsPurgable = function() return true end,
 	IsDebuff = function() return true end,
 	DeclareFunctions = function() return {
-		MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS,
-		MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS
+		MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS
 	} end,
-	GetAttributes = function() return MODIFIER_ATTRIBUTE_MULTIPLE end
+	GetAttributes = function() return MODIFIER_ATTRIBUTE_MULTIPLE end,
+	GetEffectName = function() return "particles/items2_fx/veil_of_discord_debuff.vpcf" end,
+	GetEffectAttachType = function() return PATTACH_ABSORIGIN_FOLLOW end
 })
 
-function modifier_leshrac_chain_lightning_forms_debuff:OnCreated()
-	local spirit_form = self:GetCaster():HasModifier("modifier_leshrac_spirit_and_body_spirit_form")
-	local body_form = self:GetCaster():HasModifier("modifier_leshrac_spirit_and_body_body_form")
-
-	self.armor_red = self:GetParent():GetPhysicalArmorValue(false) * self:GetAbility():GetSpecialValueFor("body_form_armor_reduction_pct") / 100 * -1
-	self.mag_armor_red = self:GetParent():GetMagicalArmorValue() * self:GetAbility():GetSpecialValueFor("spirit_form_mag_res_reduction_pct") / 100 * -1
-
-	if body_form then
-		self.mag_armor_red = 0
-		self.particle = "particles/units/heroes/hero_dazzle/dazzle_armor_enemy.vpcf"
-		self.particle_attach = PATTACH_OVERHEAD_FOLLOW
-	end
-
-	if spirit_form then
-		self.armor_red = 0
-		self.particle = "particles/items2_fx/veil_of_discord_debuff.vpcf"
-		self.particle_attach = PATTACH_ABSORIGIN_FOLLOW
-	end
+function modifier_leshrac_chain_lightning_spirit_form_debuff:OnCreated()
+	print(self:GetParent():GetMagicalArmorValue())
+	self.mag_armor_red = self:GetParent():GetMagicalArmorValue() * self:GetAbility():GetSpecialValueFor("spirit_form_mag_res_reduction_pct") * -1
+	print(self.mag_armor_red)
 end
 
-function modifier_leshrac_chain_lightning_forms_debuff:GetEffectName()
-	return self.particle
-end
-
-function modifier_leshrac_chain_lightning_forms_debuff:GetEffectAttachType()
-	return self.particle_attach
-end
-
-function modifier_leshrac_chain_lightning_forms_debuff:GetModifierMagicalResistanceBonus()
+function modifier_leshrac_chain_lightning_spirit_form_debuff:GetModifierMagicalResistanceBonus()
 	return self.mag_armor_red
 end
 
-function modifier_leshrac_chain_lightning_forms_debuff:GetModifierPhysicalArmorBonus()
+modifier_leshrac_chain_lightning_body_form_debuff = class({
+	IsPurgable = function() return true end,
+	IsDebuff = function() return true end,
+	DeclareFunctions = function() return {
+		MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS
+	} end,
+	GetAttributes = function() return MODIFIER_ATTRIBUTE_MULTIPLE end,
+	GetEffectName = function() return "particles/units/heroes/hero_dazzle/dazzle_armor_enemy.vpcf" end,
+	GetEffectAttachType = function() return PATTACH_OVERHEAD_FOLLOW end
+})
+
+function modifier_leshrac_chain_lightning_body_form_debuff:OnCreated()
+	self.armor_red = self:GetParent():GetPhysicalArmorValue(false) * self:GetAbility():GetSpecialValueFor("body_form_armor_reduction_pct") / 100 * -1
+end
+
+function modifier_leshrac_chain_lightning_body_form_debuff:GetModifierPhysicalArmorBonus()
 	return self.armor_red
 end

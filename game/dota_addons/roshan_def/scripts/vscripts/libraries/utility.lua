@@ -779,6 +779,10 @@ function CDOTABaseAbility:HasBehavior(behavior)
 	end
 end
 
+function CDOTABaseAbility:IsHasBehavior(behavior)
+	return bit.band(self:GetBehavior(), behavior) == behavior
+end
+
 function CDOTABaseAbility:IsInnateAbility()
 	if GameRules.AbilityKV[self:GetName()] then
 		local truefalse = GameRules.AbilityKV[self:GetName()]["InnateAbility"] or 0

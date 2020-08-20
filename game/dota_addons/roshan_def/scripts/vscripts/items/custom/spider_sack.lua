@@ -24,7 +24,6 @@ function modifier_item_spider_sack:OnIntervalThink()
 		local item = self:GetAbility()
 		local current_charges = item:GetCurrentCharges()
 		local required_charges = item:GetSpecialValueFor("sack_required")
-		print("current_charges = "..current_charges)
 		if current_charges >= required_charges then
 			caster:RemoveItem(item)
 			caster:AddItemByName("item_spider_cocoon")

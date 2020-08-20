@@ -13,7 +13,7 @@ modifier_leshrac_resonance = class({
 })
 
 function modifier_leshrac_resonance:OnTakeDamage(keys)
-	if keys.inflictor ~= (nil or "leshrac_resonance") and keys.unit and keys.attacker == self:GetParent() and keys.damage_type == DAMAGE_TYPE_MAGICAL then
+	if keys.inflictor ~= (nil or self:GetCaster():FindAbilityByName("leshrac_resonance")) and keys.unit and keys.attacker == self:GetParent() and keys.damage_type == DAMAGE_TYPE_MAGICAL then
 		if RollPercentage(self:GetAbility():GetSpecialValueFor("magic_crit_chance")) then
 			local damage = (keys.damage * (self:GetAbility():GetSpecialValueFor("magic_crit_mult_pct") / 100))
 

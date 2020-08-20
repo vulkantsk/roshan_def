@@ -50,6 +50,8 @@ function modifier_leshrac_anomaly:OnAbilityExecuted(keys)
 
 		for _, enemy in pairs(enemies) do
 			local targets = FindUnitsInRadius(caster:GetTeam(), enemy:GetAbsOrigin(), nil, self:GetAbility():GetSpecialValueFor("stun_radius"), self:GetAbility():GetAbilityTargetTeam(), self:GetAbility():GetAbilityTargetType(), self:GetAbility():GetAbilityTargetFlags(), 0, false)
+			local particle = "particles/units/heroes/hero_leshrac/leshrac_split_earth.vpcf"
+			local sound = "Hero_Leshrac.Split_Earth"
 
 			local stun_duration = self:GetAbility():GetSpecialValueFor("stun_duration")
 			if caster:HasModifier("modifier_leshrac_spirit_and_body_body_form") then
@@ -63,6 +65,8 @@ function modifier_leshrac_anomaly:OnAbilityExecuted(keys)
 			local damage = self:GetAbility():GetSpecialValueFor("damage")
 			if caster:HasModifier("modifier_leshrac_spirit_and_body_spirit_form") then
 				damage = damage + (damage / 100 * self:GetAbility():GetSpecialValueFor("spirit_form_damage_boost_pct"))
+				particle = "particles/econ/items/leshrac/leshrac_tormented_staff_retro/leshrac_split_retro_tormented.vpcf"
+				sound = "Hero_Leshrac.Split_Earth.Tormented"
 			end
 
 			ApplyDamage({
@@ -72,13 +76,15 @@ function modifier_leshrac_anomaly:OnAbilityExecuted(keys)
 				damage = damage,
 				damage_type = caster:HasModifier("modifier_leshrac_spirit_and_body_spirit_form") and DAMAGE_TYPE_MAGICAL or caster:HasModifier("modifier_leshrac_spirit_and_body_body_form") and DAMAGE_TYPE_PHYSICAL
 			})
+			if caster:HasModifier("modifier_leshrac_spirit_and_body_spirit_form") then
+			end
 
-			local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_leshrac/leshrac_split_earth.vpcf", PATTACH_WORLDORIGIN, caster)
+			local pfx = ParticleManager:CreateParticle(particle, PATTACH_WORLDORIGIN, caster)
 			ParticleManager:SetParticleControl(pfx, 0, enemy:GetAbsOrigin())
 			ParticleManager:SetParticleControl(pfx, 1, Vector(self:GetAbility():GetSpecialValueFor("stun_radius"), 1, 1))
 			ParticleManager:ReleaseParticleIndex(pfx)
 
-			EmitSoundOnLocationWithCaster(enemy:GetAbsOrigin(), "Hero_Leshrac.Split_Earth", caster)
+			EmitSoundOnLocationWithCaster(enemy:GetAbsOrigin(), sound, caster)
 
 			break
 		end

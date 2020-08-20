@@ -6527,7 +6527,7 @@
 		
 		
 		"DOTA_Tooltip_Ability_item_imba_dagon_6"                                    "Dagon 6"
-		"DOTA_Tooltip_ability_item_imba_dagon_6_Description"                        "<h1>Активная: Wild Burst</h1> Выстреливает лучом магической энергии,<font color='#FF7800'> который отскакивает от основной цели по всем врагам в радиусе %bounce_range%. Наносит %damage% основной цели и %bounce_damage% за отскок.</font> Улучается."
+		"DOTA_Tooltip_ability_item_imba_dagon_6_Description"                        "<h1>Активная: Wild Burst</h1> Выстреливает лучом магической энергии,<font color='#FF7800'> который отскакивает от основной цели по всем врагам в радиусе %bounce_range%. Наносит %damage% основной цели и %bounce_damage% за отскок.</font> Улучшается."
 		"DOTA_Tooltip_ability_item_imba_dagon_6_Lore"                               "Волшебная палочка, которая становится тем сильнее, чем дольше она используется. Позволяет магу срывать с кончиков пальцев волшебный заряд."
 		"DOTA_Tooltip_ability_item_imba_dagon_6_damage"                             "УРОН:"
 		"DOTA_Tooltip_ability_item_imba_dagon_6_bounce_damage"                      "УРОН ОТСКОКА:"
@@ -6539,7 +6539,7 @@
 		"DOTA_Tooltip_ability_item_imba_dagon_6_range_tooltip"                      "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:"
 
 		"DOTA_Tooltip_Ability_item_imba_dagon_7"                                    "Dagon 7"
-		"DOTA_Tooltip_ability_item_imba_dagon_7_Description"                        "<h1>Активная: Wild Burst</h1> Выстреливает лучом магической энергии,<font color='#FF7800'> который отскакивает от основной цели по всем врагам в радиусе %bounce_range%. Наносит %damage% основной цели и %bounce_damage% за отскок.</font> Улучается."
+		"DOTA_Tooltip_ability_item_imba_dagon_7_Description"                        "<h1>Активная: Wild Burst</h1> Выстреливает лучом магической энергии,<font color='#FF7800'> который отскакивает от основной цели по всем врагам в радиусе %bounce_range%. Наносит %damage% основной цели и %bounce_damage% за отскок.</font> Улучшается."
 		"DOTA_Tooltip_ability_item_imba_dagon_7_Lore"                               "Волшебная палочка, которая становится тем сильнее, чем дольше она используется. Позволяет магу срывать с кончиков пальцев волшебный заряд."
 		"DOTA_Tooltip_ability_item_imba_dagon_7_damage"                             "УРОН:"
 		"DOTA_Tooltip_ability_item_imba_dagon_7_damage_int"                      "%УРОН ОТ ИНТЕЛЛЕКТА:"
@@ -6551,7 +6551,7 @@
 		"DOTA_Tooltip_ability_item_imba_dagon_7_range_tooltip"                      "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:"
 
 		"DOTA_Tooltip_Ability_item_imba_dagon_8"                                    "Dagon 8"
-		"DOTA_Tooltip_ability_item_imba_dagon_8_Description"                        "<h1>Активная: Wild Burst</h1> Выстреливает лучом магической энергии,<font color='#FF7800'> который отскакивает от основной цели по всем врагам в радиусе %bounce_range%. Наносит %damage% основной цели и %bounce_damage% за отскок.</font> Улучается."
+		"DOTA_Tooltip_ability_item_imba_dagon_8_Description"                        "<h1>Активная: Wild Burst</h1> Выстреливает лучом магической энергии,<font color='#FF7800'> который отскакивает от основной цели по всем врагам в радиусе %bounce_range%. Наносит %damage% основной цели и %bounce_damage% за отскок.</font> Улучшается."
 		"DOTA_Tooltip_ability_item_imba_dagon_8_Lore"                               "Волшебная палочка, которая становится тем сильнее, чем дольше она используется. Позволяет магу срывать с кончиков пальцев волшебный заряд."
 		"DOTA_Tooltip_ability_item_imba_dagon_8_damage"                             "УРОН:"
 		"DOTA_Tooltip_ability_item_imba_dagon_8_damage_int"                      "%УРОН ОТ ИНТЕЛЛЕКТА:"
@@ -6563,7 +6563,7 @@
 		"DOTA_Tooltip_ability_item_imba_dagon_8_range_tooltip"                      "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:"
 
 		"DOTA_Tooltip_Ability_item_imba_dagon_9"                                    "Dagon 9"
-		"DOTA_Tooltip_ability_item_imba_dagon_9_Description"                        "<h1>Активная: Wild Burst</h1> Выстреливает лучом магической энергии,<font color='#FF7800'> который отскакивает от основной цели по всем врагам в радиусе %bounce_range%. Наносит %damage% основной цели и %bounce_damage% за отскок.</font> Улучается."
+		"DOTA_Tooltip_ability_item_imba_dagon_9_Description"                        "<h1>Активная: Wild Burst</h1> Выстреливает лучом магической энергии,<font color='#FF7800'> который отскакивает от основной цели по всем врагам в радиусе %bounce_range%. Наносит %damage% основной цели и %bounce_damage% за отскок.</font> Улучшается."
 		"DOTA_Tooltip_ability_item_imba_dagon_9_Lore"                               "Волшебная палочка, которая становится тем сильнее, чем дольше она используется. Позволяет магу срывать с кончиков пальцев волшебный заряд."
 		"DOTA_Tooltip_ability_item_imba_dagon_9_damage"                             "УРОН:"
 		"DOTA_Tooltip_ability_item_imba_dagon_9_damage_int"                      "%УРОН ОТ ИНТЕЛЛЕКТА:"
@@ -6575,7 +6575,7 @@
 		"DOTA_Tooltip_ability_item_imba_dagon_9_range_tooltip"                      "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:"
 
 		"DOTA_Tooltip_Ability_item_imba_dagon_10"                                   "The Boomstick"
-		"DOTA_Tooltip_ability_item_imba_dagon_10_Description"                       "<h1>Активная: Wild Burst</h1> Выстреливает лучом магической энергии,<font color='#FF7800'> который отскакивает от основной цели по всем врагам в радиусе %bounce_range%. Наносит %damage% основной цели и %bounce_damage% за отскок.</font> Улучается."
+		"DOTA_Tooltip_ability_item_imba_dagon_10_Description"                       "<h1>Активная: Wild Burst</h1> Выстреливает лучом магической энергии,<font color='#FF7800'> который отскакивает от основной цели по всем врагам в радиусе %bounce_range%. Наносит %damage% основной цели и %bounce_damage% за отскок."
 		"DOTA_Tooltip_ability_item_imba_dagon_10_Lore"                              "Волшебная палочка, которая становится тем сильнее, чем дольше она используется. Позволяет магу срывать с кончиков пальцев волшебный заряд."
 		"DOTA_Tooltip_ability_item_imba_dagon_10_damage"                            "УРОН:"
 		"DOTA_Tooltip_ability_item_imba_dagon_10_damage_int"                      "%УРОН ОТ ИНТЕЛЛЕКТА:"
