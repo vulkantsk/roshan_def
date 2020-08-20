@@ -60,7 +60,7 @@ modifier_ogre_magi_ignite_new_debuff = class({
 	DeclareFunctions = function() return {
 		MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS
 	} end,
-	GetEffectName = function() return "" end,
+	GetEffectName = function() return "particles/items2_fx/veil_of_discord_debuff.vpcf" end,
 	GetEffectAttachType = function() return PATTACH_ABSORIGIN_FOLLOW end,
 })
 

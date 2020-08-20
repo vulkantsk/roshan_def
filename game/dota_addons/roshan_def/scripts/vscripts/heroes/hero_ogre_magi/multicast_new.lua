@@ -44,12 +44,13 @@ function modifier_multicast_new:OnAbilityFullyCast(keys)
 						caster:SetCursorPosition(enemy:GetAbsOrigin())
 						ability:OnSpellStart()
 
-					elseif ability:IsHasBehavior(DOTA_ABILITY_BEHAVIOR_NO_TARGET) then
-						ability:OnSpellStart()
 					end
 					break
 				end
-				ParticleManager:SetParticleControl(pfx, 1, Vector(1, 0, 0))
+				if ability:IsHasBehavior(DOTA_ABILITY_BEHAVIOR_NO_TARGET) then
+					ability:OnSpellStart()
+				end
+				ParticleManager:SetParticleControl(pfx, 1, Vector(1 + bonus_casts_count, 0, 0))
 			end
 		end
 	end

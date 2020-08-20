@@ -49470,6 +49470,10 @@
 		"AbilityManaCost"				"100"
 		"AbilityCooldown"				"15"
 
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_batrider.vsndevts"
+		}
 		"AbilitySpecial"
 		{
 			"01"

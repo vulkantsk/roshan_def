@@ -29,21 +29,18 @@ end
 
 function request:GoldFilter(keys)
 	local reason = keys.reason_const
-	local gold = keys.gold
 	local player = PlayerResource:GetPlayer(keys.player_id_const)
 
-	if gold <= 0 then return false end
+	if keys.gold <= 0 then return false end
 	if reason == (DOTA_ModifyGold_AbandonedRedistribute or DOTA_ModifyGold_GameTick or DOTA_ModifyGold_Unspecified) then
 		return true
 	end
 	if player == nil then return end
-
 	if player then
 		local hero = player:GetAssignedHero()
 		if hero == nil then return end
-
 		if hero:GetUnitName() == "npc_dota_hero_ogre_magi" and hero:FindAbilityByName("ogre_magi_greed"):GetLevel() > 0 then
-			gold = gold + (gold / 100 * hero:FindAbilityByName("ogre_magi_greed"):GetSpecialValueFor("bonus_gold_pct"))
+			keys.gold = keys.gold + (keys.gold / 100 * hero:FindAbilityByName("ogre_magi_greed"):GetSpecialValueFor("bonus_gold_pct"))
 		end
 	end
 
