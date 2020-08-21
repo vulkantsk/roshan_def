@@ -1098,12 +1098,12 @@
 		"Ability7"					"inherit_ogre_buff"
 		"Ability10"					"special_bonus_exp_boost_30"
 		"Ability11"					"special_bonus_gold_income_240"
-		"Ability12"					"special_bonus_mp_regen_6"
-		"Ability13"					"special_bonus_hp_regen_12"
-		"Ability14"					"special_bonus_all_stats_10"
-		"Ability15"					"special_bonus_intelligence_25"
-		"Ability16"					"special_bonus_all_stats_15"
-		"Ability17"					"special_bonus_cooldown_reduction_15"
+		"Ability12"					"special_bonus_mp_regen_10"
+		"Ability13"					"special_bonus_hp_regen_30"
+		"Ability14"					"special_bonus_all_stats_15"
+		"Ability15"					"special_bonus_intelligence_30"
+		"Ability16"					"special_bonus_spell_amplify_20"
+		"Ability17"					"special_bonus_spell_lifesteal_10"
 
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
@@ -1116,8 +1116,8 @@
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
-		"ArmorPhysical"				"0"									// Physical protection.
-		"MagicalResistance"			"20"									// Magical protection (percentage).
+		"ArmorPhysical"				"3"									// Physical protection.
+		"MagicalResistance"			"25"									// Magical protection (percentage).
 
 
 		// Attributes
@@ -1139,9 +1139,9 @@
 		// Status
 		//-------------------------------------------------------------------------------------------------------------
 		"StatusHealth"				"200"									// Base health.
-		"StatusHealthRegen"			"0.5"									// Health regeneration rate.
+		"StatusHealthRegen"			"3.0"									// Health regeneration rate.
 		"StatusMana"				"100"											// Base mana.
-		"StatusManaRegen"			"1"									// Mana regeneration rate.
+		"StatusManaRegen"			"2"									// Mana regeneration rate.
 
 
 		"VisionNighttimeRange"		"1000"
