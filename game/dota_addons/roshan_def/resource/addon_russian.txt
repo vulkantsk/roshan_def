@@ -1824,7 +1824,7 @@
 		"DOTA_Tooltip_modifier_leshrac_buff_Description"					"Усилен вождем!"
 		
 		"DOTA_Tooltip_ability_leshrac_spirit_and_body"								"Spirit and body"
-		"DOTA_Tooltip_ability_leshrac_spirit_and_body_Description"					"Leshrac это существо живущее одновременно в двух измерениях - <font color='#00BFFF'>телесном</font> and <font color='#FFD700'>духовном</font>. Выбирая предпочтение определенной формы, он получает ее положительные эффекты. Получив смертельный урон в одной форме он переходит в другую, восстанавливает 25% здоровья и на время отключает это умение".
+		"DOTA_Tooltip_ability_leshrac_spirit_and_body_Description"					"Leshrac это существо живущее одновременно в двух измерениях - <font color='#FFD700'>телесном</font> и <font color='#00BFFF'>духовном</font>. Выбирая предпочтение определенной формы, он получает ее положительные эффекты. Получив смертельный урон в одной форме он переходит в другую, восстанавливает 25% здоровья и на время отключает это умение".
 		"DOTA_Tooltip_ability_leshrac_spirit_and_body_heal_pct"						"%ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:"
 		"DOTA_Tooltip_ability_leshrac_spirit_and_body_disable_time"					"ВРЕМЯ БЛОКИРОВКИ УМЕНИЯ:"
 		"DOTA_Tooltip_modifier_leshrac_spirit_and_body_spirit_form"						"Spirit form"

@@ -1758,7 +1758,7 @@
 		"DOTA_Tooltip_modifier_leshrac_buff_Description"					"Is a leader of centaurs."
 		
 		"DOTA_Tooltip_ability_leshrac_spirit_and_body"								"Spirit and body"
-		"DOTA_Tooltip_ability_leshrac_spirit_and_body_Description"					"Leshrac is a creature living in two worlds at once - <font color='#00BFFF'>bodily</font> and <font color='#FFD700'>spiritual</font>. By choosing a preference for a particular form, he gets its buffs. Having received lethal damage in one form, it switches the hero to another, restores 25% HP and disables this skill for a while."
+		"DOTA_Tooltip_ability_leshrac_spirit_and_body_Description"					"Leshrac is a creature living in two worlds at once - <font color='#FFD700'>bodily</font> and <font color='#00BFFF'>spiritual</font>. By choosing a preference for a particular form, he gets its buffs. Having received lethal damage in one form, it switches the hero to another, restores 25% HP and disables this skill for a while."
 		"DOTA_Tooltip_ability_leshrac_spirit_and_body_heal_pct"						"%HEALING HP:"
 		"DOTA_Tooltip_ability_leshrac_spirit_and_body_disable_time"					"DISABLE TIME:"
 		"DOTA_Tooltip_modifier_leshrac_spirit_and_body_spirit_form"						"Spirit form"

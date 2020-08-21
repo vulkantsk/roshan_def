@@ -48939,7 +48939,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"explosion_count"		"30 34 38 42 48 52 54"
+				"explosion_count"		"30 35 40 45 50 55 60"
 			}
 			"03"
 			{
@@ -48949,7 +48949,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"explosion_damage"		"20 25 30 35 40 45 50"
+				"explosion_damage"		"40 50 60 70 80 90 100"
 			}
 			"05"
 			{
@@ -49001,7 +49001,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"explosion_count"		"30 34 38 42 48 52 54"
+				"explosion_count"		"30 35 40 45 50 55 60"
 			}
 			"03"
 			{
@@ -49011,7 +49011,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"explosion_damage"		"20 25 30 35 40 45 50"
+				"explosion_damage"		"40 50 60 70 80 90 100"
 			}
 			"05"
 			{

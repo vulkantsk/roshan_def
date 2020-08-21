@@ -1798,7 +1798,7 @@
                 "DOTA_Tooltip_modifier_leshrac_buff"                                                            "拉席克增益"
                 "DOTA_Tooltip_modifier_leshrac_buff_Description"                                        "拉席克首领."
                 "DOTA_Tooltip_ability_leshrac_spirit_and_body"								"Spirit and body"
-		"DOTA_Tooltip_ability_leshrac_spirit_and_body_Description"					"Leshrac是一种同时生活在两个世界中的生物-<font color='＃00BFFF'>身体</font>和<font color='＃FFD700'>灵性</font>。 通过选择一种特殊的偏好形式，他得到了粉丝。 在以一种形式受到致命伤害后，它将英雄转换为另一种形式，恢复25％的生命值，并暂时禁止使用此技能。"
+		"DOTA_Tooltip_ability_leshrac_spirit_and_body_Description"					"Leshrac是一种同时生活在两个世界中的生物-<font color='＃FFD700'>身体</font>和<font color='＃00BFFF'>灵性</font>。 通过选择一种特殊的偏好形式，他得到了粉丝。 在以一种形式受到致命伤害后，它将英雄转换为另一种形式，恢复25％的生命值，并暂时禁止使用此技能。"
 		"DOTA_Tooltip_ability_leshrac_spirit_and_body_heal_pct"						"%HEALING HP:"
 		"DOTA_Tooltip_ability_leshrac_spirit_and_body_disable_time"					"DISABLE TIME:"
 		"DOTA_Tooltip_modifier_leshrac_spirit_and_body_spirit_form"						"Spirit form"
