@@ -200,10 +200,6 @@ modifier_leshrac_chain_lightning_body_form_debuff = class({
 	GetEffectAttachType = function() return PATTACH_OVERHEAD_FOLLOW end
 })
 
-function modifier_leshrac_chain_lightning_body_form_debuff:OnCreated()
-	self.armor_red = self:GetParent():GetPhysicalArmorValue(false) * self:GetAbility():GetSpecialValueFor("body_form_armor_reduction_pct") / 100 * -1
-end
-
 function modifier_leshrac_chain_lightning_body_form_debuff:GetModifierPhysicalArmorBonus()
-	return self.armor_red
+	return self:GetAbility():GetSpecialValueFor("body_form_armor_reduction_pct") / 100 * -1
 end
