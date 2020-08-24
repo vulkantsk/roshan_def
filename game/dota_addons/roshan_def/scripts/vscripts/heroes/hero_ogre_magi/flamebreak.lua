@@ -6,6 +6,10 @@ function Pracache(context)
 	PrecacheResource("particle_folder", "particles/ogre_magi", context)
 end
 
+function ogre_magi_flamebreak:GetAOERadius()
+	return self:GetSpecialValueFor("damage_radius")
+end
+
 function ogre_magi_flamebreak:OnSpellStart()
 	local caster = self:GetCaster()
 
