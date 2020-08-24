@@ -4435,7 +4435,8 @@
 	// Abilities
 		//----------------------------------------------------------------
 		
-		//"Ability1"					"quest_test1"
+//		"Ability1"					"quest_test1"
+		"Ability2"					"pubg_square"
 
 		// Movement
 		//----------------------------------------------------------------
@@ -4456,7 +4457,7 @@
 	// Abilities
 		//----------------------------------------------------------------
 		
-		//"Ability1"					"quest_test01"
+		"Ability1"					"quest_test01"
 
 		// Movement
 		//----------------------------------------------------------------
@@ -4470,14 +4471,14 @@
 		// General
 		//
 		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/items/courier/mole_messenger/mole_messenger_lvl3.vmdl"
-		"ModelScale"				"0.75"								// old 1.0
+		"Model"					"models/heroes/tidehunter/tidehunter.vmdl"
+		"ModelScale"				"4.75"								// old 1.0
 		"Level"						"5"
 		
 	// Abilities
 		//----------------------------------------------------------------
 		
-		//"Ability1"					"quest_test01"
+		"Ability1"					"boss_dive"
 
 		// Movement
 		//----------------------------------------------------------------

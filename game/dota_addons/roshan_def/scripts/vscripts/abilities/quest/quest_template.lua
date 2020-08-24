@@ -1,4 +1,4 @@
-LinkLuaModifier("modifier_quest_template", "abilities/quest/quest_template", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_quest_template", "abilities/quest/quest_template.lua", LUA_MODIFIER_MOTION_NONE)
 
 quest_template = class({})
 
@@ -138,41 +138,42 @@ function OnQuestCreated(data)
 end
 ---------------------------------------------------------------
 ---------------------------------------------------------------
+if IsServer() then
+	function CDOTA_BaseNPC:DropQuestItem( target, item_name )
+		local unit = self			
+		local spawnPoint = unit:GetAbsOrigin()	
+		local newItem = CreateItem( item_name, nil, nil )
+		local drop = CreateItemOnPositionForLaunch( spawnPoint, newItem )
+		local initialPoint = target:GetAbsOrigin() + RandomVector( RandomFloat( 50, 125 ) )
 
-function CDOTA_BaseNPC:DropQuestItem( target, item_name )
-	local unit = self			
-	local spawnPoint = unit:GetAbsOrigin()	
-	local newItem = CreateItem( item_name, nil, nil )
-	local drop = CreateItemOnPositionForLaunch( spawnPoint, newItem )
-	local initialPoint = target:GetAbsOrigin() + RandomVector( RandomFloat( 50, 125 ) )
+		newItem:LaunchLootInitialHeight( false, 0, 150, 0.75, initialPoint )
+	end
 
-	newItem:LaunchLootInitialHeight( false, 0, 150, 0.75, initialPoint )
-end
-
-function CDOTA_BaseNPC:GiveGoldPlayers( gold )
-	local team = self:GetTeam()
-	for index=0 ,9 do
-		if PlayerResource:HasSelectedHero(index) then
-			local player = PlayerResource:GetPlayer(index)
-			local hero = PlayerResource:GetSelectedHeroEntity(index)
-			local hero_team = hero:GetTeam()
-			if hero_team == team then
-				hero:ModifyGold(gold, false, 0)
-				SendOverheadEventMessage( player, OVERHEAD_ALERT_GOLD, hero, gold, nil )
+	function CDOTA_BaseNPC:GiveGoldPlayers( gold )
+		local team = self:GetTeam()
+		for index=0 ,9 do
+			if PlayerResource:HasSelectedHero(index) then
+				local player = PlayerResource:GetPlayer(index)
+				local hero = PlayerResource:GetSelectedHeroEntity(index)
+				local hero_team = hero:GetTeam()
+				if hero_team == team then
+					hero:ModifyGold(gold, false, 0)
+					SendOverheadEventMessage( player, OVERHEAD_ALERT_GOLD, hero, gold, nil )
+				end
 			end
 		end
 	end
-end
 
-function CDOTA_BaseNPC:GiveExperiencePlayers( experience )
-	local team = self:GetTeam()
-	for index=0 ,9 do
-		if PlayerResource:HasSelectedHero(index) then
-			local player = PlayerResource:GetPlayer(index)
-			local hero = PlayerResource:GetSelectedHeroEntity(index)
-			local hero_team = hero:GetTeam()
-			if hero_team == team then
-				hero:AddExperience(experience, 0, false, true )
+	function CDOTA_BaseNPC:GiveExperiencePlayers( experience )
+		local team = self:GetTeam()
+		for index=0 ,9 do
+			if PlayerResource:HasSelectedHero(index) then
+				local player = PlayerResource:GetPlayer(index)
+				local hero = PlayerResource:GetSelectedHeroEntity(index)
+				local hero_team = hero:GetTeam()
+				if hero_team == team then
+					hero:AddExperience(experience, 0, false, true )
+				end
 			end
 		end
 	end

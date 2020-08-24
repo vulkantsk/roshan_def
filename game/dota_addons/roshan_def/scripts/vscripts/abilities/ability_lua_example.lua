@@ -1,12 +1,12 @@
-LinkLuaModifier("basic_modifier", "abilities/ability_lua_example", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_ability_example", "abilities/ability_example", LUA_MODIFIER_MOTION_NONE)
 
-ability_lua_example = class({})
+ability_example = class({})
 
-function ability_lua_example:GetIntrinsicModifierName()
-	return "modifier_ability_lua_example"
+function ability_example:GetIntrinsicModifierName()
+	return "modifier_ability_example"
 end
 
-basic_modifier = class({
+modifier_ability_example = class({
 	IsHidden 				= function(self) return false end,
 	IsPurgable 				= function(self) return false end,
 	IsDebuff 				= function(self) return false end,
@@ -18,6 +18,6 @@ basic_modifier = class({
 			MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
 		} end,
 })
-function basic_modifier:GetModifierBonusStats_Strength()
+function modifier_ability_example:GetModifierBonusStats_Strength()
 	return self:GetStackCount() or 0
 end

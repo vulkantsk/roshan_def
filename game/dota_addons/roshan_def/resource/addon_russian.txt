@@ -647,7 +647,7 @@
 		"DOTA_Tooltip_ability_special_bonus_unique_centaur_3"	"+10% к урону от силы у Return"
 
 //Ursa
-		"npc_dota_hero_ursa"	"Ursa"
+		"npc_dota_hero_ursa"	"Ursa(IMBA)"
 		"DOTA_Tooltip_ability_inherit_ursa_buff"									"Ursa buff"
 		"DOTA_Tooltip_ability_inherit_ursa_buff_Description"						"Правитель самого грозного и ужасного народа, который одним видом своих когтей заставляет бежать врагов с поля боя, а медведей – преследовать их до конца! "
 		"DOTA_Tooltip_ability_inherit_ursa_buff_hp_bonus"							"Бонус здоровья :"
@@ -699,7 +699,7 @@
 		"DOTA_Tooltip_ability_ursa_overpower_ultimate_buff_duration"					"ДЛИТЕЛЬНОСТЬ:"
 
 //Druid
-		"npc_dota_hero_lone_druid"	"Лёня-друид(IMBA)"
+		"npc_dota_hero_lone_druid"	"Лёня-друид"
 		"DOTA_Tooltip_ability_inherit_druid_buff"									"Druid buff"
 		"DOTA_Tooltip_ability_inherit_druid_buff_Description"						"Полукровка, подкинутый медведям на растерзание был принят как дитя и в качестве выплаты долга помогает своим собратьям там, где они этого не ждут! "
 		"DOTA_Tooltip_ability_inherit_druid_buff_dmg_bonus"						"Бонусный урон :"

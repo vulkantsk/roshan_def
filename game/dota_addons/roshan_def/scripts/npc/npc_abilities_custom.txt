@@ -7489,7 +7489,6 @@
 		// Damage.
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityDamage"					"90 140 190 240 300 360 420"
-//		"AbilityDamage"					"200 300 400 500 700 900 1100"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -7550,7 +7549,6 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"10"
 //		"AbilityCooldown"				"10 8 6 4 3 2 1 0"
-
 		"AbilityManaCost"				"75 100 125 150 200 250 300"
 
 		// Special
@@ -7561,7 +7559,6 @@
 			{
 				"var_type"					"FIELD_FLOAT"
 				"buff_duration"				"2.25"
-//				"buff_duration"				"5"
 			}
 			"02"
 			{
@@ -7602,8 +7599,8 @@
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"stack_damage"					"10 12 14 16 19 22 25"
-//				"stack_damage"					"10 15 20 25 35 45 60"
+//				"stack_damage"					"10 12 14 16 19 22 25"
+				"stack_damage"					"10 15 20 25 35 45 60"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
@@ -7638,8 +7635,8 @@
 
 		// Time
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"70 60 50 45 40 35"
-//		"AbilityCooldown"				"25"
+//		"AbilityCooldown"				"70 60 50 45 40 35"
+		"AbilityCooldown"				"25"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -7657,8 +7654,8 @@
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"damage_reduction"			"60 65 70 80 90"
-//				"damage_reduction"			"90"
+//				"damage_reduction"			"60 65 70 80 90"
+				"damage_reduction"			"90"
 			}
 			"03"
 			{
@@ -9191,14 +9188,14 @@
 		"06"
 		{
 			"var_type"					"FIELD_FLOAT"
-//			"hp_per_str"				"35.0"
-			"hp_per_str"				"65.0"
+			"hp_per_str"				"35.0"
+//			"hp_per_str"				"65.0"
 		}
 		"07"
 		{
 			"var_type"					"FIELD_FLOAT"
-//			"dmg_per_agi"				"1.0"
-			"dmg_per_agi"				"2.0"
+			"dmg_per_agi"				"1.0"
+//			"dmg_per_agi"				"2.0"
 		}
 		"08"
 		{
@@ -9325,14 +9322,14 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-//				"bonus_as"			"250"
-				"bonus_as"			"500"
+				"bonus_as"			"250"		
+//				"bonus_as"			"500"		
 			}
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-//				"bonus_ms"			"35"
-				"bonus_ms"			"100"
+				"bonus_ms"			"35"
+//				"bonus_ms"			"100"
 			}
 			"03"
 			{
@@ -9407,8 +9404,8 @@
 			"04"
 			{
 				"var_type"			"FIELD_INTEGER"
-//				"armor_debuff"		"-5 -7 -9 -11 -14 -17 -20"
-				"armor_debuff"		"-10 -14 -18 -22 -28 -34 -40"
+				"armor_debuff"		"-5 -7 -9 -11 -14 -17 -20"
+//				"armor_debuff"		"-10 -14 -18 -22 -28 -34 -40"
 			}
 		}
 
@@ -9464,8 +9461,8 @@
 
 		// Time
 		//-------------------------------------------------------------------------------------------------------------
-//		"AbilityCooldown"				"100"
-		"AbilityCooldown"				"50"
+		"AbilityCooldown"				"100"
+//		"AbilityCooldown"				"50"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -44857,6 +44854,71 @@
 			}
 		}
 	}
+	"pubg_square"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"										
+		"ScriptFile"					"abilities/quest/pubg_square"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGETo"
+		"AbilityTextureName"			"jakiro_liquid_fire"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{		
+			"00"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"step_radius"				"100"
+			}
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"start_width"				"1000"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"start_height"				"1000"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"speed_width"				"100"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"speed_height"				"20"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"tick_interval"				"0.1"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"total_radius"				"10000"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"dmg_base"					"10"
+			}
+			"08"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"dmg_pct"					"3"
+			}
+			"09"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"dmg_interval"					"0.25"
+			}
+		}
+	}
 	"quest_test1"
 	{
 		// General
@@ -49624,5 +49686,11 @@
 				"max_gold"			"1000 2000 3000 4000 5000"
 			}
 		}
+	"boss_dive"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/boss_dive"
+		"AbilityTextureName"			"tidehunter_anchor_smash"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 	}
 }
