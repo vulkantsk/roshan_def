@@ -25,7 +25,7 @@ if IsServer() then
 		local enemies = FindUnitsInRadius(self:GetCaster():GetTeam(), self:GetParent():GetAbsOrigin(), nil, radius, self:GetAbility():GetAbilityTargetTeam(), self:GetAbility():GetAbilityTargetType(), self:GetAbility():GetAbilityTargetFlags(), FIND_CLOSEST, false)
 
 		for _, enemy in pairs(enemies) do
-			local damage = self:GetAbility():GetSpecialValueFor("explosion_damage") * self:GetAbility():GetSpecialValueFor("spirit_form_damage_mult_pct") / 100
+			local damage = self:GetAbility():GetSpecialValueFor("explosion_damage") + (self:GetAbility():GetSpecialValueFor("explosion_damage") * self:GetAbility():GetSpecialValueFor("spirit_form_damage_mult_pct") / 100)
 
 			ApplyDamage({
 				victim = enemy,

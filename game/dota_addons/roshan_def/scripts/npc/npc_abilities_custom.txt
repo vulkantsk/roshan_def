@@ -49662,6 +49662,7 @@
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_ogre_magi/jackpot"
 		"AbilityTextureName"			"ogre_magi/ogre_magi_jackpot"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET "
 
