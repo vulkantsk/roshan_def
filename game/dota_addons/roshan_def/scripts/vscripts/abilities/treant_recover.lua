@@ -67,7 +67,6 @@ modifier_treant_recover_effect = class({
 })
 
 function modifier_treant_recover_effect:OnCreated()
-	self:GetCaster():EmitSound()
 	EmitSoundOn("Hero_Treant.Overgrowth.Cast", self:GetCaster())
 end
 
