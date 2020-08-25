@@ -49687,6 +49687,7 @@
 				"max_gold"			"1000 2000 3000 4000 5000"
 			}
 		}
+	}
 	"boss_dive"
 	{
 		"BaseClass"						"ability_lua"
