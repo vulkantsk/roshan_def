@@ -3,6 +3,10 @@ LinkLuaModifier("modifier_ogre_magi_ignite_new_debuff", "heroes/hero_ogre_magi/i
 
 ogre_magi_ignite_new = class({})
 
+function ogre_magi_ignite_new:GetAOERadius()
+	return self:GetSpecialValueFor("damage_radius")
+end
+
 function ogre_magi_ignite_new:OnSpellStart()
 	CreateModifierThinker(self:GetCaster(), self, "modifier_ogre_magi_ignite_new_thinker", {duration = self:GetSpecialValueFor("debuff_duration")}, self:GetCursorPosition(), self:GetCaster():GetTeamNumber(), false)
 	EmitSoundOnLocationWithCaster(self:GetCursorPosition(), "Hero_Invoker.SunStrike.Ignite", self:GetCaster())
