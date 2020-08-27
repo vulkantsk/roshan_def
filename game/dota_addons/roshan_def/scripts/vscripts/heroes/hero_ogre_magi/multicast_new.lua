@@ -12,7 +12,7 @@ modifier_multicast_new = class({
 })
 
 function modifier_multicast_new:OnAbilityFullyCast(keys)
-	if IsServer() and keys.unit == self:GetCaster() then
+	if IsServer() and keys.unit == self:GetCaster() and keys.ability:IsItem() == false then
 		local ability = keys.ability
 
 		local caster = self:GetCaster()
