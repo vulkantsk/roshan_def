@@ -1,6 +1,5 @@
 LinkLuaModifier("modifier_jakiro_ice_and_fire_ice_path_thinker", "heroes/hero_jakiro/ice_and_fire", 0)
 LinkLuaModifier("modifier_jakiro_ice_and_fire_macropyre_thinker", "heroes/hero_jakiro/ice_and_fire", 0)
-LinkLuaModifier("modifier_jakiro_ice_and_fire_out_of_macropyre", "heroes/hero_jakiro/ice_and_fire", 0)
 LinkLuaModifier("modifier_jakiro_disable_turning", "heroes/hero_jakiro/modifier_jakiro_disable_turning", 0)
 
 jakiro_ice_and_fire = class({})

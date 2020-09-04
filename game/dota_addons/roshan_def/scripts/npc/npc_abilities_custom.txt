@@ -49934,7 +49934,7 @@
 			"06"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"movement_speed_slow"				"10"
+				"movement_speed_slow_pct"			"10"
 			}
 		}
 	}
