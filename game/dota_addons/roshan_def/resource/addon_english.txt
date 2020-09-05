@@ -266,7 +266,7 @@
 		"DOTA_Tooltip_ability_troll_warlord_battle_trance_mass_radius"			"RADIUS:"
 
 //Huskar
-		"npc_dota_hero_huskar"	"Huskar"
+		"npc_dota_hero_huskar"	"Huskar(IMBA)"
 
 		"DOTA_Tooltip_ability_inherit_huskar_buff"									"Huskar buff"
 		"DOTA_Tooltip_ability_inherit_huskar_buff_Description"						"The uncrowned king of Trolls. A skillful ruler. His very appearance inspires his subjects for the greatest sacrifices!"
@@ -2274,7 +2274,7 @@
 		"DOTA_Tooltip_ability_item_demon_horns_upgrade_bonus_int"                        	"BONUS INT:"
 
 //Bristleback
-		"npc_dota_hero_bristleback"			"Bristleback(IMBA)"
+		"npc_dota_hero_bristleback"			"Bristleback"
 
 		"DOTA_Tooltip_Ability_bristleback_hard_skin"                         			"Bristle blood"
 		"DOTA_Tooltip_ability_bristleback_hard_skin_Description"           				"Increase hero's maximum HP."

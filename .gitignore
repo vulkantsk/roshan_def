@@ -2,6 +2,7 @@
 *.bin
 *.zip
 *.7z
+*.sublime-workspace
 
 panorama_debugger.cfg
 settings.kv

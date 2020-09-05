@@ -1,8 +1,7 @@
 ability_test_1 = class({})
 
 function ability_test_1:OnSpellStart()
-	local caster = self:GetCaster()
-    caster:AddNewModifier(caster, nil, "modifier_roshan_second_chance",nil)
+	GameRules:SendCustomMessage("#Game_notification_end_game_message",0,0)
 end
 
 ability_test_2 = class({})

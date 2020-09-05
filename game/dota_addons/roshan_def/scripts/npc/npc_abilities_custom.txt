@@ -10749,8 +10749,8 @@
 
 		// Time
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"20"
-//		"AbilityCooldown"				"10"
+//		"AbilityCooldown"				"20"
+		"AbilityCooldown"				"10"
 		"AbilityDuration"				"10.0"
 
 		// Cost
@@ -10796,6 +10796,7 @@
 			{
 				"var_type"				"FIELD_FLOAT"
 				"turn_rate"				"350"
+//				"turn_rate"				"550"
 			}
 			"06"
 			{
@@ -10861,7 +10862,7 @@
 
 		// Time
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"50 47 44 41 37 33 30 "
+		"AbilityCooldown"				"50 47 44 41 37 33 30"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -10935,7 +10936,7 @@
 			"11"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"5 6 7 8 9 10 11"
+				"duration"				"6 6 6 6 8 10 12"
 				"LinkedSpecialBonus"	"special_bonus_unique_pangolier_6"
 			}
 			"12"
@@ -11023,7 +11024,7 @@
 			{
 				"var_type"					"FIELD_FLOAT"
 //				"duration"			"3"
-				"duration"			"4.5"
+				"duration"			"4"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
@@ -11230,7 +11231,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"bounty_multiplier"		"0"
+				"bounty_multiplier"		"1"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
@@ -40423,14 +40424,14 @@
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
- 				"bonus_health"		"175 300 425 550 700 850 1000"
-//				"bonus_health"		"400 600 800 1000 1400 1800 2200"
+// 				"bonus_health"		"175 300 425 550 700 850 1000"
+				"bonus_health"		"400 600 800 1000 1400 1800 2200"
 			}
 			"03"
 			{
 				"var_type"			"FIELD_INTEGER"
- 				"bonus_regen"		"4 5 8 11 14 17 20"
-//				"bonus_regen"		"8 12 16 20 28 36 42"
+// 				"bonus_regen"		"4 5 8 11 14 17 20"
+				"bonus_regen"		"8 12 16 20 28 36 42"
 			}
 			"04"
 			{
@@ -40471,8 +40472,8 @@
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
- 				"dmg_per_sec"		"5 10 15 20 25 30 35"
-//				"dmg_per_sec"		"15 25 35 45 60 75 90"
+// 				"dmg_per_sec"		"5 10 15 20 25 30 35"
+				"dmg_per_sec"		"15 25 35 45 60 75 90"
 			}
 		}
 	}
@@ -40493,8 +40494,8 @@
 			"01"
 			{
 				"var_type"			"FIELD_FLOAT"
- 				"trigger_chance"		"10 15 20 25 30 35 40"
-//				"trigger_chance"		"10 20 30 40 60 80 100"
+// 				"trigger_chance"		"10 15 20 25 30 35 40"
+				"trigger_chance"		"20 30 40 50 60 70 80"
 			}
 			"02"
 			{
@@ -40534,8 +40535,8 @@
 
 		// Time
 		//-------------------------------------------------------------------------------------------------------------
-//		"AbilityCooldown"				"50"
-		"AbilityCooldown"				"100"
+		"AbilityCooldown"				"50"
+//		"AbilityCooldown"				"100"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -40573,8 +40574,8 @@
 			"06"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"scepter_cooldown"	"80"
-//				"scepter_cooldown"	"40"
+//				"scepter_cooldown"	"80"
+				"scepter_cooldown"	"40"
 				"RequiresScepter"	"1"
 			}
 			"07"
@@ -41825,8 +41826,8 @@
 			"03"
 			{
 				"var_type"			"FIELD_FLOAT"
-//				"interval"			"0.5"
-				"interval"			"0.25"
+				"interval"			"0.5"
+//				"interval"			"0.25"
 			}
 			"04"
 			{
@@ -41851,8 +41852,10 @@
 		"LevelsBetweenUpgrades"			"3"
 
 		"AbilityCooldown"				"1"
-//		"AbilityManaCost"				"10 15 20 25 30 35 40"
-		"AbilityManaCost"				"20"
+
+		"AbilityManaCost"				"10 15 20 25 30 35 40"
+//		"AbilityManaCost"				"20"
+
 		"AbilityCastRange"				"%radius"
 		"AbilityCastPoint"				"0.3"
 
@@ -41863,8 +41866,8 @@
             "00"
             {
 			     "var_type"					"FIELD_FLOAT"
-//			     "interval"					"1"
-			     "interval"					"1 0.9 0.8 0.7 0.6 0.5 0.4"
+			     "interval"					"1"
+//			     "interval"					"1 0.9 0.8 0.7 0.6 0.5 0.4"
 		    }
             "01"
             {
@@ -41879,8 +41882,8 @@
             "03"
             {
 			     "var_type"					"FIELD_INTEGER"
-//			     "str_dmg"					"20 25 30 35 40 45 50"
-			     "str_dmg"					"75"
+			     "str_dmg"					"20 25 30 35 40 45 50"
+//			     "str_dmg"					"75"
 		    }
             "04"
             {
@@ -41914,14 +41917,14 @@
             "01"
             {
 			     "var_type"					"FIELD_INTEGER"
-			     "spell_lifesteal_pct"		"5 10 15 20 25 30 35"
-//			     "spell_lifesteal_pct"		"5 5 10 10 15 20 25"
+//			     "spell_lifesteal_pct"		"5 10 15 20 25 30 35"
+			     "spell_lifesteal_pct"		"5 5 10 10 15 20 25"
 		    }
             "02"
             {
 			     "var_type"					"FIELD_INTEGER"
-//			     "bonus_str"				"6 12 18 24 32 40 48"
-			     "bonus_str"				"10 20 30 40 55 70 85"
+			     "bonus_str"				"6 12 18 24 32 40 48"
+//			     "bonus_str"				"10 20 30 40 55 70 85"
 		    }
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
@@ -41945,14 +41948,14 @@
             "01"
             {
 			     "var_type"					"FIELD_INTEGER"
-//			     "side_damage_reduction"		"5 10 15 20 25"
-			     "side_damage_reduction"		"10 15 20 30 40"
+			     "side_damage_reduction"		"5 10 15 20 25"
+//			     "side_damage_reduction"		"10 15 20 30 40"
 		    }
             "02"
             {
                  "var_type"					"FIELD_INTEGER"
-//			     "back_damage_reduction"		 "10 20 30 40 50"
-			     "back_damage_reduction"		 "20 30 40 55 70"
+			     "back_damage_reduction"		 "10 20 30 40 50"
+//			     "back_damage_reduction"		 "20 30 40 55 70"
             }
             "03"
             {
@@ -41972,8 +41975,8 @@
             "06"
             {
                  "var_type"					"FIELD_INTEGER"
-//			     "trigger_chance"			    "10"
- 			     "trigger_chance"			    "10 15 20 25 30"
+			     "trigger_chance"			    "10"
+// 			     "trigger_chance"			    "10 15 20 25 30"
             }
 
 		}
@@ -48961,6 +48964,7 @@
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_leshrac/spirit_and_body"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"			"leshrac/leshrac_spirit_and_body_form_body_form"
 		"MaxLevel"						"1"
 
 		"AbilityCooldown"				"2"
@@ -49318,7 +49322,7 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"heroes/hero_leshrac/anomaly"
-		"AbilityTextureName"			"leshrac/leshrac_anomaly"
+		"AbilityTextureName"			"leshrac/leshrac_anomaly_body_form"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -49629,7 +49633,6 @@
 		"RequiredLevel"					"10"
 		"MaxLevel"						"5"
 		"LevelsBetweenUpgrades"			"10"
-		"MaxLevel"						"1"
 
 		"AbilitySpecial"
 		{

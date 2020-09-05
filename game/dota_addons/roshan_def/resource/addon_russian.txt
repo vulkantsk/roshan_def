@@ -307,7 +307,7 @@
 "DOTA_Tooltip_modifier_troll_warlord_battle_trance_Description"	"Скорость атаки увеличена на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
 
 //Huskar
-		"npc_dota_hero_huskar"	"Хускар"
+		"npc_dota_hero_huskar"	"Хускар(IMBA)"
 		"DOTA_Tooltip_ability_inherit_huskar_buff"									"Huskar buff"
 		"DOTA_Tooltip_ability_inherit_huskar_buff_Description"						"Неназванный король троллей, умелый правитель, который одним своим видом воодушевляет своих подданных на величайшие жертвы, которые вносят огромный вклад в победу! "
 		"DOTA_Tooltip_ability_inherit_huskar_buff_dmg_bonus"						"Бонусный урон :"
@@ -1824,7 +1824,7 @@
 		"DOTA_Tooltip_modifier_leshrac_buff_Description"					"Усилен вождем!"
 		
 		"DOTA_Tooltip_ability_leshrac_spirit_and_body"								"Spirit and body"
-		"DOTA_Tooltip_ability_leshrac_spirit_and_body_Description"					"Leshrac это существо живущее одновременно в двух измерениях - <font color='#FFD700'>телесном</font> и <font color='#00BFFF'>духовном</font>. Выбирая предпочтение определенной формы, он получает ее положительные эффекты. Получив смертельный урон в одной форме он переходит в другую, восстанавливает 25% здоровья и на время отключает это умение".
+		"DOTA_Tooltip_ability_leshrac_spirit_and_body_Description"					"Leshrac это существо живущее одновременно в двух измерениях - <font color='#FFD700'>телесном</font> и <font color='#00BFFF'>духовном</font>. Выбирая предпочтение определенной формы, он получает ее положительные эффекты. Получив смертельный урон в одной форме он переходит в другую, восстанавливает 25% здоровья и на время отключает это умение."
 		"DOTA_Tooltip_ability_leshrac_spirit_and_body_heal_pct"						"%ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:"
 		"DOTA_Tooltip_ability_leshrac_spirit_and_body_disable_time"					"ВРЕМЯ БЛОКИРОВКИ УМЕНИЯ:"
 		"DOTA_Tooltip_modifier_leshrac_spirit_and_body_spirit_form"						"Spirit form"
@@ -2336,7 +2336,7 @@
 		"DOTA_Tooltip_ability_item_demon_horns_upgrade_bonus_int"                        	"БОНУС ИНТЕЛЕКТА:"
 
 //Bristleback
-		"npc_dota_hero_bristleback"			"Колючий бочок(IMBA)"
+		"npc_dota_hero_bristleback"			"Колючий бочок"
 
 		"DOTA_Tooltip_Ability_bristleback_hard_skin"                         			"Bristle blood"
 		"DOTA_Tooltip_ability_bristleback_hard_skin_Description"           				"Повышает жизнеспособность."

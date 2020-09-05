@@ -57,7 +57,7 @@ end
 modifier_ogre_magi_flamebreak = class({
 	IsPurgable = function() return true end,
 	DeclareFunctions = function() return {
-		MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE
+--		MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE
 	} end,
 	GetEffectName = function() return "particles/units/heroes/hero_batrider/batrider_flamebreak_debuff.vpcf" end,
 	GetEffectAttachType = function() return PATTACH_ABSORIGIN_FOLLOW end
