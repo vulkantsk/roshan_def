@@ -49958,6 +49958,11 @@
 		"AbilityCooldown"							"120"
 		"AbilityManaCost"							"5000"
 
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_tusk.vsndevts"
+		}
+
 		"AbilitySpecial"
 		{
 			"01"
