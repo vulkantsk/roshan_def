@@ -13,8 +13,8 @@ function spectre_dagger_custom:GetAbilityTextureName()
 	return texture
 end
 function spectre_dagger_custom:OnSpellStart()
-   local vDirection = (self:GetCursorPosition() - self:GetCaster():GetOrigin()):Normalized()
 	local caster = self:GetCaster()
+   	local vDirection = (self:GetCursorPosition() - caster:GetOrigin() + caster:GetForwardVector()):Normalized()
 	
     local particle = "particles/units/heroes/hero_spectre/spectre_spectral_dagger.vpcf"
 	if caster:HasModifier("modifier_item_mystic_dagger") then

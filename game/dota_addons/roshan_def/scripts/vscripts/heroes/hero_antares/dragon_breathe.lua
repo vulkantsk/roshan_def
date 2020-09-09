@@ -6,8 +6,8 @@ function antares_dragon_breathe:GetCastRange()
 	return self:GetSpecialValueFor("wave_distance")
 end
 function antares_dragon_breathe:OnSpellStart()
-   local vDirection = (self:GetCursorPosition() - self:GetCaster():GetOrigin()):Normalized()
 	local caster = self:GetCaster()
+   	local vDirection = (self:GetCursorPosition() - caster:GetOrigin() + caster:GetForwardVector()):Normalized()
 	
     local particle = "particles/units/heroes/hero_dragon_knight/dragon_knight_breathe_fire.vpcf"
 

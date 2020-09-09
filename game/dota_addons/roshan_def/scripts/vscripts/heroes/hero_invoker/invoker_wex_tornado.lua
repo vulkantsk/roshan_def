@@ -17,16 +17,15 @@ function invoker_wex_tornado:OnAbilityPhaseInterrupted()
 end
 
 function invoker_wex_tornado:OnSpellStart()
-
-    local vDirection = self:GetCursorPosition() - self:GetCaster():GetOrigin()
-    vDirection.z = 0.0
-    vDirection = vDirection:Normalized()
-    self:GetCaster():EmitSound("Hero_Invoker.Tornado")
-    self:GetCaster():EmitSound("invoker_invo_ability_tornado_0" .. RandomInt(1,5))
+    local caster = self:GetCaster()
+    local vDirection = (self:GetCursorPosition() - caster:GetOrigin() + caster:GetForwardVector()):Normalized()
+    caster:EmitSound("Hero_Invoker.Tornado")
+    caster:EmitSound("invoker_invo_ability_tornado_0" .. RandomInt(1,5))
+    
     ProjectileManager:CreateLinearProjectile({
         EffectName = 'particles/econ/items/invoker/invoker_ti6/invoker_tornado_ti6.vpcf',
 		Ability = self,
-		vSpawnOrigin = self:GetCaster():GetOrigin(), 
+		vSpawnOrigin = caster:GetOrigin(), 
 		fStartRadius =self:GetSpecialValueFor('radius'),
 		fEndRadius = self:GetSpecialValueFor('radius'),
 		vVelocity = vDirection * self:GetSpecialValueFor('speed'),

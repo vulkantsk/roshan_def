@@ -15,8 +15,8 @@ function sven_shockwave:GetAbilityTextureName()
 	end
 end
 function sven_shockwave:OnSpellStart()
-   local vDirection = (self:GetCursorPosition() - self:GetCaster():GetOrigin()):Normalized()
 	local caster = self:GetCaster()
+   	local vDirection = (self:GetCursorPosition() - caster:GetOrigin() + caster:GetForwardVector()):Normalized()
 	
     local particle = "particles/units/heroes/hero_magnataur/magnataur_shockwave.vpcf"
 	if caster:HasModifier("modifier_sven_god_strength") or caster:HasModifier("modifier_sven_powerup") then
