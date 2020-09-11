@@ -37,7 +37,7 @@ end
 function modifier_jakiro_dragon_flight:OnIntervalThink()
 	local caster = self:GetCaster()
 	if IsServer() then
-		CreateModifierThinker(caster, self:GetAbility(), "modifier_jakiro_dragon_flight_thinker", {duration = self:GetAbility():GetSpecialValueFor("fire_duration")}, caster:GetAbsOrigin(), caster:GetTeamNumber(), false)
+		CreateModifierThinker(caster, self:GetAbility(), "modifier_jakiro_dragon_flight_thinker", {duration = self:GetRemainingTime()}, caster:GetAbsOrigin(), caster:GetTeamNumber(), false)
 	end
 end
 
@@ -63,7 +63,7 @@ modifier_jakiro_dragon_flight_thinker = class({
 })
 
 function modifier_jakiro_dragon_flight_thinker:OnCreated()
-	local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_batrider/batrider_firefly.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent())
+	local pfx = ParticleManager:CreateParticle("particles/econ/items/batrider/batrider_ti8_immortal_mount/batrider_ti8_immortal_firefly.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent())
 	ParticleManager:SetParticleControl(pfx, 0, self:GetCaster():GetAbsOrigin())
 	ParticleManager:SetParticleControl(pfx, 11, Vector(1, 0, 0))
 	self:AddParticle(pfx, false, false, -1, false, false)

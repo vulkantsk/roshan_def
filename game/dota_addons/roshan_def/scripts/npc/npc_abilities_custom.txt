@@ -49815,7 +49815,7 @@
 			"02"
 			{
 				"var_type"                          "FIELD_FLOAT"
-				"fire_duration"                     "1 1.2 1.3 1.4 1.6 1.8 2"
+				"fire_duration"                     "8 10 12 14 16 18 20"
 			}
 			"03"
 			{
@@ -50008,7 +50008,13 @@
 		"AbilityCastPoint"							"0.55"
 		"AbilityCooldown"							"100"
 		"AbilityManaCost"							"250 500 1250 2500 5000"
+		
+		"RequiredLevel"								"10"
+		"MaxLevel"									"5"
+		"LevelsBetweenUpgrades"						"10"
 
+		"HasScepterUpgrade"							"1"
+		
 		"AbilitySpecial"
 		{
 			"01"

@@ -101,7 +101,7 @@ function modifier_jakirio_ice_cage_debuff:OnIntervalThink()
 			victim = enemy,
 			attacker = self:GetCaster(),
 			ability = self:GetAbility(),
-			damage = self:GetAbility():GetSpecialValueFor("damage_per_sec") / 1000,
+			damage = self:GetAbility():GetSpecialValueFor("damage_per_sec"),
 			damage_type = self:GetAbility():GetAbilityDamageType()
 		})
 	end

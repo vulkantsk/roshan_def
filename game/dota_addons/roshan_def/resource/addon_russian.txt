@@ -389,7 +389,8 @@
 		"DOTA_Tooltip_ability_holdout_storm_bolt_Description"						"Sven unleashes his magical gauntlet that deals damage and stuns enemy units."
 
 //Jakiro
-		"npc_dota_hero_jakiro"	"Жакирос"
+		"npc_dota_hero_jakiro"			"Jakiro"
+
 		"DOTA_Tooltip_ability_inherit_jakiro_buff"									"Jakiro buff"
 		"DOTA_Tooltip_ability_inherit_jakiro_buff_Description"						"Младший брат наивысшего дракона, недоношенный, с дефектами, но такой же сильный - способен поднять любого, даже самого захудалого дракона для последнего бой! "
 		"DOTA_Tooltip_ability_inherit_jakiro_buff_dmg_bonus"						"Бонусный урон :"
@@ -401,6 +402,75 @@
 		"DOTA_Tooltip_ability_jakiro_buff_Description"						"Под командованием вождя  драконы становятся сильнее"
 		"DOTA_Tooltip_ability_jakiro_buff_dmg_bonus"						"Бонусный урон :"
 		"DOTA_Tooltip_ability_jakiro_buff_as_bonus"						"Бонусная скорость атаки :"
+
+
+		"DOTA_Tooltip_ability_jakiro_dual_breath_new"								"Dual breath"
+		"DOTA_Tooltip_ability_jakiro_dual_breath_new_Description"					"Поток льда и пламени двуглавого дракона не оставит и шанса своим врагам!"
+		"DOTA_Tooltip_ability_jakiro_dual_breath_new_damage"						"УРОН ОТ ПОПАДАНИЯ"
+		"DOTA_Tooltip_ability_jakiro_dual_breath_new_burn_damage"					"УРОН В СЕКУНДУ"
+		"DOTA_Tooltip_ability_jakiro_dual_breath_new_slow_movement_speed_pct"				"%ЗАМЕДЛЕНИЕ СКОРОСТИ АТАКИ И ПЕРЕДВИЖЕНИЯ"
+		"DOTA_Tooltip_ability_jakiro_dual_breath_new_debuff_duration"					"ДЛИТЕЛЬНОСТЬ"
+		"DOTA_Tooltip_modifier_jakiro_dual_breath_new_ice"							"ICE"
+		"DOTA_Tooltip_modifier_jakiro_dual_breath_new_ice_Description"					"Замедление скорости атаки и передвижения!"
+		"DOTA_Tooltip_modifier_jakiro_dual_breath_new_fire"							"FIRE"
+		"DOTA_Tooltip_modifier_jakiro_dual_breath_new_fire_Description"					"Вы горите!"
+
+
+		"DOTA_Tooltip_ability_jakiro_dragon_flight"								"Dragon flight"
+		"DOTA_Tooltip_ability_jakiro_dragon_flight_Description"						"Дракон взымает в небеса оставляя после себя след пламени сжигающий кости безумцев бросивших вызов Дракону!"
+		"DOTA_Tooltip_ability_jakiro_dragon_flight_duration"						"ДЛИТЕЛЬНОСТЬ"
+		"DOTA_Tooltip_ability_jakiro_dragon_flight_movespeed_bonus_pct"					"БОНУС СКОРОСТИ ПЕРЕДВИЖЕНИЯ"
+		"DOTA_Tooltip_ability_jakiro_dragon_flight_bonus_vision"					"БОНУС ДАЛЬНОСТИ ВИДИМОСТИ"
+		"DOTA_Tooltip_ability_jakiro_dragon_flight_damage_per_sec"					"УРОН В СЕКУНДУ"
+		"DOTA_Tooltip_modifier_jakiro_dragon_flight"								"Dragon flight"
+		"DOTA_Tooltip_modifier_jakiro_dragon_flight_Description"					"Полёт..."
+
+		
+		"DOTA_Tooltip_ability_jakiro_hothead"									"Hot head"
+		"DOTA_Tooltip_ability_jakiro_hothead_Description"						"Каждая %jakiro_hothead_needed_attacks% атака наполнена жидким пламенем, разъедает броню и поджигает цель и всех врагов в радиусе от неё."
+		"DOTA_Tooltip_ability_jakiro_hothead_needed_attacks"						"КОЛИЧЕСТВО АТАК"
+		"DOTA_Tooltip_ability_jakiro_hothead_debuff_duration"						"ДЛИТЕЛЬНОСТЬ"
+		"DOTA_Tooltip_ability_jakiro_hothead_damage_radius"						"РАДИУС"
+		"DOTA_Tooltip_ability_jakiro_hothead_damage_per_sec"						"УРОН В СЕКУНДУ"
+		"DOTA_Tooltip_ability_jakiro_hothead_armor_reduction"						"СНИЖЕНИЕ БРОНИ"
+		"DOTA_Tooltip_modifier_jakiro_hothead"									"Hot head"
+		"DOTA_Tooltip_modifier_jakiro_hothead_Description"						"Вы горите!!!"
+		"DOTA_Tooltip_modifier_jakiro_hothead_debuff"								"Hot head"
+		"DOTA_Tooltip_modifier_jakiro_hothead_debuff_Description"					"Броня снижена жидким пламенем!"
+
+
+		"DOTA_Tooltip_ability_jakiro_cold_mind"									"Cold mind"
+		"DOTA_Tooltip_ability_jakiro_cold_mind_Description"						"Каждая атака Jakiro накладывает стаки замерзания на врагов, замедляя их. Когда количество стаков достигнет 3, враг будет приморожен к земле, а все атаки по нему будут критические. Невозможно заново заморозить цель в течении некоторого времени после разморозки!"
+		"DOTA_Tooltip_ability_jakiro_cold_mind_int_to_damage_pct"					"%ИНТИЛЛЕКТ В УРОН"
+		"DOTA_Tooltip_ability_jakiro_cold_mind_stack_for_freeze"					"СТАКОВ ДЛЯ ЗАМОРОЗКИ"
+		"DOTA_Tooltip_ability_jakiro_cold_mind_debuff_duration"						"ДЛИТЕЛЬНОСТЬ ДЕБАФА"
+		"DOTA_Tooltip_ability_jakiro_cold_mind_crit_damage"						"%КРИТ УРОН"
+		"DOTA_Tooltip_ability_jakiro_cold_mind_freeze_duration"						"ДЛИТЕЛЬНОСТЬ ЗАМОРОЗКИ"
+		"DOTA_Tooltip_ability_jakiro_cold_mind_movement_speed_slow_pct"					"ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ"
+		"DOTA_Tooltip_modifier_jakiro_cold_mind_debuff"								"Cold mind"
+		"DOTA_Tooltip_modifier_jakiro_cold_mind_debuff_Description"					"Замедление."
+
+
+		"DOTA_Tooltip_ability_jakiro_ice_cage"									"Ice cage"
+		"DOTA_Tooltip_ability_jakiro_ice_cage_Description"						"Jakiro выпускает ледяные шипы закрывающие врага в ловушке и наносящие ему урон."
+		"DOTA_Tooltip_ability_jakiro_ice_cage_damage"							"УРОН"
+		"DOTA_Tooltip_ability_jakiro_ice_cage_duration"							"ДЛИТЕЛЬНОСТЬ"
+		"DOTA_Tooltip_ability_jakiro_ice_cage_damage_per_sec"						"УРОН В СЕКУНДУ"
+
+
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire"								"Ice and fire"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_Description"						"Jakiro собирает всю силу двух своих атрибутов, выпуская дорожку обжигающего пламени и вечного льда, нанося урон в секунду и оглушая врагов попавших под действие скила. После выхода из пламени враги все еще получают 50% урона от скила в течении %out_of_macropyre_burn_duration% секунд."
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_ice_path_duration"					"ДЛИТЕЛЬНОСТЬ ДЕЙСТВИЯ ЛЬДА"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_duration"					"ДЛИТЕЛЬНОСТЬ ДЕЙСТВИЯ ОГНЯ"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_ice_path_width"					"ШИРИНА ПОЛОСЫ ЛЬДА"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_width"					"ШИРИНА ПОЛОСЫ ОГНЯ"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_damage_per_sec"				"УРОН В СЕКУНДУ"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_aghanim_description"					"Изменяет урон заклинания на чистый."
+
+
+
+
+
 
 		"DOTA_Tooltip_ability_holdout_storm_bolt"									"Storm Hammer"
 		"DOTA_Tooltip_ability_holdout_storm_bolt_Description"						"Sven unleashes his magical gauntlet that deals damage and stuns enemy units."
