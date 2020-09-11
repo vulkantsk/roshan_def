@@ -5,11 +5,7 @@ LinkLuaModifier("modifier_jakiro_dragon_flight_damage", "heroes/hero_jakiro/drag
 jakiro_dragon_flight = class({})
 
 function jakiro_dragon_flight:OnSpellStart()
-	local caster = self:GetCaster()
-	caster:AddNewModifier(self:GetCaster(), self, "modifier_jakiro_dragon_flight", {duration = self:GetSpecialValueFor("duration")})
-
-	local pfx = ParticleManager:CreateParticle("", PATTACH_ABSORIGIN_FOLLOW, caster)
-	ParticleManager:ReleaseParticleIndex(pfx)
+	self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_jakiro_dragon_flight", {duration = self:GetSpecialValueFor("duration")})
 end
 
 
@@ -25,7 +21,9 @@ modifier_jakiro_dragon_flight = class({
 	CheckState = function() return {
 		[MODIFIER_STATE_FLYING] = true
 	}
-	end
+	end,
+	GetEffectName = function() return "particles/units/heroes/hero_batrider/batrider_firefly.vpcf" end,
+	GetEffectAttachType = function() return PATTACH_ABSORIGIN_FOLLOW end,
 })
 
 function modifier_jakiro_dragon_flight:OnCreated()
@@ -37,7 +35,7 @@ end
 function modifier_jakiro_dragon_flight:OnIntervalThink()
 	local caster = self:GetCaster()
 	if IsServer() then
-		CreateModifierThinker(caster, self:GetAbility(), "modifier_jakiro_dragon_flight_thinker", {duration = self:GetAbility():GetSpecialValueFor("fire_duration")}, caster:GetAbsOrigin(), caster:GetTeamNumber(), false)
+		CreateModifierThinker(caster, self:GetAbility(), "modifier_jakiro_dragon_flight_thinker", {duration = self:GetRemainingTime()}, caster:GetAbsOrigin(), caster:GetTeamNumber(), false)
 	end
 end
 
@@ -61,18 +59,6 @@ modifier_jakiro_dragon_flight_thinker = class({
 	IsAura = function() return true end,
 	GetModifierAura = function() return "modifier_jakiro_dragon_flight_damage" end
 })
-
-function modifier_jakiro_dragon_flight_thinker:OnCreated()
-	local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_batrider/batrider_firefly.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent())
-	ParticleManager:SetParticleControl(pfx, 0, self:GetCaster():GetAbsOrigin())
-	ParticleManager:SetParticleControl(pfx, 11, Vector(1, 0, 0))
-	self:AddParticle(pfx, false, false, -1, false, false)
-	self:StartIntervalThink(0.1)
-end
-
-function modifier_jakiro_dragon_flight_thinker:OnIntervalThink()
-	self:GetParent():SetAbsOrigin(self:GetCaster():GetAbsOrigin())
-end
 
 function modifier_jakiro_dragon_flight_thinker:GetAuraSearchTeam()
 	return self:GetAbility():GetAbilityTargetTeam()

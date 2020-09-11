@@ -91,10 +91,11 @@ function modifier_jakiro_ice_and_fire_macropyre_thinker:OnCreated(keys)
 		self.start_pos = Vector(keys.start_pos_x, keys.start_pos_y, parent:GetAbsOrigin().z)
 		self.end_pos = Vector(keys.end_pos_x, keys.end_pos_y, parent:GetAbsOrigin().z)
 		local end_pos = self.start_pos + (self.end_pos - self.start_pos):Normalized() * self:GetAbility():GetCastRange(parent:GetAbsOrigin(), parent)
+		self.end_pos = end_pos
 
 		local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_jakiro/jakiro_macropyre.vpcf", PATTACH_WORLDORIGIN, self:GetParent())
 		ParticleManager:SetParticleControl(pfx, 0, self.start_pos)
-		ParticleManager:SetParticleControl(pfx, 1, end_pos)
+		ParticleManager:SetParticleControl(pfx, 1, self.end_pos)
 		ParticleManager:SetParticleControl(pfx, 2, Vector(keys.duration, 0, 0))
 		ParticleManager:SetParticleControl(pfx, 3, self.start_pos)
 		self:AddParticle(pfx, false, false, -1, false, false)

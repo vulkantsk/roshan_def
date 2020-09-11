@@ -27,7 +27,6 @@ end
 function modifier_jakiro_cold_mind:OnCreated()
 	if not IsServer() then return end
 	self:StartIntervalThink(0.1)
-	self:GetParent():PerformAttack(self:GetParent(), true, true, true, true, false, true, true)
 end
 
 function modifier_jakiro_cold_mind:OnIntervalThink()
@@ -56,7 +55,7 @@ function modifier_jakiro_cold_mind:OnAttackLanded(keys)
 	local target = keys.target
 	local debuff = target:HasModifier("modifier_jakiro_cold_mind_debuff")
 	local cooldown = target:HasModifier("modifier_jakiro_cold_mind_cooldown")
-	if self:GetAbility():IsCooldownReady() and target ~= attacker and attacker == self:GetParent() and not (self:GetParent():PassivesDisabled() or target:IsBuilding() or target:IsOther()) then
+	if target and self:GetAbility():IsCooldownReady() and target ~= attacker and attacker == self:GetParent() and not (self:GetParent():PassivesDisabled() or target:IsBuilding() or target:IsOther()) then
 		if not cooldown then
 			if not debuff then
 				target:AddNewModifier(attacker, self:GetAbility(), "modifier_jakiro_cold_mind_debuff", {duration = self:GetAbility():GetSpecialValueFor("debuff_duration")}):IncrementStackCount()
@@ -109,7 +108,7 @@ modifier_jakiro_cold_mind_freeze = class({
 	} end,
 	GetEffectName = function() return "particles/units/heroes/hero_ancient_apparition/ancient_apparition_cold_feet_frozen.vpcf" end,
 	GetEffectAttachType = function() return PATTACH_OVERHEAD_FOLLOW end,
-	DeclareFunctions = function() return MODIFIER_PROPERTY_PREATTACK_TARGET_CRITICALSTRIKE end
+	DeclareFunctions = function() return {MODIFIER_PROPERTY_PREATTACK_TARGET_CRITICALSTRIKE} end
 })
 
 function modifier_jakiro_cold_mind_freeze:GetModifierPreAttack_Target_CriticalStrike()
