@@ -344,7 +344,69 @@
 		"DOTA_Tooltip_ability_inherit_jakiro_buff_dmg_bonus"						"%BONUS DMG :"
 		"DOTA_Tooltip_ability_inherit_jakiro_buff_as_bonus"						"BONUS AS :"
 		"DOTA_Tooltip_modifier_inherit_jakiro_buff"								"Jakiro buff"
-		"DOTA_Tooltip_modifier_inherit_jakiro_buff_Description"					"Is a leader of the dragons" 
+		"DOTA_Tooltip_modifier_inherit_jakiro_buff_Description"						"Is a leader of the dragons" 
+
+		"DOTA_Tooltip_ability_jakiro_dual_breath_new"								"Dual breath"
+		"DOTA_Tooltip_ability_jakiro_dual_breath_new_Description"					"The stream of ice and flame of the two-headed dragon will not leave a chance to your enemies!"
+		"DOTA_Tooltip_ability_jakiro_dual_breath_new_damage"						"HIT DAMAGE"
+		"DOTA_Tooltip_ability_jakiro_dual_breath_new_burn_damage"					"DAMAGE PER SECOND"
+		"DOTA_Tooltip_ability_jakiro_dual_breath_new_slow_movement_speed_pct"				"%SLOWING ATTACK SPEED AND MOVEMENT"
+		"DOTA_Tooltip_ability_jakiro_dual_breath_new_debuff_duration"					"DURATION"
+		"DOTA_Tooltip_modifier_jakiro_dual_breath_new_ice"							"ICE"
+		"DOTA_Tooltip_modifier_jakiro_dual_breath_new_ice_Description"					"Slow down attack and movement speed!"
+		"DOTA_Tooltip_modifier_jakiro_dual_breath_new_fire"							"FIRE"
+		"DOTA_Tooltip_modifier_jakiro_dual_breath_new_fire_Description"					"You are burning!"
+
+
+		"DOTA_Tooltip_ability_jakiro_dragon_flight"								"Dragon flight"
+		"DOTA_Tooltip_ability_jakiro_dragon_flight_Description"						"The dragon charges into the skies leaving behind a trail of flame burning the bones of the madmen who defied the Dragon!"
+		"DOTA_Tooltip_ability_jakiro_dragon_flight_duration"						"DURATION"
+		"DOTA_Tooltip_ability_jakiro_dragon_flight_movespeed_bonus_pct"					"MOVEMENT SPEED BONUS"
+		"DOTA_Tooltip_ability_jakiro_dragon_flight_bonus_vision"					"VISIBILITY RANGE BONUS"
+		"DOTA_Tooltip_ability_jakiro_dragon_flight_damage_per_sec"					"DAMAGE PER SECOND"
+		"DOTA_Tooltip_modifier_jakiro_dragon_flight"								"Dragon flight"
+		"DOTA_Tooltip_modifier_jakiro_dragon_flight_Description"					"Flight..."
+
+		
+		"DOTA_Tooltip_ability_jakiro_hothead"									"Hot head"
+		"DOTA_Tooltip_ability_jakiro_hothead_Description"						"Each %needed_attacks% attack is filled with liquid flame, destroy armor and ignites the target and all enemies within a radius of it."
+		"DOTA_Tooltip_ability_jakiro_hothead_debuff_duration"						"DURATION"
+		"DOTA_Tooltip_ability_jakiro_hothead_damage_radius"						"RADIUS"
+		"DOTA_Tooltip_ability_jakiro_hothead_damage_per_sec"						"DAMAGE PER SECOND"
+		"DOTA_Tooltip_ability_jakiro_hothead_armor_reduction"						"REDUCED ARMOR"
+		"DOTA_Tooltip_modifier_jakiro_hothead"									"Hot head"
+		"DOTA_Tooltip_modifier_jakiro_hothead_Description"						"Needed attacks."
+		"DOTA_Tooltip_modifier_jakiro_hothead_debuff"								"Hot head"
+		"DOTA_Tooltip_modifier_jakiro_hothead_debuff_Description"					"Armor reduced by liquid flame!"
+
+
+		"DOTA_Tooltip_ability_jakiro_cold_mind"									"Cold mind"
+		"DOTA_Tooltip_ability_jakiro_cold_mind_Description"						"Jakiro's every attack places stacks of freeze on enemies, slowing them down. When the number of stacks reaches 3, the enemy will be frozen to the ground, and all attacks against him will be critical. It is impossible to re-freeze the target for some time after defrosting!"
+		"DOTA_Tooltip_ability_jakiro_cold_mind_int_to_damage_pct"					"%INTELLIGENCE IN DAMAGE"
+		"DOTA_Tooltip_ability_jakiro_cold_mind_stack_for_freeze"					"FREEZE STACKS"
+		"DOTA_Tooltip_ability_jakiro_cold_mind_debuff_duration"						"DEBUFF DURATION"
+		"DOTA_Tooltip_ability_jakiro_cold_mind_crit_damage"						"%CRITICAL DAMAGE"
+		"DOTA_Tooltip_ability_jakiro_cold_mind_freeze_duration"						"FREEZE DURATION"
+		"DOTA_Tooltip_ability_jakiro_cold_mind_movement_speed_slow_pct"					"SLOW MOVEMENTSPEED"
+		"DOTA_Tooltip_modifier_jakiro_cold_mind_debuff"								"Cold mind"
+		"DOTA_Tooltip_modifier_jakiro_cold_mind_debuff_Description"					"Slowing."
+
+
+		"DOTA_Tooltip_ability_jakiro_ice_cage"									"Ice cage"
+		"DOTA_Tooltip_ability_jakiro_ice_cage_Description"						"Jakiro fires ice spikes that cover and damage the trapped enemy."
+		"DOTA_Tooltip_ability_jakiro_ice_cage_damage"							"DAMAGE"
+		"DOTA_Tooltip_ability_jakiro_ice_cage_duration"							"DURATION"
+		"DOTA_Tooltip_ability_jakiro_ice_cage_damage_per_sec"						"DAMAGE PER SECOND"
+
+
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire"								"Ice and fire"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_Description"						"Jakiro harnesses the full power of his two attributes, releasing a path of searing flame and eternal ice, dealing damage per second and stunning enemies affected by the skill. After exiting the flames, enemies still take 50% damage from the skill for %out_of_macropyre_burn_duration% seconds."
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_ice_path_duration"					"DURATION OF THE ICE"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_duration"					"DURATION OF THE FIRE"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_ice_path_width"					"ICE STRIP WIDTH"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_width"					"FIRE STRIP WIDTH"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_damage_per_sec"				"DAMAGE PER SECOND"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_aghanim_description"					"Change the damage of the spell to <font color='#FFD700'>pure</font>."
 
 //Wyvern
 		"npc_dota_hero_winter_wyvern"	"Mystic dragon"

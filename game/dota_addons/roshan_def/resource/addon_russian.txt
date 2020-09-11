@@ -396,12 +396,12 @@
 		"DOTA_Tooltip_ability_inherit_jakiro_buff_dmg_bonus"						"Бонусный урон :"
 		"DOTA_Tooltip_ability_inherit_jakiro_buff_as_bonus"						"Бонусная скорость атаки :"
 		"DOTA_Tooltip_modifier_inherit_jakiro_buff"								"Jakiro buff"
-		"DOTA_Tooltip_modifier_inherit_jakiro_buff_Description"					"Является одним из вожаков драконов."
+		"DOTA_Tooltip_modifier_inherit_jakiro_buff_Description"						"Является одним из вожаков драконов."
 
 		"DOTA_Tooltip_ability_jakiro_buff"									"Jakiro buff"
-		"DOTA_Tooltip_ability_jakiro_buff_Description"						"Под командованием вождя  драконы становятся сильнее"
-		"DOTA_Tooltip_ability_jakiro_buff_dmg_bonus"						"Бонусный урон :"
-		"DOTA_Tooltip_ability_jakiro_buff_as_bonus"						"Бонусная скорость атаки :"
+		"DOTA_Tooltip_ability_jakiro_buff_Description"							"Под командованием вождя  драконы становятся сильнее"
+		"DOTA_Tooltip_ability_jakiro_buff_dmg_bonus"							"Бонусный урон :"
+		"DOTA_Tooltip_ability_jakiro_buff_as_bonus"							"Бонусная скорость атаки :"
 
 
 		"DOTA_Tooltip_ability_jakiro_dual_breath_new"								"Dual breath"
@@ -417,7 +417,7 @@
 
 
 		"DOTA_Tooltip_ability_jakiro_dragon_flight"								"Dragon flight"
-		"DOTA_Tooltip_ability_jakiro_dragon_flight_Description"						"Дракон взымает в небеса оставляя после себя след пламени сжигающий кости безумцев бросивших вызов Дракону!"
+		"DOTA_Tooltip_ability_jakiro_dragon_flight_Description"						"Дракон взимает в небеса оставляя после себя след пламени сжигающий кости безумцев бросивших вызов Дракону!"
 		"DOTA_Tooltip_ability_jakiro_dragon_flight_duration"						"ДЛИТЕЛЬНОСТЬ"
 		"DOTA_Tooltip_ability_jakiro_dragon_flight_movespeed_bonus_pct"					"БОНУС СКОРОСТИ ПЕРЕДВИЖЕНИЯ"
 		"DOTA_Tooltip_ability_jakiro_dragon_flight_bonus_vision"					"БОНУС ДАЛЬНОСТИ ВИДИМОСТИ"
@@ -427,21 +427,20 @@
 
 		
 		"DOTA_Tooltip_ability_jakiro_hothead"									"Hot head"
-		"DOTA_Tooltip_ability_jakiro_hothead_Description"						"Каждая %jakiro_hothead_needed_attacks% атака наполнена жидким пламенем, разъедает броню и поджигает цель и всех врагов в радиусе от неё."
-		"DOTA_Tooltip_ability_jakiro_hothead_needed_attacks"						"КОЛИЧЕСТВО АТАК"
+		"DOTA_Tooltip_ability_jakiro_hothead_Description"						"Каждая %needed_attacks% атака наполнена жидким пламенем, разъедает броню и поджигает цель и всех врагов в радиусе от неё."
 		"DOTA_Tooltip_ability_jakiro_hothead_debuff_duration"						"ДЛИТЕЛЬНОСТЬ"
 		"DOTA_Tooltip_ability_jakiro_hothead_damage_radius"						"РАДИУС"
 		"DOTA_Tooltip_ability_jakiro_hothead_damage_per_sec"						"УРОН В СЕКУНДУ"
 		"DOTA_Tooltip_ability_jakiro_hothead_armor_reduction"						"СНИЖЕНИЕ БРОНИ"
 		"DOTA_Tooltip_modifier_jakiro_hothead"									"Hot head"
-		"DOTA_Tooltip_modifier_jakiro_hothead_Description"						"Вы горите!!!"
+		"DOTA_Tooltip_modifier_jakiro_hothead_Description"						"Количество атак для срабатывания."
 		"DOTA_Tooltip_modifier_jakiro_hothead_debuff"								"Hot head"
 		"DOTA_Tooltip_modifier_jakiro_hothead_debuff_Description"					"Броня снижена жидким пламенем!"
 
 
 		"DOTA_Tooltip_ability_jakiro_cold_mind"									"Cold mind"
 		"DOTA_Tooltip_ability_jakiro_cold_mind_Description"						"Каждая атака Jakiro накладывает стаки замерзания на врагов, замедляя их. Когда количество стаков достигнет 3, враг будет приморожен к земле, а все атаки по нему будут критические. Невозможно заново заморозить цель в течении некоторого времени после разморозки!"
-		"DOTA_Tooltip_ability_jakiro_cold_mind_int_to_damage_pct"					"%ИНТИЛЛЕКТ В УРОН"
+		"DOTA_Tooltip_ability_jakiro_cold_mind_int_to_damage_pct"					"%ИНТЕЛЛЕКТ В УРОН"
 		"DOTA_Tooltip_ability_jakiro_cold_mind_stack_for_freeze"					"СТАКОВ ДЛЯ ЗАМОРОЗКИ"
 		"DOTA_Tooltip_ability_jakiro_cold_mind_debuff_duration"						"ДЛИТЕЛЬНОСТЬ ДЕБАФА"
 		"DOTA_Tooltip_ability_jakiro_cold_mind_crit_damage"						"%КРИТ УРОН"
@@ -465,7 +464,13 @@
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_ice_path_width"					"ШИРИНА ПОЛОСЫ ЛЬДА"
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_width"					"ШИРИНА ПОЛОСЫ ОГНЯ"
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_damage_per_sec"				"УРОН В СЕКУНДУ"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_aghanim_description"					"Изменяет урон заклинания на чистый."
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_aghanim_description"					"Изменяет урон заклинания на <font color='#FFD700'>чистый</font>."
+
+
+
+
+
+
 
 
 

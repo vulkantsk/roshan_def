@@ -670,6 +670,7 @@
 		"AttackRate"				"1.6"									// Speed of attack.
 		"ProjectileSpeed"			"1550"									// Speed of projectile.
 		"AttackAnimationPoint"		"0.55"
+		"AttackRange"				"575"
 
 
 		// Armor

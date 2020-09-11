@@ -49645,17 +49645,17 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"x2_chance"				"20 30 40 53 66"
+				"x2_chance"				"30 40 50 60 70"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"x3_chance"				"10 15 20 26 32"
+				"x3_chance"				"10 15 20 25 30"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"x4_chance"				"5 8 11 16 21"
+				"x4_chance"				"5 8 11 15 20"
 			}
 			"04"
 			{
@@ -49702,7 +49702,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"max_gold"			"5000"
+				"max_gold"			"10000"
 			}
 		}
 	}
@@ -49728,10 +49728,10 @@
 		"MaxLevel"						"7"
 		"LevelsBetweenUpgrades"			"3"
 
-		"AbilityCooldown"				"12 12 10 10 9 9 8"
+		"AbilityCooldown"				"12 12 11 11 10 10 9"
 		"AbilityCastPoint"				"0.55"
 		"AbilityCastRange"				"750"
-		"AbilityManaCost"				"100 150 200 400 600 800 1000"
+		"AbilityManaCost"				"100 130 160 190 220 250 280"
 
 		"AbilitySpecial"
 		{
@@ -49748,7 +49748,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"100 140 170 200 300 450"
+				"damage"				"150 200 250 300 350 425 500"
 			}
 			"04"
 			{
@@ -49763,7 +49763,7 @@
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"burn_damage"			"20 40 70 100 140 280 560"
+				"burn_damage"			"40 65 80 95 110 125 140"
 			}
 			"07"
 			{
@@ -49783,7 +49783,7 @@
 			"10"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"debuff_duration"		"2 3 3 3 4 4 5"
+				"debuff_duration"		"5"
 			}
 		}
 	}
@@ -49802,40 +49802,40 @@
 		"MaxLevel"									"7"
 		"LevelsBetweenUpgrades"						"3"
 
-		"AbilityCooldown"							"120 100 90 80 70 60 50"
-		"AbilityManaCost"							"75 100 125 150 200 250 500"
+		"AbilityCooldown"							"40 38 36 34 32 30 28"
+		"AbilityManaCost"							"50 75 100 125 150 175 200"
 
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"duration"                          "8 10 12 14 16 18 20"
+				"duration"                          "8 9 10 11 12 13 14"
 			}
 			"02"
 			{
 				"var_type"                          "FIELD_FLOAT"
-				"fire_duration"                     "8 10 12 14 16 18 20"
+				"fire_duration"                     "8 9 10 11 12 13 14"
 			}
 			"03"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"movespeed_bonus_pct"				"4 6 8 10 12 14 16"
+				"movespeed_bonus_pct"				"10 13 16 19 22 25 30"
 			}
 			"04"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"bonus_vision"						"200 300 400 500 600 700 800"
+				"bonus_vision"						"400 450 500 550 600 650 700"
 			}
 			"05"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"damage_radius"						"200"
+				"damage_radius"						"300"
 			}
 			"06"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"damage_per_sec"					"10 40 70 100 150 300 700"
+				"damage_per_sec"					"40 60 80 100 120 140 160"
 			}
 		}
 	}
@@ -49859,27 +49859,27 @@
 			"01"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"needed_attacks"                    "10 9 8 7 6 5 4"
+				"needed_attacks"                    "8 7 6 5 4 3 2"
 			}
 			"02"
 			{
 				"var_type"                          "FIELD_FLOAT"
-				"debuff_duration"                   "1 1.5 2 2.5 3 3.5 4"
+				"debuff_duration"                   "4"
 			}
 			"03"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"damage_radius"						"200 250 300 350 400 450 500"
+				"damage_radius"						"300 325 350 375 400 425 450"
 			}
 			"04"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"damage_per_sec"					"10 25 50 75 100 200 300"
+				"damage_per_sec"					"50 75 100 125 150 175 200"
 			}
 			"05"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"armor_reduction"					"1 2 3 4 5 6 7"
+				"armor_reduction"					"2 4 6 8 10 12 15"
 			}
 		}
 	}
@@ -49897,7 +49897,7 @@
 
 		"MaxLevel"									"1"
 
-		"AbilityCooldown"							"5"
+		"AbilityCooldown"							"1.5"
 
 		"precache"
 		{
@@ -49909,12 +49909,12 @@
 			"01"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"int_to_damage_pct"                 "30"
+				"int_to_damage_pct"                 "100"
 			}
 			"02"
 			{
 				"var_type"                          "FIELD_INTEGER"
-				"stack_for_freeze"                  "3"
+				"stack_for_freeze"                  "4"
 			}
 			"03"
 			{
@@ -49929,12 +49929,12 @@
 			"05"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"freeze_duration"					"2"
+				"freeze_duration"					"2.5"
 			}
 			"06"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"movement_speed_slow_pct"			"10"
+				"movement_speed_slow_pct"			"20"
 			}
 		}
 	}
@@ -49956,7 +49956,7 @@
 		"AbilityCastRange"							"2000"
 		"AbilityCastPoint"							"0.3"
 		"AbilityCooldown"							"120"
-		"AbilityManaCost"							"5000"
+		"AbilityManaCost"							"2500"
 
 		"precache"
 		{
@@ -49973,7 +49973,7 @@
 			"02"
 			{
 				"var_type"                          "FIELD_INTEGER"
-				"damage"                            "15000"
+				"damage"                            "20000"
 			}
 			"03"
 			{
@@ -49983,7 +49983,7 @@
 			"04"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"damage_per_sec"					"1500"
+				"damage_per_sec"					"2000"
 			}
 			"05"
 			{
@@ -50006,8 +50006,8 @@
 
 		"AbilityCastRange"							"1000 1200 1400 1600 1800"
 		"AbilityCastPoint"							"0.55"
-		"AbilityCooldown"							"100"
-		"AbilityManaCost"							"250 500 1250 2500 5000"
+		"AbilityCooldown"							"90"
+		"AbilityManaCost"							"500 750 1000 1250 1500"
 		
 		"RequiredLevel"								"10"
 		"MaxLevel"									"5"
@@ -50020,12 +50020,12 @@
 			"01"
 			{
 				"var_type"							"FIELD_FLOAT"
-				"ice_path_duration"                 "1 2 3 4 5"
+				"ice_path_duration"                 "3 3.5 4 4.5 5"
 			}
 			"02"
 			{
 				"var_type"                          "FIELD_INTEGER"
-				"macropyre_duration"                "10 15 20 25 30"
+				"macropyre_duration"                "10 15 15 20 25"
 			}
 			"03"
 			{
@@ -50035,22 +50035,22 @@
 			"04"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"ice_path_width"					"150"
+				"ice_path_width"					"200 225 250 275 300"
 			}
 			"05"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"macropyre_width"					"260"
+				"macropyre_width"					"300 325 350 375 400"
 			}
 			"06"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"macropyre_damage_per_sec"			"50 100 250 500 1000"
+				"macropyre_damage_per_sec"			"100 250 500 750 1000"
 			}
 			"07"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"out_of_macropyre_burn_duration"	"1 2 3 4 5"
+				"out_of_macropyre_burn_duration"	"5"
 			}
 		}
 		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_4"
