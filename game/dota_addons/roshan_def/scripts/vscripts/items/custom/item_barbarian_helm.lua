@@ -26,6 +26,7 @@ function modifier_item_barbarian_helm:OnCreated()
 end
 
 function modifier_item_barbarian_helm:OnIntervalThink()
+	if not IsServer() then return end
 	local parent = self:GetParent()
 	local strength = parent:GetStrength()
 
