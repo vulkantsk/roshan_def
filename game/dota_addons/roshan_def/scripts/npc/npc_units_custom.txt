@@ -41801,7 +41801,7 @@
 	}
 	"npc_dota_watermelon_tentacle"
 	{
-		"vscripts"					"ai/ai_autocast"
+		"vscripts"					"ai/ai_neutral_autocast"
 		// General
 		//----------------------------------------------------------------
 		"Model"						"models/event/tentacle/watermelon_tentacle.vmdl"	// Model.
