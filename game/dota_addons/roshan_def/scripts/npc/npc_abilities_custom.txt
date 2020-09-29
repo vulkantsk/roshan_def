@@ -49845,41 +49845,31 @@
 		"BaseClass"									"ability_lua"
 		"ScriptFile"								"heroes/hero_jakiro/hothead.lua"
 		"AbilityTextureName"						"jakiro/jakiro_hothead"
-		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK"
 		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_NO"
 
-		"MaxLevel"									"7"
-		"LevelsBetweenUpgrades"						"3"
+		"MaxLevel"									"1"
+		"AbilityCooldown"							"4"
 
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_type"							"FIELD_INTEGER"
-				"needed_attacks"                    "8 7 6 5 4 3 2"
+				"var_type"                          "FIELD_FLOAT"
+				"debuff_duration"                   "3"
 			}
 			"02"
 			{
-				"var_type"                          "FIELD_FLOAT"
-				"debuff_duration"                   "4"
+				"var_type"							"FIELD_INTEGER"
+				"damage_radius"						"300"
 			}
 			"03"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"damage_radius"						"300 325 350 375 400 425 450"
-			}
-			"04"
-			{
-				"var_type"							"FIELD_INTEGER"
-				"damage_per_sec"					"50 75 100 125 150 175 200"
-			}
-			"05"
-			{
-				"var_type"							"FIELD_INTEGER"
-				"armor_reduction"					"2 4 6 8 10 12 15"
+				"int_to_damage_pct"					"100"
 			}
 		}
 	}
@@ -50008,20 +49998,15 @@
 		"AbilityCastPoint"							"0.55"
 		"AbilityCooldown"							"90"
 		"AbilityManaCost"							"500 750 1000 1250 1500"
-		
+
 		"RequiredLevel"								"10"
 		"MaxLevel"									"5"
 		"LevelsBetweenUpgrades"						"10"
 
 		"HasScepterUpgrade"							"1"
-		
+
 		"AbilitySpecial"
 		{
-			"01"
-			{
-				"var_type"							"FIELD_FLOAT"
-				"ice_path_duration"                 "3 3.5 4 4.5 5"
-			}
 			"02"
 			{
 				"var_type"                          "FIELD_INTEGER"
@@ -50034,8 +50019,8 @@
 			}
 			"04"
 			{
-				"var_type"							"FIELD_INTEGER"
-				"ice_path_width"					"200 225 250 275 300"
+				"var_type"							"FIELD_FLOAT"
+				"damage_interval"					"0.5"
 			}
 			"05"
 			{
@@ -50045,12 +50030,12 @@
 			"06"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"macropyre_damage_per_sec"			"100 250 500 750 1000"
+				"damage_per_sec"					"100 250 500 750 1000"
 			}
 			"07"
 			{
-				"var_type"							"FIELD_INTEGER"
-				"out_of_macropyre_burn_duration"	"5"
+				"var_type"							"FIELD_FLOAT"
+				"stun_duration"						"0.25"
 			}
 		}
 		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_4"

@@ -9,7 +9,7 @@
 	local point = self:GetCursorPosition()
 
 	ProjectileManager:CreateLinearProjectile({
-		EffectName = "particles/units/heroes/hero_jakiro/jakiro_dual_breath_ice.vpcf",
+		EffectName = "particles/econ/items/jakiro/jakiro_ti8_immortal_head/jakiro_ti8_dual_breath_ice.vpcf",
 		Ability = self,
 		Source = caster,
 		vSpawnOrigin = caster:GetAbsOrigin(),
@@ -30,7 +30,7 @@
 
 	self:GetCaster():SetContextThink(DoUniqueString("jakiro_dual_breath_new"), function()
 		ProjectileManager:CreateLinearProjectile({
-			EffectName = "particles/units/heroes/hero_jakiro/jakiro_dual_breath_fire.vpcf",
+			EffectName = "particles/econ/items/jakiro/jakiro_ti8_immortal_head/jakiro_ti8_dual_breath_fire.vpcf",
 			Ability = self,
 			Source = caster,
 			vSpawnOrigin = caster:GetAbsOrigin(),
