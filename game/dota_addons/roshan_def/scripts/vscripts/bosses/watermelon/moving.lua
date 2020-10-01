@@ -2,17 +2,33 @@ LinkLuaModifier("modifier_watermelon_moving", "bosses/watermelon/moving.lua", 1)
 
 watermelon_moving = class({})
 
+function watermelon_moving:GetAOERadius()
+	return self:GetSpecialValueFor("damage_radius")
+end
+
 function watermelon_moving:GetChannelTime()
-	return self:GetSpecialValueFor("channel_time") + self:GetSpecialValueFor("move_delay")
+	return self:GetSpecialValueFor("move_delay")
 end
 
 function watermelon_moving:OnSpellStart()
-	self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_watermelon_moving", {duration = self:GetChannelTime()})
+	local duration = self:GetSpecialValueFor("move_delay") + self:GetSpecialValueFor("move_duration")
+	self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_watermelon_moving", {duration = duration})
+	
+	EmitSoundOn("sonic_race",self:GetCaster())
 end
+
+function watermelon_moving:OnChannelFinish(bInterrupted)
+	StopSoundOn("sonic_race",self:GetCaster())
+	self:GetCaster():EmitSound("watermelon_race")
+end
+
 
 modifier_watermelon_moving = class({
 	IsHidden = function() return false end,
-	IsPurgable = function() return false end
+	IsPurgable = function() return false end,
+	DeclareFunctions = function() return {
+		MODIFIER_PROPERTY_OVERRIDE_ANIMATION
+	}end,
 })
 
 function modifier_watermelon_moving:CheckState()
@@ -30,13 +46,13 @@ function modifier_watermelon_moving:OnCreated()
 	end
 	self.hit = {}
 
-	local target_point = GetRandomAvailableWatermelonPoint()
-	self.face_towards = target_point
-	local distance = (target_point - self:GetCaster():GetAbsOrigin()):Length2D()
-	self.speed = distance / self:GetAbility():GetSpecialValueFor("channel_time")
-	self.direction = (target_point - self:GetCaster():GetAbsOrigin()):Normalized()
+--	local target_point = GetRandomAvailableWatermelonPoint()
+	self.face_towards = self:GetCaster():GetCursorPosition()
+	local distance = (self.face_towards - self:GetCaster():GetAbsOrigin()):Length2D()
+	self.speed = distance / self:GetAbility():GetSpecialValueFor("move_duration")
+	self.direction = (self.face_towards - self:GetCaster():GetAbsOrigin()):Normalized()
 	self:StartIntervalThink(FrameTime())
-	self:GetParent():StartGesture(ACT_DOTA_CAST_ABILITY_3)
+--	self:GetParent():StartGesture(ACT_DOTA_CAST_ABILITY_3)
 end
 
 function modifier_watermelon_moving:OnIntervalThink()
@@ -72,11 +88,15 @@ function modifier_watermelon_moving:OnHorizontalMotionInterrupted()
 	self:Destroy()
 end
 
+function modifier_watermelon_moving:GetOverrideAnimation()
+	return ACT_DOTA_CAST_ABILITY_3
+end
+
 function modifier_watermelon_moving:OnDestroy()
 	if not IsServer() then return end
 	self:GetCaster():RemoveHorizontalMotionController(self)
 	if self:GetCaster():HasModifier(self:GetName()) then
 		RemoveModifierByName(self:GetName())
 	end
-	self:GetCaster():FadeGesture(ACT_DOTA_CAST_ABILITY_3)
+--	self:GetCaster():FadeGesture(ACT_DOTA_CAST_ABILITY_3)
 end

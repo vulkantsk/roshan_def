@@ -1,10 +1,6 @@
---[[LinkLuaModifier("modifier_watermelon_passive", "ai/ai_watermelon", 0)
-LinkLuaModifier("modifier_watermelon_no_cd", "ai/ai_watermelon", 0)
-
-local ARENA_RADIUS = 2000
-
 function Spawn(entityKeyValues)
-	npc = thisEntity
+	local npc = thisEntity
+	
 	if not IsServer() then return end
 	if npc == nil then return end
 
@@ -15,179 +11,281 @@ function Spawn(entityKeyValues)
 	TentacleDivingAbility = npc:FindAbilityByName("watermelon_tentacle_diving")
 	WaveAbility = npc:FindAbilityByName("watermelon_wave")
 	SuperWaveAbility = npc:FindAbilityByName("watermelon_wave_cast")
+	MadnessAbility = npc:FindAbilityByName("watermelon_madness")
 
 	JumpAbility:SetLevel(1)
-	DivingAbility:SetLevel(1)
-	MovingAbility:SetLevel(1)
 	TentacleAbility:SetLevel(1)
-	TentacleDivingAbility:SetLevel(1)
 	WaveAbility:SetLevel(1)
+	DivingAbility:SetLevel(1)
 	SuperWaveAbility:SetLevel(1)
+	MovingAbility:SetLevel(1)
+	TentacleDivingAbility:SetLevel(1)
+	MadnessAbility:SetLevel(1)
 
 	npc:SetContextThink("WatermelonThink", WatermelonThink, 1)
-	npc:AddNewModifier(npc, nil, "modifier_watermelon_passive", nil)
 end
 
+function WatermelonPointsCheck()
+	local watermelon_points = Entities:FindAllByName("BOSS_WM_POINT")
+	local k = 0
+	for _,wm_point in pairs(watermelon_points) do
+		if wm_point.tentacle and ( not IsValidEntity(wm_point.tentacle) or not wm_point.tentacle:IsAlive()) then
+			wm_point.tentacle = nil
+		end
+		if wm_point.tentacle then
+			k = k + 1
+		end
+	end
+--	print("live tentacles: "..k.." of "..#watermelon_points)
+end
+
+function FindNearestPoint(pos)
+	local nearest_point = Entities:FindByNameNearest("BOSS_WM_POINT", pos, 1000)
+
+	if nearest_point then
+		return nearest_point
+	else
+		return Entities:FindByName(nil, "BOSS_WM_SPAWN_POINT")
+	end
+end
+
+function FindRandomPoint()
+	local point = watermelon_points[RandomInt(1, #watermelon_points)]
+end
 function WatermelonThink()
+	npc = thisEntity
+	local watermelon_points = Entities:FindAllByName("BOSS_WM_POINT")
+	WatermelonPointsCheck()
+	if not npc.bSpawnInit then
+		npc.bSpawnInit = true
+		print(npc:GetAbsOrigin())
+		npc:SetAbsOrigin(Entities:FindByName(nil, "BOSS_WM_SPAWN_POINT"):GetAbsOrigin())
+		print(npc:GetAbsOrigin())
+	end
+
 	if not npc:IsAlive() then return -1 end
 	if GameRules:IsGamePaused() then return 1 end
+	if npc:IsChanneling() or npc:IsStunned() then return 0.5 end
 
-	print("Watermelon AI thinking")
+--	print("Watermelon AI thinking")
 
 	local boss_hp = npc:GetHealthPercent()
-	local arena_center = Entities:FindByName(nil, "BOSS_WM_POS_5"):GetAbsOrigin()
-	local enemies_on_arena = FindUnitsInRadius(npc:GetTeamNumber(), arena_center, nil, ARENA_RADIUS, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO, 16 + 64 + 262144, 0, false)
+	local boss_origin = npc:GetAbsOrigin()
+	local spawn_point = Entities:FindAllByName("BOSS_WM_SPAWN_POINT")
+	local closest_enemy
+	local closest_distance
+	local farthest_enemy
+	local farthest_distance
+
+
+	if not npc.bInitialized then
+		if boss_hp<100 then
+			npc.bInitialized = true
+			npc.diving = false
+			npc.vMaxArenaPoint = Entities:FindByName(nil, "point_boss_arena_max_2"):GetAbsOrigin()
+			npc.vMinArenaPoint = Entities:FindByName(nil, "point_boss_arena_min_2"):GetAbsOrigin()
+			npc.arena_center = (npc.vMaxArenaPoint + npc.vMinArenaPoint)/2
+			npc.search_radius = (npc.vMaxArenaPoint - npc.vMinArenaPoint):Length2D()/2
+			
+			npc:EmitSound("tidehunter_tide_spawn_0"..RandomInt(1, 9))
+		end
+		return 1
+	end
+
+--	local arena_center = Entities:FindByName(nil, "BOSS_WM_POS_5"):GetAbsOrigin()
+	local enemies = FindUnitsInRadius(
+		npc:GetTeamNumber(), 
+		npc.arena_center, 
+		nil, 
+		npc.search_radius, 
+		DOTA_UNIT_TARGET_TEAM_ENEMY, 
+		DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, 
+		DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_INVULNERABLE + DOTA_UNIT_TARGET_FLAG_OUT_OF_WORLD, 
+		0, 
+		false)
+
+	local enemies_on_arena = {}
+	for _, enemy in pairs(enemies) do
+		local enemy_origin = enemy:GetAbsOrigin()
+		if enemy_origin.x > npc.vMinArenaPoint.x and enemy_origin.x < npc.vMaxArenaPoint.x then
+			table.insert(enemies_on_arena, enemy)
+
+			local distance = (boss_origin - enemy_origin):Length2D()
+			if not closest_enemy then
+				closest_distance = distance
+				closest_enemy = enemy
+				farthest_distance = distance
+				farthest_enemy = enemy
+			elseif distance < closest_distance then
+				closest_distance = distance
+				closest_enemy = enemy
+			elseif distance > farthest_distance then
+				farthest_distance = distance
+				farthest_enemy = enemy
+			end
+		end
+	end
 
 	if #enemies_on_arena > 0 then
-		if boss_hp < 100 then -- 1 стадия
-			if JumpAbility:IsFullyCastable() then
-				CastJumpAbility()
+		local farthest_point = FindNearestPoint(farthest_enemy:GetAbsOrigin())
+	--	DebugDrawSphere(farthest_point:GetAbsOrigin(), Vector(150,255,255), 1, 300, true, 1)
+		local closest_point = FindNearestPoint(closest_enemy:GetAbsOrigin())
+	--	DebugDrawSphere(closest_point:GetAbsOrigin(), Vector(255,255,150), 1, 300, true, 1)
+		local random_enemy = enemies_on_arena[RandomInt(1, #enemies_on_arena)]
+		local random_enemy_point = FindNearestPoint(random_enemy:GetAbsOrigin())
+		local random_point = watermelon_points[RandomInt(1, #watermelon_points)]
+
+		if npc:HasModifier("modifier_watermelon_madness") then
+			if npc.madness_cycle == 1 then
+				npc.madness_cycle = 2
+				JumpAbility:EndCooldown()
+				CastJumpAbility(random_point:GetAbsOrigin())
+			elseif npc.madness_cycle == 2 then
+				npc.madness_cycle = 1
+				DivingAbility:EndCooldown()
+				CastDivingAbility(random_enemy_point:GetAbsOrigin())
 			end
-			if WaveAbility:IsFullyCastable() then
-				CastWaveAbility()
+		end
+
+		if npc.diving then
+			npc.diving = false
+			CastJumpAbility(npc:GetAbsOrigin())
+			print("jump after dive")
+		end
+
+		if boss_hp <= 100 then -- 4 стадия
+			if MadnessAbility:IsFullyCastable() then
+				CastMadnessAbility()
 			end
-			if TentacleAbility:IsFullyCastable() then
-				CastTentacleAbility()
-			end
-		elseif boss_hp < 76 and boss_hp > 51 then -- 2 стадия
-			if JumpAbility:IsFullyCastable() then
-				CastJumpAbility(RandomInt(0, 1))
-			end
-			if WaveAbility:IsFullyCastable() then
-				CastWaveAbility()
-			end
-			if TentacleAbility:IsFullyCastable() then
-				CastTentacleAbility()
-			end
-			if DivingAbility:IsFullyCastable() then
-				CastDivingAbility()
-			end
-			if SuperWaveAbility:IsFullyCastable() then
-				CastSuperWaveAbility()
-			end
-		elseif boss_hp < 51 and boss_hp > 26 then -- 3 стадия
-			if JumpAbility:IsFullyCastable() then
-				CastJumpAbility(RandomInt(0, 1))
-			end
-			if WaveAbility:IsFullyCastable() then
-				CastWaveAbility()
-			end
-			if TentacleAbility:IsFullyCastable() then
-				CastTentacleAbility()
-			end
-			if DivingAbility:IsFullyCastable() then
-				CastDivingAbility()
-			end
-			if SuperWaveAbility:IsFullyCastable() then
-				CastSuperWaveAbility()
-			end
+		end
+
+		if boss_hp <= 1 then -- 3 стадия
 			if TentacleDivingAbility:IsFullyCastable() then
-				CastTentacleDivingAbility()
+				CastTentacleDivingAbility(spawn_point:GetAbsOrigin())
 			end
+
 			if MovingAbility:IsFullyCastable() then
-				CastMovingAbility()
+				CastMovingAbility(random_point:GetAbsOrigin())
 			end
-		elseif boss_hp < 26 then -- 4 стадия
-			if (JumpAbility and DivingAbility):IsFullyCastable() then
-				CastAbsolute()
+		end
+
+		if boss_hp < 1 then -- 2 стадия
+			if DivingAbility:IsFullyCastable() then
+				CastDivingAbility(random_enemy_point:GetAbsOrigin())
+				print("cast diving")
+			end
+
+			if SuperWaveAbility:IsFullyCastable() then
+				CastSuperWaveAbility()
+				print("cast super wave")
+			end
+		end
+
+		if JumpAbility:IsFullyCastable() then
+			CastJumpAbility(farthest_point:GetAbsOrigin())
+		end
+
+		if WaveAbility:IsFullyCastable() then
+			CastWaveAbility(farthest_enemy)
+		end
+
+		if TentacleAbility:IsFullyCastable() then
+			CastTentacleAbility(random_enemy_point:GetAbsOrigin())
+		end
+		
+	end
+	return 0.5
+end
+
+function GetRandomAvailableWatermelonPoint()
+	local all_points = {}
+	for i = 1, 9 do
+		for _, target in pairs(Entities:FindAllByName("BOSS_WM_POS_"..i)) do
+			local units_around = FindUnitsInRadius(DOTA_TEAM_NOTEAM, target:GetAbsOrigin(), nil, 50, 3, 63, 16 + 64 + 262144, 0, false)
+			if #units_around == 0 then
+				table.insert(all_points, target:GetAbsOrigin())
 			end
 		end
 	end
-	return 0.5
+	
+	return all_points[RandomInt(1, #all_points)]
 end
 
-function CastJumpAbility(bOnPlace)
-	if bOnPlace == 0 then
-		bOnPlace = false
-	else
-		bOnPlace = true
-	end
-	local pos
-	if bOnPlace then
-		pos = npc:GetAbsOrigin()
-		ExecuteOrderFromTable({
-			UnitIndex = npc:entindex(),
-			OrderType = DOTA_UNIT_ORDER_CAST_POSITION,
-			AbilityIndex = JumpAbility:entindex(),
-			Position = pos,
-			Queue = false
-		})
-	else
-		local farthest_enemy = FindUnitsInRadius(npc:GetTeamNumber(), npc:GetAbsOrigin(), nil, 2500, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO, 0, FIND_FARTHEST, false)
-		for _, enemy in pairs(farthest_enemy) do
-			pos = Entities:FindByClassnameNearest("info_target", enemy:GetAbsOrigin(), 800):GetAbsOrigin()
-			break;
-		end
-		ExecuteOrderFromTable({
-			UnitIndex = npc:entindex(),
-			OrderType = DOTA_UNIT_ORDER_CAST_POSITION,
-			AbilityIndex = JumpAbility:entindex(),
-			Position = pos,
-			Queue = false
-		})
-	end
-	return 0.5
-end
-
-function CastWaveAbility()
-	local closest_enemy = FindUnitsInRadius(npc:GetTeamNumber(), npc:GetAbsOrigin(), nil, 2000, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO, 0, FIND_CLOSEST, false)
-	for _, enemy in pairs(closest_enemy) do
-		ExecuteOrderFromTable({
-			UnitIndex = npc:entindex(),
-			OrderType = DOTA_UNIT_ORDER_CAST_POSITION,
-			AbilityIndex = WaveAbility:entindex(),
-			Position = enemy:GetAbsOrigin(),
-			Queue = false
-		})
-		break;
-	end
-	return 0.5
-end
-
-function CastTentacleAbility()
-	local pos
-	local closest_enemy = FindUnitsInRadius(npc:GetTeamNumber(), npc:GetAbsOrigin(), nil, 2000, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO, 0, FIND_CLOSEST, false)
-	for _, enemy in pairs(closest_enemy) do
-		ExecuteOrderFromTable({
-			UnitIndex = npc:entindex(),
-			OrderType = DOTA_UNIT_ORDER_CAST_POSITION,
-			AbilityIndex = TentacleAbility:entindex(),
-			Position = Entities:FindByClassnameNearest("info_target", enemy:GetAbsOrigin(), 750),
-			Queue = false
-		})
-		break;
-	end
-	return 0.5
-end
-
-function CastMovingAbility()
+function CastJumpAbility(position)
 	ExecuteOrderFromTable({
 		UnitIndex = npc:entindex(),
-		OrderType = DOTA_UNIT_ORDER_CAST_NO_TARGET,
+		OrderType = DOTA_UNIT_ORDER_CAST_POSITION,
+		AbilityIndex = JumpAbility:entindex(),
+		Position = position,
+		Queue = false
+	})
+
+	return 0.5
+end
+
+function CastWaveAbility(position)
+	ExecuteOrderFromTable({
+		UnitIndex = npc:entindex(),
+		OrderType = DOTA_UNIT_ORDER_CAST_POSITION,
+		AbilityIndex = WaveAbility:entindex(),
+		Position = position,
+		Queue = false
+	})
+
+	return 0.5
+end
+
+function CastTentacleAbility(position)
+	ExecuteOrderFromTable({
+		UnitIndex = npc:entindex(),
+		OrderType = DOTA_UNIT_ORDER_CAST_POSITION,
+		AbilityIndex = TentacleAbility:entindex(),
+		Position = position,
+		Queue = false
+	})
+
+	return 0.5
+end
+
+function CastMovingAbility(position)
+	ExecuteOrderFromTable({
+		UnitIndex = npc:entindex(),
+		OrderType = DOTA_UNIT_ORDER_CAST_POSITION,
 		AbilityIndex = MovingAbility:entindex(),
+		Position = position,
 		Queue = false
 	})
+
 	return 0.5
 end
 
-function CastDivingAbility()
+function CastDivingAbility(position)
 	ExecuteOrderFromTable({
 		UnitIndex = npc:entindex(),
-		OrderType = DOTA_UNIT_ORDER_CAST_NO_TARGET,
+		OrderType = DOTA_UNIT_ORDER_CAST_POSITION,
 		AbilityIndex = DivingAbility:entindex(),
+		Position = position,
 		Queue = false
 	})
+	if not npc:HasModifier("modifier_watermelon_madness") then
+		npc.diving = true
+		JumpAbility:EndCooldown()
+	end
+
 	return 0.5
 end
 
-function CastTentacleDivingAbility()
-	npc:SetAbsOrigin(Entities:FindByName(nil, "BOSS_WM_POS_5"):GetAbsOrigin())
+function CastTentacleDivingAbility(position)
 	ExecuteOrderFromTable({
 		UnitIndex = npc:entindex(),
-		OrderType = DOTA_UNIT_ORDER_CAST_NO_TARGET,
+		OrderType = DOTA_UNIT_ORDER_CAST_POSITION,
 		AbilityIndex = TentacleDivingAbility:entindex(),
+		Position = position,
 		Queue = false
 	})
+	npc.diving = true
+	JumpAbility:EndCooldown()
+
 	return 0.5
 end
 
@@ -201,34 +299,16 @@ function CastSuperWaveAbility()
 	return 0.5
 end
 
-function CastAbsolute()
-	local farthest_enemy = FindUnitsInRadius(npc:GetTeamNumber(), npc:GetAbsOrigin(), nil, 2500, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO, 0, FIND_FARTHEST, false)
-	for _, enemy in pairs(farthest_enemy) do
-		pos = Entities:FindByClassnameNearest("info_target", enemy:GetAbsOrigin(), 800):GetAbsOrigin()
-		break;
-	end
+
+function CastMadnessAbility()
 	ExecuteOrderFromTable({
 		UnitIndex = npc:entindex(),
-		OrderType = DOTA_UNIT_ORDER_CAST_POSITION,
-		AbilityIndex = JumpAbility:entindex(),
-		Position = pos,
+		OrderType = DOTA_UNIT_ORDER_CAST_NO_TARGET,
+		AbilityIndex = MadnessAbility:entindex(),
 		Queue = false
 	})
-	JumpAbility:EndCooldown()
-	DivingAbility:OnSpellStart(0.1, 0.1)
-	DivingAbility:EndCooldown()
-	return 1
+	npc.madness_cycle = 1
+
+	return 0.5
 end
 
-modifier_watermelon_passive = class({
-	IsHidden = function() return true end,
-	IsPurgable = function() return false end,
-	DeclareFunctions = function() return {
-		MODIFIER_EVENT_ON_TAKEDAMAGE
-	} end
-})
-
-function modifier_watermelon_passive:OnTakeDamage(keys)
-	if keys.unit == npc then
-	end
-end]]

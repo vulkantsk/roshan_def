@@ -1,17 +1,22 @@
 LinkLuaModifier("modifier_tentacle_checker", "bosses/watermelon/tentacle_diving", 0)
+LinkLuaModifier("modifier_tentacle_diving", "bosses/watermelon/tentacle_diving", 0)
 
 watermelon_tentacle_diving = class({})
 
 function watermelon_tentacle_diving:OnSpellStart()
 	local caster = self:GetCaster()
-	for i = 1, 9 do
-		if GetRandomAvailableWatermelonPoint() then
-			caster:SetCursorPosition(GetRandomAvailableWatermelonPoint())
-			caster:FindAbilityByName("watermelon_tentacle"):OnSpellStart()
-		end
-	end
-	unit = CreateUnitByName("npc_dota_watermelon_tentacle", caster:GetAbsOrigin(), false, caster, caster, caster:GetTeamNumber())
+	self.point = self:GetCursorPosition()
 	caster:AddNewModifier(caster, self, "modifier_tentacle_checker", nil)
+
+	local watermelon_points = Entities:FindAllByName("BOSS_WM_POINT")
+	for _,wm_point in pairs(watermelon_points) do
+		local position = wm_point:GetAbsOrigin()
+		if wm_point.tentacle  then			
+			wm_point.tentacle:ForceKill(false)
+		end
+		local unit = CreateUnitByName("npc_dota_watermelon_tentacle", position, false, caster, caster, caster:GetTeamNumber())
+		wm_point.tentacle = unit
+	end
 end
 
 modifier_tentacle_checker = class({
@@ -31,30 +36,66 @@ modifier_tentacle_checker = class({
 
 function modifier_tentacle_checker:OnCreated()
 	if not IsServer() then return end
-	self.arena_center = Entities:FindByName(nil, "BOSS_WM_POS_5"):GetAbsOrigin()
-	self.bTentacleDestroyed = false
-	self.iteration = 0
+	local caster = self:GetCaster()
+	local ability = self:GetAbility()
+	self.up_and_down_time = ability:GetSpecialValueFor("up_and_down_time")
+
+	caster:AddNewModifier(caster, ability, "modifier_tentacle_diving", {duration = self.up_and_down_time, down = true})
 	self:StartIntervalThink(FrameTime())
 end
 
 function modifier_tentacle_checker:OnIntervalThink()
 	if not IsServer() then return end
-	self.total_tentacle_health = 0
-	for _, enemy in pairs(FindUnitsInRadius(self:GetCaster():GetTeamNumber(), self.arena_center, nil, 2500, DOTA_UNIT_TARGET_TEAM_FRIENDLY, DOTA_UNIT_TARGET_ALL, 0, 0, false)) do
-		if enemy:GetUnitName() == "npc_dota_watermelon_tentacle" then
-			self.total_tentacle_health = self.total_tentacle_health + enemy:GetHealth()
+	
+	local watermelon_points = Entities:FindAllByName("BOSS_WM_POINT")
+	for index,wm_point in pairs(watermelon_points) do
+		if wm_point.tentacle then
+			return
 		end
 	end
-	if self.iteration < 29 then
-		self.iteration = self.iteration	+ 1
-		self:GetCaster():SetAbsOrigin(self:GetCaster():GetAbsOrigin() - Vector(0, 0, self:GetAbility():GetSpecialValueFor("speed")))
-	elseif self.total_tentacle_health == 0 and not self.bTentacleDestroyed then
-		self.iteration = self.iteration + 1
-		self.bTentacleDestroyed = true
-	elseif self.iteration == 30 or (self.iteration <= 59 and self.bTentacleDestroyed) then
-		self.iteration = self.iteration + 1
-		if self.iteration == 59 then
-			self:Destroy()
-		end
+	self.old_point = self:GetCaster():GetAbsOrigin()
+	self:Destroy()
+end
+
+function modifier_tentacle_checker:OnDestroy()
+	if not IsServer() then return end
+	local caster = self:GetCaster()
+	local ability = self:GetAbility()
+	local old_point = self.old_point
+	local new_point = ability.point
+
+	caster:SetAbsOrigin(Vector(new_point.x, new_point.y, old_point.z))
+	caster:AddNewModifier(caster, ability, "modifier_tentacle_diving", {duration = self.up_and_down_time})
+
+	self:GetCaster():EmitSound("tidehunter_tide_kill_0"..RandomInt(1, 9))
+end
+
+modifier_tentacle_diving = class({
+	IsHidden = function(self) return true end,
+	CheckState = function() return {
+		[MODIFIER_STATE_INVULNERABLE] = true,
+		[MODIFIER_STATE_UNSELECTABLE] = true,
+		[MODIFIER_STATE_NOT_ON_MINIMAP] = true,
+		[MODIFIER_STATE_NO_HEALTH_BAR] = true,
+		[MODIFIER_STATE_OUT_OF_GAME] = true,
+		[MODIFIER_STATE_DISARMED] = true,
+		[MODIFIER_STATE_STUNNED] = true
+	}
 	end
+})
+
+function modifier_tentacle_diving:OnCreated(data)
+	local ability = self:GetAbility()
+	local tick_interval = ability:GetSpecialValueFor("tick_interval")
+	self.speed = ability:GetSpecialValueFor("dive_range")/ability:GetSpecialValueFor("up_and_down_time")*tick_interval
+	if data.down == 1 then
+		self.speed = self.speed *(-1)
+	end
+
+	self:StartIntervalThink(tick_interval)
+end
+
+function modifier_tentacle_diving:OnIntervalThink()
+	local caster = self:GetCaster()
+	caster:SetAbsOrigin(caster:GetAbsOrigin() + Vector(0,0,self.speed))
 end

@@ -8,6 +8,8 @@ end
 
 function watermelon_wave_cast:OnSpellStart()
 	self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_watermelon_wave_cast", {duration = self:GetChannelTime()})
+
+	self:GetCaster():EmitSound("tidehunter_tide_rare_0"..RandomInt(1, 3))
 end
 
 function watermelon_wave_cast:OnChannelFinish(bInterrupted)
@@ -47,3 +49,4 @@ function modifier_watermelon_wave_cast:OnDestroy()
 	self:GetCaster():FadeGesture(ACT_DOTA_CHANNEL_ABILITY_4)
 	self:GetCaster():StartGesture(ACT_DOTA_CAST_ABILITY_4_END)
 end
+

@@ -3,16 +3,21 @@ LinkLuaModifier("modifier_watermelon_diving", "bosses/watermelon/diving", 0)
 watermelon_diving = class({})
 
 function watermelon_diving:OnSpellStart(up_and_down_time, underwater_time)
-	if not (up_and_down_time and underwater_time) then
-		kv = {
-			duration = self:GetSpecialValueFor("up_and_down_time") * 2 + self:GetSpecialValueFor("underwater_time")
-		}
-	else
-		kv = {
-			duration = up_and_down_time * 2 + underwater_time
-		}
+	local duration = self:GetSpecialValueFor("up_and_down_time") * 2 + self:GetSpecialValueFor("underwater_time")
+
+	if up_and_down_time and underwater_time then
+		duration = underwater_time + up_and_down_time*2
+	elseif self:GetCaster():HasModifier("modifier_watermelon_madness") then
+		duration = self:GetSpecialValueFor("up_and_down_time") * 2
 	end
-	self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_watermelon_diving", kv)
+
+	self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_watermelon_diving", {duration = duration})
+	self.end_point = self:GetCaster():GetCursorPosition()
+
+	if RollPercentage(50) then
+		self:GetCaster():EmitSound("tidehunter_tide_blink_0"..RandomInt(1, 4))
+	end
+
 end
 
 modifier_watermelon_diving = class({
@@ -35,10 +40,11 @@ function modifier_watermelon_diving:OnCreated()
 	self:StartIntervalThink(FrameTime())
 	self.bTeleported = false
 	self.down_location = nil
+
+	self:GetCaster():EmitSound("watermelon_diving")
 end
 
 function modifier_watermelon_diving:OnIntervalThink()
-	local underwater_time = self:GetAbility():GetSpecialValueFor("underwater_time")
 	local up_and_down_time = self:GetAbility():GetSpecialValueFor("up_and_down_time")
 	if not IsServer() then return end
 	if self:GetElapsedTime() <= up_and_down_time then
@@ -46,7 +52,7 @@ function modifier_watermelon_diving:OnIntervalThink()
 		self.down_location = self:GetCaster():GetAbsOrigin().z
 	elseif self:GetElapsedTime() > up_and_down_time and self:GetRemainingTime() > up_and_down_time then
 		if not self.bTeleported then
-			self:GetCaster():SetAbsOrigin(GetRandomAvailableWatermelonPoint() + Vector(0, 0, self.down_location))
+			self:GetCaster():SetAbsOrigin(self:GetAbility().end_point + Vector(0, 0, self.down_location))
 			self.bTeleported = true
 		end
 	elseif self:GetRemainingTime() <= up_and_down_time then

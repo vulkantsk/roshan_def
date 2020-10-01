@@ -2,6 +2,10 @@ LinkLuaModifier("modifier_watermelon_jump", "bosses/watermelon/jump", 3)
 
 watermelon_jump = class({})
 
+function watermelon_jump:GetAOERadius()
+  return self:GetSpecialValueFor("damage_radius")
+end
+
 function watermelon_jump:OnSpellStart()
 	local kv = {
 		vPosX = self:GetCursorPosition().x,
@@ -9,6 +13,12 @@ function watermelon_jump:OnSpellStart()
 		vPosZ = self:GetCursorPosition().z
 	}
 	self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_watermelon_jump", kv)
+
+  if not self:GetCaster():HasModifier("modifier_watermelon_madness") and RollPercentage(50) then
+    self:GetCaster():EmitSound("tidehunter_tide_move_0"..RandomInt(1, 9))
+  end
+
+   self:GetCaster():EmitSound("watermelon_jump")
 end
 
 modifier_watermelon_jump = class({
@@ -68,6 +78,14 @@ if IsServer() then
         local nFXIndex = ParticleManager:CreateParticle( "particles/units/heroes/hero_kunkka/kunkka_spell_torrent_splash_a.vpcf", PATTACH_WORLDORIGIN, self:GetParent() )
         ParticleManager:SetParticleControl(nFXIndex, 0, self:GetCaster():GetAbsOrigin())
         self:AddParticle( nFXIndex, false, false, -1, false, false )
+       
+       local nFXIndex = ParticleManager:CreateParticle( "particles/econ/events/darkmoon_2017/darkmoon_generic_aoe.vpcf", PATTACH_WORLDORIGIN, self:GetParent() )
+        ParticleManager:SetParticleControl(nFXIndex, 0, self.vLoc)
+        ParticleManager:SetParticleControl(nFXIndex, 1, Vector(self:GetAbility():GetSpecialValueFor("damage_radius"), 0, 0))
+        ParticleManager:SetParticleControl(nFXIndex, 2, Vector(duration, 1, 1))
+        ParticleManager:SetParticleControl(nFXIndex, 3, Vector(255, 215, 0))
+        ParticleManager:SetParticleControl(nFXIndex, 4, Vector(255, 215, 0))
+        self:AddParticle( nFXIndex, false, false, -1, false, false )
 	end
 
 	function modifier_watermelon_jump:UpdateHorizontalMotion( me, dt )
@@ -105,6 +123,7 @@ if IsServer() then
 
         me:SetOrigin( vNewPos )
         if bLanded == true then
+            self.vNewPos = vNewPos
             self:GetParent():RemoveHorizontalMotionController( self )
             self:GetParent():RemoveVerticalMotionController( self )
 
@@ -118,13 +137,13 @@ if IsServer() then
 
 	function modifier_watermelon_jump:OnVerticalMotionInterrupted()
         self:Destroy()
-	end
+end
 
 	function modifier_watermelon_jump:OnDestroy()
 		local parent = self:GetParent()
         parent:RemoveHorizontalMotionController( self )
 		parent:RemoveVerticalMotionController( self )
-		local enemies_in_radius = FindUnitsInRadius(parent:GetTeamNumber(), parent:GetAbsOrigin(), nil, self:GetAbility():GetSpecialValueFor("damage_radius"), self:GetAbility():GetAbilityTargetTeam(), self:GetAbility():GetAbilityTargetType(), self:GetAbility():GetAbilityTargetFlags(), 0, false)
+		local enemies_in_radius = FindUnitsInRadius(parent:GetTeamNumber(), self.vNewPos, nil, self:GetAbility():GetSpecialValueFor("damage_radius"), self:GetAbility():GetAbilityTargetTeam(), self:GetAbility():GetAbilityTargetType(), self:GetAbility():GetAbilityTargetFlags(), 0, false)
 		for _, enemy in pairs(enemies_in_radius) do
 			ApplyDamage({
 				victim = enemy,
@@ -134,5 +153,16 @@ if IsServer() then
 				damage_type = self:GetAbility():GetAbilityDamageType()
 			})
 		end
+    
+    local friends_in_radius = FindUnitsInRadius(parent:GetTeamNumber(), self.vNewPos, nil, 300, DOTA_UNIT_TARGET_TEAM_FRIENDLY, self:GetAbility():GetAbilityTargetType(), self:GetAbility():GetAbilityTargetFlags(), 0, false)
+
+    for _, friend in pairs(friends_in_radius) do
+      if friend:GetUnitName() == "npc_dota_watermelon_tentacle" then
+        friend:ForceKill(false)
+      end
+    end
+
+    self:GetCaster():SetAbsOrigin(self.vNewPos)
+
 	end
 end

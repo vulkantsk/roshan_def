@@ -41741,14 +41741,14 @@
 		// Abilities
 		//----------------------------------------------------------------
 
-		"Ability1"					"watermelon_jump"
-		"Ability2"					"watermelon_diving"
-		"Ability3"					"watermelon_moving"
-		"Ability4"					"watermelon_tentacle"
+		"Ability1"					"watermelon_tentacle"
+		"Ability2"					"watermelon_jump"
+		"Ability3"					"watermelon_wave"
+		"Ability4"					"watermelon_diving"
 		"Ability5"					"watermelon_tentacle_diving"
-		"Ability6"					"watermelon_wave"
+		"Ability6"					"watermelon_moving"
 		"Ability7"					"watermelon_wave_cast"
-		"Ability8"					""
+		"Ability8"					"watermelon_madness"
 
 		// Armor
 		//----------------------------------------------------------------
@@ -41764,7 +41764,7 @@
 		"AttackRate"				"2.25"
 		"AttackAnimationPoint"		"0.25"
 		"AttackAcquisitionRange"	"570"
-		"AttackRange"				"125"
+		"AttackRange"				"600"
 		"ProjectileModel"		""
 		"ProjectileSpeed"		""
 
@@ -41777,7 +41777,7 @@
 
 		// Bounds
 		//----------------------------------------------------------------
-		"BoundsHullName"			"DOTA_HULL_SIZE_HUGE"
+		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"
 		"RingRadius"				"45"
 		"HealthBarOffset"			"350"
 
@@ -41801,7 +41801,7 @@
 	}
 	"npc_dota_watermelon_tentacle"
 	{
-		"vscripts"					"ai/ai_neutral_autocast"
+//		"vscripts"					"ai/ai_neutral_autocast"
 		// General
 		//----------------------------------------------------------------
 		"Model"						"models/event/tentacle/watermelon_tentacle.vmdl"	// Model.
@@ -41821,15 +41821,16 @@
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageMin"			"10"
 		"AttackDamageMax"			"11"
-		"AttackRate"				"1.35"
-		"AttackAnimationPoint"		"0.38"
+		"AttackRate"				"0.35"
+		"AttackAnimationPoint"		"0.18"
 		"AttackAcquisitionRange"	"700"
-		"AttackRange"				"290"
+		"AttackRange"				"600"
 
 		// Bounds
 		//----------------------------------------------------------------
-		"RingRadius"				"40"
-		"HealthBarOffset"			"130"
+		"BoundsHullName"			"DOTA_HULL_SIZE_TOWER"
+		"RingRadius"				"45"
+		"HealthBarOffset"			"350"
 
 		// Bounty
 		//----------------------------------------------------------------

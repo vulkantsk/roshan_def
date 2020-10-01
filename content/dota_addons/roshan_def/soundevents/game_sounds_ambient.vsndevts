@@ -1738,3 +1738,72 @@
 		}
 	}
 }
+
+"watermelon_diving" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"			{		"value"		"sounds/music/watermelon_diving.vsnd"}
+					"volume"                {   	"value"     "1.5"}
+					"pitch"                 {       "value"     "1"}
+					"soundlevel"            {       "value"     "80"}
+					"spread_radius"         {       "value"     "1000"}
+				}
+			}
+		}
+	}
+}
+
+"watermelon_race" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"			{		"value"		"sounds/music/watermelon_race.vsnd"}
+					"volume"                {   	"value"     "1.5"}
+					"pitch"                 {       "value"     "1"}
+					"soundlevel"            {       "value"     "80"}
+					"spread_radius"         {       "value"     "1000"}
+				}
+			}
+		}
+	}
+}
+
+"watermelon_jump" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"			{		"value"		"sounds/music/watermelon_jump.vsnd"}
+					"volume"                {   	"value"     "1.5"}
+					"pitch"                 {       "value"     "1"}
+					"soundlevel"            {       "value"     "80"}
+					"spread_radius"         {       "value"     "1000"}
+				}
+			}
+		}
+	}
+}

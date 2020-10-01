@@ -49709,9 +49709,10 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"bosses/watermelon/jump"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityTextureName"			"watermelon/jump"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
 
-		"AbilityCooldown"				"10"
+		"AbilityCooldown"				"5"
 
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -49732,7 +49733,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_radius"			"700"
+				"damage_radius"			"600"
 			}
 			"04"
 			{
@@ -49745,6 +49746,7 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"bosses/watermelon/tentacle"
+		"AbilityTextureName"			"watermelon/tentacle"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
 
 		"AbilityCooldown"				"8"
@@ -49753,9 +49755,10 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"bosses/watermelon/moving"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityTextureName"			"watermelon/moving"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 
-		"AbilityCooldown"				"25"
+		"AbilityCooldown"				"10"
 
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -49766,17 +49769,17 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"channel_time"			"2.5" //Время за которое арбуз проходит расстояние от А до В
+				"move_duration"			"1" //Время за которое арбуз проходит расстояние от А до В
 			}
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"move_delay"			"0.8" //Задержка перед началом движения
+				"move_delay"			"1.5" //Задержка перед началом движения
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_radius"			"500"
+				"damage_radius"			"350"
 			}
 			"04"
 			{
@@ -49794,6 +49797,7 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"bosses/watermelon/wave"
+		"AbilityTextureName"			"watermelon/wave"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
 
 		"AbilityCooldown"				"15"
@@ -49821,12 +49825,18 @@
 				"var_type"				"FIELD_INTEGER"
 				"damage"				"300"
 			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"distance"				"1750"
+			}
 		}
 	}
 	"watermelon_wave_cast"
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"bosses/watermelon/wave_cast"
+		"AbilityTextureName"			"watermelon/wave_cast"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 
 		"AbilityCooldown"				"50"
@@ -49854,16 +49864,17 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"bosses/watermelon/diving"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityTextureName"			"watermelon/diving"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
 
-		"AbilityCooldown"				"25"
+		"AbilityCooldown"				"5"
 
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"underwater_time"		"3"
+				"underwater_time"		"2"
 			}
 			"02"
 			{
@@ -49881,7 +49892,8 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"bosses/watermelon/tentacle_diving"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityTextureName"			"watermelon/tentacle_diving"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
 
 		"AbilityCooldown"				"28"
 
@@ -49889,8 +49901,18 @@
 		{
 			"01"
 			{
+				"var_type"				"FIELD_FLOAT"
+				"tick_interval"					"0.1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"up_and_down_time"		"2"
+			}
+			"03"
+			{
 				"var_type"				"FIELD_INTEGER"
-				"speed"					"15" //Желательно ставить как в watermelon_diving
+				"dive_range"			"300"
 			}
 		}
 	}
@@ -49898,6 +49920,7 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"bosses/watermelon/circular_blow"
+		"AbilityTextureName"			"watermelon/circular_blow"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 
 		"AbilityCooldown"				"5"
@@ -49918,6 +49941,23 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"damage"				"500"
+			}
+		}
+	}
+	"watermelon_madness"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"bosses/watermelon/madness"
+		"AbilityTextureName"			"watermelon/madness"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCooldown"				"25"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"			"15"
 			}
 		}
 	}
