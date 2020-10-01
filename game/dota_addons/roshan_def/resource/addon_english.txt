@@ -4230,6 +4230,9 @@
 		"DOTA_Tooltip_ability_halloween_pumkin_passive_Description"							"Hit the pumpkin faster, here are a bunch of candy!"
 	
 		//Units
+		"npc_dota_watermelon" 			"Watermelon"
+		"npc_dota_watermelon_tentacle"	"Tentacle"
+
 		"npc_dota_twins_1"			"Frodo"
 		"npc_dota_twins_2"			"Sam"
 

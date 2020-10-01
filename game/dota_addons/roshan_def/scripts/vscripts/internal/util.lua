@@ -20,6 +20,19 @@ function DebugPrintTable(...)
 	--end
 end
 
+function GetRandomAvailableWatermelonPoint()
+	local all_points = {}
+	for i = 1, 9 do
+		for _, target in pairs(Entities:FindAllByName("BOSS_WM_POS_"..i)) do
+			local units_around = FindUnitsInRadius(DOTA_TEAM_NOTEAM, target:GetAbsOrigin(), nil, 50, 3, 63, 16 + 64 + 262144, 0, false)
+			if #units_around == 0 then
+				table.insert(all_points, target:GetAbsOrigin())
+			end
+		end
+	end
+	return all_points[RandomInt(1, #all_points)]
+end
+
 function PrintAll(t)
 	for k,v in pairs(t) do
 		print(k,v)

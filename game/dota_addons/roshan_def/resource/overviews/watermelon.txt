@@ -1,0 +1,8 @@
+watermelon
+{
+	material materials/overviews/watermelon.vmat
+	pos_x -1454
+	pos_y 2691
+	scale 4.173
+}
+
