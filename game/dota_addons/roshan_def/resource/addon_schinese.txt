@@ -4061,6 +4061,59 @@
                 "DOTA_Tooltip_ability_secret_chicken_king_passive_gold_cost_max"                        "最多消费:"
                 
 //Bosses
+
+"npc_dota_watermelon"			"西瓜"
+	
+		"DOTA_Tooltip_ability_watermelon_jump"								"跳"
+		"DOTA_Tooltip_ability_watermelon_jump_Description"					"西瓜着陆时会跳跃并造成伤害！"
+		"DOTA_Tooltip_ability_watermelon_jump_damage"						"损伤"
+		
+
+		"DOTA_Tooltip_ability_watermelon_tentacle"							"触手"
+		"DOTA_Tooltip_ability_watermelon_tentacle_Description"					"西瓜释放它的触角！"
+
+
+		"DOTA_Tooltip_ability_watermelon_moving"							"移动"
+		"DOTA_Tooltip_ability_watermelon_moving_Description"					"西瓜从一个洞到另一个洞移动，造成伤害并眩晕所有被击中的敌人！"
+		"DOTA_Tooltip_ability_watermelon_moving_damage"						"损伤"
+		"DOTA_Tooltip_ability_watermelon_moving_stun_duration"					"持续时间"
+		"DOTA_Tooltip_ability_watermelon_moving_damage_radius"					"损坏半径"
+
+
+		"DOTA_Tooltip_ability_watermelon_wave"								"波"
+		"DOTA_Tooltip_ability_watermelon_wave_Description"					"西瓜向敌人发起一波攻击，造成伤害，然后返回并再次造成伤害！"
+		"DOTA_Tooltip_ability_watermelon_wave_damage"						"损伤"
+
+
+		"DOTA_Tooltip_ability_watermelon_wave_cast"							"波浪"
+		"DOTA_Tooltip_ability_watermelon_wave_cast_Description"					"西瓜每隔一定时间就会向英雄们挥手，而西瓜本人则在行动中无敌！"
+		"DOTA_Tooltip_ability_watermelon_wave_cast_channel_time"				"持续时间"
+		"DOTA_Tooltip_ability_watermelon_wave_cast_tick_interval"				"波浪之间的间隔"
+
+
+		"DOTA_Tooltip_ability_watermelon_diving"							"潜水"
+		"DOTA_Tooltip_ability_watermelon_diving_Description"					"西瓜潜入水下，潜入一个随机的洞!"
+
+
+		"DOTA_Tooltip_ability_watermelon_tentacle_diving"						"触手潜水"
+		"DOTA_Tooltip_ability_watermelon_tentacle_diving_Description"				"西瓜在水之下变得无敌。 触角出现在所有孔中，杀死它们后，所有西瓜都会弹出来！"
+
+
+		"DOTA_Tooltip_ability_watermelon_tentacle_circular_blow"					"循环打击"
+		"DOTA_Tooltip_ability_watermelon_tentacle_circular_blow_Description"			"触手造成一击并击晕敌人。"
+		"DOTA_Tooltip_ability_watermelon_tentacle_circular_blow_damage"				"损伤"
+		"DOTA_Tooltip_ability_watermelon_tentacle_circular_blow_damage_radius"			"半径"
+		"DOTA_Tooltip_ability_watermelon_tentacle_circular_blow_stun_duration"			"持续时间"
+
+
+		"DOTA_Tooltip_ability_watermelon_madness"							"疯狂"
+		"DOTA_Tooltip_ability_watermelon_madness_Description"					"以及如何抓住他？"
+		"DOTA_Tooltip_ability_watermelon_madness_duration"					"持续时间"
+		"DOTA_Tooltip_modifier_watermelon_madness"							"疯狂"
+		"DOTA_Tooltip_modifier_watermelon_madness_Description"					"难以捉摸!"
+
+
+
                 "npc_dota_boss_astral_1"                                                                                                                "星体精华"        
                 "npc_dota_boss_wind_1"                                                                                                          "风暴精华"  
                 "npc_dota_boss_wind_2"                                                                                                          "雷神"   

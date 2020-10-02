@@ -41752,14 +41752,14 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"16"			// Physical protection.
-		"MagicalResistance"				"25"			// Magical protection.
+		"ArmorPhysical"				"35"			// Physical protection.
+		"MagicalResistance"			"35"			// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageMin"			"900"
-		"AttackDamageMax"			"1600"
+		"AttackDamageMax"			"2000"
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
 		"AttackRate"				"2.25"
 		"AttackAnimationPoint"		"0.25"
@@ -41771,9 +41771,9 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"2500"
-		"BountyGoldMin"				"375"
-		"BountyGoldMax"				"625"
+		"BountyXP"					"25000"
+		"BountyGoldMin"				"3000"
+		"BountyGoldMax"				"5000"
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -41789,7 +41789,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"75000"
+		"StatusHealth"				"100000"
 		"StatusHealthRegen"			"100"
 		"StatusMana"				"0"
 		"StatusManaRegen"			"0.75"
@@ -41814,14 +41814,14 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"0"			// Physical protection.
+		"ArmorPhysical"				"10"			// Physical protection.
 
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"			"10"
-		"AttackDamageMax"			"11"
-		"AttackRate"				"0.35"
+		"AttackDamageMin"			"500"
+		"AttackDamageMax"			"500"
+		"AttackRate"				"0.45"
 		"AttackAnimationPoint"		"0.18"
 		"AttackAcquisitionRange"	"700"
 		"AttackRange"				"600"
@@ -41834,9 +41834,9 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"19"		// Experience earn.
-		"BountyGoldMin"				"6"			// Gold earned min.
-		"BountyGoldMax"				"8"			// Gold earned max.
+		"BountyXP"					"300"		// Experience earn.
+		"BountyGoldMin"				"100"			// Gold earned min.
+		"BountyGoldMax"				"150"			// Gold earned max.
 
 		// Movement
 		//----------------------------------------------------------------
@@ -41845,8 +41845,8 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"500"		// Base health.
-		"StatusHealthRegen"			"0.5"		// Health regeneration rate.
+		"StatusHealth"				"5000"		// Base health.
+		"StatusHealthRegen"			"50"		// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"1.0"		// Mana regeneration rate.		 
 		

@@ -4149,6 +4149,57 @@
 		"DOTA_Tooltip_ability_secret_chicken_king_passive_gold_cost_max"			"MAX GOLD COST:"
 		
 //Bosses
+
+"npc_dota_watermelon"			"Watermelon"
+	
+		"DOTA_Tooltip_ability_watermelon_jump"								"Jump"
+		"DOTA_Tooltip_ability_watermelon_jump_Description"					"Watermelon jumps and deals damage when it lands!"
+		"DOTA_Tooltip_ability_watermelon_jump_damage"						"DAMAGE"
+		
+
+		"DOTA_Tooltip_ability_watermelon_tentacle"							"Tentacle"
+		"DOTA_Tooltip_ability_watermelon_tentacle_Description"					"Watermelon releases its tentacles!"
+
+
+		"DOTA_Tooltip_ability_watermelon_moving"							"Moving"
+		"DOTA_Tooltip_ability_watermelon_moving_Description"					"Watermelon moves from hole to hole, deals damage and stuns all enemies hit!"
+		"DOTA_Tooltip_ability_watermelon_moving_damage"						"DAMAGE"
+		"DOTA_Tooltip_ability_watermelon_moving_stun_duration"					"STUN DURATION"
+		"DOTA_Tooltip_ability_watermelon_moving_damage_radius"					"RADIUS OF DAMAGE"
+
+
+		"DOTA_Tooltip_ability_watermelon_wave"								"Wave"
+		"DOTA_Tooltip_ability_watermelon_wave_Description"					"Watermelon launches a wave at the enemy that deals damage and then returns and deals damage again!"
+		"DOTA_Tooltip_ability_watermelon_wave_damage"						"DAMAGE"
+
+
+		"DOTA_Tooltip_ability_watermelon_wave_cast"							"Waves"
+		"DOTA_Tooltip_ability_watermelon_wave_cast_Description"					"Watermelon launches waves at the heroes at a certain interval, while Watermelon himself is invulnerable during the action!"
+		"DOTA_Tooltip_ability_watermelon_wave_cast_channel_time"				"DURATION"
+		"DOTA_Tooltip_ability_watermelon_wave_cast_tick_interval"				"INTERVAL BETWEEN WAVES"
+
+
+		"DOTA_Tooltip_ability_watermelon_diving"							"Diving"
+		"DOTA_Tooltip_ability_watermelon_diving_Description"					"Watermelon dives under water and dives into a random hole!"
+
+
+		"DOTA_Tooltip_ability_watermelon_tentacle_diving"						"Tentacle diving"
+		"DOTA_Tooltip_ability_watermelon_tentacle_diving_Description"				"Watermelon goes under water and becomes invulnerable. Tentacles appear in all holes, killing them all Watermelon will pop up back!"
+
+
+		"DOTA_Tooltip_ability_watermelon_tentacle_circular_blow"					"Circular blow"
+		"DOTA_Tooltip_ability_watermelon_tentacle_circular_blow_Description"			"The tentacle inflicts a circular blow and stuns enemies."
+		"DOTA_Tooltip_ability_watermelon_tentacle_circular_blow_damage"				"DAMAGE"
+		"DOTA_Tooltip_ability_watermelon_tentacle_circular_blow_damage_radius"			"RADIUS"
+		"DOTA_Tooltip_ability_watermelon_tentacle_circular_blow_stun_duration"			"STUN DURATION"
+
+
+		"DOTA_Tooltip_ability_watermelon_madness"							"Madness"
+		"DOTA_Tooltip_ability_watermelon_madness_Description"					"And how to catch him ?!"
+		"DOTA_Tooltip_ability_watermelon_madness_duration"					"DURATION"
+		"DOTA_Tooltip_modifier_watermelon_madness"							"Madness"
+		"DOTA_Tooltip_modifier_watermelon_madness_Description"					"Elusive!"
+
 		"npc_dota_boss_astral_1"														"Astral Essence"	
 		"npc_dota_boss_wind_1"														"Thunderstorm essence"	
 		"npc_dota_boss_wind_2"														"Thunder god"	

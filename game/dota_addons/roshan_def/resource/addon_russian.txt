@@ -4114,6 +4114,59 @@
 		"DOTA_Tooltip_ability_secret_chicken_king_passive_gold_cost_max"			"МАКСИМАЛЬНАЯ СТОИМОСТЬ:"
 	
 //Bosses
+
+"npc_dota_watermelon"			"Watermelon"
+	
+		"DOTA_Tooltip_ability_watermelon_jump"								"Jump"
+		"DOTA_Tooltip_ability_watermelon_jump_Description"					"Арбуз прыгает и при приземлении наносит урон!"
+		"DOTA_Tooltip_ability_watermelon_jump_damage"						"УРОН"
+		
+
+		"DOTA_Tooltip_ability_watermelon_tentacle"							"Tentacle"
+		"DOTA_Tooltip_ability_watermelon_tentacle_Description"					"Арбуз выпускает свои тентакли!"
+
+
+		"DOTA_Tooltip_ability_watermelon_moving"							"Moving"
+		"DOTA_Tooltip_ability_watermelon_moving_Description"					"Арбуз переезжает с лунки на лунку, наносит урон и оглушает всех задетых врагов!"
+		"DOTA_Tooltip_ability_watermelon_moving_damage"						"УРОН"
+		"DOTA_Tooltip_ability_watermelon_moving_stun_duration"					"ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ"
+		"DOTA_Tooltip_ability_watermelon_moving_damage_radius"					"РАДИУС ПОРАЖЕНИЯ"
+
+
+		"DOTA_Tooltip_ability_watermelon_wave"								"Wave"
+		"DOTA_Tooltip_ability_watermelon_wave_Description"					"Арбуз запускает волну в врага, которая наносит урон и затем возвращается и наносит урон еще раз!"
+		"DOTA_Tooltip_ability_watermelon_wave_damage"						"УРОН"
+
+
+		"DOTA_Tooltip_ability_watermelon_wave_cast"							"Waves"
+		"DOTA_Tooltip_ability_watermelon_wave_cast_Description"					"Арбуз запускает волны в героев с определенным интервалом, сам же Арбуз во время действия неуязвим!"
+		"DOTA_Tooltip_ability_watermelon_wave_cast_channel_time"				"ДЛИТЕЛЬНОСТЬ"
+		"DOTA_Tooltip_ability_watermelon_wave_cast_tick_interval"				"ИНТЕРВАЛ МЕЖДУ ВОЛНАМИ"
+
+
+		"DOTA_Tooltip_ability_watermelon_diving"							"Diving"
+		"DOTA_Tooltip_ability_watermelon_diving_Description"					"Арбуз ныряет под воду и выныривает в случайной лунке!"
+
+
+		"DOTA_Tooltip_ability_watermelon_tentacle_diving"						"Tentacle diving"
+		"DOTA_Tooltip_ability_watermelon_tentacle_diving_Description"				"Арбуз уходит под воду и становится неуязвим. Во всех лунках появляются щупальца, убив их всех Арбуз всплвет обратно!"
+
+
+		"DOTA_Tooltip_ability_watermelon_tentacle_circular_blow"					"Circular blow"
+		"DOTA_Tooltip_ability_watermelon_tentacle_circular_blow_Description"			"Щупальце наносит круговой удар и оглушает врагов."
+		"DOTA_Tooltip_ability_watermelon_tentacle_circular_blow_damage"				"УРОН"
+		"DOTA_Tooltip_ability_watermelon_tentacle_circular_blow_damage_radius"			"РАДИУС"
+		"DOTA_Tooltip_ability_watermelon_tentacle_circular_blow_stun_duration"			"ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ"
+
+
+		"DOTA_Tooltip_ability_watermelon_madness"							"Madness"
+		"DOTA_Tooltip_ability_watermelon_madness_Description"					"И как его поймать?!"
+		"DOTA_Tooltip_ability_watermelon_madness_duration"					"ДЛИТЕЛЬНОСТЬ"
+		"DOTA_Tooltip_modifier_watermelon_madness"							"Madness"
+		"DOTA_Tooltip_modifier_watermelon_madness_Description"					"Неуловим!"
+
+
+
 		"npc_dota_boss_astral_1"														"Астральная сущность"	
 		"npc_dota_boss_wind_1"														"Грозовая сущность"	
 		"npc_dota_boss_wind_2"														"Повелитель молнии"	
