@@ -1,3 +1,5 @@
+LinkLuaModifier("modifier_watermelon_wave_debuff", "bosses/watermelon/wave.lua", 0)
+
 watermelon_wave = class({})
 
 function watermelon_wave:OnSpellStart()
@@ -38,6 +40,7 @@ function watermelon_wave:OnProjectileHit_ExtraData(target, location, ExtraData)
 			damage = self:GetSpecialValueFor("damage"),
 			damage_type = self:GetAbilityDamageType()
 		})
+		target:AddNewModifier(self:GetCaster(), self, "modifier_watermelon_wave_debuff", {duration = self:GetSpecialValueFor("slow_duration")})
 		target:EmitSound("Ability.GushImpact")
 	elseif target == nil then
 		if not self.bLocationSetup then
@@ -61,4 +64,14 @@ function watermelon_wave:OnProjectileHit_ExtraData(target, location, ExtraData)
 			ExtraData.ProjectileNumber = 2
 		end
 	end
+end
+
+modifier_watermelon_wave_debuff = class({
+	DeclareFunctions = function(self) return {
+		MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE
+	}end,
+})
+
+function modifier_watermelon_wave_debuff:GetModifierMoveSpeedBonus_Percentage()
+	return self:GetAbility():GetSpecialValueFor("slow_pct")*(-1)
 end

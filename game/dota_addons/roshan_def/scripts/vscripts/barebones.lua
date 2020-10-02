@@ -615,11 +615,19 @@ function GameMode:OnPlayerLevelUp(keys)
 --	local hero = EntIndexToHScript(keys.hero_entindex)
 	local hero = PlayerResource:GetSelectedHeroEntity(keys.player_id)
 	local level = keys.level
-	local ability_point = hero:GetAbilityPoints()
-	print(level)
-
-	if level >= 30 then
-		hero:SetAbilityPoints(ability_point + 1)
+	if hero and level then
+		local ability_point = hero:GetAbilityPoints()
+		local no_points_levels = {
+		[17] = 1,
+		[19] = 1,
+		[21] = 1,
+		[22] = 1,
+		[23] = 1,
+		[24] = 1,
+		}
+		if no_points_levels[level] or level >= 26 then
+			hero:SetAbilityPoints(ability_point + 1)
+		end
 	end
 end
 

@@ -1,6 +1,6 @@
 function Spawn(entityKeyValues)
 	local npc = thisEntity
-	
+
 	if not IsServer() then return end
 	if npc == nil then return end
 
@@ -58,12 +58,17 @@ function WatermelonThink()
 	WatermelonPointsCheck()
 	if not npc.bSpawnInit then
 		npc.bSpawnInit = true
-		print(npc:GetAbsOrigin())
 		npc:SetAbsOrigin(Entities:FindByName(nil, "BOSS_WM_SPAWN_POINT"):GetAbsOrigin())
-		print(npc:GetAbsOrigin())
+
+		local thinker_point = Entities:FindByName(nil, "BOSS_WM_PORTAL_END"):GetAbsOrigin() 
+		npc.thinker = CreateModifierThinker(nil, nil, "modifier_watermelon_portal", {duration = -1}, thinker_point, npc:GetTeam(), false)
+		npc.thinker.active = true
 	end
 
-	if not npc:IsAlive() then return -1 end
+	if not npc:IsAlive() then 
+		npc.thinker.active = true
+		return -1 
+	end
 	if GameRules:IsGamePaused() then return 1 end
 	if npc:IsChanneling() or npc:IsStunned() then return 0.5 end
 
@@ -71,7 +76,7 @@ function WatermelonThink()
 
 	local boss_hp = npc:GetHealthPercent()
 	local boss_origin = npc:GetAbsOrigin()
-	local spawn_point = Entities:FindAllByName("BOSS_WM_SPAWN_POINT")
+	local spawn_point = Entities:FindByName(nil, "BOSS_WM_SPAWN_POINT")
 	local closest_enemy
 	local closest_distance
 	local farthest_enemy
@@ -87,6 +92,7 @@ function WatermelonThink()
 			npc.arena_center = (npc.vMaxArenaPoint + npc.vMinArenaPoint)/2
 			npc.search_radius = (npc.vMaxArenaPoint - npc.vMinArenaPoint):Length2D()/2
 			
+			npc.thinker.active = false
 			npc:EmitSound("tidehunter_tide_spawn_0"..RandomInt(1, 9))
 		end
 		return 1
@@ -139,63 +145,64 @@ function WatermelonThink()
 			if npc.madness_cycle == 1 then
 				npc.madness_cycle = 2
 				JumpAbility:EndCooldown()
-				CastJumpAbility(random_point:GetAbsOrigin())
+				return CastJumpAbility(random_point:GetAbsOrigin())
 			elseif npc.madness_cycle == 2 then
 				npc.madness_cycle = 1
 				DivingAbility:EndCooldown()
-				CastDivingAbility(random_enemy_point:GetAbsOrigin())
+				return CastDivingAbility(random_enemy_point:GetAbsOrigin())
 			end
 		end
 
 		if npc.diving then
 			npc.diving = false
-			CastJumpAbility(npc:GetAbsOrigin())
 			print("jump after dive")
+			return CastJumpAbility(npc:GetAbsOrigin())
 		end
 
-		if boss_hp <= 100 then -- 4 стадия
+		if boss_hp <= 25 then -- 4 стадия
 			if MadnessAbility:IsFullyCastable() then
-				CastMadnessAbility()
+				return CastMadnessAbility()
 			end
 		end
 
-		if boss_hp <= 1 then -- 3 стадия
+		if boss_hp <= 50 then -- 3 стадия
 			if TentacleDivingAbility:IsFullyCastable() then
-				CastTentacleDivingAbility(spawn_point:GetAbsOrigin())
+				return CastTentacleDivingAbility(spawn_point:GetAbsOrigin())
 			end
 
 			if MovingAbility:IsFullyCastable() then
-				CastMovingAbility(random_point:GetAbsOrigin())
+				return CastMovingAbility(random_point:GetAbsOrigin())
 			end
 		end
 
-		if boss_hp < 1 then -- 2 стадия
+		if boss_hp < 75 then -- 2 стадия
 			if DivingAbility:IsFullyCastable() then
-				CastDivingAbility(random_enemy_point:GetAbsOrigin())
 				print("cast diving")
+				return CastDivingAbility(random_enemy_point:GetAbsOrigin())
 			end
 
 			if SuperWaveAbility:IsFullyCastable() then
-				CastSuperWaveAbility()
 				print("cast super wave")
+				return CastSuperWaveAbility()
 			end
 		end
 
 		if JumpAbility:IsFullyCastable() then
-			CastJumpAbility(farthest_point:GetAbsOrigin())
+			return CastJumpAbility(farthest_point:GetAbsOrigin())
 		end
 
 		if WaveAbility:IsFullyCastable() then
-			CastWaveAbility(farthest_enemy)
+			return CastWaveAbility(farthest_enemy:GetAbsOrigin())
 		end
 
 		if TentacleAbility:IsFullyCastable() then
-			CastTentacleAbility(random_enemy_point:GetAbsOrigin())
+			return CastTentacleAbility(random_enemy_point:GetAbsOrigin())
 		end
 		
 	end
 	return 0.5
 end
+	print("222")
 
 function GetRandomAvailableWatermelonPoint()
 	local all_points = {}
@@ -267,10 +274,8 @@ function CastDivingAbility(position)
 		Position = position,
 		Queue = false
 	})
-	if not npc:HasModifier("modifier_watermelon_madness") then
-		npc.diving = true
-		JumpAbility:EndCooldown()
-	end
+	npc.diving = true
+	JumpAbility:EndCooldown()
 
 	return 0.5
 end
@@ -311,4 +316,3 @@ function CastMadnessAbility()
 
 	return 0.5
 end
-

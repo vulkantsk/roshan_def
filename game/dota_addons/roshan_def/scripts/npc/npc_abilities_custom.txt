@@ -1,6 +1,5 @@
 #base "greevil_lord/greevil_abilities.txt"
 #base "heroes/invoker.txt"
-#base "npc_abilities_new.txt"
 
 "DOTAAbilities"
 {
@@ -49743,6 +49742,11 @@
 				"var_type"				"FIELD_INTEGER"
 				"damage"				"2000"
 			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"1"
+			}
 		}
 	}
 	"watermelon_tentacle"
@@ -49832,6 +49836,16 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"distance"				"1750"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"slow_pct"				"50"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"slow_duration"			"0.5"
 			}
 		}
 	}
@@ -49933,7 +49947,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_radius"			"500"
+				"damage_radius"			"550"
 			}
 			"02"
 			{
