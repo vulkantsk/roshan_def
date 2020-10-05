@@ -40,14 +40,21 @@ function modifier_jakiro_ice_and_fire_macropyre_thinker:OnCreated(keys)
 		self.end_pos = end_pos
 
 		local pfx = ParticleManager:CreateParticle("particles/econ/items/jakiro/jakiro_ti10_immortal/jakiro_ti10_macropyre.vpcf", PATTACH_WORLDORIGIN, parent)
-		pfx:SetParticleControl(pfx, 0, self.start_pos)
-		pfx:SetParticleControl(pfx, 1, self.end_pos)
-		pfx:SetParticleControl(pfx, 2, Vector(self:GetAbility():GetSpecialValueFor("macropyre_duration"), 0, 0))
-		pfx:SetParticleControl(pfx, 3, self.end_pos)
+		ParticleManager:SetParticleControl(pfx, 0, self.start_pos)
+		ParticleManager:SetParticleControl(pfx, 1, self.end_pos)
+		ParticleManager:SetParticleControl(pfx, 2, Vector(self:GetAbility():GetSpecialValueFor("macropyre_duration"), 0, 0))
+		ParticleManager:SetParticleControl(pfx, 3, self.end_pos)
 		self:AddParticle(pfx, false, false, -1, false, false)
 
 		self:StartIntervalThink(self:GetAbility():GetSpecialValueFor("damage_interval"))
+		parent:EmitSound("Hero_Jakiro.Macropyre.Cast")
+		self.sound = "hero_jakiro.macropyre.scepter"
+		parent:EmitSound(self.sound)
 	end
+end
+
+function modifier_jakiro_ice_and_fire_macropyre_thinker:OnDestroy()
+	self:GetParent():StopSound(self.sound_fire_loop)
 end
 
 function modifier_jakiro_ice_and_fire_macropyre_thinker:OnIntervalThink()
@@ -70,11 +77,15 @@ end
 modifier_jakiro_ice_and_fire_stun = class({
 	IsHidden = function() return false end,
 	IsPurgable = function() return false end,
-	IsPurgeException = function() return true end
+	IsPurgeException = function() return true end,
+	CheckState = function() return {
+		[MODIFIER_STATE_STUNNED] = true
+	}
+	end
 })
 
 function modifier_jakiro_ice_and_fire_stun:OnCreated()
-	local pfx = ParticleManager:CreateParticle("", PATTACH_ABSORIGIN_FOLLOW, self:GetParent())
+	local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_invoker/invoker_cold_snap.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent())
 	ParticleManager:SetParticleControl(pfx, 0, self:GetParent():GetAbsOrigin())
 	self:AddParticle(pfx, false, false, -1, true, false)
 end

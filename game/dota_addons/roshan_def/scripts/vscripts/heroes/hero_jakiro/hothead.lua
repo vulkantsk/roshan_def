@@ -41,7 +41,7 @@ end
 function modifier_jakiro_hothead:OnAttackLanded(keys)
 	if not IsServer() then return end
 	local caster = self:GetCaster()
-	if self:GetAbility():IsCooldownReady() and keys.attacker == caster and not caster:PassivesDisabled() then
+	if (self:GetAbility():GetAutoCastState() or self.IsHotheadAttack) and self:GetParent():IsRealHero() and self:GetAbility():IsCooldownReady() and keys.attacker == caster and not caster:PassivesDisabled() then
 		local enemies_in_radius = FindUnitsInRadius(caster:GetTeamNumber(), keys.target:GetAbsOrigin(), nil, self:GetAbility():GetSpecialValueFor("damage_radius"), self:GetAbility():GetAbilityTargetTeam(), self:GetAbility():GetAbilityTargetType(), self:GetAbility():GetAbilityTargetFlags(), 0, false)
 		for _, enemy in pairs(enemies_in_radius) do
 			enemy:AddNewModifier(caster, self:GetAbility(), "modifier_jakiro_hothead_debuff", {duration = self:GetAbility():GetSpecialValueFor("debuff_duration")})
@@ -54,6 +54,16 @@ function modifier_jakiro_hothead:OnAttackLanded(keys)
 
 		self:GetAbility():UseResources(false, false, true)
 		caster:SetRangedProjectileName("particles/units/heroes/hero_jakiro/jakiro_base_attack.vpcf")
+	end
+end
+
+function modifier_jakiro_hothead:OnOrder(keys)
+	if keys.unit == self:GetParent() then
+		if keys.order_type == DOTA_UNIT_ORDER_CAST_TARGET and keys.ability:GetName() == self:GetAbility():GetName() then
+			self.IsHotheadAttack = true
+		else
+			self.IsHotheadAttack = false
+		end
 	end
 end
 
