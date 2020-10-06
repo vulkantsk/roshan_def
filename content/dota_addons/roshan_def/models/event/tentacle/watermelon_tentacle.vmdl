@@ -266,7 +266,7 @@
 					m_Filepath = "models/event/tentacle/anim/tent.fbx"
 					m_nStartframe = 95
 					m_nEndframe = 115
-					m_flFps = 24.0
+					m_flFps = 48.0
 					m_Loop = 
 					{
 						m_bLoop = false
