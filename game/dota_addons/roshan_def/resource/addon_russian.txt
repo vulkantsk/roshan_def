@@ -415,54 +415,46 @@
 		"DOTA_Tooltip_modifier_jakiro_dual_breath_new_fire"							"FIRE"
 		"DOTA_Tooltip_modifier_jakiro_dual_breath_new_fire_Description"					"Вы горите!"
 
-
-		"DOTA_Tooltip_ability_jakiro_dragon_flight"								"Dragon flight"
-		"DOTA_Tooltip_ability_jakiro_dragon_flight_Description"						"Дракон взимает в небеса оставляя после себя след пламени сжигающий кости безумцев бросивших вызов Дракону!"
-		"DOTA_Tooltip_ability_jakiro_dragon_flight_duration"						"ДЛИТЕЛЬНОСТЬ"
-		"DOTA_Tooltip_ability_jakiro_dragon_flight_movespeed_bonus_pct"					"БОНУС СКОРОСТИ ПЕРЕДВИЖЕНИЯ"
-		"DOTA_Tooltip_ability_jakiro_dragon_flight_bonus_vision"					"БОНУС ДАЛЬНОСТИ ВИДИМОСТИ"
-		"DOTA_Tooltip_ability_jakiro_dragon_flight_damage_per_sec"					"УРОН В СЕКУНДУ"
-		"DOTA_Tooltip_modifier_jakiro_dragon_flight"								"Dragon flight"
-		"DOTA_Tooltip_modifier_jakiro_dragon_flight_Description"					"Полёт..."
+		"DOTA_Tooltip_ability_jakiro_fire_ball"									"Fireball"
+		"DOTA_Tooltip_ability_jakiro_fire_ball_Description"						"Jakiro запускает огненный шар в врагов, нанося им урон. Если цель находилась под эффектами Dual breath, то умение нанесет на %dual_breath_damage_amp_pct%%  больше урона и у всех задетых врагов будет снижен маг резист на %magical_reduction_pct%% , а длитеность горения от Dual breath будет увеличена на %additional_duration% секунд. Если применить Fireball по целям на которых действуют эффекты Iceball, то Iceball потеряет все эффекты, а Fireball нанесет на %ice_ball_damage_reduction_pct%%  меньше урона!"
+		"DOTA_Tooltip_ability_jakiro_fire_ball_damage_radius"						"РАДИУС"
+		"DOTA_Tooltip_ability_jakiro_fire_ball_damage"							"УРОН"
 
 		
-		"DOTA_Tooltip_ability_jakiro_hothead"									"Hot head"
-		"DOTA_Tooltip_ability_jakiro_hothead_Description"						"Каждая %needed_attacks% атака наполнена жидким пламенем, разъедает броню и поджигает цель и всех врагов в радиусе от неё."
+		"DOTA_Tooltip_ability_jakiro_ice_ball"									"Iceball"
+		"DOTA_Tooltip_ability_jakiro_ice_ball_Description"						"Jakiro запускает ледяной шар в врагов, нанося им урон. Если цель находилась под эффектами Dual breath, то умение нанесет на %dual_breath_damage_amp_pct%%  больше урона, все враги замерзнут на %freeze_duration% секунд и будут наносить на %%%  меньше урона в течении %damage_reduction_duration% секунд. Если применить ICEBALL по целям, которые находятся под действием FIREBALL, то FIREBALL потеряет все эффекты, а сам ICEBALL нанесет на %fire_ball_damage_reduction_pct%%  меньше урона."
+		"DOTA_Tooltip_ability_jakiro_ice_ball_damage_radius"						"РАДИУС"
+		"DOTA_Tooltip_ability_jakiro_ice_ball_damage"							"УРОН"
+
+
+
+		"DOTA_Tooltip_ability_jakiro_hothead"									"Hothead"
+		"DOTA_Tooltip_ability_jakiro_hothead_Description"						"Герой наполняет свою атаку жидким пламенем, поджигает цель и всех врагов вокруг нее и наносит урон в размере %int_to_damage_pct%%  от интеллекта в секунду!"
 		"DOTA_Tooltip_ability_jakiro_hothead_debuff_duration"						"ДЛИТЕЛЬНОСТЬ"
-		"DOTA_Tooltip_ability_jakiro_hothead_damage_radius"						"РАДИУС"
-		"DOTA_Tooltip_ability_jakiro_hothead_damage_per_sec"						"УРОН В СЕКУНДУ"
-		"DOTA_Tooltip_ability_jakiro_hothead_armor_reduction"						"СНИЖЕНИЕ БРОНИ"
-		"DOTA_Tooltip_modifier_jakiro_hothead"									"Hot head"
-		"DOTA_Tooltip_modifier_jakiro_hothead_Description"						"Количество атак для срабатывания."
+		"DOTA_Tooltip_ability_jakiro_hothead_debuff_damage_radius"					"РАДИУС"
 		"DOTA_Tooltip_modifier_jakiro_hothead_debuff"								"Hot head"
-		"DOTA_Tooltip_modifier_jakiro_hothead_debuff_Description"					"Броня снижена жидким пламенем!"
+		"DOTA_Tooltip_modifier_jakiro_hothead_debuff_Description"					"ВЫ ГОРИТЕ!"
 
 
-		"DOTA_Tooltip_ability_jakiro_cold_mind"									"Cold mind"
-		"DOTA_Tooltip_ability_jakiro_cold_mind_Description"						"Каждая атака Jakiro накладывает стаки замерзания на врагов, замедляя их. Когда количество стаков достигнет 3, враг будет приморожен к земле, а все атаки по нему будут критические. Невозможно заново заморозить цель в течении некоторого времени после разморозки!"
-		"DOTA_Tooltip_ability_jakiro_cold_mind_int_to_damage_pct"					"%ИНТЕЛЛЕКТ В УРОН"
-		"DOTA_Tooltip_ability_jakiro_cold_mind_stack_for_freeze"					"СТАКОВ ДЛЯ ЗАМОРОЗКИ"
-		"DOTA_Tooltip_ability_jakiro_cold_mind_debuff_duration"						"ДЛИТЕЛЬНОСТЬ ДЕБАФА"
-		"DOTA_Tooltip_ability_jakiro_cold_mind_crit_damage"						"%КРИТ УРОН"
-		"DOTA_Tooltip_ability_jakiro_cold_mind_freeze_duration"						"ДЛИТЕЛЬНОСТЬ ЗАМОРОЗКИ"
-		"DOTA_Tooltip_ability_jakiro_cold_mind_movement_speed_slow_pct"					"ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ"
-		"DOTA_Tooltip_modifier_jakiro_cold_mind_debuff"								"Cold mind"
-		"DOTA_Tooltip_modifier_jakiro_cold_mind_debuff_Description"					"Замедление."
+
+		"DOTA_Tooltip_ability_jakiro_freezing_ray"								"Freezing ray"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_Description"						"Jakiro выпускает из себя морозный луч ценой своего здоровья, затрачивая %hp_spend_pct%%  от своего здоровья в секунду. Луч наносит урон и исцеляет союзников на процент от урона, так же каждые %tick_interval% секунд накладывает по 1 стаку замерзания. Каждый стак замерзания замедляет врагов на %movespeed_reduction_per_stack%% и по достижении %stack_for_freeze% стаков цель будет получать увеличенный урон на %%% ."
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_damage"						"УРОН"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_beam_duration"					"ДЛИТЕЛЬНОСТЬ"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_damage_to_heal_pct"					"ЛЕЧЕНИЕ"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_movespeed_reduction_per_stack"			"ЗАМЕДЛЕНИЕ ЗА СТАК"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_aghanim_description"					"Даёт эффект магической неуязвимости на время действия умения!"
 
 
-		"DOTA_Tooltip_ability_jakiro_ice_cage"									"Ice cage"
-		"DOTA_Tooltip_ability_jakiro_ice_cage_Description"						"Jakiro выпускает ледяные шипы закрывающие врага в ловушке и наносящие ему урон."
-		"DOTA_Tooltip_ability_jakiro_ice_cage_damage"							"УРОН"
-		"DOTA_Tooltip_ability_jakiro_ice_cage_duration"							"ДЛИТЕЛЬНОСТЬ"
-		"DOTA_Tooltip_ability_jakiro_ice_cage_damage_per_sec"						"УРОН В СЕКУНДУ"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray"								"Freezing ray stop"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_Description"						"Останавливает действие способности."
+
 
 
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire"								"Ice and fire"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_Description"						"Jakiro собирает всю силу двух своих атрибутов, выпуская дорожку обжигающего пламени и вечного льда, нанося урон в секунду и оглушая врагов попавших под действие скила. После выхода из пламени враги все еще получают 50% урона от скила в течении %out_of_macropyre_burn_duration% секунд."
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_ice_path_duration"					"ДЛИТЕЛЬНОСТЬ ДЕЙСТВИЯ ЛЬДА"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_duration"					"ДЛИТЕЛЬНОСТЬ ДЕЙСТВИЯ ОГНЯ"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_ice_path_width"					"ШИРИНА ПОЛОСЫ ЛЬДА"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_width"					"ШИРИНА ПОЛОСЫ ОГНЯ"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_Description"						"Jakiro собирает всю силу двух своих атрибутов, выпуская дорожку обжигающего пламени и вечного льда, нанося урон в секунду и оглушая врагов на %stun_duration% секунд каждую секунду попавших под действие скила. После выхода из пламени враги все еще получают 50% урона от скила в течении %out_of_macropyre_burn_duration% секунд."
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_duration"					"ДЛИТЕЛЬНОСТЬ"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_width"					"ШИРИНА"
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_damage_per_sec"				"УРОН В СЕКУНДУ"
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_aghanim_description"					"Изменяет урон заклинания на <font color='#FFD700'>чистый</font>."
 
@@ -3230,7 +3222,7 @@
 		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_Description"				"Собирает всю свою ману, чтобы сделать один мощный выстрел!"
 		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_mana_convert_damage"			"%МАНЫ В УРОН:"
 		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_impact_radius"				"РАДИУС ПОПАДАНИЯ:"
-		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_damage_per_impact"				"УРОН ОТ ПАПАДАНИЯ:"
+		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_damage_per_impact"				"УРОН ОТ ПОПАДАНИЯ:"
 		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_burn_ground_duration"		"ДЛИТЕЛЬНОСТЬ ГОРЕНИЯ:"
 		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_burn_damage"				"УРОН ГОРЕНИЯ:"
 		"DOTA_Tooltip_ability_snapfire_mortimer_ultra_kiss_move_slow_pct"			"%ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:"

@@ -358,55 +358,94 @@
 		"DOTA_Tooltip_modifier_jakiro_dual_breath_new_fire_Description"					"You are burning!"
 
 
-		"DOTA_Tooltip_ability_jakiro_dragon_flight"								"Dragon flight"
-		"DOTA_Tooltip_ability_jakiro_dragon_flight_Description"						"The dragon charges into the skies leaving behind a trail of flame burning the bones of the madmen who defied the Dragon!"
-		"DOTA_Tooltip_ability_jakiro_dragon_flight_duration"						"DURATION"
-		"DOTA_Tooltip_ability_jakiro_dragon_flight_movespeed_bonus_pct"					"MOVEMENT SPEED BONUS"
-		"DOTA_Tooltip_ability_jakiro_dragon_flight_bonus_vision"					"VISIBILITY RANGE BONUS"
-		"DOTA_Tooltip_ability_jakiro_dragon_flight_damage_per_sec"					"DAMAGE PER SECOND"
-		"DOTA_Tooltip_modifier_jakiro_dragon_flight"								"Dragon flight"
-		"DOTA_Tooltip_modifier_jakiro_dragon_flight_Description"					"Flight..."
+		"DOTA_Tooltip_ability_jakiro_fire_ball"									"Fireball"
+		"DOTA_Tooltip_ability_jakiro_fire_ball_Description"						"Jakiro launches a fireball at enemies, damaging them. If the target was under the effects of Dual breath, then the skill will deal %dual_breath_damage_amp_pct%%  more damage and all affected enemies will have their magic resistance reduced by %magical_reduction_pct%% , and the duration of burning from Dual breath will be increased by %additional_duration% seconds. If you use Fireball on targets that are affected by Iceball's effects, Iceball will lose all effects, and Fireball will deal less damage to %ice_ball_damage_reduction_pct%% !"
+		"DOTA_Tooltip_ability_jakiro_fire_ball_damage_radius"						"RADIUS"
+		"DOTA_Tooltip_ability_jakiro_fire_ball_damage"							"DAMAGE"
 
 		
-		"DOTA_Tooltip_ability_jakiro_hothead"									"Hot head"
-		"DOTA_Tooltip_ability_jakiro_hothead_Description"						"Each %needed_attacks% attack is filled with liquid flame, destroy armor and ignites the target and all enemies within a radius of it."
+		"DOTA_Tooltip_ability_jakiro_ice_ball"									"Iceball"
+		"DOTA_Tooltip_ability_jakiro_ice_ball_Description"						"Jakiro launches a ball of ice at enemies, damaging them. If the target was under the effects of Dual breath, the skill will deal %dual_breath_damage_amp_pct%%  more damage, all enemies will freeze for %freeze_duration% seconds and will deal %%% less damage for %damage_reduction_duration% seconds. If you apply ICEBALL to targets that are under the influence of FIREBALL, then FIREBALL will lose all effects, and ICEBALL itself will deal less damage to %fire_ball_damage_reduction_pct%% ."
+		"DOTA_Tooltip_ability_jakiro_ice_ball_damage_radius"						"RADIUS"
+		"DOTA_Tooltip_ability_jakiro_ice_ball_damage"							"DAMAGE"
+
+
+
+		"DOTA_Tooltip_ability_jakiro_hothead"									"Hothead"
+		"DOTA_Tooltip_ability_jakiro_hothead_Description"						"The hero fills his attack with liquid flame, ignites the target and all enemies around it, and deals damage equal to %int_to_damage_pct%%  from Intelligence per second!"
 		"DOTA_Tooltip_ability_jakiro_hothead_debuff_duration"						"DURATION"
-		"DOTA_Tooltip_ability_jakiro_hothead_damage_radius"						"RADIUS"
-		"DOTA_Tooltip_ability_jakiro_hothead_damage_per_sec"						"DAMAGE PER SECOND"
-		"DOTA_Tooltip_ability_jakiro_hothead_armor_reduction"						"REDUCED ARMOR"
-		"DOTA_Tooltip_modifier_jakiro_hothead"									"Hot head"
-		"DOTA_Tooltip_modifier_jakiro_hothead_Description"						"Needed attacks."
+		"DOTA_Tooltip_ability_jakiro_hothead_debuff_damage_radius"					"RADIUS"
 		"DOTA_Tooltip_modifier_jakiro_hothead_debuff"								"Hot head"
-		"DOTA_Tooltip_modifier_jakiro_hothead_debuff_Description"					"Armor reduced by liquid flame!"
+		"DOTA_Tooltip_modifier_jakiro_hothead_debuff_Description"					"YOU ARE BURNING!"
 
 
-		"DOTA_Tooltip_ability_jakiro_cold_mind"									"Cold mind"
-		"DOTA_Tooltip_ability_jakiro_cold_mind_Description"						"Jakiro's every attack places stacks of freeze on enemies, slowing them down. When the number of stacks reaches 3, the enemy will be frozen to the ground, and all attacks against him will be critical. It is impossible to re-freeze the target for some time after defrosting!"
-		"DOTA_Tooltip_ability_jakiro_cold_mind_int_to_damage_pct"					"%INTELLIGENCE IN DAMAGE"
-		"DOTA_Tooltip_ability_jakiro_cold_mind_stack_for_freeze"					"FREEZE STACKS"
-		"DOTA_Tooltip_ability_jakiro_cold_mind_debuff_duration"						"DEBUFF DURATION"
-		"DOTA_Tooltip_ability_jakiro_cold_mind_crit_damage"						"%CRITICAL DAMAGE"
-		"DOTA_Tooltip_ability_jakiro_cold_mind_freeze_duration"						"FREEZE DURATION"
-		"DOTA_Tooltip_ability_jakiro_cold_mind_movement_speed_slow_pct"					"SLOW MOVEMENTSPEED"
-		"DOTA_Tooltip_modifier_jakiro_cold_mind_debuff"								"Cold mind"
-		"DOTA_Tooltip_modifier_jakiro_cold_mind_debuff_Description"					"Slowing."
+
+		"DOTA_Tooltip_ability_jakiro_freezing_ray"								"Freezing ray"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_Description"						"Jakiro releases a frost ray at the cost of his health, spending %hp_spend_pct%%  of his health per second. The beam deals damage and heals allies for a percentage of damage, also every %tick_interval% seconds imposes 1 stack of freezing. Each freeze stack slows enemies down by %movespeed_reduction_per_stack%% and upon reaching %stack_for_freeze% stacks the target will take %%% increased damage."
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_damage"						"DAMAGE"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_beam_duration"					"DURATION"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_damage_to_heal_pct"					"TREATMENT"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_movespeed_reduction_per_stack"			"SLOW PER STACK"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_aghanim_description"					"Gives the effect of magical immunity for the duration of the skill!"
 
 
-		"DOTA_Tooltip_ability_jakiro_ice_cage"									"Ice cage"
-		"DOTA_Tooltip_ability_jakiro_ice_cage_Description"						"Jakiro fires ice spikes that cover and damage the trapped enemy."
-		"DOTA_Tooltip_ability_jakiro_ice_cage_damage"							"DAMAGE"
-		"DOTA_Tooltip_ability_jakiro_ice_cage_duration"							"DURATION"
-		"DOTA_Tooltip_ability_jakiro_ice_cage_damage_per_sec"						"DAMAGE PER SECOND"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray"								"Freezing ray stop"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_Description"						"Stops the ability."
 
 
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire"								"Ice and fire"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_Description"						"Jakiro harnesses the full power of his two attributes, releasing a path of searing flame and eternal ice, dealing damage per second and stunning enemies affected by the skill. After exiting the flames, enemies still take 50% damage from the skill for %out_of_macropyre_burn_duration% seconds."
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_ice_path_duration"					"DURATION OF THE ICE"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_duration"					"DURATION OF THE FIRE"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_ice_path_width"					"ICE STRIP WIDTH"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_width"					"FIRE STRIP WIDTH"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_Description"						"Jakiro gathers the full power of his two attributes, releasing a path of searing flame and eternal ice, dealing damage per second and stunning enemies for% stun_duration% seconds every second hit by the skill. After exiting the flames, enemies still take 50% damage from the skill for %out_of_macropyre_burn_duration% seconds."
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_duration"					"DURATION"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_width"					"WIDTH"
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_damage_per_sec"				"DAMAGE PER SECOND"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_aghanim_description"					"Change the damage of the spell to <font color='#FFD700'>pure</font>."
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_aghanim_description"					"Changes the damage of a spell to <font color='#FFD700'>pure</font>."
+
+
+		"DOTA_Tooltip_ability_jakiro_fire_ball"									"Fireball"
+		"DOTA_Tooltip_ability_jakiro_fire_ball_Description"						"Jakiro launches a fireball at enemies, damaging them. If the target was under the effects of Dual breath, then the skill will deal %dual_breath_damage_amp_pct%%  more damage and all affected enemies will have their magic resistance reduced by %magical_reduction_pct%% , and the duration of burning from Dual breath will be increased by %additional_duration% seconds. If you use Fireball on targets that are affected by Iceball's effects, Iceball will lose all effects, and Fireball will deal less damage to %ice_ball_damage_reduction_pct%% !"
+		"DOTA_Tooltip_ability_jakiro_fire_ball_damage_radius"						"RADIUS"
+		"DOTA_Tooltip_ability_jakiro_fire_ball_damage"							"DAMAGE"
+
+		
+		"DOTA_Tooltip_ability_jakiro_ice_ball"									"Iceball"
+		"DOTA_Tooltip_ability_jakiro_ice_ball_Description"						"Jakiro launches a ball of ice at enemies, damaging them. If the target was under the effects of Dual breath, the skill will deal %dual_breath_damage_amp_pct%%  more damage, all enemies will freeze for %freeze_duration% seconds and will deal %%% less damage for %damage_reduction_duration% seconds. If you apply ICEBALL to targets that are under the influence of FIREBALL, then FIREBALL will lose all effects, and ICEBALL itself will deal less damage to %fire_ball_damage_reduction_pct%% ."
+		"DOTA_Tooltip_ability_jakiro_ice_ball_damage_radius"						"RADIUS"
+		"DOTA_Tooltip_ability_jakiro_ice_ball_damage"							"DAMAGE"
+
+
+
+		"DOTA_Tooltip_ability_jakiro_hothead"									"Hothead"
+		"DOTA_Tooltip_ability_jakiro_hothead_Description"						"The hero fills his attack with liquid flame, ignites the target and all enemies around it, and deals damage equal to %int_to_damage_pct%%  from Intelligence per second!"
+		"DOTA_Tooltip_ability_jakiro_hothead_debuff_duration"						"DURATION"
+		"DOTA_Tooltip_ability_jakiro_hothead_debuff_damage_radius"					"RADIUS"
+		"DOTA_Tooltip_modifier_jakiro_hothead_debuff"								"Hot head"
+		"DOTA_Tooltip_modifier_jakiro_hothead_debuff_Description"					"YOU ARE BURNING!"
+
+
+
+		"DOTA_Tooltip_ability_jakiro_freezing_ray"								"Freezing ray"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_Description"						"Jakiro releases a frost ray at the cost of his health, spending %hp_spend_pct%%  of his health per second. The beam deals damage and heals allies for a percentage of damage, also every %tick_interval% seconds imposes 1 stack of freezing. Each freeze stack slows enemies down by %movespeed_reduction_per_stack%% and upon reaching %stack_for_freeze% stacks the target will take %%% increased damage."
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_damage"						"DAMAGE"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_beam_duration"					"DURATION"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_damage_to_heal_pct"					"TREATMENT"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_movespeed_reduction_per_stack"			"SLOW PER STACK"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_aghanim_description"					"Gives the effect of magical immunity for the duration of the skill!"
+
+
+		"DOTA_Tooltip_ability_jakiro_freezing_ray"								"Freezing ray stop"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_Description"						"Stops the ability."
+
+
+
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire"								"Ice and fire"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_Description"						"Jakiro gathers the full power of his two attributes, releasing a path of searing flame and eternal ice, dealing damage per second and stunning enemies for% stun_duration% seconds every second hit by the skill. After exiting the flames, enemies still take 50% damage from the skill for %out_of_macropyre_burn_duration% seconds."
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_duration"					"DURATION"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_width"					"WIDTH"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_damage_per_sec"				"DAMAGE PER SECOND"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_aghanim_description"					"Changes the damage of a spell to <font color='#FFD700'>pure</font>."
+
+
+
 
 //Wyvern
 		"npc_dota_hero_winter_wyvern"	"Mystic dragon"
