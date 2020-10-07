@@ -20,6 +20,11 @@ function OnPickingDonate(){
 
 // Initializes the UI for the player with host privileges
 function InitializeUI() {
+	if (Game.GetAllPlayerIDs().length === 0) {
+		$.Schedule(1, InitializeUI);
+		return;
+	}
+
 	// Make the game options panel visible
 	var game_options_panel = $('#game_options_container')
 	game_options_panel.style.visibility = 'visible';
@@ -30,7 +35,7 @@ function InitializeUI() {
 
 	let amount = Game.GetAllPlayerIDs().length
 	$.Msg('Player counts = ' + amount)
-	$("#ToggleButtonContainer").visible = amount <= 1
+	$("#ToggleButtonContainer").visible = amount == 1
 }
 
 // Checks if the local player has local privileges
