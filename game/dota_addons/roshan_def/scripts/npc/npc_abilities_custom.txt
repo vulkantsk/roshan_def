@@ -49353,139 +49353,6 @@
 		}
 	}
 
-	"jakiro_fire_ball"
-	{
-		"BaseClass"									"ability_lua"
-		"ScriptFile"								"heroes/hero_jakiro/fire_ball.lua"
-		"AbilityTextureName"						""
-		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT"
-		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
-		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_NO"
-
-		"AbilityCastRange"							"900"
-		"AbilityCastPoint"							"0"
-		"AbilityCooldown"							"10"
-		"AbilityManaCost"							"50"
-
-		"MaxLevel"									"7"
-		"LevelBetweenUpgrades"						"3"
-
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"							"FIELD_INTEGER"
-				"fire_ball_speed"                   "900"
-			}
-			"02"
-			{
-				"var_type"                          "FIELD_INTEGER"
-				"vision_radius"                     "200"
-			}
-			"03"
-			{
-				"var_type"							"FIELD_INTEGER"
-				"damage_radius"						"500"
-			}
-			"04"
-			{
-				"var_type"							"FIELD_INTEGER"
-				"damage"							"200"
-			}
-			"05"
-			{
-				"var_type"							"FIELD_INTEGER"
-				"dual_breath_damage_amp_pct"		"50"
-			}
-			"06"
-			{
-				"var_type"							"FIELD_INTEGER"
-				"additional_duration"				"5" //используется и в ice ball
-			}
-			"07"
-			{
-				"var_type"							"FIELD_INTEGER"
-				"magical_reduction_duration"		"5"
-			}
-			"08"
-			{
-				"var_type"							"FIELD_INTEGER"
-				"ice_ball_damage_reduction_pct"		"50"
-			}
-			"09"
-			{
-				"var_type"							"FIELD_INTEGER"
-				"magical_reduction_pct"				"50"
-			}
-		}
-	}
-
-	"jakiro_ice_ball"
-	{
-		"BaseClass"									"ability_lua"
-		"ScriptFile"								"heroes/hero_jakiro/ice_ball.lua"
-		"AbilityTextureName"						""
-		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT"
-		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
-		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_NO"
-
-		"AbilityCastRange"							"900"
-		"AbilityCastPoint"							"0"
-		"AbilityCooldown"							"10"
-		"AbilityManaCost"							"50"
-
-		"MaxLevel"									"7"
-		"LevelBetweenUpgrades"						"3"
-
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"							"FIELD_INTEGER"
-				"ice_ball_speed"                    "900"
-			}
-			"02"
-			{
-				"var_type"                          "FIELD_INTEGER"
-				"vision_radius"                     "150"
-			}
-			"03"
-			{
-				"var_type"							"FIELD_INTEGER"
-				"damage_radius"						"500"
-			}
-			"03"
-			{
-				"var_type"							"FIELD_INTEGER"
-				"damage"							"200"
-			}
-			"03"
-			{
-				"var_type"							"FIELD_INTEGER"
-				"dual_breath_damage_amp_pct"		"50"
-			}
-			"03"
-			{
-				"var_type"							"FIELD_INTEGER"
-				"fire_ball_damage_reduction_pct"	"50"
-			}
-			"03"
-			{
-				"var_type"							"FIELD_INTEGER"
-				"freeze_duration"					"6"
-			}
-			"03"
-			{
-				"var_type"							"FIELD_INTEGER"
-				"damage_reduction_duration"			"10"
-			}
-		}
-	}
-
 	"jakiro_hothead"
 	{
 		"BaseClass"									"ability_lua"
@@ -49561,7 +49428,7 @@
 			"05"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"beam_width"						"250"
+				"beam_width"						"130"
 			}
 			"06"
 			{
@@ -49571,7 +49438,7 @@
 			"07"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"damage"							"50"
+				"damage"							"200"
 			}
 			"08"
 			{
@@ -49581,7 +49448,7 @@
 			"09"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"movespeed_reduction_per_stack"		"2"
+				"movespeed_reduction_per_stack_pct"		"2"
 			}
 			"10"
 			{
@@ -49592,6 +49459,11 @@
 			{
 				"var_type"							"FIELD_INTEGER"
 				"turn_rate_slow_pct"				"120"
+			}
+			"12"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"frozen_damage_amp"					"30"
 			}
 		}
 	}
