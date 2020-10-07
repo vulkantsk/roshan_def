@@ -446,8 +446,8 @@
 		"DOTA_Tooltip_ability_jakiro_freezing_ray_aghanim_description"					"Даёт эффект магической неуязвимости на время действия умения!"
 
 
-		"DOTA_Tooltip_ability_jakiro_freezing_ray"								"Freezing ray stop"
-		"DOTA_Tooltip_ability_jakiro_freezing_ray_Description"						"Останавливает действие способности."
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_stop"								"Freezing ray stop"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_stop_Description"					"Останавливает действие способности."
 
 
 

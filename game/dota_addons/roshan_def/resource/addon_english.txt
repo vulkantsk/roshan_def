@@ -389,8 +389,8 @@
 		"DOTA_Tooltip_ability_jakiro_freezing_ray_aghanim_description"					"Gives the effect of magical immunity for the duration of the skill!"
 
 
-		"DOTA_Tooltip_ability_jakiro_freezing_ray"								"Freezing ray stop"
-		"DOTA_Tooltip_ability_jakiro_freezing_ray_Description"						"Stops the ability."
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_stop"								"Freezing ray stop"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_stop_Description"					"Stops the ability."
 
 
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire"								"Ice and fire"

@@ -446,8 +446,8 @@
 		"DOTA_Tooltip_ability_jakiro_freezing_ray_aghanim_description"					"在技能持续时间内给予魔法免疫效果！"
 
 
-		"DOTA_Tooltip_ability_jakiro_freezing_ray"								"Freezing ray stop"
-		"DOTA_Tooltip_ability_jakiro_freezing_ray_Description"						"停止能力."
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_stop"								"Freezing ray stop"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_stop_Description"					"停止能力."
 
 
 
