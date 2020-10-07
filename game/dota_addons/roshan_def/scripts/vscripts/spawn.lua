@@ -194,8 +194,8 @@ function SetGoldMultiplier(unit , multiplier)
 
 end
 
-function Spawn:On_Difficult_Chosen( event )
-    local difficulty = event.difficulty
+function Spawn:OnDifficultyChosen( difficulty )
+	print("DIFFICULTY IS: " .. difficulty)
     if GameRules.DIFFICULTY == 0 then
 	    GameRules.DIFFICULTY = difficulty
 
@@ -224,9 +224,6 @@ function Spawn:On_Difficult_Chosen( event )
 end
 
 function Spawn:InitGameMode()
-	-- Register Panorama Listeners
-	CustomGameEventManager:RegisterListener('On_Difficult_Chosen',Dynamic_Wrap(Spawn, 'On_Difficult_Chosen'))
-
 	ListenToGameEvent('game_rules_state_change', Dynamic_Wrap(Spawn, 'OnGameRulesStateChange'), self)
 	ListenToGameEvent("npc_spawned",Dynamic_Wrap( Spawn, 'OnNPCSpawned' ), self )
 	ListenToGameEvent('entity_killed', Dynamic_Wrap(Spawn, 'OnEntityKilled'), self)

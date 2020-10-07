@@ -377,6 +377,7 @@ function GameMode:OnGameRulesStateChange(keys)
 		if self.bSeenWaitForPlayers then
 			et = .01
 		end
+		Vote:OnGameStarted()
 		Timers:CreateTimer("alljointimer", {
 			useGameTime = true,
 			endTime = et,

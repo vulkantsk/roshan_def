@@ -20,74 +20,17 @@ function OnPickingDonate(){
 
 // Initializes the UI for the player with host privileges
 function InitializeUI() {
-	var is_host = CheckForHostPrivileges();
-	if (is_host === undefined) {
-		$.Schedule(1, InitializeUI);
-		return;
-	} else if (is_host) {
+	// Make the game options panel visible
+	var game_options_panel = $('#game_options_container')
+	game_options_panel.style.visibility = 'visible';
 
-		// Make the game options panel visible
-		var game_options_panel = $('#game_options_container')
-		game_options_panel.style.visibility = 'visible';
+	// Animate it
+	game_options_panel.style.opacity = 0.0;
+	AnimatePanel(game_options_panel, { "transform": "translateX(250px);", "opacity": "1;" }, 1.0, "ease-out"); 
 
-		// Animate it
-		game_options_panel.style.opacity = 0.0;
-		AnimatePanel(game_options_panel, { "transform": "translateX(250px);", "opacity": "1;" }, 1.0, "ease-out"); 
-
-		// Update other elements according to the current map
-		var map_info = Game.GetMapInfo();
-		/*
-		if (map_info.map_display_name == "template_map") {
-			$('#QuickOptionsPanel').style.visibility = 'collapse';
-			$('#HeroPowerOptionsPanel').style.visibility = 'collapse';
-			$('#CreepPowerOptionsPanel').style.visibility = 'collapse';
-			$('#TowerPowerOptionsPanel').style.visibility = 'collapse';
-			$('#RespawnTimeOptionsPanel').style.visibility = 'collapse';
-			$('#TowerUpgradesToggle').style.visibility = 'collapse';
-			$('#HeroPickRulePanel').style.visibility = 'collapse';
-			$('#AllPickToggle').style.visibility = 'collapse';
-			$('#AllRandomToggle').style.visibility = 'collapse';
-			$('#AllRandomSameHeroToggle').style.visibility = 'collapse';
-		} else if (map_info.map_display_name == "imba_10v10" || map_info.map_display_name == "imba_12v12") {
-			$('#game_options_game_mode_title').text = $.Localize( "#imba_gamemode_name_10v10" );
-			$('#QuickOptionsPanel').style.visibility = 'collapse';
-			$('#HeroPowerOptionsPanel').style.visibility = 'collapse';
-			$('#CreepPowerOptionsPanel').style.visibility = 'collapse';
-			$('#TowerPowerOptionsPanel').style.visibility = 'collapse';
-			$('#RespawnTimeOptionsPanel').style.visibility = 'collapse';
-			$('#TowerUpgradesToggle').style.visibility = 'collapse';
-			$('#HeroPickRulePanel').style.visibility = 'collapse';
-			$('#AllPickToggle').style.visibility = 'collapse';
-			$('#AllRandomToggle').style.visibility = 'collapse';
-			$('#AllRandomSameHeroToggle').style.visibility = 'collapse';
-		} else if (map_info.map_display_name == "imba_custom") {
-			$('#TowerUpgradesToggle').SetSelected(true);
-			$('#FranticToggle').style.visibility = 'visible';
-		} else if (map_info.map_display_name == "imba_custom_10v10") {
-			$('#TowerUpgradesToggle').SetSelected(true);
-			$('#FranticToggle').style.visibility = 'visible';
-		} else if (map_info.map_display_name == "imba_arena") {
-			$('#game_options_game_mode_title').text = $.Localize( "#imba_gamemode_name_arena_mode" );
-			$('#KillsToEndOptionsPanel').style.visibility = 'visible';
-			$('#QuickOptionsPanel').style.visibility = 'collapse';
-			$('#HeroPowerOptionsPanel').style.visibility = 'collapse';
-			$('#CreepPowerOptionsPanel').style.visibility = 'collapse';
-			$('#TowerPowerOptionsPanel').style.visibility = 'collapse';
-			$('#RespawnTimeOptionsPanel').style.visibility = 'collapse';
-			$('#TowerUpgradesToggle').style.visibility = 'collapse';
-			$('#HeroPickRulePanel').style.visibility = 'collapse';
-			$('#AllPickToggle').style.visibility = 'collapse';
-			$('#AllRandomToggle').style.visibility = 'collapse';
-			$('#AllRandomSameHeroToggle').style.visibility = 'collapse';
-		} else if (map_info.map_display_name == "imba_diretide") {
-			$('#game_options_container').style.visibility = 'collapse';
-			$('#CustomBg').style.backgroundImage = 'url("file://{images}/custom_game/loading_screen/diretide.jpg")';
-		}
-		*/
-	}
-		let amount = Game.GetAllPlayerIDs().length
-		$.Msg('Player counts = ' + amount)
-		$("#ToggleButtonContainer").visible = amount == 1
+	let amount = Game.GetAllPlayerIDs().length
+	$.Msg('Player counts = ' + amount)
+	$("#ToggleButtonContainer").visible = amount <= 1
 }
 
 // Checks if the local player has local privileges
@@ -158,7 +101,7 @@ function SetGameOptions()
 		}
 	});
 */
-	GameEvents.SendCustomGameEventToServer( "On_Difficult_Chosen", { "is_host": CheckForHostPrivileges(), difficulty: 0 })
+	GameEvents.SendCustomGameEventToServer( "player_vote_game_difficulty", { "is_host": CheckForHostPrivileges(), difficulty: 0 })
 
 	AnimatePanel($('#game_options_container'), { "transform": "translateX(-150px);", "opacity": "0;" }, 0.8);
 }
@@ -166,7 +109,7 @@ function SetGameOptions()
 function SetGameOptions1()
 {
 
-	GameEvents.SendCustomGameEventToServer( "On_Difficult_Chosen", { "is_host": CheckForHostPrivileges(), difficulty: 1 })
+	GameEvents.SendCustomGameEventToServer( "player_vote_game_difficulty", { "is_host": CheckForHostPrivileges(), difficulty: 1 })
 
 	AnimatePanel($('#game_options_container'), { "transform": "translateX(-150px);", "opacity": "0;" }, 0.8);
 }
@@ -174,7 +117,7 @@ function SetGameOptions1()
 function SetGameOptions2()
 {
 
-	GameEvents.SendCustomGameEventToServer( "On_Difficult_Chosen", { "is_host": CheckForHostPrivileges(), difficulty: 2 })
+	GameEvents.SendCustomGameEventToServer( "player_vote_game_difficulty", { "is_host": CheckForHostPrivileges(), difficulty: 2 })
 
 	AnimatePanel($('#game_options_container'), { "transform": "translateX(-150px);", "opacity": "0;" }, 0.8);
 }
@@ -182,7 +125,7 @@ function SetGameOptions2()
 function SetGameOptions3()
 {
 
-	GameEvents.SendCustomGameEventToServer( "On_Difficult_Chosen", { "is_host": CheckForHostPrivileges(), difficulty: 3 })
+	GameEvents.SendCustomGameEventToServer( "player_vote_game_difficulty", { "is_host": CheckForHostPrivileges(), difficulty: 3 })
 
 	AnimatePanel($('#game_options_container'), { "transform": "translateX(-150px);", "opacity": "0;" }, 0.8);
 }
