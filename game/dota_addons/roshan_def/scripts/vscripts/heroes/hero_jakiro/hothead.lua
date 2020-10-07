@@ -3,6 +3,10 @@ LinkLuaModifier("modifier_jakiro_hothead_debuff", "heroes/hero_jakiro/hothead", 
 
 jakiro_hothead = class({GetIntrinsicModifierName = function() return "modifier_jakiro_hothead" end})
 
+function jakiro_hothead:GetCastRange(location, target)
+	return GetAttackRange(self:GetCaster())
+end
+
 modifier_jakiro_hothead = class({
 	IsHidden = function() return true end,
 	IsPurgable = function() return false end,
@@ -32,8 +36,8 @@ end
 
 function modifier_jakiro_hothead:OnAttack(keys)
 	if not IsServer() then return end
-	if self:GetAbility():IsCooldownReady() and keys.attacker == self:GetCaster() and not self:GetCaster():PassivesDisabled() then
-		ParticleManager:DestroyParticle(self.pfx, false)
+	ParticleManager:DestroyParticle(self.pfx, false)
+	if (self:GetAbility():GetAutoCastState() or self.IsHotheadAttack) and self:GetParent():IsRealHero() and self:GetAbility():IsCooldownReady() and keys.attacker == self:GetCaster() and not self:GetCaster():PassivesDisabled() then
 		self:StartIntervalThink(FrameTime())
 	end
 end
@@ -54,6 +58,7 @@ function modifier_jakiro_hothead:OnAttackLanded(keys)
 
 		self:GetAbility():UseResources(false, false, true)
 		caster:SetRangedProjectileName("particles/units/heroes/hero_jakiro/jakiro_base_attack.vpcf")
+		self.IsHotheadAttack = false
 	end
 end
 
@@ -86,4 +91,19 @@ function modifier_jakiro_hothead_debuff:OnIntervalThink()
 		damage = self:GetCaster():GetIntellect() * self:GetAbility():GetSpecialValueFor("int_to_damage_pct") / 100,
 		damage_type = self:GetAbility():GetAbilityDamageType()
 	})
+end
+
+function GetAttackRange(unit)
+	local attack_range_increase = 0
+
+	for _, parent_modifier in pairs(unit:FindAllModifiers()) do
+		if parent_modifier.GetModifierAttackRangeBonusUnique then
+			attack_range_increase = attack_range_increase + parent_modifier:GetModifierAttackRangeBonusUnique()
+		end
+		if parent_modifier.GetModifierAttackRangeBonus then
+			attack_range_increase = attack_range_increase + parent_modifier:GetModifierAttackRangeBonus()
+		end
+	end
+
+	return attack_range_increase + unit:GetBaseAttackRange()
 end
