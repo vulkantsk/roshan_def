@@ -24,6 +24,7 @@ function watermelon_tentacle:OnSpellStart()
 	end
 
 	local unit = CreateUnitByName("npc_dota_watermelon_tentacle", position, false, caster, caster, caster:GetTeam())
+	unit:SetAbsOrigin(position)
 	if wm_point then
 		wm_point.tentacle = unit
 	end
@@ -40,7 +41,8 @@ modifier_watermelon_passive = class({
 
 function modifier_watermelon_passive:CheckState()
 	local state = {
-		[MODIFIER_STATE_ROOTED] = true 
+		[MODIFIER_STATE_ROOTED] = true, 
+		[MODIFIER_STATE_NO_UNIT_COLLISION] = true, 
 	}
 	if not self:GetCaster().bInitialized then
 		state[MODIFIER_STATE_DISARMED] = true
@@ -78,7 +80,7 @@ function modifier_watermelon_portal:OnIntervalThink()
 				return
 			end
 
-			local point_name = "BOSS_WM_PORTAL_START"
+			local point_name = "point_bonus_loc_exit_2"
 		--	local modifier = "modifier_item_chicken_game_ticket"
 			local point =  Entities:FindByName( nil, point_name):GetAbsOrigin()
 			 
@@ -101,11 +103,13 @@ function modifier_watermelon_portal:OnIntervalThink()
 end
 
 function modifier_watermelon_portal:ActivatePortal()
-	local parent = self.parent
-	local point = parent:GetAbsOrigin()
-	local effect = "particles/econ/events/fall_major_2015/teleport_end_fallmjr_2015.vpcf"
-	self.portal_pfx = ParticleManager:CreateParticle( effect, PATTACH_WORLDORIGIN, parent )
-	ParticleManager:SetParticleControl(self.portal_pfx, 0, point)
-	ParticleManager:SetParticleControl(self.portal_pfx, 1, point)
-	ParticleManager:SetParticleControl(self.portal_pfx, 2, point)
+	if IsServer() then
+		local parent = self.parent
+		local point = parent:GetAbsOrigin()
+		local effect = "particles/econ/events/fall_major_2015/teleport_end_fallmjr_2015.vpcf"
+		self.portal_pfx = ParticleManager:CreateParticle( effect, PATTACH_WORLDORIGIN, parent )
+		ParticleManager:SetParticleControl(self.portal_pfx, 0, point)
+		ParticleManager:SetParticleControl(self.portal_pfx, 1, point)
+		ParticleManager:SetParticleControl(self.portal_pfx, 2, point)
+	end
 end

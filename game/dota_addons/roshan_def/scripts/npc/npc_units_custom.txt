@@ -41737,6 +41737,7 @@
 		"ModelScale" 				"2.0"
 		"Level"						"1"
 		"IsBossMonster"						"1"
+		
 		// Abilities
 		//----------------------------------------------------------------
 
@@ -41797,6 +41798,29 @@
 		//----------------------------------------------------------------
 		"VisionDaytimeRange"		"2750"
 		"VisionNighttimeRange"		"2750"
+		
+		"Creature"
+		{
+			"CanRespawn"				"0"
+
+			"DisableResistance"			"90"
+
+			"ItemDrops"
+            {
+				"Relic"
+                {
+                    "Item"
+                    {
+
+						"1"				"item_watermelon_skin"
+
+                    }
+                    "Chance"            "100"
+                }
+
+			}
+		}
+
 	}
 	"npc_dota_watermelon_tentacle"
 	{

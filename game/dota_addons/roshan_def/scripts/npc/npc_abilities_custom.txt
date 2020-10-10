@@ -949,7 +949,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"10"
+				"duration"				"15"
 //				"duration"				"60"
 			}
 		}
@@ -24900,13 +24900,13 @@
             "01"
             {
 			     "var_type"					"FIELD_INTEGER"
-			     "bounce_distance"			"300 400 500 600 700 800 900"
+			     "bounce_distance"			"350"
 		    }
             "02"
             {
                  "var_type"					"FIELD_INTEGER"
-			     "count"			        "3 5 7 9 12 15 18"
-//			     "count"			        "5 10 15 20 30 40 50"
+//			     "count"			        "3 5 7 9 12 15 18"
+			     "count"			        "5 10 15 20 25 30 35"
             }
             "03"
             {
@@ -25078,8 +25078,8 @@
 		"01"
 		{
 			"var_type"							"FIELD_FLOAT"
-			"stack_bonus_dmg"					"0.25 0.35 0.45 0.55 0.7 0.85 1"
-//			"stack_bonus_dmg"					"0.5 0.7 0.9 1.1 1.4 1.7 2"
+//			"stack_bonus_dmg"					"0.25 0.35 0.45 0.55 0.7 0.85 1"
+			"stack_bonus_dmg"					"0.5 0.7 0.9 1.1 1.4 1.7 2"
 		}
 		"02"
 		{
@@ -25141,8 +25141,8 @@
 	"RequiredLevel"					"10"
     "AbilityManaCost"               "150 200 250 300 350"
 
-	"AbilityCooldown"               "120"
-//	"AbilityCooldown"               "60"
+//	"AbilityCooldown"               "120"
+	"AbilityCooldown"               "60"
 
 	// Precache
 	//-------------------------------------------------------------------------------------------------------------
@@ -25164,8 +25164,8 @@
 		"02"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"crit_chance"				"3"
-//			"crit_chance"				"8"
+//			"crit_chance"				"3"
+			"crit_chance"				"8"
 		}
 		"03"
 		{
@@ -28922,75 +28922,6 @@
 		}
 	}
 }
-"wisp_infest"
-{
-	// General
-	//-------------------------------------------------------------------------------------------------------------
-	"BaseClass"						"ability_lua"
-	"ScriptFile"					"heroes/hero_wisp/infest"
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
-	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-	"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES"
-	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-	"FightRecapLevel"				"1"
-	"AbilityTextureName"			"wisp/infest"
-	"LinkedAbility"					"wisp_consume"
-	"MaxLevel"						"7"
-	"LevelsBetweenUpgrades"			"10"
-	"RequiredLevel"					"0"
-
-	"AbilityCastPoint"				"0.2"
-	"AbilityCooldown"				"1"
-	"AbilityManaCost"				"0"
-	"AbilityCastRange"				"150"
-
-	// Special
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilitySpecial"
-	{
-		"01"
-		{
-			"var_type"				"FIELD_INTEGER"
-			"bonus_cd"				"5"
-		}
-		"02"
-		{
-			"var_type"				"FIELD_INTEGER"
-			"lvl_required"			"1 2 3 4 4 5 6"
-//			"lvl_required"			"2 3 4 5 6 7"
-		}
-	}
-}
-
-"wisp_consume"
-{
-	// General
-	//-------------------------------------------------------------------------------------------------------------
-	"BaseClass"						"ability_lua"
-	"ScriptFile"					"heroes/hero_wisp/infest"
-	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED"
-	"FightRecapLevel"				"1"
-	"AbilityTextureName"			"wisp/consume"
-	"MaxLevel"						"1"
-
-	// Casting
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCastPoint"				"0"
-    "AbilityCastRange"              "0"
-
-	"OnSpellStart"
-	// OnSpellStart as a Modifier Event, you can Apply it on a target to trigger any Actions.
-	{
-		"RunScript"
-		{
-			"ScriptFile"	"heroes/hero_wisp/infest"
-			"Function"		"infest_consume"
-		}
-	}
-}
 "wisp_powerup_dmg"
 {
 	// General
@@ -29074,7 +29005,6 @@
 		{
 			"var_type"				"FIELD_INTEGER"
 			"max_upgrade"			"200"
-//			"max_upgrade"			"200"
 		}
 	}
 }
@@ -29117,7 +29047,8 @@
 		"04"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"max_upgrade"			"100"
+//			"max_upgrade"			"100"
+			"max_upgrade"			"200"
 		}
 	}
 }
@@ -29206,6 +29137,75 @@
 			"var_type"				"FIELD_INTEGER"
 			"max_upgrade"			"100"
 //			"max_upgrade"			"200"
+		}
+	}
+}
+"wisp_infest"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ability_lua"
+	"ScriptFile"					"heroes/hero_wisp/infest"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+	"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+	"FightRecapLevel"				"1"
+	"AbilityTextureName"			"wisp/infest"
+	"LinkedAbility"					"wisp_consume"
+	"MaxLevel"						"7"
+	"LevelsBetweenUpgrades"			"10"
+	"RequiredLevel"					"0"
+
+	"AbilityCastPoint"				"0.2"
+	"AbilityCooldown"				"1"
+	"AbilityManaCost"				"0"
+	"AbilityCastRange"				"150"
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_cd"				"5"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"lvl_required"			"1 2 3 4 4 5 6"
+//			"lvl_required"			"1 2 3 4 5 6 7"
+		}
+	}
+}
+
+"wisp_consume"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ability_lua"
+	"ScriptFile"					"heroes/hero_wisp/infest"
+	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED"
+	"FightRecapLevel"				"1"
+	"AbilityTextureName"			"wisp/consume"
+	"MaxLevel"						"1"
+
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastPoint"				"0"
+    "AbilityCastRange"              "0"
+
+	"OnSpellStart"
+	// OnSpellStart as a Modifier Event, you can Apply it on a target to trigger any Actions.
+	{
+		"RunScript"
+		{
+			"ScriptFile"	"heroes/hero_wisp/infest"
+			"Function"		"infest_consume"
 		}
 	}
 }
@@ -39140,7 +39140,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"kunkka_tidebringer"
-		"AbilityTextureName"			"tidehunter_anchor_smash"
+		"AbilityTextureName"			"kunkka_tidebringer"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -49714,7 +49714,7 @@
 		"AbilityTextureName"			"watermelon/jump"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
 
-		"AbilityCooldown"				"5"
+		"AbilityCooldown"				"8"
 
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -49756,7 +49756,7 @@
 		"AbilityTextureName"			"watermelon/tentacle"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
 
-		"AbilityCooldown"				"8"
+		"AbilityCooldown"				"10"
 	}
 	"watermelon_moving"
 	{
@@ -49868,12 +49868,12 @@
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"tick_interval"			"0.7"
+				"tick_interval"			"1"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"search_radius"			"1000"//Нужно указать примерный размер арены
+				"search_radius"			"1250"//Нужно указать примерный размер арены
 			}
 		}
 	}
@@ -49939,6 +49939,10 @@
 		"ScriptFile"					"bosses/watermelon/circular_blow"
 		"AbilityTextureName"			"watermelon/circular_blow"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NONEag"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 
 		"AbilityCooldown"				"6"
 

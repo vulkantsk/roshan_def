@@ -40,12 +40,25 @@ function WatermelonTentacleThink()
 			return CastNoTargetAbility()
 		end
 
-		thisEntity:SetForceAttackTarget(enemies[1])
+		return AttackTarget(enemies[1])
 	end
 	
 	return 0.5
 end
 
+function AttackTarget( enemy )
+	if enemy == nil then
+		return
+	end	
+
+	ExecuteOrderFromTable({
+		UnitIndex = thisEntity:entindex(),
+		OrderType = DOTA_UNIT_ORDER_ATTACK_TARGET,
+		TargetIndex = enemy:entindex(),
+	})
+
+	return 1
+end
 
 function CastNoTargetAbility()
 	ExecuteOrderFromTable({
@@ -55,5 +68,5 @@ function CastNoTargetAbility()
 		Queue = false,
 	})
 	
-	return 2.5
+	return 1
 end

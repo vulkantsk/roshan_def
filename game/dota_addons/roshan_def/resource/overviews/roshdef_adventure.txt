@@ -1,8 +1,8 @@
 roshdef_adventure
 {
 	material materials/overviews/roshdef_adventure.vmat
-	pos_x -12800
-	pos_y 12800
-	scale 25.000
+	pos_x -14144
+	pos_y 13510
+	scale 26.242
 }
 

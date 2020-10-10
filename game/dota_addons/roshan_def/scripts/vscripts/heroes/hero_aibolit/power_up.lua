@@ -15,7 +15,7 @@ function SetStacks( keys )
 	local target_owner = target:GetPlayerOwner() 
 
 	-- If they are the same then apply the modifier
-	if caster_owner == target_owner and caster ~= target then
+	if caster_owner and caster_owner == target_owner and caster ~= target then
 		target:AddNewModifier(caster, ability, StackModifier, {})
 		target:SetModifierStackCount(StackModifier, ability, (currentStacks + 1))
 	else

@@ -194,10 +194,28 @@ function SetGoldMultiplier(unit , multiplier)
 
 end
 
-function Spawn:On_Difficult_Chosen( event )
-    local difficulty = event.difficulty
+Spawn.difficult_votes = {}
+function Spawn:On_Difficult_Chosen()
     if GameRules.DIFFICULTY == 0 then
-	    GameRules.DIFFICULTY = difficulty
+		
+		local votes = {}
+		votes[0] = 0
+		votes[1] = 0
+		votes[2] = 0
+		votes[3] = 0
+		for _,value in pairs(Spawn.difficult_votes) do
+			votes[value] = votes[value] + 1
+		end
+		local maxvotes = 0
+		local maxvotesindex = 0
+		for i = 0, 3 do
+			if maxvotes < votes[i] then
+				maxvotes = votes[i]
+				maxvotesindex = i
+			end
+		end
+		
+	    GameRules.DIFFICULTY = maxvotesindex
 
 		CustomNetTables:SetTableValue('top_bar', 'Difficuilt', {
 		DIFFICULTY = GameRules.DIFFICULTY
@@ -213,9 +231,9 @@ function Spawn:On_Difficult_Chosen( event )
 			end
 
 			if team ~= main_team then
-				if difficulty == 1 then Spawn:UpgradeUnitStats(creature, 1.5)
-				elseif  difficulty == 2 then Spawn:UpgradeUnitStats(creature, 2)
-				elseif  difficulty == 3 then Spawn:UpgradeUnitStats(creature, 3)
+				if GameRules.DIFFICULTY == 1 then Spawn:UpgradeUnitStats(creature, 1.5)
+				elseif  GameRules.DIFFICULTY == 2 then Spawn:UpgradeUnitStats(creature, 2)
+				elseif  GameRules.DIFFICULTY == 3 then Spawn:UpgradeUnitStats(creature, 3)
 				end
 			end
 		end
@@ -223,9 +241,14 @@ function Spawn:On_Difficult_Chosen( event )
 
 end
 
+function Spawn:On_Difficult_Vote( event )
+	Spawn.difficult_votes[event.PlayerID] = event.difficulty
+	CustomGameEventManager:Send_ServerToAllClients("Difficult_Vote_Update", Spawn.difficult_votes)
+end
+
 function Spawn:InitGameMode()
 	-- Register Panorama Listeners
-	CustomGameEventManager:RegisterListener('On_Difficult_Chosen',Dynamic_Wrap(Spawn, 'On_Difficult_Chosen'))
+	CustomGameEventManager:RegisterListener('On_Difficult_Vote',Dynamic_Wrap(Spawn, 'On_Difficult_Vote'))
 
 	ListenToGameEvent('game_rules_state_change', Dynamic_Wrap(Spawn, 'OnGameRulesStateChange'), self)
 	ListenToGameEvent("npc_spawned",Dynamic_Wrap( Spawn, 'OnNPCSpawned' ), self )
@@ -283,6 +306,8 @@ function Spawn:OnGameRulesStateChange()
 			Spawn:SecretBoxSpawn()
 	--		Spawn:DireTideTreeSpawner()
 			--Spawn:BoxSpawner()
+		elseif newState == DOTA_GAMERULES_STATE_HERO_SELECTION then
+			Spawn:On_Difficult_Chosen()
 		elseif newState == DOTA_GAMERULES_STATE_TEAM_SHOWCASE then
 		    for i = 0, 9 do
 		        local hPlayer = PlayerResource:GetPlayer(i)

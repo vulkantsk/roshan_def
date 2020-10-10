@@ -28,6 +28,7 @@ end
 modifier_watermelon_tentacle_circular_blow = class({
 	IsHidden = function(self) return true end,
 	CheckState = function(self) return {
-		MODIFIER_STATE_ROOTED
+		[MODIFIER_STATE_ROOTED] = true,
+		[MODIFIER_STATE_NO_UNIT_COLLISION] = true,
 	}end,
 })

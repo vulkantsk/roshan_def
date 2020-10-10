@@ -266,7 +266,7 @@
 		"DOTA_Tooltip_ability_troll_warlord_battle_trance_mass_radius"			"RADIUS:"
 
 //Huskar
-		"npc_dota_hero_huskar"	"Huskar(IMBA)"
+		"npc_dota_hero_huskar"	"Huskar"
 
 		"DOTA_Tooltip_ability_inherit_huskar_buff"									"Huskar buff"
 		"DOTA_Tooltip_ability_inherit_huskar_buff_Description"						"The uncrowned king of Trolls. A skillful ruler. His very appearance inspires his subjects for the greatest sacrifices!"
@@ -966,7 +966,7 @@
 
 //Renegade
 
-		"npc_dota_hero_life_stealer"			"Renegade"
+		"npc_dota_hero_life_stealer"			"Renegade(IMBA)"
 		"npc_dota_hero_life_stealer_bio"		"Renegade - an ambitious creep who decided to betray Dire and join Roshan in search of unlimited power!"
 
 		"DOTA_Tooltip_ability_renegade_backtrack"									"Backtrack"
@@ -4536,6 +4536,15 @@
 	"DOTA_Tooltip_ability__Description"				"description"
 	"DOTA_Tooltip_ability__"				""
 
+	"DOTA_Tooltip_ability_item_watermelon_skin"							"Watermelon skin"
+	"DOTA_Tooltip_ability_item_watermelon_skin_Description"				"Wata***!?"
+	"DOTA_Tooltip_ability_item_watermelon_skin_bonus_health"			"+$health"
+	"DOTA_Tooltip_ability_item_watermelon_skin_bonus_regen"				"+$hp_regen"
+	"DOTA_Tooltip_ability_item_watermelon_skin_duration"				"DURATION:"
+	"DOTA_Tooltip_ability_item_watermelon_skin_buff_regen"				"BUFF REGENERATION:"
+	"DOTA_Tooltip_modifier_item_watermelon_skin_effect"							"Watermelon"
+	"DOTA_Tooltip_modifier_item_watermelon_skin_effect_Description"				"O_O"
+
 	"DOTA_Tooltip_ability_item_tome_of_knowledge_custom_1"							"Tome of knowledge"
 	"DOTA_Tooltip_ability_item_tome_of_knowledge_custom_1_Description"				"<h1>Active: Reading</h1> Adds experience to your hero. \n <h1>Passive: Wisdom</h1> Increases experience gained."
 	"DOTA_Tooltip_ability_item_tome_of_knowledge_custom_1_bonus_xp"				"XP PER USE:"
@@ -5469,7 +5478,7 @@
 		"DOTA_Tooltip_Ability_item_test1_essence"				"<font color=\"#F5F5F5\"> Hero essence (Techologist)</font>"	
 		"DOTA_Tooltip_ability_item_test1_essence_Description"	"This mythical stone keeps the power of the legendary hero!<br><br><font color='#FFD700'>PATREON 'PARTNER'</font></h1>"
 
-		"DOTA_Tooltip_Ability_item_th_essence"				"<font color=\"#F5F5F5\"> Hero essence (Tidehunter)</font>"	
+		"DOTA_Tooltip_Ability_item_th_essence"				"<font color=\"#F5F5F5\"> Hero essence (Kunkka)</font>"	
 		"DOTA_Tooltip_ability_item_th_essence_Description"	"This mythical stone keeps the power of the legendary hero!<br><br><font color='#FFD700'>PATREON 'PARTNER'</font></h1>"
 
 		"DOTA_Tooltip_Ability_item_dw_essence"				"<font color=\"#F5F5F5\"> Hero essence (Darkwillow)</font>"	

@@ -5323,7 +5323,7 @@
                 "DOTA_Tooltip_Ability_item_test1_essence"                               "<font color=\"#F5F5F5\"> 英雄奥秘 (工艺师)</font>"    
                 "DOTA_Tooltip_ability_item_test1_essence_Description"   "这块神秘的石头保留了传奇英雄的力量!<br><br><font color='#FFD700'>赞助 ‘PARTNER'</font></h1>"
 
-                "DOTA_Tooltip_Ability_item_th_essence"                          "<font color=\"#F5F5F5\"> 英雄奥秘 (潮汐猎人)</font>"     
+                "DOTA_Tooltip_Ability_item_th_essence"                          "<font color=\"#F5F5F5\"> 英雄奥秘 (昆卡)</font>"     
                 "DOTA_Tooltip_ability_item_th_essence_Description"      "这块神秘的石头保留了传奇英雄的力量!<br><br><font color='#FFD700'>赞助 ‘PARTNER'</font></h1>"
 
                 "DOTA_Tooltip_Ability_item_dw_essence"                          "<font color=\"#F5F5F5\"> 英雄奥秘 (火龙果)</font>"     

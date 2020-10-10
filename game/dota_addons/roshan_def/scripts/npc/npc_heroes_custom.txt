@@ -1405,9 +1405,9 @@
 		"VisionNighttimeRange"		"1000"
 		"VisionDaytimeRange"		"1500"
 	}
-	"npc_dota_hero_tidehunter"
+	"npc_dota_hero_kunkka"
 	{
-		"override_hero"				"npc_dota_hero_tidehunter"
+		"override_hero"				"npc_dota_hero_kunkka"
 
 		"Ability1"		"earthshaker_enchant_totem"
 		"Ability2"		"tidehunter_tidebringer"

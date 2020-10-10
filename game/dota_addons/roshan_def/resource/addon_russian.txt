@@ -307,7 +307,7 @@
 "DOTA_Tooltip_modifier_troll_warlord_battle_trance_Description"	"Скорость атаки увеличена на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
 
 //Huskar
-		"npc_dota_hero_huskar"	"Хускар(IMBA)"
+		"npc_dota_hero_huskar"	"Хускар"
 		"DOTA_Tooltip_ability_inherit_huskar_buff"									"Huskar buff"
 		"DOTA_Tooltip_ability_inherit_huskar_buff_Description"						"Неназванный король троллей, умелый правитель, который одним своим видом воодушевляет своих подданных на величайшие жертвы, которые вносят огромный вклад в победу! "
 		"DOTA_Tooltip_ability_inherit_huskar_buff_dmg_bonus"						"Бонусный урон :"
@@ -1036,7 +1036,7 @@
 
 //Renegade
 
-		"npc_dota_hero_life_stealer"			"Отступник"
+		"npc_dota_hero_life_stealer"			"Отступник(IMBA)"
 		"npc_dota_hero_life_stealer_bio"		"Отступник - амбициозный крип решивший предать Dire и присоединиться к Рошану ради безграничной силы !"
 
 		"DOTA_Tooltip_ability_renegade_backtrack"									"Backtrack"
@@ -5378,7 +5378,7 @@
 		"DOTA_Tooltip_Ability_item_test1_essence"				"<font color=\"#F5F5F5\"> Кристалл души (Techologist)</font>"	
 		"DOTA_Tooltip_ability_item_test1_essence_Description"	"Этот кристалл содержит в себе силу легендарного героя !<br><br><font color='#FFD700'>КОМПЛЕКТ СЕКРЕТНЫЙ</font></h1>"
 
-		"DOTA_Tooltip_Ability_item_th_essence"				"<font color=\"#F5F5F5\"> Кристалл души (Tidehunter)</font>"	
+		"DOTA_Tooltip_Ability_item_th_essence"				"<font color=\"#F5F5F5\"> Кристалл души (Kunkka)</font>"	
 		"DOTA_Tooltip_ability_item_th_essence_Description"	"Этот кристалл содержит в себе силу легендарного героя !<br><br><font color='#FFD700'>КОМПЛЕКТ СЕКРЕТНЫЙ</font></h1>"
 
 		"DOTA_Tooltip_Ability_item_dw_essence"				"<font color=\"#F5F5F5\"> Кристалл души (Darkwillow)</font>"	

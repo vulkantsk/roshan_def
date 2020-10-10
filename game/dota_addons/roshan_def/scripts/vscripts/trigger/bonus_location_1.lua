@@ -4,7 +4,7 @@ function LocationEnter( keys )
 	local team = target:GetTeam()
 	local player = target:GetPlayerOwnerID()
 	
-	if team == DOTA_TEAM_NEUTRALS then
+	if team == DOTA_TEAM_NEUTRALS or target:IsCourier() then
 		return
 	end
 

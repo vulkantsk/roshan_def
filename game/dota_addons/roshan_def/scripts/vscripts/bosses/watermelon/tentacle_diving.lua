@@ -15,6 +15,7 @@ function watermelon_tentacle_diving:OnSpellStart()
 			wm_point.tentacle:ForceKill(false)
 		end
 		local unit = CreateUnitByName("npc_dota_watermelon_tentacle", position, false, caster, caster, caster:GetTeamNumber())
+		unit:SetAbsOrigin(position)
 		wm_point.tentacle = unit
 	end
 end

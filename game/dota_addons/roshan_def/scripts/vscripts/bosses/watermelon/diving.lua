@@ -54,6 +54,8 @@ function modifier_watermelon_diving:OnIntervalThink()
 		if not self.bTeleported then
 			self:GetCaster():SetAbsOrigin(self:GetAbility().end_point + Vector(0, 0, self.down_location))
 			self.bTeleported = true
+			
+			self:GetCaster():EmitSound("watermelon_diving")
 		end
 	elseif self:GetRemainingTime() <= up_and_down_time then
 		self:GetCaster():SetAbsOrigin(self:GetCaster():GetAbsOrigin() + Vector(0, 0, self:GetAbility():GetSpecialValueFor("speed")))

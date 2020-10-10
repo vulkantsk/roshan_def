@@ -19713,7 +19713,7 @@
 			{
 				"ScriptFile"		"abilities/hero_change.lua"
 				"Function"			"GiveNewHero"
-				"hero_name"			"npc_dota_hero_tidehunter"
+				"hero_name"			"npc_dota_hero_kunkka"
 			}
 		}
 
@@ -32435,4 +32435,48 @@
 			}
 		}
 	}
+
+	"item_watermelon_skin"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/custom/item_watermelon_skin"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityTextureName"			"special/watermelon_essence"
+		"Model"							"models/props_gameplay/tango.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_tango.vpcf"
+
+		"ItemPurchasable"				"0"
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"1"
+
+		"AbilityCooldown"				"45"
+		"AbilityManaCost"				"500"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_health"		"10000"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_regen"		"100"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"duration"			"8"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"buff_regen"		"2000"
+			}
+		}
+	}
+
 }
