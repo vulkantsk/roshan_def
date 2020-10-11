@@ -29,8 +29,10 @@ Vote.DIFFICULTIES_ENUM =
 }]]
 
 function Vote:OnVote(data)
-    table.insert(Vote.DATA[data.difficulty], data.PlayerID)
-
+    if Vote:NotContains(data.PlayerID) then
+        table.insert(Vote.DATA[data.difficulty], data.PlayerID)
+    end
+    
     DeepPrintTable(data)
     DeepPrintTable(Vote.DATA)
 end
@@ -47,4 +49,16 @@ function Vote:OnGameStarted()
     end
 
     Spawn:OnDifficultyChosen(difficulty)
+end
+
+function Vote:NotContains(pid)
+    for diff, players in pairs(Vote.DATA) do 
+        for _, id in pairs(players) do
+            if pid == id then
+                return false
+            end
+        end
+    end
+
+    return true
 end

@@ -51,7 +51,7 @@ function modifier_backdoor_protection_custom:OnIntervalThink()
 									DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES,
 									FIND_CLOSEST, 
 									false)
-	print("units = "..#units)
+	
 	for _,unit in pairs(units) do
 		if not unit:IsControllableByAnyPlayer() then
 			caster:AddNewModifier(caster, self.ability, "modifier_backdoor_protection_custom_buff", {duration = self.activation_time})
