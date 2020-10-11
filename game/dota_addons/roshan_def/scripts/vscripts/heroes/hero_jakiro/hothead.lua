@@ -93,17 +93,19 @@ function modifier_jakiro_hothead_debuff:OnIntervalThink()
 	})
 end
 
-function GetAttackRange(unit)
-	local attack_range_increase = 0
+if IsServer() then
+	function GetAttackRange(unit)
+		local attack_range_increase = 0
 
-	for _, parent_modifier in pairs(unit:FindAllModifiers()) do
-		if parent_modifier.GetModifierAttackRangeBonusUnique then
-			attack_range_increase = attack_range_increase + parent_modifier:GetModifierAttackRangeBonusUnique()
+		for _, parent_modifier in pairs(unit:FindAllModifiers()) do
+			if parent_modifier.GetModifierAttackRangeBonusUnique then
+				attack_range_increase = attack_range_increase + parent_modifier:GetModifierAttackRangeBonusUnique()
+			end
+			if parent_modifier.GetModifierAttackRangeBonus then
+				attack_range_increase = attack_range_increase + parent_modifier:GetModifierAttackRangeBonus()
+			end
 		end
-		if parent_modifier.GetModifierAttackRangeBonus then
-			attack_range_increase = attack_range_increase + parent_modifier:GetModifierAttackRangeBonus()
-		end
+
+		return attack_range_increase + unit:GetBaseAttackRange()
 	end
-
-	return attack_range_increase + unit:GetBaseAttackRange()
 end
