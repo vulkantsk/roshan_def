@@ -14,7 +14,7 @@ function jakiro_ice_ball:OnSpellStart()
 
 	ProjectileManager:CreateLinearProjectile({
 		EffectName = "particles/econ/items/ancient_apparition/aa_blast_ti_5/ancient_apparition_ice_blast_initial_ti5.vpcf",
-		Abiltity = self,
+		Ability = self,
 		vSpawnOrigin = caster:GetAbsOrigin(),--caster:GetAttachmentOrigin(caster:ScriptLookupAttachment("attach_attack1")),
 		fStartRadius = 0,
 		fEndRadius = 0,
@@ -45,21 +45,11 @@ function jakiro_ice_ball:OnProjectileHit(target, location)
 
             if enemy:HasModifier("modifier_jakiro_dual_breath_new_ice") then --! Замедление с 1 скилла Джакиро
                 damage = damage + (damage / 100 * self:GetSpecialValueFor("dual_breath_damage_amp_pct"))
-                enemy:AddNewModifier(caster, self, "modifier_ice_ball_freeze", {duration = self:GetSpecialValueFor("freeze_duration")})
+                enemy:AddNewModifier(caster, self, "modifier_jakiro_ice_ball_freeze", {duration = self:GetSpecialValueFor("freeze_duration")})
                 enemy:AddNewModifier(caster, self, "modifier_jakiro_ice_ball_damage_reduction", {duration = self:GetSpecialValueFor("damage_reduction_duration")})
             end
-            if enemy:HasModifier("modifier_jakiro_fire_ball_magical_reduction") then --! Снижение маг. резиста от Fire Ball
-                damage = damage - (damage / 100 * self:GetSpecialValueFor("ice_ball_damage_reduction_pct"))
-                enemy:RemoveModifierByName("modifier_jakiro_fire_ball_magical_reduction")
-
-                local modifires = {
-                    "modifier_jakiro_dual_breath_new_ice", "modifier_jakiro_dual_breath_new_fire"
-                }
-                for _, mod in pairs(modifiers) do
-                    if enemy:HasModifier(mod) then
-                        enemy:FindModifierByName(mod):SetDuration(mod:GetDuration() - self:GetCaster():FindAbilityByName("jakiro_fire_ball"):GetSpecialValueFor("additional_duration"), true)
-                    end
-                end
+            if enemy:HasModifier("modifier_jakiro_dual_breath_new_fire") then 
+                 enemy:RemoveModifierByName("modifier_jakiro_dual_breath_new_fire")
             end
             ApplyDamage({
                 victim = enemy,
@@ -83,11 +73,10 @@ modifier_jakiro_ice_ball_freeze = class({
     end
 })
 
-function modifier_jakiro_ice_ball_freeze:OnCreated()
-    local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_ancient_apparition/ancient_apparition_cold_feet_frozen.vpcf", PATTACH_ABSORIGIN, self:GetParent())
-    ParticleManager:SetParticleControl(pfx, 0, self:GetParent():GetAbsOrigin())
-    ParticleManager:ReleaseParticleIndex(pfx)
+function modifier_jakiro_ice_ball_freeze:GetEffectName()
+    return "particles/units/heroes/hero_ancient_apparition/ancient_apparition_cold_feet_frozen.vpcf"
 end
+
 
 modifier_jakiro_ice_ball_damage_reduction = class({
     IsHidden = function() return true end,

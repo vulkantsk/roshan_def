@@ -12,7 +12,7 @@ function jakiro_fire_ball:OnSpellStart()
 	local vDirection = (point - caster:GetAbsOrigin()):Normalized()
 	ProjectileManager:CreateLinearProjectile({
 		EffectName = "particles/jakiro/jakiro_fire_ball.vpcf",
-		Abiltity = self,
+		Ability = self,
 		vSpawnOrigin = caster:GetAttachmentOrigin(caster:ScriptLookupAttachment("attach_attack2")),
 		fStartRadius = 0,
 		fEndRadius = 0,
@@ -33,7 +33,8 @@ function jakiro_fire_ball:OnProjectileHit(target, location)
     EmitSoundOnLocationWithCaster(location, "Hero_Batrider.Flamebreak.Impact", caster)
 	if not target then
 		local enemies_in_radius = FindUnitsInRadius(caster:GetTeamNumber(), location, nil, self:GetSpecialValueFor("damage_radius"), self:GetAbilityTargetTeam(), self:GetAbilityTargetType(), self:GetAbilityTargetFlags(), 0, false)
-		PrintTable(enemies_in_radius)
+		local enemies = caster:FindEnemyUnitsInRadius(location, self:GetSpecialValueFor("damage_radius"), nil)
+--		PrintTable(enemies_in_radius)
 		for _, enemy in pairs(enemies_in_radius) do
 			local damage = self:GetSpecialValueFor("damage")
 
@@ -42,10 +43,9 @@ function jakiro_fire_ball:OnProjectileHit(target, location)
 				enemy:FindModifierByName("modifier_jakiro_dual_breath_new_fire"):SetDuration(enemy:FindModifierByName("modifier_jakiro_dual_breath_new_fire"):GetDuration() + self:GetSpecialValueFor("additional_duration"), true)
 				enemy:AddNewModifier(caster, self, "modifier_jakiro_fire_ball_magical_reduction", {duration = self:GetSpecialValueFor("magical_reduction_duration")})
 			end
-			if enemy:HasModifier("modifier_jakiro_ice_ball_freeze") then --! Заморозка от Ice Ball
-				damage = damage - (damage / 100 * self:GetSpecialValueFor("ice_ball_damage_reduction_pct"))
-				enemy:RemoveModifierByName("modifier_jakiro_ice_ball_freeze")
-			end
+            if enemy:HasModifier("modifier_jakiro_dual_breath_new_ice") then 
+                 enemy:RemoveModifierByName("modifier_jakiro_dual_breath_new_ice")
+            end
 			ApplyDamage({
 				victim = enemy,
 				attacker = caster,

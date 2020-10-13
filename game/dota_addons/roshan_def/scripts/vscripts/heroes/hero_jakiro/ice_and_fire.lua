@@ -4,6 +4,10 @@ LinkLuaModifier("modifier_jakiro_ice_and_fire_stun", "heroes/hero_jakiro/ice_and
 
 jakiro_ice_and_fire = class({})
 
+function jakiro_ice_and_fire:GetAOERadius()
+    return self:GetSpecialValueFor("macropyre_width")/2
+end
+
 function jakiro_ice_and_fire:GetAbilityDamageType()
 	if self:GetCaster():HasScepter() then
 		return DAMAGE_TYPE_PURE
