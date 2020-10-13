@@ -49600,6 +49600,9 @@
 		"AbilityCooldown"							"25"
 		"AbilityManaCost"							"35"
 
+		"RequiredLevel"								"75"
+		"MaxLevel"									"1"
+
 		"AbilitySpecial"
 		{
 			"01"

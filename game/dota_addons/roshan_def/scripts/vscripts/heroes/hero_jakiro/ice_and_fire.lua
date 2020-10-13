@@ -58,7 +58,7 @@ function modifier_jakiro_ice_and_fire_macropyre_thinker:OnCreated(keys)
 end
 
 function modifier_jakiro_ice_and_fire_macropyre_thinker:OnDestroy()
-	self:GetParent():StopSound(self.sound_fire_loop)
+	StopSoundEvent(self.sound_fire_loop, self:GetParent())
 end
 
 function modifier_jakiro_ice_and_fire_macropyre_thinker:OnIntervalThink()
