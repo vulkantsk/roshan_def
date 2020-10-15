@@ -416,13 +416,13 @@
 
 
 		"DOTA_Tooltip_ability_jakiro_fire_ball"									"Fireball"
-		"DOTA_Tooltip_ability_jakiro_fire_ball_Description"						"Jakiro向敌人发射火球，使其受伤。 如果目标受到双重呼吸的影响，则此技能将造成 %dual_breath_damage_amp_pct%%  的伤害，并且所有受影响的敌人的魔抗会降低 %magical_reduction_pct%% ，并且双重呼吸的燃烧持续时间将增加 %additional_duration% 秒。 如果在受冰球效果影响的目标上使用火球，冰球将失去所有效果，并且火球对 %ice_ball_damage_reduction_pct%% 的伤害会减少！"
+		"DOTA_Tooltip_ability_jakiro_fire_ball_Description"						"Jakiro向敌人发射火球，使其受伤。 如果目标受到双重呼吸的影响，则此技能将造成 %dual_breath_damage_amp_pct%%  的伤害，并且所有受影响的敌人的魔抗会降低 %magical_reduction_pct%% ，并且双重呼吸的燃烧持续时间将增加 %additional_duration% 秒。 如果在受冰球效果影响的目标上使用火球，则任何火球效果均无效，火球仅会造成伤害。"
 		"DOTA_Tooltip_ability_jakiro_fire_ball_damage_radius"						"半径"
 		"DOTA_Tooltip_ability_jakiro_fire_ball_damage"							"损伤"
 
 		
 		"DOTA_Tooltip_ability_jakiro_ice_ball"									"Iceball"
-		"DOTA_Tooltip_ability_jakiro_ice_ball_Description"						"Jakiro向敌人发射了冰球，对其造成伤害。 如果目标受到双重呼吸的影响，则该技能将造成 %dual_breath_damage_amp_pct%% 更多的伤害，所有敌人将冻结 %freeze_duration% 秒，并减少%%%的伤害，持续 %damage_reduction_duration% 秒。 如果将ICEBALL应用于受FIREBALL影响的目标，则FIREBALL将失去所有效果，并且ICEBALL本身对 %fire_ball_damage_reduction_pct%%  的伤害将减少。"
+		"DOTA_Tooltip_ability_jakiro_ice_ball_Description"						"Jakiro向敌人发射了冰球，对其造成伤害。 如果目标受到双重呼吸的影响，则该技能将造成 %dual_breath_damage_amp_pct%% 更多的伤害，所有敌人将冻结 %freeze_duration% 秒，并减少 %damage_reduction_pct%%  的伤害，持续 %damage_reduction_duration% 秒。 如果将ICE BALL应用于受FIREBALL影响的目标，那么任何Ice Balls效果都将不起作用，并且Ice Ball只会造成伤害。"
 		"DOTA_Tooltip_ability_jakiro_ice_ball_damage_radius"						"半径"
 		"DOTA_Tooltip_ability_jakiro_ice_ball_damage"							"损伤"
 
@@ -438,12 +438,15 @@
 
 
 		"DOTA_Tooltip_ability_jakiro_freezing_ray"								"Freezing ray"
-		"DOTA_Tooltip_ability_jakiro_freezing_ray_Description"						"Jakiro以他的健康为代价释放了霜冻射线，每秒花费 %hp_spend_pct%% 的健康。 光束会造成伤害并治疗盟军，使其受到一定百分比的伤害，而且每 %tick_interval% 秒也会施加1层冻结。 每个冻结堆叠都会使敌人减速 %movespeed_reduction_per_stack%% ，并且达到 %stack_for_freeze% 个堆叠后，目标将受到 %%% 的伤害。"
+		"DOTA_Tooltip_ability_jakiro_freezing_ray_Description"						"Jakiro以他的健康为代价释放了霜冻射线，每秒花费 %hp_spend_pct%% 的健康。 光束会造成伤害并治疗盟军，使其受到一定百分比的伤害，而且每 %tick_interval% 秒也会施加1层冻结。 每个冻结堆叠都会使敌人减速 %movespeed_reduction_per_stack%% ，并且达到 %stack_for_freeze% 个堆叠后，目标将受到 %frozen_damage_amp%% 的伤害。"
 		"DOTA_Tooltip_ability_jakiro_freezing_ray_damage"						"损伤"
 		"DOTA_Tooltip_ability_jakiro_freezing_ray_beam_duration"					"持续时间"
 		"DOTA_Tooltip_ability_jakiro_freezing_ray_damage_to_heal_pct"					"治疗"
 		"DOTA_Tooltip_ability_jakiro_freezing_ray_movespeed_reduction_per_stack"			"每叠慢"
 		"DOTA_Tooltip_ability_jakiro_freezing_ray_aghanim_description"					"在技能持续时间内给予魔法免疫效果！"
+		"DOTA_Tooltip_modifier_jakiro_freezing_ray"								"Freezing ray"
+		"DOTA_Tooltip_modifier_jakiro_freezing_ray_Description"						"魔法免疫"
+		"DOTA_Tooltip_modifier_jakiro_freezing_ray_debuff"							"冷堆"
 
 
 		"DOTA_Tooltip_ability_jakiro_freezing_ray_stop"								"Freezing ray stop"
@@ -452,7 +455,7 @@
 
 
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire"								"Ice and fire"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_Description"						"Jakiro充分发挥了他两个属性的全部力量，释放了灼热的火焰和永恒的冰霜之路，每秒造成一次伤害，并在每秒击中技能时使敌人昏迷 %stun_duration% 秒。 离开火焰后，敌人仍然受到技能的50％伤害，持续 %out_of_macropyre_burn_duration% 秒。"
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_Description"						"Jakiro充分发挥了他两个属性的全部力量，释放了灼热的火焰和永恒的冰霜之路，每秒造成一次伤害，并在每秒击中技能时使敌人昏迷 %stun_duration% 秒。 离开火焰后，敌人仍然受到技能的50％伤害，持续5秒。"
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_duration"					"持续时间"
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_width"					"宽度"
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_damage_per_sec"				"每秒伤害输出"

@@ -49401,8 +49401,8 @@
 
 		"AbilityCastRange"							"900"
 		"AbilityCastPoint"							"0"
-		"AbilityCooldown"							"10"
-		"AbilityManaCost"							"50"
+		"AbilityCooldown"							"15"
+		"AbilityManaCost"							"100 110 120 130 140 150 160"
 
 		"MaxLevel"									"7"
 		"LevelBetweenUpgrades"						"3"
@@ -49422,12 +49422,12 @@
 			"03"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"damage_radius"						"500"
+				"damage_radius"						"350 375 400 425 450 475 500"
 			}
 			"04"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"damage"							"200"
+				"damage"							"125 200 275 350 425 500 575"
 			}
 			"05"
 			{
@@ -49442,7 +49442,7 @@
 			"07"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"magical_reduction_duration"		"5"
+				"magical_reduction_duration"		"10"
 			}
 			"08"
 			{
@@ -49452,7 +49452,7 @@
 			"09"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"magical_reduction_pct"				"50"
+				"magical_reduction_pct"				"5 10 15 20 25 30 35"
 			}
 		}
 	}
@@ -49470,8 +49470,8 @@
 
 		"AbilityCastRange"							"900"
 		"AbilityCastPoint"							"0"
-		"AbilityCooldown"							"10"
-		"AbilityManaCost"							"50"
+		"AbilityCooldown"							"15"
+		"AbilityManaCost"							"100 110 120 130 140 150 160"
 
 		"MaxLevel"									"7"
 		"LevelBetweenUpgrades"						"3"
@@ -49491,12 +49491,12 @@
 			"03"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"damage_radius"						"500"
+				"damage_radius"						"350 375 400 425 450 475 500"
 			}
 			"04"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"damage"							"200"
+				"damage"							"125 200 275 350 425 500 575"
 			}
 			"05"
 			{
@@ -49511,7 +49511,7 @@
 			"07"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"freeze_duration"					"6"
+				"freeze_duration"					"3"
 			}
 			"08"
 			{
@@ -49521,7 +49521,7 @@
 			"09"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"damage_reduction_pct"				"10"
+				"damage_reduction_pct"				"10 15 20 25 30 35 40"
 			}
 		}
 	}
@@ -49568,7 +49568,7 @@
 			"05"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"macropyre_width"					"500"
+				"macropyre_width"					"350 375 400 425 450"
 			}
 			"06"
 			{
@@ -49597,11 +49597,13 @@
 
 		"AbilityCastRange"							"1200"
 		"AbilityCastPoint"							"0"
-		"AbilityCooldown"							"25"
-		"AbilityManaCost"							"35"
+		"AbilityCooldown"							"60"
+		"AbilityManaCost"							"1000"
 
 		"RequiredLevel"								"75"
 		"MaxLevel"									"1"
+		
+		"HasScepterUpgrade"							"1"
 
 		"AbilitySpecial"
 		{
@@ -49633,17 +49635,17 @@
 			"06"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"debuff_duration"					"2"
+				"debuff_duration"					"6"
 			}
 			"07"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"damage"							"200"
+				"damage"							"2000"
 			}
 			"08"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"damage_to_heal_pct"				"10"
+				"damage_to_heal_pct"				"50"
 			}
 			"09"
 			{
@@ -49663,7 +49665,7 @@
 			"12"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"frozen_damage_amp"					"30"
+				"frozen_damage_amp"					"50"
 			}
 		}
 	}
