@@ -49982,4 +49982,71 @@
 			}
 		}
 	}
+	"roshdef_roshan_slam"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/roshan/roshan_slam"
+		"AbilityTextureName"			"roshan_slam"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"8"
+		"AbilityCastPoint"				"0.47"
+        "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"350"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"slow_duration"	    "2"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"slow_ms"		"50"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"slow_as"		"50"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage"			"70"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"knockback_distance"			"300"
+			}
+			"07"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"knockback_duration"			"0.25"
+			}
+		}
+		"precache"
+		{
+		    "particle"  "particles/neutral_fx/roshan_slam.vpcf"
+		    "soundfile" "sounds/weapons/creep/roshan/slam.vsnd"
+		}
+	}
+
 }
