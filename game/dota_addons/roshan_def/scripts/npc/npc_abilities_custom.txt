@@ -50136,4 +50136,49 @@
 		    "soundfile" "sounds/weapons/hero/jakiro/dual_breath.vsnd"
 		}
 	}
+	"roshdef_roshan_rage"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/roshan/roshan_rage"
+		"AbilityTextureName"			"life_stealer_rage"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"16"
+		"AbilityCastPoint"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"duration"			"5"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_as"			"200"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_ms"			"200"
+			}
+		}
+		"precache"
+		{
+		    "particle"  "particles/units/heroes/hero_life_stealer/life_stealer_rage.vpcf"
+		    "particle"  "particles/status_fx/status_effect_life_stealer_rage.vpcf"
+		    "soundfile" "sounds/weapons/hero/lifestealer/rage.vsnd"
+		}
+	}
 }
