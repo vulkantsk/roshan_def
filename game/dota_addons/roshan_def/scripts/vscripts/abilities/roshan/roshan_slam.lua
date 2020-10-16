@@ -76,11 +76,13 @@ modiifer_roshdef_roshan_slam_slow = class({
         return true
     end,
     DeclareFunctions = function()
-        return {
-            MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
-            MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT }
+        return
+        {
+            MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT,
+            MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT
+        }
     end,
-    GetModifierMoveSpeedBonus_Percentage = function(self)
+    GetModifierMoveSpeedBonus_Constant = function(self)
         return self.msSlow
     end,
     GetModifierAttackSpeedBonus_Constant = function(self)
