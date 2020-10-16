@@ -50048,5 +50048,92 @@
 		    "soundfile" "sounds/weapons/creep/roshan/slam.vsnd"
 		}
 	}
+	"roshdef_roshan_fire_breath"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/roshan/roshan_fire_breath"
+		"AbilityTextureName"			"dragon_knight_breathe_fire"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
 
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"20"
+		"AbilityCastPoint"				"1.5"
+        "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+        "AbilityChannelTime"			"2.5"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage"			"10000"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"dot_damage"			"2500"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"dot_duration"			"5"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"dot_tick"			"1"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"arc_start_angle"			"-90"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"arc_end_angle"			"90"
+			}
+			"07"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"arc_angle_delta"			"15"
+			}
+			"08"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"arc_projectile_speed"			"1800"
+			}
+			"09"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"arc_projectile_distance"			"600"
+			}
+			"10"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"arc_projectile_start_radius"			"150"
+			}
+			"11"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"arc_projectile_end_radius"			"250"
+			}
+		}
+		"precache"
+		{
+		    "particle"  "particles/units/heroes/hero_dragon_knight/dragon_knight_breathe_fire.vpcf"
+		    "particle"  "particles/units/heroes/hero_invoker/invoker_chaos_meteor_burn_debuff.vpcf"
+		    "soundfile" "sounds/weapons/hero/jakiro/dual_breath.vsnd"
+		}
+	}
 }
