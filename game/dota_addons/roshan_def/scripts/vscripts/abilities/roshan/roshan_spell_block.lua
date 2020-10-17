@@ -35,7 +35,8 @@ function modifier_roshdef_roshan_spell_block_buff:OnCreated()
         return
     end
     self.ability = self:GetAbility()
-    self.casterTeam = self:GetParent():GetTeamNumber()
+    self.caster = self:GetParent()
+    self.casterTeam = self.caster:GetTeamNumber()
 end
 
 function modifier_roshdef_roshan_spell_block_buff:GetAbsorbSpell(keys)
@@ -47,6 +48,10 @@ function modifier_roshdef_roshan_spell_block_buff:GetAbsorbSpell(keys)
     end
     if (self.ability:IsCooldownReady()) then
         self.ability:UseResources(true, true, true)
+        local pidx = ParticleManager:CreateParticle("particles/items_fx/immunity_sphere.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.caster)
+        ParticleManager:SetParticleControlEnt(pidx, 0, self.caster, PATTACH_POINT_FOLLOW, "attach_hitloc", self.caster:GetAbsOrigin(), true)
+        ParticleManager:ReleaseParticleIndex(pidx)
+        EmitSoundOn("DOTA_Item.LinkensSphere.Activate", self.caster)
         return 1
     end
     return 0
