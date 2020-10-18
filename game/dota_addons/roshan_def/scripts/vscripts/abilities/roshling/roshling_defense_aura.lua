@@ -9,7 +9,7 @@ roshdef_roshling_defense_aura = class({
 
 modifier_roshdef_roshling_defense_aura = class({
     IsHidden = function()
-        return false
+        return true
     end,
     IsPurgable = function()
         return false
