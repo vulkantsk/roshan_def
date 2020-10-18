@@ -50204,4 +50204,48 @@
 		    "soundfile" "sounds/items/linkens_sphere.vsnd"
 		}
 	}
+	"roshdef_roshan_second_chance"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/roshan/roshan_second_chance"
+		"AbilityTextureName"			"skeleton_king_reincarnation"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"15"
+		"AbilityCastPoint"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"respawn_delay"			"3"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"max_procs"			"1"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"respawn_hp_pct"			"30"
+			}
+		}
+
+		"precache"
+		{
+		    "particle"  "particles/units/heroes/hero_skeletonking/wraith_king_reincarnate.vpcf"
+		    "soundfile" "sounds/items/linkens_sphere.vsnd"
+		}
+	}
 }
