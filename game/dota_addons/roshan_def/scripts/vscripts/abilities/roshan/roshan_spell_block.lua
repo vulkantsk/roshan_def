@@ -17,7 +17,7 @@ modifier_roshdef_roshan_spell_block_buff = class({
         return false
     end,
     RemoveOnDeath = function()
-        return true
+        return false
     end,
     AllowIllusionDuplicate = function()
         return false
@@ -27,6 +27,9 @@ modifier_roshdef_roshan_spell_block_buff = class({
         {
             MODIFIER_PROPERTY_ABSORB_SPELL
         }
+    end,
+    GetAttributes = function()
+        return MODIFIER_ATTRIBUTE_PERMANENT
     end
 })
 
