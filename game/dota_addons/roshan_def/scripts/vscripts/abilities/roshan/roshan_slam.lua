@@ -42,7 +42,6 @@ function roshdef_roshan_slam:OnSpellStart()
                     duration = slowDuration
                 }
         )
-        local direction = casterPosition - enemy:GetAbsOrigin()
         enemy:AddNewModifier(
                 caster,
                 self,
