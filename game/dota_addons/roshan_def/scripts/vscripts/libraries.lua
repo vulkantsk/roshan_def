@@ -4,6 +4,7 @@ LinkLuaModifier("modifier_lich_lord_debuff", "/modifiers/modifier_lich_lord_debu
 LinkLuaModifier("modifier_necro_lord_debuff", "/modifiers/modifier_necro_lord_debuff.lua", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_roshan_second_chance", "modifiers/modifier_roshan_second_chance", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_roshan_second_chance_effect", "modifiers/modifier_roshan_second_chance", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_roshan_megamode_buff", "modifiers/modifier_roshan_megamode_buff", LUA_MODIFIER_MOTION_NONE)
 
 LinkLuaModifier("modifier_item_bonus_effect_green", "/modifiers/special/modifier_special_effect", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_item_bonus_effect_blue", "/modifiers/special/modifier_special_effect", LUA_MODIFIER_MOTION_NONE)
