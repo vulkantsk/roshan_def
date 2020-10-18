@@ -60,6 +60,9 @@ function modifier_roshdef_roshan_second_chance_buff:ReincarnateTime()
     if(self.currentProcs < self.maxProcs) then
         self.reincarnated = true
         self.currentProcs = self.currentProcs + 1
+        local pidx = ParticleManager:CreateParticle("particles/items_fx/aegis_timer.vpcf", PATTACH_ABSORIGIN, self.caster)
+        ParticleManager:SetParticleControl(pidx, 1, Vector(self.respawnDelay, 0, 0))
+        ParticleManager:ReleaseParticleIndex(pidx)
         return self.respawnDelay
     end
     self.reincarnated = nil
@@ -71,6 +74,8 @@ function modifier_roshdef_roshan_second_chance_buff:OnRespawn(keys)
         return
     end
     if(keys.unit == self.caster and self.reincarnated) then
+        local pidx = ParticleManager:CreateParticle("particles/items_fx/aegis_respawn_timer.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.caster)
+        ParticleManager:ReleaseParticleIndex(pidx)
         self.caster:SetHealth(self.caster:GetMaxHealth() * self.respawnHpPercent)
     end
 end
