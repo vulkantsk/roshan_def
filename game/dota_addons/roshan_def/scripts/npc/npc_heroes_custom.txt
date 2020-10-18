@@ -645,36 +645,37 @@
 	"npc_dota_hero_jakiro"
 	{
 		"override_hero"				"npc_dota_hero_jakiro"
-		"Ability1"		"jakiro_dual_breath"
-		"Ability2"		"jakiro_ice_path"
-		"Ability3"		"jakiro_liquid_fire"
-		"Ability4"		"inherit_jakiro_buff"
-		"Ability5"		"warlock_rain_of_chaos"
-		"Ability6"		"jakiro_macropyre"
-		"Ability7"					"generic_hidden"
-		"Ability8"					"generic_hidden"
-		"Ability10"		"special_bonus_exp_boost_30"
-		"Ability11"		"special_bonus_gold_income_240"
-		"Ability12"		"special_bonus_mp_regen_6"
-		"Ability13"		"special_bonus_spell_lifesteal_10"
-		"Ability14"		"special_bonus_all_stats_10"
-		"Ability15"		"special_bonus_intelligence_25"
-		"Ability16"		"special_bonus_spell_amplify_20"
-		"Ability17"		"special_bonus_cooldown_reduction_10"
+		"Ability1"					"jakiro_dual_breath_new"
+		"Ability2"					"jakiro_fire_ball"
+		"Ability3"					"jakiro_ice_ball"
+		"Ability4"					"jakiro_hothead"
+		"Ability5"					"jakiro_freezing_ray"
+		"Ability6"					"jakiro_ice_and_fire"
+		"Ability7"					"inherit_jakiro_buff"
+		"Ability8"					"jakiro_freezing_ray_stop"
+		"Ability10"					"special_bonus_exp_boost_30"
+		"Ability11"					"special_bonus_gold_income_240"
+		"Ability12"					"special_bonus_mp_regen_6"
+		"Ability13"					"special_bonus_spell_lifesteal_10"
+		"Ability14"					"special_bonus_all_stats_10"
+		"Ability15"					"special_bonus_intelligence_25"
+		"Ability16"					"special_bonus_spell_amplify_20"
+		"Ability17"					"special_bonus_cooldown_reduction_10"
 
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
 		"AttackDamageMin"			"20"										// Damage range min.
 		"AttackDamageMax"			"20"										// Damage range max.
-		"AttackRate"				"1.8"									// Speed of attack.
+		"AttackRate"				"1.6"									// Speed of attack.
 		"ProjectileSpeed"			"1550"									// Speed of projectile.
 		"AttackAnimationPoint"		"0.55"
+		"AttackRange"				"575"
 
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
 		"ArmorPhysical"				"0"									// Physical protection.
-		"MagicalResistance"			"20"									// Magical protection (percentage).
+		"MagicalResistance"			"25"									// Magical protection (percentage).
 
 
 		// Attributes
@@ -683,9 +684,9 @@
 		"AttributeBaseStrength"		"20"										// Base strength
 		"AttributeStrengthGain"		"2.5"										// Strength bonus per level.
 		"AttributeBaseIntelligence"	"20"										// Base intelligence
-		"AttributeIntelligenceGain"	"4.5"										// Intelligence bonus per level.
+		"AttributeIntelligenceGain"	"3.5"										// Intelligence bonus per level.
 		"AttributeBaseAgility"		"10"										// Base agility
-		"AttributeAgilityGain"		"1"										// Agility bonus per level.
+		"AttributeAgilityGain"		"2"										// Agility bonus per level.
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
