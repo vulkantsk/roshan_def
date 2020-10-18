@@ -39,6 +39,7 @@ function modifier_roshdef_roshan_bash_buff:OnCreated()
     end
     self.ability = self:GetAbility()
     self.caster = self:GetParent()
+    self.casterTeam = self.caster:GetTeamNumber()
     self:OnRefresh()
 end
 
@@ -52,6 +53,9 @@ end
 
 function modifier_roshdef_roshan_bash_buff:OnAttackLanded(keys)
     if (not IsServer()) then
+        return
+    end
+    if (keys.target:IsOther() or keys.target:IsBuilding() or keys.target:GetTeamNumber() == self.casterTeam) then
         return
     end
     if (keys.attacker == self.caster and RollPercentage(self.chance)) then
