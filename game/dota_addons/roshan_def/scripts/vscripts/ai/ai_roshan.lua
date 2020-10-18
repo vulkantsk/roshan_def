@@ -7,7 +7,7 @@ function Spawn( entityKeyValues )
 		return
 	end
 	
-	thisEntity:SetContextThink( "DiretideRoshanThink", DiretideRoshanThink, 1 )
+	thisEntity:SetContextThink( "SimpleRoshanThink", SimpleRoshanThink, 1 )
 end
 
 function DiretideRoshanThink()
@@ -22,18 +22,50 @@ function DiretideRoshanThink()
 	if thisEntity:IsChanneling() then	-- если юнит кастует скил
 		return 1	
 	end
+	print("gg")
+	local npc = thisEntity
+	if not npc.bInitialized then
+		npc.fMaxDist = npc:GetAcquisitionRange()	-- радиус агра 
+		npc.bInitialized = true						-- флаг инициализации
+	end
+
+	local dire_point = Entities:FindByName( nil, "n_waypoint19")
+	if dire_point then
+--		dire_point = dire_point:GetAbsOrigin()
+	else
+--		print("dire_point dont exist !!!")
+	end
+
+	AttackMove(npc, dire_point)
+
+	return 1
+	
+end
+
+function SimpleRoshanThink()
+	if ( not thisEntity:IsAlive() ) then		--если юнит мертв
+		return -1	
+	end
+	
+	if GameRules:IsGamePaused() == true then	--если игра приостановлена
+		return 1	
+	end
+
+	if thisEntity:IsChanneling() then	-- если юнит кастует скил
+		return 1	
+	end
+
+	if GameRules.MegaMode == 1 then
+		thisEntity:SetContextThink( "DiretideRoshanThink", DiretideRoshanThink, 1 )
+		return -1
+	end
 	
 --	if thisEntity:IsControllableByAnyPlayer() then	-- если юнит принадлежит игроку, то поведение отключается
 --		return -1
 --	end
 	
 	local npc = thisEntity
-	local dire_point = Entities:FindByName( nil, "n_waypoint19")
-	if dire_point then
-		dire_point = dire_point:GetAbsOrigin()
-	else
---		print("dire_point dont exist !!!")
-	end
+
 	local game_time = GameRules:GetGameTime()
 
 	if not thisEntity.bInitialized then
@@ -41,14 +73,6 @@ function DiretideRoshanThink()
 		npc.fMaxDist = npc:GetAcquisitionRange()	-- радиус агра 
 		npc.bInitialized = true						-- флаг инициализации
 		npc.agro = false							-- флаг агра
-		
-		npc.ability0 = FindAbility(npc, 0)			-- ищет способность по индексу
-		npc.ability1 = FindAbility(npc, 1)			-- ищет способность по индексу
-		npc.ability2 = FindAbility(npc, 2)			-- ищет способность по индексу
-		npc.ability3 = FindAbility(npc, 3)			-- ищет способность по индексу
-		npc.ability4 = FindAbility(npc, 4)			-- ищет способность по индексу
-		npc.ability5 = FindAbility(npc, 5)			-- ищет способность по индексу
-		
 	end
 
 	local search_radius 							-- радиус поиска зависит от того, имеет ли юнит агр
@@ -60,7 +84,7 @@ function DiretideRoshanThink()
 	
 	-- Как далеко юнит находится от своей точки спавна ?
 	local fDist = ( npc:GetOrigin() - npc.vInitialSpawnPos ):Length2D()
-	if fDist > search_radius and (game_time < 3600 or GetMapName() ~= "roshdef_event") then
+	if fDist > search_radius  then
 		RetreatHome()			-- если юнит слишком далеко, то идет на точку спавна
 		return 3
 	end
@@ -76,24 +100,11 @@ function DiretideRoshanThink()
 						FIND_CLOSEST,	--сортировка от ближнего к дальнему 
 						false )
 	
-	if  game_time > 3600 and GetMapName() == "roshdef_event" then
-		if #enemies == 0 then	-- если найденных юнитов нету
-			npc:MoveToPositionAggressive(dire_point)	
-			return 0.5
-		else
-		
-			local enemy = enemies[1]	-- врагом выбирается первый близжайший
-					
-			AttackMove(npc, enemy)
-
-			TryCastAbility(npc.ability0, npc, enemy)	-- попытка использовать способность
-			TryCastAbility(npc.ability1, npc, enemy)	-- попытка использовать способность
-			TryCastAbility(npc.ability2, npc, enemy)	-- попытка использовать способность
-			TryCastAbility(npc.ability3, npc, enemy)	-- попытка использовать способность
-			TryCastAbility(npc.ability4, npc, enemy)	-- попытка использовать способность
-			TryCastAbility(npc.ability5, npc, enemy)	
-			return 0.5
-		end
+	if #enemies > 0 then	-- если найденных юнитов нету
+		local enemy = enemies[1]	-- врагом выбирается первый близжайший
+				
+		AttackMove(npc, enemy)
+		return 0.5
 	end
 
 	if #enemies == 0 then	-- если найденных юнитов нету
@@ -109,14 +120,6 @@ function DiretideRoshanThink()
 	if npc.agro then	-- если юнит находится под действием агра
 		
 		AttackMove(npc, enemy)
---		npc:MoveToPositionAggressive(enemy:GetAbsOrigin())
-
-		TryCastAbility(npc.ability0, npc, enemy)	-- попытка использовать способность
-		TryCastAbility(npc.ability1, npc, enemy)	-- попытка использовать способность
-		TryCastAbility(npc.ability2, npc, enemy)	-- попытка использовать способность
-		TryCastAbility(npc.ability3, npc, enemy)	-- попытка использовать способность
-		TryCastAbility(npc.ability4, npc, enemy)	-- попытка использовать способность
-		TryCastAbility(npc.ability5, npc, enemy)	-- попытка использовать способность
 	else
 		local allies = FindUnitsInRadius(	-- ищет всех союзных братков в радиусе 
 				npc:GetTeamNumber(), 

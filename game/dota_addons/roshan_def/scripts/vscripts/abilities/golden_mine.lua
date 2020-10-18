@@ -82,7 +82,9 @@ function modifier_golden_mine_buff:OnIntervalThink()
 	if IsClient() then return end
 	
 	local player = PlayerResource:GetPlayer(self.parent:GetPlayerID())
-	SendOverheadEventMessage( player, OVERHEAD_ALERT_GOLD, self.parent, self.gold, nil )
-	self.parent:AddExperience(self.xp, 0, true, true)
-	self.parent:ModifyGold(self.gold, false, 0)
+	if player then
+		SendOverheadEventMessage( player, OVERHEAD_ALERT_GOLD, self.parent, self.gold, nil )
+		self.parent:AddExperience(self.xp, 0, true, true)
+		self.parent:ModifyGold(self.gold, false, 0)
+	end
 end
