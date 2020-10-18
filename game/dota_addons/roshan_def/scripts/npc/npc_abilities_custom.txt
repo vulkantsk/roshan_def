@@ -50244,8 +50244,46 @@
 
 		"precache"
 		{
-		    "particle"  "particles/units/heroes/hero_skeletonking/wraith_king_reincarnate.vpcf"
-		    "soundfile" "sounds/items/linkens_sphere.vsnd"
+		    "particle"  "particles/items_fx/aegis_timer.vpcf"
+		    "particle"  "particles/items_fx/aegis_respawn_timer.vpcf"
+		}
+	}
+	"roshdef_roshan_bash"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/roshan/roshan_bash"
+		"AbilityTextureName"			"roshan_bash"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"15"
+		"AbilityCastPoint"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"chance"			"10"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"duration"			"1"
+			}
+		}
+
+		"precache"
+		{
+		    "soundfile" "sounds/weapons/creep/roshan/bash.vsnd"
 		}
 	}
 }
