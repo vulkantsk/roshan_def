@@ -50286,6 +50286,40 @@
 		    "soundfile" "sounds/weapons/creep/roshan/bash.vsnd"
 		}
 	}
+	"roshdef_roshan_protection_of_the_ancient"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/roshan/roshan_protection_of_the_ancient"
+		"AbilityTextureName"			"backdoor_protection"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+		"AbilityCastPoint"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"max_hp_pct_damage_cap"			"5"
+			}
+		}
+
+		"precache"
+		{
+		    "particle" "particles/items4_fx/combo_breaker_buff.vpcf"
+		    "soundfile" "sounds/items/combo_breaker.vsnd"
+		}
+	}
 	"roshdef_roshling_critical_strike"
 	{
 		// General
