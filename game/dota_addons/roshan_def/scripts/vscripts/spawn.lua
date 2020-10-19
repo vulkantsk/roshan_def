@@ -318,10 +318,6 @@ function Spawn:OnGameRulesStateChange()
             end
         end
         Spawn:SetWDToHost()
-        if GameRules.DIFFICULTY == 0 or GameRules.DIFFICULTY == 1 then
-            local roshan = Entities:FindByName(nil, "roshan")
-            roshan:AddNewModifier(roshan, nil, "modifier_roshan_second_chance", nil)
-        end
     elseif newState == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
         Sounds:CreateGlobalSound("narod_pognali")
         if GetMapName() == "roshdef_adventure" then
@@ -946,35 +942,8 @@ function Spawn:MegaMode()
     --	while roshan:GetUnitName()~="npc_dota_roshan1" do
     --		roshan = Entities:FindByModel(roshan,"models/creeps/roshan/roshan.vmdl")
     --	end
-    local roshanMegaModeAbilities = {
-        "roshdef_roshan_slam",
-        "roshdef_roshan_fire_breath",
-        "roshdef_roshan_spell_block",
-        "roshdef_roshan_protection_of_the_ancient",
-        "roshdef_roshan_second_chance",
-        "roshdef_roshan_rage",
-        "roshdef_roshan_bash"
-    }
-    local roshlingMegaModeAbilities = {
-        "roshdef_roshling_critical_strike",
-        "roshdef_roshling_defense_aura",
-    }
     local unit = Entities:FindByName(nil, "roshan")
     if unit ~= nil then
-        unit:AddNewModifier(
-                unit,
-                nil,
-                "modifier_roshan_megamode_buff",
-                {
-                    duration = -1
-                }
-        )
-        for _, abilityName in pairs(roshanMegaModeAbilities) do
-            local ability = unit:AddAbility(abilityName)
-            if (ability) then
-                ability:SetLevel(1)
-            end
-        end
         Spawn:UpgradeUnitStats(unit, 100, 200)
     end
 
@@ -982,27 +951,12 @@ function Spawn:MegaMode()
     for i = 1, 3 do
         local unit = Entities:FindByName(nil, "roshan_guard" .. i)
         if unit ~= nil then
-            unit:AddNewModifier(
-                    unit,
-                    nil,
-                    "modifier_roshan_megamode_buff",
-                    {
-                        duration = -1
-                    }
-            )
-            for _, abilityName in pairs(roshlingMegaModeAbilities) do
-                local ability = unit:AddAbility(abilityName)
-                if (ability) then
-                    ability:SetLevel(1)
-                end
-            end
             Spawn:UpgradeUnitStats(unit, 100, 100)
         end
     end
     Spawn:SetSameTeam()
     Spawn:MegaNeutralSpawner()
     GameRules.MegaMode = 1
-
 end
 
 function Spawn:OnNPCSpawned(keys)

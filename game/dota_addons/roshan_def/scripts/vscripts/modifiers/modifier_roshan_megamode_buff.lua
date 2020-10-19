@@ -25,30 +25,27 @@ modifier_roshan_megamode_buff = class({
             MODIFIER_PROPERTY_STATUS_RESISTANCE_STACKING
         }
     end,
-    GetModifierPhysicalArmorBonus = function()
+    GetModifierPhysicalArmorBonus = function(self)
         return self.armorBonus
     end,
-    GetModifierMagicalResistanceBonus = function()
+    GetModifierMagicalResistanceBonus = function(self)
         return self.spellResBonus
     end,
-    GetModifierConstantHealthRegen = function()
+    GetModifierConstantHealthRegen = function(self)
         return self.hpRegBonus
     end,
-    GetModifierBaseAttack_BonusDamage = function()
+    GetModifierBaseAttack_BonusDamage = function(self)
         return self.aaDmgBonus
     end,
-    GetModifierMoveSpeedBonus_Constant = function()
+    GetModifierMoveSpeedBonus_Constant = function(self)
         return self.msBonus
     end,
-    GetModifierStatusResistanceStacking = function()
+    GetModifierStatusResistanceStacking = function(self)
         return self.statusResBonus
     end
 })
 
 function modifier_roshan_megamode_buff:OnCreated()
-    if (not IsServer()) then
-        return
-    end
     local parent = self:GetParent()
     self.maxHpBonus = 100000
     self.armorBonus = 50
@@ -67,6 +64,9 @@ function modifier_roshan_megamode_buff:OnCreated()
         self.bat = 0.75
         self.msBonus = 400
         self.statusResBonus = 0
+    end
+    if (not IsServer()) then
+        return
     end
     parent:SetBaseMaxHealth(self.maxHpBonus)
     parent:SetMaxHealth(self.maxHpBonus)

@@ -11696,12 +11696,12 @@
 		"IsBossMonster"						"1"
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"roshan_spell_block"	// Ability 1.
-		"Ability2"					"roshan_bash"			// Ability 2.
-//		"Ability3"					"magnataur_reverse_polarity"			// Ability 3.
-		"Ability4"					"true_strike_datadriven"	// Ability 4.
-//		"Ability5"					"roshan_deafening_blast"
-		"Ability6"					"cleave"		// Ability 5.
+		"Ability1"					""	// Ability 1.
+		"Ability2"					""			// Ability 2.
+//		"Ability3"					""			// Ability 3.
+		"Ability4"					""	// Ability 4.
+//		"Ability5"					""
+		"Ability6"					""		// Ability 5.
 		"Ability7"					""						// Ability 7 - Extra.
 		"Ability8"					""						// Ability 8 - Extra.
 
@@ -11859,6 +11859,7 @@
 		// General
 		//
 		"BaseClass"					"npc_dota_creature"
+		"vscripts"					"ai/ai_roshling"
 		"Model"						"models/creeps/baby_rosh_halloween/baby_rosh_dire/baby_rosh_dire.vmdl"
 		"SoundSet"					"Undying_Zombie"					// Name of sound set.
 		"MinimapIcon"					"minimap_siege"
@@ -11871,8 +11872,8 @@
 	// Abilities
 		//----------------------------------------------------------------
 
-		"Ability1"					"cleave"			// Ability 1
-		"Ability2"					"respawn_strong"			// Ability 2
+		"Ability1"					""			// Ability 1
+		"Ability2"					""			// Ability 2
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
