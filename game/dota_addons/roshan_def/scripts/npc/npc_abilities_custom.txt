@@ -49546,7 +49546,6 @@
 		"MaxLevel"									"5"
 		"LevelsBetweenUpgrades"						"10"
 
-		"HasScepterUpgrade"							"1"
 
 		"AbilitySpecial"
 		{

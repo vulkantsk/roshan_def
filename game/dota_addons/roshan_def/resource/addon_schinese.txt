@@ -458,8 +458,7 @@
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_Description"						"Jakiro充分发挥了他两个属性的全部力量，释放了灼热的火焰和永恒的冰霜之路，每秒造成一次伤害，并在每秒击中技能时使敌人昏迷 %stun_duration% 秒。 离开火焰后，敌人仍然受到技能的50％伤害，持续5秒。"
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_duration"					"持续时间"
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_width"					"宽度"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_damage_per_sec"				"每秒伤害输出"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_aghanim_description"					"将法术的伤害改为 <font color='#FFD700'>纯</font>."
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_damage_per_sec"				"每秒伤害输出"
 
 
 //Wyvern

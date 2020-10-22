@@ -458,8 +458,7 @@
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_Description"						"Jakiro собирает всю силу двух своих атрибутов, выпуская дорожку обжигающего пламени и вечного льда, нанося урон в секунду и оглушая врагов на %stun_duration% секунд каждую секунду попавших под действие скила. После выхода из пламени враги все еще получают 50% урона от скила в течении 5 секунд."
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_duration"					"ДЛИТЕЛЬНОСТЬ"
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_width"					"ШИРИНА"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_damage_per_sec"				"УРОН В СЕКУНДУ"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_aghanim_description"					"Изменяет урон заклинания на <font color='#FFD700'>чистый</font>."
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_damage_per_sec"					"УРОН В СЕКУНДУ"
 
 
 		"DOTA_Tooltip_ability_holdout_storm_bolt"									"Storm Hammer"

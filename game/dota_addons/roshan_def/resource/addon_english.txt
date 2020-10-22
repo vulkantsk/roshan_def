@@ -400,8 +400,7 @@
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_Description"						"Jakiro gathers the full power of his two attributes, releasing a path of searing flame and eternal ice, dealing damage per second and stunning enemies for% stun_duration% seconds every second hit by the skill. After exiting the flames, enemies still take 50% damage from the skill for 5 seconds."
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_duration"					"DURATION"
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_width"					"WIDTH"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_damage_per_sec"				"DAMAGE PER SECOND"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_aghanim_description"					"Changes the damage of a spell to <font color='#FFD700'>pure</font>."
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_damage_per_sec"				"DAMAGE PER SECOND"
 
 
 //Wyvern
