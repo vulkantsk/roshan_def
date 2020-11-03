@@ -3254,6 +3254,47 @@
         "DOTA_Tooltip_modifier_roshan_second_chance_effect"                 "二次機會效應"
         "DOTA_Tooltip_modifier_roshan_second_chance_effect_Description"             "立於不敗之地"
 
+
+		"DOTA_Tooltip_ability_roshdef_roshan_slam"							"Slam"
+		"DOTA_Tooltip_ability_roshdef_roshan_slam_Description"				"Roshan slams the ground, damages and slows down enemies!"
+		"DOTA_Tooltip_ability_roshdef_roshan_slam_damage"					"DAMAGE"
+		
+		"DOTA_Tooltip_ability_roshdef_roshan_fire_breath"					"Fire breath"
+		"DOTA_Tooltip_ability_roshdef_roshan_fire_breath_Description"		"Roshan spews flames, setting his enemies on fire!"	
+		"DOTA_Tooltip_ability_roshdef_roshan_fire_breath_damage"			"DAMAGE"	
+		"DOTA_Tooltip_ability_roshdef_roshan_fire_breath_dot_damage"		"DAMAGE PER SECOND"	
+		"DOTA_Tooltip_ability_roshdef_roshan_fire_breath_dot_duration"		"DURATION"	
+				
+		"DOTA_Tooltip_ability_roshdef_roshan_rage"							"Rohan's rage"
+		"DOTA_Tooltip_ability_roshdef_roshan_rage_Description"				"Roshan goes into a state of rage, increases attack and movement speed!"
+		"DOTA_Tooltip_ability_roshdef_roshan_rage_duration"					"DURATION"
+		"DOTA_Tooltip_ability_roshdef_roshan_rage_bonus_as"					"ATTACK SPEED BONUS"
+		"DOTA_Tooltip_ability_roshdef_roshan_rage_bonus_ms"					"MOVEMENT SPEED BONUS"
+
+		"DOTA_Tooltip_ability_roshdef_roshan_spell_block"					"Spell block"
+		"DOTA_Tooltip_ability_roshdef_roshan_spell_block"					"Absorbs a targeted spell!"
+				
+		"DOTA_Tooltip_ability_roshdef_roshan_bash"							"Bash"
+		"DOTA_Tooltip_ability_roshdef_roshan_bash_Description"				"Has a chance on attack to stun the target!"
+		"DOTA_Tooltip_ability_roshdef_roshan_bash_chance"					"%CHANCE"
+		"DOTA_Tooltip_ability_roshdef_roshan_bash_duration"					"DURATION"
+				
+		"DOTA_Tooltip_ability_roshdef_roshan_protection_of_the_ancient"		"Protection of the ancient"
+		"DOTA_Tooltip_ability_roshdef_roshan_protection_of_the_ancient_Description"	"Enemy attack cannot deal more than %max_hp_pct_damage_cap%%  of Roshan's maximum health!"
+	
+	
+		"DOTA_Tooltip_ability_roshdef_roshling_critical_strike"				"Critical strike"
+		"DOTA_Tooltip_ability_roshdef_roshling_critical_strike_Description"	"Attacks with a chance can deal critical damage!"
+		"DOTA_Tooltip_ability_roshdef_roshling_critical_strike_crit_multiplier"	"%CRITICAL ATTACK MULTIPLIER"
+		"DOTA_Tooltip_ability_roshdef_roshling_critical_strike_crit_chance"	"%CRITICAL ATTACK CHANCE"
+			
+		"DOTA_Tooltip_ability_roshdef_roshling_defense_aura"				"Defense aura"
+		"DOTA_Tooltip_ability_roshdef_roshling_defense_aura_Description"	"Gives bonus armor to every unit within range!"
+		"DOTA_Tooltip_ability_roshdef_roshling_defense_aura_bonus_armor"	"BONUS ARMOR"
+		"DOTA_Tooltip_modifier_roshdef_roshling_defense_aura_buff"			"Defense aura"
+		"DOTA_Tooltip_modifier_roshdef_roshling_defense_aura_buff_Description"	"Armor bonus 5"	
+
+
         "DOTA_Tooltip_ability_brotherhood_death_madness"                            "死亡瘋狂"
         "DOTA_Tooltip_ability_brotherhood_death_madness_Description"                "當您殺死弟弟時，哥哥會被放大很多倍！"
         "DOTA_Tooltip_ability_brotherhood_death_madness_bonus_dmg"              "%傷害加成:"

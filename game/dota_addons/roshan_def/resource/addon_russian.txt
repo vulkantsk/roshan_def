@@ -3280,7 +3280,45 @@
 		"DOTA_Tooltip_modifier_roshan_second_chance_Description"				"При получении критического здоровья, становится неуязвимым и восстанавливает часть здоровья."
 		"DOTA_Tooltip_modifier_roshan_second_chance_effect"					"Second chance effect"
 		"DOTA_Tooltip_modifier_roshan_second_chance_effect_Description"				"Временно неуязвим и регенерерует"
+		
+		"DOTA_Tooltip_ability_roshdef_roshan_slam"							"Slam"
+		"DOTA_Tooltip_ability_roshdef_roshan_slam_Description"				"Рошан хлопает по земле, наносит урон и замедляет врагов!"
+		"DOTA_Tooltip_ability_roshdef_roshan_slam_damage"					"УРОН"
+		
+		"DOTA_Tooltip_ability_roshdef_roshan_fire_breath"					"Fire breath"
+		"DOTA_Tooltip_ability_roshdef_roshan_fire_breath_Description"		"Рошан извергает пламя, поджигая своих врагов!"	
+		"DOTA_Tooltip_ability_roshdef_roshan_fire_breath_damage"			"УРОН"	
+		"DOTA_Tooltip_ability_roshdef_roshan_fire_breath_dot_damage"		"УРОН В СЕКУНДУ"	
+		"DOTA_Tooltip_ability_roshdef_roshan_fire_breath_dot_duration"		"ДЛИТЕЛЬНОСТЬ"	
+		
+		"DOTA_Tooltip_ability_roshdef_roshan_rage"							"Rohan's rage"
+		"DOTA_Tooltip_ability_roshdef_roshan_rage_Description"				"Рошан переходит в состояние ярости, увеличивает скорость атаки и передвижения!"
+		"DOTA_Tooltip_ability_roshdef_roshan_rage_duration"					"ДЛИТЕЛЬНОСТЬ"
+		"DOTA_Tooltip_ability_roshdef_roshan_rage_bonus_as"					"БОНУС СКОРОСТИ АТАКИ"
+		"DOTA_Tooltip_ability_roshdef_roshan_rage_bonus_ms"					"БОНУС СКОРОСТИ ПЕРЕДВИЖЕНИЯ"
 
+		"DOTA_Tooltip_ability_roshdef_roshan_spell_block"					"Spell block"
+		"DOTA_Tooltip_ability_roshdef_roshan_spell_block"					"Поглощает направленное заклинание!"
+		
+		"DOTA_Tooltip_ability_roshdef_roshan_bash"							"Bash"
+		"DOTA_Tooltip_ability_roshdef_roshan_bash_Description"				"С шансом при атаке оглушает цель!"
+		"DOTA_Tooltip_ability_roshdef_roshan_bash_chance"					"%ШАНС"
+		"DOTA_Tooltip_ability_roshdef_roshan_bash_duration"					"ДЛИТЕЛЬНОСТЬ"
+		
+		"DOTA_Tooltip_ability_roshdef_roshan_protection_of_the_ancient"		"Protection of the ancient"
+		"DOTA_Tooltip_ability_roshdef_roshan_protection_of_the_ancient_Description"	"Атака врага не сможет нанести больше чем %max_hp_pct_damage_cap%%  от максимального здоровья Рошана!"
+	
+		"DOTA_Tooltip_ability_roshdef_roshling_critical_strike"				"Critical strike"
+		"DOTA_Tooltip_ability_roshdef_roshling_critical_strike_Description"	"Атаки с шансом могут нанести критический урон!"
+		"DOTA_Tooltip_ability_roshdef_roshling_critical_strike_crit_multiplier"	"%МНОЖИТЕЛЬ КРИТА"
+		"DOTA_Tooltip_ability_roshdef_roshling_critical_strike_crit_chance"	"%ШАНС КРИТА"
+		
+		"DOTA_Tooltip_ability_roshdef_roshling_defense_aura"				"Defense aura"
+		"DOTA_Tooltip_ability_roshdef_roshling_defense_aura_Description"	"Дает бонусную броню каждому юниту в радиусе действия!"
+		"DOTA_Tooltip_ability_roshdef_roshling_defense_aura_bonus_armor"	"БОНУС БРОНИ"
+		"DOTA_Tooltip_modifier_roshdef_roshling_defense_aura_buff"			"Defense aura"
+		"DOTA_Tooltip_modifier_roshdef_roshling_defense_aura_buff_Description"	"Бонус брони 5"
+					
 		"DOTA_Tooltip_ability_brotherhood_death_madness"							"Death madness"
 		"DOTA_Tooltip_ability_brotherhood_death_madness_Description"				"При убийстве младшего брата старшие усиливаются многократно !"
 		"DOTA_Tooltip_ability_brotherhood_death_madness_bonus_dmg"				"%БОНУС УРОНА:"
