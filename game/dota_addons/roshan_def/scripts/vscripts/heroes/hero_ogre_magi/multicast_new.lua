@@ -22,20 +22,20 @@ function modifier_multicast_new:OnAbilityFullyCast(keys)
 
 		local bonus_casts = 0
 		if not ability:GetAbilityType() == ABILITY_TYPE_ULTIMATE then
-			if RollPercentage(self:GetAbility():GetSpecialValueFor("x2_chance")) then
-				bonus_casts = 1
+			if RollPercentage(self:GetAbility():GetSpecialValueFor("x4_chance")) then
+				bonus_casts = 3
 			elseif RollPercentage(self:GetAbility():GetSpecialValueFor("x3_chance")) then
 				bonus_casts = 2
-			elseif RollPercentage(self:GetAbility():GetSpecialValueFor("x4_chance")) then
-				bonus_casts = 3
+			elseif RollPercentage(self:GetAbility():GetSpecialValueFor("x2_chance")) then
+				bonus_casts = 1
 			end
 		else
-			if RollPercentage(self:GetAbility():GetSpecialValueFor("x2_chance") * (1 - self:GetAbility():GetSpecialValueFor("ultimate_chance_decrease") / 100)) then
-				bonus_casts = 1
+			if RollPercentage(self:GetAbility():GetSpecialValueFor("x4_chance") * (1 - self:GetAbility():GetSpecialValueFor("ultimate_chance_decrease") / 100)) then
+				bonus_casts = 3
 			elseif RollPercentage(self:GetAbility():GetSpecialValueFor("x3_chance") * (1 - self:GetAbility():GetSpecialValueFor("ultimate_chance_decrease") / 100)) then
 				bonus_casts = 2
-			elseif RollPercentage(self:GetAbility():GetSpecialValueFor("x4_chance") * (1 - self:GetAbility():GetSpecialValueFor("ultimate_chance_decrease") / 100)) then
-				bonus_casts = 3
+			elseif RollPercentage(self:GetAbility():GetSpecialValueFor("x2_chance") * (1 - self:GetAbility():GetSpecialValueFor("ultimate_chance_decrease") / 100)) then
+				bonus_casts = 1
 			end
 		end
 

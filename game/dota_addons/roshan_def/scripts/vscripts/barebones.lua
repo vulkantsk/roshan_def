@@ -454,6 +454,11 @@ function GameMode:OnNPCSpawned(keys)
 			end
 		end
 	end	
+	
+	if npc:IsCourier() then
+		npc:AddNewModifier(npc, nil, "modifier_invulnerable", {duration = -1})
+	end
+
 	if npc:IsTempestDouble() or npc:IsIllusion() then
 		local owner = npc:GetPlayerOwner():GetAssignedHero()
 		npc:SetTeam(owner:GetTeam())

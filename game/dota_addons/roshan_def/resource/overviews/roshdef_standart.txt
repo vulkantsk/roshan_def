@@ -1,8 +1,8 @@
 roshdef_standart
 {
 	material materials/overviews/roshdef_standart.vmat
-	pos_x -12800
-	pos_y 12800
-	scale 25.000
+	pos_x -14144
+	pos_y 14144
+	scale 27.625
 }
 

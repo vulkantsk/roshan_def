@@ -565,7 +565,9 @@
 
 //		"AbilityManaCost"				"75 100 125 150 200 250 300"
 		"AbilityManaCost"				"0"
-		"AbilityCooldown"				"25"
+
+//		"AbilityCooldown"				"25"
+		"AbilityCooldown"				"15"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -618,8 +620,8 @@
 			"particle"			"particles/units/heroes/hero_centaur/centaur_double_edge.vpcf"
 		}
 
-		"AbilityManaCost"				"15 25 35 45 60 75 90"
-//		"AbilityManaCost"				"5"
+//		"AbilityManaCost"				"15 25 35 45 60 75 90"
+		"AbilityManaCost"				"5"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -671,7 +673,6 @@
 		// Time
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"0.5 0.45 0.4 0.35 0.3 0.2 0.1"
-//		"AbilityCooldown"				"0.01"
 
 
 		// Special
@@ -686,8 +687,8 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"trigger_chance"			"15 16 17 18 19 20 21"
-//				"trigger_chance"			"100"
+//				"trigger_chance"			"15 16 17 18 19 20 21"
+				"trigger_chance"			"20 25 30 35 40 45 50"
 			}
 			"03"
 			{
@@ -726,14 +727,14 @@
 			"01"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"bonus_str"							"15 30 45 70 100"
-//				"bonus_str"							"30 50 90 140 200"
+//				"bonus_str"							"15 30 45 70 100"
+				"bonus_str"							"30 50 90 140 200"
 			}
 			"02"
 			{
 				"var_type"							"FIELD_FLOAT"
-				"stack_bonus_str"					"0.2 0.4 0.6 0.8 1"
-//				"stack_bonus_str"					"0.6 1.2 1.8 2.4 3.0"
+//				"stack_bonus_str"					"0.2 0.4 0.6 0.8 1"
+				"stack_bonus_str"					"0.6 1.2 1.8 2.4 3.0"
 			}
 		}
 	}
@@ -11022,8 +11023,8 @@
 			"06"
 			{
 				"var_type"					"FIELD_FLOAT"
-//				"duration"			"3"
-				"duration"			"4"
+				"duration"			"3"
+//				"duration"			"4"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
@@ -24905,8 +24906,8 @@
             "02"
             {
                  "var_type"					"FIELD_INTEGER"
-//			     "count"			        "3 5 7 9 12 15 18"
-			     "count"			        "5 10 15 20 25 30 35"
+			     "count"			        "3 5 7 9 12 15 18"
+//			     "count"			        "5 10 15 20 25 30 35"
             }
             "03"
             {
@@ -25078,8 +25079,8 @@
 		"01"
 		{
 			"var_type"							"FIELD_FLOAT"
-//			"stack_bonus_dmg"					"0.25 0.35 0.45 0.55 0.7 0.85 1"
-			"stack_bonus_dmg"					"0.5 0.7 0.9 1.1 1.4 1.7 2"
+			"stack_bonus_dmg"					"0.25 0.35 0.45 0.55 0.7 0.85 1"
+//			"stack_bonus_dmg"					"0.5 0.7 0.9 1.1 1.4 1.7 2"
 		}
 		"02"
 		{
@@ -25164,8 +25165,8 @@
 		"02"
 		{
 			"var_type"					"FIELD_INTEGER"
-//			"crit_chance"				"3"
-			"crit_chance"				"8"
+			"crit_chance"				"3"
+//			"crit_chance"				"8"
 		}
 		"03"
 		{
@@ -46275,8 +46276,8 @@
 		"AbilityManaCost"				"50 75 100 125 175 225 275"
 
 		"AbilityCooldown"				"0"
-		"AbilityChargeRestoreTime"		"20"
 		"AbilityCharges"				"2 2 2 2 3 4 5"
+		"AbilityChargeRestoreTime"		"20"
 //		"AbilityChargeRestoreTime"		"10"
 
 		"AbilitySpecial"
@@ -47031,6 +47032,7 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"crit_chance"			"11 14 17 20 25 30 35"
+//				"crit_chance"			"20 25 30 35 45 55 65"
 			}
 			"03"
 			{
@@ -47055,6 +47057,7 @@
 
 		"AbilityCastAnimation"			"0.5"
 		"AbilityCooldown"				"80"
+//		"AbilityCooldown"				"40"
 		"AbilityManaCost"				"100 200 300 450 600"
  		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -49982,6 +49985,407 @@
 			}
 		}
 	}
+
+	"jakiro_hothead"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/hero_jakiro/hothead.lua"
+		"AbilityTextureName"						"jakiro_liquid_fire"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK"
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"MaxLevel"									"1"
+		"AbilityCooldown"							"6"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"                          "FIELD_FLOAT"
+				"debuff_duration"                   "3"
+			}
+			"02"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"damage_radius"						"300"
+			}
+			"03"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"int_to_damage_pct"					"100"
+			}
+		}
+	}
+
+	"jakiro_dual_breath_new"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/hero_jakiro/dual_breath_new"
+		"AbilityTextureName"			"jakiro/jakiro_dual_breath_new"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"MaxLevel"						"7"
+		"LevelsBetweenUpgrades"			"3"
+
+		"AbilityCooldown"				"12 12 11 11 10 10 9"
+		"AbilityCastPoint"				"0.55"
+		"AbilityCastRange"				"750"
+		"AbilityManaCost"				"100 130 160 190 220 250 280"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"start_radius"			"225"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"end_radius"			"275"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"150 200 250 300 350 425 500"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"speed"					"1050"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"fire_delay"			"0.3"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"burn_damage"			"40 65 80 95 110 125 140"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"slow_movement_speed_pct"	"5 7 10 15 20 25 30"
+			}
+			"08"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"slow_attack_speed"			"5 7 10 15 20 25 30"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"speed_fire"			"1050"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"debuff_duration"		"5"
+			}
+		}
+	}
+
+	"jakiro_fire_ball"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/hero_jakiro/fire_ball.lua"
+		"AbilityTextureName"						"jakiro/fire_ball"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT + DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"					"DOTA_UNIT_TARGET_FLAG_NONE"
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"							"900"
+		"AbilityCastPoint"							"0"
+		"AbilityCooldown"							"15"
+		"AbilityManaCost"							"100 110 120 130 140 150 160"
+
+		"MaxLevel"									"7"
+		"LevelBetweenUpgrades"						"3"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"fire_ball_speed"                   "900"
+			}
+			"02"
+			{
+				"var_type"                          "FIELD_INTEGER"
+				"vision_radius"                     "200"
+			}
+			"03"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"damage_radius"						"350 375 400 425 450 475 500"
+			}
+			"04"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"damage"							"125 200 275 350 425 500 575"
+			}
+			"05"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"dual_breath_damage_amp_pct"		"50"
+			}
+			"06"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"additional_duration"				"5" //используется и в ice ball
+			}
+			"07"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"magical_reduction_duration"		"10"
+			}
+			"08"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"ice_ball_damage_reduction_pct"		"50"
+			}
+			"09"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"magical_reduction_pct"				"5 10 15 20 25 30 35"
+			}
+		}
+	}
+
+	"jakiro_ice_ball"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/hero_jakiro/ice_ball.lua"
+		"AbilityTextureName"						"jakiro/ice_ball"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"							"900"
+		"AbilityCastPoint"							"0"
+		"AbilityCooldown"							"15"
+		"AbilityManaCost"							"100 110 120 130 140 150 160"
+
+		"MaxLevel"									"7"
+		"LevelBetweenUpgrades"						"3"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"ice_ball_speed"                    "900"
+			}
+			"02"
+			{
+				"var_type"                          "FIELD_INTEGER"
+				"vision_radius"                     "150"
+			}
+			"03"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"damage_radius"						"350 375 400 425 450 475 500"
+			}
+			"04"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"damage"							"125 200 275 350 425 500 575"
+			}
+			"05"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"dual_breath_damage_amp_pct"		"50"
+			}
+			"06"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"fire_ball_damage_reduction_pct"	"50"
+			}
+			"07"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"freeze_duration"					"3"
+			}
+			"08"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"damage_reduction_duration"			"10"
+			}
+			"09"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"damage_reduction_pct"				"10 15 20 25 30 35 40"
+			}
+		}
+	}
+
+	"jakiro_ice_and_fire"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/hero_jakiro/ice_and_fire.lua"
+		"AbilityTextureName"						"jakiro/jakiro_ice_and_fire"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"							"1000 1200 1400 1600 1800"
+		"AbilityCastPoint"							"0.55"
+		"AbilityCooldown"							"90"
+		"AbilityManaCost"							"500 750 1000 1250 1500"
+
+		"RequiredLevel"								"10"
+		"MaxLevel"									"5"
+		"LevelsBetweenUpgrades"						"10"
+
+		"HasScepterUpgrade"							"1"
+
+		"AbilitySpecial"
+		{
+			"02"
+			{
+				"var_type"                          "FIELD_INTEGER"
+				"macropyre_duration"                "10 15 15 20 25"
+			}
+			"03"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"casts_delay"						"0.3"
+			}
+			"04"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"damage_interval"					"0.5"
+			}
+			"05"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"macropyre_width"					"350 375 400 425 450"
+			}
+			"06"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"damage_per_sec"					"100 250 500 750 1000"
+			}
+			"07"
+			{
+				"var_type"							"FIELD_FLOAT"
+				"stun_duration"						"0.25"
+			}
+		}
+		"AbilityCastAnimation"						"ACT_DOTA_CAST_ABILITY_4"
+	}
+
+	"jakiro_freezing_ray"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/hero_jakiro/freezing_ray.lua"
+		"AbilityTextureName"						"jakiro/freezing_ray"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"						"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"						"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"						"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"							"SPELL_IMMUNITY_ENEMIES_NO"
+
+		"AbilityCastRange"							"1200"
+		"AbilityCastPoint"							"0"
+		"AbilityCooldown"							"60"
+		"AbilityManaCost"							"1000"
+
+		"RequiredLevel"								"75"
+		"MaxLevel"									"1"
+		
+		"HasScepterUpgrade"							"1"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"beam_duration"                     "6" //лучше не менять т.к. звук на 6 сек расчитан
+			}
+			"02"
+			{
+				"var_type"                          "FIELD_FLOAT"
+				"tick_interval"                     "0.25"
+			}
+			"03"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"beam_range"						"1200"
+			}
+			"04"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"hp_spend_pct"						"5"
+			}
+			"05"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"beam_width"						"130"
+			}
+			"06"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"debuff_duration"					"6"
+			}
+			"07"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"damage"							"2000"
+			}
+			"08"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"damage_to_heal_pct"				"50"
+			}
+			"09"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"movespeed_reduction_per_stack_pct"		"2"
+			}
+			"10"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"stack_for_freeze"					"20"
+			}
+			"11"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"turn_rate_slow_pct"				"120"
+			}
+			"12"
+			{
+				"var_type"							"FIELD_INTEGER"
+				"frozen_damage_amp"					"50"
+			}
+		}
+	}
+
+	"jakiro_freezing_ray_stop"
+	{
+		"BaseClass"									"ability_lua"
+		"ScriptFile"								"heroes/hero_jakiro/freezing_ray.lua"
+		"AbilityTextureName"						"jakiro/freezing_ray_stop"
+		"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+
+		"MaxLevel"									"1"
+	}	
 	"roshdef_roshan_slam"
 	{
 		// General

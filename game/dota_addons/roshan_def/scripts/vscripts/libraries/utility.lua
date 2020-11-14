@@ -780,7 +780,7 @@ function CDOTABaseAbility:HasBehavior(behavior)
 end
 
 function CDOTABaseAbility:IsHasBehavior(behavior)
-	return bit.band(self:GetBehavior(), behavior) == behavior
+	return bit.band(self:GetBehaviorInt(), behavior) == behavior
 end
 
 function CDOTABaseAbility:IsInnateAbility()

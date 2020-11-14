@@ -59,6 +59,13 @@ function MegaModeRoshlingThink()
     else
         searchRadius = npc.fMaxDist
     end
+    
+    local fDist = ( npc:GetOrigin() - npc.vInitialSpawnPos ):Length2D()
+    if fDist > search_radius then
+        RetreatHome()           -- если юнит слишком далеко, то идет на точку спавна
+        return 3
+    end
+
     local enemies = FindUnitsInRadius(
             npc:GetTeamNumber(), --команда юнита
             npc:GetAbsOrigin(), --местоположение юнита
@@ -131,4 +138,14 @@ function AttackMove(unit, enemy)
     })
 
     return 1
+end
+
+function RetreatHome()
+    thisEntity.agro = false -- снимается действие агра
+
+    ExecuteOrderFromTable({
+        UnitIndex = thisEntity:entindex(),
+        OrderType = DOTA_UNIT_ORDER_MOVE_TO_POSITION,
+        Position = thisEntity.vInitialSpawnPos      
+    })
 end

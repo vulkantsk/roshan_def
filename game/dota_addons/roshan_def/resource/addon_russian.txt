@@ -458,8 +458,7 @@
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_Description"						"Jakiro собирает всю силу двух своих атрибутов, выпуская дорожку обжигающего пламени и вечного льда, нанося урон в секунду и оглушая врагов на %stun_duration% секунд каждую секунду попавших под действие скила. После выхода из пламени враги все еще получают 50% урона от скила в течении 5 секунд."
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_duration"					"ДЛИТЕЛЬНОСТЬ"
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_width"					"ШИРИНА"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_damage_per_sec"				"УРОН В СЕКУНДУ"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_aghanim_description"					"Изменяет урон заклинания на <font color='#FFD700'>чистый</font>."
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_damage_per_sec"				"УРОН В СЕКУНДУ"
 
 
 		"DOTA_Tooltip_ability_holdout_storm_bolt"									"Storm Hammer"
@@ -643,7 +642,7 @@
 		"DOTA_Tooltip_modifier_arc_warden_tempest_double_Description"	"Копия Meepo может использовать все предметы и способности !"
 
 //Centaur
-		"npc_dota_hero_centaur"	"Centaur"
+		"npc_dota_hero_centaur"	"Centaur(IMBA)"
 		"DOTA_Tooltip_ability_inherit_centaur_buff"									"Centaur buff"
 		"DOTA_Tooltip_ability_inherit_centaur_buff_Description"						"Являясь лучшим воином королевства кентавров, этот воин способен воодушевить любого собрата для победы над любым, даже невероятным врагом! "
 		"DOTA_Tooltip_ability_inherit_centaur_buff_dmg_bonus"						"%Бонусная атака :"
@@ -1087,7 +1086,7 @@
 
 //Renegade
 
-		"npc_dota_hero_life_stealer"			"Отступник(IMBA)"
+		"npc_dota_hero_life_stealer"			"Отступник"
 		"npc_dota_hero_life_stealer_bio"		"Отступник - амбициозный крип решивший предать Dire и присоединиться к Рошану ради безграничной силы !"
 
 		"DOTA_Tooltip_ability_renegade_backtrack"									"Backtrack"

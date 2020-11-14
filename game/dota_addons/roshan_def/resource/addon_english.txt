@@ -400,8 +400,7 @@
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_Description"						"Jakiro gathers the full power of his two attributes, releasing a path of searing flame and eternal ice, dealing damage per second and stunning enemies for% stun_duration% seconds every second hit by the skill. After exiting the flames, enemies still take 50% damage from the skill for 5 seconds."
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_duration"					"DURATION"
 		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_width"					"WIDTH"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_macropyre_damage_per_sec"				"DAMAGE PER SECOND"
-		"DOTA_Tooltip_ability_jakiro_ice_and_fire_aghanim_description"					"Changes the damage of a spell to <font color='#FFD700'>pure</font>."
+		"DOTA_Tooltip_ability_jakiro_ice_and_fire_damage_per_sec"				"DAMAGE PER SECOND:"
 
 
 //Wyvern
@@ -595,7 +594,7 @@
 		"DOTA_Tooltip_modifier_arc_warden_tempest_double_Description"	"A complete clone of Meepo that can use spells and items ."
 
 //Centaur
-		"npc_dota_hero_centaur"	"Centaur"
+		"npc_dota_hero_centaur"	"Centaur(IMBA)"
 		"DOTA_Tooltip_ability_inherit_centaur_buff"									"Centaur buff"
 		"DOTA_Tooltip_ability_inherit_centaur_buff_Description"						"The mightiest Centaur to ever walk this world. His presence and glory inspires all Centaurs on the field of battle!"
 		"DOTA_Tooltip_ability_inherit_centaur_buff_dmg_bonus"						"%DMG BONUS :"
@@ -1024,7 +1023,7 @@
 
 //Renegade
 
-		"npc_dota_hero_life_stealer"			"Renegade(IMBA)"
+		"npc_dota_hero_life_stealer"			"Renegade"
 		"npc_dota_hero_life_stealer_bio"		"Renegade - an ambitious creep who decided to betray Dire and join Roshan in search of unlimited power!"
 
 		"DOTA_Tooltip_ability_renegade_backtrack"									"Backtrack"
@@ -3259,6 +3258,11 @@
  		"DOTA_Tooltip_ability_"							"name"
 		"DOTA_Tooltip_ability__Description"				"description"
 		"DOTA_Tooltip_ability__"				""
+
+ 		"DOTA_Tooltip_ability_roshdef_roshling_defense_aura"							"Defense aura"
+		"DOTA_Tooltip_ability_roshdef_roshling_defense_aura_Description"				"Give bonus armor"
+		"DOTA_Tooltip_modifier_roshdef_roshling_defense_aura_buff"							"Defense aura"
+		"DOTA_Tooltip_modifier_roshdef_roshling_defense_aura_buff_Description"				"Give bonus armor"
 
  		"DOTA_Tooltip_ability_brotherhood_vampirism_aura"							"Vampirism aura"
 		"DOTA_Tooltip_ability_brotherhood_vampirism_aura_Description"				"Vampirism aura"

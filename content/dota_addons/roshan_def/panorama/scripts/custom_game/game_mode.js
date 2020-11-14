@@ -71,7 +71,11 @@ function ConfirmVote()
 
 function DifficultVoteUpdate(data)
 {
-	$.Msg(data);
+	//$.Msg(data);
+	for (var i = 0; i < 4; i++)
+	{
+		$('#ConfirmOptionsBtn'+i).GetChild(1).text = 0;
+	}
 	for ( var i in data ) {
 		$('#ConfirmOptionsBtn'+data[i]).GetChild(1).text = Number.parseInt($('#ConfirmOptionsBtn'+data[i]).GetChild(1).text) + 1
 	}
