@@ -146,7 +146,7 @@ function modifier_templar_assassin_meld_custom_debuff:OnRemoved()
 end
 
 function modifier_templar_assassin_meld_custom_debuff:GetEffectName()
-    return "particles/units/heroes/hero_templar_assassin/templar_meld_overhead.vpcf"
+    return "particles/econ/items/templar_assassin/templar_assassin_focal/templar_meld_focal_overhead.vpcf"
 end
 
 function modifier_templar_assassin_meld_custom_debuff:GetEffectAttachType()

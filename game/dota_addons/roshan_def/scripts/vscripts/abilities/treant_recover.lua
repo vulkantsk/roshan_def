@@ -12,7 +12,7 @@ modifier_treant_recover_passive = class({
 	IsBuff = function() return true end,
 	RemoveOnDeath = function() return false end,
 	CheckState = function() return {
-		[MODIFIER_STATE_ALLOW_PATHING_TROUGH_TREES] = true
+		[MODIFIER_STATE_ALLOW_PATHING_THROUGH_TREES] = true
 	} end,
 	DeclareFunctions = function() return {
 		MODIFIER_PROPERTY_MIN_HEALTH,

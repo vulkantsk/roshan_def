@@ -307,7 +307,7 @@
 "DOTA_Tooltip_modifier_troll_warlord_battle_trance_Description"	"Скорость атаки увеличена на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
 
 //Huskar
-		"npc_dota_hero_huskar"	"Хускар"
+		"npc_dota_hero_huskar"	"Хускар(IMBA)"
 		"DOTA_Tooltip_ability_inherit_huskar_buff"									"Huskar buff"
 		"DOTA_Tooltip_ability_inherit_huskar_buff_Description"						"Неназванный король троллей, умелый правитель, который одним своим видом воодушевляет своих подданных на величайшие жертвы, которые вносят огромный вклад в победу! "
 		"DOTA_Tooltip_ability_inherit_huskar_buff_dmg_bonus"						"Бонусный урон :"
@@ -642,7 +642,7 @@
 		"DOTA_Tooltip_modifier_arc_warden_tempest_double_Description"	"Копия Meepo может использовать все предметы и способности !"
 
 //Centaur
-		"npc_dota_hero_centaur"	"Centaur(IMBA)"
+		"npc_dota_hero_centaur"	"Centaur"
 		"DOTA_Tooltip_ability_inherit_centaur_buff"									"Centaur buff"
 		"DOTA_Tooltip_ability_inherit_centaur_buff_Description"						"Являясь лучшим воином королевства кентавров, этот воин способен воодушевить любого собрата для победы над любым, даже невероятным врагом! "
 		"DOTA_Tooltip_ability_inherit_centaur_buff_dmg_bonus"						"%Бонусная атака :"
@@ -3261,6 +3261,48 @@
 		"DOTA_Tooltip_ability_bloodseeker_bloodthirst_movespeed_bonus"			"БОНУС СКОРОСТИ ПЕРЕДВИЖЕНИЯ:"
 		"DOTA_Tooltip_modifier_bloodseeker_bloodthirst"							"Blood thrirst"
 		"DOTA_Tooltip_modifier_bloodseeker_bloodthirst_Description"				"Жажда крови заставляет двигаться!"
+//Hoodwink
+		"npc_dota_hero_hoodwink"		"Прохвостка"
+ 
+
+ 		"DOTA_Tooltip_ability_hoodwink_hunter_skill"					"Hunter skill"
+		"DOTA_Tooltip_ability_hoodwink_hunter_skill_Description"		"Имеет шанс нанести критический удар !"
+		"DOTA_Tooltip_ability_hoodwink_hunter_skill_crit_chance"		"%ШАНС СРАБАТЫВАНИЯ:"
+		"DOTA_Tooltip_ability_hoodwink_hunter_skill_crit_mult"			"%МНОЖИТЕЛЬ КРИТА:"
+
+ 		"DOTA_Tooltip_ability_hoodwink_acorn_shoot_custom"							"Acorn barrage"
+		"DOTA_Tooltip_ability_hoodwink_acorn_shoot_custom_Description"				"Стреляет желудем, который отскакивает во всех врагов вокруг!"
+		"DOTA_Tooltip_ability_hoodwink_acorn_shoot_custom_radius"			"РАДИУС:"
+		"DOTA_Tooltip_ability_hoodwink_acorn_shoot_custom_reveal_duration"				"ДЛИТЕЛЬНОСТЬ РАСКРЫТИЯ:"
+
+ 		"DOTA_Tooltip_ability_hoodwink_inner_fire"							"Inner fire"
+		"DOTA_Tooltip_ability_hoodwink_inner_fire_Description"				"Увеличивает собственный урон и скорость атаки."
+		"DOTA_Tooltip_ability_hoodwink_inner_fire_duration"				"ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_hoodwink_inner_fire_bonus_dmg"			"БОНУС УРОНА:"
+		"DOTA_Tooltip_ability_hoodwink_inner_fire_bonus_as"				"БОНУС СКОРОСТИ АТАКИ:"
+ 		"DOTA_Tooltip_modifier_hoodwink_inner_fire"						"Inner fire"
+		"DOTA_Tooltip_modifier_hoodwink_inner_fire_Description"				"Урон и скорость атаки увеличены !"
+
+		"DOTA_Tooltip_ability_hoodwink_scurry_custom"							"Scurry"
+		"DOTA_Tooltip_ability_hoodwink_scurry_custom_Description"				"Герой имеет шанс избежать физических атак, находясь рядом с деревьями. При активации эта способность ускоряет передвижение и позволяет проходить сквозь существ и деревья."
+		"DOTA_Tooltip_ability_hoodwink_scurry_custom_Lore"						"В роще Томо'кан нет ни норки, ни веточки, куда не дотянулись бы лапки Прохвостки."
+		"DOTA_Tooltip_ability_hoodwink_scurry_custom_movement_speed_pct"		"%ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:"
+		"DOTA_Tooltip_ability_hoodwink_scurry_custom_duration"					"ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:"
+		"DOTA_Tooltip_ability_hoodwink_scurry_custom_evasion"					"%УКЛОНЕНИЕ:"
+		"DOTA_Tooltip_ability_hoodwink_scurry_custom_radius"					"РАДИУС ДЛЯ УКЛОНЕНИЯ:"
+
+ 		"DOTA_Tooltip_ability_hoodwink_sharp_shoot"							"Sharp shoot"
+		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_Description"				"Запускает смертоносный заряд, который уничтожаёт всё на своём пути!"
+		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_base_dmg"				"БАЗОВЫЙ УРОН:"
+		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_damage_pct"				"%УРОН ОТ АТАКИ:"
+		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_stun_duration"			"ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:"
+
+ 		"DOTA_Tooltip_ability_hoodwink_armor_destroy"							"Armor destroy"
+		"DOTA_Tooltip_ability_hoodwink_armor_destroy_Description"				"Каждая атака уничтожает часть брони врага !"
+		"DOTA_Tooltip_ability_hoodwink_armor_destroy_debuff_duration"			"ДЛИТЕЛЬНОСТЬ:"
+ 		"DOTA_Tooltip_ability_hoodwink_armor_destroy_armor_decrease"			"СНИЖЕНИЕ БРОНИ:"
+ 		"DOTA_Tooltip_modifier_hoodwink_armor_destroy_debuff"							"Armor destroy"
+		"DOTA_Tooltip_modifier_hoodwink_armor_destroy_debuff_Description"				"Броня снижена"
 //Hero
 		"npc_dota_hero_"		"hero"
 

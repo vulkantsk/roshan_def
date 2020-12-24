@@ -21409,7 +21409,7 @@
 		//
 		"BaseClass"				"npc_dota_creature"
 
-		"Model"						"models/heroes/life_stealer/life_stealer"
+		"Model"						"models/heroes/life_stealer/life_stealer.vmdl"
 		"SoundSet"				"Hero_LifeStealer"					// Name of sound set.
 		"ModelScale" 				"1.1"
 		"IsAncient"					"1"
@@ -23598,7 +23598,7 @@
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"					"npc_dota_creep"
-		"Model"						"models/creeps/item_creeps/i_creep_necro_warrior/necro_warrior.mdl"
+		"Model"						"models/creeps/item_creeps/i_creep_necro_warrior/necro_warrior.vmdl"
 		"SoundSet"					"Creep_Good_Melee"
 		"Level"						"5"
 		"ModelScale"				"0.6"
@@ -23680,7 +23680,7 @@
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"					"npc_dota_creep"
-		"Model"						"models/creeps/item_creeps/i_creep_necro_warrior/necro_warrior.mdl"
+		"Model"						"models/creeps/item_creeps/i_creep_necro_warrior/necro_warrior.vmdl"
 		"SoundSet"					"Creep_Good_Melee"
 		"Level"						"5"
 		"ModelScale"				"0.65"
@@ -23762,7 +23762,7 @@
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"					"npc_dota_creep"
-		"Model"						"models/creeps/item_creeps/i_creep_necro_warrior/necro_warrior.mdl"
+		"Model"						"models/creeps/item_creeps/i_creep_necro_warrior/necro_warrior.vmdl"
 		"SoundSet"					"Creep_Good_Melee"
 		"Level"						"5"
 		"ModelScale"				"0.7"
@@ -23845,7 +23845,7 @@
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"					"npc_dota_creep"
-		"Model"						"models/creeps/item_creeps/i_creep_necro_warrior/necro_warrior.mdl"
+		"Model"						"models/creeps/item_creeps/i_creep_necro_warrior/necro_warrior.vmdl"
 		"SoundSet"					"n_creep_Melee"
 		"Level"						"5"
 		"ModelScale"				"0.75"
@@ -23930,7 +23930,7 @@
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"					"npc_dota_creep"
-		"Model"						"models/creeps/item_creeps/i_creep_necro_warrior/necro_warrior.mdl"
+		"Model"						"models/creeps/item_creeps/i_creep_necro_warrior/necro_warrior.vmdl"
 		"SoundSet"					"n_creep_Melee"
 		"Level"						"5"
 		"ModelScale"				"0.8"
@@ -24016,7 +24016,7 @@
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"					"npc_dota_creep"
-		"Model"						"models/creeps/item_creeps/i_creep_necro_archer/necro_archer.mdl"
+		"Model"						"models/creeps/item_creeps/i_creep_necro_archer/necro_archer.vmdl"
 		"SoundSet"					"n_creep_Ranged"
 		"Level"						"5"
 		"ModelScale"				"0.6"
@@ -24096,7 +24096,7 @@
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"					"npc_dota_creep"
-		"Model"						"models/creeps/item_creeps/i_creep_necro_archer/necro_archer.mdl"
+		"Model"						"models/creeps/item_creeps/i_creep_necro_archer/necro_archer.vmdl"
 		"SoundSet"					"n_creep_Ranged"
 		"Level"						"5"
 		"ModelScale"				"0.65"
@@ -24177,7 +24177,7 @@
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"					"npc_dota_creep"
-		"Model"						"models/creeps/item_creeps/i_creep_necro_archer/necro_archer.mdl"
+		"Model"						"models/creeps/item_creeps/i_creep_necro_archer/necro_archer.vmdl"
 		"SoundSet"					"n_creep_Ranged"
 		"Level"						"5"
 		"ModelScale"				"0.7"
@@ -24259,7 +24259,7 @@
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"					"npc_dota_creep"
-		"Model"						"models/creeps/item_creeps/i_creep_necro_archer/necro_archer.mdl"
+		"Model"						"models/creeps/item_creeps/i_creep_necro_archer/necro_archer.vmdl"
 		"SoundSet"					"n_creep_Ranged"
 		"Level"						"5"
 		"ModelScale"				"0.75"
@@ -24342,7 +24342,7 @@
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"					"npc_dota_creep"
-		"Model"						"models/creeps/item_creeps/i_creep_necro_archer/necro_archer.mdl"
+		"Model"						"models/creeps/item_creeps/i_creep_necro_archer/necro_archer.vmdl"
 		"SoundSet"					"n_creep_Ranged"
 		"Level"						"5"
 		"ModelScale"				"0.8"
@@ -24881,7 +24881,7 @@
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"					"npc_dota_creature"
-		"Model"						"models/creeps/item_creeps/i_creep_necro_warrior/necro_warrior.mdl"
+		"Model"						"models/creeps/item_creeps/i_creep_necro_warrior/necro_warrior.vmdl"
 		"SoundSet"					"n_creep_Melee"
 		"Level"						"30"
 		"ModelScale"				"1.2"
@@ -24989,7 +24989,7 @@
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"					"npc_dota_creature"
-		"Model"						"models/creeps/item_creeps/i_creep_necro_archer/necro_archer.mdl"
+		"Model"						"models/creeps/item_creeps/i_creep_necro_archer/necro_archer.vmdl"
 		"SoundSet"					"n_creep_Ranged"
 		"Level"						"30"
 		"ModelScale"				"1.2"
@@ -25225,7 +25225,7 @@
 		// General
 		//
 		"BaseClass"					"npc_dota_creature"
-		"Model"						"models/heroes/doom/doom.mdl"
+		"Model"						"models/heroes/doom/doom.vmdl"
 		"SoundSet"					"Creep_Bad_Melee_Mega"					// Name of sound set.
 		"ModelScale"				"1.5"
 		"Level"						"50"
@@ -25388,7 +25388,7 @@
 		// General
 		//
 		"BaseClass"					"npc_dota_creature"
-		"Model"						"models/heroes/doom/doom.mdl"
+		"Model"						"models/heroes/doom/doom.vmdl"
 		"SoundSet"					"Creep_Bad_Melee_Mega"					// Name of sound set.
 		"ModelScale"				"0.75"
 		"Level"						"50"
@@ -27852,7 +27852,7 @@
 		// General
 		//
 		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/warlock/warlock.mdl"
+		"Model"						"models/heroes/warlock/warlock.vmdl"
 		"SoundSet"		"Hero_Warlock"				// Name of sound set.
 		"ModelScale"				"1.25"								// old 1.0
 		"Level"					"	1"
@@ -27966,7 +27966,7 @@
 		// General
 		//
 		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/warlock/warlock.mdl"
+		"Model"						"models/heroes/warlock/warlock.vmdl"
 		"SoundSet"		"Hero_Warlock"				// Name of sound set.
 		"ModelScale"				"1.5"								// old 1.0
 		"Level"						"2"
@@ -28082,7 +28082,7 @@
 		// General
 		//
 		"BaseClass"				"npc_dota_creature"
-		"Model"						"models/heroes/warlock/warlock.mdl"
+		"Model"						"models/heroes/warlock/warlock.vmdl"
 		"SoundSet"		"Hero_Warlock"				// Name of sound set.
 		"ModelScale"				"1.75"								// old 1.0
 		"Level"						"3"
@@ -31198,7 +31198,7 @@
 		// General
 		//
 		"BaseClass"				"npc_dota_creature"
-		"Model"		"models/heroes/lich/lich"
+		"Model"		"models/heroes/lich/lich.vmdl"
 		"SoundSet"		"Hero_Lich"				// Name of sound set.
 		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_terrorblade.vsndevts"
 		"ModelScale"				"1.86"								// old 1.0
@@ -31904,7 +31904,7 @@
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"					"npc_dota_creature"
-		"Model"						"models/creeps/item_creeps/i_creep_necro_warrior/necro_warrior.mdl"
+		"Model"						"models/creeps/item_creeps/i_creep_necro_warrior/necro_warrior.vmdl"
 		"SoundSet"					"n_creep_Melee"
 		"Level"						"30"
 		"ModelScale"				"1.2"
@@ -31992,7 +31992,7 @@
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"					"npc_dota_creature"
-		"Model"						"models/creeps/item_creeps/i_creep_necro_archer/necro_archer.mdl"
+		"Model"						"models/creeps/item_creeps/i_creep_necro_archer/necro_archer.vmdl"
 		"SoundSet"					"n_creep_Ranged"
 		"Level"						"30"
 		"ModelScale"				"1.2"

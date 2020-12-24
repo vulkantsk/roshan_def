@@ -1,27 +1,24 @@
-LinkLuaModifier("modifier_sven_shockwave_debuff", "heroes/hero_sven/shockwave", LUA_MODIFIER_MOTION_NONE)
+hoodwink_sharp_shoot = class({})
 
-sven_shockwave = class({})
-
-function sven_shockwave:GetCastRange()
+function hoodwink_sharp_shoot:GetCastRange()
 	return self:GetSpecialValueFor("wave_distance")
 end
 
-function sven_shockwave:GetAbilityTextureName()
+function hoodwink_sharp_shoot:OnSpellStart()
 	local caster = self:GetCaster()
-	if caster:HasModifier("modifier_sven_god_strength") or caster:HasModifier("modifier_sven_powerup") then
-		return "sven/shockwave_red"
-	else
-		return "sven/shockwave_blue"
-	end
-end
-function sven_shockwave:OnSpellStart()
-	local caster = self:GetCaster()
+   	
+   	local index = RandomInt(1, 20)
+    if index < 10 then
+        index = "0"..index
+    end
+    caster:EmitSound("hoodwink_hoodwink_arb_hit_"..index)
+    caster:EmitSound("Hero_Hoodwink.Sharpshooter.Projectile")
+
    	local vDirection = (self:GetCursorPosition() - caster:GetOrigin() + caster:GetForwardVector()):Normalized()
 	
-    local particle = "particles/units/heroes/hero_magnataur/magnataur_shockwave.vpcf"
-	if caster:HasModifier("modifier_sven_god_strength") or caster:HasModifier("modifier_sven_powerup") then
-		particle = "particles/econ/items/magnataur/shock_of_the_anvil/magnataur_shockanvil.vpcf"
-	end
+    local particle = "particles/units/heroes/hero_hoodwink/hoodwink_sharpshooter_projectile.vpcf"
+
+
     ProjectileManager:CreateLinearProjectile({
       EffectName = particle,
       Ability = self,
@@ -38,42 +35,23 @@ function sven_shockwave:OnSpellStart()
       iVisionTeamNumber = self:GetCaster():GetTeamNumber(),
       iVisionRadius = self:GetSpecialValueFor("wave_width_end"),
     })
-    EmitSoundOn("Hero_Sven.StormBolt", self:GetCaster())
 	
     local base_dmg = self:GetSpecialValueFor("base_dmg")
     local damage_pct = self:GetSpecialValueFor("damage_pct")/100
   	self.wave_damage = base_dmg + caster:GetAverageTrueAttackDamage(caster)*damage_pct 
-	caster:RemoveModifierByName("modifier_sven_powerup")
-
 end
 
-function sven_shockwave:OnProjectileHit( hTarget, vLocation )
+function hoodwink_sharp_shoot:OnProjectileHit( hTarget, vLocation )
 	if hTarget ~= nil then
 		local caster = self:GetCaster()
 		local stun_duration = self:GetSpecialValueFor("stun_duration")
 		local debuff_duration = self:GetSpecialValueFor("debuff_duration")
 
-		EmitSoundOn("Hero_Sven.StormBoltImpact", hTarget)		
+--		EmitSoundOn("Hero_hoodwink.StormBoltImpact", hTarget)		
 		PopupCriticalDamage(hTarget, self.wave_damage)
 		DealDamage(caster, hTarget, self.wave_damage, self:GetAbilityDamageType(), DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION, self)
 		hTarget:AddNewModifier(self:GetCaster(), self, "modifier_stunned", {duration = stun_duration})
-		hTarget:AddNewModifier(self:GetCaster(), self, "modifier_sven_shockwave_debuff", {duration = debuff_duration})
 	end
 end
 
-modifier_sven_shockwave_debuff = class({
-	IsHidden 				= function(self) return false end,
-	IsPurgable 				= function(self) return false end,
-	IsDebuff 				= function(self) return true end,
-	IsBuff                  = function(self) return false end,
-	RemoveOnDeath 			= function(self) return true end,
-	DeclareFunctions		= function(self) return 
-		{
-		MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
-		} end,
-})
-
-function modifier_sven_shockwave_debuff:GetModifierPhysicalArmorBonus()
-	return self:GetAbility():GetSpecialValueFor("armor_debuff")*(-1)
-end
 

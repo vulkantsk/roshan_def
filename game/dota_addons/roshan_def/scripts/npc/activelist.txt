@@ -38,6 +38,7 @@
 	"npc_dota_hero_keeper_of_the_light"		"1"
 	"npc_dota_hero_shadow_shaman"		"1"
 	"npc_dota_hero_snapfire"		"1"
+	"npc_dota_hero_hoodwink"		"1"
 //	"npc_dota_hero_tidehunter"		"0"	//test
 //	"npc_dota_hero_obsidian_destroyer"	"0"	//test
 //	"npc_dota_hero_drow_ranger"		"0"	//special hero			

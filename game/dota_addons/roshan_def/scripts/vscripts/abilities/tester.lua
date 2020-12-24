@@ -7,7 +7,7 @@ end
 ability_test_2 = class({})
 
 function ability_test_2:OnSpellStart()
-	EmitGlobalSound("town_road_2")
+	EmitGlobalSound("gachi_fisting_300")
 end
 
 ability_test_3 = class({})

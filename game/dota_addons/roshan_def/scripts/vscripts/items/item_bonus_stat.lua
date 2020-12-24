@@ -18,7 +18,7 @@ function StrengthTomeUsed( event )
     else
         picker:SetModifierStackCount("tome_strenght_modifier", picker, (picker:GetModifierStackCount("tome_strenght_modifier", picker) + statBonus))
     end
-	picker:CalculateStatBonus()
+	picker:CalculateStatBonus(true)
 end
 
 function AgilityTomeUsed( event )   
@@ -41,7 +41,7 @@ function AgilityTomeUsed( event )
     else
         picker:SetModifierStackCount("tome_agility_modifier", picker, (picker:GetModifierStackCount("tome_agility_modifier", picker) + statBonus))
     end
-	picker:CalculateStatBonus()
+	picker:CalculateStatBonus(true)
 end
 
 function IntellectTomeUsed( event )
@@ -63,7 +63,7 @@ function IntellectTomeUsed( event )
     else
         picker:SetModifierStackCount("tome_intelect_modifier", picker, (picker:GetModifierStackCount("tome_intelect_modifier", picker) + statBonus))
     end
-	picker:CalculateStatBonus()
+	picker:CalculateStatBonus(true)
 end
 ---------------------------------------------------------------
 ---------------------------------------------------------------

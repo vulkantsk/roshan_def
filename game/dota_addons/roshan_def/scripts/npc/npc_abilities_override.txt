@@ -189,8 +189,8 @@
 	//"item_skadi"							"REMOVE"
 	"item_recipe_sange"						"REMOVE"
 	"item_sange"							"REMOVE"
-	//"item_recipe_helm_of_the_dominator"	"REMOVE"
-	//"item_helm_of_the_dominator"			"REMOVE"
+	"item_recipe_helm_of_the_dominator"	"REMOVE"
+	"item_helm_of_the_dominator"			"REMOVE"
 	"item_recipe_maelstrom"					"REMOVE"
 	"item_maelstrom"						"REMOVE"
 //	"item_recipe_desolator"					"REMOVE"
@@ -345,6 +345,8 @@
 //	"item_imba_spell_fencer"					"REMOVE"
 	"item_imba_recipe_radiance"					"REMOVE"
 	"item_imba_radiance"							"REMOVE"
+	"item_recipe_helm_of_the_dominator_2"					"REMOVE"
+	"item_helm_of_the_dominator_2"							"REMOVE"
 
 	
 ///////////////////////////

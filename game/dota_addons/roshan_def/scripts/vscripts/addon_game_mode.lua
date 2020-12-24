@@ -247,7 +247,7 @@ function GameMode:AnitGameMode()
 	PlayerResource:SetCustomBuybackCost(0,1000)
 --[[
 	local GM = GameRules:GetGameModeEntity()
-	GM:SetCustomGameForceHero("npc_dota_hero_lone_druid")
+	GM:SetCustomGameForceHero("npc_dota_hero_hoodwink")
 	GameRules:SetHeroSelectionTime(0)
 	GameRules:SetStrategyTime(0)
 	GameRules:SetShowcaseTime(0)

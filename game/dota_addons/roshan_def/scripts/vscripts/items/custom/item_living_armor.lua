@@ -26,7 +26,7 @@ modifier_item_living_armor = class({
 	RemoveOnDeath 			= function(self) return false end,
     CheckState      = function(self) return 
         {
-            [MODIFIER_STATE_ALLOW_PATHING_TROUGH_TREES] = true,
+            [MODIFIER_STATE_ALLOW_PATHING_THROUGH_TREES] = true,
         }end,          
 	DeclareFunctions		= function(self) return 
 		{MODIFIER_PROPERTY_HEALTH_BONUS,

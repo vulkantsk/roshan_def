@@ -187,6 +187,9 @@ function modifier_witch_doctor_music:OnCreated(keys)
 	self.music_name = keys.music_name
 
 	EmitSoundOn(self.music_name, caster)
+--	print("music = "..self.music_name)
+
+	self:StartIntervalThink(2)
 end
 
 function modifier_witch_doctor_music:OnDestroy()
@@ -203,3 +206,11 @@ function modifier_witch_doctor_music:OnDestroy()
 	end
 end
 
+function modifier_witch_doctor_music:OnIntervalThink()
+	local parent = self:GetParent()
+	
+	local effect = "particles/econ/events/ti9/ti9_drums_musicnotes.vpcf"
+	local pfx = ParticleManager:CreateParticle(effect, PATTACH_POINT_FOLLOW, parent)
+	ParticleManager:SetParticleControlEnt(pfx, 0, parent, PATTACH_POINT_FOLLOW, "attach_hitloc", parent:GetAbsOrigin(), true)
+	ParticleManager:ReleaseParticleIndex(pfx)	
+end

@@ -1092,8 +1092,8 @@
 		"Ability1"					"ogre_magi_fireblast_new"
 		"Ability2"					"ogre_magi_ignite_new"
 		"Ability3"					"ogre_magi_flamebreak"
-		"Ability4"					"ogre_magi_greed"
-		"Ability5"					"ogre_magi_jackpot"
+		"Ability4"					"ogre_magi_jackpot"
+		"Ability5"					"ogre_magi_greed"
 		"Ability6"					"ogre_magi_multicast_new"
 		"Ability7"					"inherit_ogre_buff"
 		"Ability10"					"special_bonus_exp_boost_30"
@@ -2117,6 +2117,70 @@
 		"VisionNighttimeRange"		"1000"
 		"VisionDaytimeRange"		"1500"
 	}
+	"npc_dota_hero_hoodwink"
+	{
+		"override_hero"				"npc_dota_hero_hoodwink"
+
+		"Ability1"		"hoodwink_acorn_shoot_custom"
+		"Ability2"		"hoodwink_inner_fire"
+		"Ability3"		"hoodwink_scurry_custom"
+		"Ability4"		"hoodwink_hunter_skill"
+		"Ability5"		"hoodwink_armor_destroy"
+		"Ability6"		"hoodwink_sharp_shoot"
+		"Ability7"					"generic_hidden"
+		"Ability8"					"generic_hidden"
+		"Ability10"		"special_bonus_exp_boost_20"
+		"Ability11"		"special_bonus_movement_speed_35"
+		"Ability12"		"special_bonus_attack_speed_30"
+		"Ability13"		"special_bonus_attack_damage_30"
+		"Ability14"		"special_bonus_all_stats_10"
+		"Ability15"		"special_bonus_agility_25"
+		"Ability16"		"special_bonus_all_stats_15"
+		"Ability17"		"special_bonus_agility_40"
+
+
+				// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackDamageMin"			"10"										// Damage range min.
+		"AttackDamageMax"			"15"										// Damage range max.
+		"AttackRate"				"1.5"									// Speed of attack.
+		"ProjectileSpeed"			"1550"									// Speed of projectile.
+		"AttackAnimationPoint"		"0.2"
+
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"0"									// Physical protection.
+		"MagicalResistance"			"20"									// Magical protection (percentage).
+
+
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"10"										// Base strength
+		"AttributeStrengthGain"		"1.5"										// Strength bonus per level.
+		"AttributeBaseIntelligence"	"15"										// Base intelligence
+		"AttributeIntelligenceGain"	"2.5"										// Intelligence bonus per level.
+		"AttributeBaseAgility"		"25"										// Base agility
+		"AttributeAgilityGain"		"4"										// Agility bonus per level.
+
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"325"									// Speed.
+		"MovementTurnRate"			"0.5"									// Turning rate.
+
+		// Status
+		//-------------------------------------------------------------------------------------------------------------
+		"StatusHealth"				"300"									// Base health.
+		"StatusHealthRegen"			"1.5"									// Health regeneration rate.
+		"StatusMana"				"100"											// Base mana.
+		"StatusManaRegen"			"1"									// Mana regeneration rate.
+
+
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
+	}
 
 	"npc_dota_hero_morphling"
 	{
@@ -2788,14 +2852,14 @@
 		"Ability6"		"epic_tower_upgrade_epic"
 		"Ability7"		"epic_tower_construct_movement"
 		"Ability8"		"generic_hidden"
-		"Ability10"		"special_bonus_exp_boost_10"
-		"Ability11"		"special_bonus_gold_income_60"
-		"Ability12"		"special_bonus_exp_boost_15"
-		"Ability13"		"special_bonus_gold_income_120"
-		"Ability14"		"special_bonus_exp_boost_20"
-		"Ability15"		"special_bonus_gold_income_180"
-		"Ability16"		"special_bonus_exp_boost_25"
-		"Ability17"		"special_bonus_gold_income_240"
+		"Ability11"		"special_bonus_exp_boost_10"
+		"Ability12"		"special_bonus_gold_income_60"
+		"Ability13"		"special_bonus_exp_boost_15"
+		"Ability14"		"special_bonus_gold_income_120"
+		"Ability15"		"special_bonus_exp_boost_20"
+		"Ability16"		"special_bonus_gold_income_180"
+		"Ability17"		"special_bonus_exp_boost_25"
+		"Ability18"		"special_bonus_gold_income_240"
 
 				// Attack
 		//-------------------------------------------------------------------------------------------------------------

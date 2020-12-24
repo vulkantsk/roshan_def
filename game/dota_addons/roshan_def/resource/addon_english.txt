@@ -266,7 +266,7 @@
 		"DOTA_Tooltip_ability_troll_warlord_battle_trance_mass_radius"			"RADIUS:"
 
 //Huskar
-		"npc_dota_hero_huskar"	"Huskar"
+		"npc_dota_hero_huskar"	"Huskar(IMBA)"
 
 		"DOTA_Tooltip_ability_inherit_huskar_buff"									"Huskar buff"
 		"DOTA_Tooltip_ability_inherit_huskar_buff_Description"						"The uncrowned king of Trolls. A skillful ruler. His very appearance inspires his subjects for the greatest sacrifices!"
@@ -594,7 +594,7 @@
 		"DOTA_Tooltip_modifier_arc_warden_tempest_double_Description"	"A complete clone of Meepo that can use spells and items ."
 
 //Centaur
-		"npc_dota_hero_centaur"	"Centaur(IMBA)"
+		"npc_dota_hero_centaur"	"Centaur"
 		"DOTA_Tooltip_ability_inherit_centaur_buff"									"Centaur buff"
 		"DOTA_Tooltip_ability_inherit_centaur_buff_Description"						"The mightiest Centaur to ever walk this world. His presence and glory inspires all Centaurs on the field of battle!"
 		"DOTA_Tooltip_ability_inherit_centaur_buff_dmg_bonus"						"%DMG BONUS :"
@@ -3247,12 +3247,60 @@
 		"DOTA_Tooltip_ability_bloodseeker_bloodthirst_movespeed_bonus"			"MOVEMENT SPEED BONUS:"
 		"DOTA_Tooltip_modifier_bloodseeker_bloodthirst"							"Blood thrirst"
 		"DOTA_Tooltip_modifier_bloodseeker_bloodthirst_Description"				"The lust for blood makes you move!"
+
+//Hoodwink
+		"npc_dota_hero_hoodwink"		"Hoodwink"
+ 
+
+ 		"DOTA_Tooltip_ability_hoodwink_hunter_skill"					"Hunter skill"
+		"DOTA_Tooltip_ability_hoodwink_hunter_skill_Description"		"Has chance to trigger critical strike!"
+		"DOTA_Tooltip_ability_hoodwink_hunter_skill_crit_chance"		"%CRTI CHANCE:"
+		"DOTA_Tooltip_ability_hoodwink_hunter_skill_crit_mult"			"%CRIT MULT:"
+
+ 		"DOTA_Tooltip_ability_hoodwink_acorn_shoot_custom"							"Acorn barrage"
+		"DOTA_Tooltip_ability_hoodwink_acorn_shoot_custom_Description"				"Shoots an acorn that bounces at all enemies around!"
+		"DOTA_Tooltip_ability_hoodwink_acorn_shoot_custom_radius"			"RADIUS:"
+		"DOTA_Tooltip_ability_hoodwink_acorn_shoot_custom_reveal_duration"				"REVEAL DURATION:"
+
+ 		"DOTA_Tooltip_ability_hoodwink_inner_fire"							"Inner fire"
+		"DOTA_Tooltip_ability_hoodwink_inner_fire_Description"				"Increases own attack damage and attack speed!"
+		"DOTA_Tooltip_ability_hoodwink_inner_fire_duration"				"DURATION:"
+		"DOTA_Tooltip_ability_hoodwink_inner_fire_bonus_dmg"			"BONUS DMG:"
+		"DOTA_Tooltip_ability_hoodwink_inner_fire_bonus_as"				"BONUS AS:"
+ 		"DOTA_Tooltip_modifier_hoodwink_inner_fire"						"Inner fire"
+		"DOTA_Tooltip_modifier_hoodwink_inner_fire_Description"				"Damage and attack speed increased !"
+
+		"DOTA_Tooltip_ability_hoodwink_scurry_custom"							"Scurry"
+		"DOTA_Tooltip_ability_hoodwink_scurry_custom_Description"				"Hoodwink passively has a chance to evade physical attacks while near trees.  When activated, Hoodwink gains bonus movement speed, phased collision, and tree-walking for a brief time."
+		"DOTA_Tooltip_ability_hoodwink_scurry_custom_Lore"						"There's not a nook or cranny in the Wood Tomo'kan out of reach of Hoodwink's paws."
+		"DOTA_Tooltip_ability_hoodwink_scurry_custom_movement_speed_pct"		"%BONUS MOVEMENT SPEED:"
+		"DOTA_Tooltip_ability_hoodwink_scurry_custom_duration"					"BUFF DURATION:"
+		"DOTA_Tooltip_ability_hoodwink_scurry_custom_evasion"					"%EVASION:"
+		"DOTA_Tooltip_ability_hoodwink_scurry_custom_radius"					"EVASION RADIUS:"
+        "DOTA_Tooltip_modifier_hoodwink_scurry_custom_buff"                  "Scurry"
+        "DOTA_Tooltip_modifier_hoodwink_scurry_custom_buff_Description"      "Hoodwink gains bonus movement speed, phased collision, and tree-walking for a brief time"
+
+ 		"DOTA_Tooltip_ability_hoodwink_sharp_shoot"							"Sharp shoot"
+		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_Description"				"Launches a deadly projectile that destroys everyone in its path!"
+		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_base_dmg"				"BASE DAMAGE:"
+		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_damage_pct"				"%DAMAGE:"
+		"DOTA_Tooltip_ability_hoodwink_sharp_shoot_stun_duration"			"STUN DURATION:"
+
+ 		"DOTA_Tooltip_ability_hoodwink_armor_destroy"							"Armor destroy"
+		"DOTA_Tooltip_ability_hoodwink_armor_destroy_Description"				"Each hit destroys part of the enemy's armor! "
+		"DOTA_Tooltip_ability_hoodwink_armor_destroy_debuff_duration"			"DEBUFF DURATION:"
+ 		"DOTA_Tooltip_ability_hoodwink_armor_destroy_armor_decrease"			"ARMOR DECREASE:"
+ 		"DOTA_Tooltip_modifier_hoodwink_armor_destroy_debuff"							"Armor destroy"
+		"DOTA_Tooltip_modifier_hoodwink_armor_destroy_debuff_Description"				"Armor decreased"
 //hero
 		"npc_dota_hero_"		""
  
  		"DOTA_Tooltip_ability_"							"name"
 		"DOTA_Tooltip_ability__Description"				"description"
 		"DOTA_Tooltip_ability__"				""
+ 		"DOTA_Tooltip_modifier_"							"name"
+		"DOTA_Tooltip_modifier__Description"				"description"
+
 //Abilities
 
  		"DOTA_Tooltip_ability_"							"name"

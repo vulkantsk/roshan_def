@@ -3233,6 +3233,51 @@
         "DOTA_Tooltip_ability_bloodseeker_bloodthirst_movespeed_bonus"          "移动速度加成:"
         "DOTA_Tooltip_modifier_bloodseeker_bloodthirst"                         "嗜血"
         "DOTA_Tooltip_modifier_bloodseeker_bloodthirst_Description"             "只有血液的味道才能唤醒我!"
+//Hoodwink
+        "npc_dota_hero_hoodwink"        "潇湘小鼠"
+ 
+
+        "DOTA_Tooltip_ability_hoodwink_hunter_skill"                    "猎人天赋"
+        "DOTA_Tooltip_ability_hoodwink_hunter_skill_Description"        "有几率触发致命一击!"
+        "DOTA_Tooltip_ability_hoodwink_hunter_skill_crit_chance"        "%几率:"
+        "DOTA_Tooltip_ability_hoodwink_hunter_skill_crit_mult"          "%倍率:"
+
+        "DOTA_Tooltip_ability_hoodwink_acorn_shoot_custom"                          "爆栗出击"
+        "DOTA_Tooltip_ability_hoodwink_acorn_shoot_custom_Description"              "发射橡栗子在敌人之间弹跳!"
+        "DOTA_Tooltip_ability_hoodwink_acorn_shoot_custom_radius"           "范围:"
+        "DOTA_Tooltip_ability_hoodwink_acorn_shoot_custom_reveal_duration"              "视野持续时间:"
+
+        "DOTA_Tooltip_ability_hoodwink_inner_fire"                          "内功"
+        "DOTA_Tooltip_ability_hoodwink_inner_fire_Description"              "增加自身攻速和攻击力!"
+        "DOTA_Tooltip_ability_hoodwink_inner_fire_duration"             "持续时间:"
+        "DOTA_Tooltip_ability_hoodwink_inner_fire_bonus_dmg"            "攻击加成:"
+        "DOTA_Tooltip_ability_hoodwink_inner_fire_bonus_as"             "攻击速度加成:"
+        "DOTA_Tooltip_modifier_hoodwink_inner_fire"                     "内功"
+        "DOTA_Tooltip_modifier_hoodwink_inner_fire_Description"             "增加了攻速和攻击力 !"
+
+        "DOTA_Tooltip_ability_hoodwink_scurry_custom"                          "密林奔走"
+        "DOTA_Tooltip_ability_hoodwink_scurry_custom_Description"              "森海飞霞靠近树木时被动地拥有一定几率闪避物理攻击。主动施放时森海飞霞暂时获得移动速度加成，相位碰撞状态和穿行树木效果。"
+        "DOTA_Tooltip_ability_hoodwink_scurry_custom_Lore"                     "托莫干森林里没有一处角落或者裂缝是森海飞霞的爪子够不着的。"
+        "DOTA_Tooltip_ability_hoodwink_scurry_custom_movement_speed_pct"       "%移动速度加成："
+        "DOTA_Tooltip_ability_hoodwink_scurry_custom_duration"                 "加成持续时间："
+        "DOTA_Tooltip_ability_hoodwink_scurry_custom_evasion"                  "%闪避几率："
+        "DOTA_Tooltip_ability_hoodwink_scurry_custom_radius"                   "闪避作用范围："
+
+        "DOTA_Tooltip_modifier_hoodwink_scurry_custom_buff"                  "密林奔走"
+        "DOTA_Tooltip_modifier_hoodwink_scurry_custom_buff_Description"      "获得%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%移动速度加成，并且可以穿越单位，穿行树木。"
+   
+        "DOTA_Tooltip_ability_hoodwink_sharp_shoot"                         "锐利一击"
+        "DOTA_Tooltip_ability_hoodwink_sharp_shoot_Description"             "发射致命子弹摧毁沿途所有敌人!"
+        "DOTA_Tooltip_ability_hoodwink_sharp_shoot_base_dmg"                "基础伤害:"
+        "DOTA_Tooltip_ability_hoodwink_sharp_shoot_damage_pct"              "%伤害:"
+        "DOTA_Tooltip_ability_hoodwink_sharp_shoot_stun_duration"           "眩晕持续时间:"
+
+        "DOTA_Tooltip_ability_hoodwink_armor_destroy"                           "护甲穿透"
+        "DOTA_Tooltip_ability_hoodwink_armor_destroy_Description"               "每次攻击削弱敌人护甲 ! "
+        "DOTA_Tooltip_ability_hoodwink_armor_destroy_debuff_duration"           "效果持续时间:"
+        "DOTA_Tooltip_ability_hoodwink_armor_destroy_armor_decrease"            "护甲减少:"
+        "DOTA_Tooltip_modifier_hoodwink_armor_destroy_debuff"                           "护甲被降低"
+        "DOTA_Tooltip_modifier_hoodwink_armor_destroy_debuff_Description"               "护甲被降低"
 //hero
         "npc_dota_hero_"                ""
 
