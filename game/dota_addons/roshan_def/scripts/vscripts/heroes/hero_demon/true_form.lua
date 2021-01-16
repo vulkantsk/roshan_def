@@ -59,7 +59,6 @@ function modifier_demon_true_form:OnDestroy()
 
 		caster:SetModel(caster.caster_model)
 		caster:SetOriginalModel(caster.caster_model)
-		caster:SetAttackCapability(caster.caster_attack)
 
 		-- Sets the new attack type
 		caster:SetAttackCapability(caster.caster_attack)

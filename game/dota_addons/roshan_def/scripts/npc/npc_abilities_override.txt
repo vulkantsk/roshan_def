@@ -347,6 +347,17 @@
 	"item_imba_radiance"							"REMOVE"
 	"item_recipe_helm_of_the_dominator_2"					"REMOVE"
 	"item_helm_of_the_dominator_2"							"REMOVE"
+	"item_recipe_arcane_blink"					"REMOVE"
+	"item_arcane_blink"							"REMOVE"
+	"item_recipe_swift_blink"					"REMOVE"
+	"item_swift_blink"							"REMOVE"
+	"item_recipe_overwhelming_blink"					"REMOVE"
+	"item_overwhelming_blink"							"REMOVE"
+	"item_recipe_wind_waker"					"REMOVE"
+	"item_wind_waker"							"REMOVE"
+
+	"item_recipe_"					"REMOVE"
+	"item_"							"REMOVE"
 
 	
 ///////////////////////////

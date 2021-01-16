@@ -50,24 +50,12 @@ function modifier_event_portal_end:OnIntervalThink()
 
 		if unit.avatar == true then
 			if FrostEvent.event_level == 1 then
-				GiveGoldPlayers(2500)
 				FrostEvent:EndEvent_1()
-				EmitGlobalSound("event_gift")
-			elseif FrostEvent.event_level == 2 then
-				GiveGoldPlayers(2500)
-				EmitGlobalSound("event_gift")
-			elseif FrostEvent.event_level == 3 then
-				GiveGoldPlayers(2500)
-				EmitGlobalSound("event_gift")
-			elseif FrostEvent.event_level == 4 then
-				GiveGoldPlayers(2500)
-				EmitGlobalSound("event_gift")
 			elseif FrostEvent.event_level == 5 then
-				GiveGoldPlayers(2500)
-				EmitGlobalSound("event_gift")
 				FrostEvent.available = false
 			end
-			unit:ForceKill(false)
+
+			FrostEvent:GiveReward()
 			FrostEvent:EndRound()
 			FrostEvent.event_level = FrostEvent.event_level + 1
 		end	

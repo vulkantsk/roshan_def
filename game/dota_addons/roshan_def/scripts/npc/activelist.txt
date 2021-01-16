@@ -72,8 +72,8 @@
 //	"npc_dota_hero_sven"			"1"			
 //	"npc_dota_hero_dark_seer"			"1"			
 
-//	"npc_dota_hero_viper"			"1"			
-//	"npc_dota_hero_naga_siren"			"1"			
+	"npc_dota_hero_viper"			"1"			
+	"npc_dota_hero_naga_siren"			"1"			
 //	"npc_dota_hero_broodmother"			"1"			
 
 }

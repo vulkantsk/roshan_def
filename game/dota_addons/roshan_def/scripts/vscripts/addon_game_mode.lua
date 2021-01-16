@@ -7,8 +7,7 @@ require('libraries/buildinghelper')
 require('barebones')
 require('abilities/basic')
 require('modules/index')
---require("winter_event/frost_event")
---require("statcollection/init")
+require("winter_event/frost_event")
 
 function Precache( context )
 	-- NOTE: IT IS RECOMMENDED TO USE A MINIMAL AMOUNT OF LUA PRECACHING, AND A MAXIMAL AMOUNT OF DATADRIVEN PRECACHING.

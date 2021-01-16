@@ -266,7 +266,7 @@
 		"DOTA_Tooltip_ability_troll_warlord_battle_trance_mass_radius"			"RADIUS:"
 
 //Huskar
-		"npc_dota_hero_huskar"	"Huskar(IMBA)"
+		"npc_dota_hero_huskar"	"Huskar"
 
 		"DOTA_Tooltip_ability_inherit_huskar_buff"									"Huskar buff"
 		"DOTA_Tooltip_ability_inherit_huskar_buff_Description"						"The uncrowned king of Trolls. A skillful ruler. His very appearance inspires his subjects for the greatest sacrifices!"
@@ -1239,7 +1239,7 @@
 		
 //Phoenix
  
-        "npc_dota_hero_phoenix"          "Phoenix"
+        "npc_dota_hero_phoenix"          "Phoenix(IMBA)"
  
         "DOTA_Tooltip_ability_phoenix_fire_soul"                        "Fiery soul"
         "DOTA_Tooltip_ability_phoenix_fire_soul_Description"            "Feeling the lack of vitality, its soul burns more brightly, increasing the spell damage!"
@@ -3292,6 +3292,17 @@
  		"DOTA_Tooltip_ability_hoodwink_armor_destroy_armor_decrease"			"ARMOR DECREASE:"
  		"DOTA_Tooltip_modifier_hoodwink_armor_destroy_debuff"							"Armor destroy"
 		"DOTA_Tooltip_modifier_hoodwink_armor_destroy_debuff_Description"				"Armor decreased"
+//viper
+		"npc_dota_hero_"		""
+
+		"DOTA_Tooltip_ability_viper_nethertoxin_custom"										"Nethertoxin"
+		"DOTA_Tooltip_ability_viper_nethertoxin_custom_Description"							"Viper releases a Nethertoxin at the targeted area. Units in that area take an increasing damage over time based on how long they remain in it."
+		"DOTA_Tooltip_ability_viper_nethertoxin_custom_Lore"									"Poison from the Nether Reaches turns wounds into fatalities, and fatigue into death."
+		"DOTA_Tooltip_ability_viper_nethertoxin_custom_min_damage"							"MIN DPS:"
+		"DOTA_Tooltip_ability_viper_nethertoxin_custom_max_damage"							"MAX DPS:"
+		"DOTA_Tooltip_ability_viper_nethertoxin_custom_max_duration"							"MAX DPS DURATION:"
+		"DOTA_Tooltip_ability_viper_nethertoxin_custom_radius"							"RADIUS:"
+		"DOTA_Tooltip_ability_viper_nethertoxin_custom_duration"						"DURATION:"
 //hero
 		"npc_dota_hero_"		""
  
@@ -4686,6 +4697,34 @@
 	"DOTA_Tooltip_ability_"							"name"
 	"DOTA_Tooltip_ability__Description"				"description"
 	"DOTA_Tooltip_ability__"				""
+
+	"DOTA_Tooltip_ability_item_snowman"							"Snowman toy"
+	"DOTA_Tooltip_ability_item_snowman_Description"				"Create snowman"
+	"DOTA_Tooltip_ability_item_snowman_bonus_stats"				"+$all"
+	"DOTA_Tooltip_ability_item_snowman_bonus_hp_regen"				"+$hp_regen"
+	"DOTA_Tooltip_ability_item_snowman_bonus_mp_regen"				"+$mana_regen"
+	"DOTA_Tooltip_ability_item_snowman_duration"				"DURATION:"
+	"DOTA_Tooltip_ability_item_snowman_radius"					"RADIUS:"
+	"DOTA_Tooltip_ability_item_snowman_interval"				"SNOWBALL INTERVAL:"
+	"DOTA_Tooltip_ability_item_snowman_damage"					"SNOWBALL DAMAGE:"
+
+	"DOTA_Tooltip_ability_item_snowman_mask"							"Snowman mask"
+	"DOTA_Tooltip_ability_item_snowman_mask_Description"			"<h1>Active: Masquerade </h1>The mask allows you to be invisible even in the most crowded places!"
+	"DOTA_Tooltip_ability_item_snowman_mask_bonus_health"			"+$health"
+	"DOTA_Tooltip_ability_item_snowman_mask_bonus_armor"			"+$armor"
+	"DOTA_Tooltip_ability_item_snowman_mask_duration"				"DURATION:"
+	"DOTA_Tooltip_modifier_item_snowman_mask_effect"							"Masqurade"
+	"DOTA_Tooltip_modifier_item_snowman_mask_effect_Description"				"Hidden"
+
+	"DOTA_Tooltip_ability_item_christmas_salut"							"Fireworks"
+	"DOTA_Tooltip_ability_item_christmas_salut_Description"				"Launch several fireworks"
+	"DOTA_Tooltip_ability_item_christmas_salut_bonus_dmg"				"+$damage"
+	"DOTA_Tooltip_ability_item_christmas_salut_bonus_as"				"+$attack"
+	"DOTA_Tooltip_ability_item_christmas_salut_radius"					"RADIUS:"
+	"DOTA_Tooltip_ability_item_christmas_salut_bomb_count"				"FIREWORK COUNT:"
+	"DOTA_Tooltip_ability_item_christmas_salut_bomb_interval"			"FIREWORK INTERVAL:"
+	"DOTA_Tooltip_ability_item_christmas_salut_bomb_radius"				"FIREWORK RADIUS:"
+	"DOTA_Tooltip_ability_item_christmas_salut_bomb_damage"				"FIREWORK DAMAGE:"
 
 	"DOTA_Tooltip_ability_item_watermelon_skin"							"Watermelon skin"
 	"DOTA_Tooltip_ability_item_watermelon_skin_Description"				"Wata***!?"

@@ -16302,9 +16302,9 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"10000"		// Experience earn.
-		"BountyGoldMin"				"500"		// Gold earned min.
-		"BountyGoldMax"				"1000"		// Gold earned max.
+		"BountyXP"					"1000"		// Experience earn.
+		"BountyGoldMin"				"250"		// Gold earned min.
+		"BountyGoldMax"				"500"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -38683,9 +38683,12 @@
 	// Abilities
 		//----------------------------------------------------------------
 
+//		"Ability5"					"queenofpain_blink"
 		"Ability1"					"event_land_mine"
-		"Ability2"					"event_exit"
+		"Ability2"					"generic_hidden"
 		"Ability3"					"no_health_bar"
+		"Ability4"					"event_exit"
+		"Ability5"					"generic_hidden"
 
 		// Movement
 		//----------------------------------------------------------------
@@ -38731,10 +38734,12 @@
 
 	// Abilities
 		//----------------------------------------------------------------
-//		"Ability0"					"event_avatar_change"
+//		"Ability5"					"queenofpain_blink"
 		"Ability1"					"survior_passive"
-		"Ability2"					"event_exit"
+		"Ability2"					"generic_hidden"
 		"Ability3"					"no_health_bar"
+		"Ability4"					"event_exit"
+		"Ability5"					"generic_hidden"
 
 		// Movement
 		//----------------------------------------------------------------
@@ -38766,6 +38771,7 @@
 	// Abilities
 		//----------------------------------------------------------------
 
+//		"Ability5"					"queenofpain_blink"
 		"Ability1"					"event_snowball"
 		"Ability2"					"event_shockwave"
 		"Ability3"					"event_ice_shard"
@@ -38803,10 +38809,12 @@
 	// Abilities
 		//----------------------------------------------------------------
 
+//		"Ability5"					"queenofpain_blink"
 		"Ability1"					"sled_penguin_active"
-		"Ability2"					"event_exit"
+		"Ability2"					"survior_passive"
 		"Ability3"					"no_health_bar"
-		"Ability6"					"survior_passive"
+		"Ability4"					"event_exit"
+		"Ability5"					"generic_hidden"
 
 		// Movement
 		//----------------------------------------------------------------
@@ -41885,5 +41893,112 @@
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	}
+
+	"npc_dota_event_survior_pet"
+	{
+			// General
+			"vscripts"                    "ai/PremiumPet.lua"
+			//
+			"BaseClass"				"npc_dota_creature"
+			"Model"						"models/items/courier/snowl/snowl.vmdl"
+			"ModelScale"				"0.75"								// old 1.0
+			"Level"						"1"
+			"HasInventory"				"1"
+
+
+		// Abilities
+			//----------------------------------------------------------------
+	//		"Ability0"					"event_avatar_change"
+			"Ability1"					"Pet_invis_ability"
+			"Ability2"					""
+			"Ability3"					""
+
+			// Movement
+			//----------------------------------------------------------------
+			"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+			"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+			"StatusHealth" 				"2"
+			"StatusHealthRegen" 		"0"
+			"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+			"RingRadius"				"50"
+			"VisionDaytimeRange"		"800"		// Range of vision during day light.
+			"VisionNighttimeRange"		"800"		// Range of vision at night time.
+
+			"MovementSpeed"				"325"		// Speed
+			"MovementTurnRate"			"0.75"		// Turning rate.
+
+	}
+
+	"npc_dota_event_penguin_pet"
+	{
+			// General
+			"vscripts"                    "ai/PremiumPet.lua"
+			//
+			"BaseClass"				"npc_dota_creature"
+			"Model"						"models/events/frostivus/penguin/penguin.vmdl"
+			"ModelScale"				"1"								// old 1.0
+			"Level"						"1"
+			"HasInventory"				"1"
+
+
+		// Abilities
+			//----------------------------------------------------------------
+
+			"Ability1"					"Pet_invis_ability"
+			"Ability2"					""
+			"Ability3"					""
+			"Ability6"					""
+
+			// Movement
+			//----------------------------------------------------------------
+			"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+			"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+			"StatusHealth" 				"2"
+			"StatusHealthRegen" 		"0"
+			"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+			"RingRadius"				"50"
+			"VisionDaytimeRange"		"800"		// Range of vision during day light.
+			"VisionNighttimeRange"		"800"		// Range of vision at night time.
+
+			"MovementSpeed"				"325"		// Speed
+			"MovementTurnRate"			"0.75"		// Turning rate.
+
+	}	
+	"npc_dota_item_snowman"
+	{
+			//
+			"BaseClass"					"npc_dota_creature"
+			"Model"						"models/props_frostivus/frostivus_snowman.vmdl"
+			"ModelScale"				"1.5"								// old 1.0
+			"Level"						"1"
+			"HasInventory"				"1"
+
+
+		// Abilities
+			//----------------------------------------------------------------
+
+			"Ability1"					""
+			"Ability2"					""
+			"Ability3"					""
+			"Ability6"					""
+
+			// Movement
+			//----------------------------------------------------------------
+			"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+			"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+
+			"StatusHealth" 				"2"
+			"StatusHealthRegen" 		"0"
+			"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+			"RingRadius"				"50"
+			"VisionDaytimeRange"		"600"		// Range of vision during day light.
+			"VisionNighttimeRange"		"600"		// Range of vision at night time.
+
+			"MovementSpeed"				"325"		// Speed
+			"MovementTurnRate"			"0.75"		// Turning rate.
+
+	}	
 }
 

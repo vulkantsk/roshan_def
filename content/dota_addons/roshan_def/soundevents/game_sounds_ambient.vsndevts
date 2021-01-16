@@ -1807,3 +1807,49 @@
 		}
 	}
 }
+
+"christmas_salut_explode" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"			{		"value"		"sounds/weapons/hero/rattletrap/flare_explode.vsnd"}
+					"volume"                {   	"value"     "2"}
+					"pitch"                 {       "value"     "1"}
+					"soundlevel"            {       "value"     "85"}
+					"spread_radius"         {       "value"     "1000"}
+				}
+			}
+		}
+	}
+}
+
+"snowman_mask_cast" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"			{		"value"		"sounds/weapons/hero/crystal_maiden/snowman_taunt.vsnd"}
+					"volume"                {   	"value"     "1"}
+					"pitch"                 {       "value"     "1"}
+					"soundlevel"            {       "value"     "80"}
+					"spread_radius"         {       "value"     "1000"}
+				}
+			}
+		}
+	}
+}

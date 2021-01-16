@@ -12,7 +12,7 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_agi_bonus"
 
-		"Model"							"models/props_gameplay/halloween_cupcakes001_spider.vvmdl"
+		"Model"							"models/props_gameplay/halloween_cupcakes001_spider.vmdl"
 		"Effect"						"particles/econ/courier/courier_trail_international_2013/courier_international_2013.vpcf"
 
 		// Item Info
@@ -63,7 +63,7 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_agi_bonus"
 
-		"Model"							"models/props_gameplay/halloween_cupcakes001_spider.vvmdl"
+		"Model"							"models/props_gameplay/halloween_cupcakes001_spider.vmdl"
 		"Effect"						"particles/econ/courier/courier_trail_international_2013/courier_international_2013.vpcf"
 
 		// Item Info
@@ -116,7 +116,7 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_agi_bonus"
 
-		"Model"							"models/props_gameplay/halloween_cupcakes001_spider.vvmdl"
+		"Model"							"models/props_gameplay/halloween_cupcakes001_spider.vmdl"
 		"Effect"						"particles/econ/courier/courier_trail_international_2013/courier_international_2013.vpcf"
 
 		// Item Info
@@ -169,7 +169,7 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_agi_bonus"
 
-		"Model"							"models/props_gameplay/halloween_cupcakes001_spider.vvmdl"
+		"Model"							"models/props_gameplay/halloween_cupcakes001_spider.vmdl"
 		"Effect"						"particles/econ/courier/courier_trail_international_2013/courier_international_2013.vpcf"
 
 		// Item Info
@@ -223,7 +223,7 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_tome_of_health"
 
-		"Model"							"models/props_gameplay/heart001.vvmdl"
+		"Model"							"models/props_gameplay/heart001.vmdl"
 		"Effect"						"particles/econ/courier/courier_trail_divine/courier_divine_ambient.vpcf"
 
 		// Item Info
@@ -297,7 +297,7 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_tome_of_health"
 
-		"Model"							"models/props_gameplay/heart001.vvmdl"
+		"Model"							"models/props_gameplay/heart001.vmdl"
 		"Effect"						"particles/econ/courier/courier_trail_divine/courier_divine_ambient.vpcf"
 
 		// Item Info
@@ -372,7 +372,7 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_int_bonus"
 
-		"Model"							"models/props_gameplay/halloween_cupcakes001_bat.vvmdl"
+		"Model"							"models/props_gameplay/halloween_cupcakes001_bat.vmdl"
 		"Effect"						"particles/econ/courier/courier_roshan_frost/courier_roshan_frost_ambient.vpcf"
 
 		// Item Info
@@ -454,7 +454,7 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_int_bonus"
 
-		"Model"							"models/props_gameplay/halloween_cupcakes001_bat.vvmdl"
+		"Model"							"models/props_gameplay/halloween_cupcakes001_bat.vmdl"
 		"Effect"						"particles/econ/courier/courier_roshan_frost/courier_roshan_frost_ambient.vpcf"
 
 		// Item Info
@@ -536,7 +536,7 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_int_bonus"
 
-		"Model"							"models/props_gameplay/halloween_cupcakes001_bat.vvmdl"
+		"Model"							"models/props_gameplay/halloween_cupcakes001_bat.vmdl"
 		"Effect"						"particles/econ/courier/courier_roshan_frost/courier_roshan_frost_ambient.vpcf"
 
 		// Item Info
@@ -618,7 +618,7 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_int_bonus"
 
-		"Model"							"models/props_gameplay/halloween_cupcakes001_bat.vvmdl"
+		"Model"							"models/props_gameplay/halloween_cupcakes001_bat.vmdl"
 		"Effect"						"particles/econ/courier/courier_roshan_frost/courier_roshan_frost_ambient.vpcf"
 
 		// Item Info
@@ -703,7 +703,7 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_halloween_candy"
 
-		"Model"							"models/props_gameplay/halloween_candy.vvmdl"
+		"Model"							"models/props_gameplay/halloween_candy.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -804,7 +804,7 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_halloween_candy"
 
-		"Model"							"models/props_gameplay/halloween_candy.vvmdl"
+		"Model"							"models/props_gameplay/halloween_candy.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -866,7 +866,7 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_halloween_candy"
 
-		"Model"							"models/props_gameplay/halloween_candy.vvmdl"
+		"Model"							"models/props_gameplay/halloween_candy.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -932,7 +932,7 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_halloween_candy"
 
-		"Model"							"models/props_gameplay/halloween_candy.vvmdl"
+		"Model"							"models/props_gameplay/halloween_candy.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -997,7 +997,7 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_halloween_candy"
 
-		"Model"							"models/props_gameplay/halloween_candy.vvmdl"
+		"Model"							"models/props_gameplay/halloween_candy.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -1062,7 +1062,7 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_halloween_candy"
 
-		"Model"							"models/props_gameplay/halloween_candy.vvmdl"
+		"Model"							"models/props_gameplay/halloween_candy.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -1131,7 +1131,7 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
 
-		"Model"							"models/props_gameplay/pumpkin_rune.vvmdl"
+		"Model"							"models/props_gameplay/pumpkin_rune.vmdl"
 		"Effect"						"particles/econ/courier/courier_greevil_orange/courier_greevil_orange_ambient_3.vpcf"
 		"AbilityCastRange"				"100"
 		"AbilityCastPoint"				"0.0"
@@ -1187,7 +1187,7 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
 
-		"Model"							"models/props_gameplay/pumpkin_rune.vvmdl"
+		"Model"							"models/props_gameplay/pumpkin_rune.vmdl"
 		"Effect"						"particles/econ/courier/courier_greevil_orange/courier_greevil_orange_ambient_3.vpcf"
 		"AbilityCastRange"				"100"
 		"AbilityCastPoint"				"0.0"
@@ -1242,7 +1242,7 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
 
-		"Model"							"models/props_gameplay/pumpkin_rune.vvmdl"
+		"Model"							"models/props_gameplay/pumpkin_rune.vmdl"
 		"Effect"						"particles/econ/courier/courier_greevil_orange/courier_greevil_orange_ambient_3.vpcf"
 		"AbilityCastRange"				"100"
 		"AbilityCastPoint"				"0.0"
@@ -1298,7 +1298,7 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
 
-		"Model"							"models/props_gameplay/pumpkin_rune.vvmdl"
+		"Model"							"models/props_gameplay/pumpkin_rune.vmdl"
 		"Effect"						"particles/econ/courier/courier_greevil_orange/courier_greevil_orange_ambient_3.vpcf"
 		"AbilityCastRange"				"100"
 		"AbilityCastPoint"				"0.0"
@@ -1353,7 +1353,7 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_halloween_candy"
 
-		"Model"							"models/props_gameplay/halloween_candy.vvmdl"
+		"Model"							"models/props_gameplay/halloween_candy.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -1434,7 +1434,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"                        "item_datadriven"
-		"Model"                            "models/props_gameplay/gold_bag.vvmdl"
+		"Model"                            "models/props_gameplay/gold_bag.vmdl"
 		"ItemKillable"                    "0"
 		"AbilityCastAnimation"            "ACT_DOTA_VICTORY"
 
@@ -2728,7 +2728,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"precache"
 		{
-			"model" 					"models/items/courier/mighty_chicken/mighty_chicken_flying.vvmdl"
+			"model" 					"models/items/courier/mighty_chicken/mighty_chicken_flying.vmdl"
 		}
 
 		// Special
@@ -4367,7 +4367,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"186"// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -4392,7 +4392,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"49"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -4417,7 +4417,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"85"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 
 		// Item Info
@@ -6468,7 +6468,7 @@
         // General
         //-------------------------------------------------------------------------------------------------------------
         "BaseClass"                     "item_datadriven"
-        "Model"                         "models/props_gameplay/recipe.vvmdl"
+        "Model"                         "models/props_gameplay/recipe.vmdl"
         "AbilityTextureName"            "custom/imba_recipe"
 
         // Item Info
@@ -9933,7 +9933,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
-		"Model"							"models/props_gameplay/cheese.vvmdl"
+		"Model"							"models/props_gameplay/cheese.vmdl"
 
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
@@ -10272,7 +10272,7 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
 		"AbilityTextureName" 			"custom/imba_soul_of_truth"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"ScriptFile"                    "items/item_soul_of_truth.lua"
 
 		// Stats
@@ -11837,7 +11837,7 @@
 		"precache"
 		{
 			"particle"					"particles/item/rapier/item_rapier_cursed.vpcf"
-			"model"						"models/cursed_rapier.vvmdl"
+			"model"						"models/cursed_rapier.vmdl"
 		}
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -11887,7 +11887,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"									"2218"
 		"BaseClass"								"item_datadriven"
-		"Model"									"models/props_gameplay/rune_goldxp.vvmdl"
+		"Model"									"models/props_gameplay/rune_goldxp.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -11907,7 +11907,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"									"2222"
 		"BaseClass"								"item_datadriven"
-		"Model"									"models/props_gameplay/gold_bag.vvmdl"
+		"Model"									"models/props_gameplay/gold_bag.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -11927,7 +11927,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"									"2221"
 		"BaseClass"								"item_datadriven"
-		"Model"									"models/props_gameplay/rune_regeneration01.vvmdl"
+		"Model"									"models/props_gameplay/rune_regeneration01.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -12059,7 +12059,7 @@
 		"FightRecapLevel"				"1"
 		"AbilityTextureName" 			"custom/imba_dust_of_appearance"
 		"ScriptFile"					"items/item_dust_of_appearance.lua"
-		"Model"							"models/props_gameplay/dust.vvmdl"
+		"Model"							"models/props_gameplay/dust.vmdl"
 
 		// Ability
 		//--------------------------------------------
@@ -13735,7 +13735,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"2255"
 		"BaseClass"						"item_datadriven"
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 		"FightRecapLevel"				"1"
 
 		// Item Info
@@ -13764,7 +13764,7 @@
 		"ScriptFile"					"items/item_manta"
 		"ID"							"2256"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-		"Model"							"models/props_gameplay/red_box.vvmdl"
+		"Model"							"models/props_gameplay/red_box.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		"AbilityTextureName"			"item_manta"
 
@@ -14316,7 +14316,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"item_roshan_leg"
 		"ItemCost"                      "0"
-		"Model"							"models/props_gameplay/aegis.vvmdl"
+		"Model"							"models/props_gameplay/aegis.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemKillable"                  "0"
@@ -14478,7 +14478,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"ItemPurchasable"				"0"
 		"ItemCost"                      "0"
-		"Model"							"models/props_gameplay/aegis.vvmdl"
+		"Model"							"models/props_gameplay/aegis.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemKillable"                  "0"
@@ -14540,7 +14540,7 @@
 		"AbilityTextureName"			"item_roshan_hand"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"ItemCost"                      "0"
-		"Model"							"models/props_gameplay/aegis.vvmdl"
+		"Model"							"models/props_gameplay/aegis.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 		"AbilityCooldown"				"0.6"
 
@@ -14600,7 +14600,7 @@
 		"ItemPurchasable"				"0"
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT"
 		"ItemCost"                      "0"
-		"Model"							"models/props_gameplay/aegis.vvmdl"
+		"Model"							"models/props_gameplay/aegis.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemCost"                      "1000"
@@ -14660,7 +14660,7 @@
 		"ID"							"2271"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"BaseClass"                     "item_datadriven"
 		"AbilityTextureName"			"item_roshan_soul"
-		"Model"							"models/props_gameplay/aegis.vvmdl"
+		"Model"							"models/props_gameplay/aegis.vmdl"
 		"ItemPurchasable"				"1"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
@@ -14758,7 +14758,7 @@
 		"BaseClass"                     "item_datadriven"
 		"AbilityTextureName"			"item_true_roshan_soul"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"Model"							"models/props_gameplay/aegis.vvmdl"
+		"Model"							"models/props_gameplay/aegis.vmdl"
 
 		"ItemInitialCharges"            "1"
 		"ItemPurchasable"				"1"
@@ -14860,7 +14860,7 @@
 		"BaseClass"						"item_datadriven"
 		"ID"							"2273"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"Model"							"models/props_gameplay/red_box.vvmdl"
+		"Model"							"models/props_gameplay/red_box.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		"AbilityTextureName"			"custom/imba_moon_shard"
 		"AbilityCastPoint"				"0.05"
@@ -14971,7 +14971,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"230"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -15111,7 +15111,7 @@
 		"particle"	"particles/units/heroes/hero_terrorblade/terrorblade_metamorphosis_transform.vpcf"
 		"particle"	"particles/units/heroes/hero_terrorblade/terrorblade_metamorphosis_base_attack.vpcf"
 		"particle"	"particles/units/heroes/hero_terrorblade/terrorblade_metamorphosis_ambient.vpcf"
-		"model"		"models/heroes/terrorblade/demon.vvmdl"
+		"model"		"models/heroes/terrorblade/demon.vmdl"
 	}
 
 
@@ -15184,7 +15184,7 @@
 				{
 					"ScriptFile"			"items/demon_skull.lua"
 					"Function"				"ModelSwapStart"
-					"model"					"models/heroes/terrorblade/demon.vvmdl"
+					"model"					"models/heroes/terrorblade/demon.vmdl"
 					"projectile_model"		"particles/units/heroes/hero_terrorblade/terrorblade_metamorphosis_base_attack.vpcf"
 				}
 
@@ -15251,7 +15251,7 @@
 		"ID"							"2277"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityTextureName"			"item_tango1"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"Model"							"models/props_gameplay/tango.vvmdl"
+		"Model"							"models/props_gameplay/tango.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_tango.vpcf"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_TREE | DOTA_UNIT_TARGET_CUSTOM"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_CUSTOM"
@@ -15339,7 +15339,7 @@
 		"ID"							"2278"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"BaseClass"						"item_datadriven"
 
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -15368,7 +15368,7 @@
 		"ID"							"2279"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityTextureName"			"item_tango2"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"Model"							"models/props_gameplay/tango.vvmdl"
+		"Model"							"models/props_gameplay/tango.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_tango.vpcf"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_TREE | DOTA_UNIT_TARGET_CUSTOM"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_CUSTOM"
@@ -15454,7 +15454,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"2280"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"BaseClass"						"item_datadriven"
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -15483,7 +15483,7 @@
 		"ID"							"2281"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityTextureName"			"item_tango3"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"Model"							"models/props_gameplay/tango.vvmdl"
+		"Model"							"models/props_gameplay/tango.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_tango.vpcf"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_TREE | DOTA_UNIT_TARGET_CUSTOM"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_CUSTOM"
@@ -15570,7 +15570,7 @@
 		"AbilityTextureName"			"siltbreaker/dredged_trident"
 		"ScriptFile"					"items/item_dredged_trident"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -15630,7 +15630,7 @@
 		"ScriptFile"					"items/siltbreaker/item_glimmerdark_shield"
 		"AbilityTextureName"			"siltbreaker/glimmerdark_shield"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
@@ -15718,7 +15718,7 @@
 		"AbilityTextureName"			"siltbreaker/wand_of_the_brine"
 		"ScriptFile"					"items/siltbreaker/item_wand_of_the_brine"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
@@ -15808,7 +15808,7 @@
 		"ScriptFile"					"items/siltbreaker/item_amorphotic_shell"
 		"AbilityTextureName"			"siltbreaker/amorphotic_shell"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -15874,7 +15874,7 @@
 		"ScriptFile"					"items/siltbreaker/item_lifestone"
 		"AbilityTextureName"			"siltbreaker/lifestone"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
@@ -15941,7 +15941,7 @@
 		"AbilityTextureName"			"siltbreaker/stonework_pendant"
 		"ScriptFile"					"items/siltbreaker/item_stonework_pendant"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -15993,7 +15993,7 @@
 		"AbilityTextureName"			"siltbreaker/craggy_coat"
 		"ScriptFile"					"items/siltbreaker/item_craggy_coat"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -16070,7 +16070,7 @@
 		"AbilityTextureName"			"siltbreaker/ambient_sorcery"
 		"ScriptFile"					"items/siltbreaker/item_ambient_sorcery"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -16131,7 +16131,7 @@
 		"AbilityTextureName"			"siltbreaker/precious_egg"
 		"ScriptFile"					"items/siltbreaker/item_precious_egg"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -16188,7 +16188,7 @@
 		"AbilityTextureName"			"siltbreaker/ice_dragon_maw"
 		"ScriptFile"					"items/siltbreaker/item_ice_dragon_maw"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -16255,7 +16255,7 @@
 		"AbilityTextureName"			"siltbreaker/winter_embrace"
 		"ScriptFile"					"items/siltbreaker/item_winter_embrace"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -16327,7 +16327,7 @@
 		"AbilityTextureName"			"siltbreaker/the_caustic_finale"
 		"ScriptFile"					"items/siltbreaker/item_the_caustic_finale"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -16403,7 +16403,7 @@
 		"AbilityTextureName"			"siltbreaker/rhyziks_eye"
 		"ScriptFile"					"items/siltbreaker/item_rhyziks_eye"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -16475,7 +16475,7 @@
 		"AbilityTextureName"			"siltbreaker/carapace_of_qaldin"
 		"ScriptFile"					"items/siltbreaker/item_carapace_of_qaldin"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -16540,7 +16540,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 
@@ -16629,7 +16629,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		// Stats
@@ -16691,7 +16691,7 @@
 		"AbilityTextureName"			"siltbreaker/guardian_shell"
 		"ScriptFile"					"items/siltbreaker/item_guardian_shell"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -16748,7 +16748,7 @@
 		"AbilityTextureName"			"siltbreaker/unhallowed_icon"
 		"ScriptFile"					"items/siltbreaker/item_unhallowed_icon"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -16815,7 +16815,7 @@
 		"AbilityTextureName"			"siltbreaker/preserved_skull"
 		"ScriptFile"					"items/siltbreaker/item_preserved_skull"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -16882,7 +16882,7 @@
 		"AbilityTextureName"			"siltbreaker/sign_of_the_arachnid"
 		"ScriptFile"					"items/siltbreaker/item_sign_of_the_arachnid"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -16949,7 +16949,7 @@
 		"AbilityTextureName"			"siltbreaker/bogduggs_lucky_femur"
 		"ScriptFile"					"items/siltbreaker/item_bogduggs_lucky_femur"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -17016,7 +17016,7 @@
 		"AbilityTextureName"			"siltbreaker/paw_of_lucius"
 		"ScriptFile"					"items/siltbreaker/item_paw_of_lucius"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -17098,7 +17098,7 @@
 		"AbilityTextureName"			"siltbreaker/longclaws_amulet"
 		"ScriptFile"					"items/siltbreaker/item_longclaws_amulet"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -17159,7 +17159,7 @@
 		"AbilityTextureName"			"siltbreaker/bogduggs_cudgel"
 		"ScriptFile"					"items/siltbreaker/item_bogduggs_cudgel"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -17236,7 +17236,7 @@
 		"AbilityTextureName"			"siltbreaker/bogduggs_baldric"
 		"ScriptFile"					"items/siltbreaker/item_bogduggs_baldric"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -17294,7 +17294,7 @@
 		"AbilityTextureName"			"phoenix_gloves"
 		"ScriptFile"					"items/ft/item_phoenix_gloves"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -17587,7 +17587,7 @@
 		"ID"							"2318"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityTextureName"				"item_recipe"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"BaseClass"						"item_datadriven"
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -17725,8 +17725,8 @@
 		"particle"	"particles/units/heroes/hero_terrorblade/terrorblade_metamorphosis_ambient.vpcf"
 		"particle"	"particles/econ/courier/courier_onibi/courier_onibi_black_lvl21_ambient.vpcf"
 		"particle"	"particles\econ\courier\courier_greevil_green\courier_greevil_green_ambient_2.vpcf"
-		"model"		"models/heroes/terrorblade/demon.vvmdl"
-		"model"		"models/cursed_rapier.vvmdl"
+		"model"		"models/heroes/terrorblade/demon.vmdl"
+		"model"		"models/cursed_rapier.vmdl"
 
 	}
 
@@ -17837,7 +17837,7 @@
 				{
 					"ScriptFile"			"items/custom/item_cursed_rapier.lua"
 					"Function"				"ModelSwapStart"
-					"model"					"models/items/terrorblade/dotapit_s3_fallen_light_metamorphosis/dotapit_s3_fallen_light_metamorphosis.vvmdl"
+					"model"					"models/items/terrorblade/dotapit_s3_fallen_light_metamorphosis/dotapit_s3_fallen_light_metamorphosis.vmdl"
 					"projectile_model"		"particles/units/heroes/hero_terrorblade/terrorblade_metamorphosis_base_attack.vpcf"
 				}
 
@@ -17903,7 +17903,7 @@
 		"ID"							"2314"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"				"item_recipe"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -18110,7 +18110,7 @@
 		"ID"							"2315"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityTextureName"				"item_recipe"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"BaseClass"						"item_datadriven"
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -18418,7 +18418,7 @@
 		"ID"							"2317"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityTextureName"				"item_recipe"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"BaseClass"						"item_datadriven"
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -18678,7 +18678,7 @@
 		"ID"							"2316"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityTextureName"				"item_recipe"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"BaseClass"						"item_datadriven"
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -18984,7 +18984,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/roshan_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19015,7 +19015,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/morphling_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19046,7 +19046,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/meatboy_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19077,7 +19077,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/zombie_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19108,7 +19108,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/spectre_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19139,7 +19139,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/antares_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19170,7 +19170,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/axe_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19201,7 +19201,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/invoker_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19232,7 +19232,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/bloodseeker_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19263,7 +19263,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/jacob_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19293,7 +19293,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/demon_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19323,7 +19323,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/shinobu_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19353,7 +19353,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/tangin_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19383,7 +19383,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/jotaro_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19413,7 +19413,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/storm_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19444,7 +19444,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/sven_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19475,7 +19475,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/broodmother_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19506,7 +19506,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/drow_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19537,7 +19537,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/phantom_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19568,7 +19568,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/sniper_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19599,7 +19599,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/alchemist_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19631,7 +19631,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/test_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19664,7 +19664,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/test_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19695,7 +19695,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/test_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19728,7 +19728,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/seer_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19761,7 +19761,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/mark_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19793,7 +19793,7 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/test_essence"
 		"ItemCost"                      "322"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -19814,7 +19814,7 @@
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"special/greevil_essence"
-		"Model"							"models/props_winter/present.vvmdl"
+		"Model"							"models/props_winter/present.vmdl"
 		"ItemCost"                      "0"
 
 
@@ -19929,8 +19929,8 @@
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-//	"Model"							"models/props_gameplay/banana_prop_closed.vvmdl"
-	"Model"							"models/gameplay/banana.vvmdl"
+//	"Model"							"models/props_gameplay/banana_prop_closed.vmdl"
+	"Model"							"models/gameplay/banana.vmdl"
 //    "Effect"                        "particles/my_air_part.vpcf"
 	"AbilityTextureName"			"item_banana"
 
@@ -20002,7 +20002,7 @@
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-	"Model"							"models/gameplay/meat/meat.vvmdl"
+	"Model"							"models/gameplay/meat/meat.vmdl"
 	"AbilityTextureName"			"item_meat"
 
 	// Item Info
@@ -20074,7 +20074,7 @@
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-	"Model"							"models/gameplay/fish/fish.vvmdl"
+	"Model"							"models/gameplay/fish/fish.vmdl"
 	"AbilityTextureName"			"item_fish1"
 
 	// Item Info
@@ -20147,7 +20147,7 @@
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-	"Model"							"models/props_gameplay/salve_red.vvmdl"
+	"Model"							"models/props_gameplay/salve_red.vmdl"
  	"Effect" 		 				"particles/econ/courier/courier_axolotl_ambient/courier_axolotl_ambient_trail_steam.vpcf"
 	"AbilityTextureName"			"item_life_essence"
 
@@ -20228,7 +20228,7 @@
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-	"Model"							"models/new/air.vvmdl"
+	"Model"							"models/new/air.vmdl"
  	"Effect" 		 				"particles/units/heroes/hero_windrunner/windrunner_windrun.vpcf"
 	"AbilityTextureName"			"item_air_essence"
 
@@ -20301,7 +20301,7 @@
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-	"Model"							"models/new/earth.vvmdl"
+	"Model"							"models/new/earth.vmdl"
     "Effect"                        "particles/units/heroes/hero_templar_assassin/templar_assassin_trap_stone.vpcf"
 	"AbilityTextureName"			"item_earth_essence"
 
@@ -20374,7 +20374,7 @@
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-	"Model"							"models/new/water.vvmdl"
+	"Model"							"models/new/water.vmdl"
     "Effect"                        "particles/econ/events/ti7/teleport_start_ti7_spin_water.vpcf"
 	"AbilityTextureName"			"item_water_essence"
 
@@ -20447,7 +20447,7 @@
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-	"Model"							"models/new/fire.vvmdl"
+	"Model"							"models/new/fire.vmdl"
  	"Effect"                        "particles/units/heroes/hero_ember_spirit/ember_spirit_flameguard_column.vpcf"
 	"Effect" 		 				"particles/units/heroes/hero_ember_spirit/ember_spirit_flameguard.vpcf"
 	"AbilityTextureName"			"item_fire_essence"
@@ -20797,7 +20797,7 @@
 	"AbilityTextureName"            "item_branches"
 	"BaseClass"						"item_datadriven"
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-	"Model"							"models/props_gameplay/branch.vvmdl"
+	"Model"							"models/props_gameplay/branch.vmdl"
      "ItemCost"						"0"
 	"ItemPurchasable"				"0"
 	"ItemKillable"					"0"
@@ -20832,7 +20832,7 @@
 	"BaseClass"                     "item_datadriven"
 	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT"
 	"AbilityTextureName"            "item_branch1"
-	"Model"							"models/props_gameplay/branch.vvmdl"
+	"Model"							"models/props_gameplay/branch.vmdl"
 
 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 	"ItemPermanent"					"0"
@@ -20899,7 +20899,7 @@
 	"BaseClass"                     "item_datadriven"
 	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT"
 	"AbilityTextureName"            "item_branch2"
-	"Model"							"models/props_gameplay/branch.vvmdl"
+	"Model"							"models/props_gameplay/branch.vmdl"
 
 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 	"ItemPermanent"					"0"
@@ -20966,7 +20966,7 @@
 	"BaseClass"                     "item_datadriven"
 	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT"
 	"AbilityTextureName"            "item_branch3"
-	"Model"							"models/props_gameplay/branch.vvmdl"
+	"Model"							"models/props_gameplay/branch.vmdl"
 
 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 	"ItemPermanent"					"0"
@@ -21033,7 +21033,7 @@
 	"BaseClass"                     "item_datadriven"
 	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT"
 	"AbilityTextureName"            "item_branch4"
-	"Model"							"models/props_gameplay/branch.vvmdl"
+	"Model"							"models/props_gameplay/branch.vmdl"
 
 	"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
 	"ItemPermanent"					"0"
@@ -21100,7 +21100,7 @@
 	"BaseClass"                     "item_datadriven"
 	"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT"
 	"AbilityTextureName"            "item_branch5"
-	"Model"							"models/props_gameplay/branch.vvmdl"
+	"Model"							"models/props_gameplay/branch.vmdl"
 
 	"AbilityCastRange"              "400"
 	"AbilityCooldown"               "900"
@@ -21154,7 +21154,7 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"item_halloween_candy"
 
-		"Model"							"models/props_gameplay/halloween_candy.vvmdl"
+		"Model"							"models/props_gameplay/halloween_candy.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -21254,7 +21254,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"							"item_datadriven"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityTextureName"				"item_recipe"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -21312,7 +21312,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"							"item_datadriven"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 		"AbilityTextureName"				"item_recipe"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 
 		// Item Info
@@ -21383,7 +21383,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"							"item_datadriven"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityTextureName"				"item_recipe"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -21497,42 +21497,27 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intelligence"	"25"
+				"bonus_cooldown"		"25"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_health"			"425"
+				"cast_range_bonus"			"0"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_mana"			"425"
+				"bonus_health"			"425"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_magical_armor"	"5"
+				"bonus_mana"			"725"
 			}
 			"05"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_cooldown"		"25"
-			}
-			"06"
-			{
 				"var_type"				"FIELD_FLOAT"
-				"hero_lifesteal"		"0"
-			}
-			"07"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"creep_lifesteal"		"0"
-			}
-			"08"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"active_duration"		"7"
+				"bonus_mana_regen"		"3.0"
 			}
 		}
 	}
@@ -21588,42 +21573,27 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intelligence"	"60"
+				"bonus_cooldown"		"35"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_health"			"1500"
+				"cast_range_bonus"			"150"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_mana"			"1500"
+				"bonus_health"			"1500"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_magical_armor"	"10"
+				"bonus_mana"			"1500"
 			}
 			"05"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_cooldown"		"35"
-			}
-			"06"
-			{
 				"var_type"				"FIELD_FLOAT"
-				"hero_lifesteal"		"25"
-			}
-			"07"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"creep_lifesteal"		"25"
-			}
-			"08"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"active_duration"		"7"
+				"bonus_mana_regen"		"10.0"
 			}
 		}
 	}
@@ -21692,7 +21662,7 @@
 		"BaseClass"                     "item_lua"
 		"ScriptFile"                    "items/custom/item_kirk"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE |DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
-		"Model"							"models/props_gameplay/neutral_box.vvmdl"
+		"Model"							"models/props_gameplay/neutral_box.vmdl"
 		"AbilityTextureName"			"item_kirk_gold"
 		"ItemCost"						"0"
 		"ItemPurchasable"				"1"
@@ -22897,7 +22867,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"item_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"Model"							"models/props_gameplay/red_box.vvmdl"
+		"Model"							"models/props_gameplay/red_box.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		"AbilityTextureName"			"special/Ventors_Gamble" // НАПИШИ ПУТЬ А ТО Я ХЗ
 		// Item Info
@@ -22969,7 +22939,7 @@
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 		"AbilityTextureName"			"custom/imba_recipe"
 
 		// Item Info
@@ -23065,7 +23035,7 @@
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"custom/imba_recipe"
 		// Item Info
@@ -23162,7 +23132,7 @@
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 		"AbilityTextureName"			"custom/imba_recipe"
 		"BaseClass"						"item_datadriven"
 		// Item Info
@@ -23258,7 +23228,7 @@
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 		"AbilityTextureName"			"custom/imba_recipe"
 		"BaseClass"						"item_datadriven"
 		// Item Info
@@ -23354,7 +23324,7 @@
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 		"AbilityTextureName"			"custom/imba_recipe"
 		"BaseClass"						"item_datadriven"
 
@@ -23453,7 +23423,7 @@
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 		"AbilityTextureName"			"custom/imba_recipe"
 		"BaseClass"						"item_datadriven"
 
@@ -23552,7 +23522,7 @@
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 		"AbilityTextureName"			"custom/imba_recipe"
 		"BaseClass"						"item_datadriven"
 
@@ -23650,7 +23620,7 @@
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 		"AbilityTextureName"			"custom/imba_recipe"
 		"BaseClass"						"item_datadriven"
 
@@ -23781,7 +23751,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
-		"Model"							"models/props_gameplay/gold_coin001.vvmdl"
+		"Model"							"models/props_gameplay/gold_coin001.vmdl"
 		"ItemKillable"					"0"
 
 		// Stats
@@ -23811,7 +23781,7 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"quest/chicken_king_staff"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/econ/courier/courier_trail_international_2013/courier_international_2013.vpcf"
 
 		// Item Info
@@ -23893,7 +23863,7 @@
 		"BaseClass"						"item_datadriven"
 		"AbilityTextureName"			"quest/chicken_game_ticket"
 
-		"Model"							"models/props_winter/present.vvmdl"
+		"Model"							"models/props_winter/present.vmdl"
 
 		"ItemCost"						"0"
 		"ItemShopTags"					"consumable"
@@ -23926,7 +23896,7 @@
 		"AbilityTextureName"			"siltbreaker/treads_of_ermacor"
 		"ScriptFile"					"items/siltbreaker/item_treads_of_ermacor"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -24065,7 +24035,7 @@
 		"BaseClass"                     "item_datadriven"
 		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"            "item_smoke_of_deceit"
-		"Model"							"models/props_gameplay/smoke.vvmdl"
+		"Model"							"models/props_gameplay/smoke.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_smoke.vpcf"
 
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
@@ -25090,7 +25060,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityTextureName"				"item_recipe"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"BaseClass"						"item_datadriven"
-		"Model"							"models/props_gameplay/recipe.vvmdl"
+		"Model"							"models/props_gameplay/recipe.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -25308,7 +25278,7 @@
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		// Item Info
@@ -25422,7 +25392,7 @@
 		"FightRecapLevel"				"1"
 		"AbilityTextureName"			"venomous_blade"
 
-		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		// Casting
@@ -25584,7 +25554,7 @@
 //		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 //		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 
-//		"Model"							"models/props_gameplay/treasure_chest001.vvmdl"
+//		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
 //		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
 
 		// Item Info
@@ -27456,7 +27426,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"icefrog/soul_gem"
 
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_gem.vpcf"
 		"ItemCost"						"0"
 		"ItemPurchasable"				"0"
@@ -27486,7 +27456,7 @@
 	{
 		"BaseClass"						"item_enchanted_mango"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"Model"							"models/props_gameplay/mango.vvmdl"
+		"Model"							"models/props_gameplay/mango.vmdl"
 		"ItemCost"						"0"
 		"ItemPurchasable"				"0"
 		"ItemQuality"					""
@@ -27501,7 +27471,7 @@
 		"BaseClass"						"item_lua"
 		"ScriptFile"					"items/custom/item_icefrog_stand"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"Model"							"models/props_gameplay/gem01.vvmdl"
+		"Model"							"models/props_gameplay/gem01.vmdl"
 		"AbilityTextureName"			"icefrog/icefrog_stand"
 
 		"ItemPurchasable"				"0"
@@ -31479,7 +31449,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
-		"Model"							"models/props_gameplay/gold_bag.vvmdl"
+		"Model"							"models/props_gameplay/gold_bag.vmdl"
 		"ItemKillable"					"0"
 		"AbilityTextureName"			"gift"
 
@@ -31510,7 +31480,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
-		"Model"							"models/props_gameplay/gold_coin001.vvmdl"
+		"Model"							"models/props_gameplay/gold_coin001.vmdl"
 		"ItemKillable"					"0"
 		"AbilityTextureName"			"gift"
 
@@ -31542,7 +31512,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"gift"
 
-		"Model"							"models/props_winter/present.vvmdl"
+		"Model"							"models/props_winter/present.vmdl"
 
 		"ItemCost"						"0"
 		"ItemShopTags"					"consumable"
@@ -31563,7 +31533,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"gift"
 
-		"Model"							"models/props_winter/present.vvmdl"
+		"Model"							"models/props_winter/present.vmdl"
 
 		"ItemCost"						"0"
 		"ItemShopTags"					"consumable"
@@ -31584,7 +31554,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"gift"
 
-		"Model"							"models/props_winter/present.vvmdl"
+		"Model"							"models/props_winter/present.vmdl"
 
 		"ItemCost"						"0"
 		"ItemShopTags"					"consumable"
@@ -31605,7 +31575,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"gift"
 
-		"Model"							"models/props_winter/present.vvmdl"
+		"Model"							"models/props_winter/present.vmdl"
 
 		"ItemCost"						"0"
 		"ItemShopTags"					"consumable"
@@ -31626,7 +31596,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"gift"
 
-		"Model"							"models/props_winter/present.vvmdl"
+		"Model"							"models/props_winter/present.vmdl"
 
 		"ItemCost"						"0"
 		"ItemShopTags"					"consumable"
@@ -32053,7 +32023,7 @@
 		"ScriptFile"					"items/custom/item_leaf"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"item_leaf_1"
-		"Model"							"models/props_gameplay/tango.vvmdl"
+		"Model"							"models/props_gameplay/tango.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_tango.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -32111,7 +32081,7 @@
 		"ScriptFile"					"items/custom/item_leaf"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"item_leaf_2"
-		"Model"							"models/props_gameplay/tango.vvmdl"
+		"Model"							"models/props_gameplay/tango.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_tango.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -32169,7 +32139,7 @@
 		"ScriptFile"					"items/custom/item_leaf"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"item_leaf_3"
-		"Model"							"models/props_gameplay/tango.vvmdl"
+		"Model"							"models/props_gameplay/tango.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_tango.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -32228,7 +32198,7 @@
 		"ScriptFile"					"items/custom/item_leaf"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"item_leaf_4"
-		"Model"							"models/props_gameplay/tango.vvmdl"
+		"Model"							"models/props_gameplay/tango.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_tango.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -32287,7 +32257,7 @@
 		"ScriptFile"					"items/custom/item_leaf"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"item_leaf_5"
-		"Model"							"models/props_gameplay/tango.vvmdl"
+		"Model"							"models/props_gameplay/tango.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_tango.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -32346,7 +32316,7 @@
 		"ScriptFile"					"items/custom/item_leaf"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"item_leaf_6"
-		"Model"							"models/props_gameplay/tango.vvmdl"
+		"Model"							"models/props_gameplay/tango.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_tango.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -32405,7 +32375,7 @@
 		"ScriptFile"					"items/custom/item_leaf"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"			"item_leaf_7"
-		"Model"							"models/props_gameplay/tango.vvmdl"
+		"Model"							"models/props_gameplay/tango.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_tango.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -32442,7 +32412,7 @@
 		"ScriptFile"					"items/custom/item_watermelon_skin"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityTextureName"			"special/watermelon_essence"
-		"Model"							"models/props_gameplay/tango.vvmdl"
+		"Model"							"models/props_gameplay/tango.vmdl"
 		"Effect"						"particles/generic_gameplay/dropped_tango.vpcf"
 
 		"ItemPurchasable"				"0"
@@ -32475,6 +32445,196 @@
 			{
 				"var_type"			"FIELD_INTEGER"
 				"buff_regen"		"2000"
+			}
+		}
+	}
+	"item_christmas_salut"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/custom/item_christmas_salut"
+		"AbilityTextureName" 			"item_christmas_salut"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"35"
+		"AbilityCastRange"				"500"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
+		"ItemCost"						"1500"
+
+		"ItemKillable"					"1"
+		"ItemPurchasable"				"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"SideShop"						"0"
+		"ItemSellable"					"1"
+		"IsTempestDoubleClonable"				"0"
+		"ItemIsNeutralDrop"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_dmg"				"25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_as"				"25"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"450"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bomb_count"			"12"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bomb_interval"			"0.5"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bomb_radius"			"350"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bomb_damage"			"175"
+			}
+		}
+	}
+	"item_snowman_mask"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/custom/item_snowman_mask"
+		"AbilityTextureName" 			"item_snowman_mask"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"23"
+		"AbilityCastRange"				"500"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"50"
+		"ItemCost"						"2000"
+
+		"ItemKillable"					"1"
+		"ItemPurchasable"				"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"SideShop"						"0"
+		"ItemSellable"					"1"
+		"IsTempestDoubleClonable"				"0"
+		"ItemIsNeutralDrop"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"				"500"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"				"8"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"6"
+			}
+		}
+	}
+	"item_snowman"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"items/custom/item_snowman"
+		"AbilityTextureName" 			"item_snowman"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"60"
+		"AbilityCastRange"				"500"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"500"
+		"ItemCost"						"5000"
+
+		"ItemKillable"					"1"
+		"ItemPurchasable"				"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"SideShop"						"0"
+		"ItemSellable"					"1"
+		"IsTempestDoubleClonable"				"0"
+		"ItemIsNeutralDrop"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_stats"			"50"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_hp_regen"				"35"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mp_regen"				"15"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"10"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"600"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"interval"				"0.25"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"175"
 			}
 		}
 	}

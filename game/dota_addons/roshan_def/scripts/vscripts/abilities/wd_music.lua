@@ -169,10 +169,9 @@ function WDSoundOn(keys)
 			current_music_number = current_music_number + 1
 		end
 		local music_duration = music_list[music_number].duration
-		local music_name = music_list[music_number].name
+		caster.music_name = music_list[music_number].name
 		caster:AddNewModifier(caster, ability, "modifier_witch_doctor_music", {duration = music_duration, music_name = music_name})
-		ability:ApplyDataDrivenModifier(caster, caster, "modifier_wd_music", nil)
- 	end
+	end
 end
 
 modifier_witch_doctor_music = class({
@@ -184,7 +183,7 @@ modifier_witch_doctor_music = class({
 })
 function modifier_witch_doctor_music:OnCreated(keys)
 	local caster = self:GetCaster()
-	self.music_name = keys.music_name
+	self.music_name = caster.music_name
 
 	EmitSoundOn(self.music_name, caster)
 --	print("music = "..self.music_name)
@@ -201,8 +200,8 @@ function modifier_witch_doctor_music:OnDestroy()
 	if caster.sound_on == true then		
 		local music_number = RandomInt(1,#music_list)
 		local music_duration = music_list[music_number].duration
-		local music_name = music_list[music_number].name
-		caster:AddNewModifier(caster, ability, "modifier_witch_doctor_music", {duration = music_duration, music_name = music_name})
+		caster.music_name = music_list[music_number].name
+		caster:AddNewModifier(caster, ability, "modifier_witch_doctor_music", {duration = music_duration})
 	end
 end
 

@@ -3278,6 +3278,17 @@
         "DOTA_Tooltip_ability_hoodwink_armor_destroy_armor_decrease"            "护甲减少:"
         "DOTA_Tooltip_modifier_hoodwink_armor_destroy_debuff"                           "护甲被降低"
         "DOTA_Tooltip_modifier_hoodwink_armor_destroy_debuff_Description"               "护甲被降低"
+//viper
+        "npc_dota_hero_"        ""
+
+        "DOTA_Tooltip_ability_viper_nethertoxin_custom"                                        "幽冥剧毒"
+        "DOTA_Tooltip_ability_viper_nethertoxin_custom_Description"                            "冥界亚龙向目标区域施放幽冥剧毒。范围内敌人持续受到伤害，在区域内停留的时间越长，受到的伤害也越高。"
+        "DOTA_Tooltip_ability_viper_nethertoxin_custom_Lore"                                   "三途川的剧毒让小伤也能致死，而疲乏可以送命。"
+        "DOTA_Tooltip_ability_viper_nethertoxin_custom_min_damage"                         "最低每秒伤害："
+        "DOTA_Tooltip_ability_viper_nethertoxin_custom_max_damage"                         "最高每秒伤害："
+        "DOTA_Tooltip_ability_viper_nethertoxin_custom_max_duration"                           "最高每秒伤害持续时间："
+        "DOTA_Tooltip_ability_viper_nethertoxin_custom_radius"                         "作用范围："
+        "DOTA_Tooltip_ability_viper_nethertoxin_custom_duration"                       "持续时间："
 //hero
         "npc_dota_hero_"                ""
 
@@ -4560,6 +4571,34 @@
         "DOTA_Tooltip_ability_"                                                 "名称" 
         "DOTA_Tooltip_ability__Description"                             "描述"
         "DOTA_Tooltip_ability__"                                ""
+
+    "DOTA_Tooltip_ability_item_snowman"                         "雪人玩具"
+    "DOTA_Tooltip_ability_item_snowman_Description"             "创建雪人"
+    "DOTA_Tooltip_ability_item_snowman_bonus_stats"             "+$all"
+    "DOTA_Tooltip_ability_item_snowman_bonus_hp_regen"              "+$hp_regen"
+    "DOTA_Tooltip_ability_item_snowman_bonus_mp_regen"              "+$mana_regen"
+    "DOTA_Tooltip_ability_item_snowman_duration"                "持续时间:"
+    "DOTA_Tooltip_ability_item_snowman_radius"                  "半径:"
+    "DOTA_Tooltip_ability_item_snowman_interval"                "滑雪间隔:"
+    "DOTA_Tooltip_ability_item_snowman_damage"                  "扫雪球损坏:"
+
+    "DOTA_Tooltip_ability_item_snowman_mask"                            "雪人面具"
+    "DOTA_Tooltip_ability_item_snowman_mask_Description"            "<h1>活性: 假面舞会 </h1>面具使您即使在最拥挤的地方也看不见！"
+    "DOTA_Tooltip_ability_item_snowman_mask_bonus_health"           "+$health"
+    "DOTA_Tooltip_ability_item_snowman_mask_bonus_armor"            "+$armor"
+    "DOTA_Tooltip_ability_item_snowman_mask_duration"               "持续时间:"
+    "DOTA_Tooltip_modifier_item_snowman_mask_effect"                            "假面舞会"
+    "DOTA_Tooltip_modifier_item_snowman_mask_effect_Description"                "隐"
+
+    "DOTA_Tooltip_ability_item_christmas_salut"                         "烟花"
+    "DOTA_Tooltip_ability_item_christmas_salut_Description"             "发射烟花"
+    "DOTA_Tooltip_ability_item_christmas_salut_bonus_dmg"               "+$damage"
+    "DOTA_Tooltip_ability_item_christmas_salut_bonus_as"                "+$attack"
+    "DOTA_Tooltip_ability_item_christmas_salut_radius"                  "半径:"
+    "DOTA_Tooltip_ability_item_christmas_salut_bomb_count"              "烟火计数:"
+    "DOTA_Tooltip_ability_item_christmas_salut_bomb_interval"           "烟花间隔:"
+    "DOTA_Tooltip_ability_item_christmas_salut_bomb_radius"             "烟花半径:"
+    "DOTA_Tooltip_ability_item_christmas_salut_bomb_damage"             "烟花损坏:"
 
     "DOTA_Tooltip_ability_item_leaf_1"                          "大自然的叶子"
     "DOTA_Tooltip_ability_item_leaf_1_Description"              "保护自然的叶子。"

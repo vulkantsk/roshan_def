@@ -11,6 +11,15 @@ FrostEvent.event_avatars = {}
 FrostEvent.available = true
 FrostEvent.players_ingame = 0
 
+FrostEvent.rewards ={
+	[0] = {gold = nil, item = nil, pet = nil},
+	[1] = {item = "item_christmas_salut"},
+	[2] = {gold = 750, pet = "npc_dota_event_survior_pet"},
+	[3] = {item = "item_snowman_mask"},
+	[4] = {gold = 1500, pet = "npc_dota_event_penguin_pet"},
+	[5] = {gold = 2500, item = "item_snowman"},
+}
+
 function FrostEvent:InitGameMode()
 	ListenToGameEvent("npc_spawned",Dynamic_Wrap( self, 'OnNPCSpawned' ), self )
 	ListenToGameEvent('entity_killed', Dynamic_Wrap(self, 'OnEntityKilled'), self)
@@ -104,11 +113,12 @@ function FrostEvent:OnEntityKilled( keys )
 	end	
 
 	if killedUnit:GetUnitName() == "npc_dota_event_mega_ghoul" then
-		GiveGoldPlayers(5000)
+		self:GiveReward()
+		self:EndRound()						
+		
 		self.event_level = self.event_level + 1
 		self.event_init   = false
 		self.available = false
-		self:EndRound()		
 	end
 
 	if killedUnit.defense then
@@ -121,12 +131,11 @@ function FrostEvent:OnEntityKilled( keys )
 
 		if self.defense_init == false and self.defense_enemy_count == 0 then
 			if self.defense_lvl == 5 then
-				GiveGoldPlayers(2500)
-				EmitGlobalSound("event_gift")
+				self:GiveReward()
+				self:EndRound()						
 
 				self.event_level = self.event_level + 1
 				self.event_init   = false
-				self:EndRound()						
 			else
 				self.defense_lvl = self.defense_lvl + 1
 				self.defense_init = false
@@ -228,6 +237,10 @@ function FrostEvent:StartEvent_1()
 			end
 			k = k + 1
 			Timers:CreateTimer(0.1*k, function()
+				if 	self.event_init == false then
+					return
+				end				
+
 				local box_index = RandomInt(1, #boxes)
 				local box_type = boxes[box_index]
 				table.remove(boxes, box_index)
@@ -257,6 +270,7 @@ function FrostEvent:StartEvent_1()
 				table.insert(event_box, box)
 				box:SetRenderColor( box_color[1], box_color[2] , box_color[3] )
 				print("box["..i.."]["..jndex.."] = "..box_type)
+
 			end)		
 		end
 	end
@@ -465,13 +479,36 @@ function FrostEvent:StartEvent_5()
 end
 
 function FrostEvent:EndRound()
-	FrostEvent.event_init   = false
-	local avatars = FrostEvent.event_avatars
+	self.event_init   = false
+	local avatars = self.event_avatars
 	for _,avatar in pairs(avatars) do
 		avatar:ForceKill(false)
 	end
 --[[	for i = #avatars, 1, -1 do
 			avatars[i]:ForceKill(false)
 		end]]	
+end
+
+function FrostEvent:GiveReward()
+	local unit 
+	local avatars = self.event_avatars
+	for _,avatar in pairs(avatars) do
+		unit = avatar
+--		print("unit name = "..unit:GetUnitName())
+		break
+	end
+	
+	local owner = unit.hero
+	local rewards = self.rewards[self.event_level]
+	if rewards.gold then
+		GiveGoldPlayers(rewards.gold)
+	end
+	if rewards.item then
+		owner:AddItemByName(rewards.item)
+	end
+	if rewards.pet then
+		local pet = CreateUnitByName(rewards.pet, owner:GetAbsOrigin(), true, owner, owner, owner:GetTeam())
+	end
+	EmitGlobalSound("event_gift")
 end
 FrostEvent:InitGameMode()

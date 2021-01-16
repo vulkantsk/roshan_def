@@ -7,7 +7,18 @@ end
 ability_test_2 = class({})
 
 function ability_test_2:OnSpellStart()
-	EmitGlobalSound("gachi_fisting_300")
+		FrostEvent.event_level = 5
+		local owner = self:GetCaster()
+		local rewards = FrostEvent.rewards[FrostEvent.event_level]
+		if rewards.gold then
+			GiveGoldPlayers(rewards.gold)
+		end
+		if rewards.item then
+			owner:AddItemByName(rewards.item)
+		end
+		if rewards.pet then
+			local pet = CreateUnitByName(rewards.pet, owner:GetAbsOrigin(), true, owner, owner, owner:GetTeam())
+		end
 end
 
 ability_test_3 = class({})

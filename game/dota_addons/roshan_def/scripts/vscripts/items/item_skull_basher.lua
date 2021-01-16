@@ -277,9 +277,9 @@ function modifier_imba_skull_basher_skull_break:IsPurgable() return true end
 function modifier_imba_skull_basher_skull_break:IsDebuff() return true end
 
 function modifier_imba_skull_basher_skull_break:CheckState()
-	local state = {[MODIFIER_STATE_PASSIVES_DISABLED] = true}
+--	local state = {[MODIFIER_STATE_PASSIVES_DISABLED] = true}
 
-	return state
+--	return state
 end
 
 function modifier_imba_skull_basher_skull_break:OnCreated()

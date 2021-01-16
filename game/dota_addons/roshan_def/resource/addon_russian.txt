@@ -307,7 +307,7 @@
 "DOTA_Tooltip_modifier_troll_warlord_battle_trance_Description"	"Скорость атаки увеличена на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
 
 //Huskar
-		"npc_dota_hero_huskar"	"Хускар(IMBA)"
+		"npc_dota_hero_huskar"	"Хускар"
 		"DOTA_Tooltip_ability_inherit_huskar_buff"									"Huskar buff"
 		"DOTA_Tooltip_ability_inherit_huskar_buff_Description"						"Неназванный король троллей, умелый правитель, который одним своим видом воодушевляет своих подданных на величайшие жертвы, которые вносят огромный вклад в победу! "
 		"DOTA_Tooltip_ability_inherit_huskar_buff_dmg_bonus"						"Бонусный урон :"
@@ -1310,7 +1310,7 @@
         "npc_dota_techies_land_mine"    "Минка"	
 //Phoenix(Special hero)
  
-        "npc_dota_hero_phoenix"          "Жар-птица"
+        "npc_dota_hero_phoenix"          "Жар-птица(IMBA)"
  
         "DOTA_Tooltip_ability_phoenix_fire_soul"                        "Fire soul"
         "DOTA_Tooltip_ability_phoenix_fire_soul_Description"            "Чувствуя недостаток жизненной силы душевный огонь разжигается сильнее, увеличивая силу магии !"
@@ -3303,6 +3303,18 @@
  		"DOTA_Tooltip_ability_hoodwink_armor_destroy_armor_decrease"			"СНИЖЕНИЕ БРОНИ:"
  		"DOTA_Tooltip_modifier_hoodwink_armor_destroy_debuff"							"Armor destroy"
 		"DOTA_Tooltip_modifier_hoodwink_armor_destroy_debuff_Description"				"Броня снижена"
+//viper
+		"npc_dota_hero_"		"hero"
+
+		"DOTA_Tooltip_ability_viper_nethertoxin_custom"										"Nethertoxin"
+		"DOTA_Tooltip_ability_viper_nethertoxin_custom_Description"							"Герой покрывает землю низшим токсином. Противники в отравленной области получают периодический урон, увеличивающийся со временем пребывания в ней."
+		"DOTA_Tooltip_ability_viper_nethertoxin_custom_Lore"									"Яд нижних пределов делает смертельной каждую рану, каждую немощь."
+		"DOTA_Tooltip_ability_viper_nethertoxin_custom_min_damage"							"МИН. УРОН В СЕКУНДУ:"
+		"DOTA_Tooltip_ability_viper_nethertoxin_custom_max_damage"							"МАКС. УРОН В СЕКУНДУ:"
+		"DOTA_Tooltip_ability_viper_nethertoxin_custom_max_duration"							"МАКС. ДЛИТЕЛЬНОСТЬ ДЕЙСТВИЯ УРОНА:"
+		"DOTA_Tooltip_ability_viper_nethertoxin_custom_radius"							"РАДИУС:"
+		"DOTA_Tooltip_ability_viper_nethertoxin_custom_duration"						"ДЛИТЕЛЬНОСТЬ:"
+
 //Hero
 		"npc_dota_hero_"		"hero"
 
@@ -4607,6 +4619,34 @@
 	"DOTA_Tooltip_ability_"							"name"
 	"DOTA_Tooltip_ability__Description"				"description"
 	"DOTA_Tooltip_ability__"				""
+
+	"DOTA_Tooltip_ability_item_snowman"							"Snowman toy"
+	"DOTA_Tooltip_ability_item_snowman_Description"				"Создаёт снеговичка !"
+	"DOTA_Tooltip_ability_item_snowman_bonus_stats"				"+$all"
+	"DOTA_Tooltip_ability_item_snowman_bonus_hp_regen"				"+$hp_regen"
+	"DOTA_Tooltip_ability_item_snowman_bonus_mp_regen"				"+$mana_regen"
+	"DOTA_Tooltip_ability_item_snowman_duration"				"ДЛИТЕЛЬНОСТЬ:"
+	"DOTA_Tooltip_ability_item_snowman_radius"					"РАДИУС:"
+	"DOTA_Tooltip_ability_item_snowman_interval"				"ИНТЕРВАЛ СНЕЖКОВ:"
+	"DOTA_Tooltip_ability_item_snowman_damage"					"УРОН СНЕЖКОВ:"
+
+	"DOTA_Tooltip_ability_item_snowman_mask"							"Snowman mask"
+	"DOTA_Tooltip_ability_item_snowman_mask_Description"			"<h1>Активная: Маскарад </h1>Маска позволяет быть незаметным даже в самых людных местах !"
+	"DOTA_Tooltip_ability_item_snowman_mask_bonus_health"			"+$health"
+	"DOTA_Tooltip_ability_item_snowman_mask_bonus_armor"			"+$armor"
+	"DOTA_Tooltip_ability_item_snowman_mask_duration"				"ДЛИТЕЛЬНОСТЬ:"
+	"DOTA_Tooltip_modifier_item_snowman_mask_effect"				"Snowman mask"
+	"DOTA_Tooltip_modifier_item_snowman_mask_effect_Description"				"Скрыт"
+
+	"DOTA_Tooltip_ability_item_christmas_salut"							"Fireworks"
+	"DOTA_Tooltip_ability_item_christmas_salut_Description"				"Запускает фейверки !"
+	"DOTA_Tooltip_ability_item_christmas_salut_bonus_dmg"				"+$damage"
+	"DOTA_Tooltip_ability_item_christmas_salut_bonus_as"				"+$attack"
+	"DOTA_Tooltip_ability_item_christmas_salut_radius"					"РАДИУС:"
+	"DOTA_Tooltip_ability_item_christmas_salut_bomb_count"				"КОЛИЧЕСТВО ФЕЙВЕРКОВ:"
+	"DOTA_Tooltip_ability_item_christmas_salut_bomb_interval"			"ИНТЕРВАЛ ФЕЙВЕРКОВ:"
+	"DOTA_Tooltip_ability_item_christmas_salut_bomb_radius"				"РАДИУС ФЕЙВЕРКОВ:"
+	"DOTA_Tooltip_ability_item_christmas_salut_bomb_damage"				"УРОН ФЕЙВЕРКОВ:"
 
 	"DOTA_Tooltip_ability_item_leaf_1"							"Leaf of nature"
 	"DOTA_Tooltip_ability_item_leaf_1_Description"				"Листочек, дающий защиту природы."
