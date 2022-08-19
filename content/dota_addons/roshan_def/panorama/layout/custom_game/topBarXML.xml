@@ -12,7 +12,7 @@
         <Image id="ImgRoshan" src="file://{resources}/images/custom_game/donate/roshan.png" />
         <Label id="TimerLabel" text="00:00" />
         <Image id="Difficult_img" /> 
-        <Label id="Difficult" text="imba_gamemode_settings_lock_options" /> 
+        <Label id="Difficult" text="#imba_gamemode_settings_lock_options" /> 
       </Panel>
     </Panel>
   </Panel>

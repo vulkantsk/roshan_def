@@ -175,7 +175,7 @@
 		"npc_riki_shadow"	"Тень Рики"
 		
 //Ogre Magi
-		"npc_dota_hero_ogre_magi"	"Ogre Magi"
+		"npc_dota_hero_ogre_magi"	"Ogre Magi(IMBA)"
 		"DOTA_Tooltip_ability_inherit_ogre_buff"								"Ogre buff"
 		"DOTA_Tooltip_ability_inherit_ogre_buff_Description"					"Наивный, но великий выходец своего народа, способный обратить в пепел любого врага, заслуживши этим доверие союзников и самопожертвование огров! "
 		"DOTA_Tooltip_ability_inherit_ogre_buff_dmg_bonus"					"Бонусный урон:"
@@ -241,7 +241,7 @@
 
 
 //Troll_Warlorld
-		"npc_dota_hero_troll_warlord"	"Troll Warlord"
+		"npc_dota_hero_troll_warlord"	"Троль Воевода(IMBA)"
 		"DOTA_Tooltip_ability_inherit_troll_buff"									"Warlord buff"
 		"DOTA_Tooltip_ability_inherit_troll_buff_Description"						"Один из величайших командиров армии троллей, которой способен вселить страх в любого своего противника и воодушевить солдат биться до последней капли крови во что бы то ни стало! "
 		"DOTA_Tooltip_ability_inherit_troll_buff_evasion_bonus"						"Дополнительное уклонение :"
@@ -642,7 +642,7 @@
 		"DOTA_Tooltip_modifier_arc_warden_tempest_double_Description"	"Копия Meepo может использовать все предметы и способности !"
 
 //Centaur
-		"npc_dota_hero_centaur"	"Centaur"
+		"npc_dota_hero_centaur"	"Centaur(IMBA)"
 		"DOTA_Tooltip_ability_inherit_centaur_buff"									"Centaur buff"
 		"DOTA_Tooltip_ability_inherit_centaur_buff_Description"						"Являясь лучшим воином королевства кентавров, этот воин способен воодушевить любого собрата для победы над любым, даже невероятным врагом! "
 		"DOTA_Tooltip_ability_inherit_centaur_buff_dmg_bonus"						"%Бонусная атака :"
@@ -1086,7 +1086,7 @@
 
 //Renegade
 
-		"npc_dota_hero_life_stealer"			"Отступник"
+		"npc_dota_hero_life_stealer"			"Отступник(IMBA)"
 		"npc_dota_hero_life_stealer_bio"		"Отступник - амбициозный крип решивший предать Dire и присоединиться к Рошану ради безграничной силы !"
 
 		"DOTA_Tooltip_ability_renegade_backtrack"									"Backtrack"
@@ -1310,7 +1310,7 @@
         "npc_dota_techies_land_mine"    "Минка"	
 //Phoenix(Special hero)
  
-        "npc_dota_hero_phoenix"          "Жар-птица(IMBA)"
+        "npc_dota_hero_phoenix"          "Жар-птица"
  
         "DOTA_Tooltip_ability_phoenix_fire_soul"                        "Fire soul"
         "DOTA_Tooltip_ability_phoenix_fire_soul_Description"            "Чувствуя недостаток жизненной силы душевный огонь разжигается сильнее, увеличивая силу магии !"

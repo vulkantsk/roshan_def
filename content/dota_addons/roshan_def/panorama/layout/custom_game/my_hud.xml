@@ -15,9 +15,9 @@
 					<Button id="QuitButton" onactivate="$('#DonateContainer').RemoveClass('Visible')" />
 				</Panel>
 				<Panel id="DonateItemsList">
-					<Label class="ListName" text="donate_list_name_artifacts"/>
+					<Label class="ListName" text="#donate_list_name_artifacts"/>
 					<Panel id="ItemsList" class="DonateItemsList" />
-					<Label class="ListName" text="donate_list_name_heroes"/>
+					<Label class="ListName" text="#donate_list_name_heroes"/>
 					<Panel id="HeroesList" class="DonateItemsList" />
 				</Panel> 
 				<Panel class="DonateInfoPanel" />

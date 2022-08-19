@@ -19,12 +19,10 @@ function Spawn()
 	end
 
 	Timers:CreateTimer(start_timer,function()
-		if FrostEvent and FrostEvent.event_level == 2 then
-			local fireTrap = npc:FindAbilityByName("breathe_fire_alt")
-			npc:CastAbilityOnPosition(npc.target:GetOrigin(), fireTrap, -1 )
-		end
-		return interval
-	
+		local fireTrap = npc:FindAbilityByName("breathe_fire_alt")
+		npc:CastAbilityOnPosition(npc.target:GetOrigin(), fireTrap, -1 )
+
+		return interval	
 	end)
 end
 

@@ -160,7 +160,7 @@
 		"npc_riki_shadow"	"Shadow of Death"
 		
 //Ogre Magi
-		"npc_dota_hero_ogre_magi"	"Ogre Magi"
+		"npc_dota_hero_ogre_magi"	"Ogre Magi(IMBA)"
 		"DOTA_Tooltip_ability_inherit_ogre_buff"								"Ogre buff"
 		"DOTA_Tooltip_ability_inherit_ogre_buff_Description"					"A naive, but still the greatest Ogre hero. Burning down entire armies, he inspires all Ogres in combat! "
 		"DOTA_Tooltip_ability_inherit_ogre_buff_dmg_bonus"					"%BONUS DMG:"
@@ -218,7 +218,7 @@
 		"DOTA_Tooltip_modifier_multicast_new_Description"					"Allows the hero's abilities and items to trigger multiple times in a single cast."	
 
 //Troll_Warlorld
-		"npc_dota_hero_troll_warlord"	"Troll Warlord"
+		"npc_dota_hero_troll_warlord"	"Troll Warlord(IMBA)"
 
 		"DOTA_Tooltip_ability_inherit_troll_buff"									"Warlord buff"
 		"DOTA_Tooltip_ability_inherit_troll_buff_Description"						"The greatest commander of the Troll army. He is able to instill fear in opponents and inspire soldiers to fight to their last breath!"
@@ -266,7 +266,7 @@
 		"DOTA_Tooltip_ability_troll_warlord_battle_trance_mass_radius"			"RADIUS:"
 
 //Huskar
-		"npc_dota_hero_huskar"	"Huskar"
+		"npc_dota_hero_huskar"	"Huskar(IMBA)"
 
 		"DOTA_Tooltip_ability_inherit_huskar_buff"									"Huskar buff"
 		"DOTA_Tooltip_ability_inherit_huskar_buff_Description"						"The uncrowned king of Trolls. A skillful ruler. His very appearance inspires his subjects for the greatest sacrifices!"
@@ -594,7 +594,7 @@
 		"DOTA_Tooltip_modifier_arc_warden_tempest_double_Description"	"A complete clone of Meepo that can use spells and items ."
 
 //Centaur
-		"npc_dota_hero_centaur"	"Centaur"
+		"npc_dota_hero_centaur"	"Centaur(IMBA)"
 		"DOTA_Tooltip_ability_inherit_centaur_buff"									"Centaur buff"
 		"DOTA_Tooltip_ability_inherit_centaur_buff_Description"						"The mightiest Centaur to ever walk this world. His presence and glory inspires all Centaurs on the field of battle!"
 		"DOTA_Tooltip_ability_inherit_centaur_buff_dmg_bonus"						"%DMG BONUS :"
@@ -1023,7 +1023,7 @@
 
 //Renegade
 
-		"npc_dota_hero_life_stealer"			"Renegade"
+		"npc_dota_hero_life_stealer"			"Renegade(IMBA)"
 		"npc_dota_hero_life_stealer_bio"		"Renegade - an ambitious creep who decided to betray Dire and join Roshan in search of unlimited power!"
 
 		"DOTA_Tooltip_ability_renegade_backtrack"									"Backtrack"
@@ -1239,7 +1239,7 @@
 		
 //Phoenix
  
-        "npc_dota_hero_phoenix"          "Phoenix(IMBA)"
+        "npc_dota_hero_phoenix"          "Phoenix"
  
         "DOTA_Tooltip_ability_phoenix_fire_soul"                        "Fiery soul"
         "DOTA_Tooltip_ability_phoenix_fire_soul_Description"            "Feeling the lack of vitality, its soul burns more brightly, increasing the spell damage!"

@@ -47,15 +47,15 @@ function UpdateTopBar(){
     var panel = base.FindChildTraverse('TopBarTime')
     if (panel)
         panel.DeleteAsync(0) 
-    panel = $.CreatePanel('Panel',base,'TopBarTime')
+    panel = $.CreatePanel('Panel',base,'#TopBarTime')
     panel.BLoadLayout("file://{resources}/layout/custom_game/topBarXML.xml", false, false)
     TimerLabel = panel.FindChildTraverse('TimerLabel')
     let table = CustomNetTables.GetTableValue('top_bar', 'Difficuilt');
     let data = [
-        "imba_gamemode_settings_lock_options",
-        "imba_gamemode_settings_lock_options1",
-        "imba_gamemode_settings_lock_options2",
-        "imba_gamemode_settings_lock_options3", 
+        "#imba_gamemode_settings_lock_options",
+        "#imba_gamemode_settings_lock_options1",
+        "#imba_gamemode_settings_lock_options2",
+        "#imba_gamemode_settings_lock_options3", 
     ]
     let data_img = [
         'panorama/images/rank_tier_icons/rank1_psd.vtex',

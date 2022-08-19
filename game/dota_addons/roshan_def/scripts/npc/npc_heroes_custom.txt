@@ -3,7 +3,288 @@
 // the specified key-value combinations.  Use override_hero <hero_to_override> for this.
 "DOTAHeroes"
 {
+	"npc_dota_hero_luna"
+	{
+		"override_hero"				"npc_dota_hero_luna"
+		"Ability1"					"luna_lucent_beam_custom"
+		"Ability2"					"luna_moon_glaive_custom"
+		"Ability3"					"luna_lunar_blessing_custom"
+		"Ability4"					"luna_moon_light"
+		"Ability5"					"luna_eclipse_custom"
+		"Ability6"					"luna_lumina_bless"
+		"Ability10"					"special_bonus_exp_boost_20"
+		"Ability11"					"special_bonus_movement_speed_35"
+		"Ability12"					"special_bonus_attack_speed_30"
+		"Ability13"					"special_bonus_attack_damage_30"
+		"Ability14"					"special_bonus_all_stats_10"
+		"Ability15"					"special_bonus_agility_25"
+		"Ability16"					"special_bonus_all_stats_15"
+		"Ability17"					"special_bonus_agility_40"
 
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackDamageMin"			"15"
+		"AttackDamageMax"			"25"
+		"AttackRate"				"1.5"
+		"ProjectileSpeed"			"1550"
+		"AttackAnimationPoint"		"0.35"
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"-2"	
+		"MagicalResistance"			"25"
+
+		"StatusHealth"				"200"
+		"StatusHealthRegen"			"0.5"
+		"StatusMana"				"100"
+		"StatusManaRegen"			"1"
+
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"15"
+		"AttributeStrengthGain"		"2"
+		"AttributeBaseAgility"		"20"
+		"AttributeAgilityGain"		"3"
+		"AttributeBaseIntelligence"	"15"
+		"AttributeIntelligenceGain"	"1"
+
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"325"
+		"MovementTurnRate"			"0.5"
+
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
+	}
+	"npc_dota_hero_batrider"
+	{
+		"override_hero"				"npc_dota_hero_batrider"
+		"Ability1"					"batrider_fireball"
+		"Ability2"					"batrider_bomb"
+		"Ability3"					"batrider_inner_bensol"
+		"Ability4"					"batrider_sticky_masut"
+		"Ability5"					"batrider_combusition"
+		"Ability6"					"batrider_bombardier"
+		"Ability10"					"special_bonus_exp_boost_30"
+		"Ability11"					"special_bonus_gold_income_240"
+		"Ability12"					"special_bonus_mp_regen_10"
+		"Ability13"					"special_bonus_hp_regen_30"
+		"Ability14"					"special_bonus_all_stats_15"
+		"Ability15"					"special_bonus_intelligence_30"
+		"Ability16"					"special_bonus_spell_amplify_20"
+		"Ability17"					"special_bonus_spell_lifesteal_custom_10"
+
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackDamageMin"			"15"
+		"AttackDamageMax"			"25"
+		"AttackRate"				"1.7"
+		"ProjectileSpeed"			"1550"
+		"AttackAnimationPoint"		"0.35"
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"-2"	
+		"MagicalResistance"			"25"
+
+		"StatusHealth"				"200"
+		"StatusHealthRegen"			"0.5"
+		"StatusMana"				"100"
+		"StatusManaRegen"			"1"
+
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
+		"AttributeBaseStrength"		"15"
+		"AttributeStrengthGain"		"2"
+		"AttributeBaseAgility"		"10"
+		"AttributeAgilityGain"		"1"
+		"AttributeBaseIntelligence"	"25"
+		"AttributeIntelligenceGain"	"3"
+
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"325"
+		"MovementTurnRate"			"0.5"
+
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
+	}
+	"npc_dota_hero_necrolyte"
+	{
+		"override_hero"				"npc_dota_hero_necrolyte"
+		"Ability1"					"necrolyte_summon_skeleton"
+		"Ability2"					"necrolyte_summon_skeleton_mage"
+		"Ability3"					"necrolyte_plague_cloud"
+		"Ability4"					"necrolyte_death_rage"
+		"Ability5"					"necrolyte_summon_death_knight"
+		"Ability6"					"necrolyte_shadow_of_death"
+		"Ability10"		"special_bonus_exp_boost_30"
+		"Ability11"		"special_bonus_gold_income_240"
+		"Ability12"		"special_bonus_mp_regen_6"
+		"Ability13"		"special_bonus_hp_regen_12"
+		"Ability14"		"special_bonus_all_stats_10"
+		"Ability15"		"special_bonus_intelligence_25"
+		"Ability16"		"special_bonus_all_stats_15"
+		"Ability17"		"special_bonus_cooldown_reduction_custom_15"
+
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackDamageMin"			"15"
+		"AttackDamageMax"			"25"
+		"AttackRate"				"1.7"
+		"ProjectileSpeed"			"1550"
+		"AttackAnimationPoint"		"0.35"
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"-2"	
+		"MagicalResistance"			"25"
+
+		"StatusHealth"				"200"
+		"StatusHealthRegen"			"0.5"
+		"StatusMana"				"100"
+		"StatusManaRegen"			"1"
+
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
+		"AttributeBaseStrength"		"15"
+		"AttributeStrengthGain"		"2"
+		"AttributeBaseAgility"		"10"
+		"AttributeAgilityGain"		"1"
+		"AttributeBaseIntelligence"	"25"
+		"AttributeIntelligenceGain"	"3"
+
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"325"
+		"MovementTurnRate"			"0.5"
+
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
+	}
+	"npc_dota_hero_primal_beast"
+	{
+
+		"Ability1"					"primal_beast_wave"
+		"Ability2"					"primal_beast_clap"
+		"Ability3"					"primal_beast_armor"
+		"Ability4"					"primal_beast_savage_blow"
+		"Ability5"					"primal_beast_primal_strength"
+		"Ability6"					"primal_beast_pulverize_custom"
+		"Ability10"		"special_bonus_exp_boost_20"
+		"Ability11"		"special_bonus_gold_income_240"
+		"Ability12"		"special_bonus_armor_5"
+		"Ability13"		"special_bonus_magic_resistance_15"
+		"Ability14"		"special_bonus_all_stats_10"
+		"Ability15"		"special_bonus_strength_25"
+		"Ability16"		"special_bonus_hp_regen_25"
+		"Ability17"		"special_bonus_strength_40"
+
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackDamageMin"			"15"
+		"AttackDamageMax"			"25"
+		"AttackRate"				"1.7"
+		"ProjectileSpeed"			"1550"
+		"AttackAnimationPoint"		"0.35"
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"-2"	
+		"MagicalResistance"			"25"
+
+		"StatusHealth"				"200"
+		"StatusHealthRegen"			"0.5"
+		"StatusMana"				"100"
+		"StatusManaRegen"			"1"
+
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"25"
+		"AttributeStrengthGain"		"3"
+		"AttributeBaseAgility"		"15"
+		"AttributeAgilityGain"		"2"
+		"AttributeBaseIntelligence"	"10"
+		"AttributeIntelligenceGain"	"1"
+
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"325"
+		"MovementTurnRate"			"0.5"
+
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
+	}
+	"npc_dota_hero_kunkka"
+	{
+ 		"ModelScale"				"1.2"
+
+ 		"Ability1"					"kunkka_torrent"
+		"Ability2"					"kunkka_tidebringer"
+		"Ability3"					"kunkka_hard_blow"
+		"Ability4"					"kunkka_x_marks_the_spot"
+		"Ability5"					"kunkka_seasickness_immunity"
+		"Ability6"					"kunkka_ghostship"
+		"Ability7"					"kunkka_return"
+		"Ability10"		"special_bonus_exp_boost_20"
+		"Ability11"		"special_bonus_gold_income_240"
+		"Ability12"		"special_bonus_armor_5"
+		"Ability13"		"special_bonus_magic_resistance_15"
+		"Ability14"		"special_bonus_all_stats_10"
+		"Ability15"		"special_bonus_strength_25"
+		"Ability16"		"special_bonus_hp_regen_25"
+		"Ability17"		"special_bonus_strength_40"
+
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackDamageMin"			"35"
+		"AttackDamageMax"			"55"
+		"AttackRate"				"1.7"
+		"ProjectileSpeed"			"1550"
+		"AttackAnimationPoint"		"0.35"
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"-2"	
+		"MagicalResistance"			"25"
+
+		"StatusHealth"				"200"
+		"StatusHealthRegen"			"0.5"
+		"StatusMana"				"100"
+		"StatusManaRegen"			"1"
+
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"30"
+		"AttributeStrengthGain"		"4"
+		"AttributeBaseAgility"		"10"
+		"AttributeAgilityGain"		"1"
+		"AttributeBaseIntelligence"	"10"
+		"AttributeIntelligenceGain"	"1"
+
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"325"
+		"MovementTurnRate"			"0.5"
+
+		"VisionNighttimeRange"		"1000"
+		"VisionDaytimeRange"		"1500"
+	}
 	"npc_dota_hero_lycan"
 	{
 		"override hero"				"npc_dota_hero_lycan"
