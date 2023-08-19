@@ -28,7 +28,7 @@ function modifier_centaur_counter_stomp:OnAttackLanded( data )
 		local damage = base_dmg + str_dmg* caster:GetStrength()
 			
 		if ability:IsCooldownReady() and RollPercentage(trigger_chance) then
-			ability:UseResources(false, false, true)
+			ability:UseResources(false, false, true, false)
 			EmitSoundOn("Hero_Centaur.HoofStomp",caster)
 			
 			local effect = "particles/units/heroes/hero_centaur/centaur_warstomp.vpcf"

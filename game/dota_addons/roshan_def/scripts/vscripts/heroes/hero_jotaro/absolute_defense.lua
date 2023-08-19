@@ -36,7 +36,7 @@ if IsServer() then
 			local part = ParticleManager:CreateParticle("particles/units/heroes/hero_antimage/antimage_spellshield.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.parent)
 			ParticleManager:ReleaseParticleIndex(part)
 			self.parent:EmitSound("jotaro_absolute_defense")
-			self.ab:UseResources(true, true, true)
+			self.ab:UseResources(true, true, true, false)
 		end
 	end
 end

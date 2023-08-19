@@ -283,7 +283,7 @@ function modifier_imba_phoenix_launch_fire_spirit:OnIntervalThink()
 		-- Remove the stack modifier if all the spirits has been launched.
 --		if iModifier:GetStackCount() < 1 then
 --			iModifier:Destroy()
-		ability:UseResources(false,false,true)
+		ability:UseResources(false,false,true, false)
 --		end
 --		Timers:CreateTimer(ability:GetCooldown(ability:GetLevel()),function() ability:OnCreated() end)
 

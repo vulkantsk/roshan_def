@@ -33,7 +33,7 @@ function disruptor_glimpse_custom_active:OnSpellStart()
 		caster:SwapAbilities("disruptor_glimpse_custom_active", "disruptor_glimpse_custom", false, true) 
 	
 		local glimpse_ability = caster:FindAbilityByName("disruptor_glimpse_custom")
-		glimpse_ability:UseResources(false, false, true)
+		glimpse_ability:UseResources(false, false, true, false)
 			
 		if IsValidEntity(target) and target:IsAlive() then
 			local thinker = target:AddNewModifier(caster, self, "modifier_disruptor_glimpse_custom_thinker", {})

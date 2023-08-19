@@ -62,7 +62,7 @@ function modifier_spartacus_sword_of_vengance:OnAttackLanded( keys )
 					damage = ability_damage
 				})				
 				target:EmitSound("Imba.SangeProc")
-				ability:UseResources(false, false, true)
+				ability:UseResources(false, false, true, false)
 			end
 --		end
 	end

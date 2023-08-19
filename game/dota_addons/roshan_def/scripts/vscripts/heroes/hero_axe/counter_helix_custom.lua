@@ -47,7 +47,7 @@ function modifier_axe_counter_helix_custom:OnAttackLanded( params )
 			if ability:IsCooldownReady() and RollPercentage(trigger_chance) then
 				local data = {iFlag = DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES}
 				local enemies = caster:FindEnemyUnitsInRadius(point, radius, data)
-				ability:UseResources(true, true, true)
+				ability:UseResources(true, true, true, false)
 				caster:StartGestureWithPlaybackRate(ACT_DOTA_CAST_ABILITY_3, 1)
 				caster:EmitSound("hero_axe.counterhelix")
 

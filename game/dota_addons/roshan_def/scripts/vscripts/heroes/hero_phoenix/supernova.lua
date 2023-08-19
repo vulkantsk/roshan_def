@@ -153,7 +153,7 @@ function modifier_imba_phoenix_supernova_scepter_passive:PhoenixEggTrigger( keys
 		else
 			self.reincarnation_death = true
 		
-			ability:UseResources(true,false,true)
+			ability:UseResources(true,false,true, false)
 			local location = caster:GetAbsOrigin()
 			local egg_duration = ability:GetSpecialValueFor("duration")
 			local extend_duration --= ability:GetSpecialValueFor("scepter_additional_duration")

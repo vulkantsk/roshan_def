@@ -54,6 +54,6 @@ function modifier_primal_beast_savage_blow:OnAttackLanded(data)
         ParticleManager:SetParticleControl(pfx, 3, caster:GetAbsOrigin())
         ParticleManager:ReleaseParticleIndex(pfx)
         EmitSoundOnLocationWithCaster(caster:GetAbsOrigin(), "Hero_PrimalBeast.Pulverize.Impact", caster)
-        self.ability:UseResources(true, true, true)
+        self.ability:UseResources(true, true, true, false)
     end
 end

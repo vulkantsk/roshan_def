@@ -101,5 +101,4 @@ function randomize_color(render_c)
 		number = 0
 	end
 	render_c = number
-	print("color = "..render_c)
 end

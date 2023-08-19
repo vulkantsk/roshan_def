@@ -45,7 +45,7 @@ function leshrac_spirit_and_body:OnToggle()
 		EmitSoundOn("DOTA_Item.GhostScepter.Activate", caster)
 	end
 
-	self:UseResources(false, false, true)
+	self:UseResources(false, false, true, false)
 end
 
 modifier_leshrac_spirit_and_body = class({

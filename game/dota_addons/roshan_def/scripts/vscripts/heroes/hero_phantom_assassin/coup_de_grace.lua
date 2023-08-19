@@ -242,7 +242,7 @@ function modifier_triple_blow_passive:OnAttackStart(keys)
 		if (keys.attacker == parent) and (parent:IsRealHero() or parent:IsClone()) then
 			if item:IsCooldownReady() then
 				parent:AddNewModifier(parent, item, "modifier_triple_blow_haste", {})
-				item:UseResources(false,false,true)			
+				item:UseResources(false,false,true, false)			
 			end
 		end
 	end

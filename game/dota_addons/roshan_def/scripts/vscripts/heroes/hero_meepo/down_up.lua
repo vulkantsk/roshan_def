@@ -122,7 +122,7 @@ function modifier_meepo_down_up:Reincarnate()
 		else
 			self.reincarnation_death = true
 		
-			ability:UseResources(true,false,true)
+			ability:UseResources(true,false,true, false)
 		end
 	end
 end

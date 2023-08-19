@@ -48,7 +48,7 @@ function modifier_phantom_assassin_death_rush_passive:OnTakeDamage( keys )
         local duration = ability:GetSpecialValueFor("duration")
       
         caster:AddNewModifier(caster, ability, "modifier_phantom_assassin_death_rush", { duration = duration})
-        ability:UseResources(true, true, true)
+        ability:UseResources(true, true, true, false)
    
     end
 end

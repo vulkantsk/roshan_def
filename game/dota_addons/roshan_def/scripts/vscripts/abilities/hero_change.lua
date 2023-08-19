@@ -28,7 +28,7 @@ function GiveNewHero(keys)
 		newHero:AddExperience(experience, 0, false, true)
 		for item,stacks in pairs(items_table) do 
 			local item = newHero:AddItemByName(item) 
-			item:UseResources(false, false, true)
+			item:UseResources(false, false, true, false)
 			item:SetCurrentCharges(stacks)
 		end 
 	end 

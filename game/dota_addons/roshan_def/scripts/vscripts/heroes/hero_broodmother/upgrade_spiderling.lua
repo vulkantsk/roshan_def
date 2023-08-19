@@ -25,7 +25,7 @@ function modifier_broodmother_upgrade_spiderling:OnIntervalThink()
 	local caster = self:GetCaster()
 	
 	if ability:IsCooldownReady() and caster:IsAlive() then
-		ability:UseResources(false, false, true)
+		ability:UseResources(false, false, true, false)
 		self:IncrementStackCount()
 --		EmitSoundOn("broodmother_broo_ability_spawn_11",caster)
 		EmitSoundOn("broodmother_broo_ability_spawn_07",caster)

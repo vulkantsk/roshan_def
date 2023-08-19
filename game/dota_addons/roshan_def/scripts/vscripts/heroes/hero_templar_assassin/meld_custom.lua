@@ -63,7 +63,7 @@ function modifier_templar_assassin_meld_custom:OnAttack(params)
         if self.meld_ready  then
             self.meld_attack = true
             if not caster.split == false then
-                 ability:UseResources(true, true, true)
+                 ability:UseResources(true, true, true, false)
                 self.meld_ready = false
            end            
         else
@@ -94,7 +94,7 @@ function modifier_templar_assassin_meld_custom:OnAttackLanded(params)
 
             if not self:GetParent():HasModifier("modifier_item_special_ta_upgrade") then
                 self.meld_ready = false
-                ability:UseResources(true, true, true)
+                ability:UseResources(true, true, true, false)
             end
                         
             local target = params.target

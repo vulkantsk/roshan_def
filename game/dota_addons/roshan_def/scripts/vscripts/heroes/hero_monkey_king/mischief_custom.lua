@@ -43,7 +43,7 @@ function modifier_monkey_king_mischief_custom:OnAttackLanded( params )
 
             caster:AddNewModifier(caster, ability, "modifier_monkey_king_transform", {duration = 0.1})
             caster:AddNewModifier(caster, ability, "modifier_invulnerable", {duration = 0.1})
-            ability:UseResources(true, false, true)
+            ability:UseResources(true, false, true, false)
         end
     end
 

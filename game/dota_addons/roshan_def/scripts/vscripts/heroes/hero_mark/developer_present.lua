@@ -65,7 +65,7 @@ function modifier_mark_developer_present:OnIntervalThink()
 		caster:SetModel(model)
 	end
 	if ability:IsCooldownReady() then
-		ability:UseResources(false, false, true)
+		ability:UseResources(false, false, false, true, true)
 		if caster:HasModifier("tome_strenght_modifier") == false then
 			caster:AddNewModifier(caster,ability,"tome_strenght_modifier",nil)
 			caster:SetModifierStackCount("tome_strenght_modifier", caster, 1)

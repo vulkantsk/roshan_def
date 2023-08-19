@@ -20,7 +20,7 @@ function CheckCooldown ( keys )
 		print("true")
 		ability:ApplyDataDrivenModifier(caster, target, "modifier_vacuum_thinker_datadriven", nil)
 --		ability:ApplyDataDrivenThinker(caster, target:GetAbsOrigin(), "modifier_vacuum_thinker_datadriven", nil)
-		ability:UseResources(false, false, true)
+		ability:UseResources(false, false, true, false)
 	else
 		print("false")
 		return

@@ -56,7 +56,7 @@ function modifier_jakiro_hothead:OnAttackLanded(keys)
 		ParticleManager:SetParticleControl(pfx, 1, Vector(self:GetAbility():GetSpecialValueFor("damage_radius"), 0, 0))
 		ParticleManager:ReleaseParticleIndex(pfx)
 
-		self:GetAbility():UseResources(false, false, true)
+		self:GetAbility():UseResources(false, false, true, false)
 		caster:SetRangedProjectileName("particles/units/heroes/hero_jakiro/jakiro_base_attack.vpcf")
 		self.IsHotheadAttack = false
 	end
